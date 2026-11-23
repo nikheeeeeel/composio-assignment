@@ -1,0 +1,241 @@
+{
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "one_line_description": {
+    "value": "Squarespace provides a developer platform and Commerce APIs for managing commerce features on merchant sites.",
+    "source_url": "https://developers.squarespace.com/commerce-apis/overview",
+    "quote": "With Squarespace Commerce APIs, you can build applications to manage the commerce features of a Squarespace merchant site.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.squarespace.com",
+    "quote": "Everything you need to build and publish external apps — reliable APIs, clear documentation, and a marketplace to reach Squarespace's global customer base.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.squarespace.com/commerce-apis/overview",
+    "quote": "All Commerce APIs are built on HTTPS and designed with REST principles in mind.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST commerce APIs with read/write access to orders, products, inventory, and transactions; webhooks for order events.",
+    "source_url": "https://developers.squarespace.com",
+    "quote": "Read and write orders, products, inventory, and transactions. REST endpoints, webhooks for order events, and signed payloads for safe server-to-server delivery.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.squarespace.com",
+    "source_url": "https://developers.squarespace.com",
+    "quote": "Build on Squarespace",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "Depending on your development needs, you can use a generated API key or start the OAuth process with Squarespace to become a registered OAuth client.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.squarespace.com/commerce-apis/oauth",
+    "quote": "The confirmation page always displays website(s) for user selection for `scope=website.*` `website.orders` Send order data and mark orders as fulfilled. `website.orders.read` View order and fulfillment information.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "app_review_required",
+    "source_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "Registering an OAuth client, and having it reviewed and approved, only allows OAuth connections with Squarespace.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Third-party OAuth client registration requires Squarespace review and approval; custom API-key applications require a site on the Commerce Advanced plan, and Extensions listing is a separate process.",
+    "source_url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+    "quote": "Registering an OAuth client, and having it reviewed and approved, only allows OAuth connections with Squarespace.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.squarespace.com/mcp",
+    "source_url": "https://developers.squarespace.com/mcp/connect-a-client",
+    "quote": "Configure a remote MCP server with: - URL:`https://mcp.squarespace.com/mcp` - Transport: Streamable HTTP",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Squarespace",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Squarespace\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": "https://developers.squarespace.com/commerce-apis/responses-error-handling",
+    "quote": "Refer to the rate limiting guidelines for more information.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.squarespace.com",
+    "quote": "Subscribe to order, inventory, content, and customer events with signed delivery.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Squarespace documents public Commerce APIs with OAuth 2.0 and API-key authentication, plus webhooks and an official MCP server. However, third-party OAuth client registration requires Squarespace review/approval, and custom API-key apps are tied to the Commerce Advanced plan, so access is not fully self-serve.",
+  "main_blocker": "OAuth app review/approval; Commerce Advanced plan for custom API keys",
+  "needs_outreach": true,
+  "outreach_reason": "A third-party developer must register an OAuth client and wait for Squarespace review/approval; custom API-key apps also require the Commerce Advanced plan.",
+  "open_questions": [
+    "What are the numeric Commerce API rate limits? The supplied error-handling page only references rate-limiting guidelines.",
+    "Is there a documented sandbox or test environment for Commerce API development? No such source was included in the evidence.",
+    "Which official SDKs, if any, does Squarespace maintain? No SDK page was included in the evidence.",
+    "What is the API versioning and deprecation policy? The versioning page was not fetched; a search snippet mentioned Products API v2, but snippets are not citable.",
+    "For third-party commercial integrations, is OAuth app review the only route, or can Commerce Advanced API keys be used for production apps?"
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Squarespace",
+      "category": "Ecommerce",
+      "hint": "developers.squarespace.com",
+      "description": null,
+      "source_file": "05-ecommerce.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.squarespace.com",
+        "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1678
+      },
+      {
+        "url": "https://developers.squarespace.com/commerce-apis/overview",
+        "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1939
+      },
+      {
+        "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+        "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3780
+      },
+      {
+        "url": "https://developers.squarespace.com/commerce-apis/oauth",
+        "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.squarespace.com/pricing",
+        "title": "Squarespace Pricing Plans & Features — Squarespace",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4296
+      },
+      {
+        "url": "https://support.squarespace.com/hc/en-us/articles/205815758-Developer-Tools",
+        "title": "Developer Tools – Squarespace Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.squarespace.com/commerce-apis/responses-error-handling",
+        "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4651
+      },
+      {
+        "url": "https://developers.squarespace.com/mcp/overview",
+        "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3889
+      },
+      {
+        "url": "https://developers.squarespace.com/mcp/connect-a-client",
+        "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3587
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 151.82
+  }
+}

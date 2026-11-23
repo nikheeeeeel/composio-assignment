@@ -1,0 +1,262 @@
+{
+  "app": "HubSpot",
+  "category": "CRM and Sales",
+  "one_line_description": {
+    "value": "HubSpot is an agentic customer platform that aligns marketing, sales, and service around customer data so teams and AI know what customers need.",
+    "source_url": "https://www.hubspot.com/",
+    "quote": "HubSpot aligns marketing, sales, and service around your customer data, so your teams and AI always know what customers need.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+    "quote": "Reference documentation for HubSpot's 2026-09 APIs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+    "quote": "All APIs, whether legacy, new, or beta, use the same root path as before: `https://api.hubapi.com/`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write CRM API covering contacts, companies, deals, tickets, and more; multi-API surface including associations, search, GraphQL, and webhooks.",
+    "source_url": "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server",
+    "quote": "It enables an agent to read, write, and update HubSpot records (contacts, companies, deals, tickets, and more) as a user would.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.hubspot.com/docs",
+    "source_url": "https://developers.hubspot.com/docs",
+    "quote": "Welcome to the HubSpot Developer Documentation. Build custom CRM and data-driven website experiences on HubSpot.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+    "quote": "There are two authentication types available based on how you plan to distribute your app: OAuth is required for multiple accounts, while static auth access tokens are used for installing in a single account at a time.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/working-with-oauth",
+    "quote": "A space-separated set of permissions that your app needs access to.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developers.hubspot.com/docs/getting-started/account-types",
+    "quote": "Developer test accounts are free HubSpot accounts with access to a 90-day trial of many enterprise features, with the following limitations:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free self-serve developer accounts and free developer test accounts are available; test accounts include a 90-day trial of many enterprise features and expire after 90 days if no API calls are made. Production API usage is subject to product-tier rate limits, and marketplace/public-app distribution requires OAuth and may involve certification review.",
+    "source_url": "https://developers.hubspot.com/docs/getting-started/account-types",
+    "quote": "Developer test accounts are free HubSpot accounts with access to a 90-day trial of many enterprise features, with the following limitations:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.hubspot.com",
+    "source_url": "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server",
+    "quote": "Enter the HubSpot MCP server URL provided by HubSpot (`https://mcp.hubspot.com`).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=hubspot",
+    "quote": "{\"slug\": \"hubspot\", \"name\": \"HubSpot\", \"app\": \"HubSpot\", \"tools_count\": 354}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Public OAuth apps distributed via marketplace: 110 requests/10s per installing account. Private apps: 100 requests/10s and 250,000/day (Free/Starter); 190 requests/10s and 625,000/day (Professional); 190 requests/10s and 1,000,000/day (Enterprise).",
+    "source_url": "https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines",
+    "quote": "For legacy public apps, and apps on the latest versions of the developer platform (2025.2 and 2026.03) using OAuth authentication distributed via the HubSpot marketplace, each HubSpot account that installs your app is limited to 110 requests every 10 seconds.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.hubspot.com/docs/api-reference/latest/webhooks/guide",
+    "quote": "The webhooks API allows you to subscribe to events happening in a HubSpot account with your integration installed.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developers.hubspot.com/docs/getting-started/account-types",
+    "quote": "Sandbox accounts allow you to test out changes without impacting your standard account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Date-based API versioning (e.g., 2026-09, following 2026-03); when a new date version is released, the previous version continues to work until its end-of-life date, giving time to migrate.",
+    "source_url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+    "quote": "When a new date version is released, the previous version continues to work until its end-of-life date, giving you time to migrate.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "HubSpot publishes full public API reference documentation, supports OAuth 2.0 plus static tokens, and offers free self-serve developer test accounts, so credentials are obtainable without sales contact. The API surface is broad (CRM objects, associations, search, webhooks), and HubSpot documents its own remote MCP server at https://mcp.hubspot.com.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official SDK language list could not be confirmed from the fetched SOURCES; SDK pages appeared in the search index but their text was not included in the evidence bundle.",
+    "No community or third-party MCP servers were found in the provided evidence; GitHub and MCP registry checks returned no results.",
+    "Which specific API endpoints require paid product tiers versus a free developer account was not fully resolved from the fetched evidence; only tier-based rate limits were captured.",
+    "Marketplace/public-app distribution requires OAuth and may involve certification/app review, but the exact review requirements were not present in the fetched sources.",
+    "The api_breadth scope statement is drawn from HubSpot's MCP documentation rather than an explicit API reference index enumeration."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "HubSpot",
+      "category": "CRM and Sales",
+      "hint": "hubspot.com",
+      "description": null,
+      "source_file": "01-crm-and-sales.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines",
+        "title": "API usage guidelines and limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.hubspot.com/ai-tools/mcp",
+        "title": "HubSpot MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server",
+        "title": "Using the HubSpot MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3500
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/api-reference/latest/webhooks/guide",
+        "title": "Webhooks API guide",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/getting-started/account-types",
+        "title": "HubSpot Account Types",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4919
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+        "title": "2026-09 API reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1532
+      },
+      {
+        "url": "https://developers.hubspot.com/docs",
+        "title": "HubSpot Developer Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1960
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+        "title": "Authentication overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/working-with-oauth",
+        "title": "Working with OAuth",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/developer-tooling/platform/apis-by-tier",
+        "title": "APIs by tier",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1163
+      },
+      {
+        "url": "https://www.hubspot.com/",
+        "title": "HubSpot | Software & Tools for your Business - Homepage",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://hubspot.com"
+    ],
+    "refinement": {},
+    "research_seconds": 118.6
+  }
+}

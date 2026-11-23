@@ -1,0 +1,8 @@
+composio==0.34.0
+pydantic==2.14.4
+python-dotenv==1.2.4
+tenacity==9.2.1
+httpx==0.28.1
+beautifulsoup4==4.15.0
+mcp==2.3.0
+rapidfuzz==3.14.6

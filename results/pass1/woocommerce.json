@@ -1,0 +1,258 @@
+{
+  "app": "WooCommerce",
+  "category": "Ecommerce",
+  "one_line_description": {
+    "value": "WooCommerce is an open-source eCommerce platform built on WordPress for selling physical products, digital downloads, subscriptions, content, and appointments.",
+    "source_url": "https://developer.woocommerce.com/docs/",
+    "quote": "WooCommerce is a customizable, open-source eCommerce platform built on WordPress.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "quote": "WooCommerce (WC) 2.6+ is fully integrated with the WordPress REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.woocommerce.com/docs/",
+    "quote": "Use the REST API for store management data. Use the Store API for shopper-facing product, cart, and checkout flows.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, read-write; core resources include orders, products, coupons, customers, and shipping zones, plus webhooks and a separate unauthenticated shopper-facing Store API",
+    "source_url": "https://developer.woocommerce.com/docs/llms-full.txt",
+    "quote": "The WC REST API is a powerful part of WooCommerce which lets you read and write various parts of WooCommerce data such as orders, products, coupons, customers, and shipping zones.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "source_url": "https://developer.woocommerce.com/docs/llms-full.txt",
+    "quote": "Explore the [WC REST API](./rest-api/) documentation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "basic"
+    ],
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "quote": "For Authorization, choose basic auth and enter your consumer key and consumer secret keys from WooCommerce into the username and password fields.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+    "quote": "WooCommerce includes two ways to authenticate with the WP REST API.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+    "quote": "The WooCommerce REST API uses a key system to control access. You can create keys with different permission levels depending on what the connected application needs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free, open-source core plugin: a store admin self-generates a consumer key/secret under WooCommerce > Settings > Advanced > REST API with Read, Write, or Read/Write permission - no vendor approval, plan tier, or app review is involved. The practical gate is that the developer must run their own WordPress + WooCommerce store (or a local dev store via Studio CLI/wp-env) with pretty permalinks enabled. Separate products are gated: Woo Marketplace SaaS Billing API requires business review before sandbox credentials are issued, and the MCP integration is a developer preview requiring the WordPress MCP Adapter plugin plus a WordPress Application Password.",
+    "source_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+    "quote": "This documentation is about the free, core WooCommerce plugin, for which support is provided in our community forums on WordPress.org.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://developer.woocommerce.com/docs/features/mcp/",
+    "source_url": "https://developer.woocommerce.com/docs/features/mcp/",
+    "quote": "WooCommerce abilities are available through the WordPress MCP Adapter's default server:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=WooCommerce",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"WooCommerce\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Not documented for the core WC REST API v3; Store API rate limiting is optional and disabled by default, but when enabled the default maximum is 25 requests per 10 seconds, and the checkout/place-order flow can be limited to 3 requests per 60 seconds",
+    "source_url": "https://developer.woocommerce.com/docs/apis/store-api/rate-limiting/",
+    "quote": "A default maximum of 25 requests can be made within a 10-second time frame.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/webhooks",
+    "quote": "The webhooks API allows you to create, view, update, and delete individual, or a batch, of webhooks.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developer.woocommerce.com/docs/",
+    "quote": "Studio starts the local site and gives you its URL.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "javascript",
+      "php",
+      "python",
+      "ruby"
+    ],
+    "source_url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+    "quote": "JavaScript Library - PHP Library - Python Library - Ruby Library",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "URL-namespaced versioning under /wp-json/wc/v3/ (current integration version is v3); the legacy REST API has been removed from WooCommerce core and old integrations require the separate WooCommerce Legacy REST API plugin",
+    "source_url": "https://woocommerce.com/document/woocommerce-rest-api/",
+    "quote": "The legacy REST API has been removed from WooCommerce core.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "WooCommerce exposes a documented, versioned REST API (/wp-json/wc/v3/) covering read-write access to orders, products, coupons, customers, shipping zones, and webhooks, with official JavaScript/PHP/Python/Ruby libraries. Credentials are self-serve: a store admin generates a consumer key/secret with chosen permissions in the WP admin, with no app review, plan tier, or sales contact required. The only practical requirement is running your own WordPress + WooCommerce store or a local dev store.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Auth: the llms-full.txt content states 'You must use OAuth 1.0a \"one-legged\" authentication' for authentication over HTTP; this was not included in auth_methods because the dedicated authentication page describes only REST API keys and the Application Authentication endpoint - confirm whether OAuth 1.0a should be listed (likely as 'other').",
+    "OAuth scopes: no OAuth2 flow or scope list is documented; the auth-endpoint 'scope' parameter refers to read/write/read_write key permission level, so oauth_scopes_documented was set to false.",
+    "MCP: the vendor-documented endpoint is per-store (https://yourstore.com/wp-json/mcp/mcp-adapter-default-server) and the integration is a developer preview; official_mcp_server cites the vendor docs URL rather than a fixed endpoint. The legacy /wp-json/woocommerce/mcp endpoint was removed in WooCommerce 11.3 and now returns HTTP 410.",
+    "Community MCP servers: searches were restricted to site:woocommerce.com and the GITHUB REPOSITORIES / MCP REGISTRY sections were empty, so no community MCP server URLs were verified; this field is not evidence that none exist.",
+    "Sandbox: sandbox_or_test_env=true reflects documented local development stores (Studio CLI/wp-env), not a hosted sandbox for the core REST API. The only hosted sandbox found is sandbox.woocommerce.com for the Woo Marketplace SaaS Billing API, which requires business review before access is granted.",
+    "SDK officialness: the docs list Java, .NET, and Android libraries separately and note 'contact the respective authors', suggesting they are third-party; only JavaScript, PHP, Python, and Ruby were treated as vendor-maintained.",
+    "Rate limits: no rate limits are documented for the core WC REST API v3; only the Store API has optional, disabled-by-default rate limiting.",
+    "Composio catalog returned zero items for the query 'WooCommerce' (total_items: 0), which seems surprising for a major ecommerce platform - worth re-checking the catalog query or alternate naming."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "WooCommerce",
+      "category": "Ecommerce",
+      "hint": "woocommerce.com/document/woocommerce-rest-api",
+      "description": null,
+      "source_file": "05-ecommerce.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.woocommerce.com/docs/apis/store-api/rate-limiting/",
+        "title": "Rate Limiting for Store API endpoints | WooCommerce developer docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4676
+      },
+      {
+        "url": "https://developer.woocommerce.com/docs/features/mcp/",
+        "title": "Model Context Protocol (MCP) Integration | WooCommerce developer docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.woocommerce.com/2026/10/21/woocommerce-11-3-mcp/",
+        "title": "WooCommerce 11.3 MCP Adaptor updates Advisories – The WooCommerce Developer Blog",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2026-10-21T16:43:39.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.woocommerce.com/docs/apis/rest-api/v3/webhooks",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.woocommerce.com/docs/woo-marketplace/billing-api-saas/",
+        "title": "Billing API for SaaS products | WooCommerce developer docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.woocommerce.com/docs/",
+        "title": "WooCommerce Developer Docs | WooCommerce developer docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3227
+      },
+      {
+        "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+        "title": "WooCommerce REST API | WooCommerce developer docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+        "title": "Authentication | WooCommerce developer docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.woocommerce.com/docs/llms-full.txt",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "title": "WooCommerce REST API Documentation - WooCommerce",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4540
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 95.35
+  }
+}

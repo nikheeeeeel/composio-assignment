@@ -1,0 +1,343 @@
+{
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "slug": "neo4j",
+  "started_at": "2026-11-23T15:58:56.769615+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T16:01:02.187727+00:00",
+  "duration_s": 125.42,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/neo4j.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Neo4j\" MCP server official Model Context Protocol site:neo4j.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.722,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Neo4j\" pricing plans API access enterprise developer site:neo4j.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.968,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Neo4j\" official API documentation developer reference site:neo4j.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.003,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Neo4j\" API rate limits throttling quota documentation site:neo4j.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.747,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Neo4j\" API webhooks events callbacks documentation site:neo4j.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.322,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Neo4j\" official SDK client libraries developer site:neo4j.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.722,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Neo4j\" API sandbox test environment staging developer site:neo4j.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.441,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Neo4j\" API authentication OAuth API key documentation site:neo4j.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.58,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Neo4j\" API versioning deprecation sunset policy site:neo4j.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.594,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Neo4j"
+      },
+      "ok": true,
+      "duration_s": 0.038,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://neo4j.com/pricing/",
+          "https://neo4j.com/product/auradb/",
+          "https://neo4j.com/labs/agent-memory/reference/nams-limits/",
+          "https://neo4j.com/docs/mcp/current/",
+          "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.76,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://neo4j.com/docs/api",
+          "https://neo4j.com/docs/",
+          "https://neo4j.com/docs/java-reference/current/",
+          "https://neo4j.com/docs/aura/api/authentication/",
+          "https://neo4j.com/docs/graphql/current/aura-graphql/api-usage/"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.55,
+      "result_count": 4,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Neo4j MCP"
+      },
+      "ok": true,
+      "duration_s": 2.345,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://neo4j.com/docs/api"
+      },
+      "ok": false,
+      "duration_s": 6.906,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 14,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://neo4j.com/docs/api"
+  ],
+  "sources": [
+    {
+      "url": "https://neo4j.com/pricing/",
+      "title": "Cloud & self-hosted graph database platform pricing | Neo4j",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://neo4j.com/product/auradb/",
+      "title": "Neo4j AuraDB: Fully managed graph database",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://neo4j.com/labs/agent-memory/reference/nams-limits/",
+      "title": "NAMS limits and behavior",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://neo4j.com/docs/mcp/current/",
+      "title": "Introduction",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2229
+    },
+    {
+      "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+      "title": "Model Context Protocol (MCP) Integrations for the Neo4j Graph Database",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://neo4j.com/docs/",
+      "title": "Neo4j documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3371
+    },
+    {
+      "url": "https://neo4j.com/docs/java-reference/current/",
+      "title": "The Neo4j Java Reference v2026.10",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1149
+    },
+    {
+      "url": "https://neo4j.com/docs/aura/api/authentication/",
+      "title": "Authentication",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://neo4j.com/docs/graphql/current/aura-graphql/api-usage/",
+      "title": "Using your GraphQL API",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1219
+    },
+    {
+      "url": "https://neo4j.com/docs/api/",
+      "title": "Page Not Found - Neo4j Graph Intelligence Platform",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 2842
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Neo4j",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 105.609,
+      "tokens": {
+        "input": 13499,
+        "output": 1966,
+        "reasoning": 9753
+      },
+      "cost_usd": 0.007245
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 13499,
+      "output": 1966,
+      "reasoning": 9753
+    },
+    "cost_usd": 0.007245,
+    "llm_calls": 1
+  }
+}

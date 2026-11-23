@@ -1,0 +1,259 @@
+{
+  "app": "Stripe",
+  "category": "Finance and Fintech",
+  "one_line_description": {
+    "value": "Stripe lets businesses accept payments online, collect payments with invoices, and accept payments in person.",
+    "source_url": "https://docs.stripe.com/",
+    "quote": "## Payments - Accept payments online - Collect payments with invoices - Accept payments in-person",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://stripe.com/docs/api",
+    "quote": "The Stripe API is organized around REST. Our API has predictable resource-oriented URLs, accepts form-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://stripe.com/docs/api",
+    "quote": "The Stripe API is organized around REST.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, resource-oriented API; object-level operations only, no bulk updates.",
+    "source_url": "https://stripe.com/docs/api",
+    "quote": "The Stripe API doesn’t support bulk updates. You can work on only one object per request.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://stripe.com/docs/api",
+    "source_url": "https://stripe.com/docs/api",
+    "quote": "# API Reference",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "basic",
+      "bearer_token"
+    ],
+    "source_url": "https://docs.stripe.com/api/authentication",
+    "quote": "Provide your API key as the basic auth username value. If you need to authenticate using bearer auth (for example, for a cross-origin request), use `-H \"Authorization: Bearer sk_test_...sk_test_...\"` instead of `-u sk_test_...sk_test_...`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.stripe.com/sandboxes",
+    "quote": "run `stripe sandbox create --help` to provision an anonymous Stripe sandbox with working API keys. It doesn’t require account registration.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Anonymous Stripe sandbox with working API keys can be provisioned via the Stripe CLI without account registration.",
+    "source_url": "https://docs.stripe.com/sandboxes",
+    "quote": "run `stripe sandbox create --help` to provision an anonymous Stripe sandbox with working API keys. It doesn’t require account registration.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.stripe.com",
+    "source_url": "https://docs.stripe.com/mcp",
+    "quote": "Follow your client’s MCP setup instructions and use `https://mcp.stripe.com` as the server URL.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=stripe",
+    "quote": "{\"slug\": \"stripe\", \"name\": \"Stripe\", \"app\": \"Stripe\", \"tools_count\": 428}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Live mode: 100 requests/sec global; sandbox: 25 requests/sec global; individual endpoints: 25 requests/sec.",
+    "source_url": "https://docs.stripe.com/rate-limits",
+    "quote": "| Global API rate limit | Live mode: 100 requests per second Sandbox: 25 requests per second | | Individual API endpoints (unless otherwise noted) | 25 requests per second |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.stripe.com/events/manage-webhook-endpoints",
+    "quote": "Handle delivery failures, signature errors, and event-generation failures for your webhook endpoints.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://docs.stripe.com/sandboxes",
+    "quote": "A sandbox is an isolated test environment.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Ruby",
+      "Python",
+      "PHP",
+      "Java",
+      "Node.js",
+      "Go",
+      ".NET"
+    ],
+    "source_url": "https://stripe.com/docs/api",
+    "quote": "### Client libraries - Ruby - Python - PHP - Java - Node.js - Go - .NET",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "The Stripe API differs for every account as Stripe releases new versions and tailors functionality.",
+    "source_url": "https://stripe.com/docs/api",
+    "quote": "The Stripe API differs for every account as we release new versions and tailor functionality.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Stripe publishes a public REST API reference with official SDKs and documents API-key, HTTP Basic, and Bearer authentication. Its docs also state that a Stripe CLI command can provision an anonymous sandbox with working API keys without account registration. Rate limits, webhooks, sandboxes, and an official MCP server are documented, so access is self-serve and the API is broad enough to build against.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The dedicated Stripe API OAuth 2.0 authentication page appeared only in search snippets, not in SOURCES; auth_methods therefore omits oauth2 and oauth_scopes_documented is not_found.",
+    "No full API versioning/deprecation or sunset-policy page is in SOURCES; only the statement that the API differs by account as new versions are released.",
+    "No endpoint/resource count is available in SOURCES, so api_breadth is qualitative.",
+    "No community MCP servers were found in the supplied GitHub/MCP-registry checks (both returned no results).",
+    "Production/live-mode access requirements are not fully documented in the supplied sources; access_model reflects anonymous sandbox access for development/testing."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Stripe",
+      "category": "Finance and Fintech",
+      "hint": "stripe.com/docs/api",
+      "description": null,
+      "source_file": "09-finance-and-fintech.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://stripe.com/docs/api",
+        "title": "API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1141
+      },
+      {
+        "url": "https://docs.stripe.com/api?s...=",
+        "title": "API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1141
+      },
+      {
+        "url": "https://docs.stripe.com/",
+        "title": "Stripe Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2716
+      },
+      {
+        "url": "https://docs.stripe.com/api/authentication",
+        "title": "Authentication | Stripe API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.stripe.com/keys",
+        "title": "API keys | Stripe Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.stripe.com/rate-limits",
+        "title": "Rate limits | Stripe Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.stripe.com/mcp",
+        "title": "Model Context Protocol (MCP)",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.stripe.com/agents/plugin",
+        "title": "Agent plugins for Stripe",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2526
+      },
+      {
+        "url": "https://docs.stripe.com/events/manage-webhook-endpoints",
+        "title": "Manage webhook endpoints",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.stripe.com/sandboxes",
+        "title": "Sandboxes",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3259
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 225.24
+  }
+}

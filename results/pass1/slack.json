@@ -1,0 +1,276 @@
+{
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "one_line_description": {
+    "value": "Slack connects teams and AI agents on an AI work platform.",
+    "source_url": "https://slack.com/intl/en-in/",
+    "quote": "All your people and AI agents working together Slack connects your team.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://api.slack.com/types/event",
+    "quote": "Documentation on event types and our Events API spec provide detail on specific event types.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://api.slack.com/changelog/slack-connect-api-2025",
+    "quote": "The Slack Web API featured workflows methods are now available!",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Read-write access to channels/threads, messages, canvases, and search.",
+    "source_url": "https://slack.com/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+    "quote": "Once connected, third-party AI agents can access your Slack workspace to read specific channels or threads, send messages, create canvases, and help you find information faster.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.slack.dev/",
+    "source_url": "https://api.slack.com/changelog/slack-connect-api-2025",
+    "quote": "As previously announced, docs.slack.dev is the new home for Slack developer docs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://slack.com/help/articles/52414744085139-Connect-Slackbot-to-other-apps-with-MCP",
+    "quote": "Follow the prompts to review the scopes and install the app.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://api.slack.com/types/event",
+    "quote": "\"scopes\": [ \"chat:write:user\", \"im:read\", \"im:history\", \"commands\" ]",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://api.slack.com/apps",
+    "quote": "You'll need to sign in to your Slack account to create an application.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "App creation requires a Slack account; workspace or Enterprise admins may require app approval before installation.",
+    "source_url": "https://slack.com/help/articles/52414744085139-Connect-Slackbot-to-other-apps-with-MCP",
+    "quote": "If app approval is required in your workspace or Enterprise organization, only admins and members with permission can install apps that include MCP servers.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://slack.com/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+    "source_url": "https://slack.com/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+    "quote": "The Slack MCP server lets third-party AI agents like Claude and Perplexity securely access your Slack content so they can search messages, find information, and take actions in Slack on your behalf.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=slack",
+    "quote": "{\"items\": [{\"slug\": \"slack\", \"name\": \"Slack\", \"app\": \"Slack\", \"tools_count\": 165}, {\"slug\": \"slackbot\", \"name\": \"Slackbot\", \"app\": \"Slack\", \"tools_count\": 105}], \"total_items\": 2}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://api.slack.com/types/event",
+    "quote": "All delivered events follow this liberal JSON Schema specification.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://slack.com/help/articles/27390391126803-Manage-Slack-developer-sandboxes",
+    "quote": "Members of the Slack Developer Program can provision sandboxes to use for testing purposes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript",
+      "Python"
+    ],
+    "source_url": "https://api.slack.com/changelog/slack-connect-api-2025",
+    "quote": "The Bolt for JavaScript and Bolt for Python sample apps referenced in the documentation are now included in prompts of the `slack samples` command",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Classic apps are deprecated; the deprecation date was pushed to November 16, 2026.",
+    "source_url": "https://api.slack.com/changelog/slack-connect-api-2025",
+    "quote": "We're pushing the deprecation date for classic apps to November 16, 2026.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Slack publishes developer documentation at docs.slack.dev, app creation is self-serve after signing in to a Slack account, and the API supports read-write messaging, channels/threads, canvases, and search. An official Slack MCP server and developer sandboxes are also documented. No sales contact or partner approval is evidenced for development access.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Auth mechanism is not explicitly named in the supplied pages; OAuth2 is inferred from documented app-install scope review, and the dedicated docs.slack.dev/authentication page was not included in SOURCES.",
+    "Rate limits are not documented in the supplied evidence; the 2026 rate-limits changelog text does not include limit numbers.",
+    "Slack MCP server endpoint URL is not published in the supplied evidence; the official help-center guide URL is used.",
+    "API versioning scheme is not evidenced; only the classic-app deprecation date is documented.",
+    "Community MCP servers were not found in the provided evidence.",
+    "Workspace/Enterprise app approval and sandbox provisioning can gate installation/testing; exact production review requirements are not fully documented in the evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Slack",
+      "category": "Communications and Messaging",
+      "hint": "slack.com",
+      "description": null,
+      "source_file": "03-communications-and-messaging.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 17,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://api.slack.com/apps",
+        "title": "Slack API: Applications | Slack",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 184
+      },
+      {
+        "url": "https://api.slack.com/types/event",
+        "title": "event type | Slack",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://api.slack.com/changelog/slack-connect-api-2025",
+        "title": "Changelog | Slack",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://api.slack.com/developer-program",
+        "title": "Slack Developer Program | Slack",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 300
+      },
+      {
+        "url": "https://slack.com/pricing",
+        "title": "Slack Pricing Plans: Find the Right Fit for Your Team | Slack",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://api.slack.com/changelog/2026-rate-limits",
+        "title": "Changelog | Slack",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://slack.com/help/articles/48855576908307-Guide-to-MCP-in-Slack",
+        "title": "Guide to MCP in Slack | Slack",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3622
+      },
+      {
+        "url": "https://slack.com/help/articles/52414744085139-Connect-Slackbot-to-other-apps-with-MCP",
+        "title": "Connect Slackbot to other apps with MCP | Slack",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://slack.com/help/articles/27390391126803-Manage-Slack-developer-sandboxes",
+        "title": "Manage Slack developer sandboxes | Slack",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://slack.com/intl/en-in/",
+        "title": "Slack | AI work platform and productivity tools",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.slack.dev/authentication/",
+        "title": "Authentication overview",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 1568
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://slack.com"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "auth_methods"
+      ],
+      "queries": [
+        "\"Slack\" API authentication OAuth API key documentation",
+        "\"Slack\" developer authentication guide"
+      ],
+      "extra_urls": [
+        "https://docs.slack.dev/authentication/"
+      ],
+      "tool_calls_after": 17
+    },
+    "research_seconds": 250.59
+  }
+}

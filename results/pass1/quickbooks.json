@@ -1,0 +1,252 @@
+{
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "one_line_description": {
+    "value": "QuickBooks is an AI-powered accounting platform backed by trusted experts that helps small and mid-size businesses save time, make smart decisions, and grow.",
+    "source_url": "https://quickbooks.intuit.com/llms.txt",
+    "quote": "QuickBooks is an AI-powered accounting platform backed by trusted experts that helps small and mid-size businesses save time, make smart decisions, and grow.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://help.developer.intuit.com/s/article/Why-do-I-need-to-use-OAuth-2",
+    "quote": "An app allows you to get keys to access APIs (Accounting, Payment, Payroll).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Three API domains: Accounting, Payment, Payroll",
+    "source_url": "https://help.developer.intuit.com/s/article/Why-do-I-need-to-use-OAuth-2",
+    "quote": "An app allows you to get keys to access APIs (Accounting, Payment, Payroll).",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api",
+    "source_url": "https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api",
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://help.developer.intuit.com/s/article/Why-do-I-need-to-use-OAuth-2",
+    "quote": "Intuit does not support API keys or HTTP Basic Authentication. OAuth 2.0 is the only supported protocol.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://help.developer.intuit.com/s/article/Why-do-I-need-to-use-OAuth-2",
+    "quote": "It involves clients that request scopes that Resource Owners (Intuit) authorize/give consent to.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://help.developer.intuit.com/s/article/Why-do-I-need-to-use-OAuth-2",
+    "quote": "To use OAuth 2.0 for QuickBooks Online, please create a new developer account at our developer portal, and then create an app.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "OAuth 2.0 only; API keys and HTTP Basic Authentication are not supported.",
+    "source_url": "https://help.developer.intuit.com/s/article/Why-do-I-need-to-use-OAuth-2",
+    "quote": "Intuit does not support API keys or HTTP Basic Authentication. OAuth 2.0 is the only supported protocol.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
+    "source_url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
+    "quote": "The QuickBooks connector for Claude (also called the QuickBooks app or MCP connection) lets you generate financial reports",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=quickbooks",
+    "quote": "{\"slug\": \"quickbooks\", \"name\": \"QuickBooks\", \"app\": \"QuickBooks\", \"tools_count\": 119}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "500 requests/min per realm ID; 10 concurrent requests/sec per realm ID and app; 40 batch requests/min per realm ID; max 30 payloads per batch request",
+    "source_url": "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
+    "quote": "For production endpoints, the limits are as follows: - 500 requests per minute, per realm ID. - 10 concurrent requests in one second per realm ID and app. - 40 batch requests per minute, per realm ID. - Maximum number of payloads in a single batch request is 30.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
+    "quote": "For data syncs, rely on webhooks and CDC calls",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "The readable official evidence shows a self-serve Intuit developer account/app path and OAuth 2.0-only authentication, with API domains covering Accounting, Payment, and Payroll and documented production rate limits. Endpoint-level breadth, SDKs, sandbox, and versioning could not be verified because the main developer docs returned JS shells, but no sales or partner gate appears in the readable evidence.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "developer.intuit.com API reference/get-started/OAuth pages returned only a JS shell ('Compiling and pre-filling your Intuit info...'), so endpoint count, API type, SDKs, sandbox, versioning, and deprecation policy could not be verified.",
+    "OAuth scope names and the full permissions list could not be read; only a general statement that clients request scopes was available.",
+    "The official MCP help URL documents a US-only QuickBooks connector for Claude, not a published generic MCP endpoint; independent-client authentication and endpoint details remain unresolved.",
+    "No readable official source confirmed whether public app distribution requires app review/partner-program approval or platform service fees.",
+    "Sandbox/test environment documentation was not included in readable SOURCES; sandbox availability remains unverified.",
+    "API access cost/free tier is not explicitly stated in the readable sources; classification as self_serve_free rests on self-serve developer account/app creation without a documented paid gate."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "QuickBooks",
+      "category": "Finance and Fintech",
+      "hint": "developer.intuit.com",
+      "description": null,
+      "source_file": "09-finance-and-fintech.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/partner-faq",
+        "title": "Intuit Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2019-09-16T13:01:03.000Z",
+        "chars": 127
+      },
+      {
+        "url": "https://quickbooks.intuit.com/global/pricing/",
+        "title": "QuickBooks Online Pricing | QuickBooks Global",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
+        "title": "API call limits and throttling",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2026-10-28T00:00:00.000Z",
+        "chars": 1225
+      },
+      {
+        "url": "https://quickbooks.intuit.com/llms.txt",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
+        "title": "Use Claude to enter transactions and get insights in QuickBooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api",
+        "title": "Intuit Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2019-09-16T13:01:03.000Z",
+        "chars": 127
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+        "title": "Intuit Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2019-09-16T13:01:03.000Z",
+        "chars": 127
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+        "title": "Intuit Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2019-09-16T13:01:03.000Z",
+        "chars": 127
+      },
+      {
+        "url": "https://help.developer.intuit.com/s/article/Why-do-I-need-to-use-OAuth-2",
+        "title": "Why do I need to use OAuth 2?",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2019-08-19T00:00:00.000Z",
+        "chars": 1569
+      },
+      {
+        "url": "https://developer.intuit.com/app/developer/homepage",
+        "title": "Intuit Developer",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 62
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://developer.intuit.com"
+    ],
+    "refinement": {},
+    "research_seconds": 195.01
+  }
+}

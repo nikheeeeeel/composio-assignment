@@ -1,0 +1,352 @@
+{
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "slug": "twilio",
+  "started_at": "2026-11-23T15:42:55.079780+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:46:28.180944+00:00",
+  "duration_s": 213.1,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/twilio.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Twilio\" pricing plans API access enterprise developer site:twilio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.579,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Twilio\" official API documentation developer reference site:twilio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.688,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Twilio\" API authentication OAuth API key documentation site:twilio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.733,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Twilio\" MCP server official Model Context Protocol site:twilio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.875,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Twilio\" API rate limits throttling quota documentation site:twilio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.545,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Twilio\" API webhooks events callbacks documentation site:twilio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.99,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Twilio\" API sandbox test environment staging developer site:twilio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.625,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Twilio\" official SDK client libraries developer site:twilio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.639,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Twilio\" API versioning deprecation sunset policy site:twilio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.991,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Twilio"
+      },
+      "ok": true,
+      "duration_s": 0.035,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Twilio MCP"
+      },
+      "ok": true,
+      "duration_s": 5.864,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://www.twilio.com/docs",
+          "https://www.twilio.com/docs/usage/api",
+          "https://www.twilio.com/docs/iam/api-keys",
+          "https://www.twilio.com/docs/iam/oauth-apps/overview",
+          "https://www.twilio.com/en-us/pricing"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 6.509,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://www.twilio.com/en-us/solutions/enterprise",
+          "https://www.twilio.com/docs/api/errors/20429",
+          "https://www.twilio.com/docs/ai/mcp",
+          "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills",
+          "https://www.twilio.com/docs/usage/webhooks"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 6.672,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://twilio.com"
+      },
+      "ok": true,
+      "duration_s": 1.78,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 14,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://twilio.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.twilio.com/docs",
+      "title": "Twilio Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.twilio.com/docs/usage/api",
+      "title": "Twilio API overview",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1085
+    },
+    {
+      "url": "https://www.twilio.com/docs/iam/api-keys",
+      "title": "API keys overview",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2572
+    },
+    {
+      "url": "https://www.twilio.com/docs/iam/oauth-apps/overview",
+      "title": "OAuth apps",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2868
+    },
+    {
+      "url": "https://www.twilio.com/en-us/pricing",
+      "title": "Twilio Pricing | Twilio",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4939
+    },
+    {
+      "url": "https://www.twilio.com/en-us/solutions/enterprise",
+      "title": "Enterprise | Twilio",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.twilio.com/docs/api/errors/20429",
+      "title": "20429: Too many requests",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1878
+    },
+    {
+      "url": "https://www.twilio.com/docs/ai/mcp",
+      "title": "Twilio MCP server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills",
+      "title": "Introducing the Twilio MCP Server and Skills | Twilio",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": "2026-05-07T00:00:00.000Z",
+      "chars": 5000
+    },
+    {
+      "url": "https://www.twilio.com/docs/usage/webhooks",
+      "title": "Introduction to Webhooks",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4784
+    },
+    {
+      "url": "https://www.twilio.com/en-us",
+      "title": "Conversational AI and APIs for SMS, Email, Voice | Twilio",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Twilio",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 197.196,
+      "tokens": {
+        "input": 13042,
+        "output": 1891,
+        "reasoning": 15352
+      },
+      "cost_usd": 0.00984168
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 13042,
+      "output": 1891,
+      "reasoning": 15352
+    },
+    "cost_usd": 0.00984168,
+    "llm_calls": 1
+  }
+}

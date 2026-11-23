@@ -1,0 +1,280 @@
+{
+  "app": "Ecwid",
+  "category": "Ecommerce",
+  "one_line_description": {
+    "value": "Ecwid is an ecommerce platform for customizing online stores, building headless storefronts, and creating merchant apps.",
+    "source_url": "https://developers.ecwid.com/",
+    "quote": "Customize a store’s functionality or design, create headless sites, or build powerful apps that empower merchants selling around the world.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.ecwid.com/api-reference",
+    "quote": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.ecwid.com/api-reference",
+    "quote": "# REST API overview",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad REST API covering store profile, catalog, orders, customers, categories, discounts, payment and shipping methods, and storefront settings, with read and write operations.",
+    "source_url": "https://docs.ecwid.com/api-reference",
+    "quote": "Ecwid REST API allows you to access and manage any store data, payment and shipping methods, and storefront settings.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.ecwid.com/api-reference",
+    "source_url": "https://docs.ecwid.com/api-reference",
+    "quote": "# REST API overview",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://docs.ecwid.com/api-reference",
+    "quote": "We use OAuth 2.0 authorization simplified for single-store customizations, JSON-formatted data, and a clear structure.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.ecwid.com/develop-apps/app-settings",
+    "quote": "Access to Ecwid API features is limited by permissions called access scopes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+    "quote": "Only stores on paid plans can access API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Only stores on paid plans can access API (free test-store plan upgrades are available by emailing Ecwid).",
+    "source_url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+    "quote": "Only stores on paid plans can access API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Ecwid",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Ecwid\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "600 requests per minute per token; exceeding the limit returns HTTP 429 with a Retry-After header; repeated requests from a non-working token can be blocked.",
+    "source_url": "https://docs.ecwid.com/api-reference",
+    "quote": "We accept up to 600 requests per minute per token. If you exceed the limit, all subsequent requests will be ignored with an error 429 and a \"Retry-After\": N header (number N is a cooldown) . If more requests continue to come from a non-working token, Ecwid will block it for much longer",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.ecwid.com/webhook-automations/learn-ecwid-webhooks/list-of-webhook-events",
+    "quote": "Webhooks are triggered by any changes in the store data, no matter their source.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://docs.ecwid.com/launch-apps/faq-about-public-applications",
+    "quote": "We provide a developer with a paid subscription account in a test store for development and testing purposes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Ecwid exposes a broad REST API with OAuth 2.0, extensive scope-based read/write access, and webhooks. However, official setup docs state that only stores on paid plans can access the API. Public App Market distribution also involves a partner contract and app review, so the access path is not fully self-serve for all use cases.",
+  "main_blocker": "Paid-plan Ecwid store required for API access",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No vendor-operated MCP server is documented in the fetched sources; search results only surfaced third-party MCP listings (Pipedream, Zapier, UsefulAPI) that were not among the fetched SOURCES.",
+    "Official SDK languages were not evidenced; only a 'community libraries' page appeared in search results and was not fetched.",
+    "API versioning/deprecation policy was not present in the fetched sources; changelog pages were returned by search but not included in the evidence bundle.",
+    "The exact eligibility and approval process for Ecwid's free test-store plan upgrade (email request) should be confirmed.",
+    "Community MCP server URLs could not be verified from fetched sources, so they are not listed."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Ecwid",
+      "category": "Ecommerce",
+      "hint": "api-docs.ecwid.com",
+      "description": null,
+      "source_file": "05-ecommerce.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 16,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+        "title": "Set up your dev environment in Ecwid | Ecwid Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2196
+      },
+      {
+        "url": "https://developers.ecwid.com/",
+        "title": "Ecwid Developers | Build an e-commerce app for Ecwid merchants",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1813
+      },
+      {
+        "url": "https://docs.ecwid.com/develop-apps/what-is-an-ecwid-app",
+        "title": "What is an Ecwid app | Ecwid Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1349
+      },
+      {
+        "url": "https://docs.ecwid.com/webhook-automations/learn-ecwid-webhooks/list-of-webhook-events",
+        "title": "List of webhook events",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.ecwid.com/launch-apps/faq-about-public-applications",
+        "title": "FAQ about public applications | Ecwid Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://api-docs.ecwid.com",
+        "title": "Build with Ecwid apps",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.ecwid.com/api-reference",
+        "title": "REST API overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3218
+      },
+      {
+        "url": "https://docs.ecwid.com/",
+        "title": "Build with Ecwid apps",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.ecwid.com/develop-apps/app-settings",
+        "title": "App settings | Ecwid Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.ecwid.com/get-started/api-glossary",
+        "title": "API glossary | Ecwid Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2967
+      },
+      {
+        "url": "https://mcp.pipedream.com/app/ecwid",
+        "title": "ecwid MCP Server | Pipedream",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 430
+      },
+      {
+        "url": "https://unified.to/integrations/ecwid",
+        "title": "Ecwid (Lightspeed) API integration & MCP server | Unified.to",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Ecwid\" official MCP server",
+        "\"Ecwid\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://mcp.pipedream.com/app/ecwid",
+        "https://unified.to/integrations/ecwid"
+      ],
+      "tool_calls_after": 16
+    },
+    "research_seconds": 275.77
+  }
+}

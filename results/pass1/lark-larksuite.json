@@ -1,0 +1,262 @@
+{
+  "app": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "one_line_description": {
+    "value": "Lark Open Platform provides server-side APIs that help developers access and modify data in the Lark system.",
+    "source_url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list",
+    "quote": "Server-side APIs can help you access and modify data in the Lark system.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list",
+    "quote": "Server-side APIs can help you access and modify data in the Lark system.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list",
+    "quote": "Obtain the Contacts permission scope GET /open-apis/contact/v3/scopes",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad multi-product REST API with read-write endpoints (Contacts users/groups, events, docs, messaging); e.g. create/update/delete users and user groups.",
+    "source_url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list",
+    "quote": "Create a user POST /open-apis/contact/v3/users",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://open.larksuite.com/document",
+    "source_url": "https://open.larksuite.com/document",
+    "quote": "Documentation - Lark Developer",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "bearer_token"
+    ],
+    "source_url": "https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/access-credentials",
+    "quote": "Authorization: Bearer t-5888bcb7c421a695ca83c449caba5c0b12becfda",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+    "quote": "Scopes are bound to API capabilities, data fields, and subscription events.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list",
+    "quote": "Unlimited: Core features including Authentication and Authorization, Event Subscription, and Contacts are free to use, regardless of your Lark plan.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Core auth, event subscription, and Contacts APIs are free regardless of Lark plan; Basic-tier usage is tallied and heavy users may need a higher-tier plan; Advanced APIs require a purchased quota package; sensitive scopes require app version submission and tenant administrator review; a test tenant/test app is available for development.",
+    "source_url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+    "quote": "Manually approved scope: After requesting, you need to create an app version and submit it for review, and it will take effect only after the administrator reviews and approves it.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/install-and-use-document-search-mcp",
+    "source_url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/install-and-use-document-search-mcp",
+    "quote": "lark-mcp is an MCP toolkit provided by the Lark Open Platform.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=lark",
+    "quote": "{\"items\": [{\"slug\": \"lark\", \"name\": \"Lark\", \"app\": \"Lark\", \"tools_count\": 451}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Tiered per API/app/tenant: levels 1-3 at 10/20/100 requests per minute; level 4 at 1000 requests/min and 50 requests/sec; custom bots 100/min and 5/sec; HTTP 429 with x-ogw-ratelimit-reset.",
+    "source_url": "https://open.larksuite.com/document/server-docs/getting-started/frequency-control",
+    "quote": "The current API has a limit of 1000 times per minute and 50 times per second per application and tenant",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://open.larksuite.com/document/server-docs/event-subscription/overview-of-event-subscription",
+    "quote": "Through event subscription, applications can respond to change events in Lark in a timely manner.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+    "quote": "With the Test Companies functionality, the app created by the developer can be divided into official version and test version.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Event subscriptions are versioned v1.0 and v2.0, with v2.0 recommended; no general API deprecation/sunset policy appears in the provided sources.",
+    "source_url": "https://open.larksuite.com/document/server-docs/event-subscription/overview-of-event-subscription",
+    "quote": "Open Platform provides two versions of events: v1.0 and v2.0. We recommend you to subscribe to the v2.0 events, as they offer more comprehensive and reasonable settings.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Lark publishes a broad REST server API with documented access tokens, event subscriptions, and a large server API list. Core auth, event subscription, and Contacts APIs are free regardless of Lark plan, and a test tenant/test app supports development. Sensitive scopes require tenant-admin review and heavy or Advanced API usage requires paid plans or quota packages, but there is documented self-serve access rather than partner-only or sales-gated onboarding.",
+  "main_blocker": "Sensitive scopes require tenant admin approval; paid quota for heavy API usage",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official SDK languages could not be confirmed from the fetched SOURCES; a search snippet mentions Java/Golang/NodeJS SDKs but that page was not included in the evidence bundle.",
+    "The Lark-MCP FAQ lists 'Does Lark-MCP support remote SSE/Streamable HTTP endpoints?' but the provided text does not include an answer.",
+    "No general API deprecation/sunset policy was found in the provided sources; only event versioning (v1.0 vs v2.0) is documented in the evidence.",
+    "Community MCP servers were not verified; no GitHub or MCP registry results were supplied.",
+    "It is unclear whether a developer can create a free Lark tenant/app without any paid plan; the evidence only states core APIs are free regardless of plan and that a test tenant exists.",
+    "Rate-limit levels beyond the excerpts (level 5 and higher) are truncated in the provided source text.",
+    "App-name ambiguity was disambiguated using the input hint open.larksuite.com, which points to Lark/Larksuite rather than unrelated products named Lark."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "hint": "open.larksuite.com",
+      "description": null,
+      "source_file": "03-communications-and-messaging.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://open.larksuite.com/document/server-docs/getting-started/frequency-control",
+        "title": "Rate limits - Server API - Documentation - Lark Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/install-and-use-document-search-mcp",
+        "title": "Install and use document search MCP - Lark CLI - Documentation - Lark Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/use_cases",
+        "title": "FAQs - Lark CLI - Documentation - Lark Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://open.larksuite.com/document/server-docs/event-subscription/overview-of-event-subscription",
+        "title": "Event Overview - Server API - Documentation - Lark Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+        "title": "API Explorer Guide - Developer Guides - Documentation - Lark Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://open.larksuite.com/document",
+        "title": "Documentation - Lark Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1064
+      },
+      {
+        "url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list",
+        "title": "Server API list - Server API - Documentation - Lark Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/access-credentials",
+        "title": "Access Tokens: Who am I? - Documentation - Lark Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3768
+      },
+      {
+        "url": "https://open.larksuite.com/document/ukTMukTMukTM/uMTNz4yM1MjLzUzM",
+        "title": "Obtain access tokens - Server API - Documentation - Lark Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing?lang=en-US",
+        "title": "Adjusting API call limits for custom apps - Server API - Documentation - Lark Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://open.larksuite.com",
+        "title": "Lark 开放平台",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 9
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://open.larksuite.com"
+    ],
+    "refinement": {},
+    "research_seconds": 109.9
+  }
+}

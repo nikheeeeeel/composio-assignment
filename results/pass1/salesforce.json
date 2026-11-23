@@ -1,0 +1,262 @@
+{
+  "app": "Salesforce",
+  "category": "CRM and Sales",
+  "one_line_description": {
+    "value": "Salesforce is an AI CRM platform.",
+    "source_url": "https://www.salesforce.com/in/?ir=1",
+    "quote": "Salesforce: The #1 AI CRM",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "quote": "For a client application to access REST API resources, it must be authorized as a safe visitor.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "quote": "To successfully send requests, REST API requires an access token obtained by authentication.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Read-write SObject record operations (create, read, update, delete).",
+    "source_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+    "quote": "SObject Operations: Read, create, update, and delete Salesforce records with tools that respect field-level security and sharing rules",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.salesforce.com/docs/apis",
+    "source_url": "https://developer.salesforce.com/docs/apis",
+    "quote": "Explore developer guides and reference docs for Salesforce APIs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "quote": "For an external client app or connected app to request access, it must be integrated with your org’s REST API using the OAuth 2.0 protocol.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "quote": "Complete these steps in your Developer Edition org or development sandbox.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Developer Edition or sandbox for development; production API access depends on an API-enabled edition/license and purchased API Call Add-Ons. Hosted MCP endpoint is configured per org and requires Flex Credits.",
+    "source_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+    "quote": "Salesforce Hosted MCP Servers are intended only for customers with Flex Credits and you may be billed for server usage.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+    "source_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+    "quote": "Salesforce Hosted MCP Servers give AI agents a secure, governed way to interact with Salesforce data and automation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=salesforce",
+    "quote": "{\"slug\": \"salesforce\", \"name\": \"Salesforce\", \"app\": \"Salesforce\", \"tools_count\": 556}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Developer Edition: 15,000 API calls per 24-hour period.",
+    "source_url": "https://developer.salesforce.com/docs/platform/salesforce-app-limits-cheatsheet/guide/salesforce-app-limits-platform-api.html",
+    "quote": "Developer Edition | N/A | 15,000",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/ens-get-started.html",
+    "quote": "Supply an HTTPS callback URL, also known as a webhook, for your application.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "quote": "Complete these steps in your Developer Edition org or development sandbox.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned REST endpoints (for example, /services/data/v68.0/); deprecation/sunset policy not found in fetched sources.",
+    "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+    "quote": "curl https://MyDomainName.my.salesforce.com/services/data/v68.0/sobjects/Account",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Salesforce publishes official REST API documentation, OAuth 2.0 authentication, and a Developer Edition/sandbox development route with documented API allocations. The API supports read-write SObject operations, and Hosted MCP servers are also documented. Production licensing and MCP Flex Credits are commercial gates, not barriers to self-serve development.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "OAuth scopes documentation was indexed but its page text was not included in SOURCES; oauth_scopes_documented is left not_found.",
+    "No fetched source lists official SDK languages; sdk_languages is left not_found.",
+    "No community MCP servers were identified in the evidence bundle; community_mcp_servers is left not_found.",
+    "Deprecation/sunset policy pages were indexed but not fetched; only versioned endpoint evidence is recorded.",
+    "The fetched developer docs do not explicitly state that Developer Edition signup is free/self-serve; access_model is inferred from Developer Edition and sandbox documentation.",
+    "The Hosted MCP endpoint is configured per org and not published as a single URL; the official docs URL is used for official_mcp_server.",
+    "Composio catalog contains multiple Salesforce toolkits (salesforce, salesforce_data_360, salesforce_service_cloud); the exact slug 'salesforce' was used."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Salesforce",
+      "category": "CRM and Sales",
+      "hint": "salesforce.com",
+      "description": null,
+      "source_file": "01-crm-and-sales.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.salesforce.com/docs/platform/salesforce-app-limits-cheatsheet/guide/salesforce-app-limits-platform-api.html",
+        "title": "API Request Limits and Allocations | Salesforce Developer Limits and Allocations Quick Reference | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+        "title": "Get Started | Hosted MCP Servers | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3053
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html",
+        "title": "MCP Solutions | Headless Agentforce Development | Agentforce Developer Guide | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4041
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/ens-get-started.html",
+        "title": "Get Started with Event Notification Service | APIs | Marketing Cloud Engagement APIs and Programmatic Languages | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1574
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/platform/api/guide/implementation-considerations.html",
+        "title": "Implementation Considerations | SOAP API Developer Guide | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/apis",
+        "title": "API Library | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.salesforce.com/docs",
+        "title": "Developer Documentation | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+        "title": "Step Two: Set Up Authentication | Quick Start | REST API Developer Guide | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4436
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+        "title": "Authorization Through External Client Apps or Connected Apps and OAuth 2.0 | Introduction to REST API | REST API Developer Guide | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3833
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest_compatible_editions.htm",
+        "title": "Supported Editions and Required Permissions | Introduction to REST API | REST API Developer Guide | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1719
+      },
+      {
+        "url": "https://www.salesforce.com/in/?ir=1",
+        "title": "Salesforce: The #1 AI CRM | Salesforce IN",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://salesforce.com"
+    ],
+    "refinement": {},
+    "research_seconds": 225.19
+  }
+}

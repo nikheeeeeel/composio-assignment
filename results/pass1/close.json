@@ -1,0 +1,265 @@
+{
+  "app": "Close",
+  "category": "CRM and Sales",
+  "one_line_description": {
+    "value": "Close is a CRM with calling, email, SMS, automation, and AI built in for sales teams.",
+    "source_url": "https://close.com",
+    "quote": "Calling, email, SMS, automation, and AI are built in, so your team can reach more leads, follow up faster, and close more deals.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.close.com/",
+    "quote": "Whether you're a Close customer automating your sales process or a partner building an integration, the Close Developer Platform gives everything you or your AI agents need.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.close.com/api/overview",
+    "quote": "Close uses industry-standard REST conventions with predictable URL structures, standard HTTP methods, and JSON request/response bodies.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST/JSON, read-write across leads, contacts, opportunities, activities, custom fields, tasks, webhooks, and a 30-day event log; endpoint count not published",
+    "source_url": "https://developer.close.com/",
+    "quote": "Push leads, contacts, activities, and custom data into Close from your website or other systems via the REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.close.com/",
+    "source_url": "https://developer.close.com/",
+    "quote": "Full endpoint docs with schemas, examples, and an interactive API explorer.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "basic",
+      "bearer_token"
+    ],
+    "source_url": "https://developer.close.com/api/overview",
+    "quote": "- API Keys — Best for scripts, internal tools, and server-side integrations. Use HTTP Basic Auth with your API key as the username and an empty password. - OAuth 2.0 — Best for user-facing integrations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developer.close.com/api/overview/oauth-authentication",
+    "quote": "If your application has `offline_access` scope `refresh_token` property will be present in the response and you can refresh Access Token (See below).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://developer.close.com/api/overview/api-key-authentication/",
+    "quote": "API keys can be created and managed in your Close account under Settings → Developer → API Keys.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API keys are generated self-serve from an existing Close account (Settings → Developer → API Keys) scoped to a user/organization; API keys suit internal scripts while OAuth 2.0 apps are the route for third-party integrations. No sales contact, partner approval, or app review is documented, but no pricing page or free developer tier was captured, so a paid Close subscription may be required before keys can be minted.",
+    "source_url": "https://developer.close.com/api/overview/api-key-authentication/",
+    "quote": "API keys are best used for scripts and simple integrations that are internal to your organization. Alternatively, see Authentication with OAuth instead.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.close.com/mcp",
+    "source_url": "https://developer.close.com/mcp/",
+    "quote": "The MCP server URL is `https://mcp.close.com/mcp` and has \"HTTP Streamable\" and \"OAuth 2.0 Dynamic Client Registration (DCR)\" support.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=close",
+    "quote": "{\"slug\": \"close\", \"name\": \"Close\", \"app\": \"Close\", \"tools_count\": 75}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per endpoint group, enforced per API key and per organization (org limit is 3x the API key limit); example 20 RPS per API key / 60 RPS per organization; 429 responses include RateLimit and retry-after headers",
+    "source_url": "https://developer.close.com/api/overview/rate-limits",
+    "quote": "if the API key rate limit maximum requests per second (RPS) is 20 RPS, the organization wide limit would be 60 RPS for that same endpoint group.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.close.com/api/overview",
+    "quote": "Webhooks — Subscribe to events and receive POST notifications when data changes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [],
+    "source_url": "https://developer.close.com/",
+    "quote": "Community libraries for Python, Node.js, Ruby, PHP, Go, and more.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned base URL https://api.close.com/api/v1; an API changelog publishes updates and deprecations; no formal versioning/sunset policy text was captured in the evidence",
+    "source_url": "https://developer.close.com/",
+    "quote": "API Changelog — Latest API updates and deprecations.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Close documents a broad REST API (base https://api.close.com/api/v1) with API-key/Basic auth and OAuth 2.0, webhooks, a 30-day event log, and an official MCP server at https://mcp.close.com/mcp. Credentials are self-serve from inside a Close account, with no partner approval or app review documented for API keys. The remaining gate is that an existing Close account/subscription appears necessary to mint API keys, and no free developer tier or pricing evidence was captured, so this lands at moderate rather than easy.",
+  "main_blocker": "Requires an existing Close account/subscription to create API keys (no free developer tier evidenced)",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Pricing page was never captured (pricing search returned only partners.close.com and a glossary page); whether Close offers a free trial or free developer edition permitting API key creation is unevidenced, so access_model is medium confidence.",
+    "No documented sandbox/test environment appears in the fetched sources; help.close.com's secondary-organization page was indexed for the sandbox query but not fetched, so sandbox_or_test_env is left not_found.",
+    "Full OAuth scope list was not captured; only all.full_access and offline_access appear in token examples, so scope granularity/permission model is unverified.",
+    "The API changelog/versioning pages were indexed but not fetched, so any formal deprecation/sunset timeline or version-negotiation scheme is unverified.",
+    "No official vendor SDKs were found; the API Clients page lists only community libraries, so sdk_languages is recorded as an empty list.",
+    "No endpoint/resource count is published in the fetched documentation, so api_breadth is qualitative rather than numeric.",
+    "No community/third-party MCP servers were found in the provided registry or GitHub checks; community_mcp_servers is not_found rather than an asserted empty list."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Close",
+      "category": "CRM and Sales",
+      "hint": "close.com",
+      "description": null,
+      "source_file": "01-crm-and-sales.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.close.com/",
+        "title": "Close Developer Platform",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1865
+      },
+      {
+        "url": "https://developer.close.com/api/overview",
+        "title": "API Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2194
+      },
+      {
+        "url": "https://developer.close.com/api/overview/oauth-authentication",
+        "title": "Authentication with OAuth",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3943
+      },
+      {
+        "url": "https://developer.close.com/api/overview/api-key-authentication/",
+        "title": "Authentication with API keys",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1501
+      },
+      {
+        "url": "https://partners.close.com/",
+        "title": "Close Partner Directory",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4998
+      },
+      {
+        "url": "https://www.close.com/de/sales/glossary/big-ticket-items",
+        "title": "Big Ticket Items",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.close.com/api/overview/rate-limits",
+        "title": "Rate Limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3213
+      },
+      {
+        "url": "https://developer.close.com/mcp/",
+        "title": "Close MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.close.com/mcp/tools",
+        "title": "Close MCP Tools",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.close.com/api/resources/webhooks",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://close.com",
+        "title": "Close CRM | The CRM That Does the Work",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 42,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://close.com"
+    ],
+    "refinement": {},
+    "research_seconds": 86.77
+  }
+}

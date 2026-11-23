@@ -1,0 +1,73 @@
+====================================================================================================
+CATEGORY 07 - Developer, Infra and Data platforms
+====================================================================================================
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   9 easy, 1 moderate, 0 hard, 0 blocked.
+   Easy: Cloudflare, GitHub, MongoDB Atlas, Neo4j, Netlify, Sentry, Snowflake, Supabase, Vercel.
+   Gated / blocked: Datadog.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       9  ##################
+     moderate   1  ##
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         8  ################
+     unknown                 1  ##
+     self_serve_trial        1  ##
+
+   Auth methods (apps can have several): oauth2 9, bearer_token 7, api_key 5, basic 2, jwt 2, other 2
+   Most common auth combination: api_key+bearer_token+oauth2 x2, bearer_token+oauth2 x2, api_key+oauth2 x1
+   API shape: REST 10
+
+   Official MCP server: 10/10 (Cloudflare, Datadog, GitHub, MongoDB Atlas, Neo4j, Netlify, Sentry, Snowflake, Supabase, Vercel).
+   Missing official MCP: none.
+   Composio toolkit match: 9/10 (Cloudflare, Datadog, GitHub, Neo4j, Netlify, Sentry, Snowflake, Supabase, Vercel).
+   Composio gaps: MongoDB Atlas.
+   Human outreach required: 0/10 (none).
+
+   Evidence: 13.7/17 claims sourced on average (min 12); 9.8 official pages/app (min 9); 6.2 open questions/app (max 9 for Neo4j).
+   Confidence mix: high 105 (62%), medium 30 (18%), low 5 (3%), not_found 30 (18%).
+
+3. ANALYST READ
+   Developer infrastructure is the most API-native category: all ten are REST, all ten have an
+   official MCP server, nine are easy and nine are in Composio. Auth is broad but conventional
+   (OAuth2, bearer, API key, JWT). The only moderate is Datadog, where the first pass could not
+   establish whether a free/trial credential path exists. Sentry is easy because token auth is
+   self-serve even though OAuth app registration requires partnership approval.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - This is the best category for immediate toolkit expansion.
+   - Verify Datadog's free/trial path before committing; its access model is the only unknown here.
+   - Add MongoDB Atlas, the one Composio gap in an otherwise near-complete category.
+   - Reuse OAuth2 and service-token patterns across Cloudflare, Vercel, Supabase, Sentry and friends.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Cloudflare                easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    14/9     
+GitHub                    easy      self_serve_free       oauth2,api_key,basic,beare...  Y    Y     -    14/10    
+MongoDB Atlas             easy      self_serve_free       oauth2,api_key,other           Y    N     -    12/10    
+Neo4j                     easy      self_serve_free       oauth2,bearer_token,basic      Y    Y     -    13/10    
+Netlify                   easy      self_serve_free       oauth2,bearer_token            Y    Y     -    13/9     
+Sentry                    easy      self_serve_free       oauth2,bearer_token            Y    Y     -    15/9     
+Snowflake                 easy      self_serve_trial      oauth2,jwt,other               Y    Y     -    12/10    
+Supabase                  easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    16/10    
+Vercel                    easy      self_serve_free       bearer_token                   Y    Y     -    15/10    
+Datadog                   moderate  unknown               api_key,oauth2                 Y    Y     -    13/11    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Datadog [moderate, access=unknown, outreach=no]: Free/trial vs paid-plan access not documented
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - Unresolved access model: Datadog.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.

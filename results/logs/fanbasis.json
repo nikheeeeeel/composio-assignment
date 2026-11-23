@@ -1,0 +1,411 @@
+{
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "slug": "fanbasis",
+  "started_at": "2026-11-23T15:53:33.081307+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:58:18.525617+00:00",
+  "duration_s": 285.44,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/fanbasis.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"fanbasis\" pricing plans API access enterprise developer site:fanbasis.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.81,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"fanbasis\" official API documentation developer reference site:fanbasis.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 9.027,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"fanbasis\" MCP server official Model Context Protocol site:fanbasis.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 9.038,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"fanbasis\" API authentication OAuth API key documentation site:fanbasis.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 12.604,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"fanbasis\" official SDK client libraries developer site:fanbasis.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.801,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"fanbasis\" API webhooks events callbacks documentation site:fanbasis.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.55,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"fanbasis\" API sandbox test environment staging developer site:fanbasis.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.845,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"fanbasis\" API rate limits throttling quota documentation site:fanbasis.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 16.389,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"fanbasis\" API versioning deprecation sunset policy site:fanbasis.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 10.221,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "fanbasis"
+      },
+      "ok": true,
+      "duration_s": 0.037,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "fanbasis MCP"
+      },
+      "ok": true,
+      "duration_s": 0.849,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://fanbasis.com/pricing",
+          "https://fanbasis.com/docs"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 2.232,
+      "result_count": 2,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://dev-docs.fanbasis.com/login.html",
+          "https://support.fanbasis.com/",
+          "https://feedback.fanbasis.com/legal/data-processing-agreement.pdf",
+          "https://affiliates-demo.fanbasis.com/",
+          "https://fanbasis.com"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 3.123,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"fanbasis\" API authentication OAuth API key documentation",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.069,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 15,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"fanbasis\" developer authentication guide",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.704,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 16,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"fanbasis\" official MCP server",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.469,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 17,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"fanbasis\" model context protocol server vendor",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.814,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 18,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://commasdocs.com/",
+          "https://www.npmjs.com/package/commas-cli"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 6.81,
+      "result_count": 2,
+      "error": null
+    }
+  ],
+  "tool_call_count": 18,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://fanbasis.com/pricing",
+      "title": "Commas | Where you make money on the internet",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://fanbasis.com/docs",
+      "title": "Commas | Where you make money on the internet",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://dev-docs.fanbasis.com/login.html",
+      "title": "Login - FanBasis API Docsv3",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 361
+    },
+    {
+      "url": "https://support.fanbasis.com/",
+      "title": "FanBasis Knowledge Base",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 136
+    },
+    {
+      "url": "https://feedback.fanbasis.com/legal/data-processing-agreement.pdf",
+      "title": "Data Processing Agreement | Productlane",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://affiliates-demo.fanbasis.com/",
+      "title": "Affiliate Center",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3941
+    },
+    {
+      "url": "https://fanbasis.com",
+      "title": "Commas | Where you make money on the internet",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://commasdocs.com/",
+      "title": "Commas API Reference",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 4999
+    },
+    {
+      "url": "https://www.npmjs.com/package/commas-cli",
+      "title": "commas-cli",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:fanbasis",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 55.627,
+      "tokens": {
+        "input": 10598,
+        "output": 1729,
+        "reasoning": 2827
+      },
+      "cost_usd": 0.00345864
+    },
+    {
+      "purpose": "research:fanbasis:schema-retry",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 37.192,
+      "tokens": {
+        "input": 10703,
+        "output": 1660,
+        "reasoning": 1908
+      },
+      "cost_usd": 0.002997
+    },
+    {
+      "purpose": "research:fanbasis",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 142.589,
+      "tokens": {
+        "input": 13161,
+        "output": 1958,
+        "reasoning": 9560
+      },
+      "cost_usd": 0.00710796
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 34462,
+      "output": 5347,
+      "reasoning": 14295
+    },
+    "cost_usd": 0.0135636,
+    "llm_calls": 3
+  }
+}

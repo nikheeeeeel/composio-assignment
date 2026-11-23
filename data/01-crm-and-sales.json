@@ -1,0 +1,63 @@
+{
+  "category": "CRM and Sales",
+  "categoryNumber": 1,
+  "source": {
+    "spreadsheet": "composio-research",
+    "sheet": "Sheet1",
+    "url": "https://docs.google.com/spreadsheets/d/18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8/edit"
+  },
+  "appCount": 10,
+  "apps": [
+    {
+      "number": 1,
+      "app": "Salesforce",
+      "hint": "salesforce.com"
+    },
+    {
+      "number": 2,
+      "app": "HubSpot",
+      "hint": "hubspot.com"
+    },
+    {
+      "number": 3,
+      "app": "Pipedrive",
+      "hint": "pipedrive.com"
+    },
+    {
+      "number": 4,
+      "app": "Attio",
+      "hint": "attio.com"
+    },
+    {
+      "number": 5,
+      "app": "Twenty",
+      "hint": "twenty.com",
+      "note": "open-source CRM"
+    },
+    {
+      "number": 6,
+      "app": "Podio",
+      "hint": "podio.com"
+    },
+    {
+      "number": 7,
+      "app": "Zoho CRM",
+      "hint": "zoho.com/crm"
+    },
+    {
+      "number": 8,
+      "app": "Close",
+      "hint": "close.com"
+    },
+    {
+      "number": 9,
+      "app": "Copper",
+      "hint": "copper.com"
+    },
+    {
+      "number": 10,
+      "app": "DealCloud",
+      "hint": "api.docs.dealcloud.com"
+    }
+  ]
+}

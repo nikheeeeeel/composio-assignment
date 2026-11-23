@@ -1,0 +1,328 @@
+{
+  "app": "Apify",
+  "category": "Data, SEO and Scraping",
+  "slug": "apify",
+  "started_at": "2026-11-23T15:55:36.437133+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:57:03.039733+00:00",
+  "duration_s": 86.6,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/apify.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Apify\" MCP server official Model Context Protocol site:apify.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.494,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Apify\" API rate limits throttling quota documentation site:apify.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.593,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Apify\" API webhooks events callbacks documentation site:apify.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.75,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Apify\" API authentication OAuth API key documentation site:apify.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 6.393,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Apify\" pricing plans API access enterprise developer site:apify.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.225,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Apify\" API sandbox test environment staging developer site:apify.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.05,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Apify\" official API documentation developer reference site:apify.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 8.33,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Apify\" official SDK client libraries developer site:apify.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.293,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Apify\" API versioning deprecation sunset policy site:apify.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.918,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Apify"
+      },
+      "ok": true,
+      "duration_s": 0.039,
+      "result_count": 3,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Apify MCP"
+      },
+      "ok": true,
+      "duration_s": 0.844,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://docs.apify.com",
+          "https://docs.apify.com/api",
+          "https://docs.apify.com/api/v2",
+          "https://docs.apify.com/integrations/api",
+          "https://docs.apify.com/api/llms.txt"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 6.167,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://docs.apify.com/actors/running/actors-in-store",
+          "https://docs.apify.com/security/architecture.md",
+          "https://docs.apify.com/mcp",
+          "https://docs.apify.com/integrations/claude-ai",
+          "https://docs.apify.com/integrations/webhooks/events"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 6.326,
+      "result_count": 5,
+      "error": null
+    }
+  ],
+  "tool_call_count": 13,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://docs.apify.com",
+      "title": "Apify Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.apify.com/api",
+      "title": "Apify API documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4365
+    },
+    {
+      "url": "https://docs.apify.com/api/v2",
+      "title": "Apify API",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.apify.com/integrations/api",
+      "title": "API integration",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.apify.com/api/llms.txt",
+      "title": "Apify API documentation | Apify Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3492
+    },
+    {
+      "url": "https://docs.apify.com/actors/running/actors-in-store",
+      "title": "Actors in Store",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.apify.com/security/architecture.md",
+      "title": "Platform architecture",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.apify.com/mcp",
+      "title": "Apify MCP server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.apify.com/integrations/claude-ai",
+      "title": "Claude.ai integration",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.apify.com/integrations/webhooks/events",
+      "title": "Events types for webhooks",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2540
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Apify",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 64.23,
+      "tokens": {
+        "input": 14120,
+        "output": 1608,
+        "reasoning": 5272
+      },
+      "cost_usd": 0.0049968
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 14120,
+      "output": 1608,
+      "reasoning": 5272
+    },
+    "cost_usd": 0.0049968,
+    "llm_calls": 1
+  }
+}

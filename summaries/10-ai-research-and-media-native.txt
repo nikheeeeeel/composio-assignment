@@ -1,0 +1,80 @@
+====================================================================================================
+CATEGORY 10 - AI, Research and Media-native
+====================================================================================================
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   5 easy, 3 moderate, 1 hard, 1 blocked.
+   Easy: Consensus, Fathom, Grain, Reducto, YouTube Transcript.
+   Gated / blocked: Devin, Mermaid CLI, NotebookLM, Otter AI, higgsfield.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       5  ##########
+     moderate   3  ######
+     hard       1  ##
+     blocked    1  ##
+
+   Access model mix:
+     self_serve_free         5  ##########
+     paid_plan_required      2  ####
+     no_api                  1  ##
+     self_serve_trial        1  ##
+     contact_sales           1  ##
+
+   Auth methods (apps can have several): api_key 7, bearer_token 6, oauth2 6
+   Most common auth combination: api_key+bearer_token+oauth2 x3, api_key x2, bearer_token+oauth2 x2
+   API shape: REST 8, null 2
+
+   Official MCP server: 8/10 (Consensus, Devin, Fathom, Grain, Otter AI, Reducto, YouTube Transcript, higgsfield).
+   Missing official MCP: Mermaid CLI, NotebookLM.
+   Composio toolkit match: 8/10 (Consensus, Devin, Fathom, Grain, NotebookLM, Otter AI, YouTube Transcript, higgsfield).
+   Composio gaps: Mermaid CLI, Reducto.
+   Human outreach required: 1/10 (Otter AI).
+
+   Evidence: 12.5/17 claims sourced on average (min 9); 9.2 official pages/app (min 6); 6.8 open questions/app (max 10 for Fathom).
+   Confidence mix: high 100 (59%), medium 22 (13%), low 13 (8%), not_found 35 (21%).
+
+3. ANALYST READ
+   AI/media-native is the most heterogeneous category: five easy native-AI tools, three
+   moderate enterprise/usage-gated products, one hard enterprise API, and one blocked CLI.
+   MCP is strong (eight of ten) but not universal; NotebookLM and Mermaid CLI are missing.
+   Auth is mixed (API key seven, OAuth2 six, bearer six), and scopes/sandbox documentation is
+   often absent. This is the category most likely to change quarter to quarter because
+   preview APIs, prepaid credits and enterprise gating move quickly.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Prioritize Consensus, Fathom, Grain, Reducto and YouTube Transcript.
+   - Devin and higgsfield are paid/prepaid; NotebookLM is enterprise plus preview API.
+   - Otter is sales-led; Mermaid CLI is not an API toolkit at all.
+   - Re-verify preview/enterprise terms before building; this category changes quickly.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Consensus                 easy      self_serve_free       api_key                        Y    Y     -    12/8     
+Fathom                    easy      self_serve_free       api_key,oauth2                 Y    Y     -    11/8     
+Grain                     easy      self_serve_free       oauth2,bearer_token            Y    Y     -    14/7     
+Reducto                   easy      self_serve_free       api_key,bearer_token,oauth2    Y    N     -    14/11    
+YouTube Transcript        easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    11/9     
+Devin                     moderate  paid_plan_required    api_key,bearer_token           Y    Y     -    14/11    
+higgsfield                moderate  paid_plan_required    api_key                        Y    Y     -    16/11    
+NotebookLM                moderate  self_serve_trial      oauth2,bearer_token            -    Y     -    11/12    
+Otter AI                  hard      contact_sales         oauth2,api_key,bearer_token    Y    Y     Y    13/6     
+Mermaid CLI               blocked   no_api                -                              -    N     -    9/9      
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Devin [moderate, access=paid_plan_required, outreach=no]: Paid Devin plan/seat required before API credentials; no free API tier documented
+- higgsfield [moderate, access=paid_plan_required, outreach=no]: Prepaid USD balance/top-up required to use the API; no documented free API tier
+- NotebookLM [moderate, access=self_serve_trial, outreach=no]: Enterprise subscription/license plus Preview (v1alpha) API
+- Otter AI [hard, access=contact_sales, outreach=yes]: Public API restricted to Enterprise workspaces and enabled via Otter account manager
+- Mermaid CLI [blocked, access=no_api, outreach=no]: No hosted/public API — local CLI tool only.
+
+7. WATCHLIST / CAVEATS
+   - Mermaid CLI: low evidence (9/17 claims sourced, 9 official pages). Re-check before trusting the verdict.
+   - No official MCP found: Mermaid CLI, NotebookLM. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.

@@ -1,0 +1,285 @@
+{
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "one_line_description": {
+    "value": "Adobe Commerce (formerly Magento) is an ecommerce platform for B2B and B2C with API-first extensibility and backend integration.",
+    "source_url": "https://developer.adobe.com/commerce",
+    "quote": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce to support multichannel, global commerce for B2B and B2C, and integrate with backend systems.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-49584",
+    "quote": "Alternatively, use Adobe Commerce’s REST or SOAP APIs for external integration with your translation service.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+    "quote": "The application uses the `POST /oauth/token/request` REST API to ask for a request token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Integration-scoped access to all or a subset of commerce resources; endpoint count not documented in evidence.",
+    "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+    "quote": "An integration defines which resources the application can access. The application can be granted access to all resources or a customized subset of resources.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.adobe.com/commerce",
+    "source_url": "https://developer.adobe.com/commerce",
+    "quote": "Adobe provides developers with software, tools, and services to customize and extend Adobe Commerce to support multichannel, global commerce for B2B and B2C, and integrate with backend systems.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "other"
+    ],
+    "source_url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+    "quote": "OAuth authentication with Adobe Commerce and Magento Open Source is based on OAuth 1.0a, an open standard for secure API authentication.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://business.adobe.com/products/commerce/magento.html",
+    "quote": "Magento Open Source is supported by Adobe and available on GitHub for developers looking for essential tools to create digital storefronts.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Magento Open Source is available on GitHub for developers; Adobe Commerce Cloud/enterprise access terms are not detailed in the evidence.",
+    "source_url": "https://business.adobe.com/products/commerce/magento.html",
+    "quote": "Magento Open Source is supported by Adobe and available on GitHub for developers looking for essential tools to create digital storefronts.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Magento+%28Adobe+Commerce%29",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Magento (Adobe Commerce)\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Adobe Commerce releases are versioned (e.g., 2.4.9 in the CLI reference); API deprecation/sunset policy not found in evidence.",
+    "source_url": "https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises",
+    "quote": "Version: 2.4.9",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Adobe publishes public developer documentation and REST/SOAP web APIs, and Magento Open Source is available on GitHub for self-serve developer use. API authentication uses OAuth 1.0a integrations, and no sales-contact, partner, or app-review gate is documented in the evidence.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official MCP server endpoint not found; Adobe's German product page mentions an 'MCP-Ebene' (MCP layer) but provides no vendor MCP server URL.",
+    "A GitHub repo (https://github.com/magenable/magento-adobe-commerce-mcp-server) appeared in search results but was not fetched in SOURCES, so community MCP support is unverified.",
+    "Rate limits are not documented in the fetched sources.",
+    "Webhooks/event callbacks are not documented in the fetched sources; the developer portal only mentions 'Event-driven integrations'.",
+    "No documented sandbox/test environment was found; a community post discusses a plugin's lack of a test mode, not a platform sandbox.",
+    "No official vendor-maintained SDKs were found in the evidence.",
+    "OAuth scopes/permissions documentation was not confirmed; integrations are documented as resource-scoped, but 'scopes' are not named.",
+    "Exact REST/SOAP API endpoint/resource count is not in the evidence.",
+    "Magento vs Adobe Commerce ambiguity: Magento Open Source is the open-source/self-serve path, while Adobe Commerce Cloud/enterprise access terms are not detailed in the evidence.",
+    "Auth mechanism is OAuth 1.0a (mapped to 'other'), not OAuth2; standalone bearer tokens can be enabled per S5 but are not included in the auth_methods claim."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Magento (Adobe Commerce)",
+      "category": "Ecommerce",
+      "hint": "developer.adobe.com/commerce",
+      "description": null,
+      "source_file": "05-ecommerce.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 16,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.adobe.com/commerce",
+        "title": ":experiencecloud:",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1799
+      },
+      {
+        "url": "https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises",
+        "title": "bin/magento (Adobe Commerce on-premises) | Adobe Commerce",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-49584",
+        "title": "AEM Translation Connector compatibility with Adobe Commerce (Magento 2) | Adobe Firefly",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2093
+      },
+      {
+        "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+        "title": "OAuth-Based Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+        "title": "Token-Based Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://business.adobe.com/products/commerce/magento.html",
+        "title": "From Magento to Adobe Commerce | Adobe",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3398
+      },
+      {
+        "url": "https://business.adobe.com/products/commerce/compare.html",
+        "title": "eCommerce Platform Feature Comparison | Adobe Commerce",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3039
+      },
+      {
+        "url": "https://business.adobe.com/at/products/magento/magento-commerce.html",
+        "title": "Adobe Commerce (Magento): B2B- und B2C-Unternehmenslösungen | Adobe",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://partners.adobe.com/s/directory/solution/scandiweb",
+        "title": "scandiweb | Adobe Solution Partner Directory",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://community.adobe.com/questions-9/plugin-submission-related-query-1304925",
+        "title": "Plugin Submission Related Query | Community",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2025-10-03T16:30:27.000Z",
+        "chars": 1748
+      },
+      {
+        "url": "https://www.aiondata.io/mcp-servers/magento",
+        "title": "Magento & Adobe Commerce MCP Server Options | AIONDATA",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": "2026-09-27T15:53:54.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://nexatron.io/connectors/adobe-commerce-magento",
+        "title": "Adobe Commerce / Magento MCP Server for Claude & ChatGPT",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Magento (Adobe Commerce)\" official MCP server",
+        "\"Magento (Adobe Commerce)\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://www.aiondata.io/mcp-servers/magento",
+        "https://nexatron.io/connectors/adobe-commerce-magento"
+      ],
+      "tool_calls_after": 16
+    },
+    "research_seconds": 885.84
+  }
+}

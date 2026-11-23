@@ -1,0 +1,253 @@
+{
+  "app": "Coda",
+  "category": "Productivity and Project Management",
+  "one_line_description": {
+    "value": "Coda provides Coda Docs and a public REST API for programmatically interacting with documents and tables.",
+    "source_url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API",
+    "quote": "The Coda API is a RESTful API that lets you programmatically interact with Coda Docs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API",
+    "quote": "Coda has a public API available to all users.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API",
+    "quote": "The Coda API is a RESTful API that lets you programmatically interact with Coda Docs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write REST API covering documents, pages, tables, rows, formulas, and controls.",
+    "source_url": "https://coda.io/developers",
+    "quote": "List and search documents - Create new docs and copy existing ones - Share and publish docs - Discover pages, tables, formulas, and controls - Read, insert, upsert, update, and delete rows",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://coda.io/developers",
+    "source_url": "https://coda.io/developers",
+    "quote": "Superhuman Docs API (v1) Reference Documentation",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+    "quote": "| ChatGPT | OAuth 2 | | Claude (including Claude Code, Claude Cowork, and Claude Chat) | OAuth 2 | | CoPilot Studio | Personal Access Tokens |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://help.coda.io/hc/en-us/articles/44722769665549-Security-recommendations-for-the-Coda-MCP",
+    "quote": "Note that this form of Auth currently only supports the mcp:all scope - more granular scopes such as accessing specific workspaces/folders with read/write permissions will be coming soon.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API",
+    "quote": "Coda has a public API available to all users.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "No gate is documented for the public REST API; Coda states it is available to all users.",
+    "source_url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API",
+    "quote": "Coda has a public API available to all users.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://coda.io/apis/mcp",
+    "source_url": "https://help.coda.io/hc/en-us/articles/44722769665549-Security-recommendations-for-the-Coda-MCP",
+    "quote": "our MCP is hosted on `coda.io` at https://coda.io/apis/mcp.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=coda",
+    "quote": "{\"slug\": \"coda\", \"name\": \"Coda\", \"app\": \"Coda\", \"tools_count\": 109}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per-minute request limit; exact numeric threshold not documented.",
+    "source_url": "https://coda.io/developers",
+    "quote": "The Superhuman Docs API sets a reasonable limit on the number of requests that can be made per minute. Once this limit is reached, calls to the API will start returning errors with an HTTP status code of 429.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://help.coda.io/hc/en-us/articles/39555972006541-Create-webhook-triggered-automations",
+    "quote": "Webhook-triggered automations in Coda let you seamlessly connect your docs to external apps and services, automating workflows in real time.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "TypeScript"
+    ],
+    "source_url": "https://coda.io/packs/build/latest/reference/sdk/index.md",
+    "quote": "This reference documentation is automatically generated from TypeScript definitions",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Older APIs and functionality may be removed with a 3-month deprecation notice.",
+    "source_url": "https://coda.io/developers",
+    "quote": "As we update and release newer versions of the API, we reserve the right to remove older APIs and functionality with a 3-month deprecation notice.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Coda states its REST API is public and available to all users, with broad read-write coverage of docs, pages, tables, rows, formulas, and controls. Credentials are self-serve through personal API tokens or OAuth2 for the MCP, and no sales, partner, or app-review gate is documented. A Free plan exists alongside paid tiers.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Coda API documentation now uses the Superhuman Docs name; confirm whether this app should be cataloged as Coda, Superhuman Docs, or both.",
+    "No numeric API rate limits were found; the docs state only a per-minute limit and HTTP 429 errors.",
+    "No documented sandbox or test environment for the Coda REST API was found; community threads discuss Pack environment workarounds only.",
+    "Webhook evidence covers inbound webhook-triggered automations; no general outbound doc-change webhook API was documented.",
+    "The official SDK evidence is the TypeScript Pack SDK, not a REST API client SDK; confirm whether a separate API SDK exists.",
+    "OAuth2 for the Coda MCP currently supports only the mcp:all scope; granular workspace/folder scopes are described as coming soon."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Coda",
+      "category": "Productivity and Project Management",
+      "hint": "coda.io/developers",
+      "description": null,
+      "source_file": "08-productivity-and-project-management.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+        "title": "Connect to the Coda MCP – Coda",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/44722769665549-Security-recommendations-for-the-Coda-MCP",
+        "title": "Security recommendations for the Coda MCP – Coda",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/39555972006541-Create-webhook-triggered-automations",
+        "title": "Create webhook-triggered automations – Coda",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4999
+      },
+      {
+        "url": "https://community.coda.io/t/managing-environments/39753",
+        "title": "Managing Environments",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://coda.io/packs/build/latest/reference/sdk/index.md",
+        "title": "Pack SDK Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1031
+      },
+      {
+        "url": "https://coda.io/developers",
+        "title": "Superhuman Docs API (v1) Reference Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://coda.io/apis/v1/openapi.yaml",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API",
+        "title": "Does Coda have an API? – Coda",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3000
+      },
+      {
+        "url": "https://coda.io/packs/build/latest/guides/basics/authentication/oauth2/",
+        "title": "Redirecting...",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 180
+      },
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/39555725230989-Billing-and-pricing-basics",
+        "title": "Billing and pricing basics – Coda",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 141.97
+  }
+}

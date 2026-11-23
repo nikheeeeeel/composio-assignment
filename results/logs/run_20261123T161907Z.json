@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-11-23T16:17:42.466801+00:00",
+  "finished_at": "2026-11-23T16:19:07.522554+00:00",
+  "processed": 1,
+  "verified": 0,
+  "needs_human_review": 0,
+  "drafted": 1,
+  "errors": 0,
+  "skipped": 0,
+  "concurrency": 1,
+  "apps": [
+    {
+      "app": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "slug": "gohighlevel",
+      "status": "drafted",
+      "skipped": false,
+      "rounds": 0,
+      "duration_s": 84.59,
+      "tool_calls": 17,
+      "cost_usd": 0.0056664,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "started_at": "2026-11-23T15:29:19.819356+00:00",
+  "finished_at": "2026-11-23T15:32:25.413482+00:00",
+  "processed": 1,
+  "verified": 0,
+  "needs_human_review": 0,
+  "errors": 1,
+  "skipped": 0,
+  "concurrency": 4,
+  "apps": [
+    {
+      "app": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "slug": "ahrefs",
+      "status": "error",
+      "skipped": false,
+      "rounds": 0,
+      "duration_s": 184.14,
+      "tool_calls": 0,
+      "cost_usd": 0,
+      "error": "ValueError: Invalid format specifier ' CLAIM, ...' for object of type 'str'"
+    }
+  ]
+}

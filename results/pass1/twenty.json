@@ -1,0 +1,252 @@
+{
+  "app": "Twenty",
+  "category": "CRM and Sales",
+  "one_line_description": {
+    "value": "Twenty is a CRM platform that gives technical teams building blocks for a customizable CRM.",
+    "source_url": "https://twenty.com",
+    "quote": "Twenty gives technical teams the building blocks for a custom CRM that meets complex business needs and quickly adapts as the business evolves.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "REST and GraphQL APIs generated from your workspace schema.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "Both are available as REST and GraphQL.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST + GraphQL, schema-per-tenant; full read-write CRUD on records plus metadata/schema API; batch up to 60 records per request",
+    "source_url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "CRUD on records: People, Companies, Opportunities, your custom objects. Query, filter, traverse relations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.twenty.com/developers/extend/api",
+    "source_url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "There is no static API reference for Twenty. Each workspace has its own schema",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://docs.twenty.com/developers/extend/oauth",
+    "quote": "| Internal scripts, automation | API Key | | External app acting on behalf of a user | OAuth — Authorization Code |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.twenty.com/developers/extend/oauth",
+    "quote": "Request scopes as a space-separated string: `scope=api profile`",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.twenty.com/user-guide/billing/capabilities/pricing-plans",
+    "quote": "Host Twenty on your own infrastructure at no cost:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "No application or sales gate for development: API keys are generated self-serve in Settings → Developers → API (scoped to a role), OAuth clients register via /oauth/register, self-hosting is free under the Free plan, and cloud starts with a free trial. Premium features (custom roles, row-level permissions, SSO, audit logs) require the Organization plan. The hosted MCP server endpoint is per-workspace (https://{your-workspace-url}/mcp).",
+    "source_url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "Create an API key in Settings → Developers → API → + Create key. Copy it immediately — it's shown once.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+    "source_url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+    "quote": "Use your workspace URL (the URL you use to access Twenty) as the MCP endpoint.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=twenty",
+    "quote": "{\"items\": [{\"slug\": \"twenty\", \"name\": \"Twenty\", \"app\": \"Twenty\", \"tools_count\": 23}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "100 requests per minute; batch size 60 records per call",
+    "source_url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "| Requests | 100 per minute | | Batch size | 60 records per call |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.twenty.com/developers/extend/webhooks",
+    "quote": "Twenty sends an HTTP POST to your URL whenever a record is created, updated, or deleted. All object types are covered, including custom objects.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": "https://docs.twenty.com/developers/extend/api",
+    "quote": "| Cloud | `https://api.twenty.com/` | | Self-Hosted | `https://{your-domain}/` |",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "TypeScript"
+    ],
+    "source_url": "https://docs.twenty.com/developers/introduction",
+    "quote": "Declare objects, server-side functions, React components and AI agents in plain TypeScript with the `twenty-sdk`, see each change sync to a local server as you save, and ship with the CLI.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Twenty publishes an official REST + GraphQL API with full read-write CRUD, a metadata API, batch operations, webhooks, and documented OAuth 2.0 plus API-key auth. Credentials are self-serve: API keys are created directly in Settings → Developers → API, and self-hosting is free with a no-credit-card cloud trial. Rate limits (100 req/min) and a TypeScript SDK are documented, and a native MCP server ships with workspaces.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No API versioning scheme or deprecation/sunset policy was found in the evidence bundle (the versioning search returned only the API page and terms of service); confirm whether Twenty versions its REST/GraphQL surface or follows a rolling-release model.",
+    "The API is described as both REST and GraphQL; api_type was recorded as REST per the single-primary-type field, but GraphQL is a first-class alternative (batch upserts, relation traversal in one query).",
+    "No dedicated sandbox/test tenant is documented — only Cloud and Self-Hosted base URLs plus a local dev environment (`twenty local start`); confirm whether a separate staging/sandbox workspace is officially supported.",
+    "No credible community/third-party MCP servers appeared in the evidence (MCP registry results were empty); marketplace/community listings may exist outside the fetched sources.",
+    "The vendor MCP server endpoint is per-workspace (https://{your-workspace-url}/mcp), so no single published endpoint URL exists."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Twenty",
+      "category": "CRM and Sales",
+      "hint": "twenty.com",
+      "description": "open-source CRM",
+      "source_file": "01-crm-and-sales.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.twenty.com/developers/self-host/capabilities/security",
+        "title": "Securing your instance",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.twenty.com/developers/extend/webhooks",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3459
+      },
+      {
+        "url": "https://docs.twenty.com/developers/extend/apps/logic/logic-functions",
+        "title": "Logic Functions",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://twenty.com",
+        "title": "Build your Enterprise CRM at AI Speed",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://twenty.com/pricing",
+        "title": "Simple",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.twenty.com/developers/extend/api",
+        "title": "APIs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3220
+      },
+      {
+        "url": "https://docs.twenty.com/developers/introduction",
+        "title": "Build on Twenty",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2505
+      },
+      {
+        "url": "https://docs.twenty.com/developers/extend/oauth",
+        "title": "OAuth",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.twenty.com/user-guide/billing/capabilities/pricing-plans",
+        "title": "Pricing Plans",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4482
+      },
+      {
+        "url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp",
+        "title": "MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 66.57
+  }
+}

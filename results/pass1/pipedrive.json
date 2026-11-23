@@ -1,0 +1,285 @@
+{
+  "app": "Pipedrive",
+  "category": "CRM and Sales",
+  "one_line_description": {
+    "value": "Pipedrive is a sales CRM that lets teams track their sales pipeline, optimize leads, manage deals with AI and automate their sales process.",
+    "source_url": "https://pipedrive.com",
+    "quote": "Pipedrive lets you track your sales pipeline, optimize leads, manage deals with AI and automate your entire sales process so you can focus on selling.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://www.pipedrive.com/en/features/crm-api",
+    "quote": "Every Pipedrive plan comes with an API token that gives you access to our RESTful API for free.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://www.pipedrive.com/en/features/crm-api",
+    "quote": "Grab your API token and unlock a world of possibilities with our RESTful Pipedrive API v1.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, hundreds of endpoints across v1 and v2, read-write (deals, persons, organizations, activities, products, pipelines, projects, webhooks)",
+    "source_url": "https://www.pipedrive.com/en/features/crm-api",
+    "quote": "Within our powerful and flexible API is our extensive API Reference with hundreds of endpoints.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.pipedrive.com/docs/api/v1",
+    "source_url": "https://developers.pipedrive.com/docs/api/v1",
+    "quote": "This reference helps you implement the RESTful Pipedrive API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+    "quote": "Using OAuth 2.0 is necessary for developing apps that are available in the Pipedrive Marketplace. Authorization via OAuth 2.0 is a well-known and stable way to get fine-grained access to an API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+    "quote": "the customer will see a page with the confirmation dialog, which will present your app details (title, company name, icon) and explain the permission scopes that you have set for the app.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developers.pipedrive.com/",
+    "quote": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access is included with every Pipedrive plan at no extra API cost (API token visible in the app's personal preferences), and new accounts start with a 14-day free trial without a credit card. A separate developer sandbox account can be signed up for/requested for testing. Production use requires an active Pipedrive subscription, and OAuth apps distributed via the Marketplace must be registered with Pipedrive.",
+    "source_url": "https://pipedrive.com",
+    "quote": "14-day free trial, no credit card required",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://www.pipedrive.com/en/features/mcp-server",
+    "source_url": "https://www.pipedrive.com/en/features/mcp-server",
+    "quote": "Pipedrive MCP works with any AI assistant that supports custom MCP connections.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=pipedrive",
+    "quote": "\"slug\": \"pipedrive\", \"name\": \"Pipedrive\", \"app\": \"Pipedrive\", \"tools_count\": 404",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Token-based daily budgets sized by subscription plan and number of paid seats; budgets reset every 24 hours and over-budget requests return HTTP 429 (Too Many Requests). Per-endpoint token costs are published; no fixed numeric per-plan token quota appears in the evidence.",
+    "source_url": "https://devcommunity.pipedrive.com/t/introducing-token-based-rate-limits-for-api-usage-what-you-need-to-know/18647",
+    "quote": "Daily token budgets are calculated based on the user’s subscription plan and the number of paid seats. These budgets reset every 24 hours, and if the limit is exceeded, any further API requests will return a 429 (Too Many Requests) error until the budget is refreshed the next day.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.pipedrive.com/docs/api/v1/Webhooks",
+    "quote": "Creates a new Webhook and returns its details.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developers.pipedrive.com/",
+    "quote": "Sign up for a Sandbox Account today to begin experimenting and developing in a risk free environment",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "javascript",
+      "php",
+      "python",
+      "dotnet",
+      "ruby"
+    ],
+    "source_url": "https://developers.pipedrive.com/",
+    "quote": "Kick-start your development by using one of the many API clients available on GitHub. Here are some of the most popular repositories.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Two API generations run in parallel (v1 and v2); v2 is positioned as the more optimized version with lower token cost. A defined set of v1 endpoints (activities, deals, persons, organizations, products, pipelines, etc.) was deprecated and is now in an out-of-support state with documented v2 replacements. Webhooks v2 became the default from March 17th, 2025.",
+    "source_url": "https://developers.pipedrive.com/changelog/post/deprecated-apiv1-endpoints-become-out-of-support",
+    "quote": "The API v1 endpoints announced for deprecation in one of our previous changelog are now in an out-of-support state.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Pipedrive documents a full REST API reference with hundreds of endpoints across v1 and v2, supports OAuth 2.0 and API-token auth, and documents webhooks, OpenAPI specs and client libraries. Credentials are self-serve: API access is included with every plan, a 14-day trial requires no credit card, and a separate sandbox account exists for testing. The main operational constraint is the token-based daily budget tied to plan and paid seats, not access approval.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Community/third-party MCP servers were not verified: the MCP registry returned no results and the MCP search was restricted to site:pipedrive.com, so absence of community servers is inferred, not observed.",
+    "The official Pipedrive MCP server's actual endpoint URL is not published in the evidence; the feature page says assistants connect using 'the Pipedrive MCP server URL', which may be per-org, so the vendor documentation URL was cited instead.",
+    "Exact numeric API token budgets per plan tier and seat count are not captured in the evidence; only the token-budget mechanism (24-hour reset, HTTP 429) is documented in the cited announcement.",
+    "The developers page is flattened text, so it is unclear which of the listed client repositories (client-nodejs, client-php, python-pipedrive, pipedrive-dotnet, pipedrive.rb) are vendor-maintained versus merely popular; only client-nodejs carries an explicit OFFICIAL marker in the extracted text.",
+    "Sandbox access wording is inconsistent across sources: the developers corner says 'Sign up for a Sandbox Account', while the API reference says to 'request your own sandbox account'; whether provisioning is instant or requires approval is unconfirmed.",
+    "Whether publishing an OAuth app in the Pipedrive Marketplace requires vendor review/approval is not documented in the evidence bundle."
+  ],
+  "status": "drafted",
+  "audit": {
+    "retrieved_at": "2026-11-23",
+    "supplementary_evidence": {
+      "auth_api_token": {
+        "source_url": "https://developers.pipedrive.com/docs/api/v1",
+        "quote": "The API is stateless – all requests are validated against an API token. The API token can be obtained manually from the Pipedrive app."
+      },
+      "personal_api_key_location": {
+        "source_url": "https://support.pipedrive.com/en/article/how-can-i-find-my-personal-api-key",
+        "quote": "If you ever need your personal API key, it can be found under Settings > Personal preferences > API."
+      },
+      "sandbox_request_wording": {
+        "source_url": "https://developers.pipedrive.com/docs/api/v1",
+        "quote": "To test your applications, we recommend creating a new, separate Pipedrive account for sandboxing purposes. Go to the Developer Sandbox Account page to learn more and request your own sandbox account."
+      },
+      "webhooks_v2_default": {
+        "source_url": "https://developers.pipedrive.com/docs/api/v1/Webhooks",
+        "quote": "Webhooks v2 is the default from March 17th, 2025."
+      },
+      "oauth_token_exchange_basic_header": {
+        "source_url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+        "quote": "The header value should be `Basic <base64(client_id:client_secret)>`."
+      }
+    },
+    "notes": [
+      "auth_methods value covers OAuth 2.0 (cited) plus the API token documented in the API reference and CRM API pages; the OAuth page additionally uses HTTP Basic for client authentication during the authorization_code token exchange, which was not listed as a separate end-user auth method.",
+      "rate_limits source is a first-party Pipedrive developer community announcement (Nov 28, 2024) rather than the API reference page; the reference page's own rate-limit section was not in the evidence bundle.",
+      "sdk_languages marked medium because the flattened client list does not clearly delimit vendor-maintained vs third-party repositories.",
+      "The GitHub repository probe checked an invalid org URL (https://github.com/orgs/pipedrive returned 404), so repository-level SDK verification was not possible from that check."
+    ],
+    "input": {
+      "name": "Pipedrive",
+      "category": "CRM and Sales",
+      "hint": "pipedrive.com",
+      "description": null,
+      "source_file": "01-crm-and-sales.json"
+    },
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.pipedrive.com/docs/api/v1",
+        "title": "Pipedrive API Reference and Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1628
+      },
+      {
+        "url": "https://developers.pipedrive.com/",
+        "title": "Pipedrive Developers Corner | Pipedrive API sandbox",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2145
+      },
+      {
+        "url": "https://developers.pipedrive.com/docs/api/v1/Oauth",
+        "title": "Pipedrive API v1 Dev References (Oauth) - Learn - Test - Try Now",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.pipedrive.com/en/features/crm-api",
+        "title": "Integrate and optimize with Pipedrive’s CRM API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://devcommunity.pipedrive.com/t/introducing-token-based-rate-limits-for-api-usage-what-you-need-to-know/18647",
+        "title": "Introducing Token-Based Rate Limits for API Usage: What You Need to Know - Announcements - Pipedrive Developers' Community",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2024-11-28T13:30:53.000Z",
+        "chars": 3177
+      },
+      {
+        "url": "https://www.pipedrive.com/en/features/mcp-server",
+        "title": "Pipedrive MCP Server | Connect Claude & ChatGPT to Your CRM | Pipedrive",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://support.pipedrive.com/en/article/mcp",
+        "title": "Native Model Context Protocol (MCP) from Pipedrive - Knowledge Base | Pipedrive",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3946
+      },
+      {
+        "url": "https://developers.pipedrive.com/docs/api/v1/Webhooks",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4224
+      },
+      {
+        "url": "https://developers.pipedrive.com/changelog/post/deprecated-apiv1-endpoints-become-out-of-support",
+        "title": "Reminder: Deprecated API v1 endpoints are now out of support",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2026-07-29T07:12:34.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://pipedrive.com",
+        "title": "Sales CRM & Pipeline Management Software | Pipedrive",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 107.34
+  }
+}

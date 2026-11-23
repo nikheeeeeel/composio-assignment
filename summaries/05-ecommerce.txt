@@ -1,0 +1,81 @@
+====================================================================================================
+CATEGORY 05 - Ecommerce
+====================================================================================================
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   5 easy, 5 moderate, 0 hard, 0 blocked.
+   Easy: BigCommerce, Gumroad, Magento (Adobe Commerce), Shopify, WooCommerce.
+   Gated / blocked: Amazon Selling Partner, Ecwid, Salesforce Commerce Cloud, Squarespace, fanbasis.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       5  ##########
+     moderate   5  ##########
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         4  ########
+     app_review_required     2  ####
+     paid_plan_required      2  ####
+     self_serve_trial        1  ##
+     unknown                 1  ##
+
+   Auth methods (apps can have several): oauth2 7, api_key 4, other 1, bearer_token 1, basic 1
+   Most common auth combination: oauth2 x5, api_key x1, other x1
+   API shape: REST 9, GraphQL 1
+
+   Official MCP server: 8/10 (Amazon Selling Partner, BigCommerce, Gumroad, Salesforce Commerce Cloud, Shopify, Squarespace, WooCommerce, fanbasis).
+   Missing official MCP: Ecwid, Magento (Adobe Commerce).
+   Composio toolkit match: 3/10 (BigCommerce, Gumroad, Shopify).
+   Composio gaps: Amazon Selling Partner, Ecwid, Magento (Adobe Commerce), Salesforce Commerce Cloud, Squarespace, WooCommerce, fanbasis.
+   Human outreach required: 3/10 (Amazon Selling Partner, Salesforce Commerce Cloud, Squarespace).
+
+   Evidence: 14/17 claims sourced on average (min 10); 9 official pages/app (min 6); 7 open questions/app (max 10 for Magento (Adobe Commerce)).
+   Confidence mix: high 110 (65%), medium 29 (17%), low 3 (2%), not_found 28 (16%).
+
+3. ANALYST READ
+   Ecommerce has the largest Composio coverage gap: only three of ten apps match a toolkit.
+   The API surface is OAuth2-heavy (seven of ten), but the story is gating. Amazon SP-API needs
+   app review and role approval, Squarespace needs app review plus a Commerce Advanced plan,
+   Salesforce Commerce Cloud needs a paid B2C Commerce org, Ecwid needs a paid store, and
+   fanbasis keeps its documentation behind a password. Shopify, WooCommerce, BigCommerce and
+   Gumroad are the clean self-serve core.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Shopify and WooCommerce first: both self-serve and high value.
+   - Amazon SP-API is a compliance project, not a quick toolkit.
+   - Close the seven-app Composio gap; ecommerce is the clearest catalog expansion opportunity.
+   - Budget human review for Salesforce Commerce Cloud, Squarespace and fanbasis.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+BigCommerce               easy      self_serve_trial      oauth2                         Y    Y     -    15/10    
+Gumroad                   easy      self_serve_free       oauth2                         Y    Y     -    14/6     
+Magento (Adobe Commerce)  easy      self_serve_free       other                          -    N     -    10/10    
+Shopify                   easy      self_serve_free       oauth2                         Y    Y     -    16/11    
+WooCommerce               easy      self_serve_free       api_key,basic                  Y    N     -    16/10    
+Amazon Selling Partner    moderate  app_review_required   oauth2                         Y    N     Y    17/9     
+Ecwid                     moderate  paid_plan_required    oauth2                         -    N     -    13/10    
+fanbasis                  moderate  unknown               api_key                        Y    N     -    12/7     
+Salesforce Commerce Cloud moderate  paid_plan_required    oauth2,api_key,bearer_token    Y    N     Y    14/8     
+Squarespace               moderate  app_review_required   oauth2,api_key                 Y    N     Y    13/9     
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Amazon Selling Partner [moderate, access=app_review_required, outreach=yes]: Amazon developer-profile/app review and role approval (architecture review for PII roles)
+- Ecwid [moderate, access=paid_plan_required, outreach=no]: Paid-plan Ecwid store required for API access
+- fanbasis [moderate, access=unknown, outreach=no]: Official API docs are password-gated; access/plan terms are not public
+- Salesforce Commerce Cloud [moderate, access=paid_plan_required, outreach=yes]: Requires a paid B2C Commerce org; sandbox/API access depends on purchased sandbox credits
+- Squarespace [moderate, access=app_review_required, outreach=yes]: OAuth app review/approval; Commerce Advanced plan for custom API keys
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - Unresolved access model: fanbasis.
+   - No official MCP found: Ecwid, Magento (Adobe Commerce). This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.

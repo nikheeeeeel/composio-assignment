@@ -1,0 +1,269 @@
+{
+  "app": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "one_line_description": {
+    "value": "Amazon's Selling Partner API (SP-API) lets developers build applications that serve Amazon sellers, vendors, or both.",
+    "source_url": "https://developer-docs.amazon.com/sp-api/lang-de_DE/docs/register-as-a-public-developer",
+    "quote": "Build applications that serve sellers, vendors, or both.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "Learn how to get started and build applications with Amazon's REST-based SP-API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "Learn how to get started and build applications with Amazon's REST-based SP-API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST across dozens of SP-APIs (orders, catalog, pricing, inventory, reports, feeds, listings, fulfillment, vendor procurement, warehousing) plus a GraphQL Data Kiosk; read-write",
+    "source_url": "https://developer-docs.amazon.com/sp-api/docs/sp-api-models",
+    "quote": "The following sections show all Selling Partner APIs (SP-APIs) and indicate whether the API is available for < glossary:seller> or < glossary:vendor> accounts.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer-docs.amazon.com/sp-api",
+    "source_url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "Welcome to Selling Partner API Documentation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html",
+    "quote": "an Amazon implementation of OAuth 2.0.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html",
+    "quote": "determines whether a developer or application has access to a specific operation or resource.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "app_review_required",
+    "source_url": "https://developer-docs.amazon.com/sp-api/lang-de_DE/docs/register-as-a-public-developer",
+    "quote": "Amazon evaluates developer applications through a comprehensive review process.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "You must register as an SP-API developer (developer profile with roles). Public developers need a publicly accessible website, must list in the Selling Partner Appstore, and are reviewed by Amazon; requesting restricted (PII) roles triggers a further architecture review with the SP-API Solutions Architecture team. Private applications for your own organization can be self-authorized against your own selling partner account, but a selling partner (Seller/Vendor Central) account is still required.",
+    "source_url": "https://developer-docs.amazon.com/sp-api/lang-de_DE/docs/register-as-a-public-developer",
+    "quote": "If you plan to request restricted roles (roles that provide access to < > (PII)), you must also:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://sellingpartner-ai.amazon.com/mcp",
+    "source_url": "https://claude.com/marketplace/connectors/amazon-selling-partner",
+    "quote": "https://sellingpartner-ai.amazon.com/mcp",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": [
+      "https://github.com/aws-samples/sample-amazon-spapi-mcp-server"
+    ],
+    "source_url": "https://github.com/aws-samples/sample-amazon-spapi-mcp-server/blob/main/README.md",
+    "quote": "A Model Context Protocol (MCP) server that provides unified access to all Amazon Selling Partner APIs (SP-APIs).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Amazon+Selling+Partner",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Amazon Selling Partner\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": "https://docs.aws.amazon.com/pt_br/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/ingestion-pipeline.html",
+    "quote": "SP-API as solicitações são limitadas usando o algoritmo de token bucket.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.aws.amazon.com/pt_br/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/ingestion-pipeline.html",
+    "quote": "oferece suporte a notificações para automatizar os fluxos de trabalho de relatórios.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developer-docs.amazon.com/sp-api/docs/sp-api-models",
+    "quote": "| Current version | Legacy versions | Availability | Sandbox | | --- | --- | --- | --- | | 2020-11-01 (Reference | Model) | None | Sellers and Vendors | Static |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Java",
+      "C#"
+    ],
+    "source_url": "https://developer-docs.amazon.com/sp-api",
+    "quote": "Tutorial: Test Selling Partner API Endpoints - Tutorial: Automate your SP-API Calls Using a C# SDK - Tutorial: Automate your SP-API Calls Using a Java SDK",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "APIs are date-versioned (e.g., v2026-06-01, v2024-05-09) with legacy versions tracked per API; Amazon publishes an SP-API Deprecation Schedule for deprecations.",
+    "source_url": "https://developer-docs.amazon.com/sp-api/docs/sp-api-models",
+    "quote": "For information about API deprecations, refer to the SP-API Deprecation Schedule.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "SP-API is a broad, publicly documented REST API with OAuth 2.0 (LWA), SDKs, sandbox variants, and notifications. However, credentials are gated: developers must register an SP-API developer profile, public apps need a website and Appstore listing and are reviewed by Amazon, and restricted/PII roles require an additional architecture review. That review/role-approval gate makes it moderate rather than easy.",
+  "main_blocker": "Amazon developer-profile/app review and role approval (architecture review for PII roles)",
+  "needs_outreach": true,
+  "outreach_reason": "Public developer registration is subject to Amazon's review, and restricted-role access requires an architecture review with the SP-API Solutions Architecture team, so a human-facing application/review step is required for broader access.",
+  "open_questions": [
+    "Whether a Professional (paid) selling account is required before registering as a developer is not stated in the captured sources; Seller Central forum snippets hint at plan implications but were not fetched.",
+    "Official_mcp_server value comes from Anthropic's Claude connector listing (third-party) reporting the amazon.com-hosted endpoint https://sellingpartner-ai.amazon.com/mcp; Amazon's own docs in the bundle only describe the Selling Partner plugin (beta) without publishing the MCP endpoint.",
+    "Numeric per-operation rate limits exist in per-API references but were not captured; only token-bucket throttling is confirmed by the evidence.",
+    "SDK list may be incomplete: a Python SDK tutorial URL surfaced in the search index but its page text was not fetched; the bundle only confirms Java and C# tutorials.",
+    "A github.com/amzn/selling-partner-agentic-toolkit repo surfaced in search results but was not fetched, so it is not listed as a community MCP server.",
+    "SP-API 'scopes' are implemented as roles; whether Amazon publishes OAuth scope strings per se (versus role-based permissions) is not explicitly evidenced.",
+    "The Amazon Ads MCP Server is a separate advertising product and was not treated as the SP-API MCP server."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "hint": "developer-docs.amazon.com/sp-api",
+      "description": null,
+      "source_file": "05-ecommerce.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 16,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer-docs.amazon.com/sp-api/lang-de_DE/docs/register-as-a-public-developer",
+        "title": "Register as a Public SP-API Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.aws.amazon.com/pt_br/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/ingestion-pipeline.html",
+        "title": "Construindo o pipeline de ingestão de dados para os dados do seu parceiro de vendas da Amazon - AWS Recomendações",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4269
+      },
+      {
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/introduction.html",
+        "title": "Enabling business reporting and generative AI capabilities for Amazon selling partners - AWS Prescriptive Guidance",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4048
+      },
+      {
+        "url": "https://sell.amazon.com/blog/announcements/amazons-selling-partner-plugin-ads-mcp",
+        "title": "Preparing for the 2026 Holiday Shopping Season with Amazon's Selling Partner plugin &amp; Ads MCP - Sell on Amazon",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2026-11-20T00:32:34.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://developer-docs.amazon.com/sp-api",
+        "title": "Selling Partner API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4051
+      },
+      {
+        "url": "https://developer-docs.amazon.com/sp-api/docs/sp-api-models",
+        "title": "SP-API Models",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/integrating-sp-api.html",
+        "title": "Integrating the Amazon Selling Partner API - AWS Prescriptive Guidance",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer-docs.amazon.com/sp-api/docs/automate-your-sp-api-calls-using-the-c-sdk",
+        "title": "Tutorial: Automate your SP-API Calls Using a C# SDK",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://claude.com/marketplace/connectors/amazon-selling-partner",
+        "title": "Amazon Selling Partner connector | Claude by Anthropic",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 887
+      },
+      {
+        "url": "https://github.com/aws-samples/sample-amazon-spapi-mcp-server/blob/main/README.md",
+        "title": "README.md",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4640
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Amazon Selling Partner\" official MCP server",
+        "\"Amazon Selling Partner\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://claude.com/marketplace/connectors/amazon-selling-partner",
+        "https://github.com/aws-samples/sample-amazon-spapi-mcp-server/blob/main/README.md"
+      ],
+      "tool_calls_after": 16
+    },
+    "research_seconds": 240.31
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "app": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": {
+    "value": "GitHub is a platform for hosting code in public or private Git repositories, accessible via web and command line, with collaboration features such as pull requests, Actions, and code review.",
+    "source_url": "https://github.com/pricing",
+    "quote": "Host open source projects in public GitHub repositories, accessible via web or command line.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.github.com/rest",
+    "quote": "Comparing GitHub's REST API and GraphQL API Learn about GitHub's APIs to extend and customize your GitHub experience.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.github.com/rest/git/refs",
+    "quote": "Use the REST API to interact with references in your Git database on GitHub",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write REST API covering repositories, Git refs, issues, pull requests, Actions, and org/permission administration; fully specified in an OpenAPI document.",
+    "source_url": "https://docs.github.com/rest",
+    "quote": "The GitHub REST API is fully described in an OpenAPI compliant document.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.github.com/rest",
+    "source_url": "https://docs.github.com/rest",
+    "quote": "Quickstart for GitHub REST API Learn how to get started with the GitHub REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "basic",
+      "bearer_token",
+      "jwt"
+    ],
+    "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "In most cases, you can use `Authorization: Bearer` or `Authorization: token` to pass a token. However, if you are passing a JSON web token (JWT), you must use `Authorization: Bearer`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app",
+    "quote": "Also, notice that the URL uses the `scope` query parameter to define the scopes requested by the application.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "If you want to use the GitHub REST API for personal use, you can create a personal access token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "A free GitHub account with a self-created personal access token (or OAuth app / GitHub App registration) is sufficient; no sales contact or paid plan is required. Access to organization resources can be gated by SAML SSO token authorization and org policies, and Enterprise Cloud-owned apps get higher rate limits.",
+    "source_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "quote": "If you use a personal access token (classic) to access an organization that enforces SAML single sign-on (SSO) for authentication, you will need to authorize your token after creation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://api.githubcopilot.com/mcp/",
+    "source_url": "https://github.com/github/github-mcp-server",
+    "quote": "The remote GitHub MCP Server is hosted by GitHub and provides the easiest method for getting up and running.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=github",
+    "quote": "{\"items\": [{\"slug\": \"github\", \"name\": \"GitHub\", \"app\": \"GitHub\", \"tools_count\": 883}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "60 requests/hour unauthenticated; higher personal limits when authenticated (5,000 requests/hour minimum for GitHub App installations, 15,000 requests/hour for GitHub Enterprise Cloud-owned apps/installations); Git LFS 300 requests/min unauthenticated and 3,000 requests/min authenticated.",
+    "source_url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+    "quote": "The primary rate limit for unauthenticated requests is 60 requests per hour.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript",
+      "Ruby"
+    ],
+    "source_url": "https://docs.github.com/rest",
+    "quote": "Scripting with the REST API and JavaScript Write a script using the Octokit.js SDK to interact with the REST API. - Scripting with the REST API and Ruby Learn how to write a script using the Octokit.rb SDK to interact with the REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Date-based REST API versions are selected with the X-GitHub-Api-Version header (current example: 2026-03-10); the docs include dedicated 'API Versions' and 'Breaking changes' pages describing each version's changes.",
+    "source_url": "https://docs.github.com/rest/git/refs",
+    "quote": "Most endpoints use `Authorization: Bearer ` and `Accept: application/vnd.github+json` headers, plus `X-GitHub-Api-Version: 2026-03-10`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "GitHub documents a fully OpenAPI-specified public REST API with broad read-write coverage across repos, refs, issues, PRs, and Actions. Credentials are self-serve: a developer can create a personal access token or OAuth/GitHub App on a free account with no sales contact. Generous documented rate limits and official Octokit SDKs make a toolkit straightforward to build.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Webhooks: the search plan surfaced webhook documentation URLs, but no fetched SOURCES page contains webhook text, so the webhooks field is null/not_found rather than asserted.",
+    "Sandbox/test environment: no fetched source documents a GitHub API sandbox or test environment (only a community discussion snippet), so this is not_found.",
+    "SDK languages: only JavaScript (Octokit.js) and Ruby (Octokit.rb) are named in the fetched docs; other Octokit ports may exist but were not evidenced here.",
+    "Community MCP servers: no non-vendor MCP server URLs appeared in the fetched SOURCES; github/github-mcp-server is vendor-owned and therefore recorded as the official server.",
+    "GraphQL API: mentioned as existing (docs comparison page and rate-limit page) but not researched in depth because the input hint targets docs.github.com/rest."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "docs.github.com/rest",
+      "description": null,
+      "source_file": "07-developer-infra-and-data-platforms.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 16,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.github.com/en/copilot/get-started/plans",
+        "title": "Plans for GitHub Copilot",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/pricing",
+        "title": "GitHub plans and pricing · GitHub",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+        "title": "Rate limits for the REST API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.github.com/en/copilot/concepts/customizations/mcp",
+        "title": "Model Context Protocol (MCP)",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/github/github-mcp-server",
+        "title": "github/github-mcp-server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.github.com/rest",
+        "title": "GitHub REST API documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.github.com/en/get-started/using-github-docs/github-docs-api",
+        "title": "GitHub Docs API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4863
+      },
+      {
+        "url": "https://docs.github.com/rest/git/refs",
+        "title": "REST API endpoints for Git references",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "title": "Authenticating to the REST API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app",
+        "title": "Authenticating to the REST API with an OAuth app",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 83.62
+  }
+}

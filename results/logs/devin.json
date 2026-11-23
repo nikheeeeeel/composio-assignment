@@ -1,0 +1,392 @@
+{
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "slug": "devin",
+  "started_at": "2026-11-23T16:08:50.892850+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T16:12:13.879436+00:00",
+  "duration_s": 202.99,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/devin.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Devin\" MCP server official Model Context Protocol site:devin.ai",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.12,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Devin\" official API documentation developer reference site:devin.ai",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.543,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Devin\" pricing plans API access enterprise developer site:devin.ai",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.571,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Devin\" API authentication OAuth API key documentation site:devin.ai",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.742,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Devin\" API webhooks events callbacks documentation site:devin.ai",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.546,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Devin\" API rate limits throttling quota documentation site:devin.ai",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.384,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Devin\" API sandbox test environment staging developer site:devin.ai",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.629,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Devin\" official SDK client libraries developer site:devin.ai",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.923,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Devin\" API versioning deprecation sunset policy site:devin.ai",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.695,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Devin"
+      },
+      "ok": true,
+      "duration_s": 0.038,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart",
+          "https://docs.devin.ai/desktop/accounts/api-reference/get-output",
+          "https://docs.devin.ai/work-with-devin/devin-mcp",
+          "https://docs.devin.ai/work-with-devin/mcp",
+          "https://docs.devin.ai/api-reference/v3/automations/post-organizations-automations"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.812,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Devin MCP"
+      },
+      "ok": true,
+      "duration_s": 2.233,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://docs.devin.ai",
+          "https://docs.devin.ai/api-reference/overview?_rsc=onxgsUYOTHUPLgG1",
+          "https://docs.devin.ai/api-reference/v3/overview",
+          "https://docs.devin.ai/api-reference/personal-access-tokens",
+          "https://docs.devin.ai/api-reference/common-flows"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 2.677,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Devin\" API pricing plans access requirements",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.468,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 15,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Devin\" developer API free tier paid plan",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.758,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 16,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://devin.ai/pricing"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.724,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 16,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart",
+      "title": "Quick start: Enterprise",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.devin.ai/desktop/accounts/api-reference/get-output",
+      "title": "Get Agent Output (Lines of Code)",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+      "title": "Devin MCP",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/mcp",
+      "title": "Devin MCP servers and marketplace",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/v3/automations/post-organizations-automations",
+      "title": "Create automation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.devin.ai",
+      "title": "Introducing Devin",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/overview?_rsc=onxgsUYOTHUPLgG1",
+      "title": "API Overview",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3970
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/v3/overview",
+      "title": "Permissions & RBAC",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/personal-access-tokens",
+      "title": "Personal Access Tokens",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/common-flows",
+      "title": "Common Flows",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://devin.ai/pricing",
+      "title": "Devin Plans and Pricing",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4140
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Devin",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 95.694,
+      "tokens": {
+        "input": 14617,
+        "output": 2135,
+        "reasoning": 6719
+      },
+      "cost_usd": 0.00600396
+    },
+    {
+      "purpose": "research:Devin",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 91.59,
+      "tokens": {
+        "input": 12323,
+        "output": 2016,
+        "reasoning": 7457
+      },
+      "cost_usd": 0.00603194
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 26940,
+      "output": 4151,
+      "reasoning": 14176
+    },
+    "cost_usd": 0.0120359,
+    "llm_calls": 2
+  }
+}

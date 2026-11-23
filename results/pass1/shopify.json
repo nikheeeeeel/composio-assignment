@@ -1,0 +1,264 @@
+{
+  "app": "Shopify",
+  "category": "Ecommerce",
+  "one_line_description": {
+    "value": "Shopify is a commerce platform whose developer APIs and tools let you extend the Shopify admin, online store, and checkout with apps and integrations.",
+    "source_url": "https://shopify.dev/docs",
+    "quote": "Apps Extend Shopify's core functionality with apps that integrate into Shopify's admin, online store, checkout and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://shopify.dev/docs/api/admin-graphql/latest",
+    "quote": "The Admin API lets you build apps and integrations that extend and enhance the Shopify admin.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "GraphQL",
+    "source_url": "https://shopify.dev/docs/api/admin-graphql/latest",
+    "quote": "GraphQL queries are executed by sending `POST` HTTP requests to the endpoint:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Multiple APIs: GraphQL Admin API (primary, read-write across products, orders, customers, inventory and the rest of the admin data), REST Admin API (described in docs as legacy), Storefront API, Customer Account API, Partner API, Payments Apps API, App Events API",
+    "source_url": "https://shopify.dev/docs/api",
+    "quote": "GraphQL Admin API reads and writes products, customers, orders, inventory, and the rest of the data behind the Shopify admin.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://shopify.dev/docs/api",
+    "source_url": "https://shopify.dev/docs/api",
+    "quote": "Reference documentation for Shopify's APIs, libraries, and developer tools, plus the concepts that apply across all of them.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://shopify.dev/docs/api/usage/authentication",
+    "quote": "| GraphQL Admin API | Your app, on behalf of a merchant | OAuth, usually token exchange | `X-Shopify-Access-Token` |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://shopify.dev/docs/api",
+    "quote": "Authentication covers which token and header each API uses, and access scopes gate what that token can read and write.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://shopify.dev/docs/api",
+    "quote": "The Dev Dashboard is where you create and manage apps, set up dev stores, and see how your app performs for merchants.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve and free to start: create an app in the Dev Dashboard to get a client ID/secret and install it on a dev store for testing tokens. Gates beyond that: merchant install plus approved access scopes; a small number of scopes require Shopify's approval (e.g. protected customer data for public apps); public app distribution requires App Store review; some APIs also require a specific Shopify plan.",
+    "source_url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+    "quote": "For a small number of scopes, Shopify's approval: Shopify grants some access scopes to individual apps rather than to every app that declares them.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.shop.com",
+    "source_url": "https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp",
+    "quote": "Shop MCP is live at `https://mcp.shop.com`, with a skill description at `https://mcp.shop.com/skill.md` that MCP-compatible agents can read.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=shopify",
+    "quote": "{\"items\": [{\"slug\": \"shopify\", \"name\": \"Shopify\", \"app\": \"Shopify\", \"tools_count\": 386}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Documented per API via leaky-bucket model: GraphQL Admin API uses calculated query cost by plan; REST Admin API uses a request-based bucket with headers; Storefront API has bot/crawler limits and a checkout throttle; Customer Account API uses cost points per store and customer plus 3,000 requests per minute per customer; Payments Apps API uses calculated query cost by plan; Partner API and App Events API use request-based limits per client/app",
+    "source_url": "https://shopify.dev/docs/api/usage/limits",
+    "quote": "Cost points per store and customer, plus 3,000 requests per minute per customer",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://shopify.dev/docs/api/webhooks/latest",
+    "quote": "You can use webhook subscriptions to receive notifications about particular events in a shop.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://shopify.dev/docs/api",
+    "quote": "Dev stores are stores with test data that you build and test against.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Node.js",
+      "Ruby"
+    ],
+    "source_url": "https://shopify.dev/docs/api/admin-graphql/latest",
+    "quote": "The official client library for Node.js apps.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Quarterly versioned releases; each API version is supported for one year. Breaking changes and deprecations are announced in the developer changelog. Current version referenced in docs is 2026-10.",
+    "source_url": "https://shopify.dev/docs/api",
+    "quote": "API versioning explains how Shopify releases a new version each quarter and supports each one for a year.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Shopify documents a broad public GraphQL Admin API plus Storefront, Customer Account, Partner and Payments APIs, with OAuth-based auth and documented access scopes. Credentials are self-serve: apps are created in the Dev Dashboard and tested against free dev stores, and webhooks, rate limits, versioning and sandbox guidance are all documented. Gating exists only for distribution and certain scopes (app review, protected customer data approval), not for building or testing.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Is the merchant-facing 'Shopify MCP' (store setup/management, discussed on shopify.dev/docs/api/shopify-mcp.md) publicly available? A search snippet said it is not publicly available yet, but that page was not among the fetched SOURCES, so the official_mcp_server field cites only the live Shop MCP shopping server (https://mcp.shop.com).",
+    "S8 states 'The official client library for Node.js apps.' and separately 'The official client library for Ruby apps.'; the libraries-and-templates page may list additional official SDKs (PHP, Go, .NET) that could not be verified because that page text was not in the bundle.",
+    "Storefront API uses public/private tokens and supports tokenless access for basic data; it is unclear from the fetched text whether that private-token flow should count as an api_key auth method alongside OAuth.",
+    "REST Admin API is referred to as legacy in a search snippet ('legacy API as of October 1, 2024'); the admin-rest page itself was not in SOURCES, so the exact legacy/deprecation timeline is not quoted here.",
+    "No community MCP servers were surfaced (GitHub repository and MCP registry checks returned nothing), so community_mcp_servers is not_found rather than confirmed absent.",
+    "Access model is inferred from the Dev Dashboard/dev-store workflow (medium confidence); no explicit pricing or plan page was fetched stating that developer credentials are free."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Shopify",
+      "category": "Ecommerce",
+      "hint": "shopify.dev",
+      "description": null,
+      "source_file": "05-ecommerce.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "title": "About app authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://shopify.dev/docs/api/usage/limits",
+        "title": "Shopify API limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4007
+      },
+      {
+        "url": "https://shopify.dev/docs/apps/build/shop-mcp",
+        "title": "Shop MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2444
+      },
+      {
+        "url": "https://shopify.dev/changelog/posts/add-shopping-and-shop-pay-checkout-to-any-agent-with-shop-mcp",
+        "title": "Add shopping and Shop Pay checkout to any agent with Shop MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3088
+      },
+      {
+        "url": "https://shopify.dev/docs/api/webhooks/latest",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://shopify.dev/docs/api",
+        "title": "Shopify APIs, libraries, and tools",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://shopify.dev/docs/api/admin-graphql/latest",
+        "title": "GraphQL Admin API reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://shopify.dev/docs/api/usage/authentication",
+        "title": "Shopify API authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3615
+      },
+      {
+        "url": "https://shopify.dev/docs/apps/build/authentication-authorization/manage-credentials",
+        "title": "Manage your app credentials",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://community.shopify.dev/t/b2b-features-for-non-plus-merchants-admin-api-access-planned/33844",
+        "title": "B2B Features for Non-Plus Merchants: Admin API Access planned?",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2373
+      },
+      {
+        "url": "https://shopify.dev/docs",
+        "title": "Shopify Dev Docs",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://shopify.dev"
+    ],
+    "refinement": {},
+    "research_seconds": 102.62
+  }
+}

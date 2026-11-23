@@ -1,0 +1,250 @@
+{
+  "app": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": {
+    "value": "Pinterest's developer platform exposes APIs that let apps create and manage organic Pins and Boards, shopping catalogs and shopping ads, conversions, and analytics.",
+    "source_url": "https://developers.pinterest.com/",
+    "quote": "Build apps and experiences that allow Pinterest users to create and manage organic content (Pins and Boards) on Pinterest.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.pinterest.com",
+    "quote": "Pinterest API helps you ingest analytics data for content and ads directly from Pinterest into your data warehouse or analytics tools.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.pinterest.com/docs/api/v5/introduction/",
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write surface: Pins, Boards, ads, audiences, catalogs, analytics and conversions; endpoint count not stated in the evidence.",
+    "source_url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "quote": "The Pinterest API v5 significantly increases the scope of what is possible for you to create as a developer.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.pinterest.com/docs/api/v5/introduction/",
+    "source_url": "https://developers.pinterest.com/docs/api/v5/introduction/",
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://developers.pinterest.com/about-pinterest-mcp/",
+    "quote": "OAuth 2.0 authorization and granular permissions keep credentials protected and access appropriately controlled.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+    "quote": "Each scope allows your app to make different API requests, such as for creating ads or viewing secret boards.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "app_review_required",
+    "source_url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "quote": "If approved for API use, your app receives Trial access, which is best for exploring our API features.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Requires a business account and app registration; the app secret is only issued after Pinterest approves the app, and approved apps receive Trial access (daily limits, Pins/Boards visible only to the creator). Upgrading to Standard access additionally requires submitting a video recording of your app completing an OAuth flow for review.",
+    "source_url": "https://developers.pinterest.com/docs/faqs/faqs/",
+    "quote": "If your app is pending Pinterest approval, you cannot see your app secret.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://api.pinterest.com/mcp",
+    "source_url": "https://developers.pinterest.com/about-pinterest-mcp/",
+    "quote": "\"pinterest-mcp\": { \"type\": \"http\", \"url\": \"https://api.pinterest.com/mcp\", \"headers\": { \"Authorization\": \"Bearer <token>\" } }",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=pinterest",
+    "quote": "{\"slug\": \"pinterest\", \"name\": \"Pinterest\", \"app\": \"Pinterest\", \"tools_count\": 27}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Tiered: Trial access is limited by calls per day per app; Standard access is limited more granularly by calls per minute per user per app. Specific numeric quotas are documented at /docs/reference/rate-limits/ but numbers were not captured in the evidence.",
+    "source_url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "quote": "Apps with Trial access are rate limited based on calls per day/per app. Apps with Standard access are rate limited at a more granular level at calls per minute/per user/per app.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.pinterest.com/docs/work-with-ads/lead-ads/",
+    "quote": "Webhook URL: The webhook_url should follow the HTTPS protocol and adhere to standard webhook behavior without authentication or authorization.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "quote": "Read more on our [API Sandbox](https://developers.pinterest.com/docs/developer-tools/sandbox/) and other supported capabilities.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "API is versioned as v5 (documentation and paths under /docs/api/v5/); an explicit deprecation/sunset policy was not found in the captured evidence.",
+    "source_url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+    "quote": "The Pinterest API v5 significantly increases the scope of what is possible for you to create as a developer.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Pinterest documents a broad public API v5 with OAuth 2.0, documented scopes, an API sandbox and webhooks for lead ads. Access is nonetheless gated by Pinterest app review: approved apps receive Trial access, the app secret is hidden while approval is pending, and Standard access requires a recorded video review of the OAuth flow. That approval gate, rather than credentials cost, makes it moderate rather than easy.",
+  "main_blocker": "Pinterest app approval before app secret/Trial access; video review for Standard access",
+  "needs_outreach": true,
+  "outreach_reason": "A human must submit the app for Pinterest review, and for Standard access prepare a video recording of the app completing the OAuth flow, before credentials/production access are granted.",
+  "open_questions": [
+    "The fetched API introduction and /docs/ pages rendered as JS navigation shells with no body text, so api_type (REST) and the canonical docs_url are inferred rather than stated verbatim; evidence explicitly calls API endpoints but never labels the protocol.",
+    "Official SDK languages could not be verified: the developer-tools/sdk page was not captured in SOURCES, so sdk_languages is left not_found.",
+    "Specific numeric rate-limit quotas are referenced on /docs/reference/rate-limits/ but were not present in the captured text.",
+    "No explicit deprecation/sunset policy was found in the captured pages; only the v5 version designation is evidenced.",
+    "The official Pinterest MCP server page says 'Be the first to know when it launches' and a help page snippet mentions early-access sign-up, so the https://api.pinterest.com/mcp endpoint may not yet be generally available.",
+    "Whether Trial app approval is a human outreach process or an automated portal review is not fully clear; access_notes/outreach assume a review submission is required."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "developers.pinterest.com",
+      "description": null,
+      "source_file": "04-marketing-ads-email-and-social.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.pinterest.com",
+        "title": "Pinterest Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 805
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/api/v5/introduction/",
+        "title": "Pinterest Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 155
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/",
+        "title": "Pinterest Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 155
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/faqs/faqs/",
+        "title": "Pinterest Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.pinterest.com/",
+        "title": "Pinterest Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 805
+      },
+      {
+        "url": "https://developers.pinterest.com/about-pinterest-mcp/",
+        "title": "Pinterest Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2408
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/key-concepts/best-practices/",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/work-with-ads/lead-ads/",
+        "title": "Pinterest Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 128.0
+  }
+}

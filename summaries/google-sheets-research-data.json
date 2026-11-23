@@ -1,0 +1,1142 @@
+{
+ "metadata": {
+  "spreadsheet": "composio-research",
+  "spreadsheet_id": "18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8",
+  "tab": "Research",
+  "read_via": "Composio MCP session trs_W-GFmubQQFik / GOOGLESHEETS_BATCH_GET",
+  "rows": 101,
+  "app_rows": 100,
+  "columns": 19,
+  "generated": "2026-11-23"
+ },
+ "stats": {
+  "overall": {
+   "verdict": {
+    "Buildable with limitations": 20,
+    "Buildable": 71,
+    "Difficult / gated": 6,
+    "Insufficient information": 3
+   },
+   "access": {
+    "Self-serve free": 52,
+    "Self-serve trial": 21,
+    "Paid plan required": 14,
+    "Admin approval required": 6,
+    "Partnership / contact-sales required": 5,
+    "Unknown": 2
+   },
+   "mcp": {
+    "Official": 84,
+    "None": 6,
+    "Community": 10
+   },
+   "rest": {
+    "yes": 90,
+    "no": 6,
+    "unknown": 4
+   },
+   "graphql": {
+    "yes": 13,
+    "no": 82,
+    "unknown": 5
+   },
+   "auth": {
+    "oauth2": 69,
+    "api_key": 53,
+    "basic": 6,
+    "bearer_token": 47,
+    "other": 6,
+    "jwt": 4
+   },
+   "confidence": {
+    "High": 74,
+    "Medium": 20,
+    "Low": 6
+   },
+   "status": {
+    "Pilot - verified": 1,
+    "Verified": 99
+   }
+  },
+  "categories": {
+   "AI, Research and Media-native": {
+    "n": 10,
+    "verdict": {
+     "Insufficient information": 1,
+     "Buildable with limitations": 5,
+     "Buildable": 4
+    },
+    "access": {
+     "Unknown": 1,
+     "Paid plan required": 3,
+     "Self-serve free": 5,
+     "Self-serve trial": 1
+    },
+    "mcp": {
+     "None": 1,
+     "Official": 8,
+     "Community": 1
+    },
+    "rest": {
+     "no": 2,
+     "yes": 7,
+     "unknown": 1
+    },
+    "graphql": {
+     "unknown": 3,
+     "no": 7
+    },
+    "auth": {
+     "oauth2": 3,
+     "api_key": 5,
+     "bearer_token": 5,
+     "other": 1
+    },
+    "confidence": {
+     "Low": 2,
+     "High": 5,
+     "Medium": 3
+    },
+    "official_mcp": 8,
+    "self_serve": 6,
+    "buildable": 4,
+    "limited": 5,
+    "difficult": 0,
+    "insufficient": 1
+   },
+   "CRM and Sales": {
+    "n": 10,
+    "verdict": {
+     "Buildable with limitations": 2,
+     "Buildable": 7,
+     "Difficult / gated": 1
+    },
+    "access": {
+     "Self-serve free": 7,
+     "Self-serve trial": 1,
+     "Paid plan required": 1,
+     "Admin approval required": 1
+    },
+    "mcp": {
+     "Official": 10
+    },
+    "rest": {
+     "yes": 10
+    },
+    "graphql": {
+     "yes": 2,
+     "no": 8
+    },
+    "auth": {
+     "oauth2": 10,
+     "api_key": 8,
+     "basic": 2,
+     "bearer_token": 3
+    },
+    "confidence": {
+     "High": 8,
+     "Medium": 2
+    },
+    "official_mcp": 10,
+    "self_serve": 8,
+    "buildable": 7,
+    "limited": 2,
+    "difficult": 1,
+    "insufficient": 0
+   },
+   "Communications and Messaging": {
+    "n": 10,
+    "verdict": {
+     "Buildable": 8,
+     "Buildable with limitations": 2
+    },
+    "access": {
+     "Self-serve free": 6,
+     "Self-serve trial": 3,
+     "Paid plan required": 1
+    },
+    "mcp": {
+     "Official": 8,
+     "Community": 2
+    },
+    "rest": {
+     "yes": 10
+    },
+    "graphql": {
+     "no": 10
+    },
+    "auth": {
+     "oauth2": 7,
+     "api_key": 4,
+     "basic": 2,
+     "bearer_token": 2,
+     "other": 1,
+     "jwt": 1
+    },
+    "confidence": {
+     "High": 8,
+     "Medium": 2
+    },
+    "official_mcp": 8,
+    "self_serve": 9,
+    "buildable": 8,
+    "limited": 2,
+    "difficult": 0,
+    "insufficient": 0
+   },
+   "Data, SEO and Scraping": {
+    "n": 10,
+    "verdict": {
+     "Buildable": 6,
+     "Buildable with limitations": 3,
+     "Difficult / gated": 1
+    },
+    "access": {
+     "Paid plan required": 4,
+     "Self-serve trial": 2,
+     "Self-serve free": 3,
+     "Partnership / contact-sales required": 1
+    },
+    "mcp": {
+     "Official": 8,
+     "Community": 1,
+     "None": 1
+    },
+    "rest": {
+     "yes": 9,
+     "no": 1
+    },
+    "graphql": {
+     "no": 10
+    },
+    "auth": {
+     "other": 1,
+     "api_key": 8,
+     "bearer_token": 5,
+     "oauth2": 2
+    },
+    "confidence": {
+     "High": 9,
+     "Medium": 1
+    },
+    "official_mcp": 8,
+    "self_serve": 5,
+    "buildable": 6,
+    "limited": 3,
+    "difficult": 1,
+    "insufficient": 0
+   },
+   "Developer, Infra and Data platforms": {
+    "n": 10,
+    "verdict": {
+     "Buildable": 10
+    },
+    "access": {
+     "Self-serve free": 9,
+     "Self-serve trial": 1
+    },
+    "mcp": {
+     "Official": 10
+    },
+    "rest": {
+     "yes": 10
+    },
+    "graphql": {
+     "yes": 3,
+     "no": 7
+    },
+    "auth": {
+     "oauth2": 7,
+     "bearer_token": 8,
+     "api_key": 4,
+     "jwt": 1
+    },
+    "confidence": {
+     "High": 9,
+     "Medium": 1
+    },
+    "official_mcp": 10,
+    "self_serve": 10,
+    "buildable": 10,
+    "limited": 0,
+    "difficult": 0,
+    "insufficient": 0
+   },
+   "Ecommerce": {
+    "n": 10,
+    "verdict": {
+     "Buildable": 6,
+     "Difficult / gated": 1,
+     "Buildable with limitations": 3
+    },
+    "access": {
+     "Self-serve free": 6,
+     "Self-serve trial": 1,
+     "Partnership / contact-sales required": 1,
+     "Paid plan required": 1,
+     "Admin approval required": 1
+    },
+    "mcp": {
+     "Official": 9,
+     "Community": 1
+    },
+    "rest": {
+     "yes": 10
+    },
+    "graphql": {
+     "yes": 3,
+     "no": 7
+    },
+    "auth": {
+     "oauth2": 9,
+     "bearer_token": 7,
+     "jwt": 2,
+     "api_key": 2
+    },
+    "confidence": {
+     "High": 8,
+     "Medium": 1,
+     "Low": 1
+    },
+    "official_mcp": 9,
+    "self_serve": 7,
+    "buildable": 6,
+    "limited": 3,
+    "difficult": 1,
+    "insufficient": 0
+   },
+   "Finance and Fintech": {
+    "n": 10,
+    "verdict": {
+     "Buildable": 5,
+     "Buildable with limitations": 2,
+     "Insufficient information": 2,
+     "Difficult / gated": 1
+    },
+    "access": {
+     "Self-serve free": 3,
+     "Self-serve trial": 2,
+     "Partnership / contact-sales required": 2,
+     "Unknown": 1,
+     "Paid plan required": 2
+    },
+    "mcp": {
+     "Official": 6,
+     "Community": 1,
+     "None": 3
+    },
+    "rest": {
+     "yes": 7,
+     "unknown": 3
+    },
+    "graphql": {
+     "no": 7,
+     "unknown": 2,
+     "yes": 1
+    },
+    "auth": {
+     "oauth2": 5,
+     "api_key": 3,
+     "other": 3
+    },
+    "confidence": {
+     "High": 5,
+     "Medium": 2,
+     "Low": 3
+    },
+    "official_mcp": 6,
+    "self_serve": 5,
+    "buildable": 5,
+    "limited": 2,
+    "difficult": 1,
+    "insufficient": 2
+   },
+   "Marketing, Ads, Email and Social": {
+    "n": 10,
+    "verdict": {
+     "Buildable with limitations": 3,
+     "Difficult / gated": 1,
+     "Buildable": 6
+    },
+    "access": {
+     "Admin approval required": 4,
+     "Paid plan required": 1,
+     "Self-serve free": 4,
+     "Self-serve trial": 1
+    },
+    "mcp": {
+     "Official": 7,
+     "Community": 3
+    },
+    "rest": {
+     "yes": 10
+    },
+    "graphql": {
+     "no": 10
+    },
+    "auth": {
+     "oauth2": 8,
+     "bearer_token": 6,
+     "api_key": 4
+    },
+    "confidence": {
+     "High": 8,
+     "Medium": 2
+    },
+    "official_mcp": 7,
+    "self_serve": 5,
+    "buildable": 6,
+    "limited": 3,
+    "difficult": 1,
+    "insufficient": 0
+   },
+   "Productivity and Project Management": {
+    "n": 10,
+    "verdict": {
+     "Buildable": 10
+    },
+    "access": {
+     "Self-serve free": 8,
+     "Self-serve trial": 2
+    },
+    "mcp": {
+     "Official": 9,
+     "Community": 1
+    },
+    "rest": {
+     "yes": 8,
+     "no": 2
+    },
+    "graphql": {
+     "no": 7,
+     "yes": 3
+    },
+    "auth": {
+     "oauth2": 9,
+     "bearer_token": 6,
+     "api_key": 6,
+     "basic": 1
+    },
+    "confidence": {
+     "High": 7,
+     "Medium": 3
+    },
+    "official_mcp": 9,
+    "self_serve": 10,
+    "buildable": 10,
+    "limited": 0,
+    "difficult": 0,
+    "insufficient": 0
+   },
+   "Support and Helpdesk": {
+    "n": 10,
+    "verdict": {
+     "Buildable": 9,
+     "Difficult / gated": 1
+    },
+    "access": {
+     "Self-serve trial": 7,
+     "Paid plan required": 1,
+     "Self-serve free": 1,
+     "Partnership / contact-sales required": 1
+    },
+    "mcp": {
+     "Official": 9,
+     "None": 1
+    },
+    "rest": {
+     "yes": 9,
+     "no": 1
+    },
+    "graphql": {
+     "no": 9,
+     "yes": 1
+    },
+    "auth": {
+     "oauth2": 9,
+     "api_key": 9,
+     "bearer_token": 5,
+     "basic": 1
+    },
+    "confidence": {
+     "High": 7,
+     "Medium": 3
+    },
+    "official_mcp": 9,
+    "self_serve": 8,
+    "buildable": 9,
+    "limited": 0,
+    "difficult": 1,
+    "insufficient": 0
+   }
+  },
+  "difficult": [
+   {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "verdict": "Difficult / gated",
+    "access": "Admin approval required",
+    "auth": [
+     "oauth2",
+     "api_key"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Enterprise-only access; API capability must be enabled by the org admin; schema differs per tenant."
+   },
+   {
+    "app": "Gladly",
+    "category": "Support and Helpdesk",
+    "verdict": "Difficult / gated",
+    "access": "Partnership / contact-sales required",
+    "auth": [
+     "api_key",
+     "bearer_token"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "None",
+    "confidence": "Medium",
+    "status": "Verified",
+    "blocker": "Enterprise-only onboarding with no public self-serve credentials; API access granted through the account team."
+   },
+   {
+    "app": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "verdict": "Difficult / gated",
+    "access": "Admin approval required",
+    "auth": [
+     "oauth2"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Community",
+    "confidence": "Medium",
+    "status": "Verified",
+    "blocker": "Marketing Developer Platform approval plus ad-account association; frequent API version sunsets."
+   },
+   {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "verdict": "Difficult / gated",
+    "access": "Partnership / contact-sales required",
+    "auth": [
+     "oauth2",
+     "bearer_token",
+     "jwt"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Enterprise-only licensing, per-instance API client setup, and MCP tooling still in preview/pilot."
+   },
+   {
+    "app": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "verdict": "Difficult / gated",
+    "access": "Partnership / contact-sales required",
+    "auth": [
+     "api_key"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "None",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Sales-gated API access with no self-serve credentials."
+   },
+   {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "verdict": "Difficult / gated",
+    "access": "Partnership / contact-sales required",
+    "auth": [],
+    "rest": "unknown",
+    "graphql": "unknown",
+    "mcp": "None",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "Enterprise-only licensing with no public API documentation or self-serve credentials."
+   }
+  ],
+  "insufficient": [
+   {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "verdict": "Insufficient information",
+    "access": "Partnership / contact-sales required",
+    "auth": [
+     "other"
+    ],
+    "rest": "unknown",
+    "graphql": "no",
+    "mcp": "None",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "No public API documentation or self-serve credentials; everything flows through merchant contracting."
+   },
+   {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "verdict": "Insufficient information",
+    "access": "Unknown",
+    "auth": [],
+    "rest": "unknown",
+    "graphql": "unknown",
+    "mcp": "None",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "No public API documentation; the documentation URL supplied in the sheet is dead."
+   },
+   {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "verdict": "Insufficient information",
+    "access": "Unknown",
+    "auth": [],
+    "rest": "no",
+    "graphql": "unknown",
+    "mcp": "None",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "No documented public API surface; the enterprise path is not publicly documented in the pages checked."
+   }
+  ],
+  "low_conf": [
+   {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "verdict": "Buildable with limitations",
+    "access": "Self-serve free",
+    "auth": [
+     "api_key",
+     "bearer_token"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "Rebrand in progress (fanbasis → Commas), thin public documentation and low vendor maturity."
+   },
+   {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "verdict": "Insufficient information",
+    "access": "Partnership / contact-sales required",
+    "auth": [
+     "other"
+    ],
+    "rest": "unknown",
+    "graphql": "no",
+    "mcp": "None",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "No public API documentation or self-serve credentials; everything flows through merchant contracting."
+   },
+   {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "verdict": "Insufficient information",
+    "access": "Unknown",
+    "auth": [],
+    "rest": "unknown",
+    "graphql": "unknown",
+    "mcp": "None",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "No public API documentation; the documentation URL supplied in the sheet is dead."
+   },
+   {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "verdict": "Difficult / gated",
+    "access": "Partnership / contact-sales required",
+    "auth": [],
+    "rest": "unknown",
+    "graphql": "unknown",
+    "mcp": "None",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "Enterprise-only licensing with no public API documentation or self-serve credentials."
+   },
+   {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "verdict": "Insufficient information",
+    "access": "Unknown",
+    "auth": [],
+    "rest": "no",
+    "graphql": "unknown",
+    "mcp": "None",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "No documented public API surface; the enterprise path is not publicly documented in the pages checked."
+   },
+   {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "verdict": "Buildable with limitations",
+    "access": "Self-serve trial",
+    "auth": [],
+    "rest": "yes",
+    "graphql": "unknown",
+    "mcp": "Official",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "Documentation is marketing-level; API authentication details unverified; generation credits are costly."
+   }
+  ],
+  "limited": [
+   {
+    "app": "Salesforce",
+    "category": "CRM and Sales",
+    "verdict": "Buildable with limitations",
+    "access": "Self-serve free",
+    "auth": [
+     "oauth2",
+     "api_key",
+     "basic"
+    ],
+    "rest": "yes",
+    "graphql": "yes",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Pilot - verified",
+    "blocker": "Each customer org needs an admin-created External Client App / OAuth client; production API access requires Enterprise+ edition (or Professional add-on), and official hosted MCP requires Flex Credits."
+   },
+   {
+    "app": "Copper",
+    "category": "CRM and Sales",
+    "verdict": "Buildable with limitations",
+    "access": "Paid plan required",
+    "auth": [
+     "oauth2",
+     "api_key"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "Medium",
+    "status": "Verified",
+    "blocker": "API use effectively requires a paid Copper seat; smaller surface area than enterprise CRMs."
+   },
+   {
+    "app": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "verdict": "Buildable with limitations",
+    "access": "Self-serve trial",
+    "auth": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Business verification, template approval and the 24-hour messaging window constrain automation."
+   },
+   {
+    "app": "Aircall",
+    "category": "Communications and Messaging",
+    "verdict": "Buildable with limitations",
+    "access": "Paid plan required",
+    "auth": [
+     "oauth2",
+     "api_key",
+     "basic"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "Medium",
+    "status": "Verified",
+    "blocker": "Paid subscription plus beta enrollment for MCP; MCP is read-only and conversation intelligence needs the AI add-on."
+   },
+   {
+    "app": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "verdict": "Buildable with limitations",
+    "access": "Admin approval required",
+    "auth": [
+     "oauth2"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Developer token approval (Basic/Standard) plus per-account OAuth; official MCP is read-only."
+   },
+   {
+    "app": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "verdict": "Buildable with limitations",
+    "access": "Admin approval required",
+    "auth": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "App review and access-tier requirements for third-party ad accounts; granular ad-account permissions."
+   },
+   {
+    "app": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "verdict": "Buildable with limitations",
+    "access": "Admin approval required",
+    "auth": [
+     "oauth2",
+     "bearer_token"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Pinterest app review for trial/standard access and per-tier rate limits."
+   },
+   {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "verdict": "Buildable with limitations",
+    "access": "Paid plan required",
+    "auth": [
+     "oauth2",
+     "api_key",
+     "bearer_token"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Thin MCP coverage forces direct REST use; paid commerce plan required."
+   },
+   {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "verdict": "Buildable with limitations",
+    "access": "Admin approval required",
+    "auth": [
+     "oauth2"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Seller account, developer registration and app review; SigV4 signing adds meaningful complexity."
+   },
+   {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "verdict": "Buildable with limitations",
+    "access": "Self-serve free",
+    "auth": [
+     "api_key",
+     "bearer_token"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "Rebrand in progress (fanbasis → Commas), thin public documentation and low vendor maturity."
+   },
+   {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "verdict": "Buildable with limitations",
+    "access": "Paid plan required",
+    "auth": [
+     "api_key",
+     "bearer_token"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Enterprise plan required for real API access; per-row unit costs."
+   },
+   {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "verdict": "Buildable with limitations",
+    "access": "Self-serve free",
+    "auth": [],
+    "rest": "no",
+    "graphql": "no",
+    "mcp": "Community",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "No API or auth layer, so a toolkit must wrap the CLI; results are best-effort and rate-limit sensitive."
+   },
+   {
+    "app": "Clay",
+    "category": "Data, SEO and Scraping",
+    "verdict": "Buildable with limitations",
+    "access": "Paid plan required",
+    "auth": [
+     "oauth2",
+     "api_key"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "Medium",
+    "status": "Verified",
+    "blocker": "HTTP API limited to Enterprise; MCP scoped to workspace plans and Clay's own OAuth server."
+   },
+   {
+    "app": "Plaid",
+    "category": "Finance and Fintech",
+    "verdict": "Buildable with limitations",
+    "access": "Self-serve trial",
+    "auth": [
+     "other"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Production approval and per-item costs; sensitive financial-data handling obligations."
+   },
+   {
+    "app": "Brex",
+    "category": "Finance and Fintech",
+    "verdict": "Buildable with limitations",
+    "access": "Paid plan required",
+    "auth": [
+     "oauth2",
+     "api_key"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "Medium",
+    "status": "Verified",
+    "blocker": "Customer-only access; OAuth/token provisioning is tied to holding a Brex account."
+   },
+   {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "verdict": "Buildable with limitations",
+    "access": "Paid plan required",
+    "auth": [
+     "oauth2",
+     "api_key",
+     "bearer_token"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "API access is gated to Enterprise workspaces and limited to two keys per user."
+   },
+   {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "verdict": "Buildable with limitations",
+    "access": "Self-serve free",
+    "auth": [
+     "oauth2"
+    ],
+    "rest": "unknown",
+    "graphql": "unknown",
+    "mcp": "Official",
+    "confidence": "Medium",
+    "status": "Verified",
+    "blocker": "MCP-first with no documented public REST API, so tool surface is limited to meeting data."
+   },
+   {
+    "app": "Consensus",
+    "category": "AI, Research and Media-native",
+    "verdict": "Buildable with limitations",
+    "access": "Paid plan required",
+    "auth": [
+     "other"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "Medium",
+    "status": "Verified",
+    "blocker": "Single-purpose search API and commercial access terms."
+   },
+   {
+    "app": "Devin",
+    "category": "AI, Research and Media-native",
+    "verdict": "Buildable with limitations",
+    "access": "Paid plan required",
+    "auth": [
+     "api_key",
+     "bearer_token"
+    ],
+    "rest": "yes",
+    "graphql": "no",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Verified",
+    "blocker": "Paid organization account required; the API wraps an expensive agent runtime."
+   },
+   {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "verdict": "Buildable with limitations",
+    "access": "Self-serve trial",
+    "auth": [],
+    "rest": "yes",
+    "graphql": "unknown",
+    "mcp": "Official",
+    "confidence": "Low",
+    "status": "Verified",
+    "blocker": "Documentation is marketing-level; API authentication details unverified; generation credits are costly."
+   }
+  ],
+  "pilot": [
+   {
+    "app": "Salesforce",
+    "category": "CRM and Sales",
+    "verdict": "Buildable with limitations",
+    "access": "Self-serve free",
+    "auth": [
+     "oauth2",
+     "api_key",
+     "basic"
+    ],
+    "rest": "yes",
+    "graphql": "yes",
+    "mcp": "Official",
+    "confidence": "High",
+    "status": "Pilot - verified",
+    "blocker": "Each customer org needs an admin-created External Client App / OAuth client; production API access requires Enterprise+ edition (or Professional add-on), and official hosted MCP requires Flex Credits."
+   }
+  ],
+  "blocker_buckets": {
+   "admin / role": 11,
+   "plan / payment": 26,
+   "review / approval": 17,
+   "docs / discoverability": 6,
+   "other": 20,
+   "sandbox / credentials": 14,
+   "no public API": 5,
+   "limits": 1
+  }
+ },
+ "table": [
+  "Salesforce|CRM and Sales|Buildable with limitations|Self-serve free|oauth2,api_key,basic|Yes|Yes|Official|High|Pilot - verified|Each customer org needs an admin-created External Client App / OAuth client; production API access requires Enterprise+ edition (or Professional add-on), and official hosted MCP re",
+  "HubSpot|CRM and Sales|Buildable|Self-serve free|oauth2,api_key,bearer_token|Yes|No|Official|High|Verified|No hard blocker; tier-gated APIs and the legacy private-app sunset force OAuth apps or the new developer platform.",
+  "Pipedrive|CRM and Sales|Buildable|Self-serve free|oauth2,api_key|Yes (v1 and v2)|No|Official|High|Verified|One active API token per user limits multi-tenant token-based designs; OAuth app review needed for marketplace distribution.",
+  "Attio|CRM and Sales|Buildable|Self-serve free|oauth2,api_key,bearer_token|Yes|No (GraphQL only inside the Attio App SDK, not a public API)|Official|Medium|Verified|No major blocker; API/rate limits tied to workspace plan and app publication state.",
+  "Twenty|CRM and Sales|Buildable|Self-serve free|oauth2,api_key,bearer_token|Yes|Yes|Official|High|Verified|Schema-per-workspace means tool schemas must be discovered per instance; cloud free tier is trial-limited.",
+  "Podio|CRM and Sales|Buildable|Self-serve free|oauth2|Yes|No|Official|High|Verified|Legacy API design and older documentation; feature velocity tied to Progress roadmap.",
+  "Zoho CRM|CRM and Sales|Buildable|Self-serve free|oauth2|Yes (V8)|No|Official|High|Verified|Per-edition API credit limits and multi-data-center OAuth domains complicate setup.",
+  "Close|CRM and Sales|Buildable|Self-serve trial|oauth2,api_key,basic|Yes|No|Official|High|Verified|Paid subscription required after trial; per-organization API scoping only.",
+  "Copper|CRM and Sales|Buildable with limitations|Paid plan required|oauth2,api_key|Yes|No|Official|Medium|Verified|API use effectively requires a paid Copper seat; smaller surface area than enterprise CRMs.",
+  "DealCloud|CRM and Sales|Difficult / gated|Admin approval required|oauth2,api_key|Yes|No|Official|High|Verified|Enterprise-only access; API capability must be enabled by the org admin; schema differs per tenant.",
+  "Zendesk|Support and Helpdesk|Buildable|Self-serve trial|oauth2,api_key,bearer_token|Yes|No|Official|High|Verified|Official MCP is EAP and plan-gated (Suite Team+); API tokens deprecated in favor of OAuth app setup.",
+  "Intercom|Support and Helpdesk|Buildable|Self-serve trial|oauth2,api_key,bearer_token|Yes (versioned, e.g. 2.13)|No|Official|High|Verified|Paid workspace required; API version pinning and region-specific endpoints.",
+  "Freshdesk|Support and Helpdesk|Buildable|Self-serve trial|oauth2,api_key,basic|Yes (v2)|No|Official|High|Verified|API-key-only auth (no OAuth for the REST API) and a per-tenant MCP endpoint.",
+  "Front|Support and Helpdesk|Buildable|Self-serve trial|oauth2,api_key|Yes|No|Official|High|Verified|Paid plan required; OAuth apps need admin authorization (MCP connection excepted).",
+  "Pylon|Support and Helpdesk|Buildable|Paid plan required|oauth2,api_key,bearer_token|Yes|No|Official|Medium|Verified|Paid sales-assisted onboarding; two regional endpoints must match the tenant.",
+  "LiveAgent|Support and Helpdesk|Buildable|Self-serve free|oauth2,api_key|Yes (v1 and v3)|No|Official|Medium|Verified|API-key-only auth with broad account scope; older v1 endpoints still required for some operations.",
+  "Plain|Support and Helpdesk|Buildable|Self-serve trial|oauth2,api_key,bearer_token|No|Yes (GraphQL only)|Official|High|Verified|GraphQL-only API requires schema-aware tooling; paid plan after trial.",
+  "Help Scout|Support and Helpdesk|Buildable|Self-serve trial|oauth2|Yes (Mailbox API 2.0)|No|Official|High|Verified|OAuth credentials tied to an active user; official MCP is read-only.",
+  "Gorgias|Support and Helpdesk|Buildable|Self-serve trial|oauth2,api_key|Yes|No|Official|High|Verified|MCP still in open beta; OAuth required for distribution to multiple stores.",
+  "Gladly|Support and Helpdesk|Difficult / gated|Partnership / contact-sales required|api_key,bearer_token|Yes|No|None|Medium|Verified|Enterprise-only onboarding with no public self-serve credentials; API access granted through the account team.",
+  "Slack|Communications and Messaging|Buildable|Self-serve free|oauth2|Yes (Web API)|No|Official|High|Verified|OAuth install needs workspace admin approval; free workspaces restrict history; per-method rate limits.",
+  "Twilio|Communications and Messaging|Buildable|Self-serve trial|oauth2,api_key,basic|Yes|No|Official|High|Verified|Trial restrictions (verified numbers, credit); execution-grade MCP still alpha.",
+  "Zoho Cliq|Communications and Messaging|Buildable|Self-serve free|oauth2|Yes (v2)|No|Official|High|Verified|Zoho multi-data-center domains and API call limits; admin scope approval for org-wide data.",
+  "Lark (Larksuite)|Communications and Messaging|Buildable|Self-serve free|oauth2,bearer_token|Yes|No|Official|High|Verified|Permission review for sensitive scopes; separate larksuite.com and feishu.cn deployments.",
+  "Pumble|Communications and Messaging|Buildable|Self-serve free|api_key|Yes|No|Official|Medium|Verified|Modest API surface; MCP behavior is only described in vendor marketing, not deep technical docs.",
+  "Discord|Communications and Messaging|Buildable|Self-serve free|oauth2|Yes (v10)|No|Community|High|Verified|Privileged message-content intents require verification; rate limits; no official data MCP.",
+  "Telegram|Communications and Messaging|Buildable|Self-serve free||Yes (Bot API over HTTPS)|No|Community|High|Verified|Bot API cannot read arbitrary user chats; MTProto requires session management and carries account-ban risk.",
+  "WhatsApp Business|Communications and Messaging|Buildable with limitations|Self-serve trial|oauth2,bearer_token|Yes (Graph API)|No|Official|High|Verified|Business verification, template approval and the 24-hour messaging window constrain automation.",
+  "Aircall|Communications and Messaging|Buildable with limitations|Paid plan required|oauth2,api_key,basic|Yes|No|Official|Medium|Verified|Paid subscription plus beta enrollment for MCP; MCP is read-only and conversation intelligence needs the AI add-on.",
+  "Vonage|Communications and Messaging|Buildable|Self-serve trial|api_key,jwt|Yes|No|Official|High|Verified|Per-request billing; JWT/application setup for voice; regulatory constraints on numbers by region.",
+  "Google Ads|Marketing, Ads, Email and Social|Buildable with limitations|Admin approval required|oauth2|Yes (REST + gRPC)|No|Official|High|Verified|Developer token approval (Basic/Standard) plus per-account OAuth; official MCP is read-only.",
+  "Meta Ads|Marketing, Ads, Email and Social|Buildable with limitations|Admin approval required|oauth2,bearer_token|Yes (Graph API)|No|Official|High|Verified|App review and access-tier requirements for third-party ad accounts; granular ad-account permissions.",
+  "LinkedIn Ads|Marketing, Ads, Email and Social|Difficult / gated|Admin approval required|oauth2|Yes|No|Community|Medium|Verified|Marketing Developer Platform approval plus ad-account association; frequent API version sunsets.",
+  "GoHighLevel|Marketing, Ads, Email and Social|Buildable|Paid plan required|oauth2|Yes (v2)|No|Official|High|Verified|Agency subscription required; sub-account scoping and API rate limits (increases by request).",
+  "Mailchimp|Marketing, Ads, Email and Social|Buildable|Self-serve free|oauth2,api_key,bearer_token|Yes (Marketing API 3.0)|No|Official|Medium|Verified|No blocker for API keys; the officially documented MCP available to builders is documentation search, not account execution.",
+  "Klaviyo|Marketing, Ads, Email and Social|Buildable|Self-serve free|oauth2,api_key|Yes|No|Official|High|Verified|Role-gated authorization and differing rate limits between private-key and OAuth auth.",
+  "systeme.io|Marketing, Ads, Email and Social|Buildable|Self-serve free|api_key,bearer_token|Yes|No|Official|High|Verified|MCP key expiry (90 days) and two-key limit complicate long-lived deployments; narrower API surface.",
+  "Pinterest|Marketing, Ads, Email and Social|Buildable with limitations|Admin approval required|oauth2,bearer_token|Yes (v5)|No|Official|High|Verified|Pinterest app review for trial/standard access and per-tier rate limits.",
+  "Threads (Meta)|Marketing, Ads, Email and Social|Buildable|Self-serve trial|oauth2,bearer_token|Yes (graph.threads.net)|No|Community|High|Verified|Publishing quota limits and app review for multi-user distribution; separate API surface from Facebook/Instagram.",
+  "SendGrid|Marketing, Ads, Email and Social|Buildable|Self-serve free|api_key,bearer_token|Yes (v3)|No|Community|High|Verified|No official account-level MCP; sender authentication and IP/reputation warm-up required.",
+  "Shopify|Ecommerce|Buildable|Self-serve free|oauth2,bearer_token|Yes (REST Admin, legacy-leaning)|Yes (Admin and Storefront)|Official|High|Verified|Per-merchant scope approval; the Admin REST API is being superseded by GraphQL.",
+  "WooCommerce|Ecommerce|Buildable|Self-serve free|oauth2|Yes (WC REST via WP REST)|No (requires a third-party plugin)|Official|High|Verified|Per-store plugin and credentials; no multi-tenant hosted endpoint, so each store must be configured.",
+  "BigCommerce|Ecommerce|Buildable|Self-serve trial|oauth2,jwt|Yes (v3)|Yes (Storefront and Admin GraphQL)|Official|High|Verified|Trial-then-paid; store-management MCP still beta; per-store endpoints.",
+  "Salesforce Commerce Cloud|Ecommerce|Difficult / gated|Partnership / contact-sales required|oauth2,bearer_token,jwt|Yes (SCAPI)|No|Official|High|Verified|Enterprise-only licensing, per-instance API client setup, and MCP tooling still in preview/pilot.",
+  "Magento (Adobe Commerce)|Ecommerce|Buildable|Self-serve free|oauth2,bearer_token|Yes|Yes|Official|Medium|Verified|Self-hosted PHP stack required; per-instance credentials; enterprise features need Adobe Commerce licensing.",
+  "Squarespace|Ecommerce|Buildable with limitations|Paid plan required|oauth2,api_key,bearer_token|Yes (Commerce APIs)|No|Official|High|Verified|Thin MCP coverage forces direct REST use; paid commerce plan required.",
+  "Ecwid|Ecommerce|Buildable|Self-serve free|oauth2,bearer_token|Yes (v3)|No|Community|High|Verified|No official MCP and a strict 600 requests/minute/token rate limit.",
+  "Gumroad|Ecommerce|Buildable|Self-serve free|oauth2,bearer_token|Yes|No|Official|High|Verified|Smaller API surface and scope-based permissions.",
+  "Amazon Selling Partner|Ecommerce|Buildable with limitations|Admin approval required|oauth2|Yes|No|Official|High|Verified|Seller account, developer registration and app review; SigV4 signing adds meaningful complexity.",
+  "fanbasis|Ecommerce|Buildable with limitations|Self-serve free|api_key,bearer_token|Yes|No|Official|Low|Verified|Rebrand in progress (fanbasis → Commas), thin public documentation and low vendor maturity.",
+  "DataForSEO|Data, SEO and Scraping|Buildable|Paid plan required||Yes|No|Official|High|Verified|Prepaid, per-request billing requires cost controls; API is a data product with no write actions.",
+  "SE Ranking|Data, SEO and Scraping|Buildable|Paid plan required|api_key,bearer_token|Yes|No|Official|High|Verified|Credit-based API costs and plan gating.",
+  "Ahrefs|Data, SEO and Scraping|Buildable with limitations|Paid plan required|api_key,bearer_token|Yes|No|Official|High|Verified|Enterprise plan required for real API access; per-row unit costs.",
+  "MrScraper|Data, SEO and Scraping|Buildable|Self-serve trial|oauth2,api_key|Yes|No|Official|High|Verified|Usage-based token costs; anti-bot failures on some targets.",
+  "Apify|Data, SEO and Scraping|Buildable|Self-serve free|api_key,bearer_token|Yes (v2)|No|Official|High|Verified|Compute-unit costs and wide variance in third-party Actor quality.",
+  "Firecrawl|Data, SEO and Scraping|Buildable|Self-serve free|api_key,bearer_token|Yes|No|Official|High|Verified|Credit-based costs and free-tier concurrency limits; JS-heavy pages vary in extraction quality.",
+  "Bright Data|Data, SEO and Scraping|Buildable|Self-serve trial|api_key,bearer_token|Yes|No|Official|High|Verified|KYC and usage-based costs; compliance constraints on target sites.",
+  "Sherlock|Data, SEO and Scraping|Buildable with limitations|Self-serve free||No|No|Community|High|Verified|No API or auth layer, so a toolkit must wrap the CLI; results are best-effort and rate-limit sensitive.",
+  "Waterfall.io|Data, SEO and Scraping|Difficult / gated|Partnership / contact-sales required|api_key|Yes|No|None|High|Verified|Sales-gated API access with no self-serve credentials.",
+  "Clay|Data, SEO and Scraping|Buildable with limitations|Paid plan required|oauth2,api_key|Yes (limited)|No|Official|Medium|Verified|HTTP API limited to Enterprise; MCP scoped to workspace plans and Clay's own OAuth server.",
+  "GitHub|Developer, Infra and Data platforms|Buildable|Self-serve free|oauth2,bearer_token|Yes (versioned)|Yes|Official|High|Verified|Org policy approval for apps and fine-grained tokens; rate limits differ by credential type.",
+  "Vercel|Developer, Infra and Data platforms|Buildable|Self-serve free|oauth2,bearer_token|Yes|No|Official|High|Verified|Team scoping via teamId and rate limits; access tokens carry broad account blast radius.",
+  "Netlify|Developer, Infra and Data platforms|Buildable|Self-serve free|oauth2,bearer_token|Yes|No|Official|High|Verified|Token expiry and per-team scope; narrower resource set than hyperscalers.",
+  "Cloudflare|Developer, Infra and Data platforms|Buildable|Self-serve free|api_key|Yes (v4)|Yes (analytics GraphQL API)|Official|High|Verified|Breadth means many narrowly scoped tokens; analytics via GraphQL has a separate schema.",
+  "Supabase|Developer, Infra and Data platforms|Buildable|Self-serve free|api_key,bearer_token|Yes (PostgREST)|Yes (pg_graphql)|Official|High|Verified|Secret keys bypass row-level security, so credential handling is high risk; key naming migration in progress.",
+  "Neo4j|Developer, Infra and Data platforms|Buildable|Self-serve free|bearer_token|Yes (HTTP API)|No (GraphQL requires the Neo4j GraphQL library, not a hosted endpoint)|Official|High|Verified|Cypher-centric interface with no REST resource model; self-hosted instances add ops burden.",
+  "Snowflake|Developer, Infra and Data platforms|Buildable|Self-serve trial|oauth2,bearer_token,jwt|Yes (SQL API)|No|Official|High|Verified|Key-pair/OAuth setup with per-account roles; warehouse compute is billed per query.",
+  "MongoDB Atlas|Developer, Infra and Data platforms|Buildable|Self-serve free|oauth2,api_key,bearer_token|Yes (Admin API)|No (data access is driver-based)|Official|High|Verified|Split between admin plane and data plane; Digest API keys are legacy versus OAuth service accounts.",
+  "Datadog|Developer, Infra and Data platforms|Buildable|Self-serve free|oauth2,api_key|Yes|No|Official|Medium|Verified|Dual-key authentication and per-organization scoping; ingestion is usage-billed.",
+  "Sentry|Developer, Infra and Data platforms|Buildable|Self-serve free|oauth2,bearer_token|Yes|No|Official|High|Verified|Token scope granularity and large event payloads.",
+  "Notion|Productivity and Project Management|Buildable|Self-serve free|oauth2,bearer_token|Yes|No|Official|High|Verified|The page-level grant model means an integration only sees content explicitly shared with it.",
+  "Airtable|Productivity and Project Management|Buildable|Self-serve free|oauth2,api_key,bearer_token|Yes|No|Official|High|Verified|Per-base token scoping and 10-record write batches constrain bulk operations.",
+  "Linear|Productivity and Project Management|Buildable|Self-serve free|oauth2,api_key|No|Yes (GraphQL only)|Official|High|Verified|GraphQL-only API requires query-shaped tooling; rate limits scale with query complexity.",
+  "Jira|Productivity and Project Management|Buildable|Self-serve free|oauth2,api_key,basic|Yes|Yes (Atlassian GraphQL API)|Official|High|Verified|OAuth scope review plus per-site (cloudId) routing; Jira and Confluence behave differently.",
+  "Asana|Productivity and Project Management|Buildable|Self-serve free|oauth2,bearer_token|Yes|No|Official|High|Verified|Workspace-level permissions and free-tier rate limits.",
+  "Monday.com|Productivity and Project Management|Buildable|Self-serve free|oauth2,api_key|No|Yes (GraphQL only)|Official|High|Verified|GraphQL-only with complex column-value schemas; complexity limits vary by plan.",
+  "ClickUp|Productivity and Project Management|Buildable|Self-serve free|oauth2,api_key|Yes (v2 and v3)|No|Official|High|Verified|API availability varies by plan; v2/v3 split and rate limits.",
+  "Coda|Productivity and Project Management|Buildable|Self-serve free|api_key,bearer_token|Yes|No|Official|Medium|Verified|Rebrand in progress (Coda → Superhuman Docs); row-level API with per-document permissions.",
+  "Smartsheet|Productivity and Project Management|Buildable|Self-serve trial|oauth2,bearer_token|Yes|No|Official|Medium|Verified|Plan-based API limits; document-style data model differs from record-based systems.",
+  "Harvest|Productivity and Project Management|Buildable|Self-serve trial|oauth2,bearer_token|Yes (v2)|No|Community|Medium|Verified|No official MCP; paid-only after trial.",
+  "Stripe|Finance and Fintech|Buildable|Self-serve free|oauth2,api_key|Yes|No|Official|High|Verified|Live-mode activation and strict key-scope discipline; money-moving actions need human approval guardrails.",
+  "Plaid|Finance and Fintech|Buildable with limitations|Self-serve trial||Yes|No|Official|High|Verified|Production approval and per-item costs; sensitive financial-data handling obligations.",
+  "Binance|Finance and Fintech|Buildable|Self-serve free|api_key,other|Yes (+ WebSocket streams)|No|Community|Medium|Verified|Jurisdiction-based regulatory restrictions; key permissions and withdrawal risk require tight controls.",
+  "Paygent Connect|Finance and Fintech|Insufficient information|Partnership / contact-sales required||Unknown (not publicly documented)|No|None|Low|Verified|No public API documentation or self-serve credentials; everything flows through merchant contracting.",
+  "iPayX|Finance and Fintech|Insufficient information|Unknown||Unknown|Unknown|None|Low|Verified|No public API documentation; the documentation URL supplied in the sheet is dead.",
+  "QuickBooks|Finance and Fintech|Buildable|Self-serve trial|oauth2|Yes|Yes (QuickBooks GraphQL)|Official|High|Verified|Intuit app review for production plus strict OAuth scope design.",
+  "Xero|Finance and Fintech|Buildable|Self-serve free|oauth2|Yes|No|Official|High|Verified|Five-tenant cap for uncertified apps and certification required at scale.",
+  "Brex|Finance and Fintech|Buildable with limitations|Paid plan required|oauth2,api_key|Yes|No|Official|Medium|Verified|Customer-only access; OAuth/token provisioning is tied to holding a Brex account.",
+  "Ramp|Finance and Fintech|Buildable|Paid plan required|oauth2|Yes|No|Official|High|Verified|Customer-only access; custom clients may need redirect URI approval.",
+  "PitchBook|Finance and Fintech|Difficult / gated|Partnership / contact-sales required||Unknown (enterprise data feed)|Unknown|None|Low|Verified|Enterprise-only licensing with no public API documentation or self-serve credentials.",
+  "NotebookLM|AI, Research and Media-native|Insufficient information|Unknown||No public API documented|Unknown|None|Low|Verified|No documented public API surface; the enterprise path is not publicly documented in the pages checked.",
+  "Otter AI|AI, Research and Media-native|Buildable with limitations|Paid plan required|oauth2,api_key,bearer_token|Yes (Public API)|No|Official|High|Verified|API access is gated to Enterprise workspaces and limited to two keys per user.",
+  "Fathom|AI, Research and Media-native|Buildable with limitations|Self-serve free|oauth2|Unknown (no public REST reference found)|Unknown|Official|Medium|Verified|MCP-first with no documented public REST API, so tool surface is limited to meeting data.",
+  "Consensus|AI, Research and Media-native|Buildable with limitations|Paid plan required||Yes|No|Official|Medium|Verified|Single-purpose search API and commercial access terms.",
+  "Reducto|AI, Research and Media-native|Buildable|Self-serve free|api_key,bearer_token|Yes|No|Official|High|Verified|Per-page billing and variable extraction quality by document type.",
+  "Devin|AI, Research and Media-native|Buildable with limitations|Paid plan required|api_key,bearer_token|Yes|No|Official|High|Verified|Paid organization account required; the API wraps an expensive agent runtime.",
+  "higgsfield|AI, Research and Media-native|Buildable with limitations|Self-serve trial||Yes (API advertised)|Unknown|Official|Low|Verified|Documentation is marketing-level; API authentication details unverified; generation credits are costly.",
+  "Mermaid CLI|AI, Research and Media-native|Buildable|Self-serve free||No|No|Community|High|Verified|Local CLI/library only, so a toolkit must wrap the process; no hosted API.",
+  "YouTube Transcript|AI, Research and Media-native|Buildable|Self-serve free|api_key,bearer_token|Yes|No|Official|High|Verified|Third-party dependency on YouTube stability; per-credit costs.",
+  "Grain|AI, Research and Media-native|Buildable|Self-serve free|oauth2,api_key,bearer_token|Yes|No|Official|Medium|Verified|Smaller API surface and meeting-data privacy constraints."
+ ]
+}

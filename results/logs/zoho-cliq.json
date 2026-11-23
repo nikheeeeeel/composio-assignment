@@ -1,0 +1,352 @@
+{
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "slug": "zoho-cliq",
+  "started_at": "2026-11-23T15:42:59.951111+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:44:56.317224+00:00",
+  "duration_s": 116.37,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/zoho-cliq.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Zoho Cliq\" MCP server official Model Context Protocol site:zoho.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.846,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Zoho Cliq\" pricing plans API access enterprise developer site:zoho.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.198,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Zoho Cliq\" API authentication OAuth API key documentation site:zoho.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.975,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Zoho Cliq\" API webhooks events callbacks documentation site:zoho.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.775,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Zoho Cliq\" official API documentation developer reference site:zoho.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.995,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Zoho Cliq\" API sandbox test environment staging developer site:zoho.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.827,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Zoho Cliq\" API versioning deprecation sunset policy site:zoho.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.927,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Zoho Cliq\" official SDK client libraries developer site:zoho.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.124,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Zoho Cliq\" API rate limits throttling quota documentation site:zoho.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.481,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Zoho Cliq"
+      },
+      "ok": true,
+      "duration_s": 0.014,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Zoho Cliq MCP"
+      },
+      "ok": true,
+      "duration_s": 0.799,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://www.zoho.com/cliq/plan-comparison.html",
+          "https://www.zoho.com/cliq/help/restapi/v2/",
+          "https://www.zoho.com/cliq/mcp-server.html",
+          "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+          "https://www.zoho.com/cliq/help/restapi/v3/bots/"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.333,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+          "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+          "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+          "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+          "https://www.zoho.com/cliq/pricing.html"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.614,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://zoho.com/cliq"
+      },
+      "ok": true,
+      "duration_s": 9.269,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 14,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://zoho.com/cliq"
+  ],
+  "sources": [
+    {
+      "url": "https://www.zoho.com/cliq/plan-comparison.html",
+      "title": "Plans and Pricing Comparison | Zoho Cliq",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 189
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+      "title": "Rest API documentation | Cliq",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.zoho.com/cliq/mcp-server.html",
+      "title": "Bring AI into your workflow with Zoho Cliq’s Model Context Protocol (MCP)",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4423
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+      "title": "Guide to Zoho Cliq's MCP Server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2509
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/bots/",
+      "title": "Bots | Zoho Cliq | API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+      "title": "Introduction | Zoho Cliq | API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+      "title": "OpenAPI Specification (OAS) | Zoho Cliq | API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1957
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+      "title": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4999
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+      "title": "Register your application | Zoho Cliq | API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3170
+    },
+    {
+      "url": "https://www.zoho.com/cliq/pricing.html",
+      "title": "Cliq - Chat Pricing | Free Chat plans for all Teams size",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.zoho.com/cliq/",
+      "title": "Team chat & communication software for businesses - Zoho Cliq",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Zoho Cliq",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 96.193,
+      "tokens": {
+        "input": 13267,
+        "output": 2096,
+        "reasoning": 7414
+      },
+      "cost_usd": 0.00615684
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 13267,
+      "output": 2096,
+      "reasoning": 7414
+    },
+    "cost_usd": 0.00615684,
+    "llm_calls": 1
+  }
+}

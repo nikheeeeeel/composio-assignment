@@ -1,0 +1,79 @@
+====================================================================================================
+CATEGORY 04 - Marketing, Ads, Email and Social
+====================================================================================================
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   5 easy, 5 moderate, 0 hard, 0 blocked.
+   Easy: Klaviyo, Mailchimp, SendGrid, Threads (Meta), systeme.io.
+   Gated / blocked: GoHighLevel, Google Ads, LinkedIn Ads, Meta Ads, Pinterest.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       5  ##########
+     moderate   5  ##########
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     app_review_required     4  ########
+     self_serve_free         4  ########
+     paid_plan_required      1  ##
+     self_serve_trial        1  ##
+
+   Auth methods (apps can have several): oauth2 7, api_key 7, bearer_token 4, jwt 1, basic 1
+   Most common auth combination: oauth2 x3, api_key+oauth2 x2, api_key+bearer_token x2
+   API shape: REST 10
+
+   Official MCP server: 7/10 (GoHighLevel, Google Ads, Klaviyo, Mailchimp, Meta Ads, Pinterest, systeme.io).
+   Missing official MCP: LinkedIn Ads, SendGrid, Threads (Meta).
+   Composio toolkit match: 8/10 (Google Ads, Klaviyo, LinkedIn Ads, Mailchimp, Meta Ads, Pinterest, SendGrid, Threads (Meta)).
+   Composio gaps: GoHighLevel, systeme.io.
+   Human outreach required: 2/10 (LinkedIn Ads, Pinterest).
+
+   Evidence: 14.1/17 claims sourced on average (min 13); 9.6 official pages/app (min 6); 6.6 open questions/app (max 9 for systeme.io).
+   Confidence mix: high 106 (62%), medium 32 (19%), low 6 (4%), not_found 26 (15%).
+
+3. ANALYST READ
+   This category splits cleanly into ad platforms versus email/marketing tools. All four ad
+   platforms (Google, Meta, LinkedIn, Pinterest) are app_review_required and account for most
+   of the friction; Mailchimp, Klaviyo, SendGrid and systeme.io are self-serve. GoHighLevel is
+   the paid-plan outlier. Rate-limit evidence is the weakest of any category (only four of ten
+   have a sourced rate-limit claim), because ad-platform limits are buried in policy and
+   access-level documentation rather than a single API reference page.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Ship email/marketing toolkits first: Mailchimp, Klaviyo, SendGrid and systeme.io.
+   - Ad platforms need a compliance track (app review, business verification, use-case vetting).
+   - Collect rate-limit evidence before promising throughput; it is the weakest field in this category.
+   - Close the Composio gaps for GoHighLevel and systeme.io.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Klaviyo                   easy      self_serve_free       oauth2,api_key                 Y    Y     -    16/10    
+Mailchimp                 easy      self_serve_free       oauth2,api_key,basic,beare...  Y    Y     -    13/9     
+SendGrid                  easy      self_serve_trial      api_key,bearer_token           -    Y     -    13/10    
+systeme.io                easy      self_serve_free       api_key                        Y    N     -    13/10    
+Threads (Meta)            easy      self_serve_free       oauth2                         -    Y     -    14/6     
+GoHighLevel               moderate  paid_plan_required    oauth2,api_key                 Y    N     -    15/11    
+Google Ads                moderate  app_review_required   oauth2,api_key,bearer_toke...  Y    Y     -    15/10    
+LinkedIn Ads              moderate  app_review_required   oauth2                         -    Y     Y    14/11    
+Meta Ads                  moderate  app_review_required   api_key,bearer_token           Y    Y     -    13/9     
+Pinterest                 moderate  app_review_required   oauth2                         Y    Y     Y    15/10    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- GoHighLevel [moderate, access=paid_plan_required, outreach=no]: Paid subscription plan required (from $97/mo) plus higher-tier endpoint restrictions
+- Google Ads [moderate, access=app_review_required, outreach=no]: Application review required for production access levels (Explorer/Basic/Standard)
+- LinkedIn Ads [moderate, access=app_review_required, outreach=yes]: Vetted API access: application + use-case review / technical sign-off before scopes are granted
+- Meta Ads [moderate, access=app_review_required, outreach=no]: App Review and Business Verification for advanced Marketing API access
+- Pinterest [moderate, access=app_review_required, outreach=yes]: Pinterest app approval before app secret/Trial access; video review for Standard access
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - No official MCP found: LinkedIn Ads, SendGrid, Threads (Meta). This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.

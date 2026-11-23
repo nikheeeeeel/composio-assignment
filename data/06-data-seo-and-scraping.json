@@ -1,0 +1,63 @@
+{
+  "category": "Data, SEO and Scraping",
+  "categoryNumber": 6,
+  "source": {
+    "spreadsheet": "composio-research",
+    "sheet": "Sheet1",
+    "url": "https://docs.google.com/spreadsheets/d/18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8/edit"
+  },
+  "appCount": 10,
+  "apps": [
+    {
+      "number": 51,
+      "app": "DataForSEO",
+      "hint": "docs.dataforseo.com"
+    },
+    {
+      "number": 52,
+      "app": "SE Ranking",
+      "hint": "seranking.com/api"
+    },
+    {
+      "number": 53,
+      "app": "Ahrefs",
+      "hint": "ahrefs.com/api"
+    },
+    {
+      "number": 54,
+      "app": "MrScraper",
+      "hint": "docs.mrscraper.com"
+    },
+    {
+      "number": 55,
+      "app": "Apify",
+      "hint": "docs.apify.com"
+    },
+    {
+      "number": 56,
+      "app": "Firecrawl",
+      "hint": "firecrawl.dev"
+    },
+    {
+      "number": 57,
+      "app": "Bright Data",
+      "hint": "brightdata.com"
+    },
+    {
+      "number": 58,
+      "app": "Sherlock",
+      "hint": "github.com/sherlock-project/sherlock"
+    },
+    {
+      "number": 59,
+      "app": "Waterfall.io",
+      "hint": "waterfall.io",
+      "note": "contact/company intel"
+    },
+    {
+      "number": 60,
+      "app": "Clay",
+      "hint": "clay.com"
+    }
+  ]
+}

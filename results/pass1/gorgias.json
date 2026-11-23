@@ -1,0 +1,262 @@
+{
+  "app": "Gorgias",
+  "category": "Support and Helpdesk",
+  "one_line_description": {
+    "value": "Gorgias brings a support team's inbox, customer data, workflows, and AI Agent together in one platform for every stage of the customer journey.",
+    "source_url": "https://www.gorgias.com/",
+    "quote": "Bring your support team, customer data, workflows, and AI Agent together in one platform built for every stage of the customer journey.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "quote": "The Gorgias REST API lets you read and write data in your helpdesk programmatically.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.gorgias.com/reference/introduction",
+    "quote": "The Gorgias API is structured with REST in mind.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, read-write helpdesk resources (tickets, customers, accounts, etc.); full endpoint count not documented in captured sources",
+    "source_url": "https://developers.gorgias.com/reference/introduction",
+    "quote": "On this page, you'll find the complete REST API reference, examples, definitions of objects, and guides.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.gorgias.com/",
+    "source_url": "https://developers.gorgias.com/",
+    "quote": "Explore our guides and technical documentation to integrate with Gorgias.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "basic"
+    ],
+    "source_url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+    "quote": "Please remember that the API key authentication method can be used only for private apps. If you plan to build a public app you have to use OAuth2.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "quote": "- Available on all Helpdesk plans - The account owner and admins can access the API credentials and create API keys",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API is available on any Helpdesk plan with no API-specific tier, but a Gorgias helpdesk account is required; the account owner or an admin must create the API key in Settings → REST API. Private apps need no approval; public apps require Developer Portal signup plus App Store review.",
+    "source_url": "https://docs.gorgias.com/en-US/rest-api-208286",
+    "quote": "- Available on all Helpdesk plans - The account owner and admins can access the API credentials and create API keys",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.gorgias.com/mcp",
+    "source_url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+    "quote": "The setup process varies by client, but the connection URL is the same: https://mcp.gorgias.com/mcp",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=gorgias",
+    "quote": "{\"items\": [{\"slug\": \"gorgias\", \"name\": \"Gorgias\", \"app\": \"Gorgias\", \"tools_count\": 51}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "80 requests per 20-second window for OAuth2 apps; 40 requests per 20-second window for API key integrations; Enterprise accounts have the same limits in a 10-second window",
+    "source_url": "https://developers.gorgias.com/reference/limitations",
+    "quote": "- OAuth2 apps can make 80 requests in a 20 second window - API key integrations can make 40 requests in a 20 second window - Enterprise accounts folow the same request limits, but have a smaller 10-second window",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.gorgias.com/docs/receive-and-respond-to-tickets-from-a-third-party-app",
+    "quote": "To receive information from tickets and new messages sent from Gorgias, you will have to create an endpoint for the HTTP integration to call.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Captured docs state undocumented resources can be changed or removed at any time without prior notice; a formal API versioning/deprecation policy was not captured.",
+    "source_url": "https://developers.gorgias.com/reference/introduction",
+    "quote": "Resources, resources' attributes, and resources' operations not documented in this documentation should not be used and should be considered as non-existing. They are reserved for internal use and can be changed or removed at any time without prior notice.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Gorgias exposes a documented REST API with self-serve API keys for private apps and OAuth2 for public apps. Credentials nevertheless require a Gorgias helpdesk account on a Helpdesk plan and an owner/admin user, while public apps also need Developer Portal signup and App Store review. The API is broad enough for useful support actions, but the account/plan gate and review path make it moderate rather than easy.",
+  "main_blocker": "Requires a paid Gorgias Helpdesk account to generate API keys",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "An OAuth2 scopes page (developers.gorgias.com/docs/oauth2-scopes) appears in the search index but was not included in SOURCES; confirm whether scopes are formally documented.",
+    "No official vendor-maintained SDKs were found in the cited sources; verify whether any exist.",
+    "The captured pricing evidence does not conclusively show whether any free Helpdesk tier exists; if one does, access_model could be self_serve_free.",
+    "No dedicated API sandbox/test environment is documented in SOURCES; the only testing guidance found is issuing requests from the API reference with real keys.",
+    "The REST API endpoint/resource count is not documented in the captured sources, so api_breadth is approximate."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Gorgias",
+      "category": "Support and Helpdesk",
+      "hint": "gorgias.com",
+      "description": null,
+      "source_file": "02-support-and-helpdesk.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.gorgias.com/",
+        "title": "gorgias-developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 847
+      },
+      {
+        "url": "https://developers.gorgias.com/reference/introduction",
+        "title": "Introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 928
+      },
+      {
+        "url": "https://developers.gorgias.com/reference/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 563
+      },
+      {
+        "url": "https://developers.gorgias.com/docs/access-tokens-api-keys",
+        "title": "Access Tokens (API Keys)",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1360
+      },
+      {
+        "url": "https://docs.gorgias.com/en-US/rest-api-208286",
+        "title": "Access your Gorgias REST API credentials",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2550
+      },
+      {
+        "url": "https://developers.gorgias.com/reference/limitations",
+        "title": "Rate Limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1204
+      },
+      {
+        "url": "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+        "title": "Connect your AI assistant to the Gorgias MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.gorgias.com/llm-info",
+        "title": "Official Information About Gorgias",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.gorgias.com/docs/receive-and-respond-to-tickets-from-a-third-party-app",
+        "title": "Integrate with a new channel",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.gorgias.com/docs/1-register-on-developer-portal",
+        "title": "1. Register on Developer Portal & Get Gorgias Sandbox Account",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 618
+      },
+      {
+        "url": "https://www.gorgias.com/",
+        "title": "The Conversational AI platform for Ecommerce | Gorgias",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 4322
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://gorgias.com"
+    ],
+    "refinement": {},
+    "research_seconds": 132.4
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "app": "Apify",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": {
+    "value": "Apify is the largest marketplace of tools for AI, with ready-made Actors to automate business workflows.",
+    "source_url": "https://docs.apify.com",
+    "quote": "Apify is the largest marketplace of tools for AI.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.apify.com/api/v2",
+    "quote": "The Apify API (version 2) provides programmatic access to the Apify platform.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.apify.com/api",
+    "quote": "The Apify API is built around HTTP REST, uses predictable resource-oriented URLs, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write REST surface: Actors, runs, builds, tasks, datasets, key-value stores, request queues, schedules, webhooks, users/account",
+    "source_url": "https://docs.apify.com",
+    "quote": "Apify API documentation: Endpoints to manage Actors, runs, builds, tasks, datasets, key-value stores, request queues, schedules, webhooks, and your account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.apify.com/api/v2",
+    "source_url": "https://docs.apify.com/api/v2",
+    "quote": "The Apify API (version 2) provides programmatic access to the Apify platform.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://docs.apify.com/integrations/api",
+    "quote": "You can authenticate the Apify API in two ways. You can either pass the token via the `Authorization` HTTP header or the URL `token` query parameter.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.apify.com/actors/running/actors-in-store",
+    "quote": "The best way to find the costs of free Actors upfront is to try out the Actor on a limited scope (for example, on a small number of pages) and evaluate the consumption. You can easily do that using our free plan.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve: sign up free and create a secret API token under API & Integrations in Apify Console, optionally limiting the token's permission scope and setting an expiration. Organization-level tokens are visible only to owners or members with Manage access tokens permission.",
+    "source_url": "https://docs.apify.com/integrations/api",
+    "quote": "To access the Apify API in your integrations, you need to authenticate using your secret API token. You manage your tokens on the API & Integrations page in Apify Console.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.apify.com",
+    "source_url": "https://docs.apify.com/mcp",
+    "quote": "The Apify's MCP server (mcp.apify.com) allows AI applications and agents to interact with the Apify platform using Model Context Protocol (MCP).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=apify",
+    "quote": "{\"slug\": \"apify\", \"name\": \"Apify\", \"app\": \"Apify\", \"tools_count\": 184}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.apify.com/integrations/webhooks/events",
+    "quote": "You can configure webhooks to trigger actions based on specific events that occur during Actor runs or builds.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript",
+      "Python",
+      "Go",
+      "PHP",
+      "Java",
+      ".NET",
+      "Rust"
+    ],
+    "source_url": "https://docs.apify.com/api/v2",
+    "quote": "For Java, we recommend the `apify-client` Maven central component. - For Rust, we recommend the `apify-client` crate. - For .NET, we recommend the `apify-client` Nuget package. - For PHP, we recommend the `apify-client` Packagist package. - For Go, we recommend the `apify-client` package.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Version is carried in the URL path (/v2), and the API reference identifies itself as version 2. No explicit deprecation/sunset policy was found in the supplied evidence.",
+    "source_url": "https://docs.apify.com/api/v2",
+    "quote": "The Apify API (version 2) provides programmatic access to the Apify platform.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Apify exposes a public, broadly documented REST API (v2) with an OpenAPI schema and official clients for JavaScript, Python, Go, PHP, Java, .NET, and Rust. Credentials are self-serve: a free account lets a developer create a scoped API token in Apify Console, and the vendor operates an official MCP server at mcp.apify.com. The only real gate is usage-based billing once free-plan usage is exhausted, which is a commercial rather than an access barrier.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "REST API rate limits were not found in the supplied evidence; confirm any documented per-endpoint or account-level limits.",
+    "No dedicated sandbox/test API environment was documented; confirm whether Apify provides one or whether local Actor development/testing is the only pre-production path.",
+    "OAuth2 scopes for the core REST API are not documented; the REST API authenticates with API tokens, while OAuth is used for the hosted MCP server.",
+    "Free-plan credit amounts and paid-tier pricing were not captured in the evidence bundle (pricing page text absent).",
+    "Deprecation/sunset policy for API v2 was not found in the supplied sources.",
+    "No GitHub or MCP-registry checks were run, so community MCP servers could not be verified either way."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Apify",
+      "category": "Data, SEO and Scraping",
+      "hint": "docs.apify.com",
+      "description": null,
+      "source_file": "06-data-seo-and-scraping.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.apify.com",
+        "title": "Apify Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.apify.com/api",
+        "title": "Apify API documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4365
+      },
+      {
+        "url": "https://docs.apify.com/api/v2",
+        "title": "Apify API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.apify.com/integrations/api",
+        "title": "API integration",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.apify.com/api/llms.txt",
+        "title": "Apify API documentation | Apify Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3492
+      },
+      {
+        "url": "https://docs.apify.com/actors/running/actors-in-store",
+        "title": "Actors in Store",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.apify.com/security/architecture.md",
+        "title": "Platform architecture",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.apify.com/mcp",
+        "title": "Apify MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.apify.com/integrations/claude-ai",
+        "title": "Claude.ai integration",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.apify.com/integrations/webhooks/events",
+        "title": "Events types for webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2540
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 79.88
+  }
+}

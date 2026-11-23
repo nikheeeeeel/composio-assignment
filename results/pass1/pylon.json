@@ -1,0 +1,257 @@
+{
+  "app": "Pylon",
+  "category": "Support and Helpdesk",
+  "one_line_description": {
+    "value": "Pylon is a customer support platform that lets humans and AI agents collaborate on customer work—investigating, resolving, and acting on every signal.",
+    "source_url": "https://usepylon.com",
+    "quote": "Pylon lets humans and agents collaborate on customer work—investigating, resolving, and acting on every signal.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "quote": "Pylon’s API can be used to programmatically access and take action on data within Pylon.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/sdks",
+    "quote": "Methods are named after the endpoint path: the resource, then the action.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, read-write; resources include issues, accounts, contacts, knowledge base articles, tasks, projects, and triggers; exact endpoint count not stated.",
+    "source_url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+    "quote": "AI tools authenticate with OAuth or an API token and can read and update issues, accounts, contacts, knowledge base articles, tasks and projects, triggers, and more within the authenticated identity's permissions.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "source_url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "quote": "Check out our API Reference for specifications on all endpoints.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "bearer_token",
+      "oauth2"
+    ],
+    "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "quote": "The Pylon API uses Bearer authentication. This means you’ll need to pass your API token in the header of your request:",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "admin_approval",
+    "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "quote": "Only Admins can create and manage API tokens.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access is gated by workspace role: only Admin users in a Pylon workspace can create/manage API tokens (Settings > Integrations & dev > API). Token access is controlled by the assigned role and tokens do not expire. This is an in-workspace role requirement, not a vendor application/approval process. No free/self-serve developer tier or sandbox is documented in the evidence; some MCP tools additionally require plan features.",
+    "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "quote": "Tokens don’t expire, and their access is controlled only by the role.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.usepylon.com",
+    "source_url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+    "quote": "Server URL (US): `https://mcp.usepylon.com` - Server URL (EU): `https://mcp.eu.usepylon.com` - Auth: OAuth 2.0 or an API token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=pylon_mcp",
+    "quote": "{\"items\": [{\"slug\": \"pylon_mcp\", \"name\": \"Pylon MCP\", \"app\": \"Pylon\", \"tools_count\": 12}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "30, 120, or 300 requests per minute per endpoint, shared across all tokens in an organization; higher limits available by contacting Pylon support.",
+    "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/rate-limits",
+    "quote": "Every endpoint uses one of three limits: 30, 120, or 300 requests per minute, unless Pylon has raised the limit for your organization.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+    "quote": "Webhooks are user-defined HTTP callbacks that are triggered by specific events within Pylon.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "TypeScript",
+      "Python",
+      "Go"
+    ],
+    "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/sdks",
+    "quote": "Pylon has official SDKs for TypeScript, Python, and Go.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "No explicit REST API versioning scheme or sunset/deprecation policy is documented in the captured pages; official SDKs are pre-1.0 (0.1.0-beta.2) and the docs advise pinning versions and reviewing release notes before upgrading.",
+    "source_url": "https://docs.usepylon.com/pylon-docs/developer/api/sdks",
+    "quote": "Pin the version you install and review the release notes before upgrading.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Pylon documents a public REST API with an API reference, official TypeScript/Python/Go SDKs, webhooks, documented rate limits, and a vendor-hosted MCP server. However, credentials are gated: only Admin users in a Pylon workspace can create API tokens, and no free/self-serve developer tier or sandbox is documented, with some MCP tools requiring plan features. That makes access moderate rather than easy despite the solid API surface.",
+  "main_blocker": "Admin-only API token creation in a Pylon workspace; no documented self-serve free tier or sandbox",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Is there a free/trial self-serve Pylon workspace, or must a paid plan be purchased before Admin users can create API tokens? The captured pricing page text did not specify plan gating.",
+    "Are OAuth scopes/permissions documented for the Pylon API? Evidence describes role-based token permissions and an OAuth token error code but no scope list.",
+    "Is there a documented sandbox/test environment or test mode? None was found in the captured pages.",
+    "What is the exact endpoint/resource count of the REST API? The API reference index page captured only a heading.",
+    "Does Pylon document an API versioning/deprecation/sunset policy? Not found in the captured pages.",
+    "Which plan tiers include API and MCP access? The MCP page notes some tools require a plan feature, and a support article references Professional/Advanced tiers, but the details were truncated.",
+    "No community MCP servers were found in the MCP registry/GitHub checks; confirm whether any exist."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Pylon",
+      "category": "Support and Helpdesk",
+      "hint": "usepylon.com",
+      "description": null,
+      "source_file": "02-support-and-helpdesk.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp",
+        "title": "Pylon MCP | Pylon",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.usepylon.com/integrations/mcp",
+        "title": "Pylon MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.usepylon.com/pylon-docs/developer/webhooks",
+        "title": "Webhooks | Pylon",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.usepylon.com/pylon-docs/developer/api/sdks",
+        "title": "SDKs | Pylon",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://usepylon.com",
+        "title": "The new way to run customer support.",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+        "title": "API reference | Pylon",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 103
+      },
+      {
+        "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+        "title": "API | Pylon",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1068
+      },
+      {
+        "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.usepylon.com/pylon-docs/developer/api/errors",
+        "title": "Errors",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.usepylon.com/pylon-docs/developer/api/rate-limits",
+        "title": "Rate limits | Pylon",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2383
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 124.95
+  }
+}

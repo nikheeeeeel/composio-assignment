@@ -1,0 +1,231 @@
+{
+  "app": "Consensus",
+  "category": "AI, Research and Media-native",
+  "one_line_description": {
+    "value": "Consensus is an AI academic search engine for peer-reviewed literature, positioned as a research OS for finding, organizing, and analyzing science.",
+    "source_url": "https://consensus.app",
+    "quote": "Consensus is an AI academic search engine for peer-reviewed literature—your research OS for finding, organizing, and analyzing science 10x faster.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.consensus.app/api-get-started",
+    "quote": "The Consensus API lets you search 400+ million scholarly articles, including 350 million peer-reviewed research papers, over a single REST endpoint.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.consensus.app/api-comparison/pricing-and-privacy",
+    "quote": "REST, with samples in cURL, Python, JavaScript, Go, PHP, Ruby and Java",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Small REST surface (~5 endpoint groups: search, Threads, full text, citations, references); read-oriented",
+    "source_url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "`GET /v1/papers/full_text`, `GET /v1beta/papers/citations`, and `GET /v1beta/papers/references` each allow one request per second on every plan, Enterprise included.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.consensus.app/api-get-started",
+    "source_url": "https://docs.consensus.app/api-get-started",
+    "quote": "Search over 400 million scholarly articles, including 350 million peer-reviewed research papers, with the Consensus REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "source_url": "https://docs.consensus.app/api-get-started",
+    "quote": "`query` is the only required parameter, and the key goes in the `x-api-key` header.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "The API is self-serve on every Consensus plan.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve on all plans; Free provides 30 calls/month and 20 papers/request, paid plans raise call/page limits and unlock features like pagination and full text; Enterprise gets custom limits. API keys are created directly in the API & MCP Dashboard.",
+    "source_url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "The API is self-serve on every Consensus plan. Your plan sets how many calls you get each month, how many papers each request can return, and which features you can use.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.consensus.app/mcp",
+    "source_url": "https://docs.consensus.app/consensus-mcp",
+    "quote": "claude mcp add --transport http consensus https://mcp.consensus.app/mcp",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=consensus",
+    "quote": "{\"items\": [{\"slug\": \"consensus\", \"name\": \"Consensus\", \"app\": \"Consensus\", \"tools_count\": 1}, {\"slug\": \"consensus_mcp\", \"name\": \"Consensus MCP\", \"app\": \"Consensus\", \"tools_count\": 1}], \"total_items\": 2}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "1 request/second per self-serve account; excess returns 429 with retry-after; Thread polling 3/sec; full-text, citations, and references 1/sec; Enterprise custom limits",
+    "source_url": "https://docs.consensus.app/api-plans-and-access",
+    "quote": "Every self-serve plan allows one request per second per account. A faster request returns `429` with a `retry-after` header; wait that long and retry. Enterprise accounts can have custom limits.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "URL path versioning (v1 / v1beta); legacy /v1/quick_search is deprecated and scheduled for removal on 2027-02-07",
+    "source_url": "https://docs.consensus.app/api-reference/search",
+    "quote": "Use this instead of the legacy `/v1/quick_search` endpoint, which is deprecated and will be removed on 2027-02-07.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Consensus documents a public REST API that is self-serve on every plan, including a free plan with 30 calls/month, and API keys are created directly in the dashboard. Authentication is a simple x-api-key header, and the API covers search, Threads, full text, and citation/reference lookups. The main constraints are a 1 request/second rate limit and modest free quota, but no sales contact or app review is required.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Input hint says 'OAuth requested', but the REST API docs only document an x-api-key header; OAuth sign-in is documented only for the hosted MCP server. Confirm whether OAuth is available for the REST API.",
+    "No official vendor-maintained SDKs are documented; docs show raw cURL/Python/JavaScript/Go/PHP/Ruby/Java samples only, so sdk_languages is marked not_found.",
+    "No webhook/event-callback or sandbox/test-environment documentation was found in the evidence; those fields are set false with low confidence.",
+    "No OAuth scopes/permissions are documented for the REST API; oauth_scopes_documented is set false with low confidence.",
+    "No community MCP servers were found in the GitHub or MCP registry evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Consensus",
+      "category": "AI, Research and Media-native",
+      "hint": "consensus.app",
+      "description": "OAuth requested",
+      "source_file": "10-ai-research-and-media-native.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.consensus.app/api-reference/search",
+        "title": "Search",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.consensus.app/api-get-started",
+        "title": "Get started with Consensus API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.consensus.app/api-plans-and-access",
+        "title": "API plans and access",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.consensus.app/api-comparison/pricing-and-privacy",
+        "title": "Pricing, rate limits and data privacy",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.consensus.app/consensus-mcp",
+        "title": "Get started with Consensus MCP - Consensus",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.consensus.app/core-features/mcp",
+        "title": "Use Consensus in ChatGPT, Claude, Copilot, or with the API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://consensus.app",
+        "title": "Research starts here",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2170
+      },
+      {
+        "url": "https://consensus.app/pricing",
+        "title": "Pricing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 722
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 81.13
+  }
+}

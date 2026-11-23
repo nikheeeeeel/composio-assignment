@@ -1,0 +1,62 @@
+{
+  "category": "Ecommerce",
+  "categoryNumber": 5,
+  "source": {
+    "spreadsheet": "composio-research",
+    "sheet": "Sheet1",
+    "url": "https://docs.google.com/spreadsheets/d/18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8/edit"
+  },
+  "appCount": 10,
+  "apps": [
+    {
+      "number": 41,
+      "app": "Shopify",
+      "hint": "shopify.dev"
+    },
+    {
+      "number": 42,
+      "app": "WooCommerce",
+      "hint": "woocommerce.com/document/woocommerce-rest-api"
+    },
+    {
+      "number": 43,
+      "app": "BigCommerce",
+      "hint": "developer.bigcommerce.com"
+    },
+    {
+      "number": 44,
+      "app": "Salesforce Commerce Cloud",
+      "hint": "developer.salesforce.com/docs/commerce"
+    },
+    {
+      "number": 45,
+      "app": "Magento (Adobe Commerce)",
+      "hint": "developer.adobe.com/commerce"
+    },
+    {
+      "number": 46,
+      "app": "Squarespace",
+      "hint": "developers.squarespace.com"
+    },
+    {
+      "number": 47,
+      "app": "Ecwid",
+      "hint": "api-docs.ecwid.com"
+    },
+    {
+      "number": 48,
+      "app": "Gumroad",
+      "hint": "gumroad.com/api"
+    },
+    {
+      "number": 49,
+      "app": "Amazon Selling Partner",
+      "hint": "developer-docs.amazon.com/sp-api"
+    },
+    {
+      "number": 50,
+      "app": "fanbasis",
+      "hint": "fanbasis.com"
+    }
+  ]
+}

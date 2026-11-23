@@ -1,0 +1,264 @@
+{
+  "app": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "one_line_description": {
+    "value": "Higgsfield is an AI media generation suite for creating images and videos (plus characters and audio via its connector) across a catalog of foundation models, exposed through web, REST API, CLI, and MCP.",
+    "source_url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "The Higgsfield API is a self-serve API for developers that provides direct access to more than 50 current video and image generation models with pay-as-you-go billing in US dollars.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview",
+    "quote": "The API reference is generated from the public OpenAPI specification.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "Integrate using the Python or TypeScript SDK, or call the REST API directly from any language with an HTTP client.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST; 84 catalog entries (17 image, 67 video model/workflow endpoints) plus shared request-status and cancellation operations; read-write generation (submit, poll, cancel)",
+    "source_url": "https://docs.higgsfield.ai/docs/models",
+    "quote": "The catalog documents 84 entries: 17 Image and 67 Video.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.higgsfield.ai/docs/api-reference/overview",
+    "source_url": "https://docs.higgsfield.ai/docs/api-reference/overview",
+    "quote": "Reference for Higgsfield image and video generation operations, request status, and cancellation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "source_url": "https://docs.higgsfield.ai/docs/authentication",
+    "quote": "Create and manage API credentials in Higgsfield Console. Each credential consists of a key ID and a secret.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp",
+    "quote": "MCP connects through OAuth authorization, no API key is needed.",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "There is no subscription: you top up a balance, pay per generation at published rates, and spending stops automatically at zero.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve signup and API product, but generation requires a prepaid USD balance: create an account, add a payment method, and top up before using the key; usage is metered per generation with no subscription at any level. API access is separate from higgsfield.ai plans, and a website plan does not affect API access.",
+    "source_url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "Add a payment method and top up your balance.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.higgsfield.ai/mcp",
+    "source_url": "https://higgsfield.ai/cli",
+    "quote": "Add the Higgsfield MCP server URL in your agent's settings and authenticate through your Higgsfield account.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=higgsfield",
+    "quote": "\"slug\": \"higgsfield\", \"name\": \"Higgsfield\", \"app\": \"Higgsfield\", \"tools_count\": 13",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "20 concurrent generation requests unlocked by creating a key; primary limit is concurrency per account and selected model, queue limit is a multiple of concurrency, and overflow returns 429 Too Many Requests with Retry-After",
+    "source_url": "https://higgsfield.ai/blog/higgsfield-api",
+    "quote": "Creating a key unlocks 20 concurrent requests.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.higgsfield.ai/docs/help/faq",
+    "quote": "Poll `status_url` or configure a webhook, then read the output URL after the status becomes `completed`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": "https://docs.higgsfield.ai/docs/enterprise/access-control",
+    "quote": "Use separate keys for development, staging and production.",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "python",
+      "typescript"
+    ],
+    "source_url": "https://docs.higgsfield.ai/docs/help/faq",
+    "quote": "We provide official Python and Node.js/TypeScript SDKs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Legacy `hf-api-key`/`hf-secret` headers remain accepted but new integrations should use the `Authorization: Key KEY_ID:SECRET` header; v1-style paths (e.g., /v1/custom-references) appear in examples. No formal versioning or sunset policy was found in the reviewed pages.",
+    "source_url": "https://docs.higgsfield.ai/docs/authentication",
+    "quote": "The API also accepts the legacy `hf-api-key` and `hf-secret` headers. New integrations should use the `Authorization` header.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "The API is public, documented on Mintlify with an OpenAPI-generated reference covering 84 model/workflow entries, key+secret auth, webhooks, and official Python/TypeScript SDKs. However, the vendor presents access as pay-as-you-go: you must add a payment method and top up a prepaid USD balance, and no free API tier or trial is documented, so credentials are not usable without payment. It is nonetheless fully self-serve (no sales contact, partner approval, or app review), which keeps it clear of 'hard'.",
+  "main_blocker": "Prepaid USD balance/top-up required to use the API; no documented free API tier",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Does API key creation itself require a funded balance, and is there a minimum top-up or any free API credits for testing?",
+    "The exact connector endpoint https://mcp.higgsfield.ai/mcp appears in vendor help-center search snippets but was not present in a fetched SOURCES page; verify against the official MCP setup docs.",
+    "No sandbox/test environment is documented; docs only recommend separate keys for development, staging and production.",
+    "Formal API versioning and deprecation/sunset policy is not documented beyond the legacy-header note and a changelog page that was not fetched.",
+    "OAuth scopes/permissions for the vendor MCP connector (OAuth-based) are not described in the reviewed pages.",
+    "Composio catalog returned two toolkits: higgsfield (API_KEY, 13 tools) and higgsfield_mcp (DCR_OAUTH, 101 tools); confirm which should back the integration."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "hint": "higgsfield.ai/cli",
+      "description": "content suite",
+      "source_file": "10-ai-research-and-media-native.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.higgsfield.ai/docs/api-reference/overview",
+        "title": "API reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1240
+      },
+      {
+        "url": "https://docs.higgsfield.ai/docs/models",
+        "title": "Model API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1557
+      },
+      {
+        "url": "https://docs.higgsfield.ai/docs/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1886
+      },
+      {
+        "url": "https://docs.higgsfield.ai/docs/help/faq",
+        "title": "FAQ",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4354
+      },
+      {
+        "url": "https://docs.higgsfield.ai/docs/enterprise/access-control",
+        "title": "Access control",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2202
+      },
+      {
+        "url": "https://higgsfield.ai/blog/higgsfield-api",
+        "title": "Meet the Higgsfield API: How It Works and What You Get",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.higgsfield.ai/docs/concepts/rate-limits",
+        "title": "Rate limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3046
+      },
+      {
+        "url": "https://higgsfield.ai/mcp",
+        "title": "Generate Images & Videos",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://higgsfield.ai/creator-hub/help-center/integrations/what-is-higgsfield-mcp",
+        "title": "What Is Higgsfield MCP and How It Differs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.higgsfield.ai/docs/how-to/webhooks",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://higgsfield.ai/cli",
+        "title": "Higgsfield CLI | AI Image & Video Generation for Any Agent",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://higgsfield.ai/cli"
+    ],
+    "refinement": {},
+    "research_seconds": 159.66
+  }
+}

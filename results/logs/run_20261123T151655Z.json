@@ -1,0 +1,24 @@
+{
+  "started_at": "2026-11-23T15:06:56.671976+00:00",
+  "finished_at": "2026-11-23T15:16:55.149923+00:00",
+  "processed": 1,
+  "verified": 0,
+  "needs_human_review": 1,
+  "errors": 0,
+  "skipped": 0,
+  "concurrency": 4,
+  "apps": [
+    {
+      "app": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "slug": "ahrefs",
+      "status": "needs_human_review",
+      "skipped": false,
+      "rounds": 3,
+      "duration_s": 589.99,
+      "tool_calls": 22,
+      "cost_usd": 0.14963513,
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "app": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": {
+    "value": "Hunt down social media accounts by username across 400+ social networks.",
+    "source_url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Hunt down social media accounts by username across 400+ social networks",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": false,
+    "source_url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Accounts found will be stored in an individual text file with the corresponding username (e.g user123.txt",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://github.com/sherlock-project/sherlock",
+    "source_url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Installation Usage Contributing",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "no_api",
+    "source_url": "https://github.com/sherlock-project/sherlock",
+    "quote": "pipx install sherlock-project pip may be used in place of pipx docker run -it --rm sherlock/sherlock",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "sherlock-project is distributed as a locally installed CLI/Python package (pipx, pip, or Docker) that performs checks from the user's machine; there are no hosted API endpoints, credentials, or developer signup to obtain. Name collision caution: documentation for unrelated products called 'Sherlock' (CloudFerro Sherlock AI with API keys, Sherlock Labs observability with OAuth 2.1/x-api-key MCP, Ansys Sherlock gRPC) was surfaced but does not describe this project.",
+    "source_url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Community-maintained packages are available for Debian (>= 13), Ubuntu (>= 22.10), Homebrew, Kali, and BlackArch.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": [
+      "https://github.com/Burnsedia/sherlock-mcp"
+    ],
+    "source_url": "https://github.com/Burnsedia/sherlock-mcp",
+    "quote": "FastMCP server integration for the Sherlock OSINT tool – Seamlessly search social media accounts across 400+ platforms using the Model Context Protocol.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Sherlock",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Sherlock\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "No hosted API, so no API versioning policy; the project ships as a versioned package/CLI (README shows Version 0.16.0, PyPI listing shows 0.16.2).",
+    "source_url": "https://github.com/sherlock-project/sherlock",
+    "quote": "Sherlock: Find Usernames Across Social Networks (Version 0.16.0)",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "blocked",
+  "verdict_reason": "The sherlock-project repository documents only a locally installed CLI/Python package (pipx, pip, or Docker) that writes findings to text/CSV/XLSX files, with no hosted endpoints, credentials, or developer portal. Sources that do describe an API belong to unrelated products sharing the name: CloudFerro Sherlock AI (OpenAI-compatible endpoint with API keys) and Sherlock Labs observability (OAuth 2.1 / x-api-key MCP server at https://mcp.sherlocklabs.dev/mcp). The only MCP integration for this project is a third-party wrapper (Burnsedia/sherlock-mcp), so there is no public API to build against.",
+  "main_blocker": "No public API; CLI/Python package only",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Name collision: evidence surfaced several unrelated 'Sherlock' products (Ansys Sherlock gRPC/PySherlock, Sherlock Labs observability MCP, CloudFerro Sherlock AI, sherlock.sh recruiting, sherlock.im support, trysherlock.io). Research was scoped to github.com/sherlock-project/sherlock per the input hint.",
+    "The retrieved auth/MCP documentation (OAuth 2.1, x-api-key, https://mcp.sherlocklabs.dev/mcp; CloudFerro API-key creation guide) belongs to different products and was deliberately not applied to sherlock-project.",
+    "Does the vendor plan any hosted/API service? No roadmap, developer portal, or API reference was found in the evidence.",
+    "Other third-party MCP wrappers exist beyond Burnsedia/sherlock-mcp (e.g., the Apify actor https://apify.com/misceres/sherlock/api/mcp and the hackerdogs-ai/hd-mcpservers-docker registry), but their pages were only available as search snippets, not full source text.",
+    "No documented rate limits, webhooks, sandbox environment, or official SDK were found for the sherlock-project tool; it makes direct requests to each target site from the local machine."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "hint": "github.com/sherlock-project/sherlock",
+      "description": null,
+      "source_file": "06-data-seo-and-scraping.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 22,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://context7.com/sherlock-project/sherlock/llms.txt",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://sherlock.docs.pyansys.com/version/stable/examples/gallery_examples/01-project-configuration/add_harmonic_event.html",
+        "title": "Add Harmonic Event to Lifecycle Phase — PySherlock",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 4170
+      },
+      {
+        "url": "https://docs.sherlocklabs.dev/explore/mcp",
+        "title": "Ask an AI assistant",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 4937
+      },
+      {
+        "url": "https://docs.cloudferro.com/en/latest/sherlock/Sherlock-authentication-API-keys-on-CloudFerro-Cloud.html",
+        "title": "Authenticate to Sherlock AI with API keys on CloudFerro Cloud ",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://basebuild.net/providers/cloudferro-sherlock",
+        "title": "CloudFerro Sherlock - Supported Models & Pricing | basebuild.net",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 2746
+      },
+      {
+        "url": "https://www.cloudferro.com/products/managed-genai-services/",
+        "title": "Managed GenAI Services - CloudFerro",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/lsst-uk/lasair_api",
+        "title": "lsst-uk/lasair_api",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/Burnsedia/sherlock-mcp",
+        "title": "Burnsedia/sherlock-mcp",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/hackerdogs-ai/hd-mcpservers-docker",
+        "title": "hackerdogs-ai/hd-mcpservers-docker",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4999
+      },
+      {
+        "url": "https://app.sherlock.sh/reference",
+        "title": "Sherlock API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/sherlock-project/sherlock",
+        "title": "GitHub - sherlock-project/sherlock: Hunt down social media accounts by username across social networks · GitHub",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 4670
+      },
+      {
+        "url": "https://mcp-serverlist.com/mcp/sherlock-mcp",
+        "title": "Sherlock MCP - Config & Setup | MCP ServerList",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 4998
+      }
+    ],
+    "search_hits_count": 65,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://github.com/sherlock-project/sherlock"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "auth_methods",
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Sherlock\" API authentication OAuth API key documentation",
+        "\"Sherlock\" developer authentication guide",
+        "\"Sherlock\" official MCP server",
+        "\"Sherlock\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://docs.sherlocklabs.dev/explore/mcp",
+        "https://docs.cloudferro.com/en/latest/sherlock/Sherlock-authentication-API-keys-on-CloudFerro-Cloud.html",
+        "https://mcp-serverlist.com/mcp/sherlock-mcp"
+      ],
+      "tool_calls_after": 22
+    },
+    "research_seconds": 172.78
+  }
+}

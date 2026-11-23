@@ -1,0 +1,218 @@
+{
+  "app": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "one_line_description": {
+    "value": "Otter.ai's Public API provides programmatic access to retrieve channels, conversations, transcripts, audio, action items, insights, outlines, and workspace details from an Otter account.",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "Otter.ai’s Public API provides programmatic access to retrieve channels, conversations, transcripts, audio, action items, insights, outlines, and workspace details from your Otter account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "Otter's Public API is available for all Enterprise workspaces.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "curl -X GET \"https://api.otter.ai/v1/channels\"",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST v1, read/retrieval-oriented endpoints for channels, channel members, conversations, transcripts, audio, action items, insights, outlines, and workspace details; Super Admin APIs add workspace-wide conversation access.",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/39661865499799-Super-Admin-APIs",
+    "quote": "Otter APIs provide programmatic access to retrieve channels, conversations, transcripts, audio, action items, insights, outlines, and workspace details from your Otter account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "Otter.ai Public API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "All API requests require authentication using Bearer token authentication. Follow the steps below to create your API key.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "contact_sales",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "Otter's Public API is available for all Enterprise workspaces. If you do not see this feature for your workspace, contact your Otter account manager.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Enterprise-only: Otter's Public API is available for all Enterprise workspaces; if it is not visible for a workspace, access must be enabled by contacting your Otter account manager. The Otter MCP server is a separate OAuth-based integration that appears in AI-assistant connector directories.",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "Otter's Public API is available for all Enterprise workspaces. If you do not see this feature for your workspace, contact your Otter account manager.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "quote": "Connect AI models to Otter using Model Context Protocol (MCP).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=otter_ai_mcp",
+    "quote": "{\"items\": [{\"slug\": \"otter_ai_mcp\", \"name\": \"Otter.ai MCP\", \"app\": \"Otter.ai\", \"tools_count\": 3}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "10 requests/second for Enterprise plan users; exceeding the limit returns HTTP 429 Too Many Requests.",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "Enterprise plan users are currently limited to 10 requests / second. If you exceed your rate limit, you'll receive a `429 Too Many Requests` response.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "quote": "Webhooks are the recommended way to build export integrations with Otter.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "API paths are versioned in the URL (v1, e.g. https://api.otter.ai/v1/...); no deprecation or sunset policy is documented in the evidence.",
+    "source_url": "https://help.otter.ai/hc/en-us/articles/39661865499799-Super-Admin-APIs",
+    "quote": "curl -X GET \"https://api.otter.ai/v1/workspace/{id}/conversations?limit=20&cursor=\"",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "hard",
+  "verdict_reason": "Otter documents a Public API, but it is available only for Enterprise workspaces, and access must be enabled by contacting an Otter account manager. Rate limits and webhooks are documented, but the Enterprise/account-manager gate means a third-party developer cannot self-serve credentials for the REST API. Otter separately offers an OAuth-based MCP server for AI assistants, but the documented developer REST API remains contact-sales gated.",
+  "main_blocker": "Public API restricted to Enterprise workspaces and enabled via Otter account manager",
+  "needs_outreach": true,
+  "outreach_reason": "A third-party developer needs an Otter Enterprise workspace and must contact their Otter account manager to enable Public API access.",
+  "open_questions": [
+    "OAuth scopes/permissions for the Otter MCP server are not enumerated in the evidence.",
+    "No sandbox or test environment for the Otter Public API is documented in the evidence.",
+    "No official vendor-maintained SDKs are documented in the evidence.",
+    "API deprecation/sunset policy beyond the v1 URL path is not documented.",
+    "The exact Otter MCP endpoint URL is not published; setup is described through Claude/ChatGPT connector directories.",
+    "Does the OAuth-based Otter MCP server available on consumer plans provide a self-serve alternative to the Enterprise-gated Public REST API?",
+    "No community MCP servers were found in the evidence (GitHub and MCP registry checks returned none).",
+    "The \"Does Otter offer an open API?\" article appeared in search snippets but was not included in the fetched SOURCES, so its full text could not be quoted."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "hint": "help.otter.ai",
+      "description": "MCP server",
+      "source_file": "10-ai-research-and-media-native.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://help.otter.ai",
+        "title": "Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1130
+      },
+      {
+        "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+        "title": "Otter.ai Public API – Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.otter.ai/hc/en-us/articles/39661865499799-Super-Admin-APIs",
+        "title": "Super Admin APIs – Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://otter.ai/pricing",
+        "title": "Pricing | Otter.ai",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+        "title": "Otter MCP Server – Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4998
+      },
+      {
+        "url": "https://otter.ai/integration/claude",
+        "title": "Claude + Otter.ai Integration",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1072
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 219.19
+  }
+}

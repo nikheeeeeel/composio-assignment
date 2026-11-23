@@ -1,0 +1,319 @@
+{
+  "app": "Squarespace",
+  "category": "Ecommerce",
+  "slug": "squarespace",
+  "started_at": "2026-11-23T15:50:59.325387+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:53:32.671052+00:00",
+  "duration_s": 153.35,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/squarespace.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Squarespace\" MCP server official Model Context Protocol site:squarespace.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.401,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Squarespace\" API authentication OAuth API key documentation site:squarespace.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.518,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Squarespace\" pricing plans API access enterprise developer site:squarespace.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.626,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Squarespace\" official API documentation developer reference site:squarespace.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.108,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Squarespace\" API rate limits throttling quota documentation site:squarespace.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.599,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Squarespace\" API webhooks events callbacks documentation site:squarespace.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.543,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Squarespace\" official SDK client libraries developer site:squarespace.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.653,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Squarespace\" API sandbox test environment staging developer site:squarespace.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.977,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Squarespace\" API versioning deprecation sunset policy site:squarespace.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.599,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Squarespace"
+      },
+      "ok": true,
+      "duration_s": 0.014,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developers.squarespace.com",
+          "https://developers.squarespace.com/",
+          "https://developers.squarespace.com/commerce-apis/overview",
+          "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+          "https://developers.squarespace.com/commerce-apis/oauth"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.093,
+      "result_count": 4,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Squarespace MCP"
+      },
+      "ok": true,
+      "duration_s": 2.074,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://www.squarespace.com/pricing",
+          "https://support.squarespace.com/hc/en-us/articles/205815758-Developer-Tools",
+          "https://developers.squarespace.com/commerce-apis/responses-error-handling",
+          "https://developers.squarespace.com/mcp/overview",
+          "https://developers.squarespace.com/mcp/connect-a-client"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 4.885,
+      "result_count": 5,
+      "error": null
+    }
+  ],
+  "tool_call_count": 13,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://developers.squarespace.com",
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1678
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/overview",
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1939
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3780
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/oauth",
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.squarespace.com/pricing",
+      "title": "Squarespace Pricing Plans & Features — Squarespace",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4296
+    },
+    {
+      "url": "https://support.squarespace.com/hc/en-us/articles/205815758-Developer-Tools",
+      "title": "Developer Tools – Squarespace Help Center",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/responses-error-handling",
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4651
+    },
+    {
+      "url": "https://developers.squarespace.com/mcp/overview",
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3889
+    },
+    {
+      "url": "https://developers.squarespace.com/mcp/connect-a-client",
+      "title": "Squarespace Developer Platform: APIs, Apps, and Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3587
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Squarespace",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 135.244,
+      "tokens": {
+        "input": 10362,
+        "output": 1784,
+        "reasoning": 13469
+      },
+      "cost_usd": 0.00857102
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 10362,
+      "output": 1784,
+      "reasoning": 13469
+    },
+    "cost_usd": 0.00857102,
+    "llm_calls": 1
+  }
+}

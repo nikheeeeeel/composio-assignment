@@ -1,0 +1,248 @@
+{
+  "app": "DealCloud",
+  "category": "CRM and Sales",
+  "one_line_description": {
+    "value": "DealCloud is a deal-and-pipeline management platform used for relationship and pipeline insights, diligence and meeting preparation.",
+    "source_url": "https://api.docs.dealcloud.com/mcp",
+    "quote": "The DealCloud MCP Server helps teams turn their DealCloud data into faster, higher-quality outcomes. AI assistants can surface sharper relationship and pipeline insights, prepare teams for diligence and meetings, then act on what they find",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://api.docs.dealcloud.com/docs",
+    "quote": "Welcome to the DealCloud API Docs! This site provides a comprehensive overview of our REST APIs, their capabilities, and available endpoints.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://api.docs.dealcloud.com/docs",
+    "quote": "This site provides a comprehensive overview of our REST APIs, their capabilities, and available endpoints.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, 7 functional API areas with multiple endpoints each (authentication, user management, schema, data, backups, publications, relationship intelligence)",
+    "source_url": "https://api.docs.dealcloud.com/docs",
+    "quote": "Our APIs are organized into functional areas. Each area includes multiple endpoints designed to help you perform specific tasks related to that category.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://api.docs.dealcloud.com/docs",
+    "source_url": "https://api.docs.dealcloud.com/docs",
+    "quote": "Whether you're building custom integrations, automating workflows, or exploring advanced use cases, you'll find detailed guidance, examples, and best practices throughout.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://api.docs.dealcloud.com/docs/token",
+    "quote": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token, which is then used in the HTTP Authentication header for API requests.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://api.docs.dealcloud.com/docs/token",
+    "quote": "When generating a token, use one or more scopes listed below, separated by a space. It is recommended to include only the scopes needed.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "admin_approval",
+    "source_url": "https://api.docs.dealcloud.com/docs/apikeys",
+    "quote": "To enable API access, ensure the intended user is assigned to a user group with the appropriate permissions. Navigate to Admin > User Management, select the relevant user group, go to Capabilities > Site Areas, and enable \"API\".",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Requires an existing DealCloud site (enterprise customer) where a site admin has assigned the user to a group with the \"API\" capability; credentials are an OAuth2 client_id/client_secret plus the user's API key used to mint bearer tokens (tokens expire after 900 seconds). MCP requires a Celeste license and \"Manage MCP Servers\"/\"MCP Access\" capabilities. No free developer edition, trial, or self-serve signup is documented in the supplied evidence.",
+    "source_url": "https://api.docs.dealcloud.com/docs/apikeys",
+    "quote": "If you do not see the Admin section, contact your organization's admin or DealCloud Customer Success Manager (CSM) for assistance.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://[tenant].my.intapp.com/mcp/celeste/DealCloud",
+    "source_url": "https://api.docs.dealcloud.com/mcp/getting-started",
+    "quote": "DealCloud provides a default MCP Server out-of-the-box without any configuration required. It exposes your site's full schema and is the fastest way to get connected. Copy the MCP endpoint URL from Tools > MCP Servers and connect it to your AI client.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=DealCloud",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"DealCloud\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Endpoint-based quotas: OAuth token 300 per minute; user management, data, schema and RelIntel 5 per second",
+    "source_url": "https://api.docs.dealcloud.com/docs/limits",
+    "quote": "| Authentication | /api/rest/v1/oauth/token | 300 per minute | | User Management | /api/rest/v1/management | 5 per second | | Data | /api/rest/v4/data | 5 per second | | Schema | /api/rest/v4/schema | 5 per second | | RelIntel | /api/rest/v4/ri/import | 5 per second |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": false,
+    "source_url": "https://api.docs.dealcloud.com/sdk/python-1.X/publications/overview",
+    "quote": "Subscribe to change events from DealCloud via the Publications API. The SDK exposes topic discovery, long-poll (`poll_events` / `stream_poll_events`), acknowledgement, bootstrap, and blocking `subscribe` / `subscribe_async` helpers.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Python"
+    ],
+    "source_url": "https://api.docs.dealcloud.com/sdk/python-1.X/publications/overview",
+    "quote": "from dealcloud_sdk import DealCloud, DealCloudConfig",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Path-versioned REST: /api/rest/v1 for user management (and auth/publications) versus /api/rest/v4 for data and schema; no formal deprecation/sunset policy found in the supplied docs.",
+    "source_url": "https://api.docs.dealcloud.com/docs/token",
+    "quote": "| user_management | Required when accessing the User Management API endpoints (api/rest/v1/management) | | data | Required when accessing the Data or Schema API endpoints (api/rest/v4/data or api/rest/v4/schema). |",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "DealCloud publishes thorough REST API docs with OAuth2 client-credentials bearer tokens, a documented scope model, per-endpoint rate limits, and an out-of-the-box MCP server. However, credentials only exist inside an existing DealCloud site: a site admin must enable the \"API\" capability on the user's group, and the MCP server requires a Celeste license. No self-serve developer signup, trial, or sandbox is documented, so access is gated rather than open.",
+  "main_blocker": "Requires an existing DealCloud site plus site-admin-enabled API capability; no self-serve developer tier documented",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Can a free, trial, or sandbox DealCloud site be provisioned self-serve? No pricing/plans page or sandbox page was captured in the evidence.",
+    "How are OAuth2 client_id/client_secret provisioned (site admin console vs DealCloud support)? Not documented in the supplied sources.",
+    "The SDKs index page implies multiple SDKs, but only the Python dealcloud_sdk is evidenced here; are other official vendor SDKs offered?",
+    "Publications API delivers change events via long-poll rather than HTTP webhooks; confirm whether any webhook/callback mechanism exists.",
+    "The API reference exists at /releases and SDK changelogs in the search index, but no formal versioning/deprecation/sunset policy text was captured.",
+    "No community/third-party MCP servers were found (MCP registry and GitHub checks returned no results); the checks may have been incomplete.",
+    "The one_line_description was inferred from the MCP/product-domain page because no general product overview page was fetched.",
+    "API behavior is per-site (Swagger at https://{{host}}/swagger); per-tenant differences in schema and available endpoints are unknown.",
+    "MCP endpoint is per-tenant (https://[tenant].my.intapp.com/mcp/celeste/DealCloud), so the value points at the documented format rather than a single fixed URL."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "DealCloud",
+      "category": "CRM and Sales",
+      "hint": "api.docs.dealcloud.com",
+      "description": null,
+      "source_file": "01-crm-and-sales.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://api.docs.dealcloud.com",
+        "title": "Dealcloud Developer Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 207
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/docs",
+        "title": "Docs - DealCloud API Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1775
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/docs/token",
+        "title": "Requesting an OAuth2 Bearer Token - DealCloud API Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2257
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/docs/apikeys",
+        "title": "Obtaining an API Key - DealCloud API Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1343
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/docs/limits",
+        "title": "Rate Limits - DealCloud API Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1660
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/mcp",
+        "title": "DealCloud MCP Server - DealCloud API Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1134
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+        "title": "Getting Started with DealCloud MCP - DealCloud API Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1270
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/sdk/python-1.X/publications/overview",
+        "title": "Publications API - DealCloud API Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3774
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication",
+        "title": "Authentication - DealCloud API Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 166.52
+  }
+}

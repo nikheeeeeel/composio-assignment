@@ -1,0 +1,217 @@
+{
+  "app": "Pumble",
+  "category": "Communications and Messaging",
+  "one_line_description": {
+    "value": "Pumble is a team communication app for messages, channels, threads, files, and video/voice calls.",
+    "source_url": "https://pumble.com",
+    "quote": "Send messages and files to team members, easily find them with unlimited messages history, and start video conferencing with one click.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.pumble.com/",
+    "quote": "Welcome to the Pumble API. Built on REST principles, this API allows you to integrate Pumble into your own app, by using the endpoints below.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.pumble.com/",
+    "quote": "Built on REST principles, this API allows you to integrate Pumble into your own app, by using the endpoints below.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, ~46 endpoints across channels, messages, files, workspace users, workspaces, calls, and OAuth2; read-write",
+    "source_url": "https://docs.pumble.com/",
+    "quote": "If you're looking to integrate operations over users, channels, messages (list/preview, create new, update an existing one, leave reaction, reply etc.), you are in the right place.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.pumble.com/",
+    "source_url": "https://docs.pumble.com/",
+    "quote": "Pumble API reference",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "source_url": "https://docs.pumble.com/",
+    "quote": "It's mandatory to include the token (access token issued to user/bot) and x-app-token (app token issued to your app, prefixed with 'xpat-') headers in every request",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+    "quote": "| send_message | messages:write, files:write |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://pumble.com/pricing",
+    "quote": "Start using Pumble for free, and upgrade when you need more features.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access requires installing the API addon in a Pumble workspace and generating keys there; API operations are scoped to the workspace, user role, and permissions. The free Pumble plan exists and lists up to 3 apps & integrations (PRO up to 10), but the fetched pages do not explicitly confirm API addon availability by plan tier.",
+    "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "quote": "Before you can create an API key, you need to install the API addon on your Pumble workspace.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.pumble.com/mcp",
+    "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+    "quote": "\"url\": \"https://mcp.pumble.com/mcp\",",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=pumble",
+    "quote": "{\"items\": [{\"slug\": \"pumble\", \"name\": \"Pumble\", \"app\": \"Pumble\", \"tools_count\": 9}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "100 requests per user per minute (per token header) and 500 per app (per x-app-token header); 429 responses include Retry-After",
+    "source_url": "https://docs.pumble.com/",
+    "quote": "Default limitation is 100 requests per user per minute (per token header) and 500 per app (per x-app-token header).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Node.js"
+    ],
+    "source_url": "https://docs.pumble.com/",
+    "quote": "explaining how to use the Node SDK to avoid boilerplate code and manual API calls",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Path-versioned v1 API under https://api-ga.pumble.com/v1/; no deprecation or sunset policy was found in the fetched documentation.",
+    "source_url": "https://docs.pumble.com/",
+    "quote": "All the endpoints (except auth) are prefixed with the API URL: https://api-ga.pumble.com/v1/.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Pumble publishes a REST Integration API reference with roughly 46 read-write endpoints covering messages, channels, files, users, workspaces, and calls. Credentials can be obtained self-serve by installing the API addon in a workspace and generating an API key, and a free Pumble plan is advertised. The vendor also operates a documented native MCP server at https://mcp.pumble.com/mcp.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Rate-limit figures conflict: docs.pumble.com states 100 requests/user/minute and 500/app/minute, while the API addon help page states 'up to 1000 requests per minute per user'. Confirm which limit applies.",
+    "The fetched pages do not state whether the API addon is installable on the Free plan; free plans list 'up to 3 apps & integrations', which may or may not include the API addon.",
+    "Webhooks/event callbacks are not covered by the fetched SOURCES; a Pumble help article on incoming webhooks appeared in search results but was not included in the evidence bundle, so webhooks support is unverified.",
+    "No documented sandbox or test environment was found in the fetched pages.",
+    "The docs list OAuth2 endpoints (post /oauth2/access, get /oauth2/me), but the external OAuth app registration/consent flow is not clearly described in the fetched text.",
+    "Documentation text appears to be a Swagger-style reference; deeper endpoint schemas and error catalogs were not fully readable in the fetched bundle."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Pumble",
+      "category": "Communications and Messaging",
+      "hint": "pumble.com",
+      "description": null,
+      "source_file": "03-communications-and-messaging.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://pumble.com",
+        "title": "Pumble™ - FREE Business Communication Tool",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.pumble.com/",
+        "title": "Pumble API reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "title": "Pumble API Overview - Pumble Help",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2630
+      },
+      {
+        "url": "https://pumble.com/pricing",
+        "title": "Pricing - Pumble™",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://pumble.com/mcp",
+        "title": "Connect AI agents with the Pumble MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2244
+      },
+      {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+        "title": "How to use the Pumble MCP server - Pumble Help",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 100.75
+  }
+}

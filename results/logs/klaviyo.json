@@ -1,0 +1,328 @@
+{
+  "app": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "slug": "klaviyo",
+  "started_at": "2026-11-23T15:47:35.356814+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:49:07.804433+00:00",
+  "duration_s": 92.45,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/klaviyo.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Klaviyo\" MCP server official Model Context Protocol site:klaviyo.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.35,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Klaviyo\" official API documentation developer reference site:klaviyo.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.52,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Klaviyo\" pricing plans API access enterprise developer site:klaviyo.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.689,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Klaviyo\" API webhooks events callbacks documentation site:klaviyo.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.528,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Klaviyo\" API sandbox test environment staging developer site:klaviyo.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.677,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Klaviyo\" API rate limits throttling quota documentation site:klaviyo.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.318,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Klaviyo\" API versioning deprecation sunset policy site:klaviyo.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.697,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Klaviyo\" official SDK client libraries developer site:klaviyo.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.235,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Klaviyo\" API authentication OAuth API key documentation site:klaviyo.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 8.684,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Klaviyo"
+      },
+      "ok": true,
+      "duration_s": 0.013,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Klaviyo MCP"
+      },
+      "ok": true,
+      "duration_s": 5.849,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developers.klaviyo.com/en/v2025-07-15/docs/set_up_oauth",
+          "https://developers.klaviyo.com/en/v2026-01-15/docs/build_your_integration",
+          "https://developers.klaviyo.com/en/docs/rate%5Flimits%5Fand%5Ferror%5Fhandling",
+          "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+          "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 6.84,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developers.klaviyo.com",
+          "https://developers.klaviyo.com/en/reference/api_overview",
+          "https://developers.klaviyo.com/en/reference",
+          "https://developers.klaviyo.com/en/docs/authenticate_",
+          "https://developers.klaviyo.com/en/docs/set_up_oauth"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 7.026,
+      "result_count": 5,
+      "error": null
+    }
+  ],
+  "tool_call_count": 13,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://developers.klaviyo.com/en/v2025-07-15/docs/set_up_oauth",
+      "title": "Make API calls using OAuth",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/v2026-01-15/docs/build_your_integration",
+      "title": "Join the Klaviyo ecosystem",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/rate%5Flimits%5Fand%5Ferror%5Fhandling",
+      "title": "Rate limits, status codes, and errors",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+      "title": "Klaviyo MCP server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1684
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+      "title": "Connect to the MCP server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.klaviyo.com",
+      "title": "Build your customer growth engine with agents",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2662
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/reference/api_overview",
+      "title": "API overview",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4998
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/reference",
+      "title": "",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4985
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+      "title": "Authenticate API requests",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4996
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+      "title": "Make API calls using OAuth",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Klaviyo",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 75.128,
+      "tokens": {
+        "input": 12453,
+        "output": 2294,
+        "reasoning": 4441
+      },
+      "cost_usd": 0.0047333
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 12453,
+      "output": 2294,
+      "reasoning": 4441
+    },
+    "cost_usd": 0.0047333,
+    "llm_calls": 1
+  }
+}

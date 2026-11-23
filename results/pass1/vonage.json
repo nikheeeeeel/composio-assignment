@@ -1,0 +1,253 @@
+{
+  "app": "Vonage",
+  "category": "Communications and Messaging",
+  "one_line_description": {
+    "value": "Vonage provides a suite of communications APIs that let developers integrate messaging, voice, video, and verification channels into their applications.",
+    "source_url": "https://developer.vonage.com/en/getting-started/overview",
+    "quote": "Vonage provides a suite of APIs that enable you to communicate with your customers using your preferred channels.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.vonage.com/en/api",
+    "quote": "For applications that only need to send and/or receive SMS, the SMS API is our stable, recommended solution.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.vonage.com/en/getting-started/overview",
+    "quote": "Our specifications conform to OpenAPI specification version 3, also known as OAS3.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, broad multi-product surface (messaging, voice, video, verify, numbers, accounts, pricing, reports); read-write",
+    "source_url": "https://developer.vonage.com/en/api",
+    "quote": "The Voice API lets you dial other phones, answer incoming calls, and control all aspects of the call including conferences, recordings, capturing user input and sending various audio content.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.vonage.com/en/api",
+    "source_url": "https://developer.vonage.com/en/getting-started/overview",
+    "quote": "This site provides comprehensive documentation for all of our APIs and you’ll find everything you need to know about working with a particular API in the corresponding section.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "basic",
+      "jwt"
+    ],
+    "source_url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+    "quote": "- Basic Authentication - Secret Rotation - JSON Web Tokens (JWT)",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developer.vonage.com/en/getting-started/overview",
+    "quote": "We’ll give you some free credit when you first open your account and you can top up when you run low.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve: sign up for an account to get an API key and secret; a free credit is granted at account opening and usage is then charged per request (pay-as-you-go). Some APIs (Voice and Messages) additionally require creating an Application in the Developer Dashboard. Vendor documentation describes Vonage MCP servers but no hosted MCP endpoint URL is published in the evidence, so the MCP documentation URL is recorded as the official MCP reference.",
+    "source_url": "https://developer.vonage.com/en/getting-started/overview",
+    "quote": "Some of our APIs (such as Voice and Messages) require you to create an Application, which acts as a container for security and configuration information.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://developer.vonage.com/en/mcp-server/overview",
+    "source_url": "https://developer.vonage.com/en/mcp-server/overview",
+    "quote": "The Vonage MCP Server enables AI agents and developer tools to discover, describe, and use Vonage capabilities via the Model Context Protocol.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Vonage",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Vonage\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "30 API requests per second default throughput per API key; higher throughput reviewed case-by-case via account manager; exceeding limits returns a 'throttled' error",
+    "source_url": "https://api.support.vonage.com/hc/en-us/articles/203993598-What-is-the-Throughput-Limit-for-Outbound-SMS",
+    "quote": "All API keys are set with 30 API requests per second throughput restriction by default.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.vonage.com/en/getting-started/overview",
+    "quote": "When our APIs want to notify your app about something - whether that is an inbound call or message or a status update - they require your app to expose a URL endpoint that our platform can make a request to.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Multiple API versions coexist (e.g., Pricing v1 and v2, Verify legacy and Verify 2), and some newer APIs are flagged as Beta and subject to change before production",
+    "source_url": "https://developer.vonage.com/en/api",
+    "quote": "This API is currently in Beta, so expect some changes before it is production-ready.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Vonage publishes a comprehensive public API reference and authentication guide, and credentials are self-serve: signing up yields an API key and secret plus free credit, after which usage is pay-as-you-go per request. Authentication is standard Basic Auth or JWT, and the API surface spans messaging, voice, video, verify, numbers, and account management with webhook support. No sales contact, partner approval, or app review is documented as necessary to start building.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "OAuth 2.0 is documented only for Vonage Business Communications APIs (S10: 'Vonage Business Communications APIs use OAuth for authentication.'); core CPaaS APIs document Basic Auth and JWT. Whether OAuth scopes are formally enumerated anywhere was not established from the evidence.",
+    "Whether a documented sandbox/test environment exists: the search index surfaced sandbox pages but they were not included as quotable SOURCES.",
+    "Official SDK language list not confirmed; the evidence only points to a Tools page ('You can find links to all of our SDKs on the Tools page.') without enumerating languages.",
+    "Vonage documents Documentation and Server API Bindings (Tooling) MCP servers, but no concrete hosted MCP endpoint URL appears in the evidence; only the vendor docs URL is recorded.",
+    "No community/third-party MCP servers were captured (MCP registry results were empty), so their absence is not confirmed.",
+    "Exact API/resource counts for api_breadth were not stated numerically in the evidence; the index page lists numerous product APIs but no total.",
+    "SIP Trunking uses Digest Authentication, which is not representable in the standard auth_methods enum and was omitted from that list."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Vonage",
+      "category": "Communications and Messaging",
+      "hint": "developer.vonage.com",
+      "description": null,
+      "source_file": "03-communications-and-messaging.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.vonage.com/en/getting-started/overview",
+        "title": "Getting Started With Vonage APIs (New User Guide)",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.vonage.com/communications-apis/pricing/",
+        "title": "API Pricing: Understanding Vonage Communications API Prices | Vonage",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://api.support.vonage.com/hc/en-us/articles/203993598-What-is-the-Throughput-Limit-for-Outbound-SMS",
+        "title": "What is the Throughput Limit for Outbound SMS? – Vonage API Support",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2024-12-04T10:57:05.000Z",
+        "chars": 1461
+      },
+      {
+        "url": "https://developer.vonage.com/en/mcp-server/overview",
+        "title": "Vonage MCP Server Overview | Vonage MCP Server Documenation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 721
+      },
+      {
+        "url": "https://developer.vonage.com/en/mcp-server/conceptual-guides/introduction-to-vonage-mcp",
+        "title": "Introduction to Vonage MCP Servers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3398
+      },
+      {
+        "url": "https://developer.vonage.com",
+        "title": "Vonage API Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.vonage.com/en/api",
+        "title": "API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4188
+      },
+      {
+        "url": "https://developer.vonage.com/en/home",
+        "title": "Vonage API Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+        "title": "Authentication - API Concepts | Vonage API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.vonage.com/en/vonage-business-cloud/getting-started/create-an-access-token",
+        "title": "Create an Access Token",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 76.42
+  }
+}

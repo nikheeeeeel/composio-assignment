@@ -1,0 +1,228 @@
+{
+  "app": "Grain",
+  "category": "AI, Research and Media-native",
+  "one_line_description": {
+    "value": "Grain captures and enriches your meetings, then delivers them to Claude, ChatGPT, or any AI tool so your agents can do the work.",
+    "source_url": "https://grain.com",
+    "quote": "Grain captures and enriches your meetings, then delivers them to Claude, ChatGPT, or any AI tool so your agents can do the work.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "Connect Grain to your own tools and workflows with the Grain public API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.grain.com/",
+    "quote": "Every request needs a token in the `Authorization` header and a `Public-Api-Version` header (see Versions). Here's Token Info, using an example token:",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Read-write: recordings, transcripts, AI notes and action items, participants, tags, teams, meeting types; upload external recordings, update metadata, download video/transcripts (JSON, text, VTT, SRT), webhooks",
+    "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "The Grain API lets developers read meeting data, manage recordings, and receive real-time events from Grain programmatically.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.grain.com/",
+    "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "For the full technical reference, see developers.grain.com.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "OAuth2: the standard flow for building integrations to be used by any Grain user. Users authorize your application directly, and your app receives a token scoped to that user's data.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "Not for personal API access, which is available on every plan, including Free.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Personal API access via Personal Access Token (PAT) is self-serve and available on every plan including Free; workspace-wide access via Workspace Access Token requires admin rights on Business or Enterprise plans; OAuth2 is required for integrations distributed to other Grain users.",
+    "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "Workspace API access is available on Business and Enterprise plans and requires admin access to generate.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://developers.grain.com/mcp/overview.html",
+    "source_url": "https://developers.grain.com/mcp/overview.html",
+    "quote": "The Grain MCP (Model Context Protocol) connects Claude.ai (and other AI chat clients) directly to your meeting data in Grain, enabling powerful AI-powered individual workflows",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=grain",
+    "quote": "{\"items\": [{\"slug\": \"grain\", \"name\": \"Grain\", \"app\": \"Grain\", \"tools_count\": 17}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "300 requests per minute per token; requests beyond the limit return 429 Too Many Requests (rate limit headers returned on each response)",
+    "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "The API allows 300 requests per minute per token. Requests beyond this limit return a `429 Too Many Requests` response. Each response includes rate limit headers so you can track remaining capacity.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "Webhooks let Grain push data to your system when events occur, rather than requiring you to poll for changes. Register a webhook URL in your integration and Grain will send a payload to that URL whenever a registered event occurs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "Is there a sandbox environment for testing? No sandbox is available at this time. Test against your live workspace using a Personal Access Token scoped to your own account to limit exposure.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Date-based versions passed via the Public-Api-Version header; support article states current version is 2025-10-31 (the quick-start example shows 2026-10-01). The v1 (beta) API was sunset in September 2026 and v2 is required; versioning is used to introduce/deprecate fields without breaking integrations.",
+    "source_url": "https://support.grain.com/en/articles/15507288-grain-api",
+    "quote": "The current API version is `2025-10-31`. All requests must include a `Public-Api-Version` header with this value. Grain uses versioning to introduce and deprecate fields without breaking existing integrations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Grain documents a public API whose Personal Access Token is self-serve and \"available on every plan, including Free\", with OAuth2 also supported for distributed integrations. The API covers reading meeting data, managing/uploading recordings, downloading media, and webhooks, with a documented 300 requests/minute limit. No sales contact, partner approval, or app review is required to obtain a PAT, so a toolkit can be built from documented endpoints alone.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No source explicitly labels the API style as REST; it is inferred from documented HTTP endpoints, Bearer-token auth, JSON payloads and versioned endpoint paths (confidence=low).",
+    "Official SDKs: no vendor-maintained client libraries are listed in the supplied sources, so sdk_languages is left null.",
+    "Community/third-party MCP servers: none appear in the bundle (MCP registry results empty, no GitHub repos checked); absence is unconfirmed.",
+    "OAuth2 scope/permission catalog is not shown in the supplied pages; whether scopes are formally documented is unknown.",
+    "Version conflict: the support article says the current API version is 2025-10-31 while the developers.grain.com quick-start example sends Public-Api-Version: 2026-10-01.",
+    "The official MCP server's concrete endpoint URL is not published in the evidence (only the vendor overview docs page); it may be per-org and client-configured.",
+    "Docs index mentions an 'Endpoints — the full API reference' section, but the endpoint count/coverage was not fetched, so api_breadth is approximate."
+  ],
+  "status": "drafted",
+  "audit": {
+    "notes": "Authentication page (same S4 article) names three methods: Personal Access Token (PAT, used as 'Authorization: Bearer' in the S3 quick start), Workspace Access Token (WAT, admin + Business/Enterprise), and OAuth2; auth_methods lists these as oauth2 and bearer_token.",
+    "mcp_note": "Grain's MCP server is described by the vendor as official ('Grain's MCP server is officially supported by us'); value cites the vendor MCP documentation page rather than a concrete endpoint URL.",
+    "plan_note": "Business plan page lists 'workspace API and webhooks' as a Business feature, consistent with the workspace-token gating while personal PAT access remains free.",
+    "input": {
+      "name": "Grain",
+      "category": "AI, Research and Media-native",
+      "hint": "grain.com",
+      "description": "meeting notes",
+      "source_file": "10-ai-research-and-media-native.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://grain.com",
+        "title": "Grain | The AI Notetaker Built for Growing Teams",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://grain.com/pricing",
+        "title": "Pricing | Grain",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3083
+      },
+      {
+        "url": "https://developers.grain.com/",
+        "title": "Overview — Grain Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1415
+      },
+      {
+        "url": "https://support.grain.com/en/articles/15507288-grain-api",
+        "title": "Grain API | Grain",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4172
+      },
+      {
+        "url": "https://support.grain.com/en/articles/9253220-plans",
+        "title": "Plans | Grain",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3019
+      },
+      {
+        "url": "https://developers.grain.com/mcp/overview.html",
+        "title": "Official Grain MCP Server: Quick Start Guide — Grain Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 646
+      },
+      {
+        "url": "https://developers.grain.com/mcp/faq.html",
+        "title": "Frequently Asked Questions — Grain Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4553
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 100.85
+  }
+}

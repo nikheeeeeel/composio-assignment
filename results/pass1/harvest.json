@@ -1,0 +1,270 @@
+{
+  "app": "Harvest",
+  "category": "Productivity and Project Management",
+  "one_line_description": {
+    "value": "Harvest helps professional teams track time, bill clients, optimize team time, and measure performance with confidence.",
+    "source_url": "https://harvestapp.com",
+    "quote": "Harvest helps professional teams track time, bill clients, optimize team time, and measure performance with confidence.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "quote": "The V2 API requires an access token to authenticate requests.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "quote": "https://api.harvestapp.com/v2/users/me",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST v2, read-write across account resources (projects, people, own data) mirroring UI permissions; exact endpoint/resource count not stated in fetched pages",
+    "source_url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+    "quote": "Administrators can access all API calls, Managers can access the projects and people they manage, and Members can only access their own data.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://help.getharvest.com/api-v2/",
+    "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "quote": "This is the current API V2 documentation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "quote": "The V2 API requires an access token to authenticate requests. - A Personal Access Token which is tied directly to you and is the quickest way to start playing around with the API. - Implementing a full OAuth2 Authentication flow which allows other people to use your Harvest integrations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "quote": "contains a list of space-separated strings describing the granted access scope.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+    "quote": "Your Harvest subscription includes API access for all accounts (including free and trial accounts) which can be used to manage your Harvest account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "No separate developer tier or approval step: API access ships with every Harvest account, including the free plan and the 30-day trial; credentials are created self-serve in the Developers section of Harvest ID (Personal Access Token or OAuth2 app). API permissions mirror account permissions (Administrator/Manager/Member), and actions not permitted in the UI return HTTP 401.",
+    "source_url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+    "quote": "All Harvest accounts are able to access the Harvest API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=harvest",
+    "quote": "{\"slug\": \"harvest\", \"name\": \"Harvest\", \"app\": \"Harvest\", \"tools_count\": 60}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+    "quote": "Yes — details on throttling (including limits) can be found in our API overview documentation.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Ruby",
+      "PHP",
+      "Python",
+      "Java"
+    ],
+    "source_url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+    "quote": "We provide links to Harvest API libraries in our API code samples documentation. Presently, wrappers are offered in Ruby, PHP (including Drupal), Python and Java.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Current version is V2 (api.harvestapp.com/v2); V1 is legacy and only its documentation is still viewable. No explicit sunset schedule or versioning policy appears in the fetched pages.",
+    "source_url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+    "quote": "You can still view the legacy API V1 documentation.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Harvest's own help center states that API access is included with every subscription, including free and trial accounts, so credentials are self-serve with no sales contact or review. The V2 authentication docs show both a Personal Access Token (sent as a bearer token) and a full OAuth2 authorization-code flow for multi-user integrations. The API is read-write across account data with permissions mirroring the UI, which is sufficient breadth for useful actions.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Name collision: https://harvestdocs.greenhouse.io/docs/authentication and https://help.getharvest.com/... co-occur; the Greenhouse 'Harvest v3' API at harvest.greenhouse.io is a different product and its auth/MCP details (including the Greenhouse MCP server) were excluded from this record.",
+    "platform.harvestapp.com pages (the 'Integrate your app with Harvest' partner platform) rendered as JS shells / sign-in screens, so any partner-program requirements documented there could not be read.",
+    "Rate-limit numbers were not in the fetched evidence; the support article only points to the API overview documentation for throttling limits.",
+    "No evidence of webhooks/event callbacks or a sandbox/test environment was found in the fetched pages; both are recorded as not_found rather than false.",
+    "No vendor-operated or credible community MCP server for Harvest (getharvest.com) was found; MCP registry results were empty.",
+    "No fetched page explicitly labels the API as 'REST'; the type was inferred from documented HTTPS JSON endpoints (e.g. https://api.harvestapp.com/v2/users/me), hence low confidence.",
+    "The Ruby/PHP/Python/Java 'wrappers' are only described as linked libraries in Harvest's code samples; whether they are vendor-maintained or third-party is unclear.",
+    "Exact endpoint/resource count for API v2 is not enumerated in the fetched pages."
+  ],
+  "status": "drafted",
+  "audit": {
+    "excluded_sources": [
+      "https://harvestdocs.greenhouse.io/docs/authentication",
+      "https://harvestdocs.greenhouse.io/docs/harvest-partner-oauth"
+    ],
+    "exclusion_reason": "Greenhouse Harvest v3 recruiting API — different product from Harvest (getharvest.com).",
+    "metadata_note": "S6/S7/S8 and the pricing page are on vendor domains (help.getharvest.com, support.getharvest.com, getharvest.com) but were flagged OFFICIAL: no by the fetcher; they were treated as vendor documentation and corroborated by the input description pointing to help.getharvest.com/api-v2.",
+    "unreadable_sources": [
+      "https://platform.harvestapp.com/",
+      "https://platform.harvestapp.com/platform/"
+    ],
+    "input": {
+      "name": "Harvest",
+      "category": "Productivity and Project Management",
+      "hint": "harvestapp.com",
+      "description": "help.getharvest.com/api-v2",
+      "source_file": "08-productivity-and-project-management.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 18,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://platform.harvestapp.com/",
+        "title": "Integrate your app with Harvest",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 176
+      },
+      {
+        "url": "https://platform.harvestapp.com/platform/",
+        "title": "Harvest",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 87
+      },
+      {
+        "url": "https://platform.harvestapp.com/platform/sign_in",
+        "title": "Harvest",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 151
+      },
+      {
+        "url": "https://harvestapp.com",
+        "title": "Time Tracking Software With Invoicing | Harvest",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://harvestdocs.greenhouse.io/docs/authentication",
+        "title": "Authentication",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "title": "Authentication – Harvest API V2 Documentation",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+        "title": "The Harvest API – Harvest Help Center",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 1066
+      },
+      {
+        "url": "https://www.getharvest.com/pricing",
+        "title": "Time Management & Invoicing at Cost Effective Pricing | Harvest",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 65,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "auth_methods",
+        "access_model",
+        "official_mcp_server",
+        "has_public_api"
+      ],
+      "queries": [
+        "\"Harvest\" API authentication OAuth API key documentation",
+        "\"Harvest\" developer authentication guide",
+        "\"Harvest\" API pricing plans access requirements",
+        "\"Harvest\" developer API free tier paid plan"
+      ],
+      "extra_urls": [
+        "https://harvestdocs.greenhouse.io/docs/authentication",
+        "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "https://support.getharvest.com/hc/en-us/articles/360048180732-The-Harvest-API",
+        "https://www.getharvest.com/pricing"
+      ],
+      "tool_calls_after": 18
+    },
+    "research_seconds": 165.97
+  }
+}

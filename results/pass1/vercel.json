@@ -1,0 +1,253 @@
+{
+  "app": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": {
+    "value": "Vercel is a platform for deploying, scaling, and securing frontend applications and agent workloads, combining developer experience with end-user performance.",
+    "source_url": "https://vercel.com/docs/rest-api",
+    "quote": "Vercel combines the best developer experience with an obsessive focus on end-user performance.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://vercel.com/docs/rest-api",
+    "quote": "| GET | `/v1/access-groups/{idOrName}` | Reads an access group | | POST | `/v1/access-groups/{idOrName}` | Update an access group | | DELETE | `/v1/access-groups/{idOrName}` | Deletes an access group |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://vercel.com/docs/connect/concepts/authentication",
+    "quote": "Every token request is a `POST` to `/v1/connect/token/:connector` on the Vercel API with a Bearer header and a JSON body that mirrors `ConnectTokenParams`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, large surface: many resource groups (access groups, AI Gateway, bulk redirects, deployments, projects, webhooks), read-write with GET/POST/PATCH/DELETE operations",
+    "source_url": "https://vercel.com/docs/rest-api",
+    "quote": "| POST | `/ai-gateway/byok-credentials` | Create a BYOK credential | | GET | `/ai-gateway/byok-credentials/list` | List BYOK credentials |",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://vercel.com/docs/rest-api",
+    "source_url": "https://vercel.com/docs/rest-api",
+    "quote": "Vercel REST API Reference",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "bearer_token"
+    ],
+    "source_url": "https://vercel.com/docs/connect/concepts/authentication",
+    "quote": "Every token request is a `POST` to `/v1/connect/token/:connector` on the Vercel API with a Bearer header and a JSON body that mirrors `ConnectTokenParams`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://vercel.com/docs/connect",
+    "quote": "Fine-grained scoping: Narrow each token with provider scopes, resource indicators, and rich authorization requests.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://vercel.com/pricing",
+    "quote": "| Plan | Price | Best for | | --- | --- | --- | | Hobby | $0/mo. | The perfect starting place for your web app. |",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free self-serve Hobby plan is enough to create a Vercel access token and call the REST API; higher platform limits require Pro ($20/mo) and custom limits/quotas require Enterprise (contact the account team). Team RBAC roles determine what a token can do (view, mutate, attach, revoke per connector).",
+    "source_url": "https://vercel.com/docs/limits",
+    "quote": "Enterprise: Contact your Vercel account team to request a limit increase.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.vercel.com",
+    "source_url": "https://vercel.com/docs/cli/mcp",
+    "quote": "Vercel MCP, Vercel's hosted Model Context Protocol endpoint at `https://mcp.vercel.com`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=vercel",
+    "quote": "{\"slug\": \"vercel\", \"name\": \"Vercel\", \"app\": \"Vercel\", \"tools_count\": 399}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Documented as hard per-plan limits rather than request-rate quotas, e.g. deployments created per day: Hobby 100 / Pro 6000 / Enterprise custom; 200 projects on Hobby; request-level API rate limit numbers were not present in the retrieved text",
+    "source_url": "https://vercel.com/docs/limits",
+    "quote": "| Deployments Created per Day | 100 | 6000 | Custom |",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://vercel.com/docs/webhooks/webhooks-api",
+    "quote": "Vercel Integrations allow you to subscribe to certain trigger-based events through webhooks.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "TypeScript",
+      "Python"
+    ],
+    "source_url": "https://vercel.com/docs/connect/concepts/authentication",
+    "quote": "The Vercel Connect SDKs (`@vercel/connect` for TypeScript and `vercel-connect` for Python) support two authentication methods, plus a separate path for dashboard and CLI users.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Path-versioned REST endpoints (e.g. /v1/...); deprecations are staged rather than cut off - a deprecated webhook event can no longer be added to integrations but continues to be delivered to existing subscribers, with changes tracked in the changelog.",
+    "source_url": "https://vercel.com/docs/webhooks/webhooks-api",
+    "quote": "You can no longer add it to an integration webhook.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Vercel publishes a broad, official REST API reference covering many resource groups with read-write endpoints (access groups, AI Gateway, bulk redirects, projects, deployments). Credentials are self-serve: a free Hobby plan is the documented starting point and access tokens are used as Bearer credentials, with Pro/Enterprise only needed for higher limits. Vercel also operates an official hosted MCP server at https://mcp.vercel.com.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The Vercel access-tokens page (vercel.com/docs/accounts/access-tokens) and explicit API permission/scope documentation were not in the bundle, so auth_methods is limited to bearer_token; OAuth2 is documented only for Vercel MCP (and shown as OAUTH2/API_KEY in the Composio catalog), not for the REST API itself in the retrieved text.",
+    "Numeric request-level API rate limits live in a table on vercel.com/docs/limits whose rows were not captured in the retrieved text; only per-plan action limits (deployments/day, projects) were available.",
+    "sdk_languages reflects Vercel Connect SDKs only; no official general-purpose SDK for the Vercel REST API is documented in the bundle (AI SDK/Chat SDK are product SDKs in TypeScript).",
+    "No API sandbox/test-mode is documented in the bundle; Vercel's 'Sandbox' product is for isolated code execution, and preview deployments/staging are the practical test route (the staging KB guide was listed in search results but not fetched).",
+    "No community MCP servers were discovered; the MCP registry and GitHub checks returned no results.",
+    "Webhooks evidence is scoped to Vercel Integrations; whether all platform events are available to first-party (non-integration) consumers is not clear from the captured text."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Vercel",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "vercel.com/docs/rest-api",
+      "description": null,
+      "source_file": "07-developer-infra-and-data-platforms.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://vercel.com/docs/rest-api",
+        "title": "Vercel REST API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://vercel.com/docs",
+        "title": "Vercel Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://vercel.com/docs/connect/concepts/authentication",
+        "title": "Authentication in Vercel Connect",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://vercel.com/docs/connect",
+        "title": "Vercel Connect",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://vercel.com/pricing",
+        "title": "Vercel Pricing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://vercel.com/docs/pricing",
+        "title": "Pricing on Vercel",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4999
+      },
+      {
+        "url": "https://vercel.com/docs/limits",
+        "title": "Limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "title": "Use Vercel",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4999
+      },
+      {
+        "url": "https://vercel.com/docs/cli/mcp",
+        "title": "vercel mcp",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4984
+      },
+      {
+        "url": "https://vercel.com/docs/webhooks/webhooks-api",
+        "title": "Webhooks API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4998
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 119.13
+  }
+}

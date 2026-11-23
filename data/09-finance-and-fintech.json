@@ -1,0 +1,64 @@
+{
+  "category": "Finance and Fintech",
+  "categoryNumber": 9,
+  "source": {
+    "spreadsheet": "composio-research",
+    "sheet": "Sheet1",
+    "url": "https://docs.google.com/spreadsheets/d/18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8/edit"
+  },
+  "appCount": 10,
+  "apps": [
+    {
+      "number": 81,
+      "app": "Stripe",
+      "hint": "stripe.com/docs/api"
+    },
+    {
+      "number": 82,
+      "app": "Plaid",
+      "hint": "plaid.com/docs"
+    },
+    {
+      "number": 83,
+      "app": "Binance",
+      "hint": "binance-docs.github.io"
+    },
+    {
+      "number": 84,
+      "app": "Paygent Connect",
+      "hint": "paygent",
+      "note": "NMI-powered"
+    },
+    {
+      "number": 85,
+      "app": "iPayX",
+      "hint": "ipayx.ai/docs"
+    },
+    {
+      "number": 86,
+      "app": "QuickBooks",
+      "hint": "developer.intuit.com"
+    },
+    {
+      "number": 87,
+      "app": "Xero",
+      "hint": "developer.xero.com"
+    },
+    {
+      "number": 88,
+      "app": "Brex",
+      "hint": "developer.brex.com"
+    },
+    {
+      "number": 89,
+      "app": "Ramp",
+      "hint": "docs.ramp.com"
+    },
+    {
+      "number": 90,
+      "app": "PitchBook",
+      "hint": "pitchbook.com",
+      "note": "research API"
+    }
+  ]
+}

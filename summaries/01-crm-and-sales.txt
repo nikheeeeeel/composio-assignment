@@ -1,0 +1,78 @@
+====================================================================================================
+CATEGORY 01 - CRM and Sales
+====================================================================================================
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   8 easy, 2 moderate, 0 hard, 0 blocked.
+   Easy: Attio, Copper, HubSpot, Pipedrive, Podio, Salesforce, Twenty, Zoho CRM.
+   Gated / blocked: Close, DealCloud.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       8  ################
+     moderate   2  ####
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         7  ##############
+     paid_plan_required      1  ##
+     self_serve_trial        1  ##
+     admin_approval          1  ##
+
+   Auth methods (apps can have several): oauth2 10, api_key 7, bearer_token 6, basic 2
+   Most common auth combination: api_key+oauth2 x3, api_key+basic+bearer_token+oauth2 x2, api_key+bearer_token+oauth2 x2
+   API shape: REST 9, null 1
+
+   Official MCP server: 9/10 (Attio, Close, Copper, DealCloud, HubSpot, Pipedrive, Salesforce, Twenty, Zoho CRM).
+   Missing official MCP: Podio.
+   Composio toolkit match: 9/10 (Attio, Close, Copper, HubSpot, Pipedrive, Podio, Salesforce, Twenty, Zoho CRM).
+   Composio gaps: DealCloud.
+   Human outreach required: 0/10 (none).
+
+   Evidence: 14.4/17 claims sourced on average (min 12); 10.7 official pages/app (min 9); 6.5 open questions/app (max 9 for DealCloud).
+   Confidence mix: high 123 (72%), medium 19 (11%), low 2 (1%), not_found 26 (15%).
+
+3. ANALYST READ
+   CRM is the most uniformly ready category: all ten apps use OAuth2, nine have an official
+   MCP server, and nine match a Composio toolkit. The two non-easy apps are held back by
+   commercial/administrative conditions rather than by the API itself. Close requires an
+   existing paid subscription before API keys can be created, and DealCloud requires an
+   existing site with site-admin-enabled API capability. Salesforce is the clearest example
+   of the "free developer edition" pattern: production use is edition-gated, but the free
+   Developer Edition makes the first integration self-serve, which is why the first pass
+   lands on easy rather than moderate.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Prioritize the eight easy apps; they share OAuth2 and broad read-write CRM object coverage.
+   - DealCloud needs human/partner outreach and a custom toolkit; it has no Composio match.
+   - Close can be built, but onboarding must assume an existing paid customer, not a free developer.
+   - MCP is not a differentiator here (9/10); invest in object/field coverage and write safety instead.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Attio                     easy      self_serve_free       oauth2,api_key,basic,beare...  Y    Y     -    13/13    
+Copper                    easy      self_serve_trial      api_key,oauth2                 Y    Y     -    14/10    
+HubSpot                   easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    15/11    
+Pipedrive                 easy      self_serve_free       oauth2,api_key                 Y    Y     -    16/10    
+Podio                     easy      self_serve_free       oauth2,bearer_token            -    Y     -    12/11    
+Salesforce                easy      self_serve_free       oauth2                         Y    Y     -    14/11    
+Twenty                    easy      self_serve_free       oauth2,api_key                 Y    Y     -    15/10    
+Zoho CRM                  easy      self_serve_free       oauth2,bearer_token            Y    Y     -    15/11    
+Close                     moderate  paid_plan_required    oauth2,api_key,basic,beare...  Y    Y     -    15/11    
+DealCloud                 moderate  admin_approval        oauth2,api_key,bearer_token    Y    N     -    15/9     
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Close [moderate, access=paid_plan_required, outreach=no]: Requires an existing Close account/subscription to create API keys (no free developer tier evidenced)
+- DealCloud [moderate, access=admin_approval, outreach=no]: Requires an existing DealCloud site plus site-admin-enabled API capability; no self-serve developer tier documented
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - No official MCP found: Podio. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.

@@ -1,0 +1,319 @@
+{
+  "app": "DealCloud",
+  "category": "CRM and Sales",
+  "slug": "dealcloud",
+  "started_at": "2026-11-23T15:38:59.409665+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:41:49.071737+00:00",
+  "duration_s": 169.66,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/dealcloud.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"DealCloud\" official API documentation developer reference site:dealcloud.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.606,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"DealCloud\" pricing plans API access enterprise developer site:dealcloud.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.661,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"DealCloud\" MCP server official Model Context Protocol site:dealcloud.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.468,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"DealCloud\" API authentication OAuth API key documentation site:dealcloud.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.115,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"DealCloud\" API rate limits throttling quota documentation site:dealcloud.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.804,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"DealCloud\" API sandbox test environment staging developer site:dealcloud.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.553,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"DealCloud\" API webhooks events callbacks documentation site:dealcloud.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.391,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"DealCloud\" official SDK client libraries developer site:dealcloud.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.03,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"DealCloud\" API versioning deprecation sunset policy site:dealcloud.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.992,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "DealCloud MCP"
+      },
+      "ok": true,
+      "duration_s": 2.446,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "DealCloud"
+      },
+      "ok": true,
+      "duration_s": 2.701,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://api.docs.dealcloud.com",
+          "https://api.docs.dealcloud.com/docs",
+          "https://api.docs.dealcloud.com/",
+          "https://api.docs.dealcloud.com/docs/token",
+          "https://api.docs.dealcloud.com/docs/apikeys"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 6.274,
+      "result_count": 4,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://api.docs.dealcloud.com/docs/limits",
+          "https://api.docs.dealcloud.com/mcp",
+          "https://api.docs.dealcloud.com/mcp/getting-started",
+          "https://api.docs.dealcloud.com/sdk/python-1.X/publications/overview",
+          "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 6.284,
+      "result_count": 5,
+      "error": null
+    }
+  ],
+  "tool_call_count": 13,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://api.docs.dealcloud.com",
+      "title": "Dealcloud Developer Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 207
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs",
+      "title": "Docs - DealCloud API Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1775
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/token",
+      "title": "Requesting an OAuth2 Bearer Token - DealCloud API Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2257
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "title": "Obtaining an API Key - DealCloud API Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1343
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/limits",
+      "title": "Rate Limits - DealCloud API Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1660
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/mcp",
+      "title": "DealCloud MCP Server - DealCloud API Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1134
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+      "title": "Getting Started with DealCloud MCP - DealCloud API Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1270
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/python-1.X/publications/overview",
+      "title": "Publications API - DealCloud API Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3774
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/sdk/python-1.X/configuration/authentication",
+      "title": "Authentication - DealCloud API Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:DealCloud",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 150.688,
+      "tokens": {
+        "input": 10719,
+        "output": 2405,
+        "reasoning": 13760
+      },
+      "cost_usd": 0.00904548
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 10719,
+      "output": 2405,
+      "reasoning": 13760
+    },
+    "cost_usd": 0.00904548,
+    "llm_calls": 1
+  }
+}

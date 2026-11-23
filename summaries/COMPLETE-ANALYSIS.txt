@@ -1,0 +1,1083 @@
+==============================================================================================================
+COMPLETE ANALYSIS - 100 THIRD-PARTY APPS FOR AGENT TOOLKITS
+==============================================================================================================
+Generated: 2026-11-23
+Source: results/pass1/*.json (first-pass drafts, unverified)
+
+HOW TO READ THIS FILE
+  Part I is the portfolio-level view: verdict mix, access/auth patterns, MCP and
+  Composio coverage, evidence quality, cross-category table, seven key patterns,
+  prioritization and caveats.
+  Part II contains one section per category. Every category has the same structure:
+  headline, computed patterns, analyst read, build implications, app-level table,
+  gated/blocked detail, and watchlist/caveats.
+  The appendix is an alphabetical master index of all 100 apps.
+
+IMPORTANT: these are first-pass research drafts. They have not been mechanically
+quote-checked or adversarially verified. Treat 'easy' as an upper bound.
+
+CONTENTS
+  PART I    Overall trends and patterns
+  PART II  01  CRM and Sales
+  PART II  02  Support and Helpdesk
+  PART II  03  Communications and Messaging
+  PART II  04  Marketing, Ads, Email and Social
+  PART II  05  Ecommerce
+  PART II  06  Data, SEO and Scraping
+  PART II  07  Developer, Infra and Data platforms
+  PART II  08  Productivity and Project Management
+  PART II  09  Finance and Fintech
+  PART II  10  AI, Research and Media-native
+  APPENDIX  Master app index (A-Z)
+
+
+##############################################################################################################
+#  PART I - OVERALL TRENDS AND PATTERNS
+##############################################################################################################
+
+Source: results/pass1/*.json | Stage: first-pass, unverified | Generated: 2026-11-23
+
+1. HEADLINE
+   69 easy, 27 moderate, 2 hard, 2 blocked.
+   70/100 have a self-serve free or trial route.
+   85/100 have an official vendor MCP server; 77/100 match a Composio toolkit.
+   9/100 need human outreach before credentials can be obtained.
+
+2. VERDICT & ACCESS MIX
+   easy      69  ##############
+   moderate  27  #####
+   hard       2  
+   blocked    2  
+
+   self_serve_free         58  ############
+   paid_plan_required      12  ##
+   self_serve_trial        12  ##
+   app_review_required      6  #
+   admin_approval           5  #
+   unknown                  2  
+   no_api                   2  
+   contact_sales            2  
+   null                     1  
+
+3. AUTH PATTERNS
+   oauth2 72, api_key 60, bearer_token 43, basic 17, other 7, jwt 6
+   OAuth2 appears in 72/100 apps; API keys in 60/100.
+   Most apps support more than one method; bearer/basic are often transport encodings of
+   the same API key or OAuth token rather than separate credential systems.
+
+4. MCP & COMPOSIO COVERAGE
+   Official MCP: 85/100.
+   Composio toolkit: 77/100; gaps: 23.
+   Category coverage (official MCP / Composio):
+     CRM and Sales                                 MCP  9/10   Composio  9/10
+     Support and Helpdesk                          MCP 10/10   Composio  8/10
+     Communications and Messaging                  MCP  7/10   Composio  8/10
+     Marketing, Ads, Email and Social              MCP  7/10   Composio  8/10
+     Ecommerce                                     MCP  8/10   Composio  3/10
+     Data, SEO and Scraping                        MCP  8/10   Composio  7/10
+     Developer, Infra and Data platforms           MCP 10/10   Composio  9/10
+     Productivity and Project Management           MCP  9/10   Composio 10/10
+     Finance and Fintech                           MCP  9/10   Composio  7/10
+     AI, Research and Media-native                 MCP  8/10   Composio  8/10
+
+5. FRICTION & OUTREACH
+   No public API: Mermaid CLI, Sherlock.
+   Hard/sales-led: Otter AI (Public API restricted to Enterprise workspaces and enabled via Otter account manager), PitchBook (Standalone contract and sales engagement with PitchBook's Direct Data team required).
+   Outreach required (9):
+     - Amazon Selling Partner [app_review_required]: Public developer registration is subject to Amazon's review, and restricted-role access requires an architecture review with the SP-API Solutions Architecture team, so a human-facing application/review step is required f
+     - LinkedIn Ads [app_review_required]: A developer must submit the increasing-access request and pass LinkedIn's vetting/use-case review (and separate application for Lead Sync) before API credentials with ads scopes are granted; there is no self-serve creden
+     - Otter AI [contact_sales]: A third-party developer needs an Otter Enterprise workspace and must contact their Otter account manager to enable Public API access.
+     - Pinterest [app_review_required]: A human must submit the app for Pinterest review, and for Standard access prepare a video recording of the app completing the OAuth flow, before credentials/production access are granted.
+     - PitchBook [contact_sales]: A developer must contact PitchBook's Direct Data team to negotiate a standalone contract and receive API credentials; there is no self-serve signup or public trial.
+     - Ramp [admin_approval]: Developers without a Ramp account must request sandbox access from Ramp, and building on behalf of other businesses requires joining the Ramp partner program.
+     - Salesforce Commerce Cloud [paid_plan_required]: A developer cannot self-serve an org or sandbox: sandbox access requires purchasing sandbox credits on an existing B2C Commerce account, and Salesforce directs pricing/integration questions to a sales representative rath
+     - Squarespace [app_review_required]: A third-party developer must register an OAuth client and wait for Squarespace review/approval; custom API-key apps also require the Commerce Advanced plan.
+     - Waterfall.io [admin_approval]: A human must request an API key through the Waterfall website email form or book a call, and the Waterfall team reviews each access request before enabling credentials.
+
+6. EVIDENCE QUALITY
+   Claims: 1700 total; high 1075 (63%), medium 283 (17%), low 48 (3%), not_found 294 (17%).
+   Average sourced claims: 13.8/17; average official pages: 9.7/app.
+   Rate limits sourced: 75/100; versioning: 84/100; webhooks true: 74/100; sandbox true: 38/100; OAuth scopes documented true: 59/100.
+
+7. CROSS-CATEGORY TABLE
+CATEGORY                                      EASY  MOD HARD BLOCK  MCP COMP  OUT
+-------------------------------------------------------------------------------------
+CRM and Sales                                    8    2    0     0    9    9    0
+Support and Helpdesk                             5    5    0     0   10    8    0
+Communications and Messaging                    10    0    0     0    7    8    0
+Marketing, Ads, Email and Social                 5    5    0     0    7    8    2
+Ecommerce                                        5    5    0     0    8    3    3
+Data, SEO and Scraping                           7    2    0     1    8    7    1
+Developer, Infra and Data platforms              9    1    0     0   10    9    0
+Productivity and Project Management              9    1    0     0    9   10    0
+Finance and Fintech                              6    3    1     0    9    7    2
+AI, Research and Media-native                    5    3    1     1    8    8    1
+
+8. SEVEN PATTERNS THAT MATTER
+   1) Self-serve is the default. 70/100 apps have a free or trial credential route. The
+      median app is not a sales problem; it is an OAuth/API-key onboarding problem.
+   2) Gating is commercial, not technical. 27 moderate apps are mostly held back by paid
+      plans, app review, or admin roles. Only 2 apps have no public API at all.
+   3) MCP is table stakes. 85/100 have an official MCP server, including 10/10 in support
+      and developer infra. MCP presence no longer differentiates; auth, breadth and writes do.
+   4) Composio coverage is uneven. 77/100 match a toolkit, but ecommerce is only 3/10 and
+      data/finance are 7/10. The gap is a catalog roadmap, not a market signal.
+   5) Auth is converging on OAuth2 + API key. OAuth2 72/100, API key 60/100. Bearer/basic
+      are mostly encodings; JWT is niche. A two-path auth layer covers most of the market.
+   6) Evidence gaps cluster in operational fields. Sandbox (38/100), OAuth scopes (59/100),
+      rate limits (75/100) and versioning (84/100) are the hardest claims to source.
+   7) First-pass verdicts are optimistic. 17% of claims are not_found and 3% are low;
+      the verifier should be expected to move some easy apps to moderate or human review.
+
+9. PRIORITIZATION
+   Tier 1 - build now (self-serve, broad, strong evidence):
+     CRM (8 easy), Communications (10), Developer infra (9), Productivity (9),
+     Data/SEO (7), Ecommerce self-serve core (5), Marketing email tools (5),
+     Finance developer-first (6), AI native tools (5), Support self-serve/trial (5).
+
+   Tier 2 - gated but viable (paid plan, app review, admin approval):
+     27 moderate apps; plan commercial/partner work rather than only engineering.
+
+   Tier 3 - outreach / deprioritize:
+     9 outreach apps (Amazon SP-API, Salesforce Commerce Cloud, Squarespace, Waterfall,
+     PitchBook, Pinterest, Otter, Ramp, LinkedIn Ads); hard: PitchBook, Otter;
+     blocked/no API: Mermaid CLI, Sherlock.
+
+10. CAVEATS
+   - This is pass 1 only. No mechanical quote/URL checks or adversarial LLM verification ran.
+   - GoHighLevel was re-researched after a docs-platform host (Stoplight) polluted the first
+     attempt; the bad draft is preserved at results/logs/gohighlevel.pass1-bad.json.
+   - Low-evidence apps: Mermaid CLI, Paygent Connect, Sherlock.
+   - Unresolved access model: Datadog, Paygent Connect, fanbasis.
+   - Treat 'easy' as an upper bound until verification; treat 'hard/blocked' as more stable
+     because they are usually backed by explicit sales/CLI evidence.
+
+
+##############################################################################################################
+#  PART II - CATEGORY DEEP DIVES
+##############################################################################################################
+
+
+
+==============================================================================================================
+CATEGORY 01 OF 10 - CRM AND SALES
+==============================================================================================================
+
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   8 easy, 2 moderate, 0 hard, 0 blocked.
+   Easy: Attio, Copper, HubSpot, Pipedrive, Podio, Salesforce, Twenty, Zoho CRM.
+   Gated / blocked: Close, DealCloud.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       8  ################
+     moderate   2  ####
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         7  ##############
+     paid_plan_required      1  ##
+     self_serve_trial        1  ##
+     admin_approval          1  ##
+
+   Auth methods (apps can have several): oauth2 10, api_key 7, bearer_token 6, basic 2
+   Most common auth combination: api_key+oauth2 x3, api_key+basic+bearer_token+oauth2 x2, api_key+bearer_token+oauth2 x2
+   API shape: REST 9, null 1
+
+   Official MCP server: 9/10 (Attio, Close, Copper, DealCloud, HubSpot, Pipedrive, Salesforce, Twenty, Zoho CRM).
+   Missing official MCP: Podio.
+   Composio toolkit match: 9/10 (Attio, Close, Copper, HubSpot, Pipedrive, Podio, Salesforce, Twenty, Zoho CRM).
+   Composio gaps: DealCloud.
+   Human outreach required: 0/10 (none).
+
+   Evidence: 14.4/17 claims sourced on average (min 12); 10.7 official pages/app (min 9); 6.5 open questions/app (max 9 for DealCloud).
+   Confidence mix: high 123 (72%), medium 19 (11%), low 2 (1%), not_found 26 (15%).
+
+3. ANALYST READ
+   CRM is the most uniformly ready category: all ten apps use OAuth2, nine have an official
+   MCP server, and nine match a Composio toolkit. The two non-easy apps are held back by
+   commercial/administrative conditions rather than by the API itself. Close requires an
+   existing paid subscription before API keys can be created, and DealCloud requires an
+   existing site with site-admin-enabled API capability. Salesforce is the clearest example
+   of the "free developer edition" pattern: production use is edition-gated, but the free
+   Developer Edition makes the first integration self-serve, which is why the first pass
+   lands on easy rather than moderate.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Prioritize the eight easy apps; they share OAuth2 and broad read-write CRM object coverage.
+   - DealCloud needs human/partner outreach and a custom toolkit; it has no Composio match.
+   - Close can be built, but onboarding must assume an existing paid customer, not a free developer.
+   - MCP is not a differentiator here (9/10); invest in object/field coverage and write safety instead.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Attio                     easy      self_serve_free       oauth2,api_key,basic,beare...  Y    Y     -    13/13    
+Copper                    easy      self_serve_trial      api_key,oauth2                 Y    Y     -    14/10    
+HubSpot                   easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    15/11    
+Pipedrive                 easy      self_serve_free       oauth2,api_key                 Y    Y     -    16/10    
+Podio                     easy      self_serve_free       oauth2,bearer_token            -    Y     -    12/11    
+Salesforce                easy      self_serve_free       oauth2                         Y    Y     -    14/11    
+Twenty                    easy      self_serve_free       oauth2,api_key                 Y    Y     -    15/10    
+Zoho CRM                  easy      self_serve_free       oauth2,bearer_token            Y    Y     -    15/11    
+Close                     moderate  paid_plan_required    oauth2,api_key,basic,beare...  Y    Y     -    15/11    
+DealCloud                 moderate  admin_approval        oauth2,api_key,bearer_token    Y    N     -    15/9     
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Close [moderate, access=paid_plan_required, outreach=no]: Requires an existing Close account/subscription to create API keys (no free developer tier evidenced)
+- DealCloud [moderate, access=admin_approval, outreach=no]: Requires an existing DealCloud site plus site-admin-enabled API capability; no self-serve developer tier documented
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - No official MCP found: Podio. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.
+
+
+
+==============================================================================================================
+CATEGORY 02 OF 10 - SUPPORT AND HELPDESK
+==============================================================================================================
+
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   5 easy, 5 moderate, 0 hard, 0 blocked.
+   Easy: Freshdesk, Intercom, LiveAgent, Plain, Zendesk.
+   Gated / blocked: Front, Gladly, Gorgias, Help Scout, Pylon.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       5  ##########
+     moderate   5  ##########
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_trial        4  ########
+     paid_plan_required      3  ######
+     admin_approval          2  ####
+     self_serve_free         1  ##
+
+   Auth methods (apps can have several): api_key 8, oauth2 7, basic 3, bearer_token 2
+   Most common auth combination: api_key+oauth2 x3, api_key x2, api_key+basic+oauth2 x2
+   API shape: REST 9, GraphQL 1
+
+   Official MCP server: 10/10 (Freshdesk, Front, Gladly, Gorgias, Help Scout, Intercom, LiveAgent, Plain, Pylon, Zendesk).
+   Missing official MCP: none.
+   Composio toolkit match: 8/10 (Freshdesk, Front, Gorgias, Help Scout, Intercom, Plain, Pylon, Zendesk).
+   Composio gaps: Gladly, LiveAgent.
+   Human outreach required: 0/10 (none).
+
+   Evidence: 14.1/17 claims sourced on average (min 13); 10.5 official pages/app (min 8); 6.4 open questions/app (max 7 for Zendesk).
+   Confidence mix: high 108 (64%), medium 32 (19%), low 1 (1%), not_found 29 (17%).
+
+3. ANALYST READ
+   Support is split exactly down the middle: five self-serve/trial apps and five paid or
+   admin-gated apps. The striking pattern is MCP saturation - all ten have an official MCP
+   server - so MCP presence says nothing about buildability in this category. What differs
+   is credentialing: Front, Gorgias and Help Scout require a paid plan, while Gladly and
+   Pylon require administrator cooperation. Composio covers eight of ten; Gladly and
+   LiveAgent are catalog gaps.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Start with Zendesk, Intercom, Freshdesk, Plain and LiveAgent.
+   - Treat Front, Gorgias and Help Scout as paid-customer integrations; there is no free build path.
+   - Gladly and Pylon need administrator cooperation; they are outreach/partner motions.
+   - Close the Composio gaps for Gladly and LiveAgent.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Freshdesk                 easy      self_serve_trial      api_key                        Y    Y     -    13/8     
+Intercom                  easy      self_serve_free       oauth2,bearer_token            Y    Y     -    14/11    
+LiveAgent                 easy      self_serve_trial      api_key                        Y    N     -    15/11    
+Plain                     easy      self_serve_trial      api_key,oauth2                 Y    Y     -    15/11    
+Zendesk                   easy      self_serve_trial      oauth2,api_key                 Y    Y     -    15/13    
+Front                     moderate  paid_plan_required    oauth2,api_key                 Y    Y     -    14/11    
+Gladly                    moderate  admin_approval        basic                          Y    N     -    14/8     
+Gorgias                   moderate  paid_plan_required    oauth2,api_key,basic           Y    Y     -    13/11    
+Help Scout                moderate  paid_plan_required    oauth2,api_key,basic           Y    Y     -    14/11    
+Pylon                     moderate  admin_approval        api_key,bearer_token,oauth2    Y    Y     -    14/10    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Front [moderate, access=paid_plan_required, outreach=no]: API credentials require a paid Front plan plus company admin rights to create apps
+- Gladly [moderate, access=admin_approval, outreach=no]: Requires an existing Gladly org and Administrator-granted API User role.
+- Gorgias [moderate, access=paid_plan_required, outreach=no]: Requires a paid Gorgias Helpdesk account to generate API keys
+- Help Scout [moderate, access=paid_plan_required, outreach=no]: Paid Help Scout plan required for API access
+- Pylon [moderate, access=admin_approval, outreach=no]: Admin-only API token creation in a Pylon workspace; no documented self-serve free tier or sandbox
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.
+
+
+
+==============================================================================================================
+CATEGORY 03 OF 10 - COMMUNICATIONS AND MESSAGING
+==============================================================================================================
+
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   10 easy, 0 moderate, 0 hard, 0 blocked.
+   Easy: Aircall, Discord, Lark (Larksuite), Pumble, Slack, Telegram, Twilio, Vonage, WhatsApp Business, Zoho Cliq.
+   Gated / blocked: none.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy      10  ####################
+     moderate   0  
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         8  ################
+     self_serve_trial        2  ####
+
+   Auth methods (apps can have several): oauth2 7, basic 3, bearer_token 3, api_key 3, other 1, jwt 1
+   Most common auth combination: bearer_token x2, api_key+oauth2 x2, oauth2 x2
+   API shape: REST 10
+
+   Official MCP server: 7/10 (Lark (Larksuite), Pumble, Slack, Twilio, Vonage, WhatsApp Business, Zoho Cliq).
+   Missing official MCP: Aircall, Discord, Telegram.
+   Composio toolkit match: 8/10 (Aircall, Discord, Lark (Larksuite), Pumble, Slack, Telegram, Twilio, Zoho Cliq).
+   Composio gaps: Vonage, WhatsApp Business.
+   Human outreach required: 0/10 (none).
+
+   Evidence: 13.9/17 claims sourced on average (min 12); 10.4 official pages/app (min 6); 6.8 open questions/app (max 9 for WhatsApp Business).
+   Confidence mix: high 105 (62%), medium 33 (19%), low 3 (2%), not_found 29 (17%).
+
+3. ANALYST READ
+   Every communications app is easy, but this is the widest auth surface in the portfolio:
+   OAuth2, API keys, Basic, JWT and "other" all appear. WhatsApp is technically easy because
+   the developer/test path is self-serve, yet production requires Meta App Review and
+   per-message billing; that policy risk should be treated as a product constraint, not an
+   API detail. Telegram and Discord use bot tokens rather than OAuth, so a generic OAuth-only
+   toolkit layer would miss them.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Build Slack, Twilio, Telegram and Discord first; all are self-serve.
+   - WhatsApp needs policy/compliance work (Meta App Review, billing) despite an easy first-pass verdict.
+   - Support bot-token auth as a first-class pattern; do not assume OAuth2 everywhere.
+   - MCP gaps (Aircall, Discord, Telegram) matter less than correct auth adapters.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Aircall                   easy      self_serve_trial      oauth2,basic                   -    Y     -    15/12    
+Discord                   easy      self_serve_free       oauth2,bearer_token,basic,...  -    Y     -    13/11    
+Lark (Larksuite)          easy      self_serve_free       bearer_token                   Y    Y     -    15/11    
+Pumble                    easy      self_serve_free       api_key,oauth2                 Y    Y     -    14/6     
+Slack                     easy      self_serve_free       oauth2                         Y    Y     -    15/10    
+Telegram                  easy      self_serve_free       api_key                        -    Y     -    12/12    
+Twilio                    easy      self_serve_trial      oauth2,api_key                 Y    Y     -    15/11    
+Vonage                    easy      self_serve_free       oauth2,basic,jwt               Y    N     -    13/10    
+WhatsApp Business         easy      self_serve_free       bearer_token                   Y    N     -    14/10    
+Zoho Cliq                 easy      self_serve_free       oauth2                         Y    Y     -    13/11    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- None in this category.
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - No official MCP found: Aircall, Discord, Telegram. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.
+
+
+
+==============================================================================================================
+CATEGORY 04 OF 10 - MARKETING, ADS, EMAIL AND SOCIAL
+==============================================================================================================
+
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   5 easy, 5 moderate, 0 hard, 0 blocked.
+   Easy: Klaviyo, Mailchimp, SendGrid, Threads (Meta), systeme.io.
+   Gated / blocked: GoHighLevel, Google Ads, LinkedIn Ads, Meta Ads, Pinterest.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       5  ##########
+     moderate   5  ##########
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     app_review_required     4  ########
+     self_serve_free         4  ########
+     paid_plan_required      1  ##
+     self_serve_trial        1  ##
+
+   Auth methods (apps can have several): oauth2 7, api_key 7, bearer_token 4, jwt 1, basic 1
+   Most common auth combination: oauth2 x3, api_key+oauth2 x2, api_key+bearer_token x2
+   API shape: REST 10
+
+   Official MCP server: 7/10 (GoHighLevel, Google Ads, Klaviyo, Mailchimp, Meta Ads, Pinterest, systeme.io).
+   Missing official MCP: LinkedIn Ads, SendGrid, Threads (Meta).
+   Composio toolkit match: 8/10 (Google Ads, Klaviyo, LinkedIn Ads, Mailchimp, Meta Ads, Pinterest, SendGrid, Threads (Meta)).
+   Composio gaps: GoHighLevel, systeme.io.
+   Human outreach required: 2/10 (LinkedIn Ads, Pinterest).
+
+   Evidence: 14.1/17 claims sourced on average (min 13); 9.6 official pages/app (min 6); 6.6 open questions/app (max 9 for systeme.io).
+   Confidence mix: high 106 (62%), medium 32 (19%), low 6 (4%), not_found 26 (15%).
+
+3. ANALYST READ
+   This category splits cleanly into ad platforms versus email/marketing tools. All four ad
+   platforms (Google, Meta, LinkedIn, Pinterest) are app_review_required and account for most
+   of the friction; Mailchimp, Klaviyo, SendGrid and systeme.io are self-serve. GoHighLevel is
+   the paid-plan outlier. Rate-limit evidence is the weakest of any category (only four of ten
+   have a sourced rate-limit claim), because ad-platform limits are buried in policy and
+   access-level documentation rather than a single API reference page.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Ship email/marketing toolkits first: Mailchimp, Klaviyo, SendGrid and systeme.io.
+   - Ad platforms need a compliance track (app review, business verification, use-case vetting).
+   - Collect rate-limit evidence before promising throughput; it is the weakest field in this category.
+   - Close the Composio gaps for GoHighLevel and systeme.io.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Klaviyo                   easy      self_serve_free       oauth2,api_key                 Y    Y     -    16/10    
+Mailchimp                 easy      self_serve_free       oauth2,api_key,basic,beare...  Y    Y     -    13/9     
+SendGrid                  easy      self_serve_trial      api_key,bearer_token           -    Y     -    13/10    
+systeme.io                easy      self_serve_free       api_key                        Y    N     -    13/10    
+Threads (Meta)            easy      self_serve_free       oauth2                         -    Y     -    14/6     
+GoHighLevel               moderate  paid_plan_required    oauth2,api_key                 Y    N     -    15/11    
+Google Ads                moderate  app_review_required   oauth2,api_key,bearer_toke...  Y    Y     -    15/10    
+LinkedIn Ads              moderate  app_review_required   oauth2                         -    Y     Y    14/11    
+Meta Ads                  moderate  app_review_required   api_key,bearer_token           Y    Y     -    13/9     
+Pinterest                 moderate  app_review_required   oauth2                         Y    Y     Y    15/10    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- GoHighLevel [moderate, access=paid_plan_required, outreach=no]: Paid subscription plan required (from $97/mo) plus higher-tier endpoint restrictions
+- Google Ads [moderate, access=app_review_required, outreach=no]: Application review required for production access levels (Explorer/Basic/Standard)
+- LinkedIn Ads [moderate, access=app_review_required, outreach=yes]: Vetted API access: application + use-case review / technical sign-off before scopes are granted
+- Meta Ads [moderate, access=app_review_required, outreach=no]: App Review and Business Verification for advanced Marketing API access
+- Pinterest [moderate, access=app_review_required, outreach=yes]: Pinterest app approval before app secret/Trial access; video review for Standard access
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - No official MCP found: LinkedIn Ads, SendGrid, Threads (Meta). This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.
+
+
+
+==============================================================================================================
+CATEGORY 05 OF 10 - ECOMMERCE
+==============================================================================================================
+
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   5 easy, 5 moderate, 0 hard, 0 blocked.
+   Easy: BigCommerce, Gumroad, Magento (Adobe Commerce), Shopify, WooCommerce.
+   Gated / blocked: Amazon Selling Partner, Ecwid, Salesforce Commerce Cloud, Squarespace, fanbasis.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       5  ##########
+     moderate   5  ##########
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         4  ########
+     app_review_required     2  ####
+     paid_plan_required      2  ####
+     self_serve_trial        1  ##
+     unknown                 1  ##
+
+   Auth methods (apps can have several): oauth2 7, api_key 4, other 1, bearer_token 1, basic 1
+   Most common auth combination: oauth2 x5, api_key x1, other x1
+   API shape: REST 9, GraphQL 1
+
+   Official MCP server: 8/10 (Amazon Selling Partner, BigCommerce, Gumroad, Salesforce Commerce Cloud, Shopify, Squarespace, WooCommerce, fanbasis).
+   Missing official MCP: Ecwid, Magento (Adobe Commerce).
+   Composio toolkit match: 3/10 (BigCommerce, Gumroad, Shopify).
+   Composio gaps: Amazon Selling Partner, Ecwid, Magento (Adobe Commerce), Salesforce Commerce Cloud, Squarespace, WooCommerce, fanbasis.
+   Human outreach required: 3/10 (Amazon Selling Partner, Salesforce Commerce Cloud, Squarespace).
+
+   Evidence: 14/17 claims sourced on average (min 10); 9 official pages/app (min 6); 7 open questions/app (max 10 for Magento (Adobe Commerce)).
+   Confidence mix: high 110 (65%), medium 29 (17%), low 3 (2%), not_found 28 (16%).
+
+3. ANALYST READ
+   Ecommerce has the largest Composio coverage gap: only three of ten apps match a toolkit.
+   The API surface is OAuth2-heavy (seven of ten), but the story is gating. Amazon SP-API needs
+   app review and role approval, Squarespace needs app review plus a Commerce Advanced plan,
+   Salesforce Commerce Cloud needs a paid B2C Commerce org, Ecwid needs a paid store, and
+   fanbasis keeps its documentation behind a password. Shopify, WooCommerce, BigCommerce and
+   Gumroad are the clean self-serve core.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Shopify and WooCommerce first: both self-serve and high value.
+   - Amazon SP-API is a compliance project, not a quick toolkit.
+   - Close the seven-app Composio gap; ecommerce is the clearest catalog expansion opportunity.
+   - Budget human review for Salesforce Commerce Cloud, Squarespace and fanbasis.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+BigCommerce               easy      self_serve_trial      oauth2                         Y    Y     -    15/10    
+Gumroad                   easy      self_serve_free       oauth2                         Y    Y     -    14/6     
+Magento (Adobe Commerce)  easy      self_serve_free       other                          -    N     -    10/10    
+Shopify                   easy      self_serve_free       oauth2                         Y    Y     -    16/11    
+WooCommerce               easy      self_serve_free       api_key,basic                  Y    N     -    16/10    
+Amazon Selling Partner    moderate  app_review_required   oauth2                         Y    N     Y    17/9     
+Ecwid                     moderate  paid_plan_required    oauth2                         -    N     -    13/10    
+fanbasis                  moderate  unknown               api_key                        Y    N     -    12/7     
+Salesforce Commerce Cloud moderate  paid_plan_required    oauth2,api_key,bearer_token    Y    N     Y    14/8     
+Squarespace               moderate  app_review_required   oauth2,api_key                 Y    N     Y    13/9     
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Amazon Selling Partner [moderate, access=app_review_required, outreach=yes]: Amazon developer-profile/app review and role approval (architecture review for PII roles)
+- Ecwid [moderate, access=paid_plan_required, outreach=no]: Paid-plan Ecwid store required for API access
+- fanbasis [moderate, access=unknown, outreach=no]: Official API docs are password-gated; access/plan terms are not public
+- Salesforce Commerce Cloud [moderate, access=paid_plan_required, outreach=yes]: Requires a paid B2C Commerce org; sandbox/API access depends on purchased sandbox credits
+- Squarespace [moderate, access=app_review_required, outreach=yes]: OAuth app review/approval; Commerce Advanced plan for custom API keys
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - Unresolved access model: fanbasis.
+   - No official MCP found: Ecwid, Magento (Adobe Commerce). This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.
+
+
+
+==============================================================================================================
+CATEGORY 06 OF 10 - DATA, SEO AND SCRAPING
+==============================================================================================================
+
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   7 easy, 2 moderate, 0 hard, 1 blocked.
+   Easy: Apify, Bright Data, Clay, DataForSEO, Firecrawl, MrScraper, SE Ranking.
+   Gated / blocked: Ahrefs, Sherlock, Waterfall.io.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       7  ##############
+     moderate   2  ####
+     hard       0  
+     blocked    1  ##
+
+   Access model mix:
+     self_serve_free         6  ############
+     paid_plan_required      1  ##
+     self_serve_trial        1  ##
+     no_api                  1  ##
+     admin_approval          1  ##
+
+   Auth methods (apps can have several): api_key 8, oauth2 4, bearer_token 4, basic 2
+   Most common auth combination: api_key+oauth2 x2, api_key x2, api_key+bearer_token+oauth2 x2
+   API shape: REST 9, null 1
+
+   Official MCP server: 8/10 (Ahrefs, Apify, Bright Data, Clay, DataForSEO, Firecrawl, MrScraper, SE Ranking).
+   Missing official MCP: Sherlock, Waterfall.io.
+   Composio toolkit match: 7/10 (Ahrefs, Apify, Bright Data, Clay, DataForSEO, Firecrawl, MrScraper).
+   Composio gaps: SE Ranking, Sherlock, Waterfall.io.
+   Human outreach required: 1/10 (Waterfall.io).
+
+   Evidence: 13.4/17 claims sourced on average (min 8); 9.8 official pages/app (min 4); 5.9 open questions/app (max 8 for Waterfall.io).
+   Confidence mix: high 106 (62%), medium 27 (16%), low 5 (3%), not_found 32 (19%).
+
+3. ANALYST READ
+   Data/SEO is API-key country: eight of ten use API keys, seven are self-serve free, and most
+   vendors are developer-first. The exceptions are commercial or administrative: Ahrefs needs
+   a paid plan, Waterfall.io manually approves API access, and Sherlock is a CLI with no hosted
+   API. Eight have an official MCP server and seven are in Composio. Evidence quality is
+   strong, with 13.4 of 17 claims sourced on average.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - High-confidence build targets: DataForSEO, Apify, Firecrawl, Bright Data, Clay, MrScraper and SE Ranking.
+   - Ahrefs is paid-plan gated; Waterfall.io needs outreach; Sherlock is not a hosted API.
+   - API-key onboarding is the norm, so a shared key-connection flow pays off across the category.
+   - Close the Composio gaps for Waterfall.io, Sherlock (N/A) and SE Ranking.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Apify                     easy      self_serve_free       api_key,bearer_token           Y    Y     -    13/10    
+Bright Data               easy      self_serve_free       api_key,basic,bearer_token     Y    Y     -    13/11    
+Clay                      easy      self_serve_free       api_key                        Y    Y     -    13/11    
+DataForSEO                easy      self_serve_free       basic                          Y    Y     -    16/10    
+Firecrawl                 easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    15/11    
+MrScraper                 easy      self_serve_free       api_key,bearer_token,oauth2    Y    Y     -    16/10    
+SE Ranking                easy      self_serve_trial      api_key,oauth2                 Y    N     -    13/10    
+Ahrefs                    moderate  paid_plan_required    api_key,oauth2                 Y    Y     -    14/10    
+Waterfall.io              moderate  admin_approval        api_key                        -    N     Y    13/11    
+Sherlock                  blocked   no_api                -                              -    N     -    8/4      
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Ahrefs [moderate, access=paid_plan_required, outreach=no]: Paid Ahrefs plan required (API access from Lite, $129/mo); multi-user OAuth needs Ahrefs Connect approval
+- Waterfall.io [moderate, access=admin_approval, outreach=yes]: Manual API access approval; no self-serve signup or free tier documented
+- Sherlock [blocked, access=no_api, outreach=no]: No public API; CLI/Python package only
+
+7. WATCHLIST / CAVEATS
+   - Sherlock: low evidence (8/17 claims sourced, 4 official pages). Re-check before trusting the verdict.
+   - No official MCP found: Sherlock, Waterfall.io. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.
+
+
+
+==============================================================================================================
+CATEGORY 07 OF 10 - DEVELOPER, INFRA AND DATA PLATFORMS
+==============================================================================================================
+
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   9 easy, 1 moderate, 0 hard, 0 blocked.
+   Easy: Cloudflare, GitHub, MongoDB Atlas, Neo4j, Netlify, Sentry, Snowflake, Supabase, Vercel.
+   Gated / blocked: Datadog.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       9  ##################
+     moderate   1  ##
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         8  ################
+     unknown                 1  ##
+     self_serve_trial        1  ##
+
+   Auth methods (apps can have several): oauth2 9, bearer_token 7, api_key 5, basic 2, jwt 2, other 2
+   Most common auth combination: api_key+bearer_token+oauth2 x2, bearer_token+oauth2 x2, api_key+oauth2 x1
+   API shape: REST 10
+
+   Official MCP server: 10/10 (Cloudflare, Datadog, GitHub, MongoDB Atlas, Neo4j, Netlify, Sentry, Snowflake, Supabase, Vercel).
+   Missing official MCP: none.
+   Composio toolkit match: 9/10 (Cloudflare, Datadog, GitHub, Neo4j, Netlify, Sentry, Snowflake, Supabase, Vercel).
+   Composio gaps: MongoDB Atlas.
+   Human outreach required: 0/10 (none).
+
+   Evidence: 13.7/17 claims sourced on average (min 12); 9.8 official pages/app (min 9); 6.2 open questions/app (max 9 for Neo4j).
+   Confidence mix: high 105 (62%), medium 30 (18%), low 5 (3%), not_found 30 (18%).
+
+3. ANALYST READ
+   Developer infrastructure is the most API-native category: all ten are REST, all ten have an
+   official MCP server, nine are easy and nine are in Composio. Auth is broad but conventional
+   (OAuth2, bearer, API key, JWT). The only moderate is Datadog, where the first pass could not
+   establish whether a free/trial credential path exists. Sentry is easy because token auth is
+   self-serve even though OAuth app registration requires partnership approval.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - This is the best category for immediate toolkit expansion.
+   - Verify Datadog's free/trial path before committing; its access model is the only unknown here.
+   - Add MongoDB Atlas, the one Composio gap in an otherwise near-complete category.
+   - Reuse OAuth2 and service-token patterns across Cloudflare, Vercel, Supabase, Sentry and friends.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Cloudflare                easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    14/9     
+GitHub                    easy      self_serve_free       oauth2,api_key,basic,beare...  Y    Y     -    14/10    
+MongoDB Atlas             easy      self_serve_free       oauth2,api_key,other           Y    N     -    12/10    
+Neo4j                     easy      self_serve_free       oauth2,bearer_token,basic      Y    Y     -    13/10    
+Netlify                   easy      self_serve_free       oauth2,bearer_token            Y    Y     -    13/9     
+Sentry                    easy      self_serve_free       oauth2,bearer_token            Y    Y     -    15/9     
+Snowflake                 easy      self_serve_trial      oauth2,jwt,other               Y    Y     -    12/10    
+Supabase                  easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    16/10    
+Vercel                    easy      self_serve_free       bearer_token                   Y    Y     -    15/10    
+Datadog                   moderate  unknown               api_key,oauth2                 Y    Y     -    13/11    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Datadog [moderate, access=unknown, outreach=no]: Free/trial vs paid-plan access not documented
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - Unresolved access model: Datadog.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.
+
+
+
+==============================================================================================================
+CATEGORY 08 OF 10 - PRODUCTIVITY AND PROJECT MANAGEMENT
+==============================================================================================================
+
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   9 easy, 1 moderate, 0 hard, 0 blocked.
+   Easy: Airtable, Asana, ClickUp, Coda, Harvest, Jira, Linear, Monday.com, Notion.
+   Gated / blocked: Smartsheet.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       9  ##################
+     moderate   1  ##
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         9  ##################
+     paid_plan_required      1  ##
+
+   Auth methods (apps can have several): oauth2 10, api_key 6, bearer_token 5, other 1, basic 1, jwt 1
+   Most common auth combination: api_key+oauth2 x3, bearer_token+oauth2 x2, api_key+bearer_token+oauth2 x2
+   API shape: REST 7, GraphQL 2, null 1
+
+   Official MCP server: 9/10 (Airtable, Asana, ClickUp, Coda, Jira, Linear, Monday.com, Notion, Smartsheet).
+   Missing official MCP: Harvest.
+   Composio toolkit match: 10/10 (Airtable, Asana, ClickUp, Coda, Harvest, Jira, Linear, Monday.com, Notion, Smartsheet).
+   Composio gaps: none.
+   Human outreach required: 0/10 (none).
+
+   Evidence: 14.2/17 claims sourced on average (min 12); 9.4 official pages/app (min 4); 5.6 open questions/app (max 8 for Harvest).
+   Confidence mix: high 119 (70%), medium 20 (12%), low 3 (2%), not_found 28 (16%).
+
+3. ANALYST READ
+   Productivity is the best-covered category: all ten are in Composio, all ten use OAuth2, nine
+   are easy and nine have an official MCP server. The only gate is Smartsheet, which requires a
+   Business/Enterprise plan for API access. Harvest lacks an official MCP server but is still
+   easy. This is where existing Composio catalog depth and API uniformity reinforce each
+   other, making it the best reference implementation for OAuth2 toolkits.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Fastest wins: Linear, Notion, Asana, Airtable, Jira, Monday.com, ClickUp, Coda and Harvest.
+   - Smartsheet needs a paid-plan assumption; treat it as a later tier.
+   - Use this category as the reference implementation for OAuth2 toolkits.
+   - All ten already have Composio toolkits, so effort should go into depth and write actions, not discovery.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Airtable                  easy      self_serve_free       oauth2,bearer_token            Y    Y     -    14/10    
+Asana                     easy      self_serve_free       oauth2,bearer_token,other      Y    Y     -    15/10    
+ClickUp                   easy      self_serve_free       oauth2,api_key                 Y    Y     -    12/10    
+Coda                      easy      self_serve_free       oauth2,api_key                 Y    Y     -    15/10    
+Harvest                   easy      self_serve_free       oauth2,bearer_token            -    Y     -    13/4     
+Jira                      easy      self_serve_free       oauth2,basic                   Y    Y     -    13/10    
+Linear                    easy      self_serve_free       oauth2,api_key                 Y    Y     -    15/10    
+Monday.com                easy      self_serve_free       oauth2,api_key,jwt             Y    Y     -    15/10    
+Notion                    easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    14/10    
+Smartsheet                moderate  paid_plan_required    oauth2,api_key,bearer_token    Y    Y     -    16/10    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Smartsheet [moderate, access=paid_plan_required, outreach=no]: Business/Enterprise (or Advanced Work Management) plan required for API access
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - No official MCP found: Harvest. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.
+
+
+
+==============================================================================================================
+CATEGORY 09 OF 10 - FINANCE AND FINTECH
+==============================================================================================================
+
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   6 easy, 3 moderate, 1 hard, 0 blocked.
+   Easy: Binance, Plaid, QuickBooks, Stripe, Xero, iPayX.
+   Gated / blocked: Brex, Paygent Connect, PitchBook, Ramp.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       6  ############
+     moderate   3  ######
+     hard       1  ##
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         6  ############
+     paid_plan_required      1  ##
+     null                    1  ##
+     contact_sales           1  ##
+     admin_approval          1  ##
+
+   Auth methods (apps can have several): api_key 5, oauth2 5, bearer_token 5, other 2, basic 2, jwt 1
+   Most common auth combination: bearer_token x2, api_key+other x1, api_key+bearer_token+oauth2 x1
+   API shape: REST 9, null 1
+
+   Official MCP server: 9/10 (Binance, Brex, PitchBook, Plaid, QuickBooks, Ramp, Stripe, Xero, iPayX).
+   Missing official MCP: Paygent Connect.
+   Composio toolkit match: 7/10 (Brex, PitchBook, Plaid, QuickBooks, Ramp, Stripe, Xero).
+   Composio gaps: Binance, Paygent Connect, iPayX.
+   Human outreach required: 2/10 (PitchBook, Ramp).
+
+   Evidence: 13.6/17 claims sourced on average (min 9); 8.4 official pages/app (min 1); 6.4 open questions/app (max 10 for Binance).
+   Confidence mix: high 93 (55%), medium 39 (23%), low 7 (4%), not_found 31 (18%).
+
+3. ANALYST READ
+   Finance is bifurcated. Developer-first payments and accounting (Stripe, Plaid, QuickBooks,
+   Xero, Binance, iPayX) are easy. Brex and Ramp are moderate because credentials require an
+   existing customer/admin or sandbox approval. PitchBook is hard and sales-led. Paygent
+   Connect is the weakest evidence in the entire portfolio: one official source page and only
+   nine of seventeen claims sourced, with the access model unresolved. Rate-limit evidence is
+   thin here (seven of ten sourced), and versioning evidence is the weakest of any category
+   (five of ten).
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Build Stripe, Plaid, QuickBooks and Xero first; all are self-serve and well documented.
+   - Brex and Ramp require customer/partner context; do not promise self-serve onboarding.
+   - Paygent Connect needs human research; its moderate verdict is not reliable yet.
+   - PitchBook is a sales-led data contract, not a toolkit candidate in the near term.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Binance                   easy      self_serve_free       api_key,other                  Y    N     -    17/9     
+iPayX                     easy      self_serve_free       bearer_token                   Y    N     -    15/8     
+Plaid                     easy      self_serve_free       api_key,oauth2                 Y    Y     -    14/9     
+QuickBooks                easy      self_serve_free       oauth2                         Y    Y     -    12/10    
+Stripe                    easy      self_serve_free       api_key,basic,bearer_token     Y    Y     -    15/10    
+Xero                      easy      self_serve_free       oauth2,other                   Y    Y     -    15/9     
+Brex                      moderate  paid_plan_required    oauth2,api_key,bearer_token    Y    Y     -    15/9     
+Paygent Connect           moderate  null                  bearer_token                   -    N     -    9/1      
+Ramp                      moderate  admin_approval        oauth2,basic,bearer_token,jwt  Y    Y     Y    13/9     
+PitchBook                 hard      contact_sales         api_key                        Y    Y     Y    11/10    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Brex [moderate, access=paid_plan_required, outreach=no]: Requires an existing Brex customer account with account/card-admin role; production-only, no sandbox
+- Paygent Connect [moderate, access=null, outreach=no]: Access model and credentialing route unverified; no official docs or pricing page found
+- Ramp [moderate, access=admin_approval, outreach=yes]: Credentials require an existing Ramp account or an approved sandbox request
+- PitchBook [hard, access=contact_sales, outreach=yes]: Standalone contract and sales engagement with PitchBook's Direct Data team required
+
+7. WATCHLIST / CAVEATS
+   - Paygent Connect: low evidence (9/17 claims sourced, 1 official page). Re-check before trusting the verdict.
+   - Unresolved access model: Paygent Connect.
+   - No official MCP found: Paygent Connect. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.
+
+
+
+==============================================================================================================
+CATEGORY 10 OF 10 - AI, RESEARCH AND MEDIA-NATIVE
+==============================================================================================================
+
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   5 easy, 3 moderate, 1 hard, 1 blocked.
+   Easy: Consensus, Fathom, Grain, Reducto, YouTube Transcript.
+   Gated / blocked: Devin, Mermaid CLI, NotebookLM, Otter AI, higgsfield.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       5  ##########
+     moderate   3  ######
+     hard       1  ##
+     blocked    1  ##
+
+   Access model mix:
+     self_serve_free         5  ##########
+     paid_plan_required      2  ####
+     no_api                  1  ##
+     self_serve_trial        1  ##
+     contact_sales           1  ##
+
+   Auth methods (apps can have several): api_key 7, bearer_token 6, oauth2 6
+   Most common auth combination: api_key+bearer_token+oauth2 x3, api_key x2, bearer_token+oauth2 x2
+   API shape: REST 8, null 2
+
+   Official MCP server: 8/10 (Consensus, Devin, Fathom, Grain, Otter AI, Reducto, YouTube Transcript, higgsfield).
+   Missing official MCP: Mermaid CLI, NotebookLM.
+   Composio toolkit match: 8/10 (Consensus, Devin, Fathom, Grain, NotebookLM, Otter AI, YouTube Transcript, higgsfield).
+   Composio gaps: Mermaid CLI, Reducto.
+   Human outreach required: 1/10 (Otter AI).
+
+   Evidence: 12.5/17 claims sourced on average (min 9); 9.2 official pages/app (min 6); 6.8 open questions/app (max 10 for Fathom).
+   Confidence mix: high 100 (59%), medium 22 (13%), low 13 (8%), not_found 35 (21%).
+
+3. ANALYST READ
+   AI/media-native is the most heterogeneous category: five easy native-AI tools, three
+   moderate enterprise/usage-gated products, one hard enterprise API, and one blocked CLI.
+   MCP is strong (eight of ten) but not universal; NotebookLM and Mermaid CLI are missing.
+   Auth is mixed (API key seven, OAuth2 six, bearer six), and scopes/sandbox documentation is
+   often absent. This is the category most likely to change quarter to quarter because
+   preview APIs, prepaid credits and enterprise gating move quickly.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Prioritize Consensus, Fathom, Grain, Reducto and YouTube Transcript.
+   - Devin and higgsfield are paid/prepaid; NotebookLM is enterprise plus preview API.
+   - Otter is sales-led; Mermaid CLI is not an API toolkit at all.
+   - Re-verify preview/enterprise terms before building; this category changes quickly.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Consensus                 easy      self_serve_free       api_key                        Y    Y     -    12/8     
+Fathom                    easy      self_serve_free       api_key,oauth2                 Y    Y     -    11/8     
+Grain                     easy      self_serve_free       oauth2,bearer_token            Y    Y     -    14/7     
+Reducto                   easy      self_serve_free       api_key,bearer_token,oauth2    Y    N     -    14/11    
+YouTube Transcript        easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    11/9     
+Devin                     moderate  paid_plan_required    api_key,bearer_token           Y    Y     -    14/11    
+higgsfield                moderate  paid_plan_required    api_key                        Y    Y     -    16/11    
+NotebookLM                moderate  self_serve_trial      oauth2,bearer_token            -    Y     -    11/12    
+Otter AI                  hard      contact_sales         oauth2,api_key,bearer_token    Y    Y     Y    13/6     
+Mermaid CLI               blocked   no_api                -                              -    N     -    9/9      
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Devin [moderate, access=paid_plan_required, outreach=no]: Paid Devin plan/seat required before API credentials; no free API tier documented
+- higgsfield [moderate, access=paid_plan_required, outreach=no]: Prepaid USD balance/top-up required to use the API; no documented free API tier
+- NotebookLM [moderate, access=self_serve_trial, outreach=no]: Enterprise subscription/license plus Preview (v1alpha) API
+- Otter AI [hard, access=contact_sales, outreach=yes]: Public API restricted to Enterprise workspaces and enabled via Otter account manager
+- Mermaid CLI [blocked, access=no_api, outreach=no]: No hosted/public API — local CLI tool only.
+
+7. WATCHLIST / CAVEATS
+   - Mermaid CLI: low evidence (9/17 claims sourced, 9 official pages). Re-check before trusting the verdict.
+   - No official MCP found: Mermaid CLI, NotebookLM. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.
+
+
+
+##############################################################################################################
+#  APPENDIX - MASTER APP INDEX (A-Z)
+##############################################################################################################
+
+All 100 apps in alphabetical order. COMPOSIO = matching toolkit in Composio's catalog.
+
+APP                         CATEGORY                                   VERDICT   ACCESS                 COMPOSIO 
+----------------------------------------------------------------------------------------------------------------
+Ahrefs                      Data, SEO and Scraping                     moderate  paid_plan_required     yes      
+Aircall                     Communications and Messaging               easy      self_serve_trial       yes      
+Airtable                    Productivity and Project Management        easy      self_serve_free        yes      
+Amazon Selling Partner      Ecommerce                                  moderate  app_review_required    no       
+Apify                       Data, SEO and Scraping                     easy      self_serve_free        yes      
+Asana                       Productivity and Project Management        easy      self_serve_free        yes      
+Attio                       CRM and Sales                              easy      self_serve_free        yes      
+BigCommerce                 Ecommerce                                  easy      self_serve_trial       yes      
+Binance                     Finance and Fintech                        easy      self_serve_free        no       
+Brex                        Finance and Fintech                        moderate  paid_plan_required     yes      
+Bright Data                 Data, SEO and Scraping                     easy      self_serve_free        yes      
+Clay                        Data, SEO and Scraping                     easy      self_serve_free        yes      
+ClickUp                     Productivity and Project Management        easy      self_serve_free        yes      
+Close                       CRM and Sales                              moderate  paid_plan_required     yes      
+Cloudflare                  Developer, Infra and Data platforms        easy      self_serve_free        yes      
+Coda                        Productivity and Project Management        easy      self_serve_free        yes      
+Consensus                   AI, Research and Media-native              easy      self_serve_free        yes      
+Copper                      CRM and Sales                              easy      self_serve_trial       yes      
+Datadog                     Developer, Infra and Data platforms        moderate  unknown                yes      
+DataForSEO                  Data, SEO and Scraping                     easy      self_serve_free        yes      
+DealCloud                   CRM and Sales                              moderate  admin_approval         no       
+Devin                       AI, Research and Media-native              moderate  paid_plan_required     yes      
+Discord                     Communications and Messaging               easy      self_serve_free        yes      
+Ecwid                       Ecommerce                                  moderate  paid_plan_required     no       
+fanbasis                    Ecommerce                                  moderate  unknown                no       
+Fathom                      AI, Research and Media-native              easy      self_serve_free        yes      
+Firecrawl                   Data, SEO and Scraping                     easy      self_serve_free        yes      
+Freshdesk                   Support and Helpdesk                       easy      self_serve_trial       yes      
+Front                       Support and Helpdesk                       moderate  paid_plan_required     yes      
+GitHub                      Developer, Infra and Data platforms        easy      self_serve_free        yes      
+Gladly                      Support and Helpdesk                       moderate  admin_approval         no       
+GoHighLevel                 Marketing, Ads, Email and Social           moderate  paid_plan_required     no       
+Google Ads                  Marketing, Ads, Email and Social           moderate  app_review_required    yes      
+Gorgias                     Support and Helpdesk                       moderate  paid_plan_required     yes      
+Grain                       AI, Research and Media-native              easy      self_serve_free        yes      
+Gumroad                     Ecommerce                                  easy      self_serve_free        yes      
+Harvest                     Productivity and Project Management        easy      self_serve_free        yes      
+Help Scout                  Support and Helpdesk                       moderate  paid_plan_required     yes      
+higgsfield                  AI, Research and Media-native              moderate  paid_plan_required     yes      
+HubSpot                     CRM and Sales                              easy      self_serve_free        yes      
+Intercom                    Support and Helpdesk                       easy      self_serve_free        yes      
+iPayX                       Finance and Fintech                        easy      self_serve_free        no       
+Jira                        Productivity and Project Management        easy      self_serve_free        yes      
+Klaviyo                     Marketing, Ads, Email and Social           easy      self_serve_free        yes      
+Lark (Larksuite)            Communications and Messaging               easy      self_serve_free        yes      
+Linear                      Productivity and Project Management        easy      self_serve_free        yes      
+LinkedIn Ads                Marketing, Ads, Email and Social           moderate  app_review_required    yes      
+LiveAgent                   Support and Helpdesk                       easy      self_serve_trial       no       
+Magento (Adobe Commerce)    Ecommerce                                  easy      self_serve_free        no       
+Mailchimp                   Marketing, Ads, Email and Social           easy      self_serve_free        yes      
+Mermaid CLI                 AI, Research and Media-native              blocked   no_api                 no       
+Meta Ads                    Marketing, Ads, Email and Social           moderate  app_review_required    yes      
+Monday.com                  Productivity and Project Management        easy      self_serve_free        yes      
+MongoDB Atlas               Developer, Infra and Data platforms        easy      self_serve_free        no       
+MrScraper                   Data, SEO and Scraping                     easy      self_serve_free        yes      
+Neo4j                       Developer, Infra and Data platforms        easy      self_serve_free        yes      
+Netlify                     Developer, Infra and Data platforms        easy      self_serve_free        yes      
+NotebookLM                  AI, Research and Media-native              moderate  self_serve_trial       yes      
+Notion                      Productivity and Project Management        easy      self_serve_free        yes      
+Otter AI                    AI, Research and Media-native              hard      contact_sales          yes      
+Paygent Connect             Finance and Fintech                        moderate  null                   no       
+Pinterest                   Marketing, Ads, Email and Social           moderate  app_review_required    yes      
+Pipedrive                   CRM and Sales                              easy      self_serve_free        yes      
+PitchBook                   Finance and Fintech                        hard      contact_sales          yes      
+Plaid                       Finance and Fintech                        easy      self_serve_free        yes      
+Plain                       Support and Helpdesk                       easy      self_serve_trial       yes      
+Podio                       CRM and Sales                              easy      self_serve_free        yes      
+Pumble                      Communications and Messaging               easy      self_serve_free        yes      
+Pylon                       Support and Helpdesk                       moderate  admin_approval         yes      
+QuickBooks                  Finance and Fintech                        easy      self_serve_free        yes      
+Ramp                        Finance and Fintech                        moderate  admin_approval         yes      
+Reducto                     AI, Research and Media-native              easy      self_serve_free        no       
+Salesforce                  CRM and Sales                              easy      self_serve_free        yes      
+Salesforce Commerce Cloud   Ecommerce                                  moderate  paid_plan_required     no       
+SE Ranking                  Data, SEO and Scraping                     easy      self_serve_trial       no       
+SendGrid                    Marketing, Ads, Email and Social           easy      self_serve_trial       yes      
+Sentry                      Developer, Infra and Data platforms        easy      self_serve_free        yes      
+Sherlock                    Data, SEO and Scraping                     blocked   no_api                 no       
+Shopify                     Ecommerce                                  easy      self_serve_free        yes      
+Slack                       Communications and Messaging               easy      self_serve_free        yes      
+Smartsheet                  Productivity and Project Management        moderate  paid_plan_required     yes      
+Snowflake                   Developer, Infra and Data platforms        easy      self_serve_trial       yes      
+Squarespace                 Ecommerce                                  moderate  app_review_required    no       
+Stripe                      Finance and Fintech                        easy      self_serve_free        yes      
+Supabase                    Developer, Infra and Data platforms        easy      self_serve_free        yes      
+systeme.io                  Marketing, Ads, Email and Social           easy      self_serve_free        no       
+Telegram                    Communications and Messaging               easy      self_serve_free        yes      
+Threads (Meta)              Marketing, Ads, Email and Social           easy      self_serve_free        yes      
+Twenty                      CRM and Sales                              easy      self_serve_free        yes      
+Twilio                      Communications and Messaging               easy      self_serve_trial       yes      
+Vercel                      Developer, Infra and Data platforms        easy      self_serve_free        yes      
+Vonage                      Communications and Messaging               easy      self_serve_free        no       
+Waterfall.io                Data, SEO and Scraping                     moderate  admin_approval         no       
+WhatsApp Business           Communications and Messaging               easy      self_serve_free        no       
+WooCommerce                 Ecommerce                                  easy      self_serve_free        no       
+Xero                        Finance and Fintech                        easy      self_serve_free        yes      
+YouTube Transcript          AI, Research and Media-native              easy      self_serve_free        yes      
+Zendesk                     Support and Helpdesk                       easy      self_serve_trial       yes      
+Zoho Cliq                   Communications and Messaging               easy      self_serve_free        yes      
+Zoho CRM                    CRM and Sales                              easy      self_serve_free        yes      
+
+END OF COMPLETE ANALYSIS

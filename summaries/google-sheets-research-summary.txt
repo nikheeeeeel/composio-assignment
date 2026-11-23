@@ -1,0 +1,432 @@
+==============================================================================================================
+GOOGLE SHEETS - 'composio-research' / 'Research' TAB
+SUMMARY OF THE 100-APP RESEARCH RESULTS
+==============================================================================================================
+Spreadsheet: composio-research (18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8)
+Tab: Research | Apps: 100 | Columns: 19 | Rows incl. header: 101
+Read via: Composio MCP session trs_W-GFmubQQFik / GOOGLESHEETS_BATCH_GET
+Generated: 2026-11-23
+Research status: 99 Verified, 1 Pilot - verified (Salesforce).
+
+IMPORTANT
+  This is a summary of the Research tab as it exists in Google Sheets. It is a
+  separate research pass from results/pass1 (different taxonomy and evidence cutoffs).
+  The tab's labels are Buildable / Buildable with limitations / Difficult-gated /
+  Insufficient information, not easy/moderate/hard/blocked.
+
+1. EXECUTIVE SNAPSHOT
+   71 Buildable | 20 Buildable with limitations | 6 Difficult / gated | 3 Insufficient information.
+   73/100 have a self-serve free or trial route; 14 are paid-plan, 6 admin-approval, 5 partnership/contact-sales, 2 unknown.
+   84/100 have an official MCP server; 10 more have community MCP; only 6 have none.
+   REST is present in 90/100; GraphQL in 13/100; 6 report no REST, 4 unknown.
+   Confidence: 74 High, 20 Medium, 6 Low.
+
+2. VERDICT AND ACCESS MIX
+   Verdict
+     Buildable                     71
+     Buildable with limitations    20
+     Difficult / gated              6
+     Insufficient information       3
+
+   Credential access
+     Self-serve free               52
+     Self-serve trial              21
+     Paid plan required            14
+     Admin approval required        6
+     Partnership / contact sales    5
+     Unknown                        2
+
+3. AUTH, API SHAPE AND MCP
+   Auth methods (apps can use several):
+     OAuth2 69 | API key 53 | Bearer 47 | Basic 6 | JWT 4 | other 6
+   OAuth2 + API key is the dominant pairing. Bearer is often the transport for either.
+
+   API shape:
+     REST: yes 90, no 6, unknown 4.
+     GraphQL: yes 13, no 82, unknown 5.
+   GraphQL-only apps (Plain, Linear, Monday.com) mean a REST-only toolkit layer would miss
+   them. CLI-first apps (Sherlock, Mermaid CLI) and MCP-first apps (Fathom) are also present.
+
+   MCP:
+     Official 84 | Community 10 | None 6.
+   84/100 official means MCP is table stakes. The 10 community-only cases are vendor gaps,
+   not proof that the vendor has no MCP strategy.
+
+4. CONFIDENCE AND EVIDENCE
+   High 74 | Medium 20 | Low 6.
+   99 Verified + 1 Pilot - verified (Salesforce).
+   Low-confidence apps: fanbasis (Ecommerce), Paygent Connect (Finance and Fintech), iPayX (Finance and Fintech), PitchBook (Finance and Fintech), NotebookLM (AI, Research and Media-native), higgsfield (AI, Research and Media-native).
+   The strongest evidence is in CRM, Support, Developer Infra and Productivity; the weakest
+   is Finance, where three apps are Low and two are Insufficient.
+
+5. CATEGORY-BY-CATEGORY
+
+------------------------------------------------------------------------------------------------------------
+CATEGORY 01 - CRM and Sales
+------------------------------------------------------------------------------------------------------------
+  Snapshot: 7 Buildable | 2 Buildable with limitations | 1 Difficult / gated | 0 Insufficient.
+  Access: 8/10 self-serve free or trial; official MCP 10/10; REST yes 10/10; GraphQL yes 2/10.
+  Auth: oauth2 10, api_key 8, basic 2, bearer_token 3.
+  Confidence: High 8, Medium 2, Low 0.
+
+  CRM is the most mature block in the tab: all ten apps are REST, all ten have an official
+  MCP server, OAuth2 appears on every app, and eight are self-serve. Seven are unconditionally
+  buildable. The friction is tenant administration rather than API absence: Salesforce is
+  limited because every customer org needs an admin-created External Client App and
+  Enterprise+ for production API access, while Copper is effectively a paid-seat product.
+  DealCloud is the one difficult app: enterprise-only, admin-enabled capability, and a
+  schema that differs per tenant.
+
+  Limited: Salesforce (Self-serve free, High); Copper (Paid plan required, Medium).
+  Difficult: DealCloud (Admin approval required).
+
+
+------------------------------------------------------------------------------------------------------------
+CATEGORY 02 - Support and Helpdesk
+------------------------------------------------------------------------------------------------------------
+  Snapshot: 9 Buildable | 0 Buildable with limitations | 1 Difficult / gated | 0 Insufficient.
+  Access: 8/10 self-serve free or trial; official MCP 9/10; REST yes 9/10; GraphQL yes 1/10.
+  Auth: oauth2 9, api_key 9, bearer_token 5, basic 1.
+  Confidence: High 7, Medium 3, Low 0.
+
+  Support is one of the most consistently buildable categories: nine of ten are buildable,
+  nine have official MCP, and eight are self-serve. Seven are self-serve trials, so the common
+  qualifier is commercial rather than technical. Gladly is the sole difficult app because
+  onboarding is enterprise/account-team-led with no public self-serve credentials. OAuth2 and
+  API keys are equally common (nine each), making this a dual-auth category.
+
+  Difficult: Gladly (Partnership / contact-sales required).
+
+
+------------------------------------------------------------------------------------------------------------
+CATEGORY 03 - Communications and Messaging
+------------------------------------------------------------------------------------------------------------
+  Snapshot: 8 Buildable | 2 Buildable with limitations | 0 Difficult / gated | 0 Insufficient.
+  Access: 9/10 self-serve free or trial; official MCP 8/10; REST yes 10/10; GraphQL yes 0/10.
+  Auth: oauth2 7, api_key 4, basic 2, bearer_token 2, other 1, jwt 1.
+  Confidence: High 8, Medium 2, Low 0.
+
+  Eight of ten are buildable and two are buildable with limitations. Nine are self-serve, and
+  MCP is split between eight official and two community servers. Auth is the most mixed of any
+  category: OAuth2 (7), API keys (4), Basic (2), Bearer (2), JWT (1) and other (1). WhatsApp
+  Business is limited by business verification, template approval and the 24-hour messaging
+  window; Aircall is limited by a paid plan plus beta/read-only MCP. There are no difficult or
+  insufficient apps here.
+
+  Limited: WhatsApp Business (Self-serve trial, High); Aircall (Paid plan required, Medium).
+
+
+------------------------------------------------------------------------------------------------------------
+CATEGORY 04 - Marketing, Ads, Email and Social
+------------------------------------------------------------------------------------------------------------
+  Snapshot: 6 Buildable | 3 Buildable with limitations | 1 Difficult / gated | 0 Insufficient.
+  Access: 5/10 self-serve free or trial; official MCP 7/10; REST yes 10/10; GraphQL yes 0/10.
+  Auth: oauth2 8, bearer_token 6, api_key 4.
+  Confidence: High 8, Medium 2, Low 0.
+
+  Six are buildable, three are buildable with limitations, and one is difficult. The split is
+  ad platforms versus email/marketing tools: five apps are self-serve, but four require admin
+  approval. Google Ads, Meta Ads and Pinterest are limited by developer-token/app review,
+  access tiers and per-account permissions; LinkedIn Ads is difficult because the Marketing
+  Developer Platform requires vetting and has frequent API version sunsets. Email/marketing
+  tools are the clean buildable core. MCP is seven official and three community.
+
+  Limited: Google Ads (Admin approval required, High); Meta Ads (Admin approval required, High); Pinterest (Admin approval required, High).
+  Difficult: LinkedIn Ads (Admin approval required).
+
+
+------------------------------------------------------------------------------------------------------------
+CATEGORY 05 - Ecommerce
+------------------------------------------------------------------------------------------------------------
+  Snapshot: 6 Buildable | 3 Buildable with limitations | 1 Difficult / gated | 0 Insufficient.
+  Access: 7/10 self-serve free or trial; official MCP 9/10; REST yes 10/10; GraphQL yes 3/10.
+  Auth: oauth2 9, bearer_token 7, jwt 2, api_key 2.
+  Confidence: High 8, Medium 1, Low 1.
+
+  Six are buildable, three are limited and one is difficult. Seven are self-serve and nine have
+  official MCP; OAuth2 appears in nine of ten. Amazon Selling Partner is limited by developer
+  registration, app review and SigV4 signing; Squarespace is limited by a paid commerce plan
+  and thin MCP coverage; fanbasis is limited by a rebrand, thin docs and low vendor maturity.
+  Salesforce Commerce Cloud is difficult because of enterprise licensing, per-instance client
+  setup and MCP tooling still in preview/pilot. GraphQL appears in three ecommerce platforms.
+
+  Limited: Squarespace (Paid plan required, High); Amazon Selling Partner (Admin approval required, High); fanbasis (Self-serve free, Low).
+  Difficult: Salesforce Commerce Cloud (Partnership / contact-sales required).
+
+
+------------------------------------------------------------------------------------------------------------
+CATEGORY 06 - Data, SEO and Scraping
+------------------------------------------------------------------------------------------------------------
+  Snapshot: 6 Buildable | 3 Buildable with limitations | 1 Difficult / gated | 0 Insufficient.
+  Access: 5/10 self-serve free or trial; official MCP 8/10; REST yes 9/10; GraphQL yes 0/10.
+  Auth: other 1, api_key 8, bearer_token 5, oauth2 2.
+  Confidence: High 9, Medium 1, Low 0.
+
+  Six are buildable, three are limited and one is difficult. Only five are self-serve; four are
+  paid-plan and one is sales-gated. API keys dominate (eight of ten). Ahrefs is limited by an
+  enterprise plan and per-row unit costs; Clay is limited because the HTTP API is Enterprise
+  and MCP is workspace-scoped; Sherlock is limited because there is no hosted API and a toolkit
+  must wrap the CLI. Waterfall.io is difficult because access is sales-gated. MCP is eight
+  official, one community and one none.
+
+  Limited: Ahrefs (Paid plan required, High); Sherlock (Self-serve free, High); Clay (Paid plan required, Medium).
+  Difficult: Waterfall.io (Partnership / contact-sales required).
+
+
+------------------------------------------------------------------------------------------------------------
+CATEGORY 07 - Developer, Infra and Data platforms
+------------------------------------------------------------------------------------------------------------
+  Snapshot: 10 Buildable | 0 Buildable with limitations | 0 Difficult / gated | 0 Insufficient.
+  Access: 10/10 self-serve free or trial; official MCP 10/10; REST yes 10/10; GraphQL yes 3/10.
+  Auth: oauth2 7, bearer_token 8, api_key 4, jwt 1.
+  Confidence: High 9, Medium 1, Low 0.
+
+  This is the cleanest category in the tab: ten of ten are buildable, ten are self-serve, and
+  ten have official MCP. OAuth2 (7) and Bearer (8) dominate; API keys (4) and JWT (1) are
+  secondary. REST is universal and GraphQL appears in three apps. There are no limitations, no
+  gated apps and no low-confidence entries. This is the best reference set for a reusable
+  toolkit pattern.
+
+
+
+------------------------------------------------------------------------------------------------------------
+CATEGORY 08 - Productivity and Project Management
+------------------------------------------------------------------------------------------------------------
+  Snapshot: 10 Buildable | 0 Buildable with limitations | 0 Difficult / gated | 0 Insufficient.
+  Access: 10/10 self-serve free or trial; official MCP 9/10; REST yes 8/10; GraphQL yes 3/10.
+  Auth: oauth2 9, bearer_token 6, api_key 6, basic 1.
+  Confidence: High 7, Medium 3, Low 0.
+
+  Ten of ten are buildable and ten are self-serve; nine have official MCP and one has a
+  community server. OAuth2 appears in nine, API keys in six and Bearer in six. REST is present
+  in eight; the two "REST: No" entries (Linear and Monday.com) are GraphQL-first, not API-less.
+  That is an adapter-design issue, not a blocker. There are no limited, difficult or
+  insufficient apps in this category.
+
+
+
+------------------------------------------------------------------------------------------------------------
+CATEGORY 09 - Finance and Fintech
+------------------------------------------------------------------------------------------------------------
+  Snapshot: 5 Buildable | 2 Buildable with limitations | 1 Difficult / gated | 2 Insufficient.
+  Access: 5/10 self-serve free or trial; official MCP 6/10; REST yes 7/10; GraphQL yes 1/10.
+  Auth: oauth2 5, api_key 3, other 3.
+  Confidence: High 5, Medium 2, Low 3.
+
+  Five are buildable, two are limited, one is difficult and two are insufficient; only five are
+  self-serve. Auth is mixed (OAuth2 5, API key 3, other 3), REST is present in seven, and three
+  have no official MCP. Plaid is limited by production approval and per-item costs; Brex is
+  limited by customer-only access. PitchBook is difficult because it is an enterprise data
+  contract. Paygent Connect and iPayX are insufficient because public documentation is absent
+  or dead. This is the lowest-confidence category (three low-confidence apps).
+
+  Limited: Plaid (Self-serve trial, High); Brex (Paid plan required, Medium).
+  Difficult: PitchBook (Partnership / contact-sales required).
+  Insufficient: Paygent Connect (Partnership / contact-sales required, Low); iPayX (Unknown, Low).
+
+
+------------------------------------------------------------------------------------------------------------
+CATEGORY 10 - AI, Research and Media-native
+------------------------------------------------------------------------------------------------------------
+  Snapshot: 4 Buildable | 5 Buildable with limitations | 0 Difficult / gated | 1 Insufficient.
+  Access: 6/10 self-serve free or trial; official MCP 8/10; REST yes 7/10; GraphQL yes 0/10.
+  Auth: oauth2 3, api_key 5, bearer_token 5, other 1.
+  Confidence: High 5, Medium 3, Low 2.
+
+  Four are buildable, five are limited, one is insufficient, and none are difficult. Six are
+  self-serve; eight have official MCP. Auth is mixed (API key 5, Bearer 5, OAuth2 3). The
+  limited cluster is heterogeneous: Otter is Enterprise-gated, Fathom is MCP-first with no
+  public REST reference, Consensus has commercial access terms, Devin wraps an expensive agent
+  runtime, and higgsfield has marketing-level docs with costly generation credits. NotebookLM
+  is insufficient because no public API is documented. This is the category most likely to
+  change as preview APIs and prepaid models evolve.
+
+  Limited: Otter AI (Paid plan required, High); Fathom (Self-serve free, Medium); Consensus (Paid plan required, Medium); Devin (Paid plan required, High); higgsfield (Self-serve trial, Low).
+  Insufficient: NotebookLM (Unknown, Low).
+
+
+6. GATED, INSUFFICIENT AND LOW-CONFIDENCE APP DETAIL
+
+   Difficult / gated:
+     - DealCloud [CRM and Sales | Admin approval required | High]: Enterprise-only access; API capability must be enabled by the org admin; schema differs per tenant.
+     - Gladly [Support and Helpdesk | Partnership / contact-sales required | Medium]: Enterprise-only onboarding with no public self-serve credentials; API access granted through the account team.
+     - LinkedIn Ads [Marketing, Ads, Email and Social | Admin approval required | Medium]: Marketing Developer Platform approval plus ad-account association; frequent API version sunsets.
+     - Salesforce Commerce Cloud [Ecommerce | Partnership / contact-sales required | High]: Enterprise-only licensing, per-instance API client setup, and MCP tooling still in preview/pilot.
+     - Waterfall.io [Data, SEO and Scraping | Partnership / contact-sales required | High]: Sales-gated API access with no self-serve credentials.
+     - PitchBook [Finance and Fintech | Partnership / contact-sales required | Low]: Enterprise-only licensing with no public API documentation or self-serve credentials.
+
+   Insufficient information:
+     - Paygent Connect [Finance and Fintech | Partnership / contact-sales required | Low]: No public API documentation or self-serve credentials; everything flows through merchant contracting.
+     - iPayX [Finance and Fintech | Unknown | Low]: No public API documentation; the documentation URL supplied in the sheet is dead.
+     - NotebookLM [AI, Research and Media-native | Unknown | Low]: No documented public API surface; the enterprise path is not publicly documented in the pages checked.
+
+   Low confidence (treat verdict as provisional):
+     - fanbasis [Ecommerce | Buildable with limitations | Self-serve free]: Rebrand in progress (fanbasis → Commas), thin public documentation and low vendor maturity.
+     - Paygent Connect [Finance and Fintech | Insufficient information | Partnership / contact-sales required]: No public API documentation or self-serve credentials; everything flows through merchant contracting.
+     - iPayX [Finance and Fintech | Insufficient information | Unknown]: No public API documentation; the documentation URL supplied in the sheet is dead.
+     - PitchBook [Finance and Fintech | Difficult / gated | Partnership / contact-sales required]: Enterprise-only licensing with no public API documentation or self-serve credentials.
+     - NotebookLM [AI, Research and Media-native | Insufficient information | Unknown]: No documented public API surface; the enterprise path is not publicly documented in the pages checked.
+     - higgsfield [AI, Research and Media-native | Buildable with limitations | Self-serve trial]: Documentation is marketing-level; API authentication details unverified; generation credits are costly.
+
+7. BLOCKER THEMES
+   Primary-blocker buckets (heuristic keyword classification):
+     plan / payment            26
+     other                     20
+     review / approval         17
+     sandbox / credentials     14
+     admin / role              11
+     docs / discoverability     6
+     no public API              5
+     limits                     1
+
+   Read: plan/payment (26) and review/approval (17) are the dominant frictions, followed
+   by admin/role (11) and sandbox/credentials (14). Only one blocker is explicitly about
+   rate limits; five blocker texts fall into the 'no public API' bucket, and some of those
+   still have GraphQL or CLI surfaces. The portfolio's problem is commercial/administrative
+   access, not the absence of APIs.
+
+8. NOTABLE API-SHAPE EXCEPTIONS
+   REST not present / unknown:
+     - Plain                    REST=No                                       GraphQL=Yes (GraphQL only)           verdict=Buildable
+     - Sherlock                 REST=No                                       GraphQL=No                           verdict=Buildable with limitations
+     - Linear                   REST=No                                       GraphQL=Yes (GraphQL only)           verdict=Buildable
+     - Monday.com               REST=No                                       GraphQL=Yes (GraphQL only)           verdict=Buildable
+     - NotebookLM               REST=No public API documented                 GraphQL=Unknown                      verdict=Insufficient information
+     - Mermaid CLI              REST=No                                       GraphQL=No                           verdict=Buildable
+     - Paygent Connect          REST=Unknown (not publicly documented)        GraphQL=No                           verdict=Insufficient information
+     - iPayX                    REST=Unknown                                  GraphQL=Unknown                      verdict=Insufficient information
+     - PitchBook                REST=Unknown (enterprise data feed)           GraphQL=Unknown                      verdict=Difficult / gated
+     - Fathom                   REST=Unknown (no public REST reference found) GraphQL=Unknown                      verdict=Buildable with limitations
+
+   GraphQL-positive apps:
+     Salesforce, Twenty, Plain, Shopify, BigCommerce, Magento (Adobe Commerce), GitHub, Cloudflare, Supabase, Linear, Jira, Monday.com, QuickBooks.
+
+   No MCP at all:
+     Gladly (Difficult / gated), Waterfall.io (Difficult / gated), Paygent Connect (Insufficient information), iPayX (Insufficient information), PitchBook (Difficult / gated), NotebookLM (Insufficient information).
+
+9. CROSS-CHECK AGAINST results/pass1
+   Pass1 used easy/moderate/hard/blocked: 69 / 27 / 2 / 2.
+   Research tab uses Buildable/limitations/gated/insufficient: 71 / 20 / 6 / 3.
+   Both agree on the big picture: self-serve dominates (70 vs 73), official MCP is near-
+   universal (85 vs 84), and only a small minority are truly blocked or insufficient.
+   The tab is more conservative and more explicit about limitations. App-level differences
+   are expected: Salesforce is limited here vs easy in pass1; Mermaid CLI is buildable here
+   (CLI wrapper) vs blocked in pass1; Paygent, iPayX and NotebookLM are insufficient here
+   vs moderate/easy/moderate in pass1; Sherlock is limited here vs blocked in pass1.
+
+10. CAVEATS
+   - Auth is free text in the sheet; the OAuth2/API-key/Bearer counts are keyword-normalized.
+   - 'Buildable' is not the same as 'hosted REST API exists': Mermaid CLI and Sherlock are
+     CLI/library wrappers, and Plain/Linear/Monday.com are GraphQL-first.
+   - Primary-blocker buckets are heuristic and can overlap (e.g., paid plan + admin role).
+   - Low-confidence and insufficient apps should be re-checked before build commitments.
+   - The tab reports 99 Verified + 1 Pilot; verification depth is not uniform across rows.
+
+11. APPENDIX - FULL 100-APP TABLE (from the Research tab)
+   Abbreviations: V=B buildable, BL=buildable with limitations, DG=difficult/gated,
+   II=insufficient. R/G = REST/GraphQL yes/no/unknown. MCP Off/Com/None. C=confidence H/M/L.
+
+APP                      V   ACCESS  AUTH                        R G MCP  C  BLOCKER
+----------------------------------------------------------------------------------------------------------------------
+Attio                    B   Free    oauth2,api_key,bearer_t...  Y N Off  M  No major blocker; API/rate limits tied to workspace plan and app publica
+Close                    B   Trial   oauth2,api_key,basic        Y N Off  H  Paid subscription required after trial; per-organization API scoping onl
+Copper                   BL  Paid    oauth2,api_key              Y N Off  M  API use effectively requires a paid Copper seat; smaller surface area th
+DealCloud                DG  Admin   oauth2,api_key              Y N Off  H  Enterprise-only access; API capability must be enabled by the org admin;
+HubSpot                  B   Free    oauth2,api_key,bearer_t...  Y N Off  H  No hard blocker; tier-gated APIs and the legacy private-app sunset force
+Pipedrive                B   Free    oauth2,api_key              Y N Off  H  One active API token per user limits multi-tenant token-based designs; O
+Podio                    B   Free    oauth2                      Y N Off  H  Legacy API design and older documentation; feature velocity tied to Prog
+Salesforce               BL  Free    oauth2,api_key,basic        Y Y Off  H  Each customer org needs an admin-created External Client App / OAuth cli
+Twenty                   B   Free    oauth2,api_key,bearer_t...  Y Y Off  H  Schema-per-workspace means tool schemas must be discovered per instance;
+Zoho CRM                 B   Free    oauth2                      Y N Off  H  Per-edition API credit limits and multi-data-center OAuth domains compli
+Freshdesk                B   Trial   oauth2,api_key,basic        Y N Off  H  API-key-only auth (no OAuth for the REST API) and a per-tenant MCP endpo
+Front                    B   Trial   oauth2,api_key              Y N Off  H  Paid plan required; OAuth apps need admin authorization (MCP connection 
+Gladly                   DG  Sales   api_key,bearer_token        Y N None M  Enterprise-only onboarding with no public self-serve credentials; API ac
+Gorgias                  B   Trial   oauth2,api_key              Y N Off  H  MCP still in open beta; OAuth required for distribution to multiple stor
+Help Scout               B   Trial   oauth2                      Y N Off  H  OAuth credentials tied to an active user; official MCP is read-only.
+Intercom                 B   Trial   oauth2,api_key,bearer_t...  Y N Off  H  Paid workspace required; API version pinning and region-specific endpoin
+LiveAgent                B   Free    oauth2,api_key              Y N Off  M  API-key-only auth with broad account scope; older v1 endpoints still req
+Plain                    B   Trial   oauth2,api_key,bearer_t...  N Y Off  H  GraphQL-only API requires schema-aware tooling; paid plan after trial.
+Pylon                    B   Paid    oauth2,api_key,bearer_t...  Y N Off  M  Paid sales-assisted onboarding; two regional endpoints must match the te
+Zendesk                  B   Trial   oauth2,api_key,bearer_t...  Y N Off  H  Official MCP is EAP and plan-gated (Suite Team+); API tokens deprecated 
+Aircall                  BL  Paid    oauth2,api_key,basic        Y N Off  M  Paid subscription plus beta enrollment for MCP; MCP is read-only and con
+Discord                  B   Free    oauth2                      Y N Com  H  Privileged message-content intents require verification; rate limits; no
+Lark (Larksuite)         B   Free    oauth2,bearer_token         Y N Off  H  Permission review for sensitive scopes; separate larksuite.com and feish
+Pumble                   B   Free    api_key                     Y N Off  M  Modest API surface; MCP behavior is only described in vendor marketing, 
+Slack                    B   Free    oauth2                      Y N Off  H  OAuth install needs workspace admin approval; free workspaces restrict h
+Telegram                 B   Free    -                           Y N Com  H  Bot API cannot read arbitrary user chats; MTProto requires session manag
+Twilio                   B   Trial   oauth2,api_key,basic        Y N Off  H  Trial restrictions (verified numbers, credit); execution-grade MCP still
+Vonage                   B   Trial   api_key,jwt                 Y N Off  H  Per-request billing; JWT/application setup for voice; regulatory constra
+WhatsApp Business        BL  Trial   oauth2,bearer_token         Y N Off  H  Business verification, template approval and the 24-hour messaging windo
+Zoho Cliq                B   Free    oauth2                      Y N Off  H  Zoho multi-data-center domains and API call limits; admin scope approval
+GoHighLevel              B   Paid    oauth2                      Y N Off  H  Agency subscription required; sub-account scoping and API rate limits (i
+Google Ads               BL  Admin   oauth2                      Y N Off  H  Developer token approval (Basic/Standard) plus per-account OAuth; offici
+Klaviyo                  B   Free    oauth2,api_key              Y N Off  H  Role-gated authorization and differing rate limits between private-key a
+LinkedIn Ads             DG  Admin   oauth2                      Y N Com  M  Marketing Developer Platform approval plus ad-account association; frequ
+Mailchimp                B   Free    oauth2,api_key,bearer_t...  Y N Off  M  No blocker for API keys; the officially documented MCP available to buil
+Meta Ads                 BL  Admin   oauth2,bearer_token         Y N Off  H  App review and access-tier requirements for third-party ad accounts; gra
+Pinterest                BL  Admin   oauth2,bearer_token         Y N Off  H  Pinterest app review for trial/standard access and per-tier rate limits.
+SendGrid                 B   Free    api_key,bearer_token        Y N Com  H  No official account-level MCP; sender authentication and IP/reputation w
+systeme.io               B   Free    api_key,bearer_token        Y N Off  H  MCP key expiry (90 days) and two-key limit complicate long-lived deploym
+Threads (Meta)           B   Trial   oauth2,bearer_token         Y N Com  H  Publishing quota limits and app review for multi-user distribution; sepa
+Amazon Selling Partner   BL  Admin   oauth2                      Y N Off  H  Seller account, developer registration and app review; SigV4 signing add
+BigCommerce              B   Trial   oauth2,jwt                  Y Y Off  H  Trial-then-paid; store-management MCP still beta; per-store endpoints.
+Ecwid                    B   Free    oauth2,bearer_token         Y N Com  H  No official MCP and a strict 600 requests/minute/token rate limit.
+fanbasis                 BL  Free    api_key,bearer_token        Y N Off  L  Rebrand in progress (fanbasis → Commas), thin public documentation and l
+Gumroad                  B   Free    oauth2,bearer_token         Y N Off  H  Smaller API surface and scope-based permissions.
+Magento (Adobe Commerce) B   Free    oauth2,bearer_token         Y Y Off  M  Self-hosted PHP stack required; per-instance credentials; enterprise fea
+Salesforce Commerce Cloud DG  Sales   oauth2,bearer_token,jwt     Y N Off  H  Enterprise-only licensing, per-instance API client setup, and MCP toolin
+Shopify                  B   Free    oauth2,bearer_token         Y Y Off  H  Per-merchant scope approval; the Admin REST API is being superseded by G
+Squarespace              BL  Paid    oauth2,api_key,bearer_t...  Y N Off  H  Thin MCP coverage forces direct REST use; paid commerce plan required.
+WooCommerce              B   Free    oauth2                      Y N Off  H  Per-store plugin and credentials; no multi-tenant hosted endpoint, so ea
+Ahrefs                   BL  Paid    api_key,bearer_token        Y N Off  H  Enterprise plan required for real API access; per-row unit costs.
+Apify                    B   Free    api_key,bearer_token        Y N Off  H  Compute-unit costs and wide variance in third-party Actor quality.
+Bright Data              B   Trial   api_key,bearer_token        Y N Off  H  KYC and usage-based costs; compliance constraints on target sites.
+Clay                     BL  Paid    oauth2,api_key              Y N Off  M  HTTP API limited to Enterprise; MCP scoped to workspace plans and Clay's
+DataForSEO               B   Paid    -                           Y N Off  H  Prepaid, per-request billing requires cost controls; API is a data produ
+Firecrawl                B   Free    api_key,bearer_token        Y N Off  H  Credit-based costs and free-tier concurrency limits; JS-heavy pages vary
+MrScraper                B   Trial   oauth2,api_key              Y N Off  H  Usage-based token costs; anti-bot failures on some targets.
+SE Ranking               B   Paid    api_key,bearer_token        Y N Off  H  Credit-based API costs and plan gating.
+Sherlock                 BL  Free    -                           N N Com  H  No API or auth layer, so a toolkit must wrap the CLI; results are best-e
+Waterfall.io             DG  Sales   api_key                     Y N None H  Sales-gated API access with no self-serve credentials.
+Cloudflare               B   Free    api_key                     Y Y Off  H  Breadth means many narrowly scoped tokens; analytics via GraphQL has a s
+Datadog                  B   Free    oauth2,api_key              Y N Off  M  Dual-key authentication and per-organization scoping; ingestion is usage
+GitHub                   B   Free    oauth2,bearer_token         Y Y Off  H  Org policy approval for apps and fine-grained tokens; rate limits differ
+MongoDB Atlas            B   Free    oauth2,api_key,bearer_t...  Y N Off  H  Split between admin plane and data plane; Digest API keys are legacy ver
+Neo4j                    B   Free    bearer_token                Y N Off  H  Cypher-centric interface with no REST resource model; self-hosted instan
+Netlify                  B   Free    oauth2,bearer_token         Y N Off  H  Token expiry and per-team scope; narrower resource set than hyperscalers
+Sentry                   B   Free    oauth2,bearer_token         Y N Off  H  Token scope granularity and large event payloads.
+Snowflake                B   Trial   oauth2,bearer_token,jwt     Y N Off  H  Key-pair/OAuth setup with per-account roles; warehouse compute is billed
+Supabase                 B   Free    api_key,bearer_token        Y Y Off  H  Secret keys bypass row-level security, so credential handling is high ri
+Vercel                   B   Free    oauth2,bearer_token         Y N Off  H  Team scoping via teamId and rate limits; access tokens carry broad accou
+Airtable                 B   Free    oauth2,api_key,bearer_t...  Y N Off  H  Per-base token scoping and 10-record write batches constrain bulk operat
+Asana                    B   Free    oauth2,bearer_token         Y N Off  H  Workspace-level permissions and free-tier rate limits.
+ClickUp                  B   Free    oauth2,api_key              Y N Off  H  API availability varies by plan; v2/v3 split and rate limits.
+Coda                     B   Free    api_key,bearer_token        Y N Off  M  Rebrand in progress (Coda → Superhuman Docs); row-level API with per-doc
+Harvest                  B   Trial   oauth2,bearer_token         Y N Com  M  No official MCP; paid-only after trial.
+Jira                     B   Free    oauth2,api_key,basic        Y Y Off  H  OAuth scope review plus per-site (cloudId) routing; Jira and Confluence 
+Linear                   B   Free    oauth2,api_key              N Y Off  H  GraphQL-only API requires query-shaped tooling; rate limits scale with q
+Monday.com               B   Free    oauth2,api_key              N Y Off  H  GraphQL-only with complex column-value schemas; complexity limits vary b
+Notion                   B   Free    oauth2,bearer_token         Y N Off  H  The page-level grant model means an integration only sees content explic
+Smartsheet               B   Trial   oauth2,bearer_token         Y N Off  M  Plan-based API limits; document-style data model differs from record-bas
+Binance                  B   Free    api_key,other               Y N Com  M  Jurisdiction-based regulatory restrictions; key permissions and withdraw
+Brex                     BL  Paid    oauth2,api_key              Y N Off  M  Customer-only access; OAuth/token provisioning is tied to holding a Brex
+iPayX                    II  Unknown -                           ? ? None L  No public API documentation; the documentation URL supplied in the sheet
+Paygent Connect          II  Sales   -                           ? N None L  No public API documentation or self-serve credentials; everything flows 
+PitchBook                DG  Sales   -                           ? ? None L  Enterprise-only licensing with no public API documentation or self-serve
+Plaid                    BL  Trial   -                           Y N Off  H  Production approval and per-item costs; sensitive financial-data handlin
+QuickBooks               B   Trial   oauth2                      Y Y Off  H  Intuit app review for production plus strict OAuth scope design.
+Ramp                     B   Paid    oauth2                      Y N Off  H  Customer-only access; custom clients may need redirect URI approval.
+Stripe                   B   Free    oauth2,api_key              Y N Off  H  Live-mode activation and strict key-scope discipline; money-moving actio
+Xero                     B   Free    oauth2                      Y N Off  H  Five-tenant cap for uncertified apps and certification required at scale
+Consensus                BL  Paid    -                           Y N Off  M  Single-purpose search API and commercial access terms.
+Devin                    BL  Paid    api_key,bearer_token        Y N Off  H  Paid organization account required; the API wraps an expensive agent run
+Fathom                   BL  Free    oauth2                      ? ? Off  M  MCP-first with no documented public REST API, so tool surface is limited
+Grain                    B   Free    oauth2,api_key,bearer_t...  Y N Off  M  Smaller API surface and meeting-data privacy constraints.
+higgsfield               BL  Trial   -                           Y ? Off  L  Documentation is marketing-level; API authentication details unverified;
+Mermaid CLI              B   Free    -                           N N Com  H  Local CLI/library only, so a toolkit must wrap the process; no hosted AP
+NotebookLM               II  Unknown -                           N ? None L  No documented public API surface; the enterprise path is not publicly do
+Otter AI                 BL  Paid    oauth2,api_key,bearer_t...  Y N Off  H  API access is gated to Enterprise workspaces and limited to two keys per
+Reducto                  B   Free    api_key,bearer_token        Y N Off  H  Per-page billing and variable extraction quality by document type.
+YouTube Transcript       B   Free    api_key,bearer_token        Y N Off  H  Third-party dependency on YouTube stability; per-credit costs.
+
+END OF GOOGLE SHEETS RESEARCH SUMMARY

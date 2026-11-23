@@ -1,0 +1,259 @@
+{
+  "app": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": {
+    "value": "Klaviyo is a data-first marketing platform that helps businesses store customer data and run email, SMS, and other marketing automation.",
+    "source_url": "https://developers.klaviyo.com/en/v2026-01-15/docs/build_your_integration",
+    "quote": "Klaviyo is a data-first platform designed to make it easy for businesses to know their customers and grow faster.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.klaviyo.com",
+    "quote": "Create apps and integrations with Klaviyo's API, SDKs and MCP server that help businesses grow.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.klaviyo.com",
+    "quote": "you can download the OpenAPI spec the reference is generated from.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, broad read-write API spanning profiles, events, campaigns, flows, segments, and catalogs; full endpoint reference with per-endpoint limits.",
+    "source_url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "quote": "Private API keys can be used to read and write data to your Klaviyo account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.klaviyo.com/en/reference",
+    "source_url": "https://developers.klaviyo.com/en/reference",
+    "quote": "Gain the knowledge you need to successfully integrate Klaviyo with your application.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "quote": "Klaviyo provides 3 methods of authentication including private key authentication and OAuth (used to call server-side APIs) and public key authentication (used to call client-side APIs).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.klaviyo.com/en/v2025-07-15/docs/set_up_oauth",
+    "quote": "The scopes the app needs (for example, `accounts:read profiles:read`).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developers.klaviyo.com/en/docs/authenticate_",
+    "quote": "Navigate to your account’s Settings page and select API keys. Under the Private API Keys section, select Create Private API Key.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Private API keys and OAuth apps are self-serve from the Klaviyo account, but only Owner/Admin/Manager roles can create them; OAuth is required for App Marketplace listing and app review. Klaviyo's MCP server is also restricted to Owner/Admin/Manager roles. Plan-tier gating for production use could not be confirmed because the full pricing page text was not in the evidence set.",
+    "source_url": "https://developers.klaviyo.com/en/v2025-07-15/docs/set_up_oauth",
+    "quote": "Note that only owner, admin, and manager roles can create OAuth apps in Klaviyo.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.klaviyo.com/mcp",
+    "source_url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+    "quote": "Remote MCP server URL: https://mcp.klaviyo.com/mcp",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=klaviyo",
+    "quote": "{\"slug\": \"klaviyo\", \"name\": \"Klaviyo\", \"app\": \"Klaviyo\", \"tools_count\": 233}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per-account fixed-window limiting with two windows: burst (1-second) and steady (1-minute), applied to all new API endpoints; HTTP 429 when exceeded; per-endpoint numeric limits listed in the API reference; OAuth apps get their own quota per installed app instance.",
+    "source_url": "https://developers.klaviyo.com/en/docs/rate%5Flimits%5Fand%5Ferror%5Fhandling",
+    "quote": "All new API endpoints are rate limited on a per-account basis, and use a fixed-window rate limiting algorithm with two distinct windows: burst (1-second window) and steady (1-minute window).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.klaviyo.com/en/docs/rate%5Flimits%5Fand%5Ferror%5Fhandling",
+    "quote": "If you are using a Klaviyo webhook, custom integration, or API implementation, it is important to be aware of the limits on the events you send into Klaviyo.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developers.klaviyo.com",
+    "quote": "Create a test account: Learn how to create a sandbox account that is linked to your production account login. Test your code end-to-end.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Python",
+      "PHP",
+      "Ruby",
+      "Node.js",
+      "iOS",
+      "Android",
+      "React Native",
+      "Flutter"
+    ],
+    "source_url": "https://developers.klaviyo.com",
+    "quote": "Klaviyo offers SDKs for server-side languages (Python, PHP, Ruby, Node) and mobile platforms (iOS, Android, React Native, Flutter).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Date-based API revisions passed via a `revision` header (e.g., 2026-10-15); beta APIs require a `.pre` revision header and are subject to change; Klaviyo publishes an API versioning and deprecation policy and a changelog per API revision.",
+    "source_url": "https://developers.klaviyo.com/en/reference",
+    "quote": "A beta revision header (2026-10-15.pre) is required to use our beta APIs.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Klaviyo publishes a full public REST API reference plus official SDKs for Python, PHP, Ruby, Node, and mobile platforms, with self-serve private API keys generated in account settings and OAuth for partner apps. Access requires no sales contact or partner approval for basic credentials, only an Owner/Admin/Manager role on the account. The API is broad and read-write, and Klaviyo even operates its own MCP server at https://mcp.klaviyo.com/mcp.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Free-tier/plan gating for API credentials could not be confirmed because only a search snippet of https://www.klaviyo.com/pricing was available, not the full page text; confirm whether any plan level blocks API key creation.",
+    "Webhooks evidence was limited to a single passing mention in the rate-limits page; the dedicated webhook pages appeared only as snippets, and one snippet says only Advanced KDP customers and Klaviyo app partners can manage webhooks via the Webhooks API — verify this gating.",
+    "Specific numeric rate limits (burst/steady requests per window) are per-endpoint in the API reference and were not enumerated in the fetched pages.",
+    "No community/third-party MCP servers were found in the provided evidence (GitHub and MCP registry checks returned nothing), so the null is a search-coverage gap rather than proof none exist.",
+    "Whether OAuth app creation requires a paid Klaviyo plan or Klaviyo app-partner status was not explicitly stated in the fetched pages."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "developers.klaviyo.com",
+      "description": null,
+      "source_file": "04-marketing-ads-email-and-social.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.klaviyo.com/en/v2025-07-15/docs/set_up_oauth",
+        "title": "Make API calls using OAuth",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/v2026-01-15/docs/build_your_integration",
+        "title": "Join the Klaviyo ecosystem",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/docs/rate%5Flimits%5Fand%5Ferror%5Fhandling",
+        "title": "Rate limits, status codes, and errors",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+        "title": "Klaviyo MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1684
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/docs/connect_to_the_klaviyo_mcp_server",
+        "title": "Connect to the MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.klaviyo.com",
+        "title": "Build your customer growth engine with agents",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2662
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/reference/api_overview",
+        "title": "API overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4998
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/reference",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4985
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+        "title": "Authenticate API requests",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4996
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/docs/set_up_oauth",
+        "title": "Make API calls using OAuth",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 91.03
+  }
+}

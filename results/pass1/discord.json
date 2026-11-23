@@ -1,0 +1,295 @@
+{
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "one_line_description": {
+    "value": "A group chat platform for hanging out with friends and building communities.",
+    "source_url": "https://discord.com",
+    "quote": "Discord is great for playing games and chilling with friends, or even building a worldwide community.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.discord.com/developers/reference",
+    "quote": "The Discord API is a REST API that allows you to interact with Discord data from your own applications.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.discord.com/developers/reference",
+    "quote": "The Discord API is a REST API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, broad read-write; primary programmatic interface to Discord data",
+    "source_url": "https://docs.discord.com/developers/reference",
+    "quote": "It's the primary way to interact with Discord from your own code.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.discord.com/developers/intro",
+    "source_url": "https://docs.discord.com/developers/intro",
+    "quote": "Build bots and integrations on Discord, or connect your game with rich presence, voice chat, and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token",
+      "basic",
+      "other"
+    ],
+    "source_url": "https://docs.discord.com/developers/reference",
+    "quote": "Using a bot token found on the Bot page within your app's settings. For more information on bots see bots vs user accounts. Using an OAuth2 bearer token gained through the OAuth2 API. Using basic authentication with credentials as the client ID and client secret",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+    "quote": "Scopes define what your app is allowed to do. They are requested during the OAuth2 authorization flow and must be declared in the Developer Portal.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+    "quote": "When you create a bot user in the Developer Portal, Discord generates a bot token.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free, self-serve app creation in the Discord Developer Portal; creating a bot user generates a bot token, and OAuth2 user tokens are obtained through the OAuth2 authorization flow. The Developer Terms reference registration and App Review for apps.",
+    "source_url": "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service",
+    "quote": "You may be required or requested to provide certain information about yourself (such as identification or contact details or materials) and your Application (such as details about its functionality) as part of the registration process for access to the APIs",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=discord",
+    "quote": "{\"slug\": \"discord\", \"name\": \"Discord\", \"app\": \"Discord\", \"tools_count\": 23}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per-route and global limits; example response shows Retry-After: 65 seconds and X-RateLimit-Limit: 10; limits are dynamic and should not be hard-coded.",
+    "source_url": "https://docs.discord.com/developers/topics/rate-limits",
+    "quote": "< Retry-After: 65 < X-RateLimit-Limit: 10 < X-RateLimit-Remaining: 0 < X-RateLimit-Reset: 1470173023.123 < X-RateLimit-Reset-After: 64.57",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.discord.com/developers/events/webhook-events",
+    "quote": "Webhook events are one-way events sent to your app over HTTP to notify you when an event occurred.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "API versions are specified in the request path (e.g., /api/v10); v10 and v9 are available, v8/v7/v6 are deprecated, and v5 and older are discontinued and return 400 Bad Request.",
+    "source_url": "https://docs.discord.com/developers/reference",
+    "quote": "Some API and Gateway versions are now non-functioning, and are labeled as discontinued in the table below for posterity. Trying to use these versions will fail and return 400 Bad Request.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Discord publishes a broad REST API with bot-token, OAuth2 bearer-token, and basic authentication options, plus documented OAuth2 scopes. Credentials are self-serve through the free Developer Portal, and rate limits, webhooks, and versioning are documented. This makes integration straightforward, though App Review is referenced for some apps.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No vendor-operated Discord MCP server was found in the fetched sources; the MCP-related Discord links refer to a community Discord server about MCP, not an official Discord MCP endpoint.",
+    "Community MCP server candidates appeared in search results (e.g., github.com/pr5ias/discord-server-mcp) but were not among the fetched SOURCES and could not be verified.",
+    "Official SDK language list is not stated in the fetched source text; only the existence of a Discord Social SDK is referenced.",
+    "No dedicated sandbox/test environment documentation was found; only local development guides appeared in the search results.",
+    "No official pricing page evidence confirming the free developer tier was fetched; access_model is inferred from Developer Portal bot-token creation.",
+    "Composio page fetch for the input hint returned no text; the official discord.com site was fetched instead."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Discord",
+      "category": "Communications and Messaging",
+      "hint": "discord.com",
+      "description": null,
+      "source_file": "03-communications-and-messaging.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 17,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.discord.com/developers/reference",
+        "title": "API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.discord.com/developers/intro",
+        "title": "Discord Developer Platform",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1584
+      },
+      {
+        "url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+        "title": "OAuth2 and Permissions",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2870
+      },
+      {
+        "url": "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service",
+        "title": "Discord Developer Terms of Service – Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://discord.com/developers/home",
+        "title": "Home | Discord Developer Portal",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 212
+      },
+      {
+        "url": "https://docs.discord.com/developers/topics/rate-limits",
+        "title": "Rate Limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.discord.com/llms.txt",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://discord.com/servers/model-context-protocol-1312302100125843476",
+        "title": "Model Context Protocol - Discord Server | Programming",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 784
+      },
+      {
+        "url": "https://docs.discord.com/developers/events/webhook-events",
+        "title": "Webhook Events",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.discord.com/developers/activities/development-guides/local-development",
+        "title": "Local Development",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://discord.com",
+        "title": "Discord - Group Chat That’s All Fun & Games",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 1833
+      },
+      {
+        "url": "https://reduck.ai/use-cases/best-discord-mcp-servers",
+        "title": "Discord MCP servers compared (2026): no official one reads or sends messages",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.speakeasy.com/blog/build-a-mcp-server-tutorial",
+        "title": "Building a Model Context Protocol (MCP) server for Discord",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://discord.com"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Discord\" official MCP server",
+        "\"Discord\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://reduck.ai/use-cases/best-discord-mcp-servers",
+        "https://www.speakeasy.com/blog/build-a-mcp-server-tutorial"
+      ],
+      "tool_calls_after": 17
+    },
+    "research_seconds": 255.94
+  }
+}

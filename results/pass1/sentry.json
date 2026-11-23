@@ -1,0 +1,246 @@
+{
+  "app": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": {
+    "value": "Sentry provides a public web API for programmatically accessing the Sentry platform and managing account-level resources such as organizations, teams, and data exports.",
+    "source_url": "https://docs.sentry.io/api",
+    "quote": "The Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.sentry.io/api",
+    "quote": "The Sentry web API is used to access the Sentry platform programmatically.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.sentry.io/api",
+    "quote": "The current version of the Sentry's web API is considered v0. Our public endpoints are generally stable, but beta endpoints are subject to change.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write HTTP/JSON API covering organizations, teams, projects, issues, events, releases and exports; versioned under /api/0/",
+    "source_url": "https://docs.sentry.io/api",
+    "quote": "You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.sentry.io/api",
+    "source_url": "https://docs.sentry.io/api",
+    "quote": "# API Reference",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "source_url": "https://docs.sentry.io/api/auth/",
+    "quote": "For third-party applications that need to access Sentry on behalf of users, Sentry supports OAuth2 with the authorization code grant type.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.sentry.io/api/auth/",
+    "quote": "| `scope` | Yes | Space-separated list of permissions |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.sentry.io/api/auth/",
+    "quote": "You can create authentication tokens within Sentry by creating an internal integration.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Auth tokens and internal integrations are self-serve on any plan, including the free Developer plan (no sales contact or app review) - create them in Sentry settings. User-scoped personal tokens are also self-created. OAuth2 for third-party apps is gated: Sentry must register the application and asks you to contact its partnership team (partnership-platform@sentry.io). Production use still requires a Sentry org/project, but a free Developer plan exists.",
+    "source_url": "https://docs.sentry.io/api/auth/",
+    "quote": "These auth tokens can be created within Sentry on the \"User settings\" page (User settings > Personal Tokens) and assigned specific scopes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.sentry.dev/mcp",
+    "source_url": "https://docs.sentry.io/product/snapshots/agentic-workflow/",
+    "quote": "`https://mcp.sentry.dev/mcp`: base endpoint",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=sentry",
+    "quote": "{\"slug\": \"sentry\", \"name\": \"Sentry\", \"app\": \"Sentry\", \"tools_count\": 210}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": "https://docs.sentry.io/api/ratelimits/",
+    "quote": "Each endpoint has its own maximum number of requests and window size.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.sentry.io/integrations/integration-platform/webhooks/",
+    "quote": "Sentry uses JSON webhooks to get error notifications to your systems or services.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript",
+      "Python"
+    ],
+    "source_url": "https://docs.sentry.io/product/mcp-servers/getting-started/",
+    "quote": "MCP Monitoring requires Node SDK version `9.46.0` or newer.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned via the /api/0/ prefix (web API considered v0); public endpoints are generally stable while beta endpoints may change. No formal deprecation/sunset policy was present in the evidence.",
+    "source_url": "https://docs.sentry.io/api",
+    "quote": "The current version of the Sentry's web API is considered v0. Our public endpoints are generally stable, but beta endpoints are subject to change.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Sentry documents a broad public web API with a stable-base /api/0/ versioning scheme, documented auth via self-created auth tokens/internal integrations, and a free Developer plan. Authentication tokens are self-serve with no sales contact, and rate limits plus webhooks are documented (including official rate-limit headers). The only gated path is OAuth2 app registration for third-party distributed apps, which requires Sentry partnership registration but is optional for token-based integrations.",
+  "main_blocker": "OAuth2 app registration requires Sentry partnership team approval (token auth is self-serve)",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No documented API sandbox/test environment was found; Sentry 'environments' are data tags on events, not an isolated test API environment - confirm whether a sandbox exists.",
+    "REST classification is inferred from HTTP/JSON endpoints; the API reference page does not explicitly name the protocol.",
+    "OAuth2 for third-party apps requires Sentry to register the app via its partnership team - confirm whether this applies only to distributed public integrations or also to private single-org apps.",
+    "SDK languages were only confirmed for JavaScript/Node and Python from the evidence; the full official SDK list was not retrieved.",
+    "Numeric rate limits are not published; only the per-endpoint/per-caller mechanism and X-Sentry-Rate-Limit-* headers are documented.",
+    "Deprecation/sunset policy for API versions beyond the 'beta endpoints are subject to change' statement was not found.",
+    "Composio lists a sentry toolkit using OAUTH2 and a sentry_mcp toolkit using DCR_OAUTH; verify how Composio's OAuth flow is provisioned given Sentry's partner-registration requirement."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "docs.sentry.io/api",
+      "description": null,
+      "source_file": "07-developer-infra-and-data-platforms.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.sentry.io/api",
+        "title": "API Reference | Sentry Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1444
+      },
+      {
+        "url": "https://docs.sentry.io/api/auth/",
+        "title": "API Authentication | Sentry Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.sentry.io/product/partnership-platform/oauth-integration/",
+        "title": "OAuth Integration | Sentry Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2127
+      },
+      {
+        "url": "https://docs.sentry.io/pricing/",
+        "title": "Pricing & Billing | Sentry Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.sentry.io/api/ratelimits/",
+        "title": "Rate Limits | Sentry Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1835
+      },
+      {
+        "url": "https://docs.sentry.io/product/snapshots/agentic-workflow/",
+        "title": "Agentic Workflow | Sentry Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4029
+      },
+      {
+        "url": "https://docs.sentry.io/product/mcp-servers/getting-started/",
+        "title": "Set Up MCP Servers | Sentry Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4435
+      },
+      {
+        "url": "https://docs.sentry.io/integrations/integration-platform/webhooks/",
+        "title": "Webhooks | Sentry Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4800
+      },
+      {
+        "url": "https://docs.sentry.io/concepts/key-terms/environments/",
+        "title": "Creating and Filtering Environments | Sentry Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3815
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 99.55
+  }
+}

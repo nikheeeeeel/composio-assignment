@@ -1,0 +1,257 @@
+{
+  "app": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": {
+    "value": "Supabase is a backend platform providing a full Postgres database per project along with Realtime, Auth, Storage, Edge Functions, and APIs.",
+    "source_url": "https://supabase.com/docs",
+    "quote": "Build with a complete backend platform, from your database to your application logic. Supabase provides a full Postgres database for every project with Realtime functionality, database backups, extensions, and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://supabase.com/docs/reference",
+    "quote": "Supabase also has a Management API to help with managing your Supabase Platform, and a CLI for local development and CI workflows.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://supabase.com/docs",
+    "quote": "Data REST API - GraphQL API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad multi-product surface: Management API for organizations/projects plus client libraries covering Postgres Database, Auth, and Realtime.",
+    "source_url": "https://supabase.com/docs/reference",
+    "quote": "The Supabase client libraries help you interact with Supabase products, such as the Postgres Database, Auth, and Realtime. They are available in several popular programming languages.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://supabase.com/docs/reference",
+    "source_url": "https://supabase.com/docs/reference",
+    "quote": "Supabase API references",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://supabase.com/docs/reference/api/introduction",
+    "quote": "All API requests require an access token to be included in the Authorization header: `Authorization Bearer <access_token>`. There are two ways to generate an access token:",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://supabase.com/docs/reference/api/introduction",
+    "quote": "Tokens generated via OAuth2 are short-lived and tied to specific scopes to ensure your app can only perform actions that are explicitly approved by the user.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://supabase.com/pricing",
+    "quote": "Free: $0/month, including 500 MB database size.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free plan is self-serve with a limit of 2 active projects and pausing after 1 week of inactivity; paid Pro, Team, and Enterprise plans unlock higher quotas, SSO, PrivateLink, and HIPAA add-on.",
+    "source_url": "https://supabase.com/pricing",
+    "quote": "Free projects are paused after 1 week of inactivity. Limit of 2 active projects.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.supabase.com/mcp",
+    "source_url": "https://supabase.com/docs/guides/ai-tools/mcp",
+    "quote": "The hosted Supabase MCP server is available at `https://mcp.supabase.com/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=supabase",
+    "quote": "{\"slug\": \"supabase\", \"name\": \"Supabase\", \"app\": \"Supabase\", \"tools_count\": 230}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Management API: 120 requests per minute per user, per project or organization, per endpoint; HTTP 429 after exceeding the limit.",
+    "source_url": "https://supabase.com/docs/reference/api/introduction",
+    "quote": "| 120 requests | 1 minute | Per user, per project or organization, per endpoint |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://supabase.com/docs/guides/database/webhooks",
+    "quote": "Database Webhooks allow you to send real-time data from your database to another system whenever a table event occurs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://supabase.com/docs/guides/deployment/branching",
+    "quote": "You can use these branching environments to create and test changes like new configurations, database schemas, or features without affecting your production setup.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript",
+      "Flutter",
+      "Python",
+      "C#",
+      "Swift",
+      "Kotlin"
+    ],
+    "source_url": "https://supabase.com/docs",
+    "quote": "JavaScript - Flutter - Python - C# - Swift - Kotlin",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Legacy anon and service_role JWT API keys are being deprecated by the end of 2026 in favor of publishable and secret keys; no broader API versioning or sunset policy was found in the supplied evidence.",
+    "source_url": "https://supabase.com/docs/guides/getting-started/api-keys",
+    "quote": "Deprecation: Supabase is deprecating the `anon` and `service_role` keys by the end of 2026.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Supabase publishes extensive public developer docs, a self-serve Free plan with unlimited API requests, OAuth2 and API-key authentication, official SDKs in six languages, and an official hosted MCP server. Access is not gated by sales contact, partner approval, or app review.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No community/third-party MCP servers were returned in the evidence bundle (MCP registry empty and GitHub repositories not checked), so community_mcp_servers is recorded as not found.",
+    "The docs list both Data REST API and GraphQL API; the evidence did not establish whether the GraphQL API is auto-generated or its full breadth, so api_type records REST as the primary type.",
+    "API key authentication (publishable/secret keys) is documented on the API keys page separately from the Management API bearer/OAuth2 token page; auth_methods combines both mechanisms and is therefore medium confidence.",
+    "The Management API rate limits are documented, but whether the Management API is plan-gated is not explicitly stated beyond the pricing page noting that all plans include unlimited API requests."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "supabase.com/docs",
+      "description": null,
+      "source_file": "07-developer-infra-and-data-platforms.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://supabase.com/docs/guides/platform/billing-on-supabase",
+        "title": "About billing on Supabase",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+        "title": "Supabase MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://supabase.com/features/mcp-server",
+        "title": "MCP Server | Supabase Features",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://supabase.com/docs/guides/database/webhooks",
+        "title": "Database Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://supabase.com/docs/guides/deployment/branching",
+        "title": "Branching",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4878
+      },
+      {
+        "url": "https://supabase.com/docs",
+        "title": "Supabase Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3625
+      },
+      {
+        "url": "https://supabase.com/docs/reference",
+        "title": "Supabase API references",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 521
+      },
+      {
+        "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+        "title": "API keys",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://supabase.com/docs/reference/api/introduction",
+        "title": "Introduction | Management API Reference | Supabase Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://supabase.com/pricing",
+        "title": "Supabase Pricing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 107.33
+  }
+}

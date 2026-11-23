@@ -1,0 +1,352 @@
+{
+  "app": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "slug": "lark-larksuite",
+  "started_at": "2026-11-23T15:44:00.935374+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:45:51.943770+00:00",
+  "duration_s": 111.01,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/lark-larksuite.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Lark (Larksuite)\" MCP server official Model Context Protocol site:larksuite.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.88,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Lark (Larksuite)\" official API documentation developer reference site:larksuite.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.019,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Lark (Larksuite)\" pricing plans API access enterprise developer site:larksuite.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.2,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Lark (Larksuite)\" API authentication OAuth API key documentation site:larksuite.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.323,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Lark (Larksuite)\" API webhooks events callbacks documentation site:larksuite.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.32,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Lark (Larksuite)\" official SDK client libraries developer site:larksuite.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.031,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Lark (Larksuite)\" API rate limits throttling quota documentation site:larksuite.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.222,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Lark (Larksuite)\" API sandbox test environment staging developer site:larksuite.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.475,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Lark (Larksuite)\" API versioning deprecation sunset policy site:larksuite.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 6.391,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Lark (Larksuite)"
+      },
+      "ok": true,
+      "duration_s": 0.037,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Lark (Larksuite) MCP"
+      },
+      "ok": true,
+      "duration_s": 0.852,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://open.larksuite.com/document/server-docs/getting-started/frequency-control",
+          "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/install-and-use-document-search-mcp",
+          "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/use_cases",
+          "https://open.larksuite.com/document/server-docs/event-subscription/overview-of-event-subscription",
+          "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.976,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://open.larksuite.com/document",
+          "https://open.larksuite.com/document/server-docs/getting-started/server-api-list",
+          "https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/access-credentials",
+          "https://open.larksuite.com/document/ukTMukTMukTM/uMTNz4yM1MjLzUzM",
+          "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing?lang=en-US"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 7.449,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://open.larksuite.com"
+      },
+      "ok": true,
+      "duration_s": 6.11,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 14,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://open.larksuite.com"
+  ],
+  "sources": [
+    {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/frequency-control",
+      "title": "Rate limits - Server API - Documentation - Lark Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/install-and-use-document-search-mcp",
+      "title": "Install and use document search MCP - Lark CLI - Documentation - Lark Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/use_cases",
+      "title": "FAQs - Lark CLI - Documentation - Lark Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/event-subscription/overview-of-event-subscription",
+      "title": "Event Overview - Server API - Documentation - Lark Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+      "title": "API Explorer Guide - Developer Guides - Documentation - Lark Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://open.larksuite.com/document",
+      "title": "Documentation - Lark Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1064
+    },
+    {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/server-api-list",
+      "title": "Server API list - Server API - Documentation - Lark Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://open.larksuite.com/document/home/introduction-to-scope-and-authorization/access-credentials",
+      "title": "Access Tokens: Who am I? - Documentation - Lark Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3768
+    },
+    {
+      "url": "https://open.larksuite.com/document/ukTMukTMukTM/uMTNz4yM1MjLzUzM",
+      "title": "Obtain access tokens - Server API - Documentation - Lark Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/api-call-guide/api-billing?lang=en-US",
+      "title": "Adjusting API call limits for custom apps - Server API - Documentation - Lark Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://open.larksuite.com",
+      "title": "Lark 开放平台",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 9
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Lark (Larksuite)",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 84.414,
+      "tokens": {
+        "input": 11237,
+        "output": 2160,
+        "reasoning": 7191
+      },
+      "cost_usd": 0.00584306
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 11237,
+      "output": 2160,
+      "reasoning": 7191
+    },
+    "cost_usd": 0.00584306,
+    "llm_calls": 1
+  }
+}

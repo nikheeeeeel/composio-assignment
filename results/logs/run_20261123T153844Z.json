@@ -1,0 +1,37 @@
+{
+  "started_at": "2026-11-23T15:34:56.711163+00:00",
+  "finished_at": "2026-11-23T15:38:44.240976+00:00",
+  "processed": 2,
+  "verified": 0,
+  "needs_human_review": 0,
+  "drafted": 2,
+  "errors": 0,
+  "skipped": 0,
+  "concurrency": 2,
+  "apps": [
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "slug": "hubspot",
+      "status": "drafted",
+      "skipped": false,
+      "rounds": 0,
+      "duration_s": 124.87,
+      "tool_calls": 14,
+      "cost_usd": 0.00582036,
+      "error": null
+    },
+    {
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "slug": "salesforce",
+      "status": "drafted",
+      "skipped": false,
+      "rounds": 0,
+      "duration_s": 227.05,
+      "tool_calls": 14,
+      "cost_usd": 0.01207584,
+      "error": null
+    }
+  ]
+}

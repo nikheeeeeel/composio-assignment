@@ -1,0 +1,407 @@
+{
+  "app": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "slug": "waterfall-io",
+  "started_at": "2026-11-23T15:56:28.763335+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:59:02.905763+00:00",
+  "duration_s": 154.14,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/waterfall-io.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Waterfall.io\" API authentication OAuth API key documentation site:waterfall.io",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.499,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Waterfall.io\" pricing plans API access enterprise developer site:waterfall.io",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.591,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Waterfall.io\" official API documentation developer reference site:waterfall.io",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.797,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Waterfall.io\" API webhooks events callbacks documentation site:waterfall.io",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.989,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Waterfall.io\" MCP server official Model Context Protocol site:waterfall.io",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.92,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Waterfall.io\" API rate limits throttling quota documentation site:waterfall.io",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.524,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Waterfall.io\" API sandbox test environment staging developer site:waterfall.io",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.336,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Waterfall.io\" API versioning deprecation sunset policy site:waterfall.io",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.992,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Waterfall.io\" official SDK client libraries developer site:waterfall.io",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.907,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Waterfall.io"
+      },
+      "ok": true,
+      "duration_s": 0.035,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Waterfall.io MCP"
+      },
+      "ok": true,
+      "duration_s": 0.851,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://docs.waterfall.io/v1/overview",
+          "https://docs.waterfall.io/v1/introduction",
+          "https://docs.waterfall.io/v1/authentication",
+          "https://docs.waterfall.io/v1/api-keys-overview",
+          "https://docs.waterfall.io/v1/faq"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.018,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://docs.waterfall.io/v1/book-demo",
+          "https://docs.waterfall.io/v1/rate-limit",
+          "https://docs.waterfall.io/v1/skills-overview",
+          "https://docs.waterfall.io/v1/webhook-verification",
+          "https://docs.waterfall.io/v1/openapi-spec"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.598,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://waterfall.io"
+      },
+      "ok": true,
+      "duration_s": 5.868,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 15,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Waterfall.io\" official MCP server",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.646,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 16,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Waterfall.io\" model context protocol server vendor",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.146,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 17,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://www.waterfall.io/"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.784,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 17,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://waterfall.io"
+  ],
+  "sources": [
+    {
+      "url": "https://docs.waterfall.io/v1/overview",
+      "title": "One GTM API for contacts and companies",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2619
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/introduction",
+      "title": "Waterfall API introduction",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/authentication",
+      "title": "Authentication",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1364
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/api-keys-overview",
+      "title": "API Keys Management",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1602
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/faq",
+      "title": "Waterfall API FAQ",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/book-demo",
+      "title": "Get API access",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1521
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/rate-limit",
+      "title": "Rate limits",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1820
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/skills-overview",
+      "title": "Use Waterfall with an agent",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2437
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/webhook-verification",
+      "title": "Webhook Verification",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/openapi-spec",
+      "title": "Open API Specification",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 573
+    },
+    {
+      "url": "https://www.waterfall.io/",
+      "title": "Waterfall.io | One B2B data solution to connect them all",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Waterfall.io",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 61.132,
+      "tokens": {
+        "input": 12063,
+        "output": 2100,
+        "reasoning": 3760
+      },
+      "cost_usd": 0.00426036
+    },
+    {
+      "purpose": "research:Waterfall.io",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 69.386,
+      "tokens": {
+        "input": 12402,
+        "output": 2014,
+        "reasoning": 4996
+      },
+      "cost_usd": 0.00485304
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 24465,
+      "output": 4114,
+      "reasoning": 8756
+    },
+    "cost_usd": 0.0091134,
+    "llm_calls": 2
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "one_line_description": {
+    "value": "Copper is a CRM that helps teams be there for their clients at every stage of the customer journey.",
+    "source_url": "https://copper.com",
+    "quote": "The CRM that helps you be there for your clients, every step of the way.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.copper.com/",
+    "quote": "The Copper Developer API (\"Dev API\") provides a RESTful interface with JSON-formatted responses to access most Copper resources.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.copper.com/",
+    "quote": "provides a RESTful interface with JSON-formatted responses",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST/JSON, broad read-write coverage of most Copper resources (leads, people, companies, opportunities, projects, tasks, activities) plus webhooks for create/update/delete",
+    "source_url": "https://developer.copper.com/",
+    "quote": "access most Copper resources",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.copper.com/",
+    "source_url": "https://developer.copper.com/",
+    "quote": "The Copper Web API allows you to access and build your own applications that interact with Copper in more complex ways than the integrations we provide out of the box.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "source_url": "https://developer.copper.com/introduction/authentication.html",
+    "quote": "There are two ways to access the Copper Developer API: API keys and OAuth2.0.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://developer.copper.com/introduction/authentication.html",
+    "quote": "To generate an API token, in the Copper web app go to System settings > API Keys and click the 'GENERATE API KEY' button.",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Any admin user in a Copper workspace can generate an API key self-serve from System settings > API Keys; no vendor approval, app review, or partner program is documented for API keys. OAuth2.0 is the preferred authentication approach for partner integrations. A Copper workspace/plan is still required, and the vendor-hosted MCP server is a separate early-access beta (launches November 2026) with no published endpoint.",
+    "source_url": "https://developer.copper.com/introduction/authentication.html",
+    "quote": "Admins can see all user generated tokens and generate new ones.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://www.copper.com/mcp",
+    "source_url": "https://www.copper.com/mcp",
+    "quote": "Yes. Copper is launching an official MCP server, built and hosted by Copper. The beta launches in November 2026.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=copper",
+    "quote": "{\"items\": [{\"slug\": \"copper\", \"name\": \"Copper\", \"app\": \"Copper\", \"tools_count\": 65}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "180 requests per minute per account (429 on exceed, rolling window); bulk APIs additionally limited to 3 requests per second; webhook notifications 600 per minute per account and 1,800 per 10 minutes, max 100 active subscriptions",
+    "source_url": "https://developer.copper.com/introduction/requests.html",
+    "quote": "All API calls are limited to 180 requests per minute. Once this limit has been reached, calls will return an error response with status code `429`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.copper.com/webhooks/overview.html",
+    "quote": "Webhooks allow systems integrated with Copper to receive near real-time notification of certain events so that data updates and workflows can be triggered.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript"
+    ],
+    "source_url": "https://docs.copper.com/copper-sdk/",
+    "quote": "yarn add copper-sdk",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Undocumented endpoints may change without notice; incompatible changes (removing versions/endpoints, new required params, removed fields) are deprecated with advance notice and supported for at least six months after announcement, with breaking changes announced alongside a migration plan and timeline; the API domain moved from api.prosperworks.com to api.copper.com/developer_api with auto-redirects until early 2022.",
+    "source_url": "https://developer.copper.com/introduction/change_policy.html",
+    "quote": "We will continue to support deprecated APIs for at least six months from the announcement to allow partners to transition their integrations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Copper exposes a public REST/JSON Developer API covering most resources, with self-serve API key generation for admin users plus OAuth2.0 for partner integrations. Documented rate limits (180 req/min), webhooks, Postman resources, and a 65-tool Composio toolkit make it straightforward to build against. No app review, partner approval, or sales contact is documented as a gate for API keys, though access presumes a Copper workspace/plan.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Whether API access requires a specific paid Copper plan tier: the plans feature-comparison support page was only available as a search snippet, not full text, and the pricing page text fetched does not state an API gating rule.",
+    "OAuth2.0 scope/permission documentation was not captured in the fetched text (developer.copper.com OAuth flow/quickstart pages appeared only as snippets), so scope documentation is unconfirmed.",
+    "No documented sandbox/test environment was found; it is unclear whether developers must test against a production Copper account.",
+    "Only the embedded 'Copper App SDK' (JavaScript, copper-sdk) is evidenced; it is unclear whether Copper publishes official server-side SDKs for other languages (the SDK docs describe an in-app context SDK, not a full Dev API client).",
+    "The official Copper MCP server is in beta (November 2026) and only accessible via an early-access/waitlist form; no MCP endpoint URL is published.",
+    "The Composio toolkit lists only API_KEY as its auth scheme, while Copper docs list both API keys and OAuth2.0.",
+    "No community MCP server URLs were retrieved (GitHub and MCP registry sections were empty), although Copper's MCP page references unspecified third-party connectors."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Copper",
+      "category": "CRM and Sales",
+      "hint": "copper.com",
+      "description": null,
+      "source_file": "01-crm-and-sales.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 16,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.copper.com/",
+        "title": "Getting started - Copper Developer API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2221
+      },
+      {
+        "url": "https://developer.copper.com/introduction/requests.html",
+        "title": "Requests - Copper Developer API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1035
+      },
+      {
+        "url": "https://developer.copper.com/introduction/authentication.html",
+        "title": "Overview - Copper Developer API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 831
+      },
+      {
+        "url": "https://www.copper.com/pricing",
+        "title": "Pricing | Copper CRM",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4999
+      },
+      {
+        "url": "https://www.copper.com/mcp",
+        "title": "Copper MCP for Claude | Copper CRM",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3120
+      },
+      {
+        "url": "https://support.copper.com/en/articles/10324524-chapter-1-where-do-i-start-here",
+        "title": "Chapter 1: Where do I start? Here. | Copper Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2026-09-21T22:37:14.000Z",
+        "chars": 4995
+      },
+      {
+        "url": "https://developer.copper.com/webhooks/overview.html",
+        "title": "Overview - Copper Developer API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3172
+      },
+      {
+        "url": "https://docs.copper.com/copper-sdk/",
+        "title": "Quick Start | Copper App SDK",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 852
+      },
+      {
+        "url": "https://developer.copper.com/introduction/change_policy.html",
+        "title": "Change Policy - Copper Developer API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4119
+      },
+      {
+        "url": "https://copper.com",
+        "title": "CRM software company for service businesses | Copper CRM",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://saascrmreview.com/copper-crm-pricing/",
+        "title": "Copper CRM Pricing 2026: Plans, Hidden Costs & TCO",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": "2026-07-03T09:24:47.000Z",
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "access_model"
+      ],
+      "queries": [
+        "\"Copper\" API pricing plans access requirements",
+        "\"Copper\" developer API free tier paid plan"
+      ],
+      "extra_urls": [
+        "https://www.copper.com/pricing",
+        "https://saascrmreview.com/copper-crm-pricing/"
+      ],
+      "tool_calls_after": 16
+    },
+    "research_seconds": 302.4
+  }
+}

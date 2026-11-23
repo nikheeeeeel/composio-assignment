@@ -1,0 +1,78 @@
+====================================================================================================
+CATEGORY 02 - Support and Helpdesk
+====================================================================================================
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   5 easy, 5 moderate, 0 hard, 0 blocked.
+   Easy: Freshdesk, Intercom, LiveAgent, Plain, Zendesk.
+   Gated / blocked: Front, Gladly, Gorgias, Help Scout, Pylon.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       5  ##########
+     moderate   5  ##########
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_trial        4  ########
+     paid_plan_required      3  ######
+     admin_approval          2  ####
+     self_serve_free         1  ##
+
+   Auth methods (apps can have several): api_key 8, oauth2 7, basic 3, bearer_token 2
+   Most common auth combination: api_key+oauth2 x3, api_key x2, api_key+basic+oauth2 x2
+   API shape: REST 9, GraphQL 1
+
+   Official MCP server: 10/10 (Freshdesk, Front, Gladly, Gorgias, Help Scout, Intercom, LiveAgent, Plain, Pylon, Zendesk).
+   Missing official MCP: none.
+   Composio toolkit match: 8/10 (Freshdesk, Front, Gorgias, Help Scout, Intercom, Plain, Pylon, Zendesk).
+   Composio gaps: Gladly, LiveAgent.
+   Human outreach required: 0/10 (none).
+
+   Evidence: 14.1/17 claims sourced on average (min 13); 10.5 official pages/app (min 8); 6.4 open questions/app (max 7 for Zendesk).
+   Confidence mix: high 108 (64%), medium 32 (19%), low 1 (1%), not_found 29 (17%).
+
+3. ANALYST READ
+   Support is split exactly down the middle: five self-serve/trial apps and five paid or
+   admin-gated apps. The striking pattern is MCP saturation - all ten have an official MCP
+   server - so MCP presence says nothing about buildability in this category. What differs
+   is credentialing: Front, Gorgias and Help Scout require a paid plan, while Gladly and
+   Pylon require administrator cooperation. Composio covers eight of ten; Gladly and
+   LiveAgent are catalog gaps.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Start with Zendesk, Intercom, Freshdesk, Plain and LiveAgent.
+   - Treat Front, Gorgias and Help Scout as paid-customer integrations; there is no free build path.
+   - Gladly and Pylon need administrator cooperation; they are outreach/partner motions.
+   - Close the Composio gaps for Gladly and LiveAgent.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Freshdesk                 easy      self_serve_trial      api_key                        Y    Y     -    13/8     
+Intercom                  easy      self_serve_free       oauth2,bearer_token            Y    Y     -    14/11    
+LiveAgent                 easy      self_serve_trial      api_key                        Y    N     -    15/11    
+Plain                     easy      self_serve_trial      api_key,oauth2                 Y    Y     -    15/11    
+Zendesk                   easy      self_serve_trial      oauth2,api_key                 Y    Y     -    15/13    
+Front                     moderate  paid_plan_required    oauth2,api_key                 Y    Y     -    14/11    
+Gladly                    moderate  admin_approval        basic                          Y    N     -    14/8     
+Gorgias                   moderate  paid_plan_required    oauth2,api_key,basic           Y    Y     -    13/11    
+Help Scout                moderate  paid_plan_required    oauth2,api_key,basic           Y    Y     -    14/11    
+Pylon                     moderate  admin_approval        api_key,bearer_token,oauth2    Y    Y     -    14/10    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Front [moderate, access=paid_plan_required, outreach=no]: API credentials require a paid Front plan plus company admin rights to create apps
+- Gladly [moderate, access=admin_approval, outreach=no]: Requires an existing Gladly org and Administrator-granted API User role.
+- Gorgias [moderate, access=paid_plan_required, outreach=no]: Requires a paid Gorgias Helpdesk account to generate API keys
+- Help Scout [moderate, access=paid_plan_required, outreach=no]: Paid Help Scout plan required for API access
+- Pylon [moderate, access=admin_approval, outreach=no]: Admin-only API token creation in a Pylon workspace; no documented self-serve free tier or sandbox
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.

@@ -1,0 +1,252 @@
+{
+  "app": "Airtable",
+  "category": "Productivity and Project Management",
+  "one_line_description": {
+    "value": "Airtable is a structured data platform whose field types, relational links, and built-in automations make it a rich data layer for AI agents and external systems.",
+    "source_url": "https://airtable.com/developers",
+    "quote": "Airtable's structured field types, relational links, and built-in automations make it a rich data layer for AI agents.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://airtable.com/developers/web/api/introduction.md",
+    "quote": "This is the reference for the Airtable API. Use the sidebar to explore the API and learn about important concepts.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://airtable.com/developers/web/api/introduction.md",
+    "quote": "The API closely follows REST semantics, uses JSON to encode objects, and relies on standard HTTP codes to signal operation outcomes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, read-write: records plus base/table/view management and enterprise admin APIs (users, share links, audit logs)",
+    "source_url": "https://support.airtable.com/articles/2022585894-airtable-enterprise-api",
+    "quote": "The Enterprise API allows teams to manage their account programmatically outside of the Admin panel UI through actions like managing users, updating access permissions, and managing bases, tables, and views.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://airtable.com/developers/web/api/introduction",
+    "source_url": "https://airtable.com/developers/web/api/introduction",
+    "quote": "This is the reference for the Airtable API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "source_url": "https://airtable.com/developers/web/api/authentication",
+    "quote": "We currently support using personal access tokens and OAuth access tokens during the authentication process.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://airtable.com/developers/web/guides/oauth-integrations",
+    "quote": "See the Scopes reference for a full list of possible scopes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://airtable.com/developers/web/api/billing-plans",
+    "quote": "Free Access to all \"Base Data\" endpoints except \"Views\" Public API limit is enforced.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "No sales contact or review: the free plan is self-serve with 1,000 API calls/month and the Team plan with 100,000/month; Enterprise API endpoints additionally require an Enterprise Scale workspace and their docs are only visible when logged into such an account.",
+    "source_url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable",
+    "quote": "Free plan: 1000 API calls per month - Team plan: 100000 API calls per month",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.airtable.com/mcp",
+    "source_url": "https://airtable.com/developers/agents/mcp/getting-started",
+    "quote": "Server URL: https://mcp.airtable.com/mcp",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=airtable",
+    "quote": "{\"items\": [{\"slug\": \"airtable\", \"name\": \"Airtable\", \"app\": \"Airtable\", \"tools_count\": 26}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "5 requests per second per base (all plans); 50 requests per second for all traffic using personal access tokens from a given user or service account; monthly 1,000 calls (Free) and 100,000 calls (Team)",
+    "source_url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable",
+    "quote": "Airtable enforces a rate limit of 5 requests per second (per base) to ensure optimal user performance across all pricing tiers.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript"
+    ],
+    "source_url": "https://airtable.com/developers/web/api/introduction.md",
+    "quote": "JavaScript: airtable.js (Node.js + browser)",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Legacy API keys were fully deprecated on 2024-02-01, requiring migration to personal access tokens or OAuth access tokens; no API version number scheme was described in the retrieved pages.",
+    "source_url": "https://airtable.com/developers/web/api/authentication",
+    "quote": "As of February 1st 2024, the deprecation period for Airtable API keys has ended.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Airtable publishes a full public REST API reference and self-serve authentication via personal access tokens or OAuth, with free-plan API access capped at 1,000 calls/month. The official MCP server at mcp.airtable.com/mcp is available on all plans, and the Composio catalog already contains a 26-tool Airtable toolkit. Only enterprise admin endpoints require an Enterprise Scale plan.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Webhooks: Airtable's Webhooks API appeared in search snippets (e.g., https://airtable.com/developers/web/api/webhooks-overview) but that page's text was not included in the SOURCES bundle, so webhooks is recorded as not_found.",
+    "Sandbox/test environment: only support-article snippets mentioning an 'app sandbox' were surfaced; no verbatim source text was bundled, so sandbox_or_test_env is not_found.",
+    "API versioning scheme: the changelog and deprecation-guidelines pages appeared in search results but their text was not bundled; only the API key deprecation notice was verifiable.",
+    "Community MCP servers: GitHub repository and MCP registry searches returned no results in this bundle, so community_mcp_servers is not_found rather than confirmed empty.",
+    "Enterprise API endpoint-level detail could not be verified because its documentation is only accessible when logged into an Enterprise Scale workspace."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Airtable",
+      "category": "Productivity and Project Management",
+      "hint": "airtable.com/developers",
+      "description": null,
+      "source_file": "08-productivity-and-project-management.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://airtable.com/developers/web/api/billing-plans",
+        "title": "Billing plans",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 918
+      },
+      {
+        "url": "https://support.airtable.com/articles/2022585894-airtable-enterprise-api",
+        "title": "Airtable Enterprise API | Airtable Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://support.airtable.com/articles/7735693959-managing-api-call-limits-in-airtable",
+        "title": "Managing API call limits in Airtable | Airtable Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://airtable.com/developers/agents/mcp/getting-started",
+        "title": "MCP server overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server",
+        "title": "Using the Airtable MCP server | Airtable Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://airtable.com/developers",
+        "title": "Airtable for agents and humans",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3954
+      },
+      {
+        "url": "https://airtable.com/developers/web/api/introduction.md",
+        "title": "API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 543
+      },
+      {
+        "url": "https://airtable.com/developers/web/api/introduction",
+        "title": "API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 543
+      },
+      {
+        "url": "https://airtable.com/developers/web/api/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3052
+      },
+      {
+        "url": "https://airtable.com/developers/web/guides/oauth-integrations",
+        "title": "OAuth integrations",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 90.66
+  }
+}

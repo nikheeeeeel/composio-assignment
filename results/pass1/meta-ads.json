@@ -1,0 +1,249 @@
+{
+  "app": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": {
+    "value": "Meta's ads and commerce APIs let businesses programmatically create and manage ads, sell products, and gather insights to optimize campaigns.",
+    "source_url": "https://developers.facebook.com/documentation/ads-commerce",
+    "quote": "Meta’s ads and commerce APIs enable businesses to programmatically create and manage ads, sell products, gather insights to optimize campaigns, and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": "The Marketing API is a collection of Graph API endpoints and other features that can be used to help you advertise across Meta technologies.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.facebook.com/docs/marketing-api/offline-conversions/",
+    "quote": "You can make the `GET` call to the Ads Pixel endpoint with `?fields=is_consolidated_container` to detect if the advertiser's dataset is consolidated and thus eligible for passing offline events using the Conversions API.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write ad management surface: the MCP server groups tools into seven categories (reporting, ad creation/management, catalog, signals/datasets, A/B tests, activity logs); the underlying Marketing API spans campaigns, ad sets, ads, creatives, insights and conversions.",
+    "source_url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+    "quote": "The server exposes tools grouped into seven categories:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.facebook.com/docs/marketing-apis",
+    "source_url": "https://developers.facebook.com/docs/marketing-apis",
+    "quote": "Marketing API | Meta | Meta for Developers",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://developers.facebook.com/docs/business-sdk/faq/",
+    "quote": "A Meta Developer Account - An Meta App ID - An Meta App Secret - A Facebook Page Access Token - An Meta Ad Account",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.facebook.com/docs/marketing-api/brand-safety-and-suitability/brand-safety-partners/",
+    "quote": "All app permissions and access are documented throughout the developer documentation.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "app_review_required",
+    "source_url": "https://developers.facebook.com/docs/marketing-api/brand-safety-and-suitability/brand-safety-partners/",
+    "quote": "These include but are not limited to the Brand Safety and Suitability capability grants, App permissions and features to access specific types of data, App review, data use checkup, data protection assessment and data handling questions.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Requires a Meta Developer account and Meta App. Access is tiered (Limited vs Full Access; Full Access qualification threshold is 500 Marketing API calls in the past 15 days). Advanced permissions and access to other businesses' data require a Business with completed Business Verification plus App Review; additional capability grants (e.g., Brand Safety and Suitability), data use checkup, and data protection assessment also apply.",
+    "source_url": "https://developers.facebook.com/docs/marketing-api/brand-safety-and-suitability/brand-safety-partners/",
+    "quote": "Apps that request advanced access for permissions and apps that allow other Businesses to access their own data must be connected to a Business that has completed Business Verification.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.facebook.com/ads",
+    "source_url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+    "quote": "The server is remote-hosted at `https://mcp.facebook.com/ads` and works with any MCP-compatible AI agent.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=metaads",
+    "quote": "{\"items\": [{\"slug\": \"metaads\", \"name\": \"Meta Ads\", \"app\": \"Meta Ads\", \"tools_count\": 99}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "PHP",
+      "Node.js",
+      "Python",
+      "Java",
+      "Ruby"
+    ],
+    "source_url": "https://developers.facebook.com/docs/business-sdk/faq/",
+    "quote": "https://github.com/facebook/facebook-php-ads-sdk https://github.com/facebook/facebook-nodejs-ads-sdk https://github.com/facebook/facebook-python-ads-sdk https://github.com/facebook/facebook-java-ads-sdk https://github.com/facebook/facebook-ruby-ads-sdk",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Numbered Graph API and Marketing API versions (e.g., v20.0, v23.0) with changes documented per release; deprecation/sunset policy not found in the provided sources.",
+    "source_url": "https://developers.facebook.com/blog/post/2025/05/29/introducing-graph-api-v23-and-marketing-api-v23/",
+    "quote": "Introducing Graph API v23.0 and Marketing API v23.0",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Meta documents a public Marketing API with broad read-write ad management, insights, catalog and conversions capabilities, official SDKs in five languages, and a Meta-hosted MCP server. Access is gated by Marketing API access tiers: Full Access uses a qualifying call volume (500 calls in the past 15 days), and advanced permissions require App Review and Business Verification plus capability grants and data use checkup. That review/verification gate makes it moderate rather than easy.",
+  "main_blocker": "App Review and Business Verification for advanced Marketing API access",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Rate limits are not documented in the provided sources; the 500-calls-in-15-days figure is an access-qualification threshold, not a rate limit.",
+    "Webhooks/event callback support is not documented in the provided sources (the Conversions API is for sending events to Meta, not receiving callbacks).",
+    "Sandbox/test environment support is not documented in the provided sources.",
+    "OAuth 2.0 authentication and OAuth scopes are not shown in the provided source text; only access token/app secret references appear. Meta MCP snippets mention OAuth, but those pages were not included in SOURCES.",
+    "Whether Limited Access to the Marketing API is self-serve/free for a developer's own ad accounts without App Review is not explicitly stated in the provided sources.",
+    "Deprecation/sunset policy beyond numbered version releases is not documented in the provided sources.",
+    "The app name 'Meta Ads' was mapped to the Meta Marketing API / advertising platform per the input hint; no conflicting product was found in the evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "developers.facebook.com/docs/marketing-apis",
+      "description": null,
+      "source_file": "04-marketing-ads-email-and-social.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.facebook.com/docs/marketing-api/brand-safety-and-suitability/brand-safety-partners/",
+        "title": "Brand safety and suitability partner setup",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/mcp/ads-mcp-server",
+        "title": "Meta Ads MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 268
+      },
+      {
+        "url": "https://developers.facebook.com/docs/marketing-api/offline-conversions/",
+        "title": "Sending Offline Events Using the Conversions API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.facebook.com/blog/post/2025/05/29/introducing-graph-api-v23-and-marketing-api-v23/",
+        "title": "Introducing Graph API v23.0 and Marketing API v23.0",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2025-05-29T00:00:00.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.facebook.com/docs/marketing-apis",
+        "title": "Marketing API | Meta | Meta for Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 649
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/ads-commerce",
+        "title": "Ads and Commerce | Meta | Meta for Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 314
+      },
+      {
+        "url": "https://developers.facebook.com/",
+        "title": "Social technologies | Meta for Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1638
+      },
+      {
+        "url": "https://developers.facebook.com/docs/business-sdk/faq/",
+        "title": "Support",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4719
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview",
+        "title": "Ads MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2007
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 169.52
+  }
+}

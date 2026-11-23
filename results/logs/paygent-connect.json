@@ -1,0 +1,382 @@
+{
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "slug": "paygent-connect",
+  "started_at": "2026-11-23T16:04:35.145710+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T16:10:21.336314+00:00",
+  "duration_s": 346.19,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/paygent-connect.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Paygent Connect\" pricing plans API access enterprise developer",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.364,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Paygent Connect\" official API documentation developer reference",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.512,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Paygent Connect\" MCP server official Model Context Protocol",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.513,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Paygent Connect\" API authentication OAuth API key documentation",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.615,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Paygent Connect\" official SDK client libraries developer",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.11,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Paygent Connect\" API webhooks events callbacks documentation",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.375,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Paygent Connect\" API sandbox test environment staging developer",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.526,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Paygent Connect\" API rate limits throttling quota documentation",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.937,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Paygent Connect\" API versioning deprecation sunset policy",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.692,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Paygent Connect"
+      },
+      "ok": true,
+      "duration_s": 0.034,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Paygent Connect MCP"
+      },
+      "ok": true,
+      "duration_s": 0.869,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "GITHUB_REPO",
+      "source": "github_api",
+      "purpose": "mcp_github",
+      "arguments": {
+        "url": "https://github.com/Subodh26oct/composio-api-research-agent/blob/refs/heads/main/research_agent.py"
+      },
+      "ok": true,
+      "duration_s": 0.928,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://github.com/Subodh26oct/composio-api-research-agent/blob/refs/heads/main/research_agent.py",
+          "https://www.gopaygent.com/",
+          "https://composio-research-agent-sandy.vercel.app/",
+          "https://paymanai.mintlify.app/reference/keys",
+          "https://gitlab.shiawasedo.co.jp/external/paygent-connect/-/blob/master/src/paygent_module/modenv_properties.php.sandbox"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 4.252,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Paygent Connect\" API pricing plans access requirements",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.697,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 15,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Paygent Connect\" developer API free tier paid plan",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.237,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 16,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Paygent Connect\" official MCP server",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.919,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 17,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Paygent Connect\" model context protocol server vendor",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.276,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 18,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://composio-research-agent-sandy.vercel.app/",
+          "https://github.com/Subodh26oct/composio-api-research-agent/blob/refs/heads/main/research_agent.py",
+          "https://www.gopaygent.com/",
+          "https://api.paygent.tech/docs"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 8.309,
+      "result_count": 4,
+      "error": null
+    }
+  ],
+  "tool_call_count": 18,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://github.com/Subodh26oct/composio-api-research-agent/blob/refs/heads/main/research_agent.py",
+      "title": "heads/main/research_agent.py",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.gopaygent.com/",
+      "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 4992
+    },
+    {
+      "url": "https://composio-research-agent-sandy.vercel.app/",
+      "title": "Composio: Product Internship Assignment",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://paymanai.mintlify.app/reference/keys",
+      "title": "Keys and environments",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://gitlab.shiawasedo.co.jp/external/paygent-connect/-/blob/master/src/paygent_module/modenv_properties.php.sandbox",
+      "title": "src/paygent_module/modenv_properties.php.sandbox · master · Public group / paygent-connect · GitLab",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 99
+    },
+    {
+      "url": "https://api.paygent.tech/docs",
+      "title": "Docs, Paygent",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Paygent Connect",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 56.075,
+      "tokens": {
+        "input": 9909,
+        "output": 1622,
+        "reasoning": 3893
+      },
+      "cost_usd": 0.00384242
+    },
+    {
+      "purpose": "research:Paygent Connect",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 127.698,
+      "tokens": {
+        "input": 12135,
+        "output": 1879,
+        "reasoning": 10798
+      },
+      "cost_usd": 0.0075473
+    },
+    {
+      "purpose": "research:Paygent Connect:schema-retry",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 127.113,
+      "tokens": {
+        "input": 11361,
+        "output": 1719,
+        "reasoning": 11626
+      },
+      "cost_usd": 0.00777752
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 33405,
+      "output": 5220,
+      "reasoning": 26317
+    },
+    "cost_usd": 0.01916724,
+    "llm_calls": 3
+  }
+}

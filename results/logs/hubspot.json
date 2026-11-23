@@ -1,0 +1,352 @@
+{
+  "app": "HubSpot",
+  "category": "CRM and Sales",
+  "slug": "hubspot",
+  "started_at": "2026-11-23T15:34:56.713722+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:37:01.577060+00:00",
+  "duration_s": 124.87,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/hubspot.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"HubSpot\" API authentication OAuth API key documentation site:hubspot.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.462,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"HubSpot\" API rate limits throttling quota documentation site:hubspot.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.486,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"HubSpot\" pricing plans API access enterprise developer site:hubspot.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 8.737,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"HubSpot\" API sandbox test environment staging developer site:hubspot.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.05,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"HubSpot\" MCP server official Model Context Protocol site:hubspot.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 11.043,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"HubSpot\" official SDK client libraries developer site:hubspot.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.15,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"HubSpot\" API webhooks events callbacks documentation site:hubspot.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 9.924,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"HubSpot\" official API documentation developer reference site:hubspot.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 16.575,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"HubSpot\" API versioning deprecation sunset policy site:hubspot.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 8.761,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "HubSpot"
+      },
+      "ok": true,
+      "duration_s": 0.042,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "HubSpot MCP"
+      },
+      "ok": true,
+      "duration_s": 0.979,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines",
+          "https://developers.hubspot.com/ai-tools/mcp",
+          "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server",
+          "https://developers.hubspot.com/docs/api-reference/latest/webhooks/guide",
+          "https://developers.hubspot.com/docs/getting-started/account-types"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.005,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developers.hubspot.com/docs/api-reference/latest/overview",
+          "https://developers.hubspot.com/docs",
+          "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+          "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/working-with-oauth",
+          "https://developers.hubspot.com/docs/developer-tooling/platform/apis-by-tier"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.305,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://hubspot.com"
+      },
+      "ok": true,
+      "duration_s": 1.645,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 14,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://hubspot.com"
+  ],
+  "sources": [
+    {
+      "url": "https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines",
+      "title": "API usage guidelines and limits",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.hubspot.com/ai-tools/mcp",
+      "title": "HubSpot MCP Server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/build-with-ai/remote-mcp-server",
+      "title": "Using the HubSpot MCP server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3500
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/api-reference/latest/webhooks/guide",
+      "title": "Webhooks API guide",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/getting-started/account-types",
+      "title": "HubSpot Account Types",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4919
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "title": "2026-09 API reference",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1532
+    },
+    {
+      "url": "https://developers.hubspot.com/docs",
+      "title": "HubSpot Developer Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1960
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+      "title": "Authentication overview",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/working-with-oauth",
+      "title": "Working with OAuth",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.hubspot.com/docs/developer-tooling/platform/apis-by-tier",
+      "title": "APIs by tier",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1163
+    },
+    {
+      "url": "https://www.hubspot.com/",
+      "title": "HubSpot | Software & Tools for your Business - Homepage",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:HubSpot",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 95.664,
+      "tokens": {
+        "input": 13955,
+        "output": 2091,
+        "reasoning": 6546
+      },
+      "cost_usd": 0.00582036
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 13955,
+      "output": 2091,
+      "reasoning": 6546
+    },
+    "cost_usd": 0.00582036,
+    "llm_calls": 1
+  }
+}

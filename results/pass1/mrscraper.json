@@ -1,0 +1,254 @@
+{
+  "app": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": {
+    "value": "MrScraper is a web scraping platform for extracting website data with AI scrapers and workflows.",
+    "source_url": "https://docs.mrscraper.com",
+    "quote": "Discover how our powerful scraping platform can transform the way you extract data.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.mrscraper.com/docs/api/overview",
+    "quote": "The MrScraper API provides a powerful and flexible way to programmatically scrape web pages and retrieve structured data. Built on REST principles, our API offers predictable resource-oriented URLs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.mrscraper.com/docs/api/overview",
+    "quote": "Built on REST principles, our API offers predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST; seven SDK-exposed services (scrape HTML/Markdown/screenshot, brand, structured JSON, web search, account status) plus Platform API and Analytics; read-write scraping and extraction",
+    "source_url": "https://docs.mrscraper.com/docs/integrations/node",
+    "quote": "The official `@mrscraper/sdk` package is an async JavaScript and TypeScript client for the seven MrScraper services.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.mrscraper.com/docs/api/overview",
+    "source_url": "https://docs.mrscraper.com/docs/api/overview",
+    "quote": "Comprehensive documentation for MrScraper's API endpoints, including authentication, pagination, error handling, and scraper management.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "bearer_token",
+      "oauth2"
+    ],
+    "source_url": "https://docs.mrscraper.com/docs/api/authentication",
+    "quote": "The MrScraper API uses API token authentication to secure all endpoints. Every request must include a valid API token in the HTTP request headers.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "quote": "Your client follows the OAuth 2.1 challenge, opens MrScraper in your browser, and asks you to approve `scrape:read` for the six scraping and search tools and `account:read` for `status`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.mrscraper.com/docs/getting-started/billing",
+    "quote": "The Free plan includes 100 tokens per month with no credit card required.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free self-serve plan includes 100 tokens/month with no credit card; when exhausted, users must upgrade. Paid Scraper Pro (200,000 tokens, 100 concurrent requests) and Enterprise add capacity and residential proxies. API tokens are created in the dashboard at app.mrscraper.com/api-tokens.",
+    "source_url": "https://docs.mrscraper.com/docs/getting-started/billing",
+    "quote": "Once your allocation is exhausted, you'll need to upgrade to continue scraping.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.mrscraper.com/mcp",
+    "source_url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+    "quote": "MrScraper MCP is the official Model Context Protocol server for MrScraper.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=mrscraper",
+    "quote": "{\"items\": [{\"slug\": \"mrscraper\", \"name\": \"MrScraper\", \"app\": \"MrScraper\", \"tools_count\": 11}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Concurrent requests: 10 (Free), 100 (Pro), Custom (Enterprise); no numeric per-second request rate limit documented",
+    "source_url": "https://docs.mrscraper.com/docs/getting-started/billing",
+    "quote": "| Concurrent Requests | 10 | 100 | Custom |",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.mrscraper.com/docs/integrations/webhook",
+    "quote": "Webhooks let you automatically send HTTP requests to another API when specific events happen in your scraper — such as when a scrape starts, completes, or fails.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://docs.mrscraper.com/docs/getting-started/scraper-api",
+    "quote": "The Scraper API lets you build, test, and validate scraping requests without writing any code.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript/TypeScript (Node.js)"
+    ],
+    "source_url": "https://docs.mrscraper.com/docs/integrations/node",
+    "quote": "The official `@mrscraper/sdk` package is an async JavaScript and TypeScript client for the seven MrScraper services.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "API paths use /api/v1/ (seen in authentication examples); no published API versioning or deprecation/sunset policy was found in the evidence.",
+    "source_url": "https://docs.mrscraper.com/docs/api/authentication",
+    "quote": "https://api.app.mrscraper.com/api/v1/subscription-accounts",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Official docs describe a public REST API with API-token authentication, webhooks, SDKs, and an official hosted MCP server. API credentials are self-serve: the free plan provides tokens monthly with no credit card required, and tokens are created directly in the dashboard. Paid plans are only needed for higher volume, so initial integration is easy.",
+  "main_blocker": "Free-plan token allowance is small (100 tokens/month); production volume requires a paid plan.",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Per-second/request-rate limits are not documented; only concurrent-request limits (10 Free / 100 Pro / custom Enterprise) appear in the plans table.",
+    "The Billing page table lists '1,000 token' for Free API Tokens while the same page states the Free plan includes 100 tokens per month; the exact free allowance needs confirmation.",
+    "No separate sandbox/staging base URL or test credentials are documented; the in-dashboard Scraper API playground appears to be the testing mechanism.",
+    "API versioning and deprecation/sunset policy are not documented beyond /api/v1/ paths.",
+    "Python SDK (mrscraper-sdk) and LangChain integration appear in search results, but their full documentation pages were not included in the evidence bundle, so the SDK language list may be incomplete.",
+    "No community MCP servers were found in the evidence; MCP registry results were empty."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "hint": "docs.mrscraper.com",
+      "description": null,
+      "source_file": "06-data-seo-and-scraping.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/billing",
+        "title": "Billing | MrScraper Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3079
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/api-token",
+        "title": "Token Plan | MrScraper Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://mrscraper.com/blog/ai-agent-api-authentication",
+        "title": "Authenticate Web Data Tools for AI Agents Without Exposing Secrets | MrScraper",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2026-10-15T08:04:29.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/integrations/webhook",
+        "title": "Webhook | MrScraper Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/scraper-api",
+        "title": "Scraper API | MrScraper Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.mrscraper.com",
+        "title": "Overview | MrScraper Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/api/overview",
+        "title": "API Overview | MrScraper Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1740
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/integrations/node",
+        "title": "Node.js SDK | MrScraper Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/api/authentication",
+        "title": "Authentication | MrScraper Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2625
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+        "title": "MCP Server | MrScraper Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 138.16
+  }
+}

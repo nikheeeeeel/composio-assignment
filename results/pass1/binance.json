@@ -1,0 +1,285 @@
+{
+  "app": "Binance",
+  "category": "Finance and Fintech",
+  "one_line_description": {
+    "value": "Binance is a cryptocurrency exchange offering spot trading, staking, wallet, NFT, pay, mining and more, with public APIs for market data and account/trading access.",
+    "source_url": "https://nirholas.github.io/Binance-MCP/",
+    "quote": "MCP server for Binance exchange - spot trading, staking, wallet, NFT, pay, mining, and more",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://binance.github.io/binance-api-swagger/",
+    "quote": "OpenAPI Specifications for the Binance Public Spot API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://binance-docs.github.io/apidocs/delivery_testnet/cn/",
+    "quote": "本篇列出REST接口的baseurl https://testnet.binancefuture.com - 所有接口的响应都是JSON格式",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Large read-write surface: 28 official product connector packages (Spot, Margin, COIN-M/USDS-M Futures, Options, Portfolio Margin, Wallet, Sub-Account, Simple Earn, Staking, Mining, Pay, Convert, Copy Trading), with endpoints classified MARKET_DATA, USER_DATA, TRADE and USER_STREAM.",
+    "source_url": "https://binance.github.io/binance-connector-js/",
+    "quote": "- @binance/derivatives-trading-coin-futures - Derivatives Trading (COIN-M Futures) connector - @binance/derivatives-trading-options - Derivatives Trading (Options) connector",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.binance.com/docs/binance-spot-api-docs",
+    "source_url": "https://binance-docs.github.io/apidocs/spot/en/",
+    "quote": "Redirecting to https://developers.binance.com/docs/binance-spot-api-docs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "other"
+    ],
+    "source_url": "https://binance-docs.github.io/apidocs/delivery_testnet/cn/",
+    "quote": "API-KEY所对应的API-Secret作为 `HMAC SHA256` 的密钥,其他所有参数作为`HMAC SHA256`的操作对象,得到的输出即为签名。",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://www.binance.com/en-UZ/research/analysis/binance-intelligence-a-first-look-at-next-gen-finance",
+    "quote": "Four scopes: market data, account, trade (Spot, Margin, Convert, USDⓈ-M and COIN-M Futures) and transfers within the sub-account.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://binance-docs.github.io/apidocs/delivery_testnet/cn/",
+    "quote": "可以在网页用户中心修改API-key 所具有的权限,例如读取账户信息、发送交易指令、发送提现指令",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve: register a Binance account, create API key/secret and toggle per-key permissions (read account, trade, withdraw) in the web user center, signing requests with HMAC-SHA256. Documented testnets exist (Spot: testnet.binance.vision per the OpenAPI servers; Futures: testnet.binancefuture.com). No plan-tier, app-review, partner, or sales-contact gate appears in the evidence; production use additionally requires a funded account (not documented in captured sources). Brokerage/Binance Link sub-account API-key endpoints are a separate broker-oriented API.",
+    "source_url": "https://binance.github.io/binance-api-swagger/",
+    "quote": "https://api.binance.comhttps://testnet.binance.vision",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://www.binance.com/en-UZ/research/analysis/binance-intelligence-a-first-look-at-next-gen-finance",
+    "source_url": "https://www.binance.com/en-UZ/research/analysis/binance-intelligence-a-first-look-at-next-gen-finance",
+    "quote": "Binance MCP Server: one endpoint URL plus an authorization flow connects a supported agent. No API keys are stored locally.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": [
+      "https://nirholas.github.io/Binance-MCP/",
+      "https://chrisleekr.github.io/binance-trading-bot/operations/ai-agents/"
+    ],
+    "source_url": "https://nirholas.github.io/Binance-MCP/",
+    "quote": "MCP server for Binance exchange - spot trading, staking, wallet, NFT, pay, mining, and more",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Binance",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Binance\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "IP-based (not per API key); HTTP 429 warning then HTTP 418 IP ban; repeat violations extend bans from 2 minutes up to 3 days. Per-endpoint request weights and order-rate limits are also documented via the rateLimits array in exchangeInfo and the X-MBX-USED-WEIGHT-(intervalNum)(intervalLetter) header.",
+    "source_url": "https://binance-docs.github.io/apidocs/delivery_testnet/cn/",
+    "quote": "频繁违反限制,封禁时间会逐渐延长 ,对于重复违反者,将会被封从2分钟到3天。 - 访问限制是基于IP的,而不是API Key",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": false,
+    "source_url": "https://binance-docs.github.io/apidocs/delivery_testnet/en/",
+    "quote": "Start User Data Stream (USER_STREAM) - Keepalive User Data Stream (USER_STREAM) - Close User Data Stream (USER_STREAM)",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://binance-docs.github.io/apidocs/delivery_testnet/en/",
+    "quote": "The base endpoint is: https://testnet.binancefuture.com",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "TypeScript",
+      "JavaScript"
+    ],
+    "source_url": "https://binance.github.io/binance-connector-js/",
+    "quote": "Collection of auto-generated TypeScript connectors for Binance APIs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned REST paths (e.g., /sapi/v1, /sapi/v2, /sapi/v3 per product); deprecations announced in a change log with a notice window before removal — legacy broker endpoints 'will be deleted in a month' with migration to v3 urged. Official connector docs also state legacy unified connector packages remain available only 'for a limited time'.",
+    "source_url": "https://binance-docs.github.io/Brokerage-API/Change_Log/",
+    "quote": "Following endpoints will be deleted in a month: `GET /sapi/v1/broker/subAccount/futuresSummary`,`GET /sapi/v2/broker/subAccount/futuresSummary`. Please migrate the usage of legacy version(v1&v2) to the new (v3) version as soon as possible.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Binance publishes broad public REST and WebSocket documentation (Spot OpenAPI spec, Futures API docs, 28 official connector packages) and developers obtain key/secret credentials self-serve from the account user center with HMAC-SHA256 signing. Documented testnets exist for Spot and Futures, and no plan-tier, app-review, or sales-contact gate appears in the evidence. Only routine friction remains: request signing and per-IP weight-based rate limits.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Input hint binance-docs.github.io is unreliable: the root https://binance-docs.github.io returns a GitHub Pages 404, and /apidocs/spot/en/ only shows a redirect to https://developers.binance.com/docs/binance-spot-api-docs; the canonical first-party docs site was not directly captured.",
+    "The Binance MCP Server is only described in an official Binance research article; no dedicated developer documentation page or concrete MCP endpoint URL was captured, so official_mcp_server cites the announcement page (endpoint likely per-agent/undisclosed).",
+    "Whether the Agent OS / Binance MCP Server authorization flow is OAuth 2.0 specifically is not stated; 'four scopes' is the only scope documentation found, while core REST APIs use API key + HMAC-SHA256 with no OAuth scopes documented.",
+    "Exact numeric rate-limit caps (e.g., request weight per minute per IP) were not enumerated in the captured text; the concrete weight values live in exchangeInfo rateLimits on the Futures docs.",
+    "No pricing/plans page was captured, so self_serve_free is inferred from documented self-service API-key management in the user center; whether a verified/KYC account or minimum balance is required for production API keys is not documented in the evidence.",
+    "Webhooks are marked false because only WebSocket market/user data streams (listenKey) are documented; absence of any HTTP webhook/callback product should be confirmed on the canonical docs site.",
+    "Only the JavaScript/TypeScript official connector suite was captured; other official Binance SDKs (e.g., Python) may exist but were not in the evidence.",
+    "Versioning/deprecation evidence comes from the Binance Link (Brokerage) API change log; the Spot/Futures general deprecation and sunset policy was not captured.",
+    "Two MCP pages tagged OFFICIAL=yes in the search bundle (nirholas.github.io, chrisleekr.github.io) are clearly third-party projects and were treated as community servers.",
+    "Composio catalog search for 'Binance' returned zero toolkits (items: []), so composio_toolkit_exists=false."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Binance",
+      "category": "Finance and Fintech",
+      "hint": "binance-docs.github.io",
+      "description": null,
+      "source_file": "09-finance-and-fintech.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 17,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://binance.github.io/binance-api-swagger/",
+        "title": "Swagger UI",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://binance-docs.github.io/apidocs/spot/en/",
+        "title": "Redirecting to https://developers.binance.com/docs/binance-spot-api-docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 146
+      },
+      {
+        "url": "https://binance-docs.github.io/apidocs/delivery_testnet/cn/",
+        "title": "Binance API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://binance-docs.github.io/apidocs/delivery_testnet/en/",
+        "title": "Binance API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://nirholas.github.io/Binance-MCP/",
+        "title": "Binance-MCP documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1394
+      },
+      {
+        "url": "https://chrisleekr.github.io/binance-trading-bot/operations/ai-agents/",
+        "title": "AI agents (MCP) - Binance Trading Bot",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://binance.github.io/binance-connector-js/",
+        "title": "Binance Connector JS",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3699
+      },
+      {
+        "url": "https://binance-docs.github.io/Brokerage-API/Change_Log/",
+        "title": "Change Log - Binance Link API Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://binance-docs.github.io",
+        "title": "Site not found · GitHub Pages",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 248
+      },
+      {
+        "url": "https://www.binance.com/en-UZ/research/analysis/binance-intelligence-a-first-look-at-next-gen-finance",
+        "title": "Binance Intelligence: A First Look At Next-Gen Finance",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": "2026-10-13T12:53:19.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://wealthmcp.ai/vendors/binance",
+        "title": "Does Binance have an MCP server? (2026)",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 1509
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://binance-docs.github.io"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Binance\" official MCP server",
+        "\"Binance\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://www.binance.com/en-UZ/research/analysis/binance-intelligence-a-first-look-at-next-gen-finance",
+        "https://wealthmcp.ai/vendors/binance"
+      ],
+      "tool_calls_after": 17
+    },
+    "research_seconds": 338.91
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "app": "Help Scout",
+  "category": "Support and Helpdesk",
+  "one_line_description": {
+    "value": "AI-driven customer support platform for customer-first brands.",
+    "source_url": "https://www.helpscout.com/",
+    "quote": "Help Scout: The AI-driven support platform for customer-first brands",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.helpscout.com/mailbox-api/",
+    "quote": "This is an HTTPS-only API, with OAuth 2 authentication and CORS support running at:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.helpscout.com/mailbox-api/overview/rate-limiting/",
+    "quote": "Write requests (`POST`, `PUT`, `DELETE`, `PATCH`) count as 2 requests toward the rate limit.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Multiple product APIs: read-write Inbox API 2.0, read-write Docs API, Chat API, and webhooks; endpoint/resource count not documented in fetched pages.",
+    "source_url": "https://developer.helpscout.com/",
+    "quote": "Inbox API - read and write data to Help Scout inboxes",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.helpscout.com/",
+    "source_url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "quote": "The full Help Scout Developer documentation is at https://developer.helpscout.com/",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "basic"
+    ],
+    "source_url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+    "quote": "This is an HTTPS-only API and it uses OAuth 2.0 authorization, implementing Authorization Code and Client Credential flows.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "quote": "The Free plan does not include access to the API or integrations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access requires a paid plan: Standard (200 calls/min, no reporting endpoints), Plus, or Pro (all endpoints). The Free plan excludes API and integrations. Inbox API uses OAuth 2.0; Docs API uses a per-user API key sent via HTTP Basic. No sales contact or partner approval is documented.",
+    "source_url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "quote": "Each paid Help Scout plan has different levels of API access.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.helpscout.net/mcp",
+    "source_url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+    "quote": "Set the remote MCP server URL to `https://mcp.helpscout.net/mcp` .",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=help_scout",
+    "quote": "{\"items\": [{\"slug\": \"help_scout\", \"name\": \"Help Scout\", \"app\": \"Help Scout\", \"tools_count\": 129}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Inbox API: Standard up to 200 calls/min, Plus up to 400 calls/min, Pro up to 800 calls/min; write requests and v3 search calls count as 2 requests. Docs API: 2,000 requests/10 min (1 site), 3,000 (2 sites), 4,000 (3+ sites).",
+    "source_url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "quote": "| Standard | Up to 200 calls per minute | No access to reporting endpoints | | Plus | Up to 400 calls per minute | All endpoints available | | Pro | Up to 800 calls per minute | All endpoints available |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.helpscout.com/webhooks/",
+    "quote": "Webhooks enable Help Scout to call a script on your server when one or more events have happened.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "PHP"
+    ],
+    "source_url": "https://developer.helpscout.com/mailbox-api/",
+    "quote": "Version 2.0 of our PHP SDK client has been updated to support Inbox API 2.0.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Inbox API 2.0 is the current generation; vendor states it will not introduce breaking changes and will add features/endpoints over time, with updates tracked in a public changelog.",
+    "source_url": "https://developer.helpscout.com/mailbox-api/",
+    "quote": "While we won’t introduce any breaking changes, we plan on adding new features and new endpoints over time. Our changelog can be monitored to see when and how the API was updated.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Help Scout documents broad read-write APIs (Inbox API 2.0, Docs API, Chat API, webhooks) plus a vendor-operated MCP server, so the integration surface is substantial. However, credentials are gated by plan tier: 'The Free plan does not include access to the API or integrations,' and API access starts on paid Standard/Plus/Pro plans. No sales contact or partner review is required, so it is moderate rather than hard.",
+  "main_blocker": "Paid Help Scout plan required for API access",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Whether OAuth scopes/permissions are documented for the Inbox API is not evidenced; only user-role permissions are described (e.g., the Docs API key permission 'Docs: Create new, edit settings & Collections').",
+    "No documented sandbox or test environment was found in the fetched pages; confirm whether test accounts/mailboxes are available.",
+    "Official SDKs beyond PHP may exist, but the API clients page was not fetched; only the PHP SDK is evidenced as vendor-maintained.",
+    "Endpoint/resource count for Inbox API 2.0 is not stated in the fetched pages, so api_breadth is qualitative.",
+    "No community/third-party MCP servers were found in the provided evidence (MCP registry results: none); a dedicated registry search may be needed.",
+    "api_type 'REST' is inferred from documented HTTP verbs and endpoint structure; no fetched page explicitly labels the API as REST.",
+    "Legacy Mailbox API 1.0 deprecation (November 20, 2019) appeared only in a search snippet, not in a fetched source, so it was excluded from the versioning claim."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Help Scout",
+      "category": "Support and Helpdesk",
+      "hint": "helpscout.com",
+      "description": null,
+      "source_file": "02-support-and-helpdesk.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.helpscout.com/",
+        "title": "Help Scout Developers - API Documentation\n      \n      | Help Scout Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1085
+      },
+      {
+        "url": "https://developer.helpscout.com/mailbox-api/",
+        "title": "Inbox API 2.0\n      \n      | Help Scout Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1044
+      },
+      {
+        "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+        "title": "Authentication\n      \n      | Help Scout Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.helpscout.com/docs-api/",
+        "title": "Docs API Overview\n      \n      | Help Scout Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4226
+      },
+      {
+        "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+        "title": "Help Scout's Inbox API, Docs API, Beacon JavaScript, Apps, and Open Source Tools - Help Scout Support",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2286
+      },
+      {
+        "url": "https://developer.helpscout.com/mailbox-api/overview/rate-limiting/",
+        "title": "Rate limiting\n      \n      | Help Scout Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 933
+      },
+      {
+        "url": "https://docs.helpscout.com/article/1779-connect-your-ai-agent-with-help-scout-to-search-conversations-and-pull-reports",
+        "title": "Connect your AI Agent to Help Scout via MCP - Help Scout Support",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.helpscout.com/category/1567-connectors",
+        "title": "Connectors - Help Scout Support",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 284
+      },
+      {
+        "url": "https://developer.helpscout.com/webhooks/",
+        "title": "Webhooks\n      \n      | Help Scout Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.helpscout.com/beacon-2/web/developer-tools/",
+        "title": "Beacon Developer Tools\n      \n      | Help Scout Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 320
+      },
+      {
+        "url": "https://www.helpscout.com/",
+        "title": "Help Scout: The AI-driven support platform for customer-first brands",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 4686
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://helpscout.com"
+    ],
+    "refinement": {},
+    "research_seconds": 133.76
+  }
+}

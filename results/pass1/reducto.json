@@ -1,0 +1,266 @@
+{
+  "app": "Reducto",
+  "category": "AI, Research and Media-native",
+  "one_line_description": {
+    "value": "Reducto is an agentic document platform whose API parses documents like a human would, capturing complex layouts, tables, and formatting with bounding-box citations.",
+    "source_url": "https://reducto.ai",
+    "quote": "Reducto parse r-1 reads documents like a human would—capturing complex layouts, tables, and formatting with high accuracy and bounding-box citations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.reducto.ai/agent-guide",
+    "quote": "| No SDK | REST | `POST https://platform.reducto.ai/parse` |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.reducto.ai/agent-guide",
+    "quote": "| No SDK | REST | `POST https://platform.reducto.ai/parse` |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, ~8 core sync endpoints (parse, extract, split, classify, edit, upload, job) plus async variants; read-write",
+    "source_url": "https://docs.reducto.ai/agent-guide",
+    "quote": "| Upload a local file | `/upload` | multipart `file` | | Run in the background | `/parse_async`, `/extract_async`, `/split_async`, `/classify_async`, `/edit_async` | `webhook` |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.reducto.ai/quickstart",
+    "source_url": "https://docs.reducto.ai/quickstart",
+    "quote": "Create an API key in Reducto Studio (https://studio.reducto.ai) under API Keys.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "bearer_token",
+      "oauth2"
+    ],
+    "source_url": "https://docs.reducto.ai/mcp-server",
+    "quote": "{ \"mcpServers\": { \"reducto\": { \"type\": \"http\", \"url\": \"https://mcp.reducto.ai/mcp\", \"headers\": { \"Authorization\": \"Bearer your-api-key\" } } } }",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://docs.reducto.ai/security/workload-identity-federation/reference",
+    "quote": "Reducto ignores `scope`, `resource`, `audience` and `requested_token_type` if you send them.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.reducto.ai/quickstart",
+    "quote": "Sign up for a free account without leaving the docs. Sign up or sign in at https://studio.reducto.ai.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free self-serve Studio account with API key creation in Studio (no sales contact needed); paid Growth/Enterprise tiers gate higher page concurrency, SSO/SAML, HIPAA BAA, VPC/on-prem, and custom SLAs.",
+    "source_url": "https://docs.reducto.ai/quickstart",
+    "quote": "Sign up for a free account without leaving the docs. Sign up or sign in at https://studio.reducto.ai.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.reducto.ai/mcp",
+    "source_url": "https://docs.reducto.ai/mcp-server",
+    "quote": "The hosted server runs at `https://mcp.reducto.ai/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Reducto",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Reducto\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "1,000 req/s sustained for all endpoints; 300 req/s for GET /job/{job_id}; plus per-tier page concurrency caps (r-1 Standard: 500 US / 250 EU)",
+    "source_url": "https://docs.reducto.ai/reference/rate-limits",
+    "quote": "| All endpoints | 1,000 req/s sustained | `{\"message\": \"[CODE 1000] rate limit exceeded, retry with exponential backoff\"}` | | `GET /job/{job_id}` | 300 req/s sustained |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.reducto.ai/workflows/svix-webhooks",
+    "quote": "Works with all async endpoints: `/parse_async`, `/extract_async`, `/split_async`, `/pipeline_async`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "python",
+      "javascript",
+      "go"
+    ],
+    "source_url": "https://docs.reducto.ai/agent-guide",
+    "quote": "The Python, Node.js, and Go SDKs read `REDUCTO_API_KEY` from the environment.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Reducto publishes a full REST API reference with parse, extract, split, classify, edit, upload, async and job endpoints, plus Python, Node.js and Go SDKs and a hosted MCP server. Credentials are self-serve: the quickstart says to sign up for a free account at studio.reducto.ai and create an API key under API Keys. Documented rate limits and Svix/direct webhooks round out the integration surface; only enterprise capabilities require sales.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No documented sandbox/test environment was found; only a free Studio account with sample documents is described, so sandbox_or_test_env is left not_found.",
+    "API versioning/deprecation/sunset policy was not present in the SOURCES text (the version-pinning and model-versions pages appeared in search results only), so versioning notes are not_found.",
+    "OAuth scope/permission model is not documented; the token-exchange reference states that scope, resource, audience and requested_token_type are ignored.",
+    "No community/third-party MCP servers appeared in the evidence; the uvx mcp-server-reducto package and hosted mcp.reducto.ai endpoint are vendor-operated.",
+    "Exact free-tier usage allowance (~$150) appears only in a pricing search snippet, not in the fetched SOURCES text, so it was not used as a claim."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Reducto",
+      "category": "AI, Research and Media-native",
+      "hint": "reducto.ai",
+      "description": "document parsing",
+      "source_file": "10-ai-research-and-media-native.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.reducto.ai/quickstart",
+        "title": "API Quickstart",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.reducto.ai/agent-guide",
+        "title": "Reducto API Reference for Coding Agents",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.reducto.ai/security/workload-identity-federation",
+        "title": "Workload identity federation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.reducto.ai/security/workload-identity-federation/reference",
+        "title": "Token exchange reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.reducto.ai/enterprise/enterprise-readiness",
+        "title": "Enterprise Readiness",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4548
+      },
+      {
+        "url": "https://docs.reducto.ai/reference/credit-usage",
+        "title": "Usage and Pricing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3693
+      },
+      {
+        "url": "https://docs.reducto.ai/reference/rate-limits",
+        "title": "Rate Limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3361
+      },
+      {
+        "url": "https://docs.reducto.ai/mcp-server",
+        "title": "Reducto MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.reducto.ai/workflows/svix-webhooks",
+        "title": "Svix Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.reducto.ai/studio-account",
+        "title": "Account & Settings",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://reducto.ai",
+        "title": "Reducto: The Agentic Document Platform for AI Teams",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://reducto.ai"
+    ],
+    "refinement": {},
+    "research_seconds": 109.26
+  }
+}

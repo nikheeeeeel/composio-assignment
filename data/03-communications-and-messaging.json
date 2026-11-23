@@ -1,0 +1,62 @@
+{
+  "category": "Communications and Messaging",
+  "categoryNumber": 3,
+  "source": {
+    "spreadsheet": "composio-research",
+    "sheet": "Sheet1",
+    "url": "https://docs.google.com/spreadsheets/d/18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8/edit"
+  },
+  "appCount": 10,
+  "apps": [
+    {
+      "number": 21,
+      "app": "Slack",
+      "hint": "slack.com"
+    },
+    {
+      "number": 22,
+      "app": "Twilio",
+      "hint": "twilio.com"
+    },
+    {
+      "number": 23,
+      "app": "Zoho Cliq",
+      "hint": "zoho.com/cliq"
+    },
+    {
+      "number": 24,
+      "app": "Lark (Larksuite)",
+      "hint": "open.larksuite.com"
+    },
+    {
+      "number": 25,
+      "app": "Pumble",
+      "hint": "pumble.com"
+    },
+    {
+      "number": 26,
+      "app": "Discord",
+      "hint": "discord.com"
+    },
+    {
+      "number": 27,
+      "app": "Telegram",
+      "hint": "core.telegram.org"
+    },
+    {
+      "number": 28,
+      "app": "WhatsApp Business",
+      "hint": "developers.facebook.com/docs/whatsapp"
+    },
+    {
+      "number": 29,
+      "app": "Aircall",
+      "hint": "aircall.io"
+    },
+    {
+      "number": 30,
+      "app": "Vonage",
+      "hint": "developer.vonage.com"
+    }
+  ]
+}

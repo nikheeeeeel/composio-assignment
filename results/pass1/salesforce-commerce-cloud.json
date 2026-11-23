@@ -1,0 +1,269 @@
+{
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "one_line_description": {
+    "value": "Salesforce Commerce Cloud provides B2B/D2C and B2C commerce solutions, with the B2C Commerce API (SCAPI) used to build headless commerce experiences.",
+    "source_url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Salesforce Commerce Cloud offers distinct solutions for B2B/D2C (business-to-business and direct-to-consumer) and B2C (business-to-consumer) commerce.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+    "quote": "Use B2C Commerce API (also known as Salesforce Commerce API or SCAPI) to build headless commerce experiences.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-apis.html",
+    "quote": "To further leverage existing development tools, B2C Commerce provides a framework enabling developers to write custom script code, such as controllers, and expose this functionality as a custom REST API under the SCAPI framework.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, broad: ~600 Commerce API operations spanning Shopper and Admin API groups (read-write, incl. cart, orders, products, sites)",
+    "source_url": "https://www.npmjs.com/package/@salesforce/b2c-dx-mcp",
+    "quote": "with nearly 600 Commerce API operations",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.salesforce.com/docs/commerce",
+    "source_url": "https://developer.salesforce.com/docs/commerce",
+    "quote": "Develop personalized ecommerce experiences with our fast, flexible solutions.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/sites?meta=Summary",
+    "quote": "For resource access, you must use a client ID and client secret from Account Manager to request an access token. The access token is used as a bearer token and added to the Authorization header of your API request.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/sites?meta=Summary",
+    "quote": "You must include `sfcc.sites` (read-only access) or `sfcc.sites.rw` (read-write access) and other relevant scopes in the client ID used to generate the token. For a full list of permissions, see the Authorization Scopes Catalog.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-sandboxes.html",
+    "quote": "To access an on-demand sandbox, you must purchase sandbox credits, enable appropriate permissions and users, and configure a client API ID.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access requires a provisioned B2C Commerce organization; client ID/secret are issued via Account Manager and exchanged for bearer tokens. On-demand sandboxes require purchased sandbox credits, and some documentation/links are restricted to existing customers. No self-serve free/trial developer tier appears in the evidence; the fetched Salesforce pricing page gives no Commerce Cloud plan details or self-serve purchase path.",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/extensibility_via_hooks.html",
+    "quote": "Only existing customers can access some of the links on this page.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp/",
+    "source_url": "https://www.npmjs.com/package/@salesforce/b2c-dx-mcp",
+    "quote": "Homepage: https://salesforcecommercecloud.github.io/b2c-developer-tooling/mcp/",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": [
+      "https://glama.ai/mcp/servers/vinkius-labs/salesforce-commerce-mcp/tree"
+    ],
+    "source_url": "https://glama.ai/mcp/servers/vinkius-labs/salesforce-commerce-mcp/tree",
+    "quote": "Empower your AI agents to seamlessly navigate headless storefronts, manage e-commerce orders, and interact with complex SCAPI/OCAPI endpoints natively.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Salesforce+Commerce+Cloud",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Salesforce Commerce Cloud\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-sandboxes.html",
+    "quote": "Create and manage your own sandbox environments as you need them.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "URL-path major versioning: API version comes from the OAS info.version field and is reduced to its major segment (e.g. 1.0.1 → v1) for SCAPI/custom API URLs; SCAPI publishes dated release notes and references a separate Change Policy.",
+    "source_url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-apis.html",
+    "quote": "The API version is located in the `info.version` field and is transformed into a URL version by using the major version segment and prepending it with `v` (for example, `1.0.1` → `v1`).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "SCAPI is a large, publicly documented REST API with documented client-credential/bearer auth, scope catalog, hooks extensibility, and on-demand sandboxes, so it is technically buildable. However, credentials only exist inside a provisioned B2C Commerce organization and even test sandboxes require purchased sandbox credits, with some docs restricted to existing customers. No self-serve free or trial developer tier appears in the evidence, and the fetched Salesforce pricing page gives no Commerce Cloud self-serve path, so the access gate keeps this at moderate.",
+  "main_blocker": "Requires a paid B2C Commerce org; sandbox/API access depends on purchased sandbox credits",
+  "needs_outreach": true,
+  "outreach_reason": "A developer cannot self-serve an org or sandbox: sandbox access requires purchasing sandbox credits on an existing B2C Commerce account, and Salesforce directs pricing/integration questions to a sales representative rather than a public signup.",
+  "open_questions": [
+    "Disambiguation: 'Salesforce Commerce Cloud' spans B2C Commerce (SCAPI/OCAPI) and B2B/D2C Commerce; this record covers the B2C Commerce API (SCAPI) documented at developer.salesforce.com/docs/commerce.",
+    "Rate limits: no numeric limits were present in the fetched sources; a search snippet mentioned a Circuit Breaker mechanism for Custom APIs (sfra custom-apis guide) but the source text needed to quote it was not in the bundle.",
+    "Webhooks: only server-side Hooks extensibility was found; no evidence of outbound webhooks/event callbacks. Confirm whether a webhook/event subscription feature is documented elsewhere.",
+    "sdk_languages: GitHub check found SalesforceCommerceCloud/commerce-sdk and commerce-sdk-core (Node.js) and npm lists @salesforce/b2c-tooling-sdk, but none of those pages are in SOURCES, so official SDK languages could not be cited.",
+    "official_mcp_server: value points to Salesforce's @salesforce/b2c-dx-mcp developer-tooling MCP server (npm package authored by Salesforce, local npx/stdio distribution) rather than a hosted commerce-API MCP endpoint; confirm whether this counts as an 'official MCP server' and whether a hosted endpoint exists.",
+    "api_breadth: the '~600 operations' figure comes from Salesforce's npm package README, not the official API reference index; the exact endpoint/resource count is unverified.",
+    "composio_toolkit_exists: catalog search used the exact phrase 'Salesforce Commerce Cloud' and returned 0 items; verify whether a matching toolkit exists under another name (e.g. 'Salesforce Commerce', 'SFCC', 'SCAPI').",
+    "Pricing: the fetched pricing page (salesforce.com/pricing) is generic and shows no Commerce Cloud plan amounts or self-serve checkout, so the paid_plan_required classification rests on the sandbox-credit purchase requirement."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "hint": "developer.salesforce.com/docs/commerce",
+      "description": null,
+      "source_file": "05-ecommerce.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 18,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.salesforce.com/docs/commerce",
+        "title": "Commerce Cloud | Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+        "title": "Commerce Cloud | Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+        "title": "Release Notes | About | B2C Commerce API | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/sites?meta=Summary",
+        "title": "Summary | Sites | B2C Commerce API | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2895
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-apis.html",
+        "title": "Custom APIs | SCAPI | B2C Commerce API | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-sandboxes.html",
+        "title": "On-Demand Sandboxes | B2C Commerce | B2C Commerce API | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/extensibility_via_hooks.html",
+        "title": "Extensibility via Hooks | SCAPI | B2C Commerce API | Salesforce Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://salesforce.com/pricing",
+        "title": "Salesforce Pricing: See Pricing Plans for All Salesforce Products | Salesforce",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.npmjs.com/package/@salesforce/b2c-dx-mcp",
+        "title": "@salesforce/b2c-dx-mcp",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 4876
+      },
+      {
+        "url": "https://glama.ai/mcp/servers/vinkius-labs/salesforce-commerce-mcp/tree",
+        "title": "",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 3676
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Salesforce Commerce Cloud\" official MCP server",
+        "\"Salesforce Commerce Cloud\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://www.npmjs.com/package/@salesforce/b2c-dx-mcp",
+        "https://glama.ai/mcp/servers/vinkius-labs/salesforce-commerce-mcp/tree"
+      ],
+      "tool_calls_after": 18
+    },
+    "research_seconds": 245.27
+  }
+}

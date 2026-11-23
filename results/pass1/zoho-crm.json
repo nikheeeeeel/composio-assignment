@@ -1,0 +1,261 @@
+{
+  "app": "Zoho CRM",
+  "category": "CRM and Sales",
+  "one_line_description": {
+    "value": "Sales CRM software for managing customer relationships and sales processes.",
+    "source_url": "https://www.zoho.com/en-in/crm/",
+    "quote": "Zoho CRM | Top-rated Sales CRM Software by Customers",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://www.zoho.com/crm/developer/docs/api-directory.html",
+    "quote": "The API Directory provides a comprehensive list of all Zoho CRM APIs, along with links to their corresponding documentation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+    "quote": "POST /settings/automation/webhooks",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST; broad read-write API spanning metadata, core CRUD, bulk, composite, query and notification operations across standard and custom modules",
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+    "quote": "Metadata of fields, modules, layouts, related lists, etc,. Perform CRUD operations on the modules of your organization.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+    "quote": "APIs and References | Zoho CRM V8 APIs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+    "quote": "OAuth2.0 requests are usually authenticated with an access token, which is passed as bearer token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+    "quote": "ZohoCRM.settings.automation_actions.CREATE (or) ZohoCRM.settings.automation_actions.ALL (or) ZohoCRM.settings.ALL",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/api-limits.html",
+    "quote": "| Free Edition | 5000 credits | 5000 credits |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free Edition includes 5,000 API credits per 24-hour rolling window, so a developer can self-serve API access on the free tier. Larger volumes require a paid edition (Standard/Starter, Professional, Enterprise/Zoho One, Ultimate/CRM Plus) or purchased add-on credits (support@zohocrm.com). Credentials are OAuth 2.0 tokens from a connected application; there is no separate API key. Official MCP servers are provisioned per-organization via Zoho's Server Registry, so no single public MCP endpoint URL is published.",
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/api-limits.html",
+    "quote": "If your organization requires more API credits than the allowed limit for your edition, write to support@zohocrm.com and purchase additional credits.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "source_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "quote": "Zoho CRM provides these as pre-built MCP servers, so you don't need to build, host, or maintain any infrastructure.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=zoho_projects",
+    "quote": "{\"items\": [{\"slug\": \"zoho_projects\", \"name\": \"Zoho Projects\", \"app\": \"Zoho Projects\", \"tools_count\": 542}",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Credit-based limits per 24-hour rolling window; per-user/app concurrency caps by edition: Free 5, Standard/Starter 10, Professional 15, Enterprise/Zoho One 20, Ultimate/CRM Plus 25",
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/api-limits.html",
+    "quote": "| Edition | Concurrency Limits for a User/App | | --- | --- | | Free | 5 | | Standard/Starter | 10 | | Professional | 15 | | Enterprise/Zoho One | 20 | | Ultimate/CRM Plus | 25 |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+    "quote": "Webhooks in Zoho CRM allow you to send real-time data from Zoho CRM to external applications or services when specific events occur such as Record creation, update, or deletion.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+    "quote": "For sandbox, the domain would be sandbox.zohoapis.{domain}.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "URL-path versioning with version segment in the endpoint (/crm/{version}/); v8 is the current documented API version. No deprecation or sunset policy was present in the supplied evidence.",
+    "source_url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+    "quote": "APIs and References | Zoho CRM V8 APIs",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Zoho CRM publishes a broad v8 REST API with a full API directory and OAuth 2.0 authentication. Access is self-serve: the Free Edition already includes 5,000 API credits per rolling 24-hour window, with higher caps on paid editions. Zoho also ships vendor-operated pre-built MCP servers for CRM operations, so an agent integration can be built without sales contact.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The Composio catalog check returned toolkit_exists=true but the returned items list only zoho_projects, zoho_books, zoho_salesiq, zoho_billing, zoho_work_drive, zoho_analytics, zoho_cliq and zoho_people; no zoho_crm slug appears, so a dedicated Zoho CRM toolkit is unconfirmed from this evidence.",
+    "Official SDK languages could not be verified: SDK search results (zoho-crm-sdks.html, client-side-sdks, server-side-sdks) were not included in the SOURCES text, so sdk_languages is left null.",
+    "No documented API deprecation/sunset policy appears in the supplied sources; only the path-level version segment (/crm/v8/) is evidenced.",
+    "The exact hosted MCP endpoint URL is provisioned per-organization through Zoho's Server Registry and is not published in the evidence, so the official MCP docs URL is used as the value.",
+    "Whether the Zoho CRM Free Edition gives full self-serve API access versus a time-limited trial is inferred from the Free Edition credit table; the pricing page text confirming free-plan signup was not fully captured."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Zoho CRM",
+      "category": "CRM and Sales",
+      "hint": "zoho.com/crm",
+      "description": null,
+      "source_file": "01-crm-and-sales.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api/api-limits.html",
+        "title": "Limits - API | Online Help - Zoho CRM",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+        "title": "Limits - API | Zoho CRM API | V8",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/mcp.html",
+        "title": "MCP for Zoho CRM: AI Agent Servers for Secure CRM Access",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4139
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+        "title": "Zoho CRM MCP - An Overview | Developer Tools",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v8/create-webhook.html",
+        "title": "Create Webhook API | Zoho CRM API | V8",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api-directory.html",
+        "title": "Zoho CRM API Directory | Explore, Search & Filter APIs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 391
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-references.html",
+        "title": "APIs and References | Zoho CRM V8 APIs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v8/oauth-overview.html",
+        "title": "OAuth 2.0 Authentication | Zoho CRM API | V8",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2934
+      },
+      {
+        "url": "https://www.zoho.com/crm/developer/docs/api/v8/access-refresh.html",
+        "title": "Access & Refresh Tokens | Zoho CRM API | V8",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/crm/zohocrm-pricing-enterprise.html",
+        "title": "AI powered Enterprise CRM | Zoho CRM",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/en-in/crm/",
+        "title": "Zoho CRM | Top-rated Sales CRM Software by Customers",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://zoho.com/crm"
+    ],
+    "refinement": {},
+    "research_seconds": 111.31
+  }
+}

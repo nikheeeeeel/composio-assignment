@@ -1,0 +1,275 @@
+{
+  "app": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": {
+    "value": "Waterfall.io is a B2B data API for go-to-market workflows.",
+    "source_url": "https://docs.waterfall.io/v1/faq",
+    "quote": "Waterfall.io is a B2B data API for go-to-market workflows.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.waterfall.io/v1/introduction",
+    "quote": "The Waterfall API is available at `https://api.waterfall.io`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.waterfall.io/v1/api-keys-overview",
+    "quote": "| List keys | `GET /v1/api-keys` | Review keys and their current settings. |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST; 13 listed APIs covering prospecting, contact/company/phone enrichment, email verification, job change, webhook JWKS, account reporting and key management; mostly read/query with an async job/Finder pattern",
+    "source_url": "https://docs.waterfall.io/v1/introduction",
+    "quote": "| Prospector | Async | Find people at a company by domain and title filters, with available emails and optional phones. | | Search Contact | Sync | Find profiles by LinkedIn, company, or supported company-set and role filters.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.waterfall.io/v1/overview",
+    "source_url": "https://docs.waterfall.io/v1/overview",
+    "quote": "Find prospects, enrich contact and company profiles, find emails and mobile numbers, verify emails, and check job changes with the Waterfall API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "source_url": "https://docs.waterfall.io/v1/authentication",
+    "quote": "Authenticate data and account API requests with your Waterfall API key in the `x-api-key` header.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://docs.waterfall.io/v1/authentication",
+    "quote": "Authenticate data and account API requests with your Waterfall API key in the `x-api-key` header.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "admin_approval",
+    "source_url": "https://docs.waterfall.io/v1/book-demo",
+    "quote": "API access is available by approval. Request a key through the email field on the Waterfall website, or book a call to discuss your workflow.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access is not self-serve: request a key through the website email form or book a call, and Waterfall's team reviews every access request before enabling access. Key-management operations additionally require a master API key enabled by an account manager; pricing is prepaid usage-based, and no free/trial credits are documented.",
+    "source_url": "https://docs.waterfall.io/v1/book-demo",
+    "quote": "Request an API key or book a call. Our team reviews every access request and helps you plan your integration.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Waterfall.io",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Waterfall.io\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Default 50 requests per 60 seconds for Prospector, Search, Enrichment, Job Change and Email Verification; higher limits (documented as more than 10x default) available by request",
+    "source_url": "https://docs.waterfall.io/v1/rate-limit",
+    "quote": "The default limit for Prospector, Search, Enrichment, Job Change, and Email Verification is 50 requests per 60 seconds.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.waterfall.io/v1/webhook-verification",
+    "quote": "Webhook signing applies to every endpoint that accepts `webhook_url`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Path-based versioning: `/v1/` for data endpoints and `/v2/account` for Account Reporter V2; no formal deprecation or sunset policy found in the evidence",
+    "source_url": "https://docs.waterfall.io/v1/authentication",
+    "quote": "The API host is `https://api.waterfall.io`. Data endpoints use `/v1/`; Account Reporter V2 uses `/v2/account`.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Waterfall has a well-documented REST API with 13 listed capabilities, API-key auth, signed webhooks, and a documented 50 req/60s default rate limit. However, credentials are not self-serve: access is explicitly available by approval, with every request reviewed by the Waterfall team. That manual gate makes it moderate rather than easy, while the documented breadth keeps it out of hard/blocked.",
+  "main_blocker": "Manual API access approval; no self-serve signup or free tier documented",
+  "needs_outreach": true,
+  "outreach_reason": "A human must request an API key through the Waterfall website email form or book a call, and the Waterfall team reviews each access request before enabling credentials.",
+  "open_questions": [
+    "No vendor-operated MCP server was found in the evidence; Waterfall documents agent 'skills' (waterfall-direct-api and waterfall-integration) rather than an MCP endpoint. Confirm whether an official MCP server exists.",
+    "No community or third-party MCP servers surfaced in the searches or MCP registry results.",
+    "No official vendor-maintained SDKs were found; docs only mention generating clients from the OpenAPI spec, plus Python/TypeScript webhook-verifier reference code.",
+    "No documented sandbox/test environment was found; evidence only references the production host https://api.waterfall.io.",
+    "The homepage curl examples send an 'x-waterfall-api-key' header, while the authentication docs specify 'x-api-key'; confirm the canonical header name.",
+    "No formal deprecation/sunset policy was found; some APIs are marked Preview.",
+    "Whether approved access includes free/trial credits or requires prepaid commitment is not fully documented.",
+    "Master-key/key-management operations require the account manager to enable them for the account."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "hint": "waterfall.io",
+      "description": "contact/company intel",
+      "source_file": "06-data-seo-and-scraping.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 17,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.waterfall.io/v1/overview",
+        "title": "One GTM API for contacts and companies",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2619
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/introduction",
+        "title": "Waterfall API introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1364
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/api-keys-overview",
+        "title": "API Keys Management",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1602
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/faq",
+        "title": "Waterfall API FAQ",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/book-demo",
+        "title": "Get API access",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1521
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/rate-limit",
+        "title": "Rate limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1820
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/skills-overview",
+        "title": "Use Waterfall with an agent",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2437
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/webhook-verification",
+        "title": "Webhook Verification",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/openapi-spec",
+        "title": "Open API Specification",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 573
+      },
+      {
+        "url": "https://www.waterfall.io/",
+        "title": "Waterfall.io | One B2B data solution to connect them all",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://waterfall.io"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Waterfall.io\" official MCP server",
+        "\"Waterfall.io\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://www.waterfall.io/"
+      ],
+      "tool_calls_after": 17
+    },
+    "research_seconds": 153.3
+  }
+}

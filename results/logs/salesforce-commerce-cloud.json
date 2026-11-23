@@ -1,0 +1,409 @@
+{
+  "app": "Salesforce Commerce Cloud",
+  "category": "Ecommerce",
+  "slug": "salesforce-commerce-cloud",
+  "started_at": "2026-11-23T15:50:23.391110+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:54:29.664525+00:00",
+  "duration_s": 246.27,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/salesforce-commerce-cloud.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" official API documentation developer reference site:salesforce.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.904,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" MCP server official Model Context Protocol site:salesforce.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.568,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" API rate limits throttling quota documentation site:salesforce.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.768,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" API sandbox test environment staging developer site:salesforce.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.725,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" official SDK client libraries developer site:salesforce.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.348,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" API authentication OAuth API key documentation site:salesforce.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 10.466,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" API versioning deprecation sunset policy site:salesforce.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.833,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" API webhooks events callbacks documentation site:salesforce.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.398,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" pricing plans API access enterprise developer site:salesforce.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 13.139,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "GITHUB_REPO",
+      "source": "github_api",
+      "purpose": "mcp_github",
+      "arguments": {
+        "url": "https://github.com/SalesforceCommerceCloud/commerce-sdk-core"
+      },
+      "ok": true,
+      "duration_s": 0.942,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "GITHUB_REPO",
+      "source": "github_api",
+      "purpose": "mcp_github",
+      "arguments": {
+        "url": "https://github.com/SalesforceCommerceCloud/commerce-sdk/blob/main/README.md"
+      },
+      "ok": true,
+      "duration_s": 1.912,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Salesforce Commerce Cloud"
+      },
+      "ok": true,
+      "duration_s": 0.015,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Salesforce Commerce Cloud MCP"
+      },
+      "ok": true,
+      "duration_s": 1.813,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developer.salesforce.com/docs/commerce",
+          "https://developer.salesforce.com/developer-centers/commerce-cloud",
+          "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+          "https://developer.salesforce.com/docs/commerce/commerce-api/references/sites?meta=Summary",
+          "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-apis.html"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 5.49,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 15,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-sandboxes.html",
+          "https://developer.salesforce.com/docs/commerce/commerce-api/guide/extensibility_via_hooks.html",
+          "https://salesforce.com/pricing",
+          "https://salesforce.com/docs"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 10.889,
+      "result_count": 3,
+      "error": null
+    },
+    {
+      "seq": 16,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" official MCP server",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.2,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 17,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Salesforce Commerce Cloud\" model context protocol server vendor",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.028,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 18,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://www.npmjs.com/package/@salesforce/b2c-dx-mcp",
+          "https://glama.ai/mcp/servers/vinkius-labs/salesforce-commerce-mcp/tree"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 2.073,
+      "result_count": 2,
+      "error": null
+    }
+  ],
+  "tool_call_count": 18,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "title": "Commerce Cloud | Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+      "title": "Commerce Cloud | Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html",
+      "title": "Release Notes | About | B2C Commerce API | Salesforce Developers",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/sites?meta=Summary",
+      "title": "Summary | Sites | B2C Commerce API | Salesforce Developers",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2895
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-apis.html",
+      "title": "Custom APIs | SCAPI | B2C Commerce API | Salesforce Developers",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-sandboxes.html",
+      "title": "On-Demand Sandboxes | B2C Commerce | B2C Commerce API | Salesforce Developers",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/extensibility_via_hooks.html",
+      "title": "Extensibility via Hooks | SCAPI | B2C Commerce API | Salesforce Developers",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://salesforce.com/pricing",
+      "title": "Salesforce Pricing: See Pricing Plans for All Salesforce Products | Salesforce",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.npmjs.com/package/@salesforce/b2c-dx-mcp",
+      "title": "@salesforce/b2c-dx-mcp",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 4876
+    },
+    {
+      "url": "https://glama.ai/mcp/servers/vinkius-labs/salesforce-commerce-mcp/tree",
+      "title": "",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 3676
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Salesforce Commerce Cloud",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 94.951,
+      "tokens": {
+        "input": 14961,
+        "output": 2054,
+        "reasoning": 7830
+      },
+      "cost_usd": 0.00653964
+    },
+    {
+      "purpose": "research:Salesforce Commerce Cloud",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 118.619,
+      "tokens": {
+        "input": 13423,
+        "output": 2503,
+        "reasoning": 9937
+      },
+      "cost_usd": 0.0075881
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 28384,
+      "output": 4557,
+      "reasoning": 17767
+    },
+    "cost_usd": 0.01412774,
+    "llm_calls": 2
+  }
+}

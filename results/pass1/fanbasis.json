@@ -1,0 +1,260 @@
+{
+  "app": "fanbasis",
+  "category": "Ecommerce",
+  "one_line_description": {
+    "value": "Commas (formerly FanBasis) is a creator-commerce platform for creating, selling and getting paid, combining courses, communities, webinars, affiliate tooling and built-in payments.",
+    "source_url": "https://fanbasis.com",
+    "quote": "One place to create, sell, and get paid, with payments built in.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://fanbasis.com",
+    "quote": "Embedded checkouts, multi-rail payouts, APIs and SDKs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://commasdocs.com/",
+    "quote": "Make a POST request to `https://www.fanbasis.com/public-api/checkout-sessions` with your product name, price, and type.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST public API covering checkout sessions, payments/transactions, subscriptions, customers, discounts, invoices and webhooks; read-write",
+    "source_url": "https://commasdocs.com/",
+    "quote": "Everything you need to collect payments, manage subscriptions, reward customers, and automate your business with Commas.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://dev-docs.fanbasis.com/",
+    "source_url": "https://dev-docs.fanbasis.com/login.html",
+    "quote": "Login - FanBasis API Docsv3",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "source_url": "https://commasdocs.com/",
+    "quote": "Log into your Commas dashboard and go to Account → API Keys.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "unknown",
+    "source_url": "https://dev-docs.fanbasis.com/login.html",
+    "quote": "Sign in to access API Docs",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "The official API reference at dev-docs.fanbasis.com is behind a password login, so the developer-onboarding path is not publicly readable. Keys are created inside the merchant dashboard (production) and inside a separate sandbox dashboard (sandbox.commas.net) for test keys; no public pricing/plan evidence shows whether a paid plan, approval step, or sales contact is required first. API detail evidence comes from commasdocs.com and an npm CLI package flagged non-official in this bundle (the CLI author email is @fanbasis.com).",
+    "source_url": "https://commasdocs.com/",
+    "quote": "Create production keys in your Commas dashboard and sandbox keys in the sandbox dashboard, both under Account → API Keys",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://commasdocs.com/#cli",
+    "source_url": "https://www.npmjs.com/package/commas-cli",
+    "quote": "Commas CLI — run your Commas (formerly FanBasis) business from the terminal, powered by the Commas MCP server",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=fanbasis",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"fanbasis\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://commasdocs.com/",
+    "quote": "Set up a webhook subscription so Commas notifies your server the moment `payment.succeeded` fires.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://www.npmjs.com/package/commas-cli",
+    "quote": "The sandbox is `https://api-sandbox.commas.net` and needs its own API key, created in the sandbox dashboard at https://sandbox.commas.net (Account → API Keys).",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Commas (formerly FanBasis) has a REST public API for checkout sessions, payments, subscriptions, customers and webhooks, plus a separate sandbox environment and a vendor CLI backed by a Commas MCP server. The catch is distribution: the official developer docs at dev-docs.fanbasis.com are password-gated and no public pricing or plan page documents how an outside developer obtains API access. With access terms unconfirmed and no Composio toolkit, this is moderate rather than easy.",
+  "main_blocker": "Official API docs are password-gated; access/plan terms are not public",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "FanBasis appears to have rebranded to Commas (per multiple third-party sources in the search snippets); confirm whether fanbasis.com/public-api endpoints and dev-docs.fanbasis.com are still the current, supported surface or are being migrated to commasdocs.com.",
+    "Is the password for dev-docs.fanbasis.com (official API docs) issued automatically to Commas merchants, or must it be requested from FanBasis/Commas support? This decides whether access is self-serve or approval-based.",
+    "Which plan tier includes API/SDK access, and is a paid plan or sales conversation required before production keys can be created? No pricing page content was captured that states this.",
+    "Official SDK languages are unconfirmed: a search snippet describes @fanbasis/checkout-sdk as 'The official TypeScript library for the Fanbasis Checkout API', but that page was not captured as a source; the marketing site only says 'APIs and SDKs'.",
+    "Rate limits/quotas are not documented in any captured source.",
+    "No OAuth or scope documentation was found; evidence indicates API-key-only authentication. Confirm there is no OAuth flow.",
+    "The Commas MCP server endpoint URL is not published anywhere in the captured evidence; only the vendor CLI (thin client to the MCP server) documents its behaviour.",
+    "No community/third-party MCP servers for FanBasis/Commas were surfaced by the searches.",
+    "API versioning/deprecation policy was not found; the docs site title references 'API Docsv3', which may indicate a v3 API."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "fanbasis",
+      "category": "Ecommerce",
+      "hint": "fanbasis.com",
+      "description": null,
+      "source_file": "05-ecommerce.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 18,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://fanbasis.com/pricing",
+        "title": "Commas | Where you make money on the internet",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://fanbasis.com/docs",
+        "title": "Commas | Where you make money on the internet",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://dev-docs.fanbasis.com/login.html",
+        "title": "Login - FanBasis API Docsv3",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 361
+      },
+      {
+        "url": "https://support.fanbasis.com/",
+        "title": "FanBasis Knowledge Base",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 136
+      },
+      {
+        "url": "https://feedback.fanbasis.com/legal/data-processing-agreement.pdf",
+        "title": "Data Processing Agreement | Productlane",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://affiliates-demo.fanbasis.com/",
+        "title": "Affiliate Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3941
+      },
+      {
+        "url": "https://fanbasis.com",
+        "title": "Commas | Where you make money on the internet",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://commasdocs.com/",
+        "title": "Commas API Reference",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 4999
+      },
+      {
+        "url": "https://www.npmjs.com/package/commas-cli",
+        "title": "commas-cli",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 65,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "auth_methods",
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"fanbasis\" API authentication OAuth API key documentation",
+        "\"fanbasis\" developer authentication guide",
+        "\"fanbasis\" official MCP server",
+        "\"fanbasis\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://commasdocs.com/",
+        "https://www.npmjs.com/package/commas-cli"
+      ],
+      "tool_calls_after": 18
+    },
+    "research_seconds": 284.5
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "app": "Zendesk",
+  "category": "Support and Helpdesk",
+  "one_line_description": {
+    "value": "Zendesk is an AI-powered customer service platform.",
+    "source_url": "https://www.zendesk.com/in/#georedirect",
+    "quote": "AI-powered customer service platform",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.zendesk.com/api-reference/index.html",
+    "quote": "Welcome to the Zendesk API reference docs. Whether you're an experienced developer and Zendesk user or just starting out, this is where you'll find the documentation you need.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+    "quote": "| Update Ticket | PUT /api/v2/tickets/{id}.json | 30 updates per 10 minutes per user per ticket.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad, product-organized surface: documented APIs for Ticketing/Support, Help Center, AI Agents, Messaging, Voice, Custom data, Omnichannel, Live Chat, and Sales CRM",
+    "source_url": "https://developer.zendesk.com/api-reference/index.html",
+    "quote": "Most of our APIs are organized by product capabilities. You'll find APIs for ticketing, help center, live chat, voice, sales CRM as well as some features that span capabilities, such as omnichannel routing and custom data.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.zendesk.com/api-reference/index.html",
+    "source_url": "https://developer.zendesk.com/api-reference/index.html",
+    "quote": "Welcome to the Zendesk API reference docs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://developer.zendesk.com/documentation/authentication/oauth-vs-api-tokens/",
+    "quote": "Both API tokens and OAuth access tokens let you authenticate Zendesk API requests without providing your Zendesk password.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/",
+    "quote": "Supports fine-grained permissions through scopes, so you can limit a token to only the access your integration actually needs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://www.zendesk.com/in/#georedirect",
+    "quote": "Try it for free",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access is tied to a Zendesk user account: API-token requests must present the email address of an admin, agent, or other valid user, and OAuth tokens are bound to the user who authorized the app. The marketing site advertises a free trial ('Try it for free') and pricing lists paid per-agent plans from $19/agent/month; whether the trial includes API credentials is not stated in the fetched pages. Sandbox environments appear only in the top-tier feature list.",
+    "source_url": "https://developer.zendesk.com/documentation/authentication/oauth-vs-api-tokens/",
+    "quote": "However, you must provide an email address for an admin, agent, or other valid user when authenticating requests.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+    "source_url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+    "quote": "In your external agent's AI platform, connect your external AI agent to Zendesk with an MCP server URL specified in the connection you configured.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=zendesk",
+    "quote": "\"items\": [{\"slug\": \"zendesk\", \"name\": \"Zendesk\", \"app\": \"Zendesk\", \"tools_count\": 483}], \"total_items\": 1",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Plan-based per-minute limits for the Support and Help Center APIs: Team 200, Growth 400, Professional 400, Enterprise 700, Enterprise Plus 2500; the High Volume API add-on raises qualifying plans to 2500 req/min",
+    "source_url": "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+    "quote": "Support and Help Center API requests per minute | 200 | 400 | 400 | 700 | 2500",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://www.zendesk.com/pricing/",
+    "quote": "Approval workflows - Sandbox environment - Custom agent roles",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Android",
+      "iOS",
+      "Unity",
+      "Web (JavaScript widget)"
+    ],
+    "source_url": "https://developer.zendesk.com/api-reference/index.html",
+    "quote": "Control data passed to and from the Zendesk SDK for Unity",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Zendesk documents a broad developer platform - APIs for ticketing, help center, live chat, voice, sales CRM, omnichannel routing and custom data - with OAuth 2.0 and API-token authentication, documented scopes, a public Postman collection, and published per-plan rate limits. The lowest-friction documented route to credentials is self-serve: the site advertises a free trial ('Try it for free'), with paid per-agent plans from $19/agent/month for production. No partner approval, app review, or sales contact is required, so the toolkit is buildable at low friction, with the paid production plan as the only commercial gate.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No fetched page explicitly labels the Zendesk API 'REST'; api_type is inferred from documented HTTP-method JSON endpoints under /api/v2, hence confidence=medium.",
+    "Whether the advertised free trial ('Try it for free') includes API credentials, and for how long, is not documented in the bundle; if it does not, access_model would revert to paid_plan_required and the verdict to moderate.",
+    "No numeric endpoint/resource count for the full API surface was found on the fetched pages, so api_breadth carries no count.",
+    "The webhooks/event-types page was listed in the bundle's audit sources but its text was not included in SOURCES, so webhooks support could not be cited verbatim.",
+    "API versioning/deprecation pages were not included in SOURCES; the API-token sunset dates appeared only in search snippets (unused tokens deactivating 2026-07-28, all API tokens stopping 2027-04-30) and could not be quoted.",
+    "The Zendesk MCP server endpoint is per-org and only generated per configured connection; Zendesk Bridge / external AI agents are in an early access program (EAP), so GA packaging and pricing are unknown.",
+    "Only client-side SDKs (Android, iOS, Unity, Web Widget) are evidenced in the fetched docs; no official server-side API client libraries were found in the bundle.",
+    "Rate limits cited here cover only the plan-based per-minute table; the same page also documents endpoint-specific limits (e.g., Update Ticket 30 per 10 min per user per ticket, Incremental Exports 10 req/min) and 429/Retry-After behaviour, which could not fit into one verbatim quote."
+  ],
+  "status": "verified",
+  "audit": {
+    "input": {
+      "name": "Zendesk",
+      "category": "Support and Helpdesk",
+      "hint": "zendesk.com",
+      "description": null,
+      "source_file": "02-support-and-helpdesk.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 15,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.zendesk.com/api-reference/index.html",
+        "title": "API Reference Home | Zendesk Developer Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2444
+      },
+      {
+        "url": "https://developer.zendesk.com/llms.txt",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://developer.zendesk.com/documentation/authentication/oauth-vs-api-tokens/",
+        "title": "Understanding the differences between API tokens and OAuth access tokens | Zendesk Developer Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2171
+      },
+      {
+        "url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/",
+        "title": "Using OAuth to authenticate API requests",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://developer.zendesk.com/api-reference/custom-data/introduction/",
+        "title": "Introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2768
+      },
+      {
+        "url": "https://www.zendesk.com/pricing/",
+        "title": "Pricing for the #1 AI customer service solution",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+        "title": "Rate limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+        "title": "Connecting external AI agents to the Zendesk MCP server or Zendesk AI agents (EAP) – Zendesk help",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://support.zendesk.com/hc/en-us/articles/10497779528730-Using-the-Zendesk-MCP-client-to-access-MCP-tools-in-action-flows-and-advanced-action-flows",
+        "title": "Using the Zendesk MCP client to access MCP tools in action flows and advanced action flows – Zendesk help",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://developer.zendesk.com/api-reference/webhooks/event-types/webhook-event-types/",
+        "title": "Webhook event types | Zendesk Developer Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4202
+      },
+      {
+        "url": "https://support.zendesk.com/hc/en-us/articles/8560379152282-Integration-builder-FAQs",
+        "title": "Integration builder FAQs – Zendesk help",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://developer.zendesk.com/documentation/zendesk-web-widget-sdks/",
+        "title": "Zendesk Web Widget and SDKs | Zendesk Developer Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1683
+      },
+      {
+        "url": "https://www.zendesk.com/in/#georedirect",
+        "title": "Transform Customer & Employee Service with AI Agents | Zendesk India",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://zendesk.com"
+    ],
+    "refinement": {},
+    "research_seconds": 94.01,
+    "revision_round": 1,
+    "revision_issues": [
+      {
+        "field": "api_type",
+        "problem": "quote not found in source (score 78.3 < 90)",
+        "severity": "critical",
+        "suggested_fix": "Replace the quote with a verbatim snippet from the cited page, or lower confidence."
+      },
+      {
+        "field": "one_line_description",
+        "problem": "verifier judged the claim only partially supported: The excerpt confirms Zendesk is an AI-powered customer service platform, but does not list tickets, messaging, voice, or help center channels.",
+        "severity": "warning",
+        "suggested_fix": "Tighten the value/quote so the excerpt fully entails it."
+      },
+      {
+        "field": "api_type",
+        "problem": "verifier judged the claim only partially supported: The excerpt shows HTTP GET and POST JSON requests against endpoint paths, which implies REST, but does not explicitly use the term REST.",
+        "severity": "warning",
+        "suggested_fix": "Tighten the value/quote so the excerpt fully entails it."
+      },
+      {
+        "field": "api_breadth",
+        "problem": "verifier judged the claim only partially supported: The excerpt confirms multi-product capabilities across ticketing, help center, chat, voice, and omnichannel, but does not mention 'hundreds of endpoints' or 'read-write'.",
+        "severity": "warning",
+        "suggested_fix": "Tighten the value/quote so the excerpt fully entails it."
+      },
+      {
+        "field": "access_model",
+        "problem": "verifier could not support a medium-confidence value: The excerpt explains that authenticating requests requires an admin or agent user email, but does not mention pricing plans or paid tier requirements.",
+        "severity": "critical",
+        "suggested_fix": "Cite a page/quote that directly entails the value, or downgrade confidence and add an open question."
+      },
+      {
+        "field": "access_notes",
+        "problem": "verifier judged the claim only partially supported: The excerpt confirms that authentication requires an admin, agent, or valid user email, but does not contain the claims regarding pricing tiers, sandbox gating, rate limit add-ons, or MCP early access.",
+        "severity": "warning",
+        "suggested_fix": "Tighten the value/quote so the excerpt fully entails it."
+      },
+      {
+        "field": "rate_limits",
+        "problem": "verifier judged the claim only partially supported: The excerpt supports the plan-based limits (200, 400, 700, 2500 req/min) and 429 errors, but does not mention the specific ticket update or incremental export limits.",
+        "severity": "warning",
+        "suggested_fix": "Tighten the value/quote so the excerpt fully entails it."
+      },
+      {
+        "field": "access_model",
+        "problem": "independent re-derivation disagrees: researcher='paid_plan_required', verifier='self_serve_trial'",
+        "severity": "critical",
+        "suggested_fix": "Resolve from the evidence; if genuinely ambiguous, set not_found and add an open question, or mark needs_human_review."
+      },
+      {
+        "field": "buildability_verdict",
+        "problem": "independent re-derivation disagrees: researcher='moderate', verifier='easy'",
+        "severity": "critical",
+        "suggested_fix": "Resolve from the evidence; if genuinely ambiguous, set not_found and add an open question, or mark needs_human_review."
+      }
+    ],
+    "revision_model": "opencode/deepseek-v4.1-flash",
+    "verification": {
+      "status": "verified",
+      "rounds_used": 2,
+      "final_mechanical_stats": {
+        "claims_total": 17,
+        "claims_with_source": 14,
+        "quote_checked": 13,
+        "quote_passed": 13,
+        "quote_pass_pct": 100.0,
+        "high_medium_checked": 13,
+        "high_medium_passed": 13,
+        "high_medium_quote_pass_pct": 100.0,
+        "pages_fetched": 7,
+        "bad_pages": 0,
+        "third_party_sources": 0,
+        "critical_issues": 0,
+        "warnings": 0
+      },
+      "final_llm_stats": {
+        "verifier_model": "opencode/gemini-3.8-flash",
+        "round": 2,
+        "claims_judged": 17,
+        "supported": 12,
+        "partially": 5,
+        "unsupported": 0,
+        "contradicted": 0,
+        "disagreements": 0,
+        "critical_issues": 0,
+        "warnings": 5,
+        "verifier_searches": [
+          {
+            "field": "community_mcp_servers",
+            "query": "\"Zendesk\" community mcp servers API documentation",
+            "hits": [
+              "https://github.com/fruggr/zendesk-mcp-server/blob/main/docs/mcp-tools-reference.md",
+              "https://github.com/gschaer/zendesk-hc-mcp"
+            ]
+          },
+          {
+            "field": "webhooks",
+            "query": "\"Zendesk\" API webhooks events documentation",
+            "hits": [
+              "https://developer.zendesk.com/api-reference/webhooks/event-types/webhook-event-types/",
+              "https://developer.zendesk.com/api-reference/webhooks/webhooks-api/webhooks/"
+            ]
+          },
+          {
+            "field": "api_versioning_or_deprecation_notes",
+            "query": "\"Zendesk\" API versioning deprecation policy",
+            "hits": [
+              "https://developer.zendesk.com/api-reference/changelog/changelog/",
+              "https://developer.zendesk.com/api-reference/introduction/api_changes/"
+            ]
+          }
+        ],
+        "verifier_tool_calls": 6
+      },
+      "open_disagreements": []
+    }
+  }
+}

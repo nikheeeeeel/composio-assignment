@@ -1,0 +1,62 @@
+{
+  "category": "Support and Helpdesk",
+  "categoryNumber": 2,
+  "source": {
+    "spreadsheet": "composio-research",
+    "sheet": "Sheet1",
+    "url": "https://docs.google.com/spreadsheets/d/18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8/edit"
+  },
+  "appCount": 10,
+  "apps": [
+    {
+      "number": 11,
+      "app": "Zendesk",
+      "hint": "zendesk.com"
+    },
+    {
+      "number": 12,
+      "app": "Intercom",
+      "hint": "intercom.com"
+    },
+    {
+      "number": 13,
+      "app": "Freshdesk",
+      "hint": "freshdesk.com"
+    },
+    {
+      "number": 14,
+      "app": "Front",
+      "hint": "front.com"
+    },
+    {
+      "number": 15,
+      "app": "Pylon",
+      "hint": "usepylon.com"
+    },
+    {
+      "number": 16,
+      "app": "LiveAgent",
+      "hint": "liveagent.com"
+    },
+    {
+      "number": 17,
+      "app": "Plain",
+      "hint": "plain.com"
+    },
+    {
+      "number": 18,
+      "app": "Help Scout",
+      "hint": "helpscout.com"
+    },
+    {
+      "number": 19,
+      "app": "Gorgias",
+      "hint": "gorgias.com"
+    },
+    {
+      "number": 20,
+      "app": "Gladly",
+      "hint": "gladly.com"
+    }
+  ]
+}

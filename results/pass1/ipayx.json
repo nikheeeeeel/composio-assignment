@@ -1,0 +1,234 @@
+{
+  "app": "iPayX",
+  "category": "Finance and Fintech",
+  "one_line_description": {
+    "value": "iPayX is a forensic FX audit platform that detects hidden bank FX spreads against mid-market benchmark rates and returns structured audit scores via REST API and an MCP server.",
+    "source_url": "https://www.ipayx.ai/docs/api",
+    "quote": "Detect hidden bank spreads vs mid-market benchmark on any currency transaction.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://www.ipayx.ai/developers/sandbox",
+    "quote": "Bearer ipx_live_… — generate keys from /developers while signed in.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://www.ipayx.ai/developers",
+    "quote": "REST API JSON responses Webhooks Production-ready",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, small surface (~3-4 endpoints: single audit, batch document audit, rates lookup), read-write; batches of up to 50 transactions per request",
+    "source_url": "https://www.ipayx.ai/docs/api",
+    "quote": "Audit a batch of parsed transactions (e.g. exported from QuickBooks, Xero, Sage, or your CSV).",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://www.ipayx.ai/docs/api",
+    "source_url": "https://www.ipayx.ai/docs/api",
+    "quote": "Get your API key, hit `/audit`, and start exposing hidden bank spreads in your product.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "bearer_token"
+    ],
+    "source_url": "https://www.ipayx.ai/docs/api",
+    "quote": "Every request requires a Bearer token in the `Authorization` header.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://www.ipayx.ai/docs/api",
+    "quote": "Bearer auth, OpenAPI 3.1, signed webhooks.",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://www.ipayx.ai/developers/sandbox",
+    "quote": "Generate API keys from the /developers page once signed in.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free signup tier with 3 lifetime audits ($0); API keys (prefix ipx_live_) are generated from the /developers page in the dashboard. Pricing positions signed reports and 'production-grade API' as upsells: Credit Pack 100 for $99 one-time or Unlimited at $299/mo. Plan soft monthly limits: Starter 1,000 / Pro 10,000 / Enterprise unmetered. Banks and institutions are routed to contact sales for FINTRAC-signed reports. Not explicit whether free-tier accounts can mint production keys.",
+    "source_url": "https://www.ipayx.ai/developers/sandbox",
+    "quote": "Soft monthly limits apply per plan: Starter 1,000 / Pro 10,000 / Enterprise unmetered.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.ipayx.ai/mcp",
+    "source_url": "https://www.ipayx.ai/mcp-marketplace",
+    "quote": "Server URL: `https://mcp.ipayx.ai/mcp` · Transport: Streamable HTTP",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=iPayX",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"iPayX\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per API key on a rolling 60-second window; HTTP 429 'rate_limit_exceeded' when exceeded (no numeric request cap published). Soft monthly limits: Starter 1,000 / Pro 10,000 / Enterprise unmetered.",
+    "source_url": "https://www.ipayx.ai/developers/sandbox",
+    "quote": "Rate limits are enforced per API key on a rolling 60-second window.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://www.ipayx.ai/docs/api",
+    "quote": "Subscribe to `audit.completed` events to power Zapier triggers, n8n workflows, or your own Slack alerts.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": "https://www.ipayx.ai/developers/sandbox",
+    "quote": "Keys start with `ipx_live_`.",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Responses include an `api_version` field set to \"v1\" and endpoints are versioned under /v1; no deprecation or sunset policy is documented in the fetched pages.",
+    "source_url": "https://www.ipayx.ai/docs/api",
+    "quote": "\"api_version\": \"v1\"",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "iPayX publishes a documented REST API (OpenAPI 3.1, Bearer auth, signed webhooks) plus a vendor-operated MCP server. API keys are self-serve from the developer dashboard after a free signup, and the pricing page lists a $0 free tier. The surface is narrow (FX audit/rates only) and production-grade access is a paid upsell, but credentials do not require sales contact or review.",
+  "main_blocker": "Narrow FX-audit-only API; free tier capped at 3 lifetime audits with production-grade access paid",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Unclear whether free-tier accounts can mint production `ipx_live_` keys: pricing says 'Upgrade to signed reports or production-grade API' while /developers/sandbox says keys are generated from /developers once signed in.",
+    "Possible OAuth2 support is only implied by an 'OAuth2 apps' phrase in a 'coming soon' integrations list on the API docs page; documented API auth is Bearer token only, and no OAuth scopes are documented.",
+    "No official SDK languages appear in the fetched pages; a home-page search snippet mentioned 'REST API + SDKs' but the home page was not included in SOURCES.",
+    "Pricing tiers conflict between pages: /pricing lists Free / Credit Pack 100 ($99) / Unlimited ($299/mo), while /developers/sandbox references plans Starter 1,000, Pro 10,000 and Enterprise unmetered.",
+    "No separate sandbox/test environment or test-mode keys are documented; /developers/sandbox describes live `ipx_live_` keys against https://api.ipayx.ai/v1.",
+    "No numeric per-minute request cap is published; only a rolling 60-second window and HTTP 429 rate_limit_exceeded.",
+    "No deprecation/sunset policy documented; the iPayX API Terms page seen in search results is marked DRAFT and was not captured in SOURCES.",
+    "Composio catalog search for 'iPayX' returns zero toolkits, so no toolkit exists to build on today."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "iPayX",
+      "category": "Finance and Fintech",
+      "hint": "ipayx.ai/docs",
+      "description": null,
+      "source_file": "09-finance-and-fintech.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://www.ipayx.ai/mcp",
+        "title": "Connect iPayX to your AI agent",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2550
+      },
+      {
+        "url": "https://www.ipayx.ai/mcp-marketplace",
+        "title": "The forensic FX audit MCP server, for every AI agent",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4646
+      },
+      {
+        "url": "https://ipayx.ai/pricing",
+        "title": "Pricing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1119
+      },
+      {
+        "url": "https://ipayx.ai/docs",
+        "title": "404",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 132
+      },
+      {
+        "url": "https://www.ipayx.ai/docs/api",
+        "title": "FX Audit API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4993
+      },
+      {
+        "url": "https://www.ipayx.ai/developers/sandbox",
+        "title": "iPayX FX Proof API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.ipayx.ai/developers",
+        "title": "The Auditable Truth API & MCP for Modern Fintechs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.ipayx.ai/pricing",
+        "title": "Pricing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1119
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 103.19
+  }
+}

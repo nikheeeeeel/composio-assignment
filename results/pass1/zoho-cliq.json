@@ -1,0 +1,262 @@
+{
+  "app": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "one_line_description": {
+    "value": "Zoho Cliq is a business communication platform for team chat, channels, calls, meetings, and workflow automation.",
+    "source_url": "https://www.zoho.com/cliq/",
+    "quote": "Zoho Cliq streamlines your business communication and fuels effortless conversations within teams and external stakeholders through organization, automation, and AI.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+    "quote": "All of Cliq's APIs are documented in the OpenAPI specification, which can be downloaded as a YAML file below:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "quote": "Zoho Cliq's REST API is designed based on RESTful architecture principles, enabling seamless communication between your applications and Zoho Cliq.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write REST surface: chats, channels, messages, threads, teams, bots, files, calendars, reminders, roles, plus v3 CRUD for bots, slash commands, message actions, widgets, and schedulers.",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "quote": "v3 introduces CRUD API endpoints for bots, slash commands, message actions, widgets, schedulers, and more, which were not available in v2.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "quote": "Every v3 endpoint follows a consistent model with resource-oriented URLs, JSON request/response bodies, standard HTTP verbs, and uniform error structures.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "quote": "Zoho Cliq API uses the OAuth 2.0 protocol for authentication.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+    "quote": "Access tokens are always assigned specific scopes, which are outlined in the request, and these scopes will be presented to the user during the permission request process.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+    "quote": "Upon successful registration of your application, you will receive a Client ID and Client Secret. These credentials are used to obtain an access token, which is required to make API calls to Zoho Cliq.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Credentials are self-serve: register an app in the Zoho API Console and receive a Client ID/Secret for OAuth. No plan tier, app review, partner approval, or sales contact gate for API credentials was documented in the fetched pages; the pricing comparison page was unreadable and Zoho Cliq advertises a 15-day free trial.",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+    "quote": "Go to the Zoho API Console, then click GET STARTED.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+    "source_url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+    "quote": "The Zoho Cliq MCP Server brings your chats into the world of AI using the Model Context Protocol (MCP).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=zoho_cliq",
+    "quote": "{\"items\": [{\"slug\": \"zoho_cliq\", \"name\": \"Zoho Cliq\", \"app\": \"Zoho Cliq\", \"tools_count\": 162}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/bots/",
+    "quote": "Their behavior is fully customizable through predefined Bot Handlers, which are activated by specific actions or through Webhooks that communicate with your own external server.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "URL-path versioning (/v2/, /v3/); v3 is the latest and recommended for new integrations; v2 remains documented and shares the same base domain and OAuth tokens. No deprecation/sunset timeline was found in the fetched evidence.",
+    "source_url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+    "quote": "The latest version, v3, is the recommended choice for all new workflows, automations, and integrations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Zoho Cliq publishes a versioned REST API (v3) documented with an OpenAPI spec, OAuth 2.0 with scoped access tokens, and broad read-write coverage of chats, channels, messages, bots, and more. App registration and credential issuance are self-serve through the Zoho API Console, with no sales contact, partner approval, or app review documented for API access. Composio also ships a 162-tool Zoho Cliq toolkit, confirming practical integration breadth.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The fetched plan-comparison page contained no readable pricing/plan-gating text; whether a paid Cliq plan is required for production API use is unconfirmed.",
+    "API rate limits/throttling quotas were not documented in the fetched REST API pages.",
+    "No documented sandbox or test environment was found; the Postman collection page appeared in search but was not included in the fetched evidence.",
+    "No official vendor-maintained SDKs were found; only Zoho Catalyst SDK pages appeared in search results, which are not Cliq-specific SDKs.",
+    "The Zoho Cliq MCP server is vendor-operated, but no public MCP endpoint URL was published in the fetched docs; it is likely per-organization/tenant.",
+    "The v2 deprecation/sunset policy was not found; the deprecations help page appeared in search but was not included in the fetched evidence.",
+    "No community/third-party MCP servers for Zoho Cliq were found (GitHub and MCP registry checks returned none)."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "hint": "zoho.com/cliq",
+      "description": null,
+      "source_file": "03-communications-and-messaging.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://www.zoho.com/cliq/plan-comparison.html",
+        "title": "Plans and Pricing Comparison | Zoho Cliq",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 189
+      },
+      {
+        "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+        "title": "Rest API documentation | Cliq",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/cliq/mcp-server.html",
+        "title": "Bring AI into your workflow with Zoho Cliq’s Model Context Protocol (MCP)",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4423
+      },
+      {
+        "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+        "title": "Guide to Zoho Cliq's MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2509
+      },
+      {
+        "url": "https://www.zoho.com/cliq/help/restapi/v3/bots/",
+        "title": "Bots | Zoho Cliq | API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/cliq/help/restapi/v3/introduction/",
+        "title": "Introduction | Zoho Cliq | API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/cliq/help/restapi/v3/oascliq/",
+        "title": "OpenAPI Specification (OAS) | Zoho Cliq | API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1957
+      },
+      {
+        "url": "https://www.zoho.com/cliq/help/restapi/v3/oauth/",
+        "title": "Introduction to OAuth 2.0 | Zoho Cliq | API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4999
+      },
+      {
+        "url": "https://www.zoho.com/cliq/help/restapi/v3/registerclient/",
+        "title": "Register your application | Zoho Cliq | API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3170
+      },
+      {
+        "url": "https://www.zoho.com/cliq/pricing.html",
+        "title": "Cliq - Chat Pricing | Free Chat plans for all Teams size",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.zoho.com/cliq/",
+        "title": "Team chat & communication software for businesses - Zoho Cliq",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://zoho.com/cliq"
+    ],
+    "refinement": {},
+    "research_seconds": 115.48
+  }
+}

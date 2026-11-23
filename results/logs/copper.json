@@ -1,0 +1,393 @@
+{
+  "app": "Copper",
+  "category": "CRM and Sales",
+  "slug": "copper",
+  "started_at": "2026-11-23T15:38:59.408645+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:44:04.864734+00:00",
+  "duration_s": 305.46,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/copper.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Copper\" official API documentation developer reference site:copper.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.574,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Copper\" pricing plans API access enterprise developer site:copper.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.731,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Copper\" MCP server official Model Context Protocol site:copper.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.458,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Copper\" API authentication OAuth API key documentation site:copper.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.224,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Copper\" API webhooks events callbacks documentation site:copper.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.594,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Copper\" API rate limits throttling quota documentation site:copper.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.291,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Copper\" API sandbox test environment staging developer site:copper.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.22,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Copper\" API versioning deprecation sunset policy site:copper.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.348,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Copper\" official SDK client libraries developer site:copper.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 6.911,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Copper"
+      },
+      "ok": true,
+      "duration_s": 0.045,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Copper MCP"
+      },
+      "ok": true,
+      "duration_s": 0.991,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developer.copper.com/",
+          "https://developer.copper.com/introduction/requests.html",
+          "https://developer.copper.com/introduction/authentication.html",
+          "https://www.copper.com/pricing",
+          "https://www.copper.com/mcp"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.179,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://support.copper.com/en/articles/10324524-chapter-1-where-do-i-start-here",
+          "https://developer.copper.com/webhooks/overview.html",
+          "https://docs.copper.com/copper-sdk/",
+          "https://developer.copper.com/introduction/change_policy.html",
+          "https://copper.com"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 2.239,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Copper\" API pricing plans access requirements",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.048,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 15,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Copper\" developer API free tier paid plan",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.763,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 16,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://www.copper.com/pricing",
+          "https://saascrmreview.com/copper-crm-pricing/"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.475,
+      "result_count": 2,
+      "error": null
+    }
+  ],
+  "tool_call_count": 16,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://developer.copper.com/",
+      "title": "Getting started - Copper Developer API",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2221
+    },
+    {
+      "url": "https://developer.copper.com/introduction/requests.html",
+      "title": "Requests - Copper Developer API",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1035
+    },
+    {
+      "url": "https://developer.copper.com/introduction/authentication.html",
+      "title": "Overview - Copper Developer API",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 831
+    },
+    {
+      "url": "https://www.copper.com/pricing",
+      "title": "Pricing | Copper CRM",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4999
+    },
+    {
+      "url": "https://www.copper.com/mcp",
+      "title": "Copper MCP for Claude | Copper CRM",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3120
+    },
+    {
+      "url": "https://support.copper.com/en/articles/10324524-chapter-1-where-do-i-start-here",
+      "title": "Chapter 1: Where do I start? Here. | Copper Help Center",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": "2026-09-21T22:37:14.000Z",
+      "chars": 4995
+    },
+    {
+      "url": "https://developer.copper.com/webhooks/overview.html",
+      "title": "Overview - Copper Developer API",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3172
+    },
+    {
+      "url": "https://docs.copper.com/copper-sdk/",
+      "title": "Quick Start | Copper App SDK",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 852
+    },
+    {
+      "url": "https://developer.copper.com/introduction/change_policy.html",
+      "title": "Change Policy - Copper Developer API",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4119
+    },
+    {
+      "url": "https://copper.com",
+      "title": "CRM software company for service businesses | Copper CRM",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://saascrmreview.com/copper-crm-pricing/",
+      "title": "Copper CRM Pricing 2026: Plans, Hidden Costs & TCO",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": "2026-07-03T09:24:47.000Z",
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Copper",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 146.173,
+      "tokens": {
+        "input": 12468,
+        "output": 2037,
+        "reasoning": 12380
+      },
+      "cost_usd": 0.00841632
+    },
+    {
+      "purpose": "research:Copper",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 133.189,
+      "tokens": {
+        "input": 10298,
+        "output": 2064,
+        "reasoning": 8819
+      },
+      "cost_usd": 0.00646574
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 22766,
+      "output": 4101,
+      "reasoning": 21199
+    },
+    "cost_usd": 0.01488206,
+    "llm_calls": 2
+  }
+}

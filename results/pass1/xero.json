@@ -1,0 +1,241 @@
+{
+  "app": "Xero",
+  "category": "Finance and Fintech",
+  "one_line_description": {
+    "value": "Xero is a cloud accounting platform for small and medium-sized businesses that exposes public APIs for building accounting integrations.",
+    "source_url": "https://developer.xero.com/faq/limits",
+    "quote": "Xero is built for small and medium-sized businesses, including those with higher volume needs.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.xero.com/faq/getting-started",
+    "quote": "The Xero API does not support basic API Key authentication. Our API uses OAuth 2.0 which means you need to register your app to get a client id and client secret which you use to access the API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.xero.com/faq/getting-started",
+    "quote": "You can also use our OpenAPI spec to generate your own SDK.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Multiple APIs (Accounting, Payroll, Files, Assets, etc.); broad read-write accounting data access",
+    "source_url": "https://developer.xero.com/faq/limits",
+    "quote": "Endpoints on the Accounting API that currently support pagination include invoices, contacts, bank transactions and manual journals. All major endpoints on the Payroll, Files and Assets APIs also support paging.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.xero.com",
+    "source_url": "https://developer.xero.com",
+    "quote": "This includes Xero APIs, SDKs, code samples, documentation and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "other"
+    ],
+    "source_url": "https://developer.xero.com/faq/getting-started",
+    "quote": "We currently support OAuth 1.0a and OAuth 2.0. However, OAuth 1.0a is in the process of being deprecated and OAuth 2.0 is required for all new integrations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developer.xero.com/faq/remote-mcp",
+    "quote": "Only the scopes for the tools you want the agent to call. Each tool's required scope is listed in the tools table.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developer.xero.com/faq/getting-started",
+    "quote": "The first step is to sign up for a free Xero account. Once you have done that, you have two options as to how you can begin development without incurring any cost:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free Xero account plus demo company enables development at no cost; a no-charge Starter app plan covers 5 connections and 1,000 calls/day per org, while production/App Store apps and Plus+ tiers require app certification and paid plans.",
+    "source_url": "https://developer.xero.com/faq/getting-started",
+    "quote": "The first step is to sign up for a free Xero account. Once you have done that, you have two options as to how you can begin development without incurring any cost:",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://developer.xero.com/ai",
+    "source_url": "https://developer.xero.com/ai",
+    "quote": "Securely and seamlessly connect Agents to Xero data through a Xero-hosted MCP server.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=xero",
+    "quote": "\"slug\": \"xero\", \"name\": \"Xero\", \"app\": \"Xero\", \"tools_count\": 109",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per tenant: 5 concurrent calls, 60 calls/minute, 5,000 calls/day; app-wide 10,000 calls/minute",
+    "source_url": "https://developer.xero.com/faq/limits",
+    "quote": "- Concurrent Limit: 5 calls in progress at one time - Minute Limit: 60 calls per minute - Daily Limit: 5000 calls per day There is also a limit to the number of API calls your app can make per minute across all tenants. - App Minute Limit: 10,000 calls per minute",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.xero.com/pricing",
+    "quote": "Webhooks",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developer.xero.com/faq/getting-started",
+    "quote": "The quickest way to try out the API is to set up your demo company and dive into the API Explorer.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "OAuth 1.0a is being deprecated and OAuth 2.0 is required for all new integrations; a broader API versioning/sunset schedule is not documented in the evidence.",
+    "source_url": "https://developer.xero.com/faq/getting-started",
+    "quote": "We currently support OAuth 1.0a and OAuth 2.0. However, OAuth 1.0a is in the process of being deprecated and OAuth 2.0 is required for all new integrations.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Xero documents a public OAuth 2.0 API with multiple accounting, payroll, files and assets endpoints. A free Xero account plus demo company lets developers build and test at no cost, and the Starter app plan has no monthly fee. Production publication and higher connection tiers add certification and paid-plan requirements, but development access is self-serve.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official SDK language list is not present in the evidence bundle; confirm supported SDKs on developer.xero.com.",
+    "The exact Remote MCP server endpoint URL is not published in the evidence; only the AI Toolkit page and Remote MCP FAQ are available.",
+    "Webhook configuration details were not captured in the fetched sources even though webhooks appear as a platform feature.",
+    "Rate limits vary by plan tier (Starter 1,000/day vs Core+ 5,000/day per org); confirm which limits apply to the specific app plan.",
+    "No official API versioning/sunset policy beyond the OAuth 1.0a deprecation was found in the fetched sources."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Xero",
+      "category": "Finance and Fintech",
+      "hint": "developer.xero.com",
+      "description": null,
+      "source_file": "09-finance-and-fintech.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.xero.com",
+        "title": "Xero Developer Platform",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3879
+      },
+      {
+        "url": "https://developer.xero.com/documentation/api/accounting/types",
+        "title": "Accounting API Types and Codes — Xero Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 96
+      },
+      {
+        "url": "https://developer.xero.com/faq/getting-started",
+        "title": "Getting started FAQs — Xero Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2501
+      },
+      {
+        "url": "https://developer.xero.com/faq/oauth2",
+        "title": "OAuth 2.0 FAQs — Xero Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2006
+      },
+      {
+        "url": "https://developer.xero.com/pricing",
+        "title": "Pricing — Xero Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+        "title": "Pricing and Policy Updates FAQs — Xero Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.xero.com/faq/limits",
+        "title": "Limits FAQs — Xero Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3034
+      },
+      {
+        "url": "https://developer.xero.com/faq/remote-mcp",
+        "title": "Remote MCP FAQs — Xero Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4509
+      },
+      {
+        "url": "https://developer.xero.com/ai",
+        "title": "Xero's AI Toolkit — Xero Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2276
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 79.09
+  }
+}

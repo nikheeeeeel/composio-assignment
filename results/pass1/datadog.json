@@ -1,0 +1,288 @@
+{
+  "app": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": {
+    "value": "Observability platform for gathering metrics, traces, and logs from integrations into Datadog.",
+    "source_url": "https://docs.datadoghq.com/",
+    "quote": "Gather metrics, traces, and logs with over 1,000+ built-in integrations to send to Datadog.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.datadoghq.com/api",
+    "quote": "Use the Datadog API to access the Datadog platform programmatically.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.datadoghq.com/api",
+    "quote": "The API uses resource-oriented URLs to call the API, uses status codes to indicate the success or failure of requests, returns JSON from all requests, and uses standard HTTP response codes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad multi-product read-write API covering APM, logs, metrics, monitors, dashboards, security signals, and more.",
+    "source_url": "https://docs.datadoghq.com/mcp_server/",
+    "quote": "It provides remote access to most Datadog products (APM, logs, metrics, monitors, dashboards, security signals, and more).",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.datadoghq.com/api",
+    "source_url": "https://docs.datadoghq.com/api",
+    "quote": "Use the Datadog API to access the Datadog platform programmatically.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "source_url": "https://docs.datadoghq.com/api/latest/authentication",
+    "quote": "Requests that write data require reporting access and require an `API key`. Requests that read data require full access and also require an `application key`.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.datadoghq.com/extend/authorization/oauth2_endpoints.md",
+    "quote": "renders a consent page displaying the list of scopes requested by your application and a prompt for the user to authorize access.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "unknown",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API and application keys are managed within a Datadog account, and OAuth2 apps use scoped authorization. The supplied sources do not explicitly state whether a free tier/trial or a paid plan is required before API/application keys can be created.",
+    "source_url": "https://docs.datadoghq.com/api/latest/authentication",
+    "quote": "Manage your account’s API and application keys in Datadog, and see the API and Application Keys page in the documentation.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.datadoghq.com/v1/mcp",
+    "source_url": "https://docs.datadoghq.com/mcp_server/setup/",
+    "quote": "https://mcp.datadoghq.com/v1/mcp",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=datadog",
+    "quote": "{\"items\": [{\"slug\": \"datadog\", \"name\": \"Datadog\", \"app\": \"Datadog\", \"tools_count\": 255}, {\"slug\": \"datadog_mcp\", \"name\": \"Datadog MCP\", \"app\": \"Datadog\", \"tools_count\": 370}], \"total_items\": 2}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.datadoghq.com/extend/guide/calling-on-datadog-s-api-with-the-webhooks-integration.md",
+    "quote": "You can use the Webhooks integration to trigger webhooks from Datadog monitors and events",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Java",
+      "Python",
+      "Ruby",
+      "Go",
+      "JavaScript",
+      "Rust"
+    ],
+    "source_url": "https://docs.datadoghq.com/api",
+    "quote": "Select one of our official client libraries languages in each endpoint to see code examples from that library.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "API paths are versioned (v1/v2); no general deprecation/sunset policy was found in the supplied sources.",
+    "source_url": "https://docs.datadoghq.com/api",
+    "quote": "Note: Replace ` ` with v1 or v2, depending on which endpoints you want to use.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Datadog publishes a public REST API with API-key and OAuth2 authentication and broad multi-product coverage, and API/application keys are managed in-account. However, the supplied sources do not establish whether a free tier/trial or a paid plan is required before credentials can be created, so access is conservatively rated moderate rather than easy.",
+  "main_blocker": "Free/trial vs paid-plan access not documented",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Supplied sources do not state whether a free tier/trial or paid plan is required to create a Datadog account and obtain API/application keys.",
+    "General API rate limits were not documented in the supplied sources.",
+    "No documented sandbox/test environment was found in the supplied sources.",
+    "No community MCP servers were found in the supplied evidence; only the vendor-operated Datadog MCP server is documented.",
+    "A general API deprecation/sunset policy was not found; the evidence shows v1/v2 path versioning only."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Datadog",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "docs.datadoghq.com/api",
+      "description": null,
+      "source_file": "07-developer-infra-and-data-platforms.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 16,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.datadoghq.com/getting_started/access_for_enterprises/permissions.md",
+        "title": "Permissions and Feature Access",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.datadoghq.com/api/latest/usage-metering/create-or-update-usage-quotas.md",
+        "title": "Create or update usage quotas",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.datadoghq.com/mcp_server/",
+        "title": "Datadog MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.datadoghq.com/mcp_server/setup/",
+        "title": "Set Up the Datadog MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.datadoghq.com/extend/guide/calling-on-datadog-s-api-with-the-webhooks-integration.md",
+        "title": "Calling on Datadog's API with the Webhooks Integration",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4096
+      },
+      {
+        "url": "https://docs.datadoghq.com/api",
+        "title": "Datadog API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4997
+      },
+      {
+        "url": "https://docs.datadoghq.com/",
+        "title": "Datadog Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.datadoghq.com/api/latest/key-management.md",
+        "title": "Key Management",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.datadoghq.com/api/latest/authentication",
+        "title": "Authentication - Datadog API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1076
+      },
+      {
+        "url": "https://docs.datadoghq.com/extend/authorization/oauth2_endpoints.md",
+        "title": "OAuth2 Authorization Endpoints Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.datadoghq.com/pricing/",
+        "title": "Pricing | Datadog",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://apiterms.com/api/datadoghq.com/",
+        "title": "Datadog API: pricing, auth, rate limits | API Terms",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 1328
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "access_model"
+      ],
+      "queries": [
+        "\"Datadog\" API pricing plans access requirements",
+        "\"Datadog\" developer API free tier paid plan"
+      ],
+      "extra_urls": [
+        "https://www.datadoghq.com/pricing/",
+        "https://apiterms.com/api/datadoghq.com/"
+      ],
+      "tool_calls_after": 16
+    },
+    "research_seconds": 408.74
+  }
+}

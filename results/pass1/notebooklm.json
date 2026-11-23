@@ -1,0 +1,297 @@
+{
+  "app": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "one_line_description": {
+    "value": "Gemini Notebook (formerly NotebookLM Enterprise) is an AI-powered research and writing tool that summarizes and extracts information across dense and complex sources.",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/overview",
+    "quote": "Gemini Notebook is an AI-powered research and writing tool that helps you summarize and extract information across dense and complex sources.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "This page describes the APIs that let you perform the following notebook management tasks programmatically:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "The `projects.locations.notebooks` REST API methods on this page require an authenticated user account with an active Gemini Notebook Enterprise license.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST v1alpha; read-write notebook management (create, retrieve, list, delete, share); Preview; narrow-to-moderate breadth",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "Create a notebook - Retrieve a notebook - List recently viewed notebooks - Delete a notebook - Share a notebook",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "This page describes the APIs that let you perform the following notebook management tasks programmatically:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "Authorization:Bearer $(gcloud auth print-access-token)",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.google.com/identity/protocols/oauth2/scopes",
+    "quote": "This document lists the OAuth 2.0 scopes that you might need to request to access Google APIs, depending on the level of access you need.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+    "quote": "The free-trial tier: With this tier, you get a full-featured, 14-day trial subscription of 5000 licenses.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Calling the notebooks API requires an active Gemini Notebook Enterprise subscription/license, a Google Cloud project with the API enabled, and Cloud NotebookLM User/Admin IAM roles; the only low-friction route is a 14-day, 5,000-license free trial, after which a paid monthly or annual subscription is required. The API itself is Preview (v1alpha) and subject to Pre-GA terms; contacting sales is only required above 5,000 licenses.",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+    "quote": "The free-trial tier: With this tier, you get a full-featured, 14-day trial subscription of 5000 licenses.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": [
+      "https://github.com/PleasePrompto/notebooklm-mcp"
+    ],
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=notebook_lm",
+    "quote": "{\"items\": [{\"slug\": \"notebook_lm\", \"name\": \"NotebookLM\", \"app\": \"NotebookLM\", \"tools_count\": 11}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "v1alpha API in Preview; Pre-GA Offerings Terms apply and the feature is provided \"as is\" with potentially limited support.",
+    "source_url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "quote": "Pre-GA features are available \"as is\" and might have limited support.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Google publishes documented REST API methods for notebooks (google.cloud.notebooklm.v1alpha), but the surface is in Preview/Pre-GA and labeled as possibly having limited support. Access requires an enterprise subscription/license plus Cloud NotebookLM IAM roles, with only a 14-day, 5,000-license trial available before paid monthly/annual licensing. That plan-tier gating and narrow, alpha-status scope make it moderate rather than easy.",
+  "main_blocker": "Enterprise subscription/license plus Preview (v1alpha) API",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official NotebookLM-specific MCP server not found. Google documents a vendor MCP server at https://discoveryengine.googleapis.com/mcp (source S8), but its listed tools are search, conversational_search, and list_engines only; it does not document notebook-management MCP tools.",
+    "The NotebookLM API reference page (google.cloud.notebooklm.v1alpha) reportedly lists authorization scopes (cloud-platform, discoveryengine.readwrite), but the fetched text did not include that section; verify the exact documented scope list.",
+    "Rate limits/quota numbers for the NotebookLM API were not documented in the fetched pages; the 500 notebooks-per-user and 300 sources-per-notebook figures are product usage limits, not API rate limits.",
+    "No webhook/event-callback mechanism was documented in any fetched source.",
+    "No official NotebookLM SDK/client libraries were documented; examples use curl with gcloud-printed access tokens. Confirm whether generated Discovery Engine client libraries are officially supported for notebooklm.v1alpha.",
+    "No separate sandbox/test environment was documented; confirm whether a 14-day trial subscription can be used for non-production testing.",
+    "Community MCP server https://github.com/PleasePrompto/notebooklm-mcp was surfaced only in search results and was not fetched/verified.",
+    "Naming ambiguity: NotebookLM Enterprise has been renamed Gemini Notebook Enterprise, but the subscription name remains NotebookLM Enterprise and the API namespace is google.cloud.notebooklm.v1alpha; the personal NotebookLM product has no separate public API in the evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "hint": "cloud.google.com/gemini",
+      "description": "Enterprise API",
+      "source_file": "10-ai-research-and-media-native.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 17,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.google.com/identity/protocols/oauth2/scopes",
+        "title": "OAuth 2.0 Scopes for Google APIs  |  Google for Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/overview",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/enable-model-armor",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.cloud.google.com/generative-ai-app-builder/docs/reference/mcp",
+        "title": "MCP Reference: discoveryengine.googleapis.com",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2478
+      },
+      {
+        "url": "https://support.google.com/g/answer/16719009?hl=en",
+        "title": "Gemini Enterprise – Business edition release notes - Gemini Enterprise – Business Edition Help",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.google.com/oauthplayground/",
+        "title": "OAuth 2.0 Playground",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://cloud.google.com/ai/gemini",
+        "title": "Google AI Studio vs. Gemini platform vs. Gemini | Google Cloud",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/google/mcp/issues/19",
+        "title": "Official NotebookLM MCP Server",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1682
+      },
+      {
+        "url": "https://www.kortex-notebooklm.com/blog/notebooklm-mcp",
+        "title": "Gemini Notebook (formerly NotebookLM) MCP Server: 2026 Guide",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://cloud.google.com/gemini"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"NotebookLM\" official MCP server",
+        "\"NotebookLM\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://github.com/google/mcp/issues/19",
+        "https://www.kortex-notebooklm.com/blog/notebooklm-mcp"
+      ],
+      "tool_calls_after": 17
+    },
+    "research_seconds": 391.2
+  }
+}

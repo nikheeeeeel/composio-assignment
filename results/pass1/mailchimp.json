@@ -1,0 +1,243 @@
+{
+  "app": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": {
+    "value": "Mailchimp's developer tools let you integrate your data with intelligent marketing tools and event-driven transactional email and SMS.",
+    "source_url": "https://mailchimp.com/developer",
+    "quote": "Mailchimp’s developer tools provide everything you need to integrate your data with intelligent marketing tools and event-driven transactional email and SMS.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://mailchimp.com/developer/marketing/",
+    "quote": "Creating a Mailchimp account is the first step to accessing our APIs and developer tools.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://mailchimp.com/developer/marketing/api/",
+    "quote": "The HTTP method that should be used when accessing the URL defined in 'href'. - Allowed values: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `OPTIONS`, `HEAD`",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, broad: audience/contact management, campaigns, automations, events, batch operations, and webhooks; read-write",
+    "source_url": "https://mailchimp.com/developer/marketing/",
+    "quote": "Manage your audiences Leverage the Marketing API to integrate your users’ data with Mailchimp’s marketing scale.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://mailchimp.com/developer/marketing/api/",
+    "source_url": "https://mailchimp.com/developer/marketing/api/",
+    "quote": "Get links to all other resources available in the API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "basic",
+      "bearer_token"
+    ],
+    "source_url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+    "quote": "You can use either HTTP Basic Authentication or Bearer Authentication.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+    "quote": "You can start development against your own account with a key and move to OAuth 2 later; the request-signing mechanics below are identical for both.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "A free Mailchimp account and self-serve API key are enough for own-account development; OAuth 2 is required for third-party users' accounts; production/customer-org use is tied to paid plans. The official MCP server at https://mailchimp.com/developer/_mcp/server searches documentation only, not the account.",
+    "source_url": "https://mailchimp.com/developer/marketing/",
+    "quote": "Creating a Mailchimp account is the first step to accessing our APIs and developer tools.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mailchimp.com/developer/_mcp/server",
+    "source_url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+    "quote": "This documentation site is itself an MCP server.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=mailchimp",
+    "quote": "{\"items\": [{\"slug\": \"mailchimp\", \"name\": \"Mailchimp\", \"app\": \"Mailchimp\", \"tools_count\": 275}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "10 simultaneous connections per user; 120-second timeout per API call; 500 pending batch webhook events per user",
+    "source_url": "https://mailchimp.com/developer/marketing/api-concepts/rate-limits-and-timeouts",
+    "quote": "The Marketing API has a limit of 10 simultaneous connections.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://mailchimp.com/developer/marketing/api-concepts/webhooks",
+    "quote": "Webhooks are a helpful tool that you can use to collect information about audience changes in Mailchimp as they happen.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Marketing API version 3.0, base URL includes /3.0/; no deprecation or sunset policy was found in the supplied evidence.",
+    "source_url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+    "quote": "https://api.mailchimp.com/3.0/",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Mailchimp documents a public Marketing API with API key and OAuth 2 authentication, and a free account is enough to begin development. API breadth is substantial (audiences, campaigns, automations, events, batch, webhooks) and rate limits are documented. No sales contact or partner approval is required for development credentials.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "OAuth 2 scopes/permissions documentation was not present in the supplied evidence; the OAuth 2 reference page was only available as a search snippet.",
+    "The official client-library/SDK page was not included in the evidence text, so the official SDK language list is unverified.",
+    "No documented sandbox or test environment was confirmed; the sandbox search returned unrelated transactional/blog pages.",
+    "API versioning was inferred only from the v3.0 URL; no deprecation/sunset policy text was supplied.",
+    "The official MCP server is documented as docs-search only; any account-action MCP surface was not found in the evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "mailchimp.com/developer",
+      "description": null,
+      "source_file": "04-marketing-ads-email-and-social.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://mailchimp.com/pricing/marketing/",
+        "title": "Mailchimp Pricing Plans | Get Started Today | Mailchimp",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/",
+        "title": "Power your campaigns with our marketing engine | Mailchimp Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2321
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/api-concepts/rate-limits-and-timeouts",
+        "title": "Rate limits and timeouts",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2224
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server/",
+        "title": "MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3063
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/api-concepts/webhooks",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://mailchimp.com/developer",
+        "title": "Mailchimp Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2805
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/api/",
+        "title": "List API root resources",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2881
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/api-keys/",
+        "title": "API keys",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1405
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 73.59
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "app": "Brex",
+  "category": "Finance and Fintech",
+  "one_line_description": {
+    "value": "Brex is a unified spend platform offering global corporate cards, expense management, reimbursements, travel, and bill pay.",
+    "source_url": "https://developer.brex.com",
+    "quote": "Brex is the first fully unified spend platform — with global corporate cards, expense management, reimbursements, travel, and bill pay.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.brex.com",
+    "quote": "Using the Brex API, you can power your internal tools and create custom workflows.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.brex.com",
+    "quote": "Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST/OpenAPI, 10 documented API groups (Accounting, Budgets, Expenses, Fields, Onboarding, Payments, Team, Transactions, Travel, Webhooks), read-write (e.g. 'manage users, locations, departments, and cards')",
+    "source_url": "https://developer.brex.com",
+    "quote": "- Accounting API: View and manage accounting data - Budgets API: Manage budgets and budget programs - Expenses API: View and manage card expenses data, receipt match and receipt uploads",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.brex.com",
+    "source_url": "https://developer.brex.com",
+    "quote": "Explore our guides and review our API documentation to see how you can integrate with Brex.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://developer.brex.com/docs/mcp",
+    "quote": "For clients that don't support OAuth, or for programmatic access, account and card admins can authenticate with a Brex API token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developer.brex.com/guides/roles_permissions_scopes",
+    "quote": "Scopes define which endpoints your app has access to. You will specify your scopes when generating your user token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://www.brex.com/pricing",
+    "quote": "Real-time reporting - Brex API access - Bill pay - Reimbursements",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Requires an existing Brex customer account; only an account admin or card admin can generate a user token (Settings > Developer) after the company accepts the Developer API agreement. Brex currently exposes only a production API server at https://api.brex.com — no sandbox. The pricing page lists 'Brex API access' as a plan feature, and no free/self-serve developer edition is documented; partner/onboarding API uses client credentials and is reserved for Brex developer partners.",
+    "source_url": "https://developer.brex.com/guides/authentication",
+    "quote": "If your company has not accepted the developer API agreement, please review the terms and conditions. These must be accepted to use the developer API.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://api.brex.com/mcp",
+    "source_url": "https://developer.brex.com/docs/mcp",
+    "quote": "The server is hosted at `https://api.brex.com/mcp` and supports any MCP-compatible client.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=brex",
+    "quote": "{\"slug\": \"brex\", \"name\": \"Brex\", \"app\": \"Brex\", \"tools_count\": 84}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per Client ID and Brex account: 1,000 requests per 60 seconds; 1,000 transfers per 24 hours; 100 international wires per 24 hours; 5,000 cards created per 24 hours; HTTP 429 when exceeded",
+    "source_url": "https://developer.brex.com/guides/rate_limits",
+    "quote": "- Up to 1,000 requests in 60 seconds. - Up to 1,000 transfers in 24 hours. - Up to 100 international wires in 24 hours. - Up to 5,000 cards created in 24 hours.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.brex.com",
+    "quote": "Webhooks API: Send real-time notifications based on events",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": "https://developer.brex.com/guides/authentication",
+    "quote": "Brex currently only offers a production API server at `https://api.brex.com`. This is the base URL for all API calls.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "No formal versioning/sunset policy captured; changelog states updates are rolling and unscheduled, and the changelog shows endpoints being removed as deprecated (e.g. POST /v2/users/{id}/limit). API paths are versioned (/v2).",
+    "source_url": "https://developer.brex.com/changelog",
+    "quote": "This changelog tracks changes to the Brex API and is updated periodically. Updates to the API are on a rolling basis and not on any defined schedule.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Brex has a genuinely broad, well-documented REST/OpenAPI surface (ten API groups, documented OAuth scopes, rate limits, webhooks) and even a vendor-hosted MCP server at https://api.brex.com/mcp. However, credentials are not generally self-serve: the quickstart 'assumes you are a Brex customer with admin access' and the auth guide requires account/card-admin token creation plus acceptance of the Developer API agreement. API access is listed only as a plan feature and the sole server is production, so access is gated rather than trivially self-serve.",
+  "main_blocker": "Requires an existing Brex customer account with account/card-admin role; production-only, no sandbox",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Is a Brex account obtainable self-serve and free, or does it require sales contact? The bundle shows 'Brex API access' as a plan feature but no prices, free-tier terms, or signup flow.",
+    "Which Brex plan tiers include API access? The pricing page feature list does not unambiguously map features to tier columns.",
+    "Does Brex ship any official, vendor-maintained SDKs? No source in the bundle confirms this (a community-supported libraries page appeared only as a search snippet, not in the fetched sources).",
+    "Partner/onboarding API access (client-credentials grant, partner authentication) appears restricted to Brex developer partners, but the partner onboarding/application requirements were not fully captured in the evidence.",
+    "The team API snippet mentions a staging server that 'is not a sandbox' but that page was not included in the SOURCES text, so it was not used."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Brex",
+      "category": "Finance and Fintech",
+      "hint": "developer.brex.com",
+      "description": null,
+      "source_file": "09-finance-and-fintech.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.brex.com",
+        "title": "Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1516
+      },
+      {
+        "url": "https://developer.brex.com/guides/quickstart",
+        "title": "Quickstart",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2460
+      },
+      {
+        "url": "https://developer.brex.com/guides/authentication",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2761
+      },
+      {
+        "url": "https://developer.brex.com/guides/roles_permissions_scopes",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.brex.com/pricing",
+        "title": "Brex Pricing Plans | Get Started Today",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.brex.com/guides/rate_limits",
+        "title": "Rate limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1567
+      },
+      {
+        "url": "https://developer.brex.com/docs/mcp",
+        "title": "Brex MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.brex.com/changelog",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.brex.com/openapi/webhooks_api/webhook-events",
+        "title": "Webhook Events",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 964
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 98.86
+  }
+}

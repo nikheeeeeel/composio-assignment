@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evaluating the Feasibility of Building AI Toolkits Across 100 Applications</title>
+<style>
+  :root{
+    --paper:#ffffff;
+    --canvas:#f6f5f2;
+    --ink:#191918;
+    --muted:#64625d;
+    --dim:#8b8881;
+    --line:#e2dfd8;
+    --line-strong:#cfcbc2;
+    --accent:#2f5d50;
+    --accent-soft:#eef3f0;
+    --amber:#8a6428;
+    --amber-soft:#f8f2e8;
+    --red:#8c4a45;
+    --red-soft:#f8eeed;
+    --blue:#365f73;
+    --blue-soft:#eef3f5;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --serif:"Iowan Old Style","Palatino Linotype","Book Antiqua",Palatino,Georgia,serif;
+    --mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  ::selection{background:#dfeae4}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline;text-underline-offset:3px}
+  button,input,select{font:inherit;color:inherit}
+  .page{max-width:1120px;margin:0 auto;background:var(--paper);border-left:1px solid var(--line);border-right:1px solid var(--line);min-height:100vh}
+  .wrap{padding:0 56px}
+  .top{border-bottom:1px solid var(--line);background:var(--paper)}
+  .top-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+  .brand{color:var(--ink);font-weight:600}
+  .meta{color:var(--dim)}
+  .hero{padding:72px 0 44px;border-bottom:1px solid var(--line)}
+  .kicker{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:500;letter-spacing:-.02em;margin:0}
+  h1{font-size:clamp(36px,4.6vw,56px);line-height:1.05;max-width:920px}
+  .lead{max-width:760px;color:var(--muted);font-size:15px;line-height:1.7;margin:20px 0 0}
+  .hero-findings{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:38px}
+  .hero-finding{padding:16px 16px 16px 0;border-right:1px solid var(--line)}
+  .hero-finding:last-child{border-right:0;padding-right:0}
+  .hero-finding .n{font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--dim);text-transform:uppercase}
+  .hero-finding b{display:block;font-family:var(--sans);font-size:12.5px;line-height:1.45;font-weight:500;margin:6px 0 0;color:var(--ink)}
+  .hero-finding > span{display:block;font-size:11px;color:var(--muted);line-height:1.5;margin-top:5px}
+  section{padding:54px 0;border-bottom:1px solid var(--line)}
+  .section-head{display:grid;grid-template-columns:44px 1fr;gap:16px;margin-bottom:26px;align-items:start}
+  .section-num{font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--dim);padding-top:8px}
+  .section-head h2{font-size:clamp(26px,3vw,36px);line-height:1.1}
+  .section-intro{color:var(--muted);font-size:13.5px;line-height:1.7;max-width:820px;margin:10px 0 0}
+  .finding-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .finding-card{border:1px solid var(--line);background:var(--paper);padding:24px;position:relative}
+  .finding-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:var(--accent)}
+  .finding-card .tag{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+  .finding-card h3{font-size:22px;line-height:1.2;margin:8px 0 8px}
+  .finding-card p{font-size:12.5px;color:var(--muted);margin:0 0 12px}
+  .finding-card .takeaway{border-top:1px solid var(--line);padding-top:10px;font-size:12px;color:var(--ink);margin-top:14px}
+  .finding-card .takeaway b{font-weight:600}
+  .fact-list{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px;margin:12px 0}
+  .fact{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:5px 0;font-size:11.5px}
+  .fact .k{color:var(--muted)}
+  .fact .v{font-family:var(--mono);font-size:11px;color:var(--ink);white-space:nowrap}
+  .mini-label{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin:12px 0 6px}
+  .approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .approach{border:1px solid var(--line);padding:22px;background:#fcfcfa}
+  .approach h3{font-size:20px;margin-bottom:4px}
+  .approach .sub{font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+  .approach ol{margin:0;padding-left:20px;color:var(--muted);font-size:12.5px;line-height:1.7}
+  .approach li{margin-bottom:6px}
+  .approach .note{font-size:11.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin-top:12px}
+  table{width:100%;border-collapse:collapse}
+  th,td{text-align:left;border-bottom:1px solid var(--line);padding:9px 9px;vertical-align:top}
+  th{font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);font-weight:400;background:#f8f7f4;position:sticky;top:0;z-index:2}
+  td{font-size:12px;color:var(--muted)}
+  td b{color:var(--ink);font-weight:600}
+  tr:hover td{background:#fcfcfa}
+  .table-wrap{border:1px solid var(--line);overflow:auto;max-height:560px;background:var(--paper)}
+  .table-wrap table{min-width:860px}
+  .table-wrap.narrow table{min-width:680px}
+  .matrix th,.matrix td{padding:8px 7px}
+  .matrix td.num{font-family:var(--mono);font-size:11px;color:var(--ink)}
+  .matrix .cat{color:var(--ink);white-space:nowrap}
+  .badge{display:inline-block;border:1px solid var(--line-strong);padding:2px 6px;font-family:var(--mono);font-size:9px;letter-spacing:.04em;line-height:1.4;white-space:nowrap;color:var(--muted);background:#fbfaf8}
+  .badge.easy,.badge.buildable{color:var(--accent);border-color:#bed2c9;background:var(--accent-soft)}
+  .badge.moderate,.badge.limited{color:var(--amber);border-color:#dfcda9;background:var(--amber-soft)}
+  .badge.hard,.badge.difficult{color:var(--red);border-color:#ddc0bd;background:var(--red-soft)}
+  .badge.blocked,.badge.insufficient{color:#5c5852;border-color:#cfc9be;background:#f3f1ed}
+  .badge.verified{color:var(--accent);border-color:#bed2c9;background:var(--accent-soft)}
+  .badge.review{color:var(--amber);border-color:#dfcda9;background:var(--amber-soft)}
+  .badge.official{color:var(--blue);border-color:#c5d5db;background:var(--blue-soft)}
+  .badge.community{color:var(--amber);border-color:#dfcda9;background:var(--amber-soft)}
+  .badge.none{color:#5c5852;border-color:#cfc9be;background:#f3f1ed}
+  .note{font-size:11.5px;color:var(--muted);line-height:1.65}
+  .note b{color:var(--ink)}
+  .callout{border-left:2px solid var(--accent);padding:2px 0 2px 14px;margin:16px 0;font-size:12px;color:var(--muted);line-height:1.65}
+  .callout b{color:var(--ink)}
+  .legend{font-size:10.5px;color:var(--dim);margin-top:10px;line-height:1.6}
+  .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--line);margin:18px 0}
+  .flow-step{padding:14px;border-right:1px solid var(--line);position:relative;background:#fcfcfa}
+  .flow-step:last-child{border-right:0}
+  .flow-step .n{font-family:var(--mono);font-size:9px;color:var(--dim)}
+  .flow-step b{display:block;font-size:12px;margin:4px 0;line-height:1.3}
+  .flow-step span{font-size:10.5px;color:var(--muted);line-height:1.5}
+  .status-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
+  .status-cell{border:1px solid var(--line);padding:14px;background:#fcfcfa}
+  .status-cell .v{font-family:var(--mono);font-size:24px;line-height:1;color:var(--ink)}
+  .status-cell .l{font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-top:6px}
+  .status-cell p{font-size:10.5px;color:var(--muted);margin:5px 0 0;line-height:1.5}
+  .obs-list{margin:0;padding-left:18px;color:var(--muted);font-size:12.5px;line-height:1.75}
+  .obs-list li{margin-bottom:6px}
+  .criteria td:nth-child(2),.criteria td:nth-child(3){font-family:var(--mono);font-size:10px;line-height:1.6}
+  .criteria .dash{color:var(--dim)}
+  .sample-grid{display:grid;grid-template-columns:260px 1fr;gap:20px;align-items:start}
+  .sample-meta{border:1px solid var(--line);padding:16px;background:#fcfcfa}
+  .sample-meta h3{font-size:20px;margin-bottom:2px}
+  .sample-meta .sub{font-size:11px;color:var(--muted);margin-bottom:12px}
+  .meta-row{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:6px 0;font-size:11px}
+  .meta-row:last-child{border-bottom:0}
+  .meta-row .k{color:var(--dim);font-family:var(--mono);font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+  .meta-row .v{color:var(--ink);text-align:right;max-width:62%;word-break:break-word}
+  .sample-claims{border:1px solid var(--line)}
+  .claim-row{display:grid;grid-template-columns:150px 1fr;gap:12px;border-bottom:1px solid var(--line);padding:9px 12px}
+  .claim-row:last-child{border-bottom:0}
+  .claim-row .f{font-family:var(--mono);font-size:8.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--dim);padding-top:2px}
+  .claim-row .v{font-size:11.5px;color:var(--ink);line-height:1.55;word-break:break-word}
+  .claim-row .v .conf{font-family:var(--mono);font-size:8.5px;color:var(--dim);margin-left:6px;text-transform:uppercase}
+  .claim-row .src{font-family:var(--mono);font-size:9px;color:var(--muted);word-break:break-all;margin-top:5px}
+  .claim-row .quote{font-size:10.5px;color:var(--muted);border-left:2px solid var(--line);padding-left:8px;margin-top:6px;line-height:1.55}
+  .spacer{height:24px}
+  .muted{color:var(--muted)}
+  .dim{color:var(--dim)}
+  .small{font-size:11px}
+  .mono{font-family:var(--mono)}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+  .filters input,.filters select{border:1px solid var(--line-strong);background:var(--paper);padding:7px 9px;font-size:11.5px;min-width:150px;border-radius:0;outline:none}
+  .filters input:focus,.filters select:focus{border-color:var(--accent)}
+  .filters input[type="search"]{flex:1;min-width:250px}
+  .filters label{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);white-space:nowrap}
+  .reset{border:1px solid var(--line-strong);background:var(--paper);padding:7px 9px;font-size:10px;font-family:var(--mono);cursor:pointer}
+  .table-meta{display:flex;justify-content:space-between;gap:12px;font-family:var(--mono);font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);margin:8px 0}
+  .row-toggle{cursor:pointer}
+  .row-toggle .chev{color:var(--dim);font-family:var(--mono);font-size:10px}
+  .detail-row td{background:#faf9f6;font-size:11px;color:var(--muted);padding:12px}
+  .detail-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .detail-grid .k{font-family:var(--mono);font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+  .detail-grid .v{font-size:11px;color:var(--ink);margin-top:3px}
+  .footer{padding:28px 0 56px;color:var(--dim);font-size:10.5px}
+  .footer b{color:var(--muted);font-weight:500}
+  .footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+  .source-list{display:grid;gap:2px;margin-top:6px}
+  .source-list span{font-family:var(--mono);font-size:9px;color:var(--dim)}
+  .recon{font-family:var(--mono);font-size:9px;letter-spacing:.04em;color:var(--dim);margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+  .hero-short{display:none}
+  @media (max-width:900px){
+    .wrap{padding:0 28px}
+    .hero-findings{grid-template-columns:1fr 1fr}
+    .hero-finding:nth-child(2){border-right:0}
+    .hero-finding:nth-child(3),.hero-finding:nth-child(4){border-top:1px solid var(--line)}
+    .finding-grid,.approach-grid,.sample-grid,.footer-grid{grid-template-columns:1fr}
+    .flow{grid-template-columns:1fr 1fr}
+    .flow-step:nth-child(2n){border-right:0}
+    .flow-step{border-bottom:1px solid var(--line)}
+    .status-strip{grid-template-columns:1fr 1fr}
+    .detail-grid{grid-template-columns:1fr 1fr}
+    .claim-row{grid-template-columns:120px 1fr}
+  }
+  @media (max-width:600px){
+    .page{border-left:0;border-right:0}
+    .wrap{padding:0 18px}
+    .hero{padding:44px 0 30px}
+    .top-inner{font-size:9px}
+    .meta{display:none}
+    .hero-findings{grid-template-columns:1fr}
+    .hero-finding{border-right:0;border-bottom:1px solid var(--line);padding:12px 0}
+    .hero-finding:last-child{border-bottom:0}
+    .finding-grid{grid-template-columns:1fr}
+    .flow{grid-template-columns:1fr}
+    .flow-step{border-right:0}
+    .status-strip{grid-template-columns:1fr 1fr}
+    .claim-row{grid-template-columns:1fr;gap:4px}
+    .claim-row .f{padding-top:0}
+    .table-wrap table{min-width:820px}
+    .filters input[type="search"]{min-width:100%}
+    .filters input,.filters select{min-width:0;flex:1}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="top">
+    <div class="wrap top-inner">
+      <div class="brand">Whitepaper / AI toolkit feasibility</div>
+      <div class="meta">24 November 2026 · 100 applications · 10 categories</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="kicker">Research whitepaper</div>
+        <h1>Evaluating the Feasibility of Building AI Toolkits Across 100 Applications</h1>
+        <p class="lead">Two research approaches, ten categories, and one practical question: can a developer obtain credentials and build a useful toolkit?</p>
+        <div class="hero-findings">
+          <div class="hero-finding"><div class="n">01 / Access</div><b>Access is the gate, not API existence.</b><span><span data-stat="ra.publicApi">—</span>/100 report a public API; <span data-stat="ra.selfServe">—</span>/100 have a self-serve route.</span></div>
+          <div class="hero-finding"><div class="n">02 / Coverage</div><b>Ecommerce is a clear toolkit gap.</b><span>Only <span data-stat="cat.ecommerce.composio">—</span>/10 match a Composio toolkit.</span></div>
+          <div class="hero-finding"><div class="n">03 / Maturity</div><b>Integration readiness varies by category.</b><span>CRM, communications, developer infrastructure and productivity lead.</span></div>
+          <div class="hero-finding"><div class="n">04 / Auth + MCP</div><b>Auth and MCP are widespread; complexity remains.</b><span>OAuth2 <span data-stat="ra.oauth2">—</span>/100; official MCP <span data-stat="ra.mcp">—</span>/100.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="findings">
+      <div class="wrap">
+        <div class="section-head"><div class="section-num">01</div><div><h2>Key findings</h2><p class="section-intro">These are the four findings that matter for a toolkit decision. Everything after this section is supporting documentation: approaches, comparison, verification, criteria, a sample record, and the full dataset.</p></div></div>
+        <div class="finding-grid">
+          <article class="finding-card">
+            <div class="tag">Finding 1</div>
+            <h3>Access is the gate, not API existence</h3>
+            <p><b data-stat="ra.publicApi">—</b>/100 apps report a public API. <b data-stat="ra.selfServe">—</b>/100 have a self-serve free or trial credential route. The remaining apps face commercial or administrative restrictions.</p>
+            <div class="fact-list">
+              <div class="fact"><span class="k">Paid / review / admin / sales gated</span><span class="v" data-stat="ra.gated">—</span></div>
+              <div class="fact"><span class="k">No public API</span><span class="v" data-stat="ra.noApi">—</span></div>
+              <div class="fact"><span class="k">Access model unresolved</span><span class="v" data-stat="ra.unresolved">—</span></div>
+              <div class="fact"><span class="k">Free or trial route</span><span class="v" data-stat="ra.selfServe">—</span></div>
+            </div>
+            <p class="note">Free trials do not necessarily mean API credentials are included.</p>
+            <div class="takeaway"><b>Main takeaway:</b> the challenge is not whether an API exists. It is whether a developer can actually obtain credentials and use it. Toolkit building needs an access and commercial workstream in addition to engineering.</div>
+          </article>
+
+          <article class="finding-card">
+            <div class="tag">Finding 2</div>
+            <h3>Ecommerce is a toolkit coverage gap</h3>
+            <p>Only <b data-stat="cat.ecommerce.composio">—</b>/10 Ecommerce apps match an existing Composio toolkit. This is the largest category-level coverage gap.</p>
+            <div class="fact-list">
+              <div class="fact"><span class="k">Productivity coverage</span><span class="v"><span data-stat="cat.productivity.composio">—</span>/10</span></div>
+              <div class="fact"><span class="k">CRM coverage</span><span class="v"><span data-stat="cat.crm.composio">—</span>/10</span></div>
+              <div class="fact"><span class="k">Developer infrastructure</span><span class="v"><span data-stat="cat.dev.composio">—</span>/10</span></div>
+              <div class="fact"><span class="k">Ecommerce coverage</span><span class="v"><span data-stat="cat.ecommerce.composio">—</span>/10</span></div>
+            </div>
+            <div class="takeaway"><b>Main takeaway:</b> Ecommerce is the clearest opportunity for expanding toolkit coverage.</div>
+          </article>
+
+          <article class="finding-card">
+            <div class="tag">Finding 3</div>
+            <h3>Category maturity is uneven</h3>
+            <p>The same 100 apps do not represent one uniform integration problem. Readiness groups are visible in the Research Agent results:</p>
+            <div class="mini-label">Most ready</div>
+            <p class="note">CRM: <b data-cat="CRM and Sales" data-field="easy">—</b>/10 easy. Communications: <b data-cat="Communications and Messaging" data-field="easy">—</b>/10. Developer infrastructure: <b data-cat="Developer, Infra and Data platforms" data-field="easy">—</b>/10. Productivity: <b data-cat="Productivity and Project Management" data-field="easy">—</b>/10.</p>
+            <div class="mini-label">Mixed maturity</div>
+            <p class="note">Support, Marketing and Ecommerce each split five easy / five moderate in the Research Agent results.</p>
+            <div class="mini-label">More heterogeneous</div>
+            <p class="note">Finance: <b data-cat="Finance and Fintech" data-field="easy">—</b> easy, <b data-cat="Finance and Fintech" data-field="moderate">—</b> moderate, <b data-cat="Finance and Fintech" data-field="hard">—</b> hard. AI/media: <b data-cat="AI, Research and Media-native" data-field="easy">—</b> easy, <b data-cat="AI, Research and Media-native" data-field="moderate">—</b> moderate, <b data-cat="AI, Research and Media-native" data-field="hard">—</b> hard, <b data-cat="AI, Research and Media-native" data-field="blocked">—</b> blocked.</p>
+            <div class="takeaway"><b>Main takeaway:</b> toolkit development should not be approached uniformly across all categories. Some categories have fewer access restrictions and more consistent APIs; others have more gating and uncertainty.</div>
+          </article>
+
+          <article class="finding-card">
+            <div class="tag">Finding 4</div>
+            <h3>Authentication and MCP are widespread, but complexity remains</h3>
+            <div class="mini-label">Authentication / 100 apps</div>
+            <div class="fact-list">
+              <div class="fact"><span class="k">OAuth2</span><span class="v" data-stat="ra.oauth2">—</span></div>
+              <div class="fact"><span class="k">API key</span><span class="v" data-stat="ra.apiKey">—</span></div>
+              <div class="fact"><span class="k">Both OAuth2 + API key</span><span class="v" data-stat="ra.bothAuth">—</span></div>
+              <div class="fact"><span class="k">Bearer</span><span class="v" data-stat="ra.bearer">—</span></div>
+              <div class="fact"><span class="k">Basic</span><span class="v" data-stat="ra.basic">—</span></div>
+              <div class="fact"><span class="k">JWT</span><span class="v" data-stat="ra.jwt">—</span></div>
+              <div class="fact"><span class="k">Other</span><span class="v" data-stat="ra.other">—</span></div>
+            </div>
+            <div class="mini-label">MCP / official vendor servers</div>
+            <div class="fact-list">
+              <div class="fact"><span class="k">Research Agent</span><span class="v"><span data-stat="ra.mcp">—</span>/100</span></div>
+              <div class="fact"><span class="k">Composio MCP+OpenCode</span><span class="v"><span data-stat="cm.mcp">—</span>/100</span></div>
+              <div class="fact"><span class="k">Community-only / none</span><span class="v"><span data-stat="cm.community">—</span> / <span data-stat="cm.none">—</span></span></div>
+              <div class="fact"><span class="k">Research Agent no official MCP</span><span class="v" data-stat="ra.noMcp">—</span></div>
+            </div>
+            <div class="takeaway"><b>Main takeaway:</b> no single authentication or integration approach works for every application. A toolkit layer needs multiple auth methods and mechanisms. MCP availability alone is not a differentiator.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approaches">
+      <div class="wrap">
+        <div class="section-head"><div class="section-num">02</div><div><h2>Research approaches</h2><p class="section-intro">Two separate approaches were used. They are named consistently throughout this document.</p></div></div>
+        <div class="approach-grid">
+          <article class="approach">
+            <h3>Composio MCP+OpenCode</h3>
+            <div class="sub">Initial approach</div>
+            <ol>
+              <li>Connected Composio MCP.</li>
+              <li>Used the web search tool for research.</li>
+              <li>Connected the workflow to a Google Sheet containing 100 applications.</li>
+              <li>Wrote a research strategy prompt.</li>
+              <li>Used the prompt and tools to research the applications and populate the results.</li>
+            </ol>
+            <div class="note">This produced the Google Sheet research tab that is compared against the Research Agent output.</div>
+          </article>
+          <article class="approach">
+            <h3>Research Agent</h3>
+            <div class="sub">Second approach</div>
+            <ol>
+              <li>Built using the Composio SDK.</li>
+              <li>Used Exa search for research.</li>
+              <li>Created a verification pipeline.</li>
+              <li>Ran the research again.</li>
+              <li>Compared the results against the initial Composio MCP+OpenCode findings.</li>
+            </ol>
+            <div class="note">The verification pipeline was slow, and I was running out of time. As a result, I ran it through one pass and compared the results.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison">
+      <div class="wrap">
+        <div class="section-head"><div class="section-num">03</div><div><h2>Category comparison</h2><p class="section-intro">The two approaches use different definitions and criteria for buildability. The labels are intentionally not merged or averaged. This matrix shows where the results align and where they differ.</p></div></div>
+        <div class="table-wrap">
+          <table class="matrix">
+            <thead>
+              <tr><th rowspan="2">Category</th><th colspan="4">Research Agent</th><th colspan="4">Composio MCP+OpenCode</th></tr>
+              <tr><th>Easy</th><th>Moderate</th><th>Hard</th><th>Blocked</th><th>Buildable</th><th>With limitations</th><th>Difficult/gated</th><th>Insufficient</th></tr>
+            </thead>
+            <tbody id="category-comparison"></tbody>
+          </table>
+        </div>
+        <div class="legend"><b>Research Agent labels:</b> easy, moderate, hard, blocked. <b>Composio MCP+OpenCode labels:</b> Buildable, Buildable with limitations, Difficult/gated, Insufficient information. Different labels reflect different research definitions and criteria.</div>
+
+        <div class="spacer"></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Category</th><th>Research Agent: self-serve</th><th>Research Agent: official MCP</th><th>Research Agent: Composio match</th><th>Composio MCP+OpenCode: self-serve</th><th>Composio MCP+OpenCode: official MCP</th></tr></thead>
+            <tbody id="coverage-comparison"></tbody>
+          </table>
+        </div>
+        <div class="legend">Self-serve means free or trial credential access. Composio match is a Research Agent field; the Composio MCP+OpenCode sheet has an Existing MCP field but no separate Composio toolkit field.</div>
+      </div>
+    </section>
+
+    <section id="verification">
+      <div class="wrap">
+        <div class="section-head"><div class="section-num">04</div><div><h2>Verification and manual checks</h2><p class="section-intro">The verification pipeline was slow, and time was limited. It was run through one pass on a small subset, not across all 100 applications.</p></div></div>
+        <div class="flow">
+          <div class="flow-step"><div class="n">01</div><b>Research</b><span>Structured application record.</span></div>
+          <div class="flow-step"><div class="n">02</div><b>Evidence collection</b><span>Pages, sources, quotes.</span></div>
+          <div class="flow-step"><div class="n">03</div><b>Mechanical checks</b><span>URLs, quotes, domains, consistency.</span></div>
+          <div class="flow-step"><div class="n">04</div><b>LLM verification</b><span>Claim judgement and re-derivation.</span></div>
+          <div class="flow-step"><div class="n">05</div><b>Comparison / review</b><span>Issues, disagreements, manual notes.</span></div>
+        </div>
+        <div class="status-strip">
+          <div class="status-cell"><div class="v">1</div><div class="l">Verification pass</div><p>One pass, not repeated across the dataset.</p></div>
+          <div class="status-cell"><div class="v" data-stat="verify.apps">—</div><div class="l">Apps in the pass</div><p>Attio, Zendesk, Ahrefs.</p></div>
+          <div class="status-cell"><div class="v" data-stat="manual.count">—</div><div class="l">Manual spot checks</div><p>Not a comprehensive audit.</p></div>
+          <div class="status-cell"><div class="v" data-stat="ra.total">—</div><div class="l">Records researched</div><p>The remaining records were not fully verified.</p></div>
+        </div>
+        <div class="callout"><b>Scope:</b> the verification pass covered a small subset. It is not a claim that all 100 applications were verified. The manual checks below are separate spot checks, not a complete audit.</div>
+
+        <table>
+          <thead><tr><th>Application</th><th>Manual observation</th></tr></thead>
+          <tbody id="manual-checks"></tbody>
+        </table>
+        <div class="legend">Paygent Connect is explicitly an inference, not a confirmed finding. Sherlock is a CLI project; the observation is that the no-hosted-API classification may miss the option of wrapping it as an agent-callable skill.</div>
+
+        <div class="mini-label">Automated verification result</div>
+        <div class="table-wrap narrow">
+          <table>
+            <thead><tr><th>Application</th><th>Result</th><th>Note</th></tr></thead>
+            <tbody id="verification-results"></tbody>
+          </table>
+        </div>
+        <div class="legend">The automated result is shown for the three records that entered the one-pass verification. It is not a dataset-wide result.</div>
+      </div>
+    </section>
+
+    <section id="observations">
+      <div class="wrap">
+        <div class="section-head"><div class="section-num">05</div><div><h2>Comparison observations</h2><p class="section-intro">These are notes from comparing the two approaches. They are not additional key findings.</p></div></div>
+        <ul class="obs-list">
+          <li>The differences between the two research processes are not very large overall.</li>
+          <li>Most inconsistencies seem to come from what each approach considers “buildable”.</li>
+          <li>The Research Agent needs more work. The factors and criteria it considers should be modified to improve the results.</li>
+          <li>Composio MCP+OpenCode appears to consider some additional relevant features and may capture more useful application-specific information in certain cases.</li>
+          <li>There are a few outliers, particularly Sherlock and Paygent Connect, where the available information was insufficient or the context was missed.</li>
+          <li>For Sherlock, the important detail is that it is a CLI project and could potentially be wrapped as an agent-callable skill.</li>
+          <li>For Paygent Connect, the underlying NMI-powered relationship should have been investigated instead of focusing only on Paygent-specific information.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="criteria">
+      <div class="wrap">
+        <div class="section-head"><div class="section-num">06</div><div><h2>Evaluation criteria and features</h2><p class="section-intro">These are the fields actually present in the two research datasets. A dash means the approach did not record that item as a separate field; it does not mean the topic was ignored.</p></div></div>
+        <div class="table-wrap" style="max-height:none">
+          <table class="criteria">
+            <thead><tr><th>Criterion / group</th><th>Research Agent field</th><th>Composio MCP+OpenCode field</th></tr></thead>
+            <tbody>
+              <tr><td><b>Identity and description</b></td><td>app, category, one_line_description</td><td>#, App, Website / hint, Category, One-line Description</td></tr>
+              <tr><td><b>API availability</b></td><td>has_public_api</td><td>REST API, GraphQL API</td></tr>
+              <tr><td><b>API type</b></td><td>api_type (REST / GraphQL / SOAP / other)</td><td>REST API and GraphQL API as separate fields</td></tr>
+              <tr><td><b>API breadth</b></td><td>api_breadth</td><td>API Breadth</td></tr>
+              <tr><td><b>API capabilities</b></td><td class="dash">— (no separate field)</td><td>API Capabilities</td></tr>
+              <tr><td><b>Authentication</b></td><td>auth_methods</td><td>Authentication Methods</td></tr>
+              <tr><td><b>Credential access</b></td><td>access_model, access_notes</td><td>Credential Access Classification, Credential Access Details</td></tr>
+              <tr><td><b>Documentation and evidence</b></td><td>docs_url; per-claim source_url, quote, retrieved_at</td><td>Evidence URLs</td></tr>
+              <tr><td><b>MCP availability</b></td><td>official_mcp_server, community_mcp_servers</td><td>Existing MCP</td></tr>
+              <tr><td><b>MCP type</b></td><td>official vs community inferred from the fields above</td><td>MCP Implementation Type</td></tr>
+              <tr><td><b>Composio coverage</b></td><td>composio_toolkit_exists</td><td class="dash">— (not a separate field)</td></tr>
+              <tr><td><b>SDK availability</b></td><td>sdk_languages</td><td class="dash">—</td></tr>
+              <tr><td><b>Rate limits</b></td><td>rate_limits</td><td class="dash">—</td></tr>
+              <tr><td><b>Webhooks</b></td><td>webhooks</td><td class="dash">—</td></tr>
+              <tr><td><b>Sandbox / test environment</b></td><td>sandbox_or_test_env</td><td class="dash">—</td></tr>
+              <tr><td><b>OAuth scopes / permissions</b></td><td>oauth_scopes_documented</td><td class="dash">—</td></tr>
+              <tr><td><b>Versioning / deprecation</b></td><td>api_versioning_or_deprecation_notes</td><td class="dash">—</td></tr>
+              <tr><td><b>Buildability and limitations</b></td><td>buildability_verdict, verdict_reason, main_blocker</td><td>Buildability Verdict, Primary Blocker</td></tr>
+              <tr><td><b>Outreach</b></td><td>needs_outreach, outreach_reason</td><td class="dash">—</td></tr>
+              <tr><td><b>Open questions</b></td><td>open_questions</td><td class="dash">—</td></tr>
+              <tr><td><b>Confidence and status</b></td><td>per-claim confidence; record status</td><td>Confidence, Research Status</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="sample">
+      <div class="wrap">
+        <div class="section-head"><div class="section-num">07</div><div><h2>Sample application record</h2><p class="section-intro">One complete record from the <b>Research Agent</b> dataset. This is the stored pass-1 record for Attio; it later passed the one-pass verification. All available fields are shown as stored; no fields were removed for presentation.</p></div></div>
+        <div id="sample-record"></div>
+      </div>
+    </section>
+
+    <section id="dataset">
+      <div class="wrap">
+        <div class="section-head"><div class="section-num">08</div><div><h2>Full dataset: 100 applications</h2><p class="section-intro">All 100 applications, with each approach’s verdict and access classification kept side by side. The two approaches are not merged. Disagreements are visible in the table and can be filtered.</p></div></div>
+        <div class="filters">
+          <input id="search" type="search" placeholder="Search application, category, auth, blocker…" aria-label="Search applications">
+          <select id="filter-category" aria-label="Filter category"></select>
+          <select id="filter-ra" aria-label="Filter Research Agent verdict"></select>
+          <select id="filter-cm" aria-label="Filter Composio MCP+OpenCode verdict"></select>
+          <label><input id="only-diff" type="checkbox"> Only disagreement</label>
+          <button class="reset" id="reset">Reset</button>
+        </div>
+        <div class="table-meta"><span id="table-count">—</span><span>Research Agent / Composio MCP+OpenCode · scroll table for all rows</span></div>
+        <div class="table-wrap">
+          <table id="dataset-table">
+            <thead>
+              <tr><th rowspan="2">Application</th><th colspan="5">Research Agent</th><th colspan="4">Composio MCP+OpenCode</th><th rowspan="2">Diff</th></tr>
+              <tr><th>Verdict</th><th>Access</th><th>MCP</th><th>Composio</th><th>Evidence</th><th>Verdict</th><th>Access</th><th>MCP</th><th>Confidence</th></tr>
+            </thead>
+            <tbody id="dataset-body"></tbody>
+          </table>
+        </div>
+        <div class="legend">“Diff” marks a difference after mapping the two label sets for navigation only: easy → Buildable, moderate → Buildable with limitations, hard → Difficult/gated, blocked → Insufficient. It is not an accuracy score. Click a row for auth, blockers and open-question details.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <b>Source records</b>
+          <div class="source-list">
+            <span>Research Agent: results/pass1/*.json (100 drafts, 17 claims each)</span>
+            <span>Research Agent logs: results/logs/*.json</span>
+            <span>Research Agent verification: results/final/*.json (3 apps)</span>
+            <span>Composio MCP+OpenCode: summaries/google-sheets-research-data.json</span>
+            <span>Google Sheet: composio-research / Research tab</span>
+          </div>
+        </div>
+        <div>
+          <b>Reading notes</b>
+          <div class="note" style="margin-top:6px">The research is a first-pass dataset. Only a small subset entered verification. The manual observations are spot checks, not a comprehensive audit. Paygent Connect remains an inference. The two approaches use different labels and are not merged.</div>
+          <div class="recon" id="recon">—</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script type="application/json" id="case-data">__DATA_JSON__</script>
+<script>
+(() => {
+  "use strict";
+  const D = JSON.parse(document.getElementById("case-data").textContent);
+  const RA = D.pass1;
+  const CM = D.sheet;
+  const $ = (s, root=document) => root.querySelector(s);
+  const $$ = (s, root=document) => Array.from(root.querySelectorAll(s));
+  const esc = (v) => String(v ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const fmt = (n) => Number(n).toLocaleString("en-US");
+  const count = (arr, fn) => arr.reduce((m,x)=>{const k=fn(x); m[k]=(m[k]||0)+1; return m;},{});
+  const sum = (arr, fn) => arr.reduce((a,x)=>a+(fn(x)||0),0);
+  const avg = (arr, fn) => arr.length ? sum(arr, fn)/arr.length : 0;
+  const accessLabel = (v) => ({
+    self_serve_free:"Self-serve free", self_serve_trial:"Self-serve trial", paid_plan_required:"Paid plan",
+    app_review_required:"App review", admin_approval:"Admin approval", contact_sales:"Contact sales",
+    no_api:"No API", unknown:"Unknown", null:"Unresolved"
+  }[v] || v || "Unresolved");
+  const authLabel = (v) => ({oauth2:"OAuth2", api_key:"API key", bearer_token:"Bearer", basic:"Basic", jwt:"JWT", other:"Other"}[v] || v);
+  const raClass = {easy:"easy", moderate:"moderate", hard:"hard", blocked:"blocked"};
+  const cmClass = {"Buildable":"buildable", "Buildable with limitations":"limited", "Difficult / gated":"difficult", "Insufficient information":"insufficient"};
+
+  const raVerdict = count(RA, x=>x.verdict);
+  const raAccess = count(RA, x=>x.access || "null");
+  const auth = {};
+  RA.forEach(x => (x.auth||[]).forEach(a => { auth[a] = (auth[a]||0)+1; }));
+  const bothAuth = RA.filter(x => (x.auth||[]).includes("oauth2") && (x.auth||[]).includes("api_key")).length;
+  const selfServe = RA.filter(x => ["self_serve_free","self_serve_trial"].includes(x.access)).length;
+  const gated = RA.filter(x => ["paid_plan_required","app_review_required","admin_approval","contact_sales"].includes(x.access)).length;
+  const noApi = RA.filter(x => x.hasApi === false).length;
+  const unresolved = RA.filter(x => x.access == null || x.access === "unknown").length;
+  const mcp = RA.filter(x => x.mcp).length;
+  const noMcp = RA.length - mcp;
+  const composio = RA.filter(x => x.composio === true).length;
+  const cmVerdict = count(CM, x=>x.verdict);
+  const cmMcp = count(CM, x=>x.mcp);
+  const cmAccess = count(CM, x=>x.access);
+  const categories = (D.meta.categoryOrder || []).filter(c => RA.some(x=>x.category===c));
+  const catStats = categories.map(cat => {
+    const ra = RA.filter(x=>x.category===cat);
+    const cm = CM.filter(x=>x.category===cat);
+    const rv = count(ra, x=>x.verdict);
+    const cv = count(cm, x=>x.verdict);
+    return {
+      cat,
+      raEasy: rv.easy||0, raModerate: rv.moderate||0, raHard: rv.hard||0, raBlocked: rv.blocked||0,
+      cmBuildable: cv["Buildable"]||0, cmLimited: cv["Buildable with limitations"]||0,
+      cmDifficult: cv["Difficult / gated"]||0, cmInsufficient: cv["Insufficient information"]||0,
+      raSelf: ra.filter(x=>["self_serve_free","self_serve_trial"].includes(x.access)).length,
+      raMcp: ra.filter(x=>x.mcp).length,
+      raComposio: ra.filter(x=>x.composio===true).length,
+      cmSelf: cm.filter(x=>["Self-serve free","Self-serve trial"].includes(x.access)).length,
+      cmOfficial: cm.filter(x=>x.mcp==="Official").length
+    };
+  });
+  const catByName = Object.fromEntries(catStats.map(x=>[x.cat,x]));
+  const mapped = {easy:"Buildable", moderate:"Buildable with limitations", hard:"Difficult / gated", blocked:"Insufficient information"};
+  const merged = RA.map(r => {
+    const s = CM.find(x=>x.app===r.app) || null;
+    return {r, s, diff: s ? mapped[r.verdict] !== s.verdict : true};
+  });
+  const stats = {
+    "ra.total": fmt(RA.length), "ra.publicApi": fmt(RA.filter(x=>x.hasApi===true).length),
+    "ra.selfServe": fmt(selfServe), "ra.gated": fmt(gated), "ra.noApi": fmt(noApi), "ra.unresolved": fmt(unresolved),
+    "ra.mcp": fmt(mcp), "ra.noMcp": fmt(noMcp), "ra.composio": fmt(composio),
+    "ra.oauth2": fmt(auth.oauth2||0), "ra.apiKey": fmt(auth.api_key||0), "ra.bothAuth": fmt(bothAuth),
+    "ra.bearer": fmt(auth.bearer_token||0), "ra.basic": fmt(auth.basic||0), "ra.jwt": fmt(auth.jwt||0), "ra.other": fmt(auth.other||0),
+    "cm.total": fmt(CM.length), "cm.mcp": fmt(cmMcp.Official||0), "cm.community": fmt(cmMcp.Community||0), "cm.none": fmt(cmMcp.None||0),
+    "verify.apps": fmt(D.verification.agent.length), "manual.count": fmt(D.manualChecks.length),
+    "cat.ecommerce.composio": fmt(catByName["Ecommerce"]?.raComposio ?? 0),
+    "cat.productivity.composio": fmt(catByName["Productivity and Project Management"]?.raComposio ?? 0),
+    "cat.crm.composio": fmt(catByName["CRM and Sales"]?.raComposio ?? 0),
+    "cat.dev.composio": fmt(catByName["Developer, Infra and Data platforms"]?.raComposio ?? 0)
+  };
+  $$("[data-stat]").forEach(el => { const k=el.getAttribute("data-stat"); if(stats[k]!==undefined) el.textContent=stats[k]; });
+  $$("[data-cat]").forEach(el => {
+    const c = catByName[el.getAttribute("data-cat")];
+    if(!c) return;
+    const field = el.getAttribute("data-field");
+    const map = {easy:"raEasy", moderate:"raModerate", hard:"raHard", blocked:"raBlocked"};
+    el.textContent = c[map[field]] ?? "—";
+  });
+
+  function renderCategoryComparison(){
+    $("#category-comparison").innerHTML = catStats.map(c=>`<tr>
+      <td class="cat">${esc(c.cat)}</td>
+      <td class="num">${c.raEasy}</td><td class="num">${c.raModerate}</td><td class="num">${c.raHard}</td><td class="num">${c.raBlocked}</td>
+      <td class="num">${c.cmBuildable}</td><td class="num">${c.cmLimited}</td><td class="num">${c.cmDifficult}</td><td class="num">${c.cmInsufficient}</td>
+    </tr>`).join("");
+    $("#coverage-comparison").innerHTML = catStats.map(c=>`<tr>
+      <td class="cat">${esc(c.cat)}</td><td class="num">${c.raSelf}/10</td><td class="num">${c.raMcp}/10</td><td class="num">${c.raComposio}/10</td>
+      <td class="num">${c.cmSelf}/10</td><td class="num">${c.cmOfficial}/10</td>
+    </tr>`).join("");
+  }
+
+  function renderManualChecks(){
+    $("#manual-checks").innerHTML = D.manualChecks.map(x=>`<tr><td><b>${esc(x.app)}</b></td><td>${esc(x.observation)}</td></tr>`).join("");
+  }
+
+  function renderVerificationResults(){
+    $("#verification-results").innerHTML = D.verification.agent.map(v=>`<tr>
+      <td><b>${esc(v.app)}</b></td>
+      <td><span class="badge ${v.finalStatus==="verified"?"verified":"review"}">${esc(v.finalStatus)}</span></td>
+      <td>${v.finalStatus==="verified"?"Completed the one-pass check.":"Left for human review; not treated as verified."}</td>
+    </tr>`).join("");
+  }
+
+  function renderSample(){
+    const ex = D.examples.attio;
+    const meta = RA.find(x=>x.app===ex.app);
+    const claims = ex.claims.map(c=>{
+      let val = c.value;
+      if (Array.isArray(val)) val = val.length ? val.map(v=>`<span class="badge">${esc(v)}</span>`).join(" ") : `<span class="dim">empty list</span>`;
+      else if (val === null || val === undefined) val = `<span class="dim">no value</span>`;
+      else if (typeof val === "boolean") val = val ? "yes" : "no";
+      else val = esc(val);
+      return `<div class="claim-row">
+        <div class="f">${esc(c.label)}</div>
+        <div class="v">${val}<span class="conf">${esc(c.confidence)}</span>
+          ${c.source_url?`<div class="src"><a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(c.source_url)}</a></div>`:`<div class="src">no source</div>`}
+          ${c.quote?`<div class="quote">“${esc(c.quote)}”</div>`:""}
+          <div class="src">retrieved ${esc(c.retrieved_at)}</div>
+        </div>
+      </div>`;
+    }).join("");
+    const sources = (ex.sources||[]).map(s=>`<div class="meta-row"><span class="k">${s.official?"official":"third-party"}</span><span class="v mono" style="font-size:9px">${esc(s.url)}</span></div>`).join("");
+    $("#sample-record").innerHTML = `<div class="sample-grid">
+      <aside class="sample-meta">
+        <h3>${esc(ex.app)}</h3>
+        <div class="sub">Research Agent record · pass-1 draft · ${esc(ex.category)}</div>
+        <div class="meta-row"><span class="k">Verdict</span><span class="v"><span class="badge ${raClass[ex.verdict]||""}">${esc(ex.verdict)}</span></span></div>
+        <div class="meta-row"><span class="k">Access</span><span class="v">${esc(accessLabel(ex.access))}</span></div>
+        <div class="meta-row"><span class="k">Public API</span><span class="v">${ex.hasApi===true?"yes":ex.hasApi===false?"no":"unknown"}</span></div>
+        <div class="meta-row"><span class="k">API type</span><span class="v">${esc(ex.apiType||"—")}</span></div>
+        <div class="meta-row"><span class="k">Auth</span><span class="v">${(ex.auth||[]).map(authLabel).join(", ")||"—"}</span></div>
+        <div class="meta-row"><span class="k">Official MCP</span><span class="v">${ex.mcp?esc(ex.mcp):"none found"}</span></div>
+        <div class="meta-row"><span class="k">Composio</span><span class="v">${ex.composio===true?"yes":ex.composio===false?"no":"unknown"}</span></div>
+        <div class="meta-row"><span class="k">Outreach</span><span class="v">${ex.outreach?"yes":"no"}</span></div>
+        <div class="meta-row"><span class="k">Blocker</span><span class="v">${esc(ex.blocker||"none recorded")}</span></div>
+        <div class="meta-row"><span class="k">Claims sourced</span><span class="v">${ex.claimsSourced}/17</span></div>
+        <div class="meta-row"><span class="k">Official pages</span><span class="v">${ex.officialSources}</span></div>
+        <div class="meta-row"><span class="k">Status</span><span class="v">${esc(meta?.status||"—")}</span></div>
+        <div class="divider" style="height:1px;background:var(--line);margin:10px 0"></div>
+        <div class="mini-label">Verdict reason</div>
+        <div class="note">${esc(ex.reason)}</div>
+        <div class="mini-label" style="margin-top:12px">Open questions</div>
+        <div class="note">${ex.openQuestions.map(q=>`— ${esc(q)}`).join("<br>")}</div>
+        <div class="mini-label" style="margin-top:12px">Sources fetched</div>
+        ${sources}
+      </aside>
+      <div class="sample-claims">${claims}</div>
+    </div>`;
+  }
+
+  const tableState = {search:"", category:"all", ra:"all", cm:"all", diff:false};
+  function populateFilters(){
+    $("#filter-category").innerHTML = `<option value="all">All categories</option>` + categories.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join("");
+    $("#filter-ra").innerHTML = `<option value="all">All Research Agent verdicts</option>` + Object.keys(raVerdict).sort().map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join("");
+    $("#filter-cm").innerHTML = `<option value="all">All Composio MCP+OpenCode verdicts</option>` + Object.keys(cmVerdict).sort().map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join("");
+  }
+  function filteredRows(){
+    return merged.filter(({r,s,diff})=>{
+      if(tableState.category!=="all" && r.category!==tableState.category) return false;
+      if(tableState.ra!=="all" && r.verdict!==tableState.ra) return false;
+      if(tableState.cm!=="all" && (!s || s.verdict!==tableState.cm)) return false;
+      if(tableState.diff && !diff) return false;
+      if(tableState.search){
+        const hay=[r.app,r.category,r.verdict,r.access,r.blocker,s?.verdict,s?.access,s?.blocker,...(r.auth||[]),...(s?.auth||[])].join(" ").toLowerCase();
+        if(!hay.includes(tableState.search)) return false;
+      }
+      return true;
+    });
+  }
+  function renderTable(){
+    const rows=filteredRows();
+    $("#table-count").textContent = `${rows.length} / ${merged.length} applications`;
+    $("#dataset-body").innerHTML = rows.map(({r,s,diff},i)=>`
+      <tr class="row-toggle" data-i="${i}">
+        <td><span class="chev">+</span> <b>${esc(r.app)}</b><div class="dim small">${esc(r.category)}</div></td>
+        <td><span class="badge ${raClass[r.verdict]||""}">${esc(r.verdict)}</span></td>
+        <td>${esc(accessLabel(r.access))}</td>
+        <td>${r.mcp?"official":"none"}</td>
+        <td>${r.composio===true?"yes":r.composio===false?"no":"unknown"}</td>
+        <td>${r.claimsSourced}/17</td>
+        <td>${s?`<span class="badge ${cmClass[s.verdict]||""}">${esc(s.verdict)}</span>`:"—"}</td>
+        <td>${s?esc(s.access):"—"}</td>
+        <td>${s?esc(s.mcp):"—"}</td>
+        <td>${s?esc(s.confidence):"—"}</td>
+        <td>${diff?"≠":""}</td>
+      </tr>
+      <tr class="detail-row" hidden><td colspan="11"><div class="detail-grid">
+        <div><div class="k">Research Agent auth</div><div class="v">${(r.auth||[]).map(authLabel).join(", ")||"—"}</div></div>
+        <div><div class="k">Composio MCP+OpenCode auth</div><div class="v">${(s?.auth||[]).map(authLabel).join(", ")||"—"}</div></div>
+        <div><div class="k">Research Agent blocker</div><div class="v">${esc(r.blocker||"none recorded")}</div></div>
+        <div><div class="k">Composio MCP+OpenCode blocker</div><div class="v">${esc(s?.blocker||"none recorded")}</div></div>
+        <div><div class="k">Open questions</div><div class="v">${r.openQuestions.length}</div></div>
+      </div></td></tr>`).join("");
+    $$("#dataset-body .row-toggle").forEach(tr=>{
+      tr.addEventListener("click",()=>{
+        const d=tr.nextElementSibling; if(!d) return;
+        d.hidden=!d.hidden; tr.querySelector(".chev").textContent=d.hidden?"+":"−";
+      });
+    });
+  }
+  function bindFilters(){
+    $("#search").addEventListener("input",e=>{tableState.search=e.target.value.toLowerCase();renderTable();});
+    $("#filter-category").addEventListener("change",e=>{tableState.category=e.target.value;renderTable();});
+    $("#filter-ra").addEventListener("change",e=>{tableState.ra=e.target.value;renderTable();});
+    $("#filter-cm").addEventListener("change",e=>{tableState.cm=e.target.value;renderTable();});
+    $("#only-diff").addEventListener("change",e=>{tableState.diff=e.target.checked;renderTable();});
+    $("#reset").addEventListener("click",()=>{
+      tableState.search="";tableState.category="all";tableState.ra="all";tableState.cm="all";tableState.diff=false;
+      $("#search").value="";$("#filter-category").value="all";$("#filter-ra").value="all";$("#filter-cm").value="all";$("#only-diff").checked=false;renderTable();
+    });
+  }
+  function renderRecon(){
+    $("#recon").textContent = `${RA.length}/100 Research Agent records · ${CM.length}/100 Composio MCP+OpenCode rows · ${fmt(RA.length*17)} claims · ${merged.filter(x=>x.diff).length} mapped verdict differences`;
+  }
+
+  renderCategoryComparison();
+  renderManualChecks();
+  renderVerificationResults();
+  renderSample();
+  populateFilters();
+  renderTable();
+  renderRecon();
+  bindFilters();
+})();
+</script>
+</body>
+</html>

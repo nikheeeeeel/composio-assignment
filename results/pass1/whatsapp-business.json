@@ -1,0 +1,253 @@
+{
+  "app": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "one_line_description": {
+    "value": "The WhatsApp Business Platform enables businesses to communicate with customers at scale.",
+    "source_url": "https://developers.facebook.com/docs/whatsapp/business-management-api/",
+    "quote": "The WhatsApp Business Platform enables businesses to communicate with customers at scale.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.facebook.com/docs/whatsapp/business-management-api/",
+    "quote": "This documentation is intended for developers using our APIs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+    "quote": "url = \"https://graph.facebook.com/<API_VERSION>/<WHATSAPP_BUSINESS_PHONE_NUMBER_ID>/messages\"",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST/Graph API; Cloud API messaging plus Business Management API for accounts, phone numbers, templates, billing, and analytics; read-write",
+    "source_url": "https://developers.facebook.com/docs/whatsapp/business-management-api/",
+    "quote": "The WhatsApp Business Management API enables you to programmatically manage your WhatsApp platform assets:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.facebook.com/docs/whatsapp",
+    "source_url": "https://developers.facebook.com/docs/whatsapp",
+    "quote": "WhatsApp Business Platform | Meta for Developers",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "bearer_token"
+    ],
+    "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+    "quote": "\"Authorization\": \"Bearer <ACCESS_TOKEN>\"",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+    "quote": "Click Generate access token to generate a temporary access token to send a test message.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve Meta app setup with a test phone number and temporary access token; permissions may require submission for App Review; production messaging is billed per delivered business-to-user message.",
+    "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+    "quote": "View required and optional permissions for this use case and add them to an App Review submission, if applicable.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.facebook.com/whatsapp_business_tools",
+    "source_url": "https://developers.facebook.com/documentation/mcp",
+    "quote": "WhatsApp Business Tools MCP: `https://mcp.facebook.com/whatsapp_business_tools`",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=WhatsApp+Business",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"WhatsApp Business\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "80 messages/sec per registered business phone number by default; automatic upgrade up to 1,000 mps; fixed 20 mps for numbers shared with the WhatsApp Business app; pair rate limits apply for repeated messages to the same user",
+    "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/throughput",
+    "quote": "For each registered business phone number, Cloud API supports up to 80 messages per second (mps) by default, and up to 1,000 mps by automatic upgrade.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+    "quote": "Learn what webhooks are and how they are a core component of Business Messaging.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+    "quote": "Use the sample webhook server for testing purposes by following the Using a test webhook app guide.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned Graph API request paths (e.g., /<API_VERSION>/...); Meta publishes new Graph/Marketing API versions with deprecations and breaking changes (v26.0 noted); specific WhatsApp API sunset policy is not in the supplied evidence.",
+    "source_url": "https://developers.facebook.com/blog/business_tools/",
+    "quote": "Graph API v26.0 and Marketing API v26.0 include new capabilities, deprecations, and breaking changes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Official Meta documentation provides a public Graph API (Cloud API) with self-serve Meta app creation, a test number, and a temporary access token, plus documented webhooks and throughput. Production permissions may require App Review and delivered business-to-user messages are billed per message, but developer/test credentials are free and self-serve.",
+  "main_blocker": "App Review for production permissions; per-message production billing",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The app name is ambiguous: WhatsApp Business (the small-business app) has no public API, while WhatsApp Business Platform/Cloud API does. Resolved to the Platform per the input hint, but this should be confirmed.",
+    "OAuth scopes/permissions documentation was not included in the supplied sources; only an App Review permissions reference was found. Need the official permissions page to confirm scope documentation.",
+    "Official SDK languages were not identified in the supplied evidence; the docs show raw HTTP/Graph API examples and mention a 'WhatsApp SDK' without listing supported languages.",
+    "Business verification or other production onboarding requirements are not described in the supplied sources and may gate production use beyond App Review.",
+    "Messaging limits and template messaging limits are referenced but the messaging-limits page was not included, so only throughput limits are captured.",
+    "No community MCP servers were found in the supplied evidence; the GitHub/MCP registry checks were empty, which may not be conclusive.",
+    "Composio catalog was searched only for 'WhatsApp Business'; a toolkit may exist under a different name such as 'WhatsApp'.",
+    "The documented test path consists of a temporary token, test number, and sample webhook server; no fully isolated sandbox environment is described.",
+    "On-Premises API sunset/deprecation details appeared only in search result titles, not in supplied source text."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "hint": "developers.facebook.com/docs/whatsapp",
+      "description": null,
+      "source_file": "03-communications-and-messaging.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+        "title": "Pricing on the WhatsApp Business Platform",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview/",
+        "title": "WhatsApp Business Platform | Meta for Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1739
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/throughput",
+        "title": "Throughput",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3575
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/mcp",
+        "title": "Connect AI agents to Meta with MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4885
+      },
+      {
+        "url": "https://developers.facebook.com/blog/business_tools/",
+        "title": "Facebook Business Tools: Blog Articles | Meta for Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3209
+      },
+      {
+        "url": "https://developers.facebook.com/docs/whatsapp",
+        "title": "WhatsApp Business Platform | Meta for Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1739
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+        "title": "WhatsApp Business Platform | Meta for Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1861
+      },
+      {
+        "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/reference/",
+        "title": "WhatsApp Business Platform | Meta for Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1739
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+        "title": "WhatsApp Cloud API Get Started",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.facebook.com/docs/whatsapp/business-management-api/",
+        "title": "About the WhatsApp Business Platform",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 156.94
+  }
+}

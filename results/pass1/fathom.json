@@ -1,0 +1,237 @@
+{
+  "app": "Fathom",
+  "category": "AI, Research and Media-native",
+  "one_line_description": {
+    "value": "AI meeting notetaker that records, transcribes and summarizes meetings; its public API exposes meeting summaries, transcripts and action items.",
+    "source_url": "https://fathom.video",
+    "quote": "Fathom summarizes your meetings so you can focus on the conversation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Fathom now has a public API that gives you developer‑friendly access to meeting insights so you can build workflows and integrations that connect Fathom with the rest of your tools.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Narrow, meeting-data focused: summaries, transcripts, action items, recording downloads, shared_with field; read-oriented with webhook delivery",
+    "source_url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Build exactly what you need - bring meeting summaries, transcripts, and action items right into your own tools and workflows for a tailored experience.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://help.fathom.video/en/articles/8368641",
+    "source_url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Anyone can browse the API docs and start building!",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "source_url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "API keys and access: API keys are created at the user level. Your key can access meetings recorded by you or shared to your Team.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://help.fathom.video/en/articles/10625473",
+    "quote": "In Fathom, open User Settings → API Access.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API keys are self-created at the user level via User Settings → API Access; the Public API page states anyone can browse the docs and start building, and Fathom keeps a free individual plan. A separate partner/OAuth-app registration is needed only for a future marketplace listing. The MCP connector (distinct from the REST API) requires Fathom 3.0+ and a Premium or paid Team plan after trial.",
+    "source_url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Partners can register an OAuth app to be eligible for a future marketplace listing as a Fathom‑approved integration.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://api.fathom.ai/mcp",
+    "source_url": "https://help.fathom.video/en/articles/11497793",
+    "quote": "To learn more about Fathom's MCP and how to connect it to any other MCP-compatible tool, visit api.fathom.ai/mcp.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=fathom",
+    "quote": "{\"slug\": \"fathom\", \"name\": \"Fathom\", \"app\": \"Fathom\", \"tools_count\": 10}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "60 calls per minute across all of a user's API keys; no higher limits offered",
+    "source_url": "https://help.fathom.video/en/articles/8368641",
+    "quote": "Rate Limiting: users can make 60 calls per minute across all of their API keys; this ensures system stability and reliability.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://help.fathom.video/en/articles/10625473",
+    "quote": "This guide will help you test whether your endpoint can successfully receive webhooks from Fathom.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Fathom documents a public API for meeting insights, with user-level API keys created self-serve in Settings and OAuth apps for partners, plus a free individual plan. Rate limits (60 calls/minute per user across keys) and webhooks are documented, and the vendor also operates an official MCP server at api.fathom.ai/mcp. Scope is narrow (meeting summaries, transcripts, action items, recordings), but broad enough for useful read workflows.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "API protocol style (REST vs GraphQL) is not stated on the captured pages; the developer reference at api.fathom.ai was referenced but not fetched.",
+    "Canonical developer docs/quickstart URL was not captured; docs_url currently points at the official 'Public API' help article that references a Quickstart Guide.",
+    "OAuth scopes/permissions for the partner OAuth app flow are not described in the captured evidence.",
+    "Whether API key creation is available on the free plan or only on paid tiers is not explicitly stated; the pricing page lists 'Build custom integrations and workflows' without clear tier mapping. Release-note snippet (not citable text) suggests all users have API access.",
+    "No official SDKs were found in the captured sources; sdk_languages left null pending review of api.fathom.ai docs.",
+    "No versioning/deprecation policy found in the captured sources.",
+    "No Fathom-provided sandbox/test environment is documented; the 'Test URL' in the webhook guide refers to the customer's own receiving endpoint, not a Fathom sandbox.",
+    "MCP endpoint is published in text as 'api.fathom.ai/mcp'; the scheme (https) was inferred and the exact per-org configuration/auth details for non-Claude/ChatGPT clients are not captured.",
+    "MCP availability is plan-gated (Premium or paid Team plan after trial), unlike the base API — worth clarifying separately if MCP is a build target.",
+    "App disambiguation: confirmed as Fathom AI notetaker at fathom.video per the input hint, not other products named Fathom."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Fathom",
+      "category": "AI, Research and Media-native",
+      "hint": "fathom.video",
+      "description": null,
+      "source_file": "10-ai-research-and-media-native.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://help.fathom.video/en/articles/8368641",
+        "title": "Public API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1568
+      },
+      {
+        "url": "https://help.fathom.video/en/articles/6220097",
+        "title": "Release Notes",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.fathom.video/en/articles/10625473",
+        "title": "How to Test a Webhook (Troubleshooting Guide)",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2083
+      },
+      {
+        "url": "https://help.fathom.video/en/articles/729152",
+        "title": "What does Fathom cost?",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 683
+      },
+      {
+        "url": "https://help.fathom.video/en/articles/11497793",
+        "title": "Fathom MCP: Connect Claude & ChatGPT",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3855
+      },
+      {
+        "url": "https://help.fathom.video/en/articles/14649409",
+        "title": "MCP Access",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1744
+      },
+      {
+        "url": "https://fathom.video",
+        "title": "Fathom AI Notetaker - Never Take Notes Again",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://fathom.video/pricing",
+        "title": "Fathom Pricing 2026: Free Plan or Plans from $15/mo",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 105.31
+  }
+}

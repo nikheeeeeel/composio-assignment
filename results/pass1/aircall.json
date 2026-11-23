@@ -1,0 +1,295 @@
+{
+  "app": "Aircall",
+  "category": "Communications and Messaging",
+  "one_line_description": {
+    "value": "Aircall is a customer communications platform for calls, SMS, and messaging that connects interactions to CRM and help-desk tools.",
+    "source_url": "https://aircall.io",
+    "quote": "Calls, SMS, and messaging live in one platform, keeping every interaction connected to your CRM, help desk, and business tools.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.aircall.io/docs/introduction",
+    "quote": "Connect Aircall to any business tool using our REST API and webhooks.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.aircall.io/api-references/",
+    "quote": "Aircall Public API is a classic REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write REST API covering calls, messages, AI agents, users, numbers, and more.",
+    "source_url": "https://developer.aircall.io/docs/introduction",
+    "quote": "Manage calls, messages, AI agents, users, numbers, and more — fully documented with detailed schemas, and request and response examples in the API reference.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.aircall.io/api-references/",
+    "source_url": "https://developers.aircall.io/api-references/",
+    "quote": "Aircall Public API is a classic REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "basic"
+    ],
+    "source_url": "https://developer.aircall.io/docs/authentication",
+    "quote": "Aircall supports two ways to authenticate with the REST API: Basic Authentication and OAuth.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.aircall.io/api-references/",
+    "quote": "It must eventually forward to `https://dashboard.aircall.io/oauth/authorize` with `client_id`, `redirect_uri`, `response_type=code` and `scope=public_api` query params.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://aircall.io",
+    "quote": "TRY FOR FREE TALK TO SALES",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Basic Auth is for internal/private or own-account integrations; OAuth is required for apps accessing data on behalf of other users or customers.",
+    "source_url": "https://developer.aircall.io/docs/authentication",
+    "quote": "Use Basic Authentication when you are connecting your own internal tools or private integration to Aircall. Use OAuth when your app needs to access Aircall data on behalf of other users or customers.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": "https://developer.aircall.io/docs/mcp-faqs",
+    "quote": "As of this writting we don't offer an MCP servier but stay tuned. We might have news soon.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=aircall",
+    "quote": "{\"items\": [{\"slug\": \"aircall\", \"name\": \"Aircall\", \"app\": \"Aircall\", \"tools_count\": 48}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": "https://developers.aircall.io/api-references/",
+    "quote": "Each Public API request must be authenticated and should not exceed the rate limit, please check the Authentication and the rate limiting sections before jumping in our documentation!",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.aircall.io/docs/setup-webhooks",
+    "quote": "Once created, every time the user takes an action in Aircall — a call ends, a tag is applied, a message is received — Aircall fires an event to your server automatically.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript"
+    ],
+    "source_url": "https://developer.aircall.io/docs/introduction",
+    "quote": "Embed the Aircall workspace inside any web product with a few lines of JavaScript.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Base API path is versioned as /v1; no deprecation or sunset policy found in the supplied documentation.",
+    "source_url": "https://developers.aircall.io/api-references/",
+    "quote": "The root endpoint of Aircall Public API is `https://api.aircall.io/v1`.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Aircall documents a public REST API at https://api.aircall.io/v1, with Basic Auth API keys generated self-serve from the dashboard and OAuth for multi-customer apps. The API covers calls, messages, AI agents, users, numbers, and more, and webhooks are documented. The main limitation is that public App Marketplace listings require OAuth and partner review, but own-account API access does not require sales contact.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Does a free Aircall trial include API-key access? The pricing page shows 'TRY FOR FREE', but does not explicitly state that API access is included.",
+    "Rate-limit numbers are referenced but not present in the fetched API reference text; fetch the rate-limiting section for exact quotas.",
+    "No documented sandbox/test environment was found; confirm whether Aircall offers one.",
+    "Official MCP status is unclear: the developer MCP FAQ says Aircall does not offer an MCP server, while a Help Center search snippet describes an 'Aircall MCP' beta with read-only access; the full article was not in SOURCES.",
+    "Only the JavaScript Everywhere embed SDK is named; no official server-side SDKs or a formal deprecation/sunset policy are documented in the supplied pages.",
+    "Confirm whether OAuth client credentials or App Marketplace listing require partner approval/app review separately from self-serve Basic Auth."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Aircall",
+      "category": "Communications and Messaging",
+      "hint": "aircall.io",
+      "description": null,
+      "source_file": "03-communications-and-messaging.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 17,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.aircall.io/api-references/",
+        "title": "API References | Aircall",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.aircall.io/docs/introduction",
+        "title": "Introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2206
+      },
+      {
+        "url": "https://developer.aircall.io/docs/authentication",
+        "title": "Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1910
+      },
+      {
+        "url": "https://developer.aircall.io/docs/basic-authentication",
+        "title": "Authenticate with API Keys",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2973
+      },
+      {
+        "url": "https://developers.aircall.io/build",
+        "title": "Build an app with Aircall | Aircall",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://aircall.io/pricing/",
+        "title": "Aircall Pricing & Plans: AI-Powered Calling, Voice Agents & 250+ Integrations | Aircall",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.aircall.io/docs/how-to-register",
+        "title": "Register a Public MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4632
+      },
+      {
+        "url": "https://developer.aircall.io/docs/mcp-faqs",
+        "title": "MCP FAQs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1392
+      },
+      {
+        "url": "https://developer.aircall.io/docs/setup-webhooks",
+        "title": "Webhook setup for integration builders",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3948
+      },
+      {
+        "url": "https://developer.aircall.io/docs/best-practices",
+        "title": "Best practices",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://aircall.io",
+        "title": "AI-Powered Customer Communications Platform for SMBs & Enterprise | Aircall",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 4989
+      },
+      {
+        "url": "https://support.aircall.io/en-gb/articles/39677926959517",
+        "title": "Aircall Help Center | Using Aircall MCP with AI assistants (beta)",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4619
+      },
+      {
+        "url": "https://martechdb.com/vendors/aircall.md",
+        "title": "Aircall MCP server",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://aircall.io"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Aircall\" official MCP server",
+        "\"Aircall\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://support.aircall.io/en-gb/articles/39677926959517",
+        "https://martechdb.com/vendors/aircall.md"
+      ],
+      "tool_calls_after": 17
+    },
+    "research_seconds": 277.97
+  }
+}

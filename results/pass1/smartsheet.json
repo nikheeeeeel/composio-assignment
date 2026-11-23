@@ -1,0 +1,267 @@
+{
+  "app": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "one_line_description": {
+    "value": "Smartsheet is a work management platform whose API enables programmatic access to and management of an organization's Smartsheet resources such as sheets, folders, and users.",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "The Smartsheet API enables you to programmatically access and manage your organization's Smartsheet resources.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "The API Reference includes object schemas, operation specifications, and code snippets for Sheets, Folders, Users, and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "You'll find SDK code examples alongside REST snippets throughout the API documentation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, broad read-write coverage across sheets, rows, columns, folders, users, reports, groups, sharing, webhooks and more",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "The API Reference includes object schemas, operation specifications, and code snippets for Sheets, Folders, Users, and more.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.smartsheet.com/api/smartsheet/openapi",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+    "quote": "Welcome to the OpenAPI reference documentation for the Smartsheet API!",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+    "quote": "Each API request requires passing in an access token as the `Bearer` value in your authorization header.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+    "quote": "Access scopes specify the types of resources your app needs to access and the types of actions to perform on those resources.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+    "quote": "The Smartsheet API is restricted to users on Business and Enterprise plans",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access requires a Business, Enterprise, or Advanced Work Management plan; access tokens are generated in the Smartsheet UI and OAuth apps are registered via Developer Tools. The Smartsheet MCP server also requires Business, Enterprise, or Advanced Work Management.",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "Required plan: Business, Enterprise, or Advanced Work Management",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.smartsheet.com",
+    "source_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+    "quote": "| United States | US production | `https://mcp.smartsheet.com` |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=smartsheet",
+    "quote": "{\"items\": [{\"slug\": \"smartsheet\", \"name\": \"Smartsheet\", \"app\": \"Smartsheet\", \"tools_count\": 180}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": "https://developers.smartsheet.com/api/resource_management/getting-started/throttling-and-rate-limiting",
+    "quote": "The specific details of rate limit policies in effect may vary without notice.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/guides/webhooks/webhook-callbacks",
+    "quote": "A callback is the notification that Smartsheet sends to a webhook's `callbackUrl`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+    "quote": "Network access to a Smartsheet production server environment",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript/Node.js",
+      "Python",
+      "Java",
+      "C#"
+    ],
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "| JavaScript / Node.js | - | smartsheet-javascript-sdk | | Python | docs | smartsheet-python-sdk | | Java | docs | smartsheet-java-sdk | | C# | docs | smartsheet-csharp-sdk |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned base URL (/2.0); the developer site publishes a changelog and a deprecation process, but their contents were not captured in the evidence bundle.",
+    "source_url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "quote": "Smartsheet: `https://api.smartsheet.com/2.0`",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Smartsheet has a well-documented public REST API with an OpenAPI reference, guides, webhooks, and official SDKs in four languages, so the API itself is broad and buildable. However, access is gated by plan: \"The Smartsheet API is restricted to users on Business and Enterprise plans\" and the API introduction lists \"Required plan: Business, Enterprise, or Advanced Work Management.\" Credentials are otherwise self-serve (UI-generated API tokens and OAuth app registration via Developer Tools), with no partner application or app review documented, so this is paid-plan gating rather than partner-only access.",
+  "main_blocker": "Business/Enterprise (or Advanced Work Management) plan required for API access",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No documented sandbox/test environment was found in the evidence bundle; only a production server environment is referenced. Confirm whether Smartsheet offers a sandbox account for API testing.",
+    "Rate limits are explicitly stated to vary without notice; no concrete request-per-window figures are documented in the fetched pages (only example X-RateLimit-* headers).",
+    "The changelog and deprecation-process pages appeared in search results but their content was not fetched, so the exact versioning/deprecation policy is unverified.",
+    "Whether a free trial or lower-tier plan can obtain API tokens was not confirmed; the docs state Business/Enterprise (or Advanced Work Management) is required.",
+    "The API token page (help.smartsheet.com/articles/2482389-generate-API-key) was only available as a snippet; token generation flow details were not fully captured."
+  ],
+  "status": "drafted",
+  "audit": {
+    "auth_note": "Page S9 explicitly documents access tokens/API keys and the Bearer header, and also describes OAuth 2.0 (3-legged) as the user-consent method; OAuth 2.0 is separately documented in S10.",
+    "sandbox_note": "sandbox_or_test_env=false is low confidence: no sandbox was found in the fetched sources, and the only environment language referenced is production.",
+    "sources_used": [
+      "https://developers.smartsheet.com/api/smartsheet/introduction",
+      "https://developers.smartsheet.com/api/smartsheet/openapi",
+      "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+      "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+      "https://developers.smartsheet.com/api/resource_management/getting-started/throttling-and-rate-limiting",
+      "https://developers.smartsheet.com/api/smartsheet/guides/webhooks/webhook-callbacks",
+      "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server"
+    ],
+    "input": {
+      "name": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "hint": "smartsheet.com/developers",
+      "description": null,
+      "source_file": "08-productivity-and-project-management.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+        "title": "Smartsheet API introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2655
+      },
+      {
+        "url": "https://developers.smartsheet.com/api/resource_management/getting-started/throttling-and-rate-limiting",
+        "title": "Throttling and rate limiting",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1537
+      },
+      {
+        "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+        "title": "Smartsheet MCP server introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4000
+      },
+      {
+        "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+        "title": "Install the Smartsheet MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2078
+      },
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/guides/webhooks/webhook-callbacks",
+        "title": "Webhook callbacks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://smartsheet.com/developers",
+        "title": "Smartsheet Developers & API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2123
+      },
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/openapi",
+        "title": "Smartsheet OpenAPI Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.smartsheet.com/",
+        "title": "Smartsheet Developers & API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2123
+      },
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3375
+      },
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/guides/advanced-topics/oauth",
+        "title": "OAuth",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 98.75
+  }
+}

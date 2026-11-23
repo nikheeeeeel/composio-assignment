@@ -1,0 +1,251 @@
+{
+  "app": "PitchBook",
+  "category": "Finance and Fintech",
+  "one_line_description": {
+    "value": "PitchBook provides private capital market data, research, and tools, including a REST API for pulling company, deal, investor, and fund data into internal systems on demand.",
+    "source_url": "https://pitchbook.com/products/direct-access-data",
+    "quote": "Access trusted data on demand with the PitchBook API. Call and retrieve specific data points from our comprehensive universe of market intelligence, paying for what you need, when you need it.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "PitchBook’s API solution allows you to call specific PitchBook data into your internal business systems on demand.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "The PitchBook API is a RESTful implementation that most HTTP clients can easily access in your chosen language or via a web browser.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST/JSON, on-demand read access across company, deal, investor, fund, service provider, and limited partner entities; exact scope varies by contract",
+    "source_url": "https://pitchbook.com/blog/what-is-direct-data",
+    "quote": "The Direct Data API is a RESTful JSON that provides clients with on-demand data access for the following platform entities:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://pitchbook.com/help/PitchBook-api",
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "Find information about PitchBook’s API solution and discover how it can meet your business needs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "Our team will work with you to understand the insights and data you’re looking for and help you establish the API connection through an API key or authentication token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "contact_sales",
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "Our API is a separate offering from the PitchBook Platform that requires a standalone contract agreement.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access requires a standalone contract; prospective users must send a request to PitchBook's Direct Data team (existing clients can request via the Plugins & Apps section of the platform), after which credentials are established as an API key or authentication token. Pricing is quote-based with no public self-serve tier.",
+    "source_url": "https://pitchbook.com/help/PitchBook-api",
+    "quote": "To start your API connection, you will need to send a request directly to our Direct Data team through this link.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+    "source_url": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+    "quote": "Setup – AI partners connect securely to PitchBook’s Premium Connector (built on MCP server technology) directly through the partner’s site.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=pitchbook",
+    "quote": "{\"slug\": \"pitchbook\", \"name\": \"PitchBook\", \"app\": \"PitchBook\", \"tools_count\": 130}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+    "quote": "To become comfortable using the PitchBook API, a test “sandbox” environment can be created for developers within your business to practice making API calls and understand how the API integrates with your systems.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "hard",
+  "verdict_reason": "PitchBook documents a RESTful API at api.pitchbook.com, but its own help page states the API is 'a separate offering from the PitchBook Platform that requires a standalone contract agreement' and directs prospects to send a request to the Direct Data team. Pricing is quote-based through sales, and there is no self-serve developer signup or free credential path. A sandbox can be created only after engaging PitchBook's team.",
+  "main_blocker": "Standalone contract and sales engagement with PitchBook's Direct Data team required",
+  "needs_outreach": true,
+  "outreach_reason": "A developer must contact PitchBook's Direct Data team to negotiate a standalone contract and receive API credentials; there is no self-serve signup or public trial.",
+  "open_questions": [
+    "API rate limits/throttling are not documented in the retrieved sources.",
+    "Whether the API supports webhooks or event callbacks is not stated; only scheduled Data Feed delivery and platform alerts are documented.",
+    "No official SDKs were found; the API is described as accessible via any HTTP client.",
+    "API versioning and deprecation/sunset policy are not documented in the retrieved sources.",
+    "The publicly callable endpoint for PitchBook's MCP offering is not published in the retrieved sources; the Premium Connector appears partner/enterprise gated.",
+    "OAuth scope documentation is absent; authentication is described only as an API key or authentication token.",
+    "API pricing and plan tiers are quote-based and not publicly listed."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "PitchBook",
+      "category": "Finance and Fintech",
+      "hint": "pitchbook.com",
+      "description": "research API",
+      "source_file": "09-finance-and-fintech.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://pitchbook.com/help/PitchBook-api",
+        "title": "Help: PitchBook API - PitchBook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2759
+      },
+      {
+        "url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+        "title": "Help: Data Feed, API, and CRM: Direct Data solutions - PitchBook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4176
+      },
+      {
+        "url": "https://pitchbook.com/products/direct-access-data",
+        "title": "Power financial workflows with PitchBook Direct Data - PitchBook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1893
+      },
+      {
+        "url": "https://pitchbook.com/pricing",
+        "title": "PitchBook Pricing: Plans, Cost, and Subscriptions - PitchBook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3256
+      },
+      {
+        "url": "https://pitchbook.com/help/troubleshoot-the-pitchbook-excel-plugin",
+        "title": "Help: Troubleshoot the PitchBook Excel Plugin - PitchBook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+        "title": "Help: Getting started with PitchBook's Premium Connector - PitchBook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4933
+      },
+      {
+        "url": "https://pitchbook.com/products/premium-connectors",
+        "title": "PitchBook Premium Connectors - Integrated AI Platforms - PitchBook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://pitchbook.com/blog/what-is-direct-data",
+        "title": "How Direct Data brings PitchBook to your full workflow - PitchBook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2023-08-10T00:00:00.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://pitchbook.com/news/articles/2016-year-in-review-5-cool-features-added-to-the-pitchbook-platform",
+        "title": "2016 Year in Review: 5 cool features added to the PitchBook Platform - PitchBook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2016-12-28T00:00:00.000Z",
+        "chars": 2661
+      },
+      {
+        "url": "https://pitchbook.com",
+        "title": "Private Market Data, Research & Tools - PitchBook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3072
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 107.22
+  }
+}

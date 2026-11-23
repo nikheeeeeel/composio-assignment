@@ -1,0 +1,214 @@
+{
+  "app": "Gumroad",
+  "category": "Ecommerce",
+  "one_line_description": {
+    "value": "Gumroad is an e-commerce marketplace where independent creators sell digital products — ebooks, courses, music, software, design assets, memberships, and more — directly to their audiences.",
+    "source_url": "https://gumroad.com/llms.txt",
+    "quote": "Gumroad is an e-commerce marketplace where independent creators sell digital products — ebooks, courses, music, software, design assets, memberships, and more — directly to their audiences.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://gumroad.com/llms.txt",
+    "quote": "public REST API for products, sales, subscribers, and licenses",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://gumroad.com/api",
+    "quote": "The Gumroad OAuth API is based around REST. We return JSON for every request, including errors.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST; products and related variants/offer codes/custom fields; read-write",
+    "source_url": "https://gumroad.com/api",
+    "quote": "Gumroad's OAuth 2.0 API lets you see information about your products, as well as you can add, edit, and delete offer codes, variants, and custom fields.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://gumroad.com/api",
+    "source_url": "https://gumroad.com/llms.txt",
+    "quote": "[API documentation](https://gumroad.com/api): public REST API for products, sales, subscribers, and licenses",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://gumroad.com/api",
+    "quote": "Gumroad's OAuth 2.0 API lets you see information about your products, as well as you can add, edit, and delete offer codes, variants, and custom fields.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://gumroad.com/api",
+    "quote": "We've provided the following scopes that you may request when the user authorizes your application.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://gumroad.com/pricing",
+    "quote": "No hidden fees, no monthly charges.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Requires a Gumroad account: create an application in advanced settings and generate an access token; general multi-account apps use an OAuth redirect URI.",
+    "source_url": "https://gumroad.com/help/article/280-create-application-api",
+    "quote": "To create an application for general use, you'll need to build a Redirect URI handler to generate access tokens for each of your users. However, if you only want to use the API on your own Gumroad account, you can manually generate an access token, which is a simpler process.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://gumroad.com/claude/v1/mcp",
+    "source_url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+    "quote": "You can also add Gumroad as a custom connector: in Claude, open Settings > Connectors, choose Add custom connector, and paste this URL: `https://gumroad.com/claude/v1/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=gumroad",
+    "quote": "{\"items\": [{\"slug\": \"gumroad\", \"name\": \"Gumroad\", \"app\": \"Gumroad\", \"tools_count\": 13}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "1,500 requests per minute per access token; excess returns HTTP 429 with Retry-After.",
+    "source_url": "https://gumroad.com/api",
+    "quote": "Requests are rate limited per access token: 1500 requests per minute, and a request over that returns 429 with a Retry-After header giving the number of seconds to wait before retrying.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://gumroad.com/api",
+    "quote": "Finally, you can see a user's public information and subscribe to be notified of their sales.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Endpoints use /v2 paths; no formal versioning or deprecation/sunset policy is documented in the evidence.",
+    "source_url": "https://gumroad.com/api",
+    "quote": "https://api.gumroad.com/v2/products",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Gumroad publishes a REST API with OAuth 2.0, documented scopes, and a self-serve token flow from a standard Gumroad account; no sales contact or app review is documented. The API covers products, sales, subscribers, and licenses, and rate limits are documented.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No official SDKs were documented; a Ruby OmniAuth strategy is listed, but vendor maintenance is unclear.",
+    "No documented sandbox or test environment was found.",
+    "No formal API versioning/deprecation policy was found beyond /v2 endpoint paths.",
+    "Webhook support is inferred from the API's sales-subscription wording; the bundled sources do not include the full Ping/webhook reference for payload, retries, or signatures.",
+    "MCP endpoints appear per-assistant; only the Claude endpoint is explicitly evidenced, so other assistant endpoints should be confirmed.",
+    "No community MCP servers were found in the supplied GitHub/MCP-registry checks."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Gumroad",
+      "category": "Ecommerce",
+      "hint": "gumroad.com/api",
+      "description": null,
+      "source_file": "05-ecommerce.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://gumroad.com/api",
+        "title": "Gumroad",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://gumroad.com/help/article/280-create-application-api",
+        "title": "Create an application for the API - Gumroad Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://gumroad.com/llms.txt",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2298
+      },
+      {
+        "url": "https://gumroad.com/mcp",
+        "title": "Gumroad MCP | Sell digital products from your AI assistant",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3297
+      },
+      {
+        "url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+        "title": "Connecting AI assistants to your Gumroad store - Gumroad Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://gumroad.com/pricing",
+        "title": "Gumroad pricing: 10% + 50¢ direct, 30% via Discover",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4159
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 203.74
+  }
+}

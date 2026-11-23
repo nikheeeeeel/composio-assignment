@@ -1,0 +1,69 @@
+{
+  "category": "AI, Research and Media-native",
+  "categoryNumber": 10,
+  "source": {
+    "spreadsheet": "composio-research",
+    "sheet": "Sheet1",
+    "url": "https://docs.google.com/spreadsheets/d/18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8/edit"
+  },
+  "appCount": 10,
+  "apps": [
+    {
+      "number": 91,
+      "app": "NotebookLM",
+      "hint": "cloud.google.com/gemini",
+      "note": "Enterprise API"
+    },
+    {
+      "number": 92,
+      "app": "Otter AI",
+      "hint": "help.otter.ai",
+      "note": "MCP server"
+    },
+    {
+      "number": 93,
+      "app": "Fathom",
+      "hint": "fathom.video"
+    },
+    {
+      "number": 94,
+      "app": "Consensus",
+      "hint": "consensus.app",
+      "note": "OAuth requested"
+    },
+    {
+      "number": 95,
+      "app": "Reducto",
+      "hint": "reducto.ai",
+      "note": "document parsing"
+    },
+    {
+      "number": 96,
+      "app": "Devin",
+      "hint": "docs.devin.ai",
+      "note": "MCP"
+    },
+    {
+      "number": 97,
+      "app": "higgsfield",
+      "hint": "higgsfield.ai/cli",
+      "note": "content suite"
+    },
+    {
+      "number": 98,
+      "app": "Mermaid CLI",
+      "hint": "github.com/mermaid-js/mermaid-cli"
+    },
+    {
+      "number": 99,
+      "app": "YouTube Transcript",
+      "hint": "transcriptapi.com"
+    },
+    {
+      "number": 100,
+      "app": "Grain",
+      "hint": "grain.com",
+      "note": "meeting notes"
+    }
+  ]
+}

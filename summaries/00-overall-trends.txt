@@ -1,0 +1,119 @@
+====================================================================================================
+OVERALL TRENDS - 100 third-party apps (first-pass draft)
+====================================================================================================
+Source: results/pass1/*.json | Stage: first-pass, unverified | Generated: 2026-11-23
+
+1. HEADLINE
+   69 easy, 27 moderate, 2 hard, 2 blocked.
+   70/100 have a self-serve free or trial route.
+   85/100 have an official vendor MCP server; 77/100 match a Composio toolkit.
+   9/100 need human outreach before credentials can be obtained.
+
+2. VERDICT & ACCESS MIX
+   easy      69  ##############
+   moderate  27  #####
+   hard       2  
+   blocked    2  
+
+   self_serve_free         58  ############
+   paid_plan_required      12  ##
+   self_serve_trial        12  ##
+   app_review_required      6  #
+   admin_approval           5  #
+   unknown                  2  
+   no_api                   2  
+   contact_sales            2  
+   null                     1  
+
+3. AUTH PATTERNS
+   oauth2 72, api_key 60, bearer_token 43, basic 17, other 7, jwt 6
+   OAuth2 appears in 72/100 apps; API keys in 60/100.
+   Most apps support more than one method; bearer/basic are often transport encodings of
+   the same API key or OAuth token rather than separate credential systems.
+
+4. MCP & COMPOSIO COVERAGE
+   Official MCP: 85/100.
+   Composio toolkit: 77/100; gaps: 23.
+   Category coverage (official MCP / Composio):
+     CRM and Sales                                 MCP  9/10   Composio  9/10
+     Support and Helpdesk                          MCP 10/10   Composio  8/10
+     Communications and Messaging                  MCP  7/10   Composio  8/10
+     Marketing, Ads, Email and Social              MCP  7/10   Composio  8/10
+     Ecommerce                                     MCP  8/10   Composio  3/10
+     Data, SEO and Scraping                        MCP  8/10   Composio  7/10
+     Developer, Infra and Data platforms           MCP 10/10   Composio  9/10
+     Productivity and Project Management           MCP  9/10   Composio 10/10
+     Finance and Fintech                           MCP  9/10   Composio  7/10
+     AI, Research and Media-native                 MCP  8/10   Composio  8/10
+
+5. FRICTION & OUTREACH
+   No public API: Mermaid CLI, Sherlock.
+   Hard/sales-led: Otter AI (Public API restricted to Enterprise workspaces and enabled via Otter account manager), PitchBook (Standalone contract and sales engagement with PitchBook's Direct Data team required).
+   Outreach required (9):
+     - Amazon Selling Partner [app_review_required]: Public developer registration is subject to Amazon's review, and restricted-role access requires an architecture review with the SP-API Solutions Architecture team, so a human-facing application/review step is required f
+     - LinkedIn Ads [app_review_required]: A developer must submit the increasing-access request and pass LinkedIn's vetting/use-case review (and separate application for Lead Sync) before API credentials with ads scopes are granted; there is no self-serve creden
+     - Otter AI [contact_sales]: A third-party developer needs an Otter Enterprise workspace and must contact their Otter account manager to enable Public API access.
+     - Pinterest [app_review_required]: A human must submit the app for Pinterest review, and for Standard access prepare a video recording of the app completing the OAuth flow, before credentials/production access are granted.
+     - PitchBook [contact_sales]: A developer must contact PitchBook's Direct Data team to negotiate a standalone contract and receive API credentials; there is no self-serve signup or public trial.
+     - Ramp [admin_approval]: Developers without a Ramp account must request sandbox access from Ramp, and building on behalf of other businesses requires joining the Ramp partner program.
+     - Salesforce Commerce Cloud [paid_plan_required]: A developer cannot self-serve an org or sandbox: sandbox access requires purchasing sandbox credits on an existing B2C Commerce account, and Salesforce directs pricing/integration questions to a sales representative rath
+     - Squarespace [app_review_required]: A third-party developer must register an OAuth client and wait for Squarespace review/approval; custom API-key apps also require the Commerce Advanced plan.
+     - Waterfall.io [admin_approval]: A human must request an API key through the Waterfall website email form or book a call, and the Waterfall team reviews each access request before enabling credentials.
+
+6. EVIDENCE QUALITY
+   Claims: 1700 total; high 1075 (63%), medium 283 (17%), low 48 (3%), not_found 294 (17%).
+   Average sourced claims: 13.8/17; average official pages: 9.7/app.
+   Rate limits sourced: 75/100; versioning: 84/100; webhooks true: 74/100; sandbox true: 38/100; OAuth scopes documented true: 59/100.
+
+7. CROSS-CATEGORY TABLE
+CATEGORY                                      EASY  MOD HARD BLOCK  MCP COMP  OUT
+-------------------------------------------------------------------------------------
+CRM and Sales                                    8    2    0     0    9    9    0
+Support and Helpdesk                             5    5    0     0   10    8    0
+Communications and Messaging                    10    0    0     0    7    8    0
+Marketing, Ads, Email and Social                 5    5    0     0    7    8    2
+Ecommerce                                        5    5    0     0    8    3    3
+Data, SEO and Scraping                           7    2    0     1    8    7    1
+Developer, Infra and Data platforms              9    1    0     0   10    9    0
+Productivity and Project Management              9    1    0     0    9   10    0
+Finance and Fintech                              6    3    1     0    9    7    2
+AI, Research and Media-native                    5    3    1     1    8    8    1
+
+8. SEVEN PATTERNS THAT MATTER
+   1) Self-serve is the default. 70/100 apps have a free or trial credential route. The
+      median app is not a sales problem; it is an OAuth/API-key onboarding problem.
+   2) Gating is commercial, not technical. 27 moderate apps are mostly held back by paid
+      plans, app review, or admin roles. Only 2 apps have no public API at all.
+   3) MCP is table stakes. 85/100 have an official MCP server, including 10/10 in support
+      and developer infra. MCP presence no longer differentiates; auth, breadth and writes do.
+   4) Composio coverage is uneven. 77/100 match a toolkit, but ecommerce is only 3/10 and
+      data/finance are 7/10. The gap is a catalog roadmap, not a market signal.
+   5) Auth is converging on OAuth2 + API key. OAuth2 72/100, API key 60/100. Bearer/basic
+      are mostly encodings; JWT is niche. A two-path auth layer covers most of the market.
+   6) Evidence gaps cluster in operational fields. Sandbox (38/100), OAuth scopes (59/100),
+      rate limits (75/100) and versioning (84/100) are the hardest claims to source.
+   7) First-pass verdicts are optimistic. 17% of claims are not_found and 3% are low;
+      the verifier should be expected to move some easy apps to moderate or human review.
+
+9. PRIORITIZATION
+   Tier 1 - build now (self-serve, broad, strong evidence):
+     CRM (8 easy), Communications (10), Developer infra (9), Productivity (9),
+     Data/SEO (7), Ecommerce self-serve core (5), Marketing email tools (5),
+     Finance developer-first (6), AI native tools (5), Support self-serve/trial (5).
+
+   Tier 2 - gated but viable (paid plan, app review, admin approval):
+     27 moderate apps; plan commercial/partner work rather than only engineering.
+
+   Tier 3 - outreach / deprioritize:
+     9 outreach apps (Amazon SP-API, Salesforce Commerce Cloud, Squarespace, Waterfall,
+     PitchBook, Pinterest, Otter, Ramp, LinkedIn Ads); hard: PitchBook, Otter;
+     blocked/no API: Mermaid CLI, Sherlock.
+
+10. CAVEATS
+   - This is pass 1 only. No mechanical quote/URL checks or adversarial LLM verification ran.
+   - GoHighLevel was re-researched after a docs-platform host (Stoplight) polluted the first
+     attempt; the bad draft is preserved at results/logs/gohighlevel.pass1-bad.json.
+   - Low-evidence apps: Mermaid CLI, Paygent Connect, Sherlock.
+   - Unresolved access model: Datadog, Paygent Connect, fanbasis.
+   - Treat 'easy' as an upper bound until verification; treat 'hard/blocked' as more stable
+     because they are usually backed by explicit sales/CLI evidence.

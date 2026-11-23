@@ -1,0 +1,251 @@
+{
+  "app": "Jira",
+  "category": "Productivity and Project Management",
+  "one_line_description": {
+    "value": "Jira is Atlassian's work/project tracking product, exposing search, create, edit, transition and comment on work items plus spaces, boards, sprints, versions and metadata through its APIs.",
+    "source_url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+    "quote": "| Jira | Search, create, edit, transition, and comment on work items; query spaces, boards, sprints, versions, and metadata |",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.atlassian.com/software/jira/docs/api/REST/9.12.0/",
+    "quote": "You can use this REST API to build apps for Jira, develop integrations between Jira and other applications, or script interactions with Jira.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.atlassian.com/software/jira/docs/api/REST/9.12.0/",
+    "quote": "The Jira REST API uses JSON as its communication format, and the standard HTTP methods like `GET`, `PUT`, `POST` and `DELETE` (see API descriptions below for which methods are available for each resource).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad REST surface across many Jira resource groups (issues, boards, backlogs, sprints, epics, builds, deployments, remote links, webhooks, license metrics), read-write",
+    "source_url": "https://developer.atlassian.com/cloud/jira/software/rest/",
+    "quote": "* [Backlog](/cloud/jira/software/rest/api-group-backlog/#api-group-backlog) * [Board](/cloud/jira/software/rest/api-group-board/#api-group-board) * [Epic](/cloud/jira/software/rest/api-group-epic/#api-group-epic) * [Issue](/cloud/jira/software/rest/api-group-issue/#api-group-issue)",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.atlassian.com/cloud/jira/software/rest/",
+    "source_url": "https://developer.atlassian.com/cloud/jira/software/rest/",
+    "quote": "The Jira Software Cloud REST API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "basic"
+    ],
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+    "quote": "- OAuth 2.0 authorization code grants (3LO): This is the recommended method. You should use this for most cases. - Basic authentication: You should only use this method for tools like personal scripts or bots.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+    "quote": "Authorization for OAuth 2.0 authorization code grants is implemented via scopes. Scopes statically specify the maximum set of actions that an app may perform (see scopes).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+    "quote": "OAuth 2.0 (3LO) apps are created and managed in the developer console.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve for development: a developer can create an OAuth 2.0 (3LO) app in the Atlassian developer console or generate an API token (used with Basic auth) from their Atlassian account; no sales contact, partner approval or app review is documented as a prerequisite for credentials in the evidence. API access runs against an Atlassian Cloud site, so each customer site that installs a distributed integration must authorize it, and Atlassian's security policy bars apps that collect customer API tokens or make customers create their own 3LO apps. No official Atlassian pricing/plan page was captured in this bundle, so free-tier sufficiency for API credentials is unverified.",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+    "quote": "Apps that collect API tokens or instruct customers to create individual 3LO apps don't comply with our Security requirements for cloud apps and Acceptable use policy.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.atlassian.com/v2/mcp",
+    "source_url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+    "quote": "An AI client connects to the server endpoint at `https://mcp.atlassian.com/v2/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=jira",
+    "quote": "{\"items\": [{\"slug\": \"jira\", \"name\": \"Jira\", \"app\": \"Jira\", \"tools_count\": 166}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Three simultaneous systems: points-based hourly quota (typically 1 point per core read or write call, 2 points for identity/permission reads), per-endpoint per-second burst limits, and per-issue write limits; enforcement of the new points-based and tiered quota limits begins March 2, 2026, while API-token traffic keeps existing burst limits.",
+    "source_url": "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/",
+    "quote": "Jira Cloud enforces three independent rate limiting systems that work simultaneously to protect platform stability.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Jira REST URIs carry an API name and version (for example /rest/api/3 on Jira Cloud and /rest/api/2 on Jira Server/Data Center), plus a symbolic `latest` version that resolves to the newest version the instance supports; no explicit deprecation or sunset policy text was present in the captured sources.",
+    "source_url": "https://docs.atlassian.com/software/jira/docs/api/REST/9.12.0/",
+    "quote": "However, there is also a symbolic version, called `latest`, which resolves to the latest version supported by the given Jira instance.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Atlassian publishes documented, read-write REST APIs for both Jira Cloud (software and platform v3) and Jira Server/Data Center, covering issue, board, sprint, backlog, epic and other resource groups. Credentials are self-serve: OAuth 2.0 (3LO) apps are created in the developer console and API tokens can be generated from an Atlassian account, with OAuth scopes explicitly documented. No sales contact, partner approval or app review is documented as a gate for development credentials, and Atlassian also operates a hosted MCP server. Confidence is reduced only by the absence of an official pricing page in this bundle.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No official Atlassian pricing/plans page was captured in SOURCES, so whether a free Jira Cloud plan is sufficient for API credentials (versus a paid plan) is unverified; access_model=self_serve_free rests on the self-serve developer console / API token flow, not on plan pricing evidence.",
+    "Webhook documentation appeared in the search index (https://developer.atlassian.com/cloud/jira/platform/webhooks/ and .../rest/v3/api-group-webhooks/) but no page text was included in SOURCES, so webhooks is left not_found per the claim rules.",
+    "Sandbox/test-environment evidence was limited to community forum threads that were not included in SOURCES; no official vendor statement on a Jira Cloud sandbox was available.",
+    "No SOURCES page lists official vendor-maintained client SDK languages; the Atlassian SDK pages appeared only in the search plan, so sdk_languages is not_found.",
+    "The Jira Cloud platform REST v3 intro (https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/) was in the search plan but its text was not in SOURCES; docs_url therefore cites the Jira Software Cloud REST API index instead.",
+    "Community MCP servers were not evidenced: GitHub repository and MCP registry checks returned no results in this bundle."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Jira",
+      "category": "Productivity and Project Management",
+      "hint": "developer.atlassian.com",
+      "description": null,
+      "source_file": "08-productivity-and-project-management.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.atlassian.com/cloud/admin/cookbook-install-apps-products/",
+        "title": "Cookbook to install operations for products and apps",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-license-metrics/",
+        "title": "The Jira Cloud platform REST API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4254
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/",
+        "title": "Rate limiting",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/rovo-mcp/",
+        "title": "Atlassian Rovo MCP Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3693
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/rovo-mcp/guides/getting-started/",
+        "title": "Getting started with the Atlassian Rovo MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3690
+      },
+      {
+        "url": "https://developer.atlassian.com",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 934
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/software/rest/",
+        "title": "The Jira Software Cloud REST API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2322
+      },
+      {
+        "url": "https://docs.atlassian.com/software/jira/docs/api/REST/9.12.0/",
+        "title": "Jira 9.12.0",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/",
+        "title": "OAuth 2.0 (3LO) apps",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/security-for-other-integrations/",
+        "title": "Security for other integrations",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2659
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 126.16
+  }
+}

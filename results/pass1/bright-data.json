@@ -1,0 +1,265 @@
+{
+  "app": "Bright Data",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": {
+    "value": "Bright Data is a web data platform that discovers, accesses, extracts, and interacts with public websites for scraping, search, and browser automation.",
+    "source_url": "https://brightdata.com",
+    "quote": "Discover, access, extract, and interact with any public website.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.brightdata.com/api-reference/authentication",
+    "quote": "API Access - Authenticate and interact with the Bright Data platform using an API key/token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.brightdata.com/api-reference/account-management-api/Get_pricing_plans",
+    "quote": "openapi: 3.0.1 info: title: Bright Data API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad multi-product REST API: Scraper API with thousands of pre-built scrapers, Scraper Studio, Web Unlocker, SERP API, Browser API, datasets; read-write.",
+    "source_url": "https://docs.brightdata.com/quickstart",
+    "quote": "The same call works for every one of Bright Data's thousands of pre-built scrapers: change the `dataset_id` over HTTP, or call a different method in the SDK.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.brightdata.com/introduction",
+    "source_url": "https://docs.brightdata.com/introduction",
+    "quote": "Guides, quickstarts and API references for Bright Data Scraper API, Scraper Studio, Web Unlocker API, SERP API, proxies, datasets and Bright Data MCP.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "basic",
+      "bearer_token"
+    ],
+    "source_url": "https://docs.brightdata.com/api-reference/authentication",
+    "quote": "Authenticate with Bright Data using 1 of 2 methods: API Access with an API key or Native Access with proxy username and password.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.brightdata.com/quickstart",
+    "quote": "New accounts get 5,000 free credits every month, no credit card required",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free self-serve signup with 5,000 credits/month and no credit card; API keys are generated in Account settings and only admin accounts can create them; unfunded accounts have a 1,000 req/min SERP rate limit; higher volume requires adding funds or a paid plan.",
+    "source_url": "https://docs.brightdata.com/quickstart",
+    "quote": "New accounts get 5,000 free credits every month, no credit card required",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.brightdata.com/mcp",
+    "source_url": "https://docs.brightdata.com/products/mcp-server/remote/quickstart",
+    "quote": "https://mcp.brightdata.com/mcp?token=YOUR_API_TOKEN",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=brightdata",
+    "quote": "{\"slug\": \"brightdata\", \"name\": \"Bright Data\", \"app\": \"Bright Data\", \"tools_count\": 167}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "SERP API: 1,000 req/min for unfunded accounts, with HTTP 429 above the limit; limits can be raised by adding funds or contacting sales.",
+    "source_url": "https://docs.brightdata.com/general/usage-monitoring/serp-rate-limit",
+    "quote": "Unfunded accounts are subject to a rate limit of 1,000 req/min.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://brightdata.com",
+    "quote": "Seamless API and webhook integration",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Python",
+      "JavaScript"
+    ],
+    "source_url": "https://docs.brightdata.com/quickstart",
+    "quote": "One of: - cURL - Python 3.9+ with the Bright Data Python SDK: `pip install brightdata-sdk` - Node.js 20+ with the Bright Data JavaScript SDK: `npm install @brightdata/sdk`",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Bright Data exposes a broad multi-product REST API with documented API-key authentication, official Python and JavaScript SDKs, and a vendor-hosted MCP server. A new account receives 5,000 free credits per month with no credit card, and API keys are self-generated, so credentials are self-serve. The main friction is a 1,000 req/min SERP rate limit for unfunded accounts and sales contact for higher volume.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "OAuth scopes/permissions are not documented in the cited sources; an OAuth 2.1 MCP setup page appeared only as a search snippet and was not included in SOURCES.",
+    "No documented sandbox or test environment was found in the provided sources; the free tier may serve as a de facto test environment but this is not explicitly stated.",
+    "API versioning and deprecation/sunset policy was not found in the cited sources; only an OpenAPI spec version (1.0.0) and docs build version were visible.",
+    "No community or third-party MCP servers were found in the evidence (GitHub and MCP registry checks returned no results).",
+    "Production plan tiers and pricing gates beyond the free monthly credits are not fully specified in the cited pages."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "hint": "brightdata.com",
+      "description": null,
+      "source_file": "06-data-seo-and-scraping.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.brightdata.com/introduction",
+        "title": "Bright Data documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.brightdata.com/api-reference/SDK",
+        "title": "Python SDK",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.brightdata.com/api-reference/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.brightdata.com/quickstart",
+        "title": "Bright Data quickstart",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.brightdata.com/api-reference/account-management-api/Get_pricing_plans",
+        "title": "Get pricing plans",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://brightdata.com/pricing",
+        "title": "Bright Data's Products Pricing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.brightdata.com/general/usage-monitoring/serp-rate-limit",
+        "title": "SERP API fair use: rate limit",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1368
+      },
+      {
+        "url": "https://docs.brightdata.com/products/mcp-server/overview",
+        "title": "MCP server overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2470
+      },
+      {
+        "url": "https://docs.brightdata.com/products/mcp-server/remote/quickstart",
+        "title": "How to get started with remote MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2081
+      },
+      {
+        "url": "https://docs.brightdata.com/general/webhook_notifications",
+        "title": "Webhook notifications",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3885
+      },
+      {
+        "url": "https://brightdata.com",
+        "title": "Bright Data: Web Data Infrastructure for Humans & Agents",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://brightdata.com"
+    ],
+    "refinement": {},
+    "research_seconds": 116.58
+  }
+}

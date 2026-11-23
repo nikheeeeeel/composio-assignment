@@ -1,0 +1,262 @@
+{
+  "app": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "one_line_description": {
+    "value": "LiveAgent is cloud help desk software for small and growing support teams: email, live chat, phone and social media in one shared inbox, with AI agents that answer customers and hand over to your people.",
+    "source_url": "https://www.liveagent.com/",
+    "quote": "LiveAgent is cloud help desk software for small and growing support teams: email, live chat, phone and social media in one shared inbox, with AI agents that answer customers and hand over to your people.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://support.liveagent.com/567924-Documentation",
+    "quote": "You can find whole LiveAgent API documentation within your LiveAgent account: https:// YOURDOMAIN. ladesk.com/docs/api/v3/#/",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://support.liveagent.com/567924-Documentation",
+    "quote": "APIv1 REST API documentation can be found here.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write REST API covering agents, companies, conversations/messages, customers, files, knowledge base, tags, tickets and reports (dozens of resources; no exact endpoint count in retrieved pages).",
+    "source_url": "https://support.liveagent.com/840770-Complete-API-reference",
+    "quote": "Companies Retrieve list of companies Retrieve company info Conversations Delete conversation Retrieves all conversations Retrieves conversation info Retrieves all conversation messages Create new message in conversation Change status of the conversation",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://support.liveagent.com/567924-Documentation (full API v3 reference is per-account at https://<domain>.ladesk.com/docs/api/v3/#/)",
+    "source_url": "https://support.liveagent.com/911737-API-v3",
+    "quote": "Where can I find the API v3 documentation? You can find whole LiveAgent API documentation within your LiveAgent account: https://YOURDOMAIN.ladesk.com/docs/api/v3/#/",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "source_url": "https://support.liveagent.com/741982-API-key",
+    "quote": "Your API key has to be set in header of your requests",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://support.liveagent.com/567924-Documentation",
+    "quote": "Authorize the LiveAgent API on https:// YOURDOMAIN. ladesk.com/docs/api/v3/#/ and add scopes you need for the API to work",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://support.liveagent.com/567924-Documentation",
+    "quote": "Consider registering a new free Trial account for testing purposes, before using API with your live account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "A free trial account is sufficient to test the API (no credit card required, 30-day trial). API keys are created by an account admin under Configuration > System > API. The full API v3 reference is only inside the logged-in account. The MCP server is listed on the Business and Enterprise plans; its endpoint is per-account (https://<domain>/api/mcp).",
+    "source_url": "https://support.liveagent.com/567924-Documentation",
+    "quote": "Consider registering a new free Trial account for testing purposes, before using API with your live account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+    "source_url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+    "quote": "LiveAgent exposes a built-in MCP server (Model Context Protocol) that lets you connect external AI tools",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=LiveAgent",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"LiveAgent\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "API requests: 180 per minute per API key; HTTP layer: 300 requests/second per IP per load balancer (plus 300 TCP connections/second per IP).",
+    "source_url": "https://support.liveagent.com/217359-Request-rate-limits",
+    "quote": "API requests are limited to 180 per minute per API key.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": "https://support.liveagent.com/567924-Documentation",
+    "quote": "Consider registering a new free Trial account for testing purposes, before using API with your live account.",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [],
+    "source_url": "https://support.liveagent.com/911737-API-v3",
+    "quote": "If you need to generate LiveAgent's API library / SDK for your preferred programming language (like for example C#) you can use the swagger (OpenAPI) API descriptor",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "URL-path versioning: legacy API v1 and current API v3 (/api/v3/). API v3 provides a Swagger/OpenAPI descriptor for generating libraries/SDKs. No formal deprecation or sunset policy was found in the retrieved pages.",
+    "source_url": "https://support.liveagent.com/567924-Documentation",
+    "quote": "APIv1 REST API documentation can be found here.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "LiveAgent publishes a documented REST API (v1 and v3) authenticated with an API key, and its own documentation recommends using a free trial account to test the API, so credentials are self-serve. The API covers tickets, conversations, customers, companies, agents, knowledge base, files, tags and reports, giving reasonable read-write breadth. Caveats are that the complete v3 reference lives inside the logged-in account and the MCP server is listed from the Business plan.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The full API v3 reference, scope list and permission details are only available inside a logged-in LiveAgent account and could not be verified from public pages.",
+    "Webhooks: a vendor FAQ (faq.liveagent.com/532587-How-do-I-create-a-webhook-to-receive-notifications-on-my-channel) appeared in search snippets but its page was not included in the evidence bundle, so webhook support is unverified.",
+    "Whether a dedicated sandbox/test environment exists: the vendor FAQ on sandboxes (faq.liveagent.com/839244) was not included in the bundle; the public docs only recommend a trial account for testing.",
+    "API v1 vs v3 deprecation/sunset policy is not stated in the retrieved pages.",
+    "Official SDKs: evidence only shows generating a library from the OpenAPI/Swagger descriptor; the React-library FAQ page was not in the bundle.",
+    "Which subscription plans include REST API access is unclear: MCP server is listed on Business/Enterprise, and Enterprise lists 'no plan limits' on API keys, but per-plan API key limits for lower tiers were not captured.",
+    "Whether the REST API itself supports OAuth, or OAuth 2.1 applies only to the MCP server (which also supports bearer tokens), is not explicit in the evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "hint": "liveagent.com",
+      "description": null,
+      "source_file": "02-support-and-helpdesk.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://support.liveagent.com/567924-Documentation",
+        "title": "Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1559
+      },
+      {
+        "url": "https://support.liveagent.com/911737-API-v3",
+        "title": "API v3",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3404
+      },
+      {
+        "url": "https://support.liveagent.com/741982-API-key",
+        "title": "API key",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2214
+      },
+      {
+        "url": "https://www.liveagent.com/pricing/",
+        "title": "LiveAgent Pricing & Plans: AI on Every Plan, 30-Day Free Trial",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://faq.liveagent.com/824713-What-are-the-benefits-of-the-Enterprise-plan",
+        "title": "What are the benefits of the Enterprise plan?",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2236
+      },
+      {
+        "url": "https://support.liveagent.com/217359-Request-rate-limits",
+        "title": "Request rate limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1544
+      },
+      {
+        "url": "https://www.liveagent.com/features/mcp-server/",
+        "title": "Connect AI tools to LiveAgent with MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents",
+        "title": "MCP Integration for agents",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://support.liveagent.com/840770-Complete-API-reference",
+        "title": "Complete API reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://faq.liveagent.com/811310-Do-you-have-a-React-library-available-for-integration",
+        "title": "Do you have a React library available for integration?",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 907
+      },
+      {
+        "url": "https://www.liveagent.com/",
+        "title": "LiveAgent: Help Desk Software with AI Agents and Live Chat",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://liveagent.com"
+    ],
+    "refinement": {},
+    "research_seconds": 124.89
+  }
+}

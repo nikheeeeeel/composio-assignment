@@ -1,0 +1,284 @@
+{
+  "app": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": {
+    "value": "Twilio SendGrid is a cloud email platform offering a developer Email API and SMTP relay for transactional email plus Marketing Campaigns tools for marketing email.",
+    "source_url": "https://sendgrid.com/en-us",
+    "quote": "Send email on a world-class platform that delivers more than 200 billion emails every month",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://ahoy.sendgrid.com/rs/294-TKB-300/images/SendGrid_API_Guide.pdf",
+    "quote": "SendGrid’s webhooks and application programming interfaces (APIs) extend the capabilities of our email platform, allowing users to quickly integrate with our system, measure delivery effectiveness, and expand the management of their email.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://support.sendgrid.com/hc/en-us/articles/20950642998683-How-to-Send-a-Test-Email-via-SendGrid-API-using-Postman",
+    "quote": "You can send an email using SendGrid's API with `curl` by making a POST request to SendGrid's mail sending endpoint.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Multiple REST surfaces: Web API v3, Marketing Campaigns, Contact Management, Campaigns, Subuser & Reseller APIs, plus SMTP API and Event/Inbound Parse webhooks; broad read-write coverage",
+    "source_url": "https://ahoy.sendgrid.com/rs/294-TKB-300/images/SendGrid_API_Guide.pdf",
+    "quote": "Event Webhook Inbound Parse Webhook Web API Marketing Campaigns Contact Management API Campaigns API SMTP API Subuser API & Reseller API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://ahoy.sendgrid.com/rs/294-TKB-300/images/SendGrid_API_Guide.pdf",
+    "source_url": "https://ahoy.sendgrid.com/rs/294-TKB-300/images/SendGrid_API_Guide.pdf",
+    "quote": "This API Guide will describe how to maximize the capabilities of a SendGrid account.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://support.sendgrid.com/hc/en-us/articles/20950642998683-How-to-Send-a-Test-Email-via-SendGrid-API-using-Postman",
+    "quote": "Headers: - Authorization: Bearer Token. In the Token field, insert your full SENDGRID_API_KEY",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://support.sendgrid.com/hc/en-us/articles/18322114821403-Troubleshooting-Common-SendGrid-Web-API-Response-Errors-Codes",
+    "quote": "Make sure that your Teammate account has the correct permissions and that the API Key used has the correct scopes",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://sendgrid.com/en-us",
+    "quote": "Free trial No credit card required Flexible pricing",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Signup is self-serve: free trial with no credit card required, and API keys are created in the dashboard (settings > api keys). Plan tier gates some endpoints/features (e.g., Email Validation, Email Activity Feed API), free-trial sending is capped by daily credits, and new accounts can be placed under review by Consumer Trust.",
+    "source_url": "https://support.sendgrid.com/hc/en-us/articles/18322114821403-Troubleshooting-Common-SendGrid-Web-API-Response-Errors-Codes",
+    "quote": "Make sure that your plan allows access to Email Validation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=sendgrid",
+    "quote": "{\"slug\": \"sendgrid\", \"name\": \"SendGrid\", \"app\": \"SendGrid\", \"tools_count\": 359}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://support.sendgrid.com/hc/en-us/articles/1260802360229-Tracking-with-the-Event-Webhook",
+    "quote": "Twilio SendGrid provides Email view tracking with the `open` engagement Event Webhook.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://ahoy.sendgrid.com/rs/294-TKB-300/images/SendGrid_API_Guide.pdf",
+    "quote": "We allow everyone to test, hack, and experiment with our entire Webhook and API library through our free accounts.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "REST API is versioned in the URL path (v3), e.g. https://api.sendgrid.com/v3/mail/send; no explicit deprecation/sunset policy was captured in this evidence bundle.",
+    "source_url": "https://support.sendgrid.com/hc/en-us/articles/20950642998683-How-to-Send-a-Test-Email-via-SendGrid-API-using-Postman",
+    "quote": "- Method: POST - URL: https://api.sendgrid.com/v3/mail/send",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Access is self-serve: a free trial with no credit card required and API keys generated in the dashboard, and the vendor states anyone can test, hack and experiment with the entire Webhook and API library through free accounts. The API surface is broad (Web API v3, Marketing Campaigns, Contacts, Campaigns, Subuser/Reseller, SMTP API and Event Webhooks) and the Composio catalog already carries a matching 'sendgrid' toolkit with 359 tools. The only friction is commercial: production volume needs a paid Email API plan, some endpoints are plan-gated, and new accounts can be placed under review.",
+  "main_blocker": "Production volume requires a paid Email API plan; free-trial credits capped",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Canonical developer docs (docs.sendgrid.com / Twilio SendGrid API reference) were not fetched in this bundle; docs_url points at the official API Guide PDF instead.",
+    "Whether a free-forever plan still exists versus only a time-limited free trial: the API Guide says 'our free accounts' while sendgrid.com says 'Free trial'; a '60-Day Free Trial Plans' support article appears only in search snippets, not in the fetched sources.",
+    "Official SDK language list is not in the fetched text; a snippet references 'official SendGrid SDKs' but the page listing supported languages was not retrieved.",
+    "No vendor-operated MCP server was found: the top refine results were a Twilio developer blog titled 'build a SendGrid MCP server' (appears to be a do-it-yourself guide) and third-party blogs; none of those page bodies were in the evidence bundle, so no official or community MCP endpoint could be cited.",
+    "Per-endpoint API rate limits (requests/sec or /min) are not documented in the retrieved pages; only a plan credit quota ('Accounts in Free Trial plans having used more than 100 daily credits') appears, which is a billing credit cap rather than a request rate limit.",
+    "OAuth 2.0 support for the Web API was not evidenced; retrieved pages show API key plus Bearer token auth and refer only to API key 'scopes'.",
+    "No dedicated sandbox domain or sandbox_mode parameter was documented in the bundle; testability evidence is limited to free-account experimentation.",
+    "mc.sendgrid.com surfaced in the MCP search but rendered as a login/account-review shell ('Your account is under review'), so it could not be evaluated as an MCP endpoint."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "sendgrid.com",
+      "description": null,
+      "source_file": "04-marketing-ads-email-and-social.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 16,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://support.sendgrid.com/hc/en-us/articles/20950642998683-How-to-Send-a-Test-Email-via-SendGrid-API-using-Postman",
+        "title": "How to Send a Test Email via SendGrid API using Postman – SendGrid",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3540
+      },
+      {
+        "url": "https://ahoy.sendgrid.com/rs/294-TKB-300/images/SendGrid_API_Guide.pdf",
+        "title": "API Guide |",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://support.sendgrid.com/hc/en-us/articles/18322114821403-Troubleshooting-Common-SendGrid-Web-API-Response-Errors-Codes",
+        "title": "Troubleshooting Common SendGrid Web API Response Errors & Codes – SendGrid",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://support.sendgrid.com/hc/en-us/articles/360041831393-How-to-Upgrade-or-Change-your-SendGrid-Pricing-Plan",
+        "title": "How to Upgrade or Change your SendGrid Pricing Plan – SendGrid",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2598
+      },
+      {
+        "url": "https://support.sendgrid.com/hc/en-us/articles/4408349549083-How-to-Read-Your-Twilio-SendGrid-Invoice",
+        "title": "How to Read Your Twilio SendGrid Invoice – SendGrid",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4724
+      },
+      {
+        "url": "https://mc.sendgrid.com/",
+        "title": "SendGrid",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 283
+      },
+      {
+        "url": "https://sendgrid.com/en-us",
+        "title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3236
+      },
+      {
+        "url": "https://support.sendgrid.com/hc/en-us/articles/1260802360229-Tracking-with-the-Event-Webhook",
+        "title": "Tracking with the Event Webhook – SendGrid",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 839
+      },
+      {
+        "url": "https://sendgrid.com",
+        "title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3236
+      },
+      {
+        "url": "https://sendgrid.com/pricing",
+        "title": "SendGrid Email API and Email Marketing Campaigns | Twilio",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3236
+      },
+      {
+        "url": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+        "title": "Build a SendGrid MCP Server for AI Email Workflows | Twilio",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": "2025-12-03T00:00:00.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://www.usecarly.com/blog/sendgrid-mcp/",
+        "title": "SendGrid MCP: No Official Server, and What to Use Instead",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": "2026-07-19T00:00:00.000Z",
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"SendGrid\" official MCP server",
+        "\"SendGrid\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+        "https://www.usecarly.com/blog/sendgrid-mcp/"
+      ],
+      "tool_calls_after": 16
+    },
+    "research_seconds": 301.88
+  }
+}

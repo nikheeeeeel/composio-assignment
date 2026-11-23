@@ -1,0 +1,72 @@
+====================================================================================================
+CATEGORY 08 - Productivity and Project Management
+====================================================================================================
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   9 easy, 1 moderate, 0 hard, 0 blocked.
+   Easy: Airtable, Asana, ClickUp, Coda, Harvest, Jira, Linear, Monday.com, Notion.
+   Gated / blocked: Smartsheet.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       9  ##################
+     moderate   1  ##
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         9  ##################
+     paid_plan_required      1  ##
+
+   Auth methods (apps can have several): oauth2 10, api_key 6, bearer_token 5, other 1, basic 1, jwt 1
+   Most common auth combination: api_key+oauth2 x3, bearer_token+oauth2 x2, api_key+bearer_token+oauth2 x2
+   API shape: REST 7, GraphQL 2, null 1
+
+   Official MCP server: 9/10 (Airtable, Asana, ClickUp, Coda, Jira, Linear, Monday.com, Notion, Smartsheet).
+   Missing official MCP: Harvest.
+   Composio toolkit match: 10/10 (Airtable, Asana, ClickUp, Coda, Harvest, Jira, Linear, Monday.com, Notion, Smartsheet).
+   Composio gaps: none.
+   Human outreach required: 0/10 (none).
+
+   Evidence: 14.2/17 claims sourced on average (min 12); 9.4 official pages/app (min 4); 5.6 open questions/app (max 8 for Harvest).
+   Confidence mix: high 119 (70%), medium 20 (12%), low 3 (2%), not_found 28 (16%).
+
+3. ANALYST READ
+   Productivity is the best-covered category: all ten are in Composio, all ten use OAuth2, nine
+   are easy and nine have an official MCP server. The only gate is Smartsheet, which requires a
+   Business/Enterprise plan for API access. Harvest lacks an official MCP server but is still
+   easy. This is where existing Composio catalog depth and API uniformity reinforce each
+   other, making it the best reference implementation for OAuth2 toolkits.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Fastest wins: Linear, Notion, Asana, Airtable, Jira, Monday.com, ClickUp, Coda and Harvest.
+   - Smartsheet needs a paid-plan assumption; treat it as a later tier.
+   - Use this category as the reference implementation for OAuth2 toolkits.
+   - All ten already have Composio toolkits, so effort should go into depth and write actions, not discovery.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Airtable                  easy      self_serve_free       oauth2,bearer_token            Y    Y     -    14/10    
+Asana                     easy      self_serve_free       oauth2,bearer_token,other      Y    Y     -    15/10    
+ClickUp                   easy      self_serve_free       oauth2,api_key                 Y    Y     -    12/10    
+Coda                      easy      self_serve_free       oauth2,api_key                 Y    Y     -    15/10    
+Harvest                   easy      self_serve_free       oauth2,bearer_token            -    Y     -    13/4     
+Jira                      easy      self_serve_free       oauth2,basic                   Y    Y     -    13/10    
+Linear                    easy      self_serve_free       oauth2,api_key                 Y    Y     -    15/10    
+Monday.com                easy      self_serve_free       oauth2,api_key,jwt             Y    Y     -    15/10    
+Notion                    easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    14/10    
+Smartsheet                moderate  paid_plan_required    oauth2,api_key,bearer_token    Y    Y     -    16/10    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Smartsheet [moderate, access=paid_plan_required, outreach=no]: Business/Enterprise (or Advanced Work Management) plan required for API access
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - No official MCP found: Harvest. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.

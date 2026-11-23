@@ -1,0 +1,266 @@
+{
+  "app": "Ramp",
+  "category": "Finance and Fintech",
+  "one_line_description": {
+    "value": "Ramp is a spend-management and finance automation platform covering bill pay, corporate cards, reimbursements, procurement and spend controls, with a public developer API.",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "quote": "Bill Pay Bills, draft bills, payments, vendors, 3-way match.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.ramp.com",
+    "quote": "Canonical OpenAPI schema for the Developer API: /openapi/developer-api.json.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.ramp.com/developer-api/v1",
+    "quote": "### REST API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, read-write across ~30 scoped resource areas (cards, bills, payments, users, accounting, procurement, reimbursements)",
+    "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+    "quote": "| `cards:write` | Cards | Create, update, and manage cards |",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.ramp.com/developer-api/v1/introduction",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "quote": "Welcome — Ramp API docs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "basic",
+      "bearer_token",
+      "jwt"
+    ],
+    "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+    "quote": "Your app gets an access token from `/developer/v1/token`, authenticating with its client ID and secret (typically HTTP Basic Auth), and scopes control what the token can access.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+    "quote": "| `accounting:read` | Accounting data | Access accounting sync status and metadata |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "admin_approval",
+    "source_url": "https://docs.ramp.com",
+    "quote": "Don't have a Ramp account? Request a sandbox to start building right away.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Existing Ramp customers self-serve credentials in-product (Company → Developer) and then make API calls; developers without a Ramp account must request sandbox access (demo.ramp.com / demo-api.ramp.com); building an integration for other businesses routes through Ramp's partner program.",
+    "source_url": "https://docs.ramp.com/developer-api/v1/introduction",
+    "quote": "Building an integration for other businesses? Start with the partner program.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.ramp.com/mcp",
+    "source_url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+    "quote": "claude mcp add --transport http ramp https://mcp.ramp.com/mcp",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=ramp",
+    "quote": "{\"items\": [{\"slug\": \"ramp\", \"name\": \"Ramp\", \"app\": \"Ramp\", \"tools_count\": 186}, {\"slug\": \"ramp_mcp\", \"name\": \"Ramp MCP\", \"app\": \"Ramp\", \"tools_count\": 213}], \"total_items\": 2}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.ramp.com/developer-api/v1/api/webhooks",
+    "quote": "Ramp delivers `*.created`, `*.updated`, `*.ready_to_sync`, and other event types over HTTPS to your registered URL.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://docs.ramp.com/developer-api/v1/sandbox",
+    "quote": "The Ramp sandbox is a testing environment where developers and partners can safely build, test, and experiment with Ramp's API without affecting live production data.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Ramp documents a public REST Developer API with OAuth 2.0 (client credentials, authorization code, refresh, JWT bearer grants), a large read-write scope catalog, webhooks, a canonical OpenAPI schema, and a sandbox. However, credentials require either an existing Ramp business account or a requested sandbox, and integrations for other businesses go through the partner program. That gating keeps it out of the easy tier despite strong API breadth.",
+  "main_blocker": "Credentials require an existing Ramp account or an approved sandbox request",
+  "needs_outreach": true,
+  "outreach_reason": "Developers without a Ramp account must request sandbox access from Ramp, and building on behalf of other businesses requires joining the Ramp partner program.",
+  "open_questions": [
+    "Numeric rate limits were not captured: the limits page (docs.ramp.com/developer-api/v1/api/limits) returned a JavaScript shell in the evidence; only a general 'Rate limits and timeouts' convention link was visible.",
+    "No official vendor-maintained SDK/client library was found in the captured pages; the only dev tooling mentioned is the Ramp CLI and the OpenAPI schema.",
+    "API versioning/deprecation policy was not readable; the developer terms page (ramp.com/legal/developer-terms/...) was surfaced in search but not included in the evidence bundle.",
+    "Whether a free self-serve Ramp signup grants API credential creation, and whether sandbox requests are auto-approved, could not be verified because the pricing page text was only a search snippet, not a citable source.",
+    "The scope table in the authorization page was truncated after 'receipt_integrations', so the full scope catalog is not captured."
+  ],
+  "status": "drafted",
+  "audit": {
+    "extra_evidence": [
+      {
+        "field": "auth_methods.jwt",
+        "source_url": "https://docs.ramp.com/developer-api/v1/api/authorization",
+        "quote": "JWT Bearer Grant (`grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer`)"
+      },
+      {
+        "field": "auth_methods.oauth2",
+        "source_url": "https://docs.ramp.com/developer-api/v1/authorization",
+        "quote": "Ramp uses OAuth 2.0."
+      },
+      {
+        "field": "access_notes.self_serve_for_customers",
+        "source_url": "https://docs.ramp.com",
+        "quote": "Have a Ramp account? Create credentials and make your first API call."
+      },
+      {
+        "field": "official_mcp_server.second_server",
+        "source_url": "https://docs.ramp.com/developer-api/v1/mcp",
+        "quote": "Ramp runs two MCP servers, one for your Ramp account and one for Ramp Data benchmarks."
+      }
+    ],
+    "notes": "Pricing and developer-tools pages appeared only in search snippets and were excluded as non-citable; access_model classified as admin_approval because sandbox access is requested and partner builds require the partner program.",
+    "input": {
+      "name": "Ramp",
+      "category": "Finance and Fintech",
+      "hint": "docs.ramp.com",
+      "description": null,
+      "source_file": "09-finance-and-fintech.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.ramp.com",
+        "title": "Welcome — Ramp API docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2922
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1/introduction",
+        "title": "Welcome — Ramp API docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2922
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1",
+        "title": "Ramp API docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 52
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1/authorization",
+        "title": "Authorization — Ramp API docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1/api/authorization",
+        "title": "Ramp API docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4928
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+        "title": "Ramp MCP — Ramp API docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1152
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1/mcp",
+        "title": "MCP — Ramp API docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 621
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1/api/webhooks",
+        "title": "Ramp API docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.ramp.com/developer-api/v1/sandbox",
+        "title": "Sandbox — Ramp API docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3024
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 129.56
+  }
+}

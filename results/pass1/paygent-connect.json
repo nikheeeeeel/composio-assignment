@@ -1,0 +1,241 @@
+{
+  "app": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "one_line_description": {
+    "value": "Paygent describes itself as an intelligent payment gateway for modern businesses and platforms.",
+    "source_url": "https://www.gopaygent.com/",
+    "quote": "The intelligent payment gateway for modern businesses and platforms.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://www.gopaygent.com/",
+    "quote": "Clean, predictable, and fully documented REST APIs for every payment workflow.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://www.gopaygent.com/",
+    "quote": "RESTful APIs",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST payment gateway covering payments, customers, payouts and automation, with subscriptions, marketplace Connect, fraud (Radar) and billing also listed; read-write.",
+    "source_url": "https://www.gopaygent.com/",
+    "quote": "Accept payments, create customers, send payouts, and automate everything.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "bearer_token"
+    ],
+    "source_url": "https://www.gopaygent.com/",
+    "quote": "Authorization: Bearer pgt_live_xxx",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Paygent+Connect",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Paygent Connect\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://www.gopaygent.com/",
+    "quote": "Real-time event notifications with retry logic and delivery guarantees.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://www.gopaygent.com/",
+    "quote": "Full-featured test environment to simulate any payment scenario.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Node.js",
+      "Python",
+      "PHP",
+      "Ruby",
+      "Go",
+      "Java"
+    ],
+    "source_url": "https://www.gopaygent.com/",
+    "quote": "Official SDKs for Node.js, Python, PHP, Ruby, Go, Java, and more.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "A public REST API with SDKs, webhooks and a sandbox is advertised on www.gopaygent.com, which would normally support an easy build. However, that page was flagged as non-official, no actual API reference or pricing/credentialing page was retrieved, and the access model could not be determined, so easy cannot be justified. If credentials turn out to require merchant onboarding or sales contact, the rating would drop to hard.",
+  "main_blocker": "Access model and credentialing route unverified; no official docs or pricing page found",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Identity ambiguity: searches returned several unrelated 'Paygent'-named products (api.paygent.tech crypto virtual-card/MCP service, Payman Connect at paymanai.mintlify.app, and Japanese paygent PHP modules under gitlab.shiawasedo.co.jp). The hint 'NMI-powered' points to the Japanese Paygent operated by NMI; confirm which product 'Paygent Connect' actually refers to before relying on www.gopaygent.com.",
+    "www.gopaygent.com is the closest name match but was flagged OFFICIAL: no in the evidence bundle; its status as the vendor's official site is unverified and it may be a different 'Paygent'.",
+    "No canonical API reference or developer documentation URL was located; only marketing bullets and a sample curl snippet on the homepage.",
+    "Access model, pricing, plan tiers, and credential provisioning (self-serve signup vs paid plan vs merchant application vs sales contact) are not documented in any retrieved source.",
+    "Auth is shown only as 'Authorization: Bearer pgt_live_xxx'; whether pgt_live_/pgt_test_ are self-serve API keys and whether OAuth2 is also supported is undocumented.",
+    "API versioning: the sample call uses a v1 URL path, but no versioning or deprecation/sunset policy was found.",
+    "Rate limits/throttling are not documented in any retrieved page.",
+    "MCP: no vendor MCP server was found for this payments product; api.paygent.tech documents a hosted remote MCP server (mcp.paygent.tech/sse) but for a distinct crypto virtual-card product, so it was deliberately not attributed here. MCP registry returned no results."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "hint": "paygent",
+      "description": "NMI-powered",
+      "source_file": "09-finance-and-fintech.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 18,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://github.com/Subodh26oct/composio-api-research-agent/blob/refs/heads/main/research_agent.py",
+        "title": "heads/main/research_agent.py",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.gopaygent.com/",
+        "title": "Paygent | Merchant Payments and Tapn Tap-to-Pay Solutions",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 4992
+      },
+      {
+        "url": "https://composio-research-agent-sandy.vercel.app/",
+        "title": "Composio: Product Internship Assignment",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://paymanai.mintlify.app/reference/keys",
+        "title": "Keys and environments",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://gitlab.shiawasedo.co.jp/external/paygent-connect/-/blob/master/src/paygent_module/modenv_properties.php.sandbox",
+        "title": "src/paygent_module/modenv_properties.php.sandbox · master · Public group / paygent-connect · GitLab",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 99
+      },
+      {
+        "url": "https://api.paygent.tech/docs",
+        "title": "Docs, Paygent",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 65,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "access_model",
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Paygent Connect\" API pricing plans access requirements",
+        "\"Paygent Connect\" developer API free tier paid plan",
+        "\"Paygent Connect\" official MCP server",
+        "\"Paygent Connect\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://composio-research-agent-sandy.vercel.app/",
+        "https://github.com/Subodh26oct/composio-api-research-agent/blob/refs/heads/main/research_agent.py",
+        "https://www.gopaygent.com/",
+        "https://api.paygent.tech/docs"
+      ],
+      "tool_calls_after": 18
+    },
+    "research_seconds": 344.44
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "app": "Stripe",
+  "category": "Finance and Fintech",
+  "slug": "stripe",
+  "started_at": "2026-11-23T16:03:11.877478+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T16:07:00.499566+00:00",
+  "duration_s": 228.62,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/stripe.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Stripe\" pricing plans API access enterprise developer site:stripe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.261,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Stripe\" API authentication OAuth API key documentation site:stripe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.009,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Stripe\" official API documentation developer reference site:stripe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.998,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Stripe\" MCP server official Model Context Protocol site:stripe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 6.359,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Stripe\" API webhooks events callbacks documentation site:stripe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.386,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Stripe\" API sandbox test environment staging developer site:stripe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.936,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Stripe\" API rate limits throttling quota documentation site:stripe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.915,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Stripe\" API versioning deprecation sunset policy site:stripe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.104,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Stripe\" official SDK client libraries developer site:stripe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.565,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Stripe"
+      },
+      "ok": true,
+      "duration_s": 0.038,
+      "result_count": 2,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Stripe MCP"
+      },
+      "ok": true,
+      "duration_s": 0.875,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://stripe.com/docs/api",
+          "https://docs.stripe.com/api?s...=",
+          "https://docs.stripe.com/",
+          "https://docs.stripe.com/api/authentication",
+          "https://docs.stripe.com/keys"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.622,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://docs.stripe.com/rate-limits",
+          "https://docs.stripe.com/mcp",
+          "https://docs.stripe.com/agents/plugin",
+          "https://docs.stripe.com/events/manage-webhook-endpoints",
+          "https://docs.stripe.com/sandboxes"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.658,
+      "result_count": 5,
+      "error": null
+    }
+  ],
+  "tool_call_count": 13,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://stripe.com/docs/api",
+      "title": "API Reference",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1141
+    },
+    {
+      "url": "https://docs.stripe.com/api?s...=",
+      "title": "API Reference",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1141
+    },
+    {
+      "url": "https://docs.stripe.com/",
+      "title": "Stripe Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2716
+    },
+    {
+      "url": "https://docs.stripe.com/api/authentication",
+      "title": "Authentication | Stripe API Reference",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.stripe.com/keys",
+      "title": "API keys | Stripe Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.stripe.com/rate-limits",
+      "title": "Rate limits | Stripe Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.stripe.com/mcp",
+      "title": "Model Context Protocol (MCP)",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.stripe.com/agents/plugin",
+      "title": "Agent plugins for Stripe",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2526
+    },
+    {
+      "url": "https://docs.stripe.com/events/manage-webhook-endpoints",
+      "title": "Manage webhook endpoints",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.stripe.com/sandboxes",
+      "title": "Sandboxes",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3259
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Stripe",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 212.469,
+      "tokens": {
+        "input": 10154,
+        "output": 1864,
+        "reasoning": 20435
+      },
+      "cost_usd": 0.01192814
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 10154,
+      "output": 1864,
+      "reasoning": 20435
+    },
+    "cost_usd": 0.01192814,
+    "llm_calls": 1
+  }
+}

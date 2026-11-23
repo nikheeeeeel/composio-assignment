@@ -1,0 +1,250 @@
+{
+  "app": "BigCommerce",
+  "category": "Ecommerce",
+  "one_line_description": {
+    "value": "BigCommerce is an ecommerce platform that empowers brands and retailers to grow at all stages of development, across every sales channel.",
+    "source_url": "https://developer.bigcommerce.com",
+    "quote": "A NASDAQ-listed, publicly traded company, we empower brands and retailers to grow at all stages of their development, across every sales channel.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+    "quote": "BigCommerce has several APIs that let you manage store data, authenticate customers, make client-side queries for product information, and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+    "quote": "Server-side REST APIs for managing store data and operations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST (Admin and Storefront) plus GraphQL Account/Admin/Storefront APIs; Admin REST spans catalog, content, orders, customers, shipping, inventory, payments and webhooks; read-write operations.",
+    "source_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+    "quote": "- Management — Orders, Customers, Shipping, Store Information, Store Logs, Channels, Sites, Segments, Tax, Inventory, Locations, Pickup",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.bigcommerce.com",
+    "source_url": "https://developer.bigcommerce.com",
+    "quote": "Whether you’re creating a storefront, building an app, or managing store data through APIs, these docs will get you there.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "quote": "BigCommerce offers three types of OAuth-based API accounts to developers who wish to use BigCommerce’s REST APIs: store-level credentials, app-level credentials, and account-level credentials.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "quote": "It also contains a reference for available OAuth scopes and provides a compelling list of reasons to migrate from legacy API tokens to OAuth credentials.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://developer.bigcommerce.com",
+    "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data. Navigate to Settings > API Accounts in your store control panel. Create credentials with the scopes you need.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "A free trial store can be signed up for self-serve and API credentials are then created in the store control panel under Settings > API Accounts with the OAuth scopes selected by the developer. Developer sandbox stores are provisioned separately through the BigCommerce Partner Portal (Deal Registration or Partner Use Sandbox). Production plan-tier gating was not verifiable from the fetched pages.",
+    "source_url": "https://developer.bigcommerce.com",
+    "quote": "Sign up for a free BigCommerce trial store to test API calls and build integrations without affecting live data. Navigate to Settings > API Accounts in your store control panel. Create credentials with the scopes you need.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://api.bigcommerce.com/mcp",
+    "source_url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+    "quote": "Agents connect to `https://api.bigcommerce.com/mcp`, sign in through the standard BigCommerce login (OAuth 2.1 with PKCE), and then the user chooses which store to connect.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=bigcommerce",
+    "quote": "{\"items\": [{\"slug\": \"bigcommerce\", \"name\": \"BigCommerce\", \"app\": \"BigCommerce\", \"tools_count\": 532}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Scale: 60k requests/hour (450 per 30 sec); Growth & Core: 20k requests/hour (150 per 30 sec); Performance plans vary by plan and resource; OAuth quotas refresh every 30 seconds and 429 responses expose X-Rate-Limit headers.",
+    "source_url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/rate-limits",
+    "quote": "| Scale | 60k per hour (450 / 30sec) | | Growth & Core | 20k per hour (150 / 30sec) |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/events",
+    "quote": "This article contains a complete reference of all BigCommerce webhook events and their callback payloads.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
+    "quote": "Sandbox stores are intended for developing and testing apps.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Endpoints carry a version segment in the path (/v3/ or /v2/ depending on the current version of the endpoint). The dedicated deprecations and sunsets policy page was not captured in the evidence bundle, so the deprecation window is unconfirmed.",
+    "source_url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+    "quote": "The API path won’t change, but it will have `/v3/` or `/v2/` appended to it, depending on the current version for the endpoint you’re querying.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "BigCommerce publishes a broad, well-documented REST admin API (catalog, orders, customers, payments, webhooks) plus GraphQL APIs, with downloadable OpenAPI specs. A developer can self-serve a free trial store and create scoped OAuth API credentials directly in the control panel under Settings > API Accounts, with no sales contact or review required for development. Dedicated sandbox stores and webhook event references further reduce integration risk.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official SDK list: the tools-and-sdks page appeared in the search index but its text was not included in the evidence bundle, so vendor-maintained SDK languages could not be confirmed.",
+    "Deprecation/sunset policy: the deprecations-sunsets page was not fetched; only the /v2/ and /v3/ URL path convention is evidenced.",
+    "Production plan-tier gating: full pricing page text was not part of the SOURCES bundle (only search snippets, which are not valid for quotes), so the paid-plan requirement for live stores is unconfirmed.",
+    "Developer sandbox creation requires a BigCommerce Partner Portal account; the exact signup/eligibility steps for that portal were not present in the evidence.",
+    "App Marketplace listing/approval requirements were indexed but the approval-requirements page text was not supplied.",
+    "No GitHub or MCP registry results were provided, so community MCP servers could not be assessed."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "BigCommerce",
+      "category": "Ecommerce",
+      "hint": "developer.bigcommerce.com",
+      "description": null,
+      "source_file": "05-ecommerce.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/sandboxes",
+        "title": "Create a Sandbox Store | BigCommerce Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/rate-limits",
+        "title": "API rate limits | BigCommerce Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/storefront",
+        "title": "Storefront MCP | BigCommerce Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4130
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview/",
+        "title": "MCP Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/integrations/webhooks/event-reference/events",
+        "title": "Webhook Events",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.bigcommerce.com",
+        "title": "BigCommerce Developers | BigCommerce Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/rest/overview",
+        "title": "REST API Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+        "title": "About Our APIs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3875
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "title": "API Accounts | BigCommerce Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/overview",
+        "title": "Admin REST APIs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2014
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 103.61
+  }
+}

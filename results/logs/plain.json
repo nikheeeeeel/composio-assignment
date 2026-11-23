@@ -1,0 +1,352 @@
+{
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "slug": "plain",
+  "started_at": "2026-11-23T15:41:40.459046+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:44:00.500324+00:00",
+  "duration_s": 140.04,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/plain.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Plain\" official API documentation developer reference site:plain.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.459,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Plain\" API authentication OAuth API key documentation site:plain.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.586,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Plain\" MCP server official Model Context Protocol site:plain.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.756,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Plain\" API webhooks events callbacks documentation site:plain.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.555,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Plain\" API rate limits throttling quota documentation site:plain.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.907,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Plain\" official SDK client libraries developer site:plain.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.795,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Plain\" API sandbox test environment staging developer site:plain.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 6.559,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Plain\" pricing plans API access enterprise developer site:plain.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 11.817,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Plain\" API versioning deprecation sunset policy site:plain.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.106,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Plain"
+      },
+      "ok": true,
+      "duration_s": 0.037,
+      "result_count": 2,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://www.plain.com/docs/product/billing/pricing",
+          "https://help.plain.com/article/rate-limits",
+          "https://www.plain.com/docs/integrations/mcp-server",
+          "https://www.plain.com/blog/mcp-server",
+          "https://www.plain.com/docs/webhooks"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.822,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Plain MCP"
+      },
+      "ok": true,
+      "duration_s": 0.853,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://www.plain.com/docs/graphql/introduction",
+          "https://www.plain.com/docs/graphql/sdk",
+          "https://www.plain.com/docs/graphql/authentication",
+          "https://www.plain.com/docs/graphql/oauth",
+          "https://www.plain.com/pricing"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 2.014,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://plain.com"
+      },
+      "ok": true,
+      "duration_s": 0.551,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 14,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://plain.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.plain.com/docs/product/billing/pricing",
+      "title": "Plans and pricing",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3719
+    },
+    {
+      "url": "https://help.plain.com/article/rate-limits",
+      "title": "Developer & API - What are the API rate limits? | Help Center",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1308
+    },
+    {
+      "url": "https://www.plain.com/docs/integrations/mcp-server",
+      "title": "MCP server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.plain.com/blog/mcp-server",
+      "title": "Plain's MCP Server: Connect Any AI Tool to Your Support Data",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.plain.com/docs/webhooks",
+      "title": "Webhooks",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/introduction",
+      "title": "Introduction",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2352
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/sdk",
+      "title": "GraphQL SDK",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4357
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "title": "Authentication",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1553
+    },
+    {
+      "url": "https://www.plain.com/docs/graphql/oauth",
+      "title": "OAuth",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.plain.com/pricing",
+      "title": "Pricing",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4344
+    },
+    {
+      "url": "https://www.plain.com/",
+      "title": "Plain — Support infrastructure for humans & agents",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Plain",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 123.287,
+      "tokens": {
+        "input": 13493,
+        "output": 1574,
+        "reasoning": 11957
+      },
+      "cost_usd": 0.00811404
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 13493,
+      "output": 1574,
+      "reasoning": 11957
+    },
+    "cost_usd": 0.00811404,
+    "llm_calls": 1
+  }
+}

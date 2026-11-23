@@ -1,0 +1,424 @@
+{
+  "app": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "slug": "magento-adobe-commerce",
+  "started_at": "2026-11-23T15:50:46.805093+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T16:05:33.693346+00:00",
+  "duration_s": 886.89,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/magento-adobe-commerce.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" MCP server official Model Context Protocol site:adobe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.881,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" pricing plans API access enterprise developer site:adobe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.033,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" official API documentation developer reference site:adobe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.321,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" API authentication OAuth API key documentation site:adobe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.013,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" API rate limits throttling quota documentation site:adobe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.37,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" official SDK client libraries developer site:adobe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.076,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" API webhooks events callbacks documentation site:adobe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.356,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" API versioning deprecation sunset policy site:adobe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.866,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" API sandbox test environment staging developer site:adobe.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 6.669,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Magento (Adobe Commerce)"
+      },
+      "ok": true,
+      "duration_s": 0.024,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Magento (Adobe Commerce) MCP"
+      },
+      "ok": true,
+      "duration_s": 0.854,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developer.adobe.com/commerce",
+          "https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises",
+          "https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-49584",
+          "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+          "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.369,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://business.adobe.com/products/commerce/magento.html",
+          "https://business.adobe.com/products/commerce/compare.html",
+          "https://business.adobe.com/at/products/magento/magento-commerce.html",
+          "https://partners.adobe.com/s/directory/solution/scandiweb",
+          "https://community.adobe.com/questions-9/plugin-submission-related-query-1304925"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.872,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" official MCP server",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.008,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 15,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Magento (Adobe Commerce)\" model context protocol server vendor",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.574,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 16,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://www.aiondata.io/mcp-servers/magento",
+          "https://nexatron.io/connectors/adobe-commerce-magento"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 6.762,
+      "result_count": 2,
+      "error": null
+    }
+  ],
+  "tool_call_count": 16,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://developer.adobe.com/commerce",
+      "title": ":experiencecloud:",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1799
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises",
+      "title": "bin/magento (Adobe Commerce on-premises) | Adobe Commerce",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-49584",
+      "title": "AEM Translation Connector compatibility with Adobe Commerce (Magento 2) | Adobe Firefly",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2093
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+      "title": "OAuth-Based Authentication",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-token",
+      "title": "Token-Based Authentication",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://business.adobe.com/products/commerce/magento.html",
+      "title": "From Magento to Adobe Commerce | Adobe",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3398
+    },
+    {
+      "url": "https://business.adobe.com/products/commerce/compare.html",
+      "title": "eCommerce Platform Feature Comparison | Adobe Commerce",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3039
+    },
+    {
+      "url": "https://business.adobe.com/at/products/magento/magento-commerce.html",
+      "title": "Adobe Commerce (Magento): B2B- und B2C-Unternehmenslösungen | Adobe",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://partners.adobe.com/s/directory/solution/scandiweb",
+      "title": "scandiweb | Adobe Solution Partner Directory",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://community.adobe.com/questions-9/plugin-submission-related-query-1304925",
+      "title": "Plugin Submission Related Query | Community",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": "2025-10-03T16:30:27.000Z",
+      "chars": 1748
+    },
+    {
+      "url": "https://www.aiondata.io/mcp-servers/magento",
+      "title": "Magento & Adobe Commerce MCP Server Options | AIONDATA",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": "2026-09-27T15:53:54.000Z",
+      "chars": 5000
+    },
+    {
+      "url": "https://nexatron.io/connectors/adobe-commerce-magento",
+      "title": "Adobe Commerce / Magento MCP Server for Claude & ChatGPT",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Magento (Adobe Commerce)",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 172.576,
+      "tokens": {
+        "input": 10881,
+        "output": 2148,
+        "reasoning": 12652
+      },
+      "cost_usd": 0.00841586
+    },
+    {
+      "purpose": "research:Magento (Adobe Commerce):schema-retry",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 84.116,
+      "tokens": {
+        "input": 10986,
+        "output": 1936,
+        "reasoning": 6445
+      },
+      "cost_usd": 0.00534734
+    },
+    {
+      "purpose": "research:Magento (Adobe Commerce)",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 240.137,
+      "tokens": {
+        "input": 11304,
+        "output": 2175,
+        "reasoning": 17457
+      },
+      "cost_usd": 0.01078598
+    },
+    {
+      "purpose": "research:Magento (Adobe Commerce):schema-retry",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 173.492,
+      "tokens": {
+        "input": 11409,
+        "output": 1874,
+        "reasoning": 16921
+      },
+      "cost_usd": 0.01039682
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 44580,
+      "output": 8133,
+      "reasoning": 53475
+    },
+    "cost_usd": 0.034946,
+    "llm_calls": 4
+  }
+}

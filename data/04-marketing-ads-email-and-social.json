@@ -1,0 +1,63 @@
+{
+  "category": "Marketing, Ads, Email and Social",
+  "categoryNumber": 4,
+  "source": {
+    "spreadsheet": "composio-research",
+    "sheet": "Sheet1",
+    "url": "https://docs.google.com/spreadsheets/d/18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8/edit"
+  },
+  "appCount": 10,
+  "apps": [
+    {
+      "number": 31,
+      "app": "Google Ads",
+      "hint": "developers.google.com/google-ads"
+    },
+    {
+      "number": 32,
+      "app": "Meta Ads",
+      "hint": "developers.facebook.com/docs/marketing-apis"
+    },
+    {
+      "number": 33,
+      "app": "LinkedIn Ads",
+      "hint": "learn.microsoft.com/linkedin/marketing"
+    },
+    {
+      "number": 34,
+      "app": "GoHighLevel",
+      "hint": "highlevel.stoplight.io"
+    },
+    {
+      "number": 35,
+      "app": "Mailchimp",
+      "hint": "mailchimp.com/developer"
+    },
+    {
+      "number": 36,
+      "app": "Klaviyo",
+      "hint": "developers.klaviyo.com"
+    },
+    {
+      "number": 37,
+      "app": "systeme.io",
+      "hint": "systeme.io",
+      "note": "funnel builder"
+    },
+    {
+      "number": 38,
+      "app": "Pinterest",
+      "hint": "developers.pinterest.com"
+    },
+    {
+      "number": 39,
+      "app": "Threads (Meta)",
+      "hint": "developers.facebook.com/docs/threads"
+    },
+    {
+      "number": 40,
+      "app": "SendGrid",
+      "hint": "sendgrid.com"
+    }
+  ]
+}

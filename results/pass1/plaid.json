@@ -1,0 +1,241 @@
+{
+  "app": "Plaid",
+  "category": "Finance and Fintech",
+  "one_line_description": {
+    "value": "Plaid provides developer APIs for financial data; its Auth product retrieves bank account information for ACH, wire, and other bank-to-bank transfers.",
+    "source_url": "https://plaid.com/docs",
+    "quote": "Retrieve bank account information for ACH, wire, and other bank-to-bank transfers.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://plaid.com/docs/api/",
+    "quote": "To gain access to the Plaid API, create an account on the Plaid Dashboard.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://plaid.com/docs/api/",
+    "quote": "The Plaid API is specified in our Plaid OpenAPI GitHub repo.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad multi-product REST API: endpoints span Auth, Balance, Identity, Transactions, Investments, Liabilities, Assets, Income, Statements, Transfer, and more; read-write, and the Postman collection covers almost all endpoints.",
+    "source_url": "https://plaid.com/docs/api/",
+    "quote": "The Postman collection provides pre-formatted requests for almost all of Plaid's API endpoints.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://plaid.com/docs/",
+    "source_url": "https://plaid.com/docs",
+    "quote": "Here you'll find guides, resources, and references to build with Plaid.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "source_url": "https://plaid.com/docs/api/oauth/",
+    "quote": "`client_credentials` allows exchanging a client id and client secret for a refresh and access token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://plaid.com/docs/api/oauth/",
+    "quote": "A space-separated list of scopes associated with this token, in the format described in https://datatracker.ietf.org/doc/html/rfc6749#section-3.3.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://plaid.com/docs/account/billing/",
+    "quote": "These models only apply to Production traffic; usage of Sandbox is always free.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Sandbox is free and self-serve via a Dashboard account. Production API access must be requested via the Dashboard. Free Trial plans (new US/Canada teams) allow 10 Production Items, after which a paid plan is required; EU/UK businesses or those serving EU/UK end users can only use Custom plans.",
+    "source_url": "https://plaid.com/docs/account/billing/",
+    "quote": "After creating 10 Items in Production, you must upgrade to a paid plan to create more Production Items.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://api.dashboard.plaid.com/mcp/",
+    "source_url": "https://plaid.com/docs/resources/mcp/",
+    "quote": "The Dashboard MCP server is available at `https://api.dashboard.plaid.com/mcp/` and uses the Streamable HTTP protocol.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=plaid",
+    "quote": "{\"items\": [{\"slug\": \"plaid\", \"name\": \"Plaid\", \"app\": \"Plaid\", \"tools_count\": 70}, {\"slug\": \"plaid_mcp\", \"name\": \"Plaid MCP\", \"app\": \"Plaid\", \"tools_count\": 5}], \"total_items\": 2}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per-endpoint limits documented; /accounts/balance/get: 5 per minute and 30 per hour in Sandbox, 1,200 per minute in Production.",
+    "source_url": "https://plaid.com/docs/errors/rate-limit-exceeded/",
+    "quote": "| /accounts/balance/get | 5 per minute, 30 per hour | 1,200 per minute |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://plaid.com/docs/api/webhooks/",
+    "quote": "A webhook is an HTTP request used to provide push notifications. Plaid sends webhooks to programmatically inform you about changes to Plaid Items or the status of asynchronous processes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://plaid.com/docs/api/",
+    "quote": "Plaid has two environments: Sandbox and Production.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Plaid documents a broad REST API with client_id/secret and OAuth 2.0 credentials, plus a free Sandbox that is accessible via a Dashboard account. Production access must be requested and is limited on the free Trial to 10 Production Items before a paid plan is needed. Because the documented developer route is self-serve and free for Sandbox, the app is easy to build against, though production rollout has billing and approval gates.",
+  "main_blocker": "Production approval and paid plan after free Trial limit",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official SDK languages were not listed in the supplied evidence; the client libraries page (https://plaid.com/docs/api/libraries/) was not fetched.",
+    "API versioning and deprecation/sunset policy were not present in the supplied evidence; the versioning page (https://plaid.com/docs/api/versioning/) was not fetched.",
+    "No community or third-party MCP servers were found in the evidence; absence is not confirmed.",
+    "Plaid documents both https://api.dashboard.plaid.com/mcp/ in current docs and https://api.dashboard.plaid.com/mcp/sse in a 2025 blog post; the current docs URL was used.",
+    "Whether Production access approval is an app-review process versus plan/billing approval is not fully specified in the supplied evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Plaid",
+      "category": "Finance and Fintech",
+      "hint": "plaid.com/docs",
+      "description": null,
+      "source_file": "09-finance-and-fintech.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://plaid.com/docs/account/billing/",
+        "title": "Plaid pricing and billing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://plaid.com/docs/errors/rate-limit-exceeded/",
+        "title": "Rate limit exceeded errors",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://plaid.com/docs/resources/mcp/",
+        "title": "Dashboard MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://plaid.com/blog/plaid-mcp-ai-assistant-claude/",
+        "title": "“Claude, let’s analyze and improve my Plaid integration” | Plaid",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2025-05-01T21:33:58.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://plaid.com/docs/api/webhooks/",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://plaid.com/docs",
+        "title": "Welcome to the Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2594
+      },
+      {
+        "url": "https://plaid.com/docs/api/",
+        "title": "API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4885
+      },
+      {
+        "url": "https://plaid.com/docs/api/oauth/",
+        "title": "OAuth",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://plaid.com/pricing/",
+        "title": "Pricing: API costs, free tier & pay-as-you-go plans | Plaid",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 136.84
+  }
+}

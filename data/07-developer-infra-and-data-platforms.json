@@ -1,0 +1,62 @@
+{
+  "category": "Developer, Infra and Data platforms",
+  "categoryNumber": 7,
+  "source": {
+    "spreadsheet": "composio-research",
+    "sheet": "Sheet1",
+    "url": "https://docs.google.com/spreadsheets/d/18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8/edit"
+  },
+  "appCount": 10,
+  "apps": [
+    {
+      "number": 61,
+      "app": "GitHub",
+      "hint": "docs.github.com/rest"
+    },
+    {
+      "number": 62,
+      "app": "Vercel",
+      "hint": "vercel.com/docs/rest-api"
+    },
+    {
+      "number": 63,
+      "app": "Netlify",
+      "hint": "docs.netlify.com/api"
+    },
+    {
+      "number": 64,
+      "app": "Cloudflare",
+      "hint": "developers.cloudflare.com/api"
+    },
+    {
+      "number": 65,
+      "app": "Supabase",
+      "hint": "supabase.com/docs"
+    },
+    {
+      "number": 66,
+      "app": "Neo4j",
+      "hint": "neo4j.com/docs/api"
+    },
+    {
+      "number": 67,
+      "app": "Snowflake",
+      "hint": "docs.snowflake.com"
+    },
+    {
+      "number": 68,
+      "app": "MongoDB Atlas",
+      "hint": "mongodb.com/docs/atlas/api"
+    },
+    {
+      "number": 69,
+      "app": "Datadog",
+      "hint": "docs.datadoghq.com/api"
+    },
+    {
+      "number": 70,
+      "app": "Sentry",
+      "hint": "docs.sentry.io/api"
+    }
+  ]
+}

@@ -1,0 +1,416 @@
+{
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "slug": "podio",
+  "started_at": "2026-11-23T15:38:59.405580+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:42:26.978197+00:00",
+  "duration_s": 207.57,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/podio.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Podio\" pricing plans API access enterprise developer site:podio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.947,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Podio\" MCP server official Model Context Protocol site:podio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.996,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Podio\" API authentication OAuth API key documentation site:podio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.012,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Podio\" official API documentation developer reference site:podio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.1,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Podio\" API rate limits throttling quota documentation site:podio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.811,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Podio\" official SDK client libraries developer site:podio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.668,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Podio\" API sandbox test environment staging developer site:podio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.64,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Podio\" API webhooks events callbacks documentation site:podio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.793,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Podio\" API versioning deprecation sunset policy site:podio.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.53,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Podio MCP"
+      },
+      "ok": true,
+      "duration_s": 1.127,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developers.podio.com/index/limits",
+          "https://developers.podio.com/index",
+          "https://developers.podio.com/doc/hooks",
+          "https://developers.podio.com/examples",
+          "https://developers.podio.com/clients"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.79,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Podio"
+      },
+      "ok": true,
+      "duration_s": 3.262,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developers.podio.com/doc/",
+          "https://developers.podio.com/",
+          "https://developers.podio.com/authentication",
+          "https://developers.podio.com/api-key",
+          "https://developers.podio.com/index/faq"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 7.092,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://podio.com"
+      },
+      "ok": true,
+      "duration_s": 1.083,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 15,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Podio\" official MCP server",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.485,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 16,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Podio\" model context protocol server vendor",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.862,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 17,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://martechdb.com/vendors/podio"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.988,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 17,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://podio.com"
+  ],
+  "sources": [
+    {
+      "url": "https://developers.podio.com/index/limits",
+      "title": "Concepts and conventions: Rate limits - Podio API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2348
+    },
+    {
+      "url": "https://developers.podio.com/index",
+      "title": "Developers - Podio API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1836
+    },
+    {
+      "url": "https://developers.podio.com/doc/hooks",
+      "title": "Hooks | API Documentation - Podio API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.podio.com/examples",
+      "title": "Tutorials - Podio API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2768
+    },
+    {
+      "url": "https://developers.podio.com/clients",
+      "title": "Client libraries - Podio API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1045
+    },
+    {
+      "url": "https://developers.podio.com/doc/",
+      "title": "Podio API Documentation - Podio API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3677
+    },
+    {
+      "url": "https://developers.podio.com/",
+      "title": "Developers - Podio API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1836
+    },
+    {
+      "url": "https://developers.podio.com/authentication",
+      "title": "Authentication - Podio API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4292
+    },
+    {
+      "url": "https://developers.podio.com/api-key",
+      "title": "Get API key - Podio API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 247
+    },
+    {
+      "url": "https://developers.podio.com/index/faq",
+      "title": "Frequently Asked Questions - Podio API Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3935
+    },
+    {
+      "url": "https://podio.com",
+      "title": "Work Management Platform | Streamline Collaboration & Workflows | Podio",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://martechdb.com/vendors/podio",
+      "title": "Podio MCP server review: official URL and setup for Claude, ChatGPT and Cursor | MartechDB",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Podio",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 87.641,
+      "tokens": {
+        "input": 9126,
+        "output": 1628,
+        "reasoning": 6152
+      },
+      "cost_usd": 0.00483566
+    },
+    {
+      "purpose": "research:Podio",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 93.178,
+      "tokens": {
+        "input": 12089,
+        "output": 1876,
+        "reasoning": 6140
+      },
+      "cost_usd": 0.00529836
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 21215,
+      "output": 3504,
+      "reasoning": 12292
+    },
+    "cost_usd": 0.01013402,
+    "llm_calls": 2
+  }
+}

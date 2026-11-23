@@ -1,0 +1,297 @@
+{
+  "app": "Telegram",
+  "category": "Communications and Messaging",
+  "one_line_description": {
+    "value": "Telegram provides developer APIs including an HTTP Bot API for bots and the Telegram API/TDLib for building customized Telegram clients.",
+    "source_url": "https://core.telegram.org",
+    "quote": "The Bot API allows you to easily create programs that use Telegram messages for an interface. The Telegram API and TDLib allow you to build your own customized Telegram clients.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://core.telegram.org/bots/api",
+    "quote": "The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://core.telegram.org",
+    "quote": "You communicate with this server via a simple HTTPS interface that offers a simplified version of the Telegram API.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad: Bot API for messaging and bot workflows, plus TDLib for full custom Telegram client features; exact endpoint count is not stated in the fetched sources.",
+    "source_url": "https://core.telegram.org",
+    "quote": "TDLib supports all Telegram features and makes developing Telegram apps a breeze on any platform.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://core.telegram.org/bots/api",
+    "source_url": "https://core.telegram.org/bots/api",
+    "quote": "Telegram Bot API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "source_url": "https://core.telegram.org/bots/api",
+    "quote": "Each bot is given a unique authentication token when it is created.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://core.telegram.org/api/obtaining_api_id",
+    "quote": "We welcome all developers to use our API and source code to create Telegram-like messaging applications on our platform free of charge.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free self-serve registration: sign up for Telegram, log in at my.telegram.org, and fill out the API development tools form to get api_id/api_hash; bot tokens come from bot creation. Third-party client apps must comply with the API Terms of Service; no paid plan or sales contact is documented.",
+    "source_url": "https://core.telegram.org/api/obtaining_api_id",
+    "quote": "Sign up for Telegram using an official application. - Log in to your Telegram core: https://my.telegram.org. - Go to \"API development tools\" and fill out the form.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=telegram",
+    "quote": "{\"items\": [{\"slug\": \"telegram\", \"name\": \"Telegram\", \"app\": \"Telegram\", \"tools_count\": 18}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://core.telegram.org/bots/api",
+    "quote": "There are two mutually exclusive ways of receiving updates for your bot - the getUpdates method on one hand and webhooks on the other.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "C++",
+      "Java",
+      ".NET"
+    ],
+    "source_url": "https://core.telegram.org/tdlib/docs/",
+    "quote": "See description of our JSON, C++, Java and .NET interfaces.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Bot API changes are tracked in a public changelog; no formal deprecation or sunset policy is stated in the fetched sources.",
+    "source_url": "https://core.telegram.org/bots/api",
+    "quote": "Recent updates are listed in the Bot API changelog.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Telegram offers a free, self-serve Bot API, with bot tokens obtained when a bot is created. The Bot API is a public HTTP interface with broad messaging, webhook, payment, and Mini App capabilities. No sales contact or app review gate is documented for the Bot API; the missing official MCP server does not block core API integration.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No official Telegram-operated MCP server was found in the vendor documentation or MCP searches; only third-party/community MCP pages appeared.",
+    "Community MCP server URLs surfaced in search results (including GitHub mcp-telegram, usecarly, sociahive, breakreach, apis.io, and Composio content) were not fetched into SOURCES, so they are not verified here.",
+    "No numeric API rate limits were found in the fetched documentation.",
+    "No dedicated sandbox/test environment is documented in the fetched pages; testing notes cover a sample API id and free Gateway API testing.",
+    "OAuth/OIDC and MTProto api_id/api_hash authentication are documented on separate pages; the cited auth_methods evidence covers the Bot API bot token.",
+    "Exact Bot API method/type count was not available in the fetched sources, so API breadth is described qualitatively.",
+    "OAuth scopes/permissions documentation was not found in the fetched pages."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Telegram",
+      "category": "Communications and Messaging",
+      "hint": "core.telegram.org",
+      "description": null,
+      "source_file": "03-communications-and-messaging.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 17,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://core.telegram.org/bots/api",
+        "title": "Telegram Bot API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://core.telegram.org/tdlib/docs/",
+        "title": "TDLib: TDLib",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://core.telegram.org/api/auth",
+        "title": "User Authorization",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://core.telegram.org/api/url-authorization",
+        "title": "Seamless Telegram Login",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://core.telegram.org/api/obtaining_api_id",
+        "title": "Creating your Telegram Application",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2286
+      },
+      {
+        "url": "https://core.telegram.org/api",
+        "title": "Telegram APIs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://core.telegram.org/bots/api?q=farizfadian.blogspot.com",
+        "title": "Telegram Bot API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://blogfork.telegram.org/bots/features",
+        "title": "Telegram Bot Features",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://core.telegram.org/bots%20",
+        "title": "Bots: An introduction for developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4998
+      },
+      {
+        "url": "https://core.telegram.org/bots/api/methods/setwebhook.md",
+        "title": "setWebhook",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2914
+      },
+      {
+        "url": "https://core.telegram.org",
+        "title": "Telegram APIs",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.usecarly.com/blog/telegram-mcp/",
+        "title": "Telegram MCP: No Official Server, and the Ban Risk",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": "2026-07-17T00:00:00.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/mcp/mcp-telegram/mcp-telegram",
+        "title": "MCP Registry | Chatroost — unofficial Telegram MCP server · GitHub",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4999
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://core.telegram.org"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Telegram\" official MCP server",
+        "\"Telegram\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://www.usecarly.com/blog/telegram-mcp/",
+        "https://github.com/mcp/mcp-telegram/mcp-telegram"
+      ],
+      "tool_calls_after": 17
+    },
+    "research_seconds": 395.74
+  }
+}

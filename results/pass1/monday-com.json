@@ -1,0 +1,249 @@
+{
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "one_line_description": {
+    "value": "monday.com is a work OS where teams create and shape their own workflows in minutes, code-free.",
+    "source_url": "https://developer.monday.com/api-reference/docs/basics",
+    "quote": "Welcome to monday.com, a work OS where teams create and shape their own workflows in minutes, code-free.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.monday.com/api-reference/docs/basics",
+    "quote": "The monday GraphQL API is part of the monday apps framework. It is an application layer that allows apps to read and update data inside a monday.com account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "GraphQL",
+    "source_url": "https://developer.monday.com/api-reference/docs/basics",
+    "quote": "The monday.com API is built with GraphQL, a flexible query language that allows you to return as much or as little data as you need.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "GraphQL, broad read-write coverage across boards, items, column values, users, workspaces, docs and updates; 60+ hosted MCP tools",
+    "source_url": "https://developer.monday.com/api-reference/",
+    "quote": "Broad platform coverage to read and modify boards, leads, docs, updates, and much more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.monday.com/api-reference/",
+    "source_url": "https://developer.monday.com/api-reference/",
+    "quote": "Connect to your monday data with the platform API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "jwt"
+    ],
+    "source_url": "https://developer.monday.com/apps/docs/choosing-auth",
+    "quote": "- Seamless Authentication using monday SDK - Seamless Authentication using shortTermToken - Using an OAuth Access Token - Using a user’s global API token",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developer.monday.com/api-reference/reference/docs",
+    "quote": "Required scope:`docs:read` - Returns an array containing metadata about a collection of docs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developer.monday.com/api-reference/",
+    "quote": "If you don't have a monday.com account or simply want to have playground where you can start playing around with our developer tools such as the API and apps framework on a free, no expiration date developer account!",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "A free, no-expiration developer account provides self-serve API access and personal tokens for testing. The API is a free feature across all plans, but daily call limits are tiered (Free 200/day up to Enterprise 25,000/day) and can be raised via a paid API add-on. Guests cannot access an API key (OAuth/shortLivedToken only); viewers, deactivated users, unconfirmed emails and student accounts cannot use the API.",
+    "source_url": "https://developer.monday.com/api-reference/docs/rate-limits",
+    "quote": "The daily call limit helps prevent disruptions caused by excessive load from individual accounts, maintains the API service as a free feature across all plans, and controls operational costs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.monday.com/mcp",
+    "source_url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+    "quote": "Server URL:`https://mcp.monday.com/mcp` - Transport: Streamable HTTP",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=monday",
+    "quote": "{\"slug\": \"monday\", \"name\": \"Monday\", \"app\": \"Monday\", \"tools_count\": 122}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Daily call limits by plan (reset midnight UTC): Free 200, Standard/Basic 1,000, Pro/Trial 10,000, Enterprise 25,000; individual query complexity cap 5,000,000 points; per-minute complexity budgets 5M points (app tokens) and 10M combined (personal tokens), 1M for free/trial; paid API add-on can raise the daily limit",
+    "source_url": "https://developer.monday.com/api-reference/docs/rate-limits",
+    "quote": "| Free | 200 | | Standard/Basic | 1,000 | | Pro/Trial | 10,000 | | Enterprise | 25,000 |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.monday.com",
+    "quote": "Listen for real-time events and run your workflow the moment data changes.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developer.monday.com/api-reference/docs/basics",
+    "quote": "For building and testing apps or API integrations without touching production data, use a free developer account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned API with a predictable release schedule and advance notice of breaking changes; requests can pin a version via the Api-Version header (e.g. 2026-07, 2027-01) and older versions are sunset via changelog announcements.",
+    "source_url": "https://developer.monday.com/api-reference/",
+    "quote": "Learn about breaking changes in advance so you can adapt accordingly with a predictable version release schedule.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "monday.com documents a public GraphQL platform API with broad read-write coverage of boards, items, columns, docs and workspaces. Access is self-serve: a free, no-expiration developer account provides an API token, and token/OAuth authentication is documented in detail. Rate limits are tiered by plan but the API itself is described as a free feature across all plans, so no sales contact or review is needed to start building.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official SDK language pages (JavaScript SDK, Python SDK) appeared in the search plan but their page text was not included in the evidence bundle, so sdk_languages is left not_found.",
+    "The dedicated webhooks reference page (developer.monday.com/api-reference/reference/webhooks) was not captured in SOURCES; webhooks=true is inferred from the developer site's real-time event/workflow-trigger text at medium confidence.",
+    "Production access gates for third-party marketplace apps (app review/marketplace approval) are only partially evidenced; verify whether public app listing requires review beyond the self-serve API token route."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Monday.com",
+      "category": "Productivity and Project Management",
+      "hint": "developer.monday.com",
+      "description": null,
+      "source_file": "08-productivity-and-project-management.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.monday.com",
+        "title": "monday.com Developer Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4906
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/",
+        "title": "monday.com Platform API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3126
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/reference/docs",
+        "title": "Docs — monday.com API reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4999
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3096
+      },
+      {
+        "url": "https://developer.monday.com/apps/docs/choosing-auth",
+        "title": "Choosing an authentication method",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4998
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/basics",
+        "title": "The basics",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2482
+      },
+      {
+        "url": "https://monday.com/pricing",
+        "title": "monday.com pricing and plans",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/rate-limits",
+        "title": "Rate limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4998
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/mondaycom-mcp",
+        "title": "Platform MCP overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1468
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+        "title": "Integrate with the monday MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4998
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 100.6
+  }
+}

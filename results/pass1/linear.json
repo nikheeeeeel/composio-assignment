@@ -1,0 +1,251 @@
+{
+  "app": "Linear",
+  "category": "Productivity and Project Management",
+  "one_line_description": {
+    "value": "Linear is a project and issue tracking tool for software teams (issues, projects, cycles, initiatives, documents) that exposes a public GraphQL API.",
+    "source_url": "https://linear.app/developers/graphql",
+    "quote": "Linear's public API is built using GraphQL.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://linear.app/developers/graphql",
+    "quote": "Linear's public API is built using GraphQL.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "GraphQL",
+    "source_url": "https://linear.app/developers/graphql",
+    "quote": "Linear's public API is built using GraphQL.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "GraphQL, full introspectable schema; read queries plus write mutations across all entities",
+    "source_url": "https://linear.app/docs/api-and-webhooks",
+    "quote": "In addition to querying, Linear has full support for mutating all entities.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.linear.app",
+    "source_url": "https://linear.app/docs/api-and-webhooks",
+    "quote": "For more in depth documentation visit developers.linear.app.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://linear.app/developers/graphql",
+    "quote": "The Linear API supports personal API keys and OAuth2 authentication.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://linear.app/developers/oauth-2-0-authentication",
+    "quote": "- `read` - (Default) Read access for the user's account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://linear.app/pricing",
+    "quote": "| API and webhook access | Included | Included | Included | Included |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API and webhook access is included on every plan including Free; credentials are self-serve personal API keys or OAuth2 applications created in Settings. Workspace admins control whether Members may create their own API keys, and creating/managing webhooks requires admin permissions. Rate limits are standard on Free/Basic, 2x on Business and 5x on Enterprise.",
+    "source_url": "https://linear.app/docs/api-and-webhooks",
+    "quote": "Admins can choose whether or not Members can create their own API keys from Settings > Administration > API > Member API keys.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.linear.app/mcp",
+    "source_url": "https://linear.app/docs/mcp",
+    "quote": "Read-write access is provided through `https://mcp.linear.app/mcp` by default.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=linear",
+    "quote": "{\"slug\": \"linear\", \"name\": \"Linear\", \"app\": \"Linear\", \"tools_count\": 47}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "API key: 2,500 requests/hour per user; OAuth app: 5,000/hour; unauthenticated: 600/hour per IP address; standard limits included on Free/Basic, 2x on Business and 5x on Enterprise",
+    "source_url": "https://linear.app/developers/rate-limiting",
+    "quote": "| API key | 2,500 | User | 1 hour | | OAuth App | 5,000 | User (or App User) | 1 hour | | Unauthenticated | 600 | IP Address | 1 hour |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://linear.app/developers/webhooks",
+    "quote": "Linear provides webhooks which allow you to receive HTTP push notifications whenever data is created, updated or removed.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "TypeScript"
+    ],
+    "source_url": "https://linear.app/developers/graphql",
+    "quote": "It is written in TypeScript, allowing all operations to be strongly typed.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Docs include a dedicated 'Deprecations' section under the GraphQL API, but the actual versioning scheme and sunset policy text was not captured in the supplied evidence.",
+    "source_url": "https://linear.app/developers",
+    "quote": "- Deprecations",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Linear's public GraphQL API is documented at developers.linear.app with OAuth2 and personal API keys, documented scopes, and full read/write mutations across all entities. API and webhook access is included even on the Free plan, and credentials are self-serve (personal API keys or OAuth apps created in settings). Rate limits are published (2,500 req/hour with an API key, 5,000 for OAuth apps) and official TypeScript SDK, webhooks, and a hosted MCP server at https://mcp.linear.app/mcp are available.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No documented sandbox or test environment was found in the supplied sources; developers likely test against a real free workspace, but this is not confirmed by evidence.",
+    "The Deprecations page (https://linear.app/developers/deprecations) was returned by search but its text was not included in the evidence, so the concrete API versioning/sunset policy is unverified.",
+    "No community/third-party MCP servers were listed in the evidence (MCP registry and GitHub searches returned nothing); only Linear's official server is confirmed.",
+    "Whether workspace admins disabling Member API keys is a common default is not stated; admin-level access may be required in some organizations to obtain keys or create webhooks."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Linear",
+      "category": "Productivity and Project Management",
+      "hint": "developers.linear.app",
+      "description": null,
+      "source_file": "08-productivity-and-project-management.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://linear.app/docs/api-and-webhooks",
+        "title": "API and Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3191
+      },
+      {
+        "url": "https://linear.app/developers/rate-limiting",
+        "title": "Rate limiting",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://linear.app/docs/mcp",
+        "title": "MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://linear.app/integrations/claude",
+        "title": "Connect Claude to the Linear MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1675
+      },
+      {
+        "url": "https://linear.app/developers/webhooks",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.linear.app",
+        "title": "Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 910
+      },
+      {
+        "url": "https://linear.app/developers/graphql",
+        "title": "Getting started",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://linear.app/developers",
+        "title": "Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 910
+      },
+      {
+        "url": "https://linear.app/developers/oauth-2-0-authentication",
+        "title": "OAuth 2.0 authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://linear.app/pricing",
+        "title": "Pricing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 65.98
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "app": "Podio",
+  "category": "CRM and Sales",
+  "one_line_description": {
+    "value": "Podio is a work management platform with no-code tools, flexible workflows, and customizable business solutions.",
+    "source_url": "https://podio.com",
+    "quote": "Unify and automate work with no-code tools, flexible workflows and customizable business solutions.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.podio.com/index",
+    "quote": "The Podio API is a complete programmable interface to all Podio functionality.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "~40 functional API areas covering applications, items, tasks, files, hooks, users, search, etc.; read-write",
+    "source_url": "https://developers.podio.com/doc/",
+    "quote": "Our API is split up into different areas, that each contains a subset of methods grouped by functionality.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.podio.com/doc/",
+    "source_url": "https://developers.podio.com/doc/",
+    "quote": "Podio API Documentation",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "source_url": "https://developers.podio.com/authentication",
+    "quote": "The Podio API uses the OAuth2 protocol for authentication.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.podio.com/authentication",
+    "quote": "See Scopes & Permissions for details about the value of GRANTED_SCOPE_STRING",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developers.podio.com/api-key",
+    "quote": "You just have to sign in or sign up with Podio, and go to the API key tab in your settings.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve: sign in or sign up and generate an API key from account settings. Production/high-volume usage may require a paid API Add-on for higher rate limits. The official client libraries page notes Citrix does not maintain the libraries.",
+    "source_url": "https://developers.podio.com/api-key",
+    "quote": "It's easy to get one or more API keys for accessing your Podio data.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=podio",
+    "quote": "{\"items\": [{\"slug\": \"podio\", \"name\": \"Podio\", \"app\": \"Podio\", \"tools_count\": 143}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "1,000 calls/hour (Limit B, standard); 250 calls/hour (Limit A, resource-intensive); per user per API key on a rolling hour; HTTP 420 returned when exceeded",
+    "source_url": "https://developers.podio.com/index/limits",
+    "quote": "The general limit is 1,000 API calls per hour, but if the API call is deemed resource-intensive, a lower rate of 250 calls per hour is enforced.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.podio.com/doc/hooks",
+    "quote": "Hooks are webhooks that can call external sites when certain actions occur in Podio.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "PHP",
+      ".NET",
+      "Ruby",
+      "Java",
+      "Python",
+      "Android",
+      "Objective-C"
+    ],
+    "source_url": "https://developers.podio.com/",
+    "quote": "We currently provide wrappers for PHP, .NET, Ruby, Java, Python, Android and Objective-C which make working with common API operations very simple.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Podio exposes a broad, documented API covering the entire product, with docs split into roughly 40 functional areas. A developer can sign up and generate an API key from account settings without sales contact, and authentication is OAuth2. Rate limits are modest but documented (250/1,000 calls per hour) and can be raised via a paid API Add-on.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "API type (REST/JSON) is stated on developers.podio.com/index/api, which appeared in search results but was not included in SOURCES text; confirm before finalizing api_type.",
+    "No fetched source documents a vendor-operated Podio MCP server. A Progress URL (progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide) appeared in search results but its text was not retrieved, so official_mcp_server could not be verified.",
+    "A community repo (github.com/phases/mcp-server-for-podio) appeared in search results but was not fetched or verified; community_mcp_servers left not_found.",
+    "No source documents a dedicated sandbox/test environment; tutorials only mention installing an app into a 'test space'.",
+    "No source documents an API versioning, deprecation, or sunset policy.",
+    "The client libraries page notes Citrix does not maintain these libraries and also lists a JavaScript library not covered by the cited quote; confirm current official SDK status.",
+    "Confirm whether free Podio accounts have full API access: a FAQ search snippet suggested both paid and free accounts have full API access, but the FAQ page text was not included in SOURCES.",
+    "Podio uses HTTP 420 for rate-limit errors, which is non-standard; confirm in production."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Podio",
+      "category": "CRM and Sales",
+      "hint": "podio.com",
+      "description": null,
+      "source_file": "01-crm-and-sales.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 17,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.podio.com/index/limits",
+        "title": "Concepts and conventions: Rate limits - Podio API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2348
+      },
+      {
+        "url": "https://developers.podio.com/index",
+        "title": "Developers - Podio API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1836
+      },
+      {
+        "url": "https://developers.podio.com/doc/hooks",
+        "title": "Hooks | API Documentation - Podio API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.podio.com/examples",
+        "title": "Tutorials - Podio API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2768
+      },
+      {
+        "url": "https://developers.podio.com/clients",
+        "title": "Client libraries - Podio API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1045
+      },
+      {
+        "url": "https://developers.podio.com/doc/",
+        "title": "Podio API Documentation - Podio API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3677
+      },
+      {
+        "url": "https://developers.podio.com/",
+        "title": "Developers - Podio API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1836
+      },
+      {
+        "url": "https://developers.podio.com/authentication",
+        "title": "Authentication - Podio API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4292
+      },
+      {
+        "url": "https://developers.podio.com/api-key",
+        "title": "Get API key - Podio API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 247
+      },
+      {
+        "url": "https://developers.podio.com/index/faq",
+        "title": "Frequently Asked Questions - Podio API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3935
+      },
+      {
+        "url": "https://podio.com",
+        "title": "Work Management Platform | Streamline Collaboration & Workflows | Podio",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://martechdb.com/vendors/podio",
+        "title": "Podio MCP server review: official URL and setup for Claude, ChatGPT and Cursor | MartechDB",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://podio.com"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Podio\" official MCP server",
+        "\"Podio\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://martechdb.com/vendors/podio"
+      ],
+      "tool_calls_after": 17
+    },
+    "research_seconds": 205.91
+  }
+}

@@ -1,0 +1,1153 @@
+{
+  "app": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "slug": "ahrefs",
+  "started_at": "2026-11-23T15:29:19.819690+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [
+    {
+      "round": 1,
+      "mechanical": {
+        "passed": false,
+        "stats": {
+          "claims_total": 17,
+          "claims_with_source": 14,
+          "quote_checked": 13,
+          "quote_passed": 11,
+          "quote_pass_pct": 84.62,
+          "high_medium_checked": 13,
+          "high_medium_passed": 11,
+          "high_medium_quote_pass_pct": 84.62,
+          "pages_fetched": 6,
+          "bad_pages": 0,
+          "third_party_sources": 0,
+          "critical_issues": 2,
+          "warnings": 1
+        },
+        "issues": [
+          {
+            "field": "access_model",
+            "problem": "quote not found in source (score 77.1 < 90)",
+            "severity": "critical",
+            "suggested_fix": "Replace the quote with a verbatim snippet from the cited page, or lower confidence."
+          },
+          {
+            "field": "access_notes",
+            "problem": "quote not found in source (score 77.1 < 90)",
+            "severity": "critical",
+            "suggested_fix": "Replace the quote with a verbatim snippet from the cited page, or lower confidence."
+          },
+          {
+            "field": "official_mcp_server",
+            "problem": "official MCP URL page does not mention MCP",
+            "severity": "warning",
+            "suggested_fix": "Cite the vendor page that actually documents the MCP server."
+          }
+        ],
+        "claims": {
+          "one_line_description": {
+            "confidence": "high",
+            "source_url": "https://ahrefs.com/api",
+            "value": "Ahrefs is an SEO and marketing data platform that exposes keyword, backlink, ranking, and brand-visibility data through a documented REST API (v3) for building integrations and automations.",
+            "quote": "Research keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.",
+            "page_status": 200,
+            "page_title": "Ahrefs for Developers",
+            "final_url": "https://docs.ahrefs.com",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 100.0,
+            "quote_pass": true,
+            "excerpt": "Ahrefs for Developers\nProducts\nBuild with\nAhrefs data\nAccess Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.\nSearch documentation...\nAPI Request\nResponse\n200 OK\nDomain / DR\nRef. Domains\nwikipedia.org\ngithub.com\nmedium.com\nstackoverflow.com\nproducthunt.com\nOutput for illustration purposes.\nREST API\nResearch keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.\nIntroduction\nOverview, authentication, and rate limits\nFree test queries\nTry API endpoints without an Enterprise plan\nExplore endpoints\nBrowse all available API endpoints\nAPI keys\nCreate and manage your API keys\nChangelog\nLatest API updates and changes\nOpenAPI spec\nFull machine-readable spec for every endpoint\nIntroduction\nOverview, authentication, and rate limits\nFree test queries\nTry API endpoints without an Enterprise plan\nExplore endpoints\nBrowse all available API endpoints\nAPI keys\nCreate and manage your API keys\nChangelog\nLatest API updates and changes\nOpenAPI spec\nFull machine-readable spec for every endpoint\nMCP\nConnect your Ahrefs d",
+            "body_chars": 3284,
+            "source_domain": "ahrefs.com",
+            "official_source": true
+          },
+          "has_public_api": {
+            "confidence": "high",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "value": true,
+            "quote": "With Ahrefs API, you can use data from your Ahrefs workspace to create custom integrations and automations.",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 100.0,
+            "quote_pass": true,
+            "excerpt": "# Introduction\nWith Ahrefs API, you can use data from your Ahrefs workspace to create custom integrations and automations. Currently, API v3 allows you to pull data from the Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management and Content Helper endpoints, as well as manage your Rank Tracker projects and Keywords Explorer lists:\n- **Site Explorer**: Overview stats and historical charts, Backlinks, Organic and paid traffic reports\n- **Keywords Explorer**: Metrics for a single keyword or a list of keywords, Search volume history and volume by country, Keyword ideas reports\n- **Site Audit**: Projects' Health Scores, full issue reports and content of crawled pages\n- **SERP Overview**: Top 100 SERP results\n- ",
+            "body_chars": 4611,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "api_type": {
+            "confidence": "high",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "value": "REST",
+            "quote": "The reference contains an OpenAPI-compatible specification of each endpoint's request and response format.",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 100.0,
+            "quote_pass": true,
+            "excerpt": "ted guide: [API keys creation and management](./api-keys-creation-and-management.md)\n## Basic usage\nGet a quick start with these API buttons in [Ahrefs reports](https://app.ahrefs.com/).\nClick on them to display the request as a cURL command.\n![API button](../images/Xnip2023-04-20_11-49-41.jpg)\nThese buttons can be used as a query builder since the cURL command will be updated dynamically with any filters you apply to the report.\nNote that cURL contains all the fields and metrics shown in the current report. You can remove the fields you don't need to reduce the cost of a request.\nFor full usage details, view our API reference in these docs. The reference contains an OpenAPI-compatible specification of each endpoint's request and response format.\n## Rate limiting\nAhrefs API is limited to 60 requests per minute by default. If this limit is exceeded, the API will respond with an HTTP 429 status code (`Too Many Requests`).\nAdditionally, to maintain optimal performance and system stability, API requests may occasionally be rejected with the same HTTP 429 status code due to throttling. Throttling occurs dynamically based on real-time system load, resource availability, and the computational demands of your requests.\n## Links\n- [Full OpenAPI spec](https://docs.ahrefs.com/openapi.json)\n- [Privacy policy](https://ahrefs.com/privacy-policy)\n- [Terms of use](https://ahrefs.com/terms)",
+            "body_chars": 4611,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "api_breadth": {
+            "confidence": "high",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "value": "REST v3 covering many report areas (Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management, Content Helper, Batch Analysis, Management, Public); read-write including project/list management",
+            "quote": "API v3 allows you to pull data from the Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management and Content Helper endpoints",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 100.0,
+            "quote_pass": true,
+            "excerpt": "# Introduction\nWith Ahrefs API, you can use data from your Ahrefs workspace to create custom integrations and automations. Currently, API v3 allows you to pull data from the Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management and Content Helper endpoints, as well as manage your Rank Tracker projects and Keywords Explorer lists:\n- **Site Explorer**: Overview stats and historical charts, Backlinks, Organic and paid traffic reports\n- **Keywords Explorer**: Metrics for a single keyword or a list of keywords, Search volume history and volume by country, Keyword ideas reports\n- **Site Audit**: Projects' Health Scores, full issue reports and content of crawled pages\n- **SERP Overview**: Top 100 SERP results\n- **Rank Tracker**: Project overview, Competitor reports and Rank Tracker SERPs\n- **Batch Analysis**: Metrics for up to 100 targets per request\n- **Brand Radar**: Brand overview stats, historica",
+            "body_chars": 4611,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "docs_url": {
+            "confidence": "high",
+            "source_url": "https://docs.ahrefs.com/",
+            "value": "https://docs.ahrefs.com/",
+            "quote": "Access Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.",
+            "page_status": 200,
+            "page_title": "Ahrefs for Developers",
+            "final_url": "https://docs.ahrefs.com/",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 100.0,
+            "quote_pass": true,
+            "excerpt": "Ahrefs for Developers\nProducts\nBuild with\nAhrefs data\nAccess Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.\nSearch documentation...\nAPI Request\nResponse\n200 OK\nDomain / DR\nRef. Domains\nwikipedia.org\ngithub.com\nmedium.com\nstackoverflow.com\nproducthunt.com\nOutput for illustration purposes.\nREST API\nResearch keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.\nIntroduction\nOverview, authentication, and rate limits\nFree test queries\nTry API endpoints without an Enterprise plan\nExplore endpoints\nBrowse all available API endpoints\nAPI keys\nCreate and manage your API keys\nChangelog\nLatest API updates and changes\nOpenAPI spec\nFull machine-readable spec for every endpoint\nIntroduction\nOvervie",
+            "body_chars": 3284,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "auth_methods": {
+            "confidence": "high",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "value": [
+              "api_key",
+              "oauth2"
+            ],
+            "quote": "To send requests to Ahrefs API, you'll need an API key.",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 100.0,
+            "quote_pass": true,
+            "excerpt": "ent and testing purposes to mitigate any unintended usage of API units.\n> We also recommend [putting limits](./api-keys-creation-and-management.md) on your API keys, especially when you are in the testing and development stage.\n[Eligible paid plans](https://ahrefs.com/pricing) include a monthly API unit allowance. On plans that support pay-as-you-go usage, additional units are automatically charged once the included limit is exceeded.\nSee also: [Pricing page](https://ahrefs.com/pricing) and [Account settings / Limits & usage](https://app.ahrefs.com/account/limits-and-usage/web).\n![Limits and Usage](../images/limits-and-usage.png)\n## API keys\nTo send requests to Ahrefs API, you'll need an API key. Only workspace owners and admins can create and manage API keys. This can be done in [Account settings / API keys](https://app.ahrefs.com/account/api-keys).\nRelated guide: [API keys creation and management](./api-keys-creation-and-management.md)\n## Basic usage\nGet a quick start with these API buttons in [Ahrefs reports](https://app.ahrefs.com/).\nClick on them to display the request as a cURL command.\n![API button](../images/Xnip2023-04-20_11-49-41.jpg)\nThese buttons can be used as a query builder since the cURL command will be updated dynamically with any filters you apply to the report.\nNote that cURL contains all the fields and metrics sho",
+            "body_chars": 4611,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "oauth_scopes_documented": {
+            "confidence": "high",
+            "source_url": "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md",
+            "value": true,
+            "quote": "https://app.ahrefs.com/web/oauth/authorize?response_type=code&client_id={client_id}&scope=apiv3-integration-apps&redirect_uri={redirect_uri}&code_challenge={code_challenge}&code_challenge_method=s256&state={state}",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 100.0,
+            "quote_pass": true,
+            "excerpt": "# OAuth guide\nAll API calls require authorization and are made **on behalf of an authorized Ahrefs user**. To do this, your app must obtain an API **access token** for that user.\nAhrefs Connect uses **OAuth 2.0 Authorization Code Flow with Proof Key for Code Exchange (PKCE)**. The process has two main steps:\n## 1. Authorize the application\nRedirect the user to:\n```html\nhttps://app.ahrefs.com/web/oauth/authorize?response_type=code&client_id={client_id}&scope=apiv3-integration-apps&redirect_uri={redirect_uri}&code_challenge={code_challenge}&code_challenge_method=s256&state={state}\n```\n**Parameters:**\n- `{client_id}` : URL-encoded Client ID from **Ahrefs Connect** section in your [Account settings](https://app.ahrefs.com/account/my-account).\n- `{redirect_uri}` : URL-encoded Redirect URI you’ve registered in the same section.\n- `{code_challenge}` : Derived from a **code verifier** using the S256 method:\n- Generate a **code verifier** — a random string of 43–128 characters using a cryptographically secure generator. Allowed characters: `[A-Z] [a-z] [0-9] - . _ ~` (see [RFC7636 Section 4.1](https://datatracker.ietf.org/doc/html/rfc7636#section-4.1)).\n- Compute the **SHA-256** hash of the code verifier.\n- Base64-URL-encode",
+            "body_chars": 3414,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "access_model": {
+            "confidence": "high",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "value": "paid_plan_required",
+            "quote": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 77.1,
+            "quote_pass": false,
+            "excerpt": "rics for up to 100 targets per request\n- **Brand Radar**: Brand overview stats, historical performance charts, and real prompts with citations across multiple AI agents\n- **Social Media Management**: Channels, posts, activity history and metrics for connected social media accounts\n- **Content Helper**: The core topics covered by the pages ranking for a keyword, with per-page coverage scores\n- **Management**: Endpoints to manage your Rank Tracker projects and Keywords Explorer lists\n- **Subscription information**: Your API limits and usage\n- **Public endpoints**: Our crawler's IP addresses and ranges\n## Eligibility\nAhrefs API is available on [eligible paid plans](https://ahrefs.com/pricing). On all other plans, you'll still have access to a [limited set of free test queries](./free-test-queries.md).\n## Plan limits\nAll requests besides [free test queries](./free-test-queries.md) and the *Rank Tracker*, *Management*, *Public* and *some other* endpoints consume **API units**. The cost depends on the number of rows in a response and the fields requested. The minimum cost for any request is **50 units**. If an endpoint is free, you'll see a note about that on its documentation page; otherwise, it consumes units.\nRelated guide: [Limits consumption](./limits-consumption.md)\n> **INFO**\n> Please be advised that API units once consumed are non-refundable. We strongly encourage the use of our [complimentary test queries",
+            "body_chars": 4611,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "access_notes": {
+            "confidence": "high",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "value": "API credentials require an eligible paid Ahrefs plan (API access is included from the Lite plan upward per Ahrefs pricing); non-paid plans get only a limited set of free test queries, and the free-test-queries page says testers still need a paid plan plus an API key. Only workspace owners/admins can create and manage API keys. Ahrefs Connect (OAuth 2.0 PKCE) additionally requires joining an integration program with an approval process.",
+            "quote": "Ahrefs API is available on eligible paid plans. On all other plans, you'll still have access to a limited set of free test queries.",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 77.1,
+            "quote_pass": false,
+            "excerpt": "rics for up to 100 targets per request\n- **Brand Radar**: Brand overview stats, historical performance charts, and real prompts with citations across multiple AI agents\n- **Social Media Management**: Channels, posts, activity history and metrics for connected social media accounts\n- **Content Helper**: The core topics covered by the pages ranking for a keyword, with per-page coverage scores\n- **Management**: Endpoints to manage your Rank Tracker projects and Keywords Explorer lists\n- **Subscription information**: Your API limits and usage\n- **Public endpoints**: Our crawler's IP addresses and ranges\n## Eligibility\nAhrefs API is available on [eligible paid plans](https://ahrefs.com/pricing). On all other plans, you'll still have access to a [limited set of free test queries](./free-test-queries.md).\n## Plan limits\nAll requests besides [free test queries](./free-test-queries.md) and the *Rank Tracker*, *Management*, *Public* and *some other* endpoints consume **API units**. The cost depends on the number of rows in a response and the fields requested. The minimum cost for any request is **50 units**. If an endpoint is free, you'll see a note about that on its documentation page; otherwise, it consumes units.\nRelated guide: [Limits consumption](./limits-consumption.md)\n> **INFO**\n> Please be advised that API units once consumed are non-refundable. We strongly encourage the use of our [complimentary test queries",
+            "body_chars": 4611,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "official_mcp_server": {
+            "confidence": "high",
+            "source_url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+            "value": "https://api.ahrefs.com/mcp/mcp",
+            "quote": "Streamable HTTP: `https://api.ahrefs.com/mcp/mcp`",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 97.87,
+            "quote_pass": true,
+            "excerpt": "o connect with third-party APIs in a secure, consistent way. In our case, it connects AI tools with Ahrefs, enabling things like this:\n![](../images/mcp1-2.jpg)\n## Connect to Ahrefs MCP\nAhrefs provides a hosted MCP server that allows users with a Lite plan or higher to connect their Ahrefs account to supported AI tools. Once connected, your setup is synced and available across all devices linked to your personal or company account.\n> **INFO**\n> See our [Ahrefs MCP use cases and prompt ideas](https://ahrefs.com/blog/mcp-use-cases/) for real examples and prompting tips to help you get the most from your MCP connection.\n### Connection URL\n- **Streamable HTTP**: `https://api.ahrefs.com/mcp/mcp`\nMost popular AI tools support connecting to the remote MCP directly. If you run into issues, check out our step-by-step setup guides:\n- [Claude Web / Desktop](./claude-desktop-web.md)\n- [Claude Mobile](./claude-mobile.md)\n- [Claude Code](./claude-code.md)\n- [Copilot Studio](./copilot-studio.md)\n- [ChatGPT Web](./chatgpt-web.md)\n- [Lovable](./lovable.md)\n- [n8n](./n8n.md)\n- [Manus](./manus.md)\n- [Mistral's Le Chat](./mistral-le-chat.md)\n- [OpenClaw](./openclaw.md)\n## API limits and usage\nThe remote MCP server is available on **paid plans starting from Lite.**\n- Each plan has a **maximum number of rows per request** that an AI agent can access",
+            "body_chars": 3599,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "community_mcp_servers": {
+            "confidence": "not_found",
+            "source_url": null,
+            "value": null,
+            "quote": null,
+            "page_status": null,
+            "page_title": "",
+            "fetched_via": null,
+            "quote_score": 0.0,
+            "quote_pass": false,
+            "excerpt": ""
+          },
+          "composio_toolkit_exists": {
+            "confidence": "high",
+            "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=ahrefs",
+            "value": true,
+            "quote": "{\"slug\": \"ahrefs\", \"name\": \"Ahrefs\", \"app\": \"Ahrefs\", \"tools_count\": 46}",
+            "page_status": 200,
+            "page_title": "Composio toolkit catalog",
+            "fetched_via": "composio_catalog",
+            "quote_score": 98.61,
+            "quote_pass": true,
+            "excerpt": "{\"items\": [{\"slug\": \"ahrefs\", \"name\": \"Ahrefs\", \"app\": \"Ahrefs\", \"tools_count\": 46}, {\"slug\": \"ahrefs_mcp\", \"name\": \"Ahrefs MCP\", \"app\": \"Ahrefs\", \"tools_count\": 135}], \"total_items\": 2}",
+            "catalog_exists": true,
+            "verified_by_catalog": true
+          },
+          "rate_limits": {
+            "confidence": "high",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "value": "60 requests per minute by default; exceeded limit returns HTTP 429 (Too Many Requests); dynamic throttling may also return 429; requests consume API units (minimum 50 units per billable request)",
+            "quote": "Ahrefs API is limited to 60 requests per minute by default.",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 100.0,
+            "quote_pass": true,
+            "excerpt": "hese API buttons in [Ahrefs reports](https://app.ahrefs.com/).\nClick on them to display the request as a cURL command.\n![API button](../images/Xnip2023-04-20_11-49-41.jpg)\nThese buttons can be used as a query builder since the cURL command will be updated dynamically with any filters you apply to the report.\nNote that cURL contains all the fields and metrics shown in the current report. You can remove the fields you don't need to reduce the cost of a request.\nFor full usage details, view our API reference in these docs. The reference contains an OpenAPI-compatible specification of each endpoint's request and response format.\n## Rate limiting\nAhrefs API is limited to 60 requests per minute by default. If this limit is exceeded, the API will respond with an HTTP 429 status code (`Too Many Requests`).\nAdditionally, to maintain optimal performance and system stability, API requests may occasionally be rejected with the same HTTP 429 status code due to throttling. Throttling occurs dynamically based on real-time system load, resource availability, and the computational demands of your requests.\n## Links\n- [Full OpenAPI spec](https://docs.ahrefs.com/openapi.json)\n- [Privacy policy](https://ahrefs.com/privacy-policy)\n- [Terms of use](https://ahrefs.com/terms)",
+            "body_chars": 4611,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "webhooks": {
+            "confidence": "not_found",
+            "source_url": null,
+            "value": null,
+            "quote": null,
+            "page_status": null,
+            "page_title": "",
+            "fetched_via": null,
+            "quote_score": 0.0,
+            "quote_pass": false,
+            "excerpt": ""
+          },
+          "sandbox_or_test_env": {
+            "confidence": "medium",
+            "source_url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+            "value": true,
+            "quote": "Users on any paid plan can test Ahrefs API by running a limited set of free test queries.",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 100.0,
+            "quote_pass": true,
+            "excerpt": "# Free test queries\nUsers on any paid plan can test Ahrefs API by running a limited set of free test queries. Note that you still need to [create an API key](./api-keys-creation-and-management.md) to run free test queries.\n## Site Explorer\nFor Site Explorer endpoints, requests will not consume API units if you use the `ahrefs.com`, `yep.com` or `firehose.com` domains, or any URL from these domains, in the `target` query parameter.\nFor example, these requests will be free:\n```json\nhttps://api.ahrefs.com/v3/site-explorer/domain-rating?date=2023-05-18⌖=firehose.com\nhttps://api.ahrefs.com/v3/site-explorer/all-backlinks?limit=3&mode=prefix⌖=ahrefs.com/blog&select=url_from,url_rating_source,traffic,url_to\n```\n## Keywords Explorer and SERP Overview\nFor Key",
+            "body_chars": 2165,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          },
+          "sdk_languages": {
+            "confidence": "not_found",
+            "source_url": null,
+            "value": null,
+            "quote": null,
+            "page_status": null,
+            "page_title": "",
+            "fetched_via": null,
+            "quote_score": 0.0,
+            "quote_pass": false,
+            "excerpt": ""
+          },
+          "api_versioning_or_deprecation_notes": {
+            "confidence": "medium",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "value": "URL-path versioning: base URL https://api.ahrefs.com/v3 (API v3). No explicit deprecation/sunset policy was found in the evidence.",
+            "quote": "Currently, API v3 allows you to pull data from the Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar",
+            "page_status": 200,
+            "page_title": "",
+            "final_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "fetched_via": "httpx",
+            "page_ok": true,
+            "bad_reason": null,
+            "quote_score": 100.0,
+            "quote_pass": true,
+            "excerpt": "# Introduction\nWith Ahrefs API, you can use data from your Ahrefs workspace to create custom integrations and automations. Currently, API v3 allows you to pull data from the Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management and Content Helper endpoints, as well as manage your Rank Tracker projects and Keywords Explorer lists:\n- **Site Explorer**: Overview stats and historical charts, Backlinks, Organic and paid traffic reports\n- **Keywords Explorer**: Metrics for a single keyword or a list of keywords, Search volume history and volume by country, Keyword ideas reports\n- **Site Audit**: Projects' Health Scores, full issue reports and content of crawled pages\n- **SERP Overview**: Top 100 SERP results\n- **Rank Tracker**: Project overview, Competitor reports and Rank Tracker SERPs\n- **Batch Analysis**: Metrics for up to 100 targets per requ",
+            "body_chars": 4611,
+            "source_domain": "docs.ahrefs.com",
+            "official_source": true
+          }
+        },
+        "pages": {
+          "https://ahrefs.com/api": {
+            "url": "https://ahrefs.com/api",
+            "status_code": 200,
+            "final_url": "https://docs.ahrefs.com",
+            "title": "Ahrefs for Developers",
+            "ok": true,
+            "bad_reason": null,
+            "via": "httpx",
+            "body_chars": 3284
+          },
+          "https://docs.ahrefs.com/api/docs/introduction.md": {
+            "url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "status_code": 200,
+            "final_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "title": "",
+            "ok": true,
+            "bad_reason": null,
+            "via": "httpx",
+            "body_chars": 4611
+          },
+          "https://docs.ahrefs.com/": {
+            "url": "https://docs.ahrefs.com/",
+            "status_code": 200,
+            "final_url": "https://docs.ahrefs.com/",
+            "title": "Ahrefs for Developers",
+            "ok": true,
+            "bad_reason": null,
+            "via": "httpx",
+            "body_chars": 3284
+          },
+          "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md": {
+            "url": "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md",
+            "status_code": 200,
+            "final_url": "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md",
+            "title": "",
+            "ok": true,
+            "bad_reason": null,
+            "via": "httpx",
+            "body_chars": 3414
+          },
+          "https://docs.ahrefs.com/mcp/docs/introduction.md": {
+            "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+            "status_code": 200,
+            "final_url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+            "title": "",
+            "ok": true,
+            "bad_reason": null,
+            "via": "httpx",
+            "body_chars": 3599
+          },
+          "https://docs.ahrefs.com/api/docs/free-test-queries.md": {
+            "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+            "status_code": 200,
+            "final_url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+            "title": "",
+            "ok": true,
+            "bad_reason": null,
+            "via": "httpx",
+            "body_chars": 2165
+          }
+        },
+        "github": {
+          "https://api.ahrefs.com/mcp/mcp": {
+            "exists": true,
+            "status": 401,
+            "via": "mcp_probe"
+          }
+        }
+      },
+      "llm": {
+        "passed": false,
+        "stats": {
+          "verifier_model": "opencode/gemini-3.8-flash",
+          "round": 1,
+          "claims_judged": 17,
+          "supported": 12,
+          "partially": 5,
+          "unsupported": 0,
+          "contradicted": 0,
+          "disagreements": 0,
+          "critical_issues": 2,
+          "warnings": 6,
+          "verifier_searches": [
+            {
+              "field": "community_mcp_servers",
+              "query": "\"Ahrefs\" community mcp servers API documentation",
+              "hits": [
+                "https://docs.ahrefs.com/mcp/docs/introduction.md",
+                "https://mcp.ai/ahrefs"
+              ]
+            },
+            {
+              "field": "webhooks",
+              "query": "\"Ahrefs\" API webhooks events documentation",
+              "hits": [
+                "https://www.stitchflow.com/user-management/ahrefs/api",
+                "https://rollout.com/integration-guides/ahrefs/api-essentials"
+              ]
+            },
+            {
+              "field": "sdk_languages",
+              "query": "\"Ahrefs\" official SDK libraries languages",
+              "hits": [
+                "https://github.com/ahrefs/ahrefs-python",
+                "https://github.com/ahrefs/ahrefs-api-skills"
+              ]
+            }
+          ],
+          "verifier_tool_calls": 5
+        },
+        "issues": [
+          {
+            "field": "access_model",
+            "problem": "quote not found in source (score 77.1 < 90)",
+            "severity": "critical",
+            "suggested_fix": "Replace the quote with a verbatim snippet from the cited page, or lower confidence."
+          },
+          {
+            "field": "access_notes",
+            "problem": "quote not found in source (score 77.1 < 90)",
+            "severity": "critical",
+            "suggested_fix": "Replace the quote with a verbatim snippet from the cited page, or lower confidence."
+          },
+          {
+            "field": "official_mcp_server",
+            "problem": "official MCP URL page does not mention MCP",
+            "severity": "warning",
+            "suggested_fix": "Cite the vendor page that actually documents the MCP server."
+          },
+          {
+            "field": "api_type",
+            "problem": "verifier judged the claim only partially supported: The excerpt mentions an OpenAPI-compatible specification, cURL commands, and HTTP status codes, implying REST, but does not explicitly state the word REST in this excerpt.",
+            "severity": "warning",
+            "suggested_fix": "Tighten the value/quote so the excerpt fully entails it."
+          },
+          {
+            "field": "auth_methods",
+            "problem": "verifier judged the claim only partially supported: The excerpt explicitly supports 'api_key', but does not mention 'oauth2'.",
+            "severity": "warning",
+            "suggested_fix": "Tighten the value/quote so the excerpt fully entails it."
+          },
+          {
+            "field": "access_notes",
+            "problem": "verifier judged the claim only partially supported: The excerpt confirms paid plan requirements, free test queries, and API units, but does not mention Lite plan specifics, admin restrictions, or Ahrefs Connect approval details.",
+            "severity": "warning",
+            "suggested_fix": "Tighten the value/quote so the excerpt fully entails it."
+          },
+          {
+            "field": "rate_limits",
+            "problem": "verifier judged the claim only partially supported: The excerpt supports the 60 requests/minute limit, HTTP 429, and dynamic throttling, but details about the 50 API units minimum appear elsewhere.",
+            "severity": "warning",
+            "suggested_fix": "Tighten the value/quote so the excerpt fully entails it."
+          },
+          {
+            "field": "api_versioning_or_deprecation_notes",
+            "problem": "verifier judged the claim only partially supported: The excerpt mentions API v3, but the base URL `https://api.ahrefs.com/v3` is not present in this excerpt.",
+            "severity": "warning",
+            "suggested_fix": "Tighten the value/quote so the excerpt fully entails it."
+          }
+        ],
+        "disagreements": [],
+        "per_field": {
+          "one_line_description": {
+            "judgment": "SUPPORTED",
+            "reason": "The excerpt explicitly mentions REST API, keywords, backlinks, rankings, brand visibility, and building integrations and workflows.",
+            "confidence": "high",
+            "value": "Ahrefs is an SEO and marketing data platform that exposes keyword, backlink, ranking, and brand-visibility data through a documented REST API (v3) for building integrations and automations.",
+            "source_url": "https://ahrefs.com/api",
+            "mechanical_quote_score": 100.0,
+            "mechanical_quote_pass": true
+          },
+          "has_public_api": {
+            "judgment": "SUPPORTED",
+            "reason": "The excerpt directly documents the Ahrefs API (API v3) and its endpoints.",
+            "confidence": "high",
+            "value": true,
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "mechanical_quote_score": 100.0,
+            "mechanical_quote_pass": true
+          },
+          "api_type": {
+            "judgment": "PARTIALLY",
+            "reason": "The excerpt mentions an OpenAPI-compatible specification, cURL commands, and HTTP status codes, implying REST, but does not explicitly state the word REST in this excerpt.",
+            "confidence": "high",
+            "value": "REST",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "mechanical_quote_score": 100.0,
+            "mechanical_quote_pass": true
+          },
+          "api_breadth": {
+            "judgment": "SUPPORTED",
+            "reason": "The excerpt lists the report endpoints and explicitly states managing Rank Tracker projects and Keywords Explorer lists.",
+            "confidence": "high",
+            "value": "REST v3 covering many report areas (Site Explorer, Keywords Explorer, SERP Overview, Rank Tracker, Site Audit, Brand Radar, Social Media Management, Content Helper, Batch Analysis, Management, Public); read-write including project/list management",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "mechanical_quote_score": 100.0,
+            "mechanical_quote_pass": true
+          },
+          "docs_url": {
+            "judgment": "SUPPORTED",
+            "reason": "The excerpt confirms this is the official 'Ahrefs for Developers' documentation site.",
+            "confidence": "high",
+            "value": "https://docs.ahrefs.com/",
+            "source_url": "https://docs.ahrefs.com/",
+            "mechanical_quote_score": 100.0,
+            "mechanical_quote_pass": true
+          },
+          "auth_methods": {
+            "judgment": "PARTIALLY",
+            "reason": "The excerpt explicitly supports 'api_key', but does not mention 'oauth2'.",
+            "confidence": "high",
+            "value": [
+              "api_key",
+              "oauth2"
+            ],
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "mechanical_quote_score": 100.0,
+            "mechanical_quote_pass": true
+          },
+          "oauth_scopes_documented": {
+            "judgment": "SUPPORTED",
+            "reason": "The excerpt documents the OAuth authorization URL with the parameter `scope=apiv3-integration-apps`.",
+            "confidence": "high",
+            "value": true,
+            "source_url": "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md",
+            "mechanical_quote_score": 100.0,
+            "mechanical_quote_pass": true
+          },
+          "access_model": {
+            "judgment": "SUPPORTED",
+            "reason": "The excerpt confirms that Ahrefs API is available on eligible paid plans.",
+            "confidence": "high",
+            "value": "paid_plan_required",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "mechanical_quote_score": 77.1,
+            "mechanical_quote_pass": false
+          },
+          "access_notes": {
+            "judgment": "PARTIALLY",
+            "reason": "The excerpt confirms paid plan requirements, free test queries, and API units, but does not mention Lite plan specifics, admin restrictions, or Ahrefs Connect approval details.",
+            "confidence": "high",
+            "value": "API credentials require an eligible paid Ahrefs plan (API access is included from the Lite plan upward per Ahrefs pricing); non-paid plans get only a limited set of free test queries, and the free-test-queries page says testers still need a paid plan plus an API key. Only workspace owners/admins can create and manage API keys. Ahrefs Connect (OAuth 2.0 PKCE) additionally requires joining an integration program with an approval process.",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "mechanical_quote_score": 77.1,
+            "mechanical_quote_pass": false
+          },
+          "official_mcp_server": {
+            "judgment": "SUPPORTED",
+            "reason": "The excerpt explicitly lists `https://api.ahrefs.com/mcp/mcp` under Streamable HTTP connection URL.",
+            "confidence": "high",
+            "value": "https://api.ahrefs.com/mcp/mcp",
+            "source_url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+            "mechanical_quote_score": 97.87,
+            "mechanical_quote_pass": true
+          },
+          "community_mcp_servers": {
+            "judgment": "SUPPORTED",
+            "reason": "The value is null and confidence is not_found with no excerpt provided.",
+            "confidence": "not_found",
+            "value": null,
+            "source_url": null,
+            "mechanical_quote_score": 0.0,
+            "mechanical_quote_pass": false
+          },
+          "composio_toolkit_exists": {
+            "judgment": "SUPPORTED",
+            "reason": "The catalog response contains the Ahrefs toolkit.",
+            "confidence": "high",
+            "value": true,
+            "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=ahrefs",
+            "mechanical_quote_score": 98.61,
+            "mechanical_quote_pass": true
+          },
+          "rate_limits": {
+            "judgment": "PARTIALLY",
+            "reason": "The excerpt supports the 60 requests/minute limit, HTTP 429, and dynamic throttling, but details about the 50 API units minimum appear elsewhere.",
+            "confidence": "high",
+            "value": "60 requests per minute by default; exceeded limit returns HTTP 429 (Too Many Requests); dynamic throttling may also return 429; requests consume API units (minimum 50 units per billable request)",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "mechanical_quote_score": 100.0,
+            "mechanical_quote_pass": true
+          },
+          "webhooks": {
+            "judgment": "SUPPORTED",
+            "reason": "The value is null and marked not_found with no evidence provided.",
+            "confidence": "not_found",
+            "value": null,
+            "source_url": null,
+            "mechanical_quote_score": 0.0,
+            "mechanical_quote_pass": false
+          },
+          "sandbox_or_test_env": {
+            "judgment": "SUPPORTED",
+            "reason": "The excerpt details free test queries for testing the API.",
+            "confidence": "medium",
+            "value": true,
+            "source_url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+            "mechanical_quote_score": 100.0,
+            "mechanical_quote_pass": true
+          },
+          "sdk_languages": {
+            "judgment": "SUPPORTED",
+            "reason": "The value is null and marked not_found with no evidence provided.",
+            "confidence": "not_found",
+            "value": null,
+            "source_url": null,
+            "mechanical_quote_score": 0.0,
+            "mechanical_quote_pass": false
+          },
+          "api_versioning_or_deprecation_notes": {
+            "judgment": "PARTIALLY",
+            "reason": "The excerpt mentions API v3, but the base URL `https://api.ahrefs.com/v3` is not present in this excerpt.",
+            "confidence": "medium",
+            "value": "URL-path versioning: base URL https://api.ahrefs.com/v3 (API v3). No explicit deprecation/sunset policy was found in the evidence.",
+            "source_url": "https://docs.ahrefs.com/api/docs/introduction.md",
+            "mechanical_quote_score": 100.0,
+            "mechanical_quote_pass": true
+          }
+        },
+        "judgments": {
+          "one_line_description": {
+            "verdict": "SUPPORTED",
+            "reason": "The excerpt explicitly mentions REST API, keywords, backlinks, rankings, brand visibility, and building integrations and workflows."
+          },
+          "has_public_api": {
+            "verdict": "SUPPORTED",
+            "reason": "The excerpt directly documents the Ahrefs API (API v3) and its endpoints."
+          },
+          "api_type": {
+            "verdict": "PARTIALLY",
+            "reason": "The excerpt mentions an OpenAPI-compatible specification, cURL commands, and HTTP status codes, implying REST, but does not explicitly state the word REST in this excerpt."
+          },
+          "api_breadth": {
+            "verdict": "SUPPORTED",
+            "reason": "The excerpt lists the report endpoints and explicitly states managing Rank Tracker projects and Keywords Explorer lists."
+          },
+          "docs_url": {
+            "verdict": "SUPPORTED",
+            "reason": "The excerpt confirms this is the official 'Ahrefs for Developers' documentation site."
+          },
+          "auth_methods": {
+            "verdict": "PARTIALLY",
+            "reason": "The excerpt explicitly supports 'api_key', but does not mention 'oauth2'."
+          },
+          "oauth_scopes_documented": {
+            "verdict": "SUPPORTED",
+            "reason": "The excerpt documents the OAuth authorization URL with the parameter `scope=apiv3-integration-apps`."
+          },
+          "access_model": {
+            "verdict": "SUPPORTED",
+            "reason": "The excerpt confirms that Ahrefs API is available on eligible paid plans."
+          },
+          "access_notes": {
+            "verdict": "PARTIALLY",
+            "reason": "The excerpt confirms paid plan requirements, free test queries, and API units, but does not mention Lite plan specifics, admin restrictions, or Ahrefs Connect approval details."
+          },
+          "official_mcp_server": {
+            "verdict": "SUPPORTED",
+            "reason": "The excerpt explicitly lists `https://api.ahrefs.com/mcp/mcp` under Streamable HTTP connection URL."
+          },
+          "community_mcp_servers": {
+            "verdict": "SUPPORTED",
+            "reason": "The value is null and confidence is not_found with no excerpt provided."
+          },
+          "composio_toolkit_exists": {
+            "verdict": "SUPPORTED",
+            "reason": "The catalog response contains the Ahrefs toolkit."
+          },
+          "rate_limits": {
+            "verdict": "PARTIALLY",
+            "reason": "The excerpt supports the 60 requests/minute limit, HTTP 429, and dynamic throttling, but details about the 50 API units minimum appear elsewhere."
+          },
+          "webhooks": {
+            "verdict": "SUPPORTED",
+            "reason": "The value is null and marked not_found with no evidence provided."
+          },
+          "sandbox_or_test_env": {
+            "verdict": "SUPPORTED",
+            "reason": "The excerpt details free test queries for testing the API."
+          },
+          "sdk_languages": {
+            "verdict": "SUPPORTED",
+            "reason": "The value is null and marked not_found with no evidence provided."
+          },
+          "api_versioning_or_deprecation_notes": {
+            "verdict": "PARTIALLY",
+            "reason": "The excerpt mentions API v3, but the base URL `https://api.ahrefs.com/v3` is not present in this excerpt."
+          }
+        },
+        "rederived": {
+          "auth_methods": [
+            "api_key",
+            "oauth2"
+          ],
+          "access_model": "paid_plan_required",
+          "official_mcp_server": "https://api.ahrefs.com/mcp/mcp",
+          "has_public_api": true,
+          "buildability_verdict": "moderate",
+          "needs_outreach": false,
+          "reasoning": {
+            "auth_methods": "Ahrefs supports API keys created in workspace account settings for direct API calls and MCP integrations, as well as OAuth 2.0 with PKCE via Ahrefs Connect.",
+            "access_model": "API and MCP access are restricted to eligible paid plans (starting from the Lite plan at $129/mo), with API unit limits and consumption quotas.",
+            "official_mcp_server": "Ahrefs provides an official hosted MCP server accessible via streamable HTTP at https://api.ahrefs.com/mcp/mcp.",
+            "has_public_api": "Ahrefs provides a comprehensive public REST API (API v3) covering Site Explorer, Keywords Explorer, Rank Tracker, SERP Overview, and other reports.",
+            "buildability_verdict": "Classified as moderate because comprehensive public documentation, OpenAPI specs, and self-serve plans exist, but API access is gated behind paid subscription tiers.",
+            "needs_outreach": "No sales outreach is required to obtain access; eligible subscription plans (e.g., Lite, Standard) and API keys can be purchased and configured self-serve."
+          }
+        },
+        "llm_calls": [
+          {
+            "purpose": "verify-claims:Ahrefs",
+            "model": "opencode/gemini-3.8-flash",
+            "duration_s": 6.387,
+            "tokens": {
+              "input": 7479,
+              "output": 643,
+              "reasoning": 0
+            },
+            "cost_usd": 0.0080205
+          },
+          {
+            "purpose": "rederive:Ahrefs",
+            "model": "opencode/gemini-3.8-flash",
+            "duration_s": 17.229,
+            "tokens": {
+              "input": 11729,
+              "output": 358,
+              "reasoning": 1752
+            },
+            "cost_usd": 0.01670925
+          }
+        ]
+      },
+      "passed": false,
+      "issue_count": 8
+    }
+  ],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_existing": true,
+  "finished_at": "2026-11-23T15:32:23.955161+00:00",
+  "duration_s": 184.14,
+  "final_status": "error",
+  "error": "ValueError: Invalid format specifier ' CLAIM, ...' for object of type 'str'",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/nikeel/Projects/composio/pipeline.py\", line 231, in process_app\n    research = await researcher.revise(\n               ^^^^^^^^^^^^^^^^^^^^^^^^\n        run, research, all_issues[:15], round_number=round_number\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/nikeel/Projects/composio/researcher.py\", line 485, in revise\n    user = researcher_revision_prompt(\n        app=run.app[\"name\"],\n    ...<5 lines>...\n        extra_note=f\"\\nThis is revision round {round_number} of at most {self.settings.max_revision_rounds}.\",\n    )\n  File \"/home/nikeel/Projects/composio/prompts.py\", line 205, in researcher_revision_prompt\n    \"updates\": {\"<claim_field>\": CLAIM, ...},\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: Invalid format specifier ' CLAIM, ...' for object of type 'str'\n",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Ahrefs\" MCP server official Model Context Protocol site:ahrefs.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.855,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Ahrefs\" API rate limits throttling quota documentation site:ahrefs.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.386,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Ahrefs\" official API documentation developer reference site:ahrefs.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 12.271,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Ahrefs\" API authentication OAuth API key documentation site:ahrefs.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 12.341,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Ahrefs\" pricing plans API access enterprise developer site:ahrefs.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 12.513,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Ahrefs\" official SDK client libraries developer site:ahrefs.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 0.767,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Ahrefs\" API webhooks events callbacks documentation site:ahrefs.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.609,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Ahrefs\" API versioning deprecation sunset policy site:ahrefs.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.134,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Ahrefs\" API sandbox test environment staging developer site:ahrefs.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.201,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://ahrefs.com/blog/ahrefs-pricing/",
+          "https://docs.ahrefs.com/api/docs/introduction.md",
+          "https://docs.ahrefs.com/mcp/docs/introduction.md",
+          "https://docs.ahrefs.com/mcp/docs/chatgpt-web.md",
+          "https://docs.ahrefs.com/api/docs/free-test-queries.md"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.796,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://ahrefs.com/api",
+          "https://docs.ahrefs.com/",
+          "https://docs.ahrefs.com/en/api/docs/introduction",
+          "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md",
+          "https://ahrefs.com/pricing"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.683,
+      "result_count": 4,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Ahrefs MCP"
+      },
+      "ok": true,
+      "duration_s": 1.938,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Ahrefs"
+      },
+      "ok": true,
+      "duration_s": 2.589,
+      "result_count": 2,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Ahrefs\" API pricing plans access requirements",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.499,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 15,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://docs.ahrefs.com/en/api/docs/introduction"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.859,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 16,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Ahrefs\" access notes API documentation",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.77,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 17,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://docs.ahrefs.com/en/api/docs/introduction"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.123,
+      "result_count": 0,
+      "error": null
+    }
+  ],
+  "tool_call_count": 17,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://ahrefs.com/blog/ahrefs-pricing/",
+      "title": "How To Choose the Right Ahrefs Plan in 2026",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": "2026-03-09T11:07:55.000Z",
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.ahrefs.com/api/docs/introduction.md",
+      "title": "Introduction",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4114
+    },
+    {
+      "url": "https://docs.ahrefs.com/mcp/docs/introduction.md",
+      "title": "What is Ahrefs MCP",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3095
+    },
+    {
+      "url": "https://docs.ahrefs.com/mcp/docs/chatgpt-web.md",
+      "title": "ChatGPT Web",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2154
+    },
+    {
+      "url": "https://docs.ahrefs.com/api/docs/free-test-queries.md",
+      "title": "Free test queries",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2154
+    },
+    {
+      "url": "https://ahrefs.com/api",
+      "title": "Ahrefs for Developers",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3066
+    },
+    {
+      "url": "https://docs.ahrefs.com/",
+      "title": "Ahrefs for Developers",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3066
+    },
+    {
+      "url": "https://docs.ahrefs.com/ahrefs-connect/docs/oauth-guide.md",
+      "title": "OAuth guide",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3136
+    },
+    {
+      "url": "https://ahrefs.com/pricing",
+      "title": "Plans & Pricing - Ahrefs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3928
+    },
+    {
+      "url": "https://www.stitchflow.com/user-management/ahrefs/api",
+      "title": "Ahrefs User Management API Guide | Stitchflow",
+      "purpose": "verification",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://github.com/ahrefs/ahrefs-python",
+      "title": "ahrefs/ahrefs-python",
+      "purpose": "verification",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Ahrefs",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 125.387,
+      "tokens": {
+        "input": 13047,
+        "output": 2199,
+        "reasoning": 9542
+      },
+      "cost_usd": 0.00720132
+    }
+  ]
+}

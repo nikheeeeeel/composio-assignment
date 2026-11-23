@@ -1,0 +1,264 @@
+{
+  "app": "Plain",
+  "category": "Support and Helpdesk",
+  "one_line_description": {
+    "value": "Plain is the agentic platform to orchestrate customer work.",
+    "source_url": "https://www.plain.com/",
+    "quote": "Plain is the agentic platform to orchestrate customer work.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://www.plain.com/docs/graphql/introduction",
+    "quote": "An overview of Plain's GraphQL API and the data model behind it.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "GraphQL",
+    "source_url": "https://www.plain.com/docs/graphql/introduction",
+    "quote": "Our API is compatible with all common GraphQL clients with the following details:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "GraphQL API with full read-write parity to the Plain UI; schema exposes queries and mutations, no endpoint count published.",
+    "source_url": "https://www.plain.com/docs/graphql/introduction",
+    "quote": "Plain itself is built on this same GraphQL API. This means that there are no limitations in what can be done via the API vs the UI.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://www.plain.com/docs/graphql/introduction",
+    "source_url": "https://www.plain.com/docs/graphql/introduction",
+    "quote": "These docs cover the most used operations. For anything not documented here, read the schema or get in touch (help@plain.com).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "source_url": "https://www.plain.com/docs/graphql/authentication",
+    "quote": "A machine user can have several API keys, so you can rotate them without downtime. Each API key carries its own fine-grained permissions. To call the API as a user in your workspace, use an OAuth app.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://www.plain.com/docs/graphql/oauth",
+    "quote": "`scope`: `openid`, plus `offline_access` if you want a refresh token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://www.plain.com/docs/product/billing/pricing",
+    "quote": "Every plan starts with a free 7-day trial, and the trial doesn't need a credit card.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free 7-day trial without a credit card; after the trial, a paid Foundation, Horizon, or Frontier plan is required. API keys are created self-serve for a machine user.",
+    "source_url": "https://www.plain.com/docs/product/billing/pricing",
+    "quote": "Every plan starts with a free 7-day trial, and the trial doesn't need a credit card.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.plain.com/mcp",
+    "source_url": "https://www.plain.com/docs/integrations/mcp-server",
+    "quote": "The Plain MCP server at `https://mcp.plain.com/mcp` lets tools like Claude, ChatGPT, and Cursor work with your support data directly.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=plain",
+    "quote": "{\"items\": [{\"slug\": \"plain\", \"name\": \"Plain\", \"app\": \"Plain\", \"tools_count\": 119}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Launch & Foundation: 450 requests/minute; Grow & Horizon: 600 requests/minute; Scale & Frontier: 1000 requests/minute.",
+    "source_url": "https://help.plain.com/article/rate-limits",
+    "quote": "| Launch & Foundation | 450 requests/minute | | Grow & Horizon | 600 requests/minute | | Scale & Frontier | 1000 requests/minute |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://www.plain.com/docs/webhooks",
+    "quote": "Webhooks allow you to get notified about events happening in your Plain workspace.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "TypeScript"
+    ],
+    "source_url": "https://www.plain.com/docs/graphql/sdk",
+    "quote": "If you're upgrading from the old `@team-plain/typescript-sdk` package, see the migration guide for a full breakdown of breaking changes.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "GraphQL API is exposed at a versioned /graphql/v1 endpoint; no formal API deprecation or sunset policy was found in the supplied evidence.",
+    "source_url": "https://www.plain.com/docs/graphql/introduction",
+    "quote": "API URL: `https://core-api.uk.plain.com/graphql/v1`",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Plain documents a public GraphQL API with API keys and OAuth, and the docs state the API has no limitations versus the Plain UI. A developer can start on a 7-day free trial without a credit card and create a machine-user API key self-serve. The API is broad (read-write GraphQL plus webhooks and an official MCP server), so the main friction is moving to a paid plan after the trial, not sales approval.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The supplied evidence does not explicitly state whether the free 7-day trial includes API access; only the trial terms are documented.",
+    "No documented sandbox or test environment was found in the supplied evidence.",
+    "No formal API versioning, deprecation, or sunset policy was found; only a /graphql/v1 endpoint URL is documented.",
+    "No community MCP servers were found in the supplied evidence; only the official server at https://mcp.plain.com/mcp is documented.",
+    "Only TypeScript is evidenced as an official SDK language; other vendor-maintained SDK languages were not found.",
+    "No public endpoint/resource count for the GraphQL API was found; breadth is assessed as full read-write parity with the UI."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Plain",
+      "category": "Support and Helpdesk",
+      "hint": "plain.com",
+      "description": null,
+      "source_file": "02-support-and-helpdesk.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://www.plain.com/docs/product/billing/pricing",
+        "title": "Plans and pricing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3719
+      },
+      {
+        "url": "https://help.plain.com/article/rate-limits",
+        "title": "Developer & API - What are the API rate limits? | Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1308
+      },
+      {
+        "url": "https://www.plain.com/docs/integrations/mcp-server",
+        "title": "MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.plain.com/blog/mcp-server",
+        "title": "Plain's MCP Server: Connect Any AI Tool to Your Support Data",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.plain.com/docs/webhooks",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.plain.com/docs/graphql/introduction",
+        "title": "Introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2352
+      },
+      {
+        "url": "https://www.plain.com/docs/graphql/sdk",
+        "title": "GraphQL SDK",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4357
+      },
+      {
+        "url": "https://www.plain.com/docs/graphql/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1553
+      },
+      {
+        "url": "https://www.plain.com/docs/graphql/oauth",
+        "title": "OAuth",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.plain.com/pricing",
+        "title": "Pricing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4344
+      },
+      {
+        "url": "https://www.plain.com/",
+        "title": "Plain — Support infrastructure for humans & agents",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://plain.com"
+    ],
+    "refinement": {},
+    "research_seconds": 138.55
+  }
+}

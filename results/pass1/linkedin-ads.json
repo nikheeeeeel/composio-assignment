@@ -1,0 +1,295 @@
+{
+  "app": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": {
+    "value": "LinkedIn's advertising platform API lets developers create and manage ad accounts, campaigns, creatives and pull ad performance analytics programmatically.",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-10",
+    "quote": "The Advertising API enables developers to manage LinkedIn's campaign management platform on behalf of clients through APIs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+    "quote": "The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-11",
+    "quote": "POST https://api.linkedin.com/rest/adAccounts",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, read-write across ad accounts, campaign groups, campaigns, creatives, ad types, ad targeting and analytics; limits of 5,000 campaigns and 15,000 creatives per account",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-10",
+    "quote": "These APIs provide all features available in LinkedIn Campaign Manager, including creation and management of ad accounts, campaign groups, campaigns, creatives, ad types, and analytics.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+    "quote": "The LinkedIn Marketing Platform helps businesses grow by building technology to reach, engage, and convert professional audiences at scale.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2"
+    ],
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-10",
+    "quote": "To learn more about OAuth flows, see authentication documentation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-11",
+    "quote": "OAuth 2.0 Scopes are a part of the authentication process and define USER ACCESS (r_basicprofile, r_ads, rw_ads) to LinkedIn PRODUCTS (Consumer, Marketing, Learning) and SERVICES (Posts, Ad Accounts, Campaign management.)",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "app_review_required",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-10",
+    "quote": "Advertising API | Vetted Product with development and standard tiers | Use the increasing access link to apply.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Advertising API is a vetted product with development and standard tiers; you apply via the increasing-access link and API calls only succeed after scopes/permissions are granted post-vetting (use-case review and Technical Sign Off for partners). Development tier gives limited capabilities; standard/production tier requires meeting business-line requirements. Lead Sync is a separate program requiring a separate application, and private APIs (Matched Audiences, Audience Insights, Media Planning, Company Intelligence) need additional approval. Ad account operations require an Enterprise or Business Ad Account with an authenticated account administrator.",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/shared/linkedin-api-partner-support-guide",
+    "quote": "Once your integration meets the business line requirements, you can request standard tier access for full production functionality and broader API usage.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": [
+      "https://mcp.windsor.ai/"
+    ],
+    "source_url": "https://learn.microsoft.com/en-us/connectors/windsorai/",
+    "quote": "Host:`mcp.windsor.ai` - Base path:`/` - Scheme:`https`",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=linkedin_ads",
+    "quote": "{\"slug\": \"linkedin_ads\", \"name\": \"Linkedin Ads\", \"app\": \"LinkedIn\", \"tools_count\": 28}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/lead-sync/leadsync?view=li-lms-2026-09",
+    "quote": "Register and validate your webhook URL endpoints to receive push notifications of new leads.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/shared/linkedin-api-partner-support-guide",
+    "quote": "Development tier access lets you build and test your integration with limited capabilities.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned monthly releases (e.g. Marketing Version 202601 = January 2026); each version is sunset on a published date (202601 sunsets January 15, 2027) with migration guidance per version",
+    "source_url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-10",
+    "quote": "LinkedIn's Marketing API Program supports versioning so API partners can release changes over time.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "LinkedIn Ads exposes a broad, documented REST Advertising API (ad accounts, campaign groups, campaigns, creatives, targeting, analytics) authenticated via OAuth 2.0 with documented scopes such as r_ads and rw_ads. However, it is a 'Vetted Product' that requires an increasing-access application, use-case review and Technical Sign Off before calls succeed, and Lead Sync plus several audience APIs need separate approvals. Credentials are therefore gated by app review rather than self-serve, making it moderate rather than easy.",
+  "main_blocker": "Vetted API access: application + use-case review / technical sign-off before scopes are granted",
+  "needs_outreach": true,
+  "outreach_reason": "A developer must submit the increasing-access request and pass LinkedIn's vetting/use-case review (and separate application for Lead Sync) before API credentials with ads scopes are granted; there is no self-serve credential path.",
+  "open_questions": [
+    "No vendor rate-limit/throttle documentation (numbers or units) appeared in the evidence bundle; rate_limits left as 'not documented' and should be confirmed on the official Marketing API pages.",
+    "No official LinkedIn-operated MCP server was found; the only MCP-related source is Microsoft's page for the third-party Windsor.ai connector (host mcp.windsor.ai), which is a cross-platform analytics gateway covering LinkedIn Ads, not a LinkedIn ads-management server.",
+    "Refinement searches for MCP servers returned only third-party blogs/aggregators (e.g. adwarp.dev, paidsync.ai, catchr.io) that were not fetched into the evidence bundle, so no verifiable community ads-MCP URLs could be cited beyond Windsor.ai.",
+    "No official vendor-maintained SDKs (languages) are mentioned in the fetched pages; sdk_languages left not_found.",
+    "No dedicated sandbox with synthetic data is documented; the development tier is the closest documented build/test route, so sandbox_or_test_env is recorded as true with medium confidence.",
+    "Whether development-tier Advertising API access is granted automatically or still requires manual review timing is not stated in the evidence; confirm from the Developer Portal product pages.",
+    "Name ambiguity: 'LinkedIn Ads' maps to LinkedIn's Marketing/Advertising API docs under learn.microsoft.com/linkedin/marketing; private products (Matched Audiences, Audience Insights, Media Planning, Company Intelligence) require additional approval and may not be reachable with standard Advertising API access."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "learn.microsoft.com/linkedin/marketing",
+      "description": null,
+      "source_file": "04-marketing-ads-email-and-social.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 17,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://learn.microsoft.com/en-us/connectors/windsorai/",
+        "title": "Windsor.ai (Preview)",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/overview?view=li-lms-2026-10",
+        "title": "LinkedIn Marketing API - Overview - LinkedIn | Microsoft Learn",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4622
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/lead-sync/leadsync?view=li-lms-2026-09",
+        "title": "Lead Syncing - LinkedIn | Microsoft Learn",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/account-structure/create-and-manage-accounts?view=li-lms-2026-08",
+        "title": "Create and Manage Ad Accounts - LinkedIn | Microsoft Learn",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-09",
+        "title": "Advertising - Overview - LinkedIn | Microsoft Learn",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview?view=li-lms-2026-10",
+        "title": "Advertising - Overview - LinkedIn | Microsoft Learn",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/getting-started?view=li-lms-2026-11",
+        "title": "Campaign Management Getting Started - LinkedIn | Microsoft Learn",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/ads-reporting?view=li-lms-2026-06",
+        "title": "Reporting - LinkedIn | Microsoft Learn",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/shared/linkedin-api-partner-support-guide",
+        "title": "LinkedIn API Partner Support - LinkedIn | Microsoft Learn",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/advertising-targeting/engagement-retargeting?view=li-lms-2026-10",
+        "title": "Engagement Retargeting - LinkedIn | Microsoft Learn",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/?view=li-lms-2026-11",
+        "title": "LinkedIn Marketing API Program - LinkedIn | Microsoft Learn",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 3673
+      },
+      {
+        "url": "https://adwarp.dev/blog/ads-mcp-servers",
+        "title": "Meta Ads MCP and Other Ads MCP Servers, Compared (2026)",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": "2026-11-07T13:32:12.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://paidsync.ai/linkedin-ads-mcp",
+        "title": "LinkedIn Ads MCP Server for Claude, 34 Tools | PaidSync.ai",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": "2026-08-02T15:47:10.000Z",
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://learn.microsoft.com/linkedin/marketing"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"LinkedIn Ads\" official MCP server",
+        "\"LinkedIn Ads\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://adwarp.dev/blog/ads-mcp-servers",
+        "https://paidsync.ai/linkedin-ads-mcp"
+      ],
+      "tool_calls_after": 17
+    },
+    "research_seconds": 182.61
+  }
+}

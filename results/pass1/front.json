@@ -1,0 +1,263 @@
+{
+  "app": "Front",
+  "category": "Support and Helpdesk",
+  "one_line_description": {
+    "value": "Front is a customer service platform that brings support, sales, operations, and AI agents together to manage customer conversations across email, chat, SMS, and WhatsApp.",
+    "source_url": "https://front.com",
+    "quote": "One place to run customer work, together. Bring support, sales, operations, and AI agents together to resolve every request and build stronger customer relationships, from first hello to renewal.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://help.front.com/en/articles/2482",
+    "quote": "Front’s platform features a variety of APIs that allow you to build custom workflows and user interfaces",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://community.front.com/mcp-server-88",
+    "quote": "For comparison, the Core REST API does support templates: GET /message_templates works with an API token carrying",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad read-write REST Core API covering messages, contacts, channels, inboxes, teammates, analytics and more, plus a Plugin SDK and Channel API",
+    "source_url": "https://help.front.com/en/articles/2482",
+    "quote": "The Core API is Front’s “backend” API that allows developers to access and update almost all elements in Front, including messages, contacts, channels, inboxes, teammates, analytics and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://help.front.com/en/articles/2482",
+    "source_url": "https://help.front.com/en/articles/2482",
+    "quote": "Our APIs are simple to use and include detailed documentation with walkthroughs, code examples, and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://community.front.com/api-news-updates-40/expanded-oauth-scopes-are-finally-here-2277",
+    "quote": "OAuth makes it much easier for customers to install your integration by simply agreeing to the OAuth screen instead of requesting that the customer manually generate and supply your integration an API token.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://community.front.com/api-news-updates-40/expanded-oauth-scopes-are-finally-here-2277",
+    "quote": "Visit our Developer Portal to view the full list of available scopes. You can manage scopes when you add OAuth credentials for your developer app.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://help.front.com/en/articles/2186",
+    "quote": "Front does not offer any native tools to migrate data from one instance to another; however, every plan has access to Front's APIs which you or your developers can use to fetch the relevant data from one Front instance",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access ships with every Front plan (rate limits scale by plan: Starter 50, Professional 100, Enterprise 200 requests/min); no free developer tier or sandbox is documented. Company admin rights are required to create developer apps/application requests and to enable the Webhooks integration, which is available on the Professional plan or above.",
+    "source_url": "https://help.front.com/en/articles/1237568",
+    "quote": "You must be a Front company admin to create application requests.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.frontapp.com/mcp",
+    "source_url": "https://help.front.com/en/articles/4883136",
+    "quote": "Setup involves creating the app in Front, configuring OAuth scopes, and pointing your MCP client at `mcp.frontapp.com/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=front",
+    "quote": "{\"items\": [{\"slug\": \"front\", \"name\": \"Front\", \"app\": \"Front\", \"tools_count\": 180}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Global + burst limits. Default global: Starter 50 req/min, Professional 100 req/min, Enterprise 200 req/min; partner OAuth integrations 120 req/min per company; optional add-on $200/mo for +100 req/min (max 6 add-ons)",
+    "source_url": "https://help.front.com/en/articles/2438",
+    "quote": "Front's default API rate limits vary by pricing plan: - Starter: 50 requests per minute - Professional: 100 requests per minute - Enterprise: 200 requests per minute",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://help.front.com/en/articles/2212",
+    "quote": "The Webhooks integration allows you to be automatically notified when something happens in Front without having to constantly poll the API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "No formal versioning scheme is stated in the evidence; API and SDK deprecations are announced through the developer community's News & Updates section.",
+    "source_url": "https://community.front.com/developers-36",
+    "quote": "Subscribe to our News & Updates section to get the latest news about the Front APIs and SDKs, including deprecations that may impact your integrations.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Front documents a broad public Core REST API plus a Plugin SDK and Channel API, with OAuth2 and API-token auth, published OAuth scopes, and documented per-plan rate limits. Access is not frictionless: API credentials come only with a Front subscription (every plan has API access, no free developer tier or sandbox documented), and creating apps/application requests or enabling webhooks requires company admin rights with Webhooks gated to Professional or above.",
+  "main_blocker": "API credentials require a paid Front plan plus company admin rights to create apps",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Canonical developer portal URL: sources only say 'The full reference is in the Developer Portal' (S8); dev.frontapp.com appears in search snippets but not in the fetched source text, so docs_url cites the official API overview article instead.",
+    "Is there a free developer/trial account with API access? Evidence states 'every plan has access to Front's APIs' and lists plan-based rate limits (Starter/Professional/Enterprise), but no free tier or trial is documented.",
+    "Does a documented sandbox/test environment exist? Not found in the fetched sources.",
+    "Which languages have official, vendor-maintained SDKs? Sources mention a Plugin SDK and 'APIs and SDKs' (S7, S8) but list no languages.",
+    "Channel API access may be partner-gated: a community search snippet says 'Only partners can access channels', but this is not confirmed in the fetched sources.",
+    "api_type REST is supported by a community post's mention of the 'Core REST API' (S5) and REST-style endpoints (POST /channels/... , PATCH /inboxes/...); no official page in the bundle states REST explicitly.",
+    "No third-party/community MCP servers were found in the evidence; Front operates its own MCP server (mcp.frontapp.com/mcp) and an Admin MCP server in beta."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Front",
+      "category": "Support and Helpdesk",
+      "hint": "front.com",
+      "description": null,
+      "source_file": "02-support-and-helpdesk.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://help.front.com/en/articles/2186",
+        "title": "Multiple instances of Front",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3946
+      },
+      {
+        "url": "https://help.front.com/en/articles/2438",
+        "title": "Front's API rate limit",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4985
+      },
+      {
+        "url": "https://help.front.com/en/articles/4883136",
+        "title": "Get started with Front's MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://community.front.com/mcp-server-88",
+        "title": "MCP server | AI + Workflows | Community",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.front.com/en/articles/2212",
+        "title": "How to enable and use the Webhooks integration",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1962
+      },
+      {
+        "url": "https://help.front.com/en/articles/2482",
+        "title": "Overview of Front's API and use cases",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3204
+      },
+      {
+        "url": "https://community.front.com/developers-36",
+        "title": "Developers | Community",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4999
+      },
+      {
+        "url": "https://community.front.com/api-news-updates-40/expanded-oauth-scopes-are-finally-here-2277",
+        "title": "Expanded OAuth scopes are finally here! | Community",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2025-03-18T20:52:05.000Z",
+        "chars": 1274
+      },
+      {
+        "url": "https://help.front.com/en/articles/1237568",
+        "title": "How to create application requests",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://front.com/pricing",
+        "title": "Front Pricing and Plans | Front",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://front.com",
+        "title": "Front | Customer service platform, powered by AI",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://front.com"
+    ],
+    "refinement": {},
+    "research_seconds": 91.64
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "app": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": {
+    "value": "Cloud data warehouse platform that separates compute, storage, and data transfer costs and bills usage on a consumption basis.",
+    "source_url": "https://docs.snowflake.com/en/user-guide/cost-understanding-overall",
+    "quote": "Snowflake's innovative cloud architecture separates the cost of accomplishing any task into one of these usage types.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference",
+    "quote": "Snowflake REST APIs provides the following APIs:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference",
+    "quote": "The Snowflake REST APIs are supported in government regions, but some resources are currently not available in government regions.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, ~49 API resource groups (Account, Database, Table, Warehouse, Task, User, Grant, SQL API, Cortex APIs, etc.), read-write",
+    "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference",
+    "quote": "Note that not all resources in the API currently provide 100% coverage of their equivalent SQL commands, but the Snowflake REST APIs are under active development and are continuously expanding.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.snowflake.com/en/api-reference",
+    "source_url": "https://docs.snowflake.com/en/api-reference",
+    "quote": "These topics provide reference information for the APIs available in Snowflake.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "jwt",
+      "other"
+    ],
+    "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+    "quote": "`KEYPAIR_JWT` (for key-pair authentication) - `OAUTH` (for OAuth) - `PROGRAMMATIC_ACCESS_TOKEN` (for programmatic access tokens)",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://docs.snowflake.com",
+    "quote": "Getting a Trial Account Snowflake in 20 Minutes",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Access requires a Snowflake account; the docs link a self-serve trial for getting started. There is no separate 'API plan' — credentials (OAuth integration, key-pair JWT, or programmatic access token) are created inside the account, and usage is consumption-billed at rates that vary by edition (Standard, Enterprise, Business Critical, VPS).",
+    "source_url": "https://docs.snowflake.com/en/user-guide/intro-editions",
+    "quote": "The Snowflake Edition that your organization chooses determines the unit costs for the credits and the data storage you use.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "source_url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+    "quote": "The Snowflake-managed MCP server lets AI agents securely retrieve data from Snowflake accounts without needing to deploy separate infrastructure.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=snowflake",
+    "quote": "{\"items\": [{\"slug\": \"snowflake\", \"name\": \"Snowflake\", \"app\": \"Snowflake\", \"tools_count\": 16}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Go",
+      "Java (JDBC)",
+      ".NET",
+      "Node.js"
+    ],
+    "source_url": "https://docs.snowflake.com/en/api-reference",
+    "quote": "Go Driver - Developer Guide - API Reference JDBC Driver - Developer Guide - JDBC API Support Reference .NET Driver - Developer Guide - Source code in GitHub Node.js Driver",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Reviewed docs state the REST API reference reflects the latest API version; APIs are under active development and expanding. No formal versioning scheme or deprecation/sunset policy was found in the supplied evidence.",
+    "source_url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference",
+    "quote": "The Snowflake REST APIs reference documentation reflects the latest version of the Snowflake REST APIs.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Snowflake documents generally available REST APIs with roughly 49 resource groups plus a SQL API, all on public docs.snowflake.com pages. Credentials are self-serve: a trial account is documented and OAuth, key-pair JWT, and programmatic access token auth are all documented. Consumption billing applies, but it does not gate a developer from obtaining working API access.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "OAuth scopes/permissions documentation was not captured in the supplied sources; verify whether Snowflake documents scope values for OAuth integrations.",
+    "Webhooks: CREATE NOTIFICATION INTEGRATION (webhooks) pages appeared in search results but were not included in SOURCES, so webhook support is unconfirmed here.",
+    "Sandbox/test environment: only a getting-started trial account is evidenced; a limited-access 'Cortex sandboxes' page appeared in search results but was not fetched.",
+    "Rate limits: a search snippet for the Cortex Agents page mentions 1,000 requests per minute per account with a 500-request burst, but that page is not in SOURCES and snippets are not citable; rate_limits left unverified.",
+    "The Snowflake-managed MCP server is per-account (no single public endpoint is published), so the documentation URL is used in place of an endpoint.",
+    "SDK list is limited to the drivers captured in the quoted block (Go, JDBC, .NET, Node.js); the same page also lists ODBC, PHP PDO, Python, Spark, and Snowpark/Scala connectors that were not included in a single verbatim quote."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "docs.snowflake.com",
+      "description": null,
+      "source_file": "07-developer-infra-and-data-platforms.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.snowflake.com/en/user-guide/intro-editions",
+        "title": "Snowflake editions | Snowflake Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.snowflake.com/en/user-guide/cost-understanding-overall",
+        "title": "Understanding overall cost",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-rest-api",
+        "title": "Cortex REST API | Snowflake Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "title": "Snowflake-managed MCP server | Snowflake Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.snowflake.com/en/sql-reference/sql/create-mcp-server",
+        "title": "CREATE MCP SERVER | Snowflake Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.snowflake.com",
+        "title": "Snowflake Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3060
+      },
+      {
+        "url": "https://docs.snowflake.com/en/api-reference",
+        "title": "API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1638
+      },
+      {
+        "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/reference",
+        "title": "Snowflake REST APIs reference | Snowflake Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1498
+      },
+      {
+        "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+        "title": "Authenticating %sf-rest% with Snowflake",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+        "title": "Authenticating to the server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 115.76
+  }
+}

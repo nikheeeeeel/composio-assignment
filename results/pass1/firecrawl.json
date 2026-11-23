@@ -1,0 +1,265 @@
+{
+  "app": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": {
+    "value": "Firecrawl is a context API for AI agents that searches, scrapes, and interacts with the live web to return clean Markdown or structured data.",
+    "source_url": "https://docs.firecrawl.dev/introduction",
+    "quote": "Firecrawl is the context API for AI agents.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "The Firecrawl API gives you programmatic access to web data.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.firecrawl.dev/authentication",
+    "quote": "Your own code calling the REST API for your team",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, ~9 capability areas (Search, Scrape, Interact, Parse, Monitor, Crawl, Map, Agent, Alexandria), read-write",
+    "source_url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "The Firecrawl API gives you programmatic access to web data. All endpoints share a common base URL, authentication scheme, and response format described on this page.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "source_url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "Firecrawl API Reference (v2)",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://docs.firecrawl.dev/authentication",
+    "quote": "Choose between API keys, hosted MCP and OAuth for calling Firecrawl",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.firecrawl.dev/oauth",
+    "quote": "| `firecrawl:global` | Full access to the Firecrawl REST API on the chosen team, using that team's credits.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.firecrawl.dev/rate-limits",
+    "quote": "Sign up for a free API key to get 1,000 credits and higher rate limits at no cost",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve free account: sign up for a free API key with 1,000 monthly credits, and keyless access is available for /v2/scrape, /v2/search and /v2/parse. Every other endpoint (crawl, map, extract, agent, batch scrape, job status) requires a key. Higher rate/concurrency limits require paid Hobby/Standard/Growth/Scale plans, and custom enterprise limits require contacting Firecrawl.",
+    "source_url": "https://docs.firecrawl.dev/authentication",
+    "quote": "Every other endpoint, including crawl, map, extract, agent, batch scrape and job status, needs a key.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.firecrawl.dev/v2/mcp",
+    "source_url": "https://docs.firecrawl.dev/introduction",
+    "quote": "The keyless server URL (Search, Scrape, and Parse; no credential required) is `https://mcp.firecrawl.dev/v2/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=firecrawl",
+    "quote": "{\"items\": [{\"slug\": \"firecrawl\", \"name\": \"Firecrawl\", \"app\": \"Firecrawl\", \"tools_count\": 245}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per-plan requests/minute and concurrency: Free 10 scrape/map/search, 2 crawl, 2 concurrent browsers; Hobby 100/20/5; Standard 500/100/25; Growth 5,000/1,000/50; Scale 10,000/2,000/100+. Exceeding limits returns HTTP 429.",
+    "source_url": "https://docs.firecrawl.dev/rate-limits",
+    "quote": "| Plan | /scrape | /map | /crawl | /search | /agent | /crawl/status | /agent/status | | --- | --- | --- | --- | --- | --- | --- | --- | | Free | 10 | 10 | 2 | 10 | 2 | 500 | 500 |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.firecrawl.dev/webhooks/events",
+    "quote": "Firecrawl sends webhook events at each stage of a job's lifecycle, so you can track progress, capture results, and handle failures in real time without polling.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Python",
+      "Node.js"
+    ],
+    "source_url": "https://docs.firecrawl.dev/introduction",
+    "quote": "See the Python SDK, Node SDK, or API reference to build it into your application.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioning is path-based with v1 and v2 base paths; the current API reference is v2. No explicit deprecation/sunset policy was present in the supplied evidence.",
+    "source_url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+    "quote": "Firecrawl API Reference (v2)",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Firecrawl has public, well-documented REST docs (v2 reference), self-serve free credentials (1,000 free credits/month plus keyless endpoints), and multiple auth paths including API keys and OAuth 2.1. The API surface is broad (search, scrape, crawl, map, extract, interact, agent) with documented per-plan rate limits and an official vendor MCP server. Higher concurrency is gated to paid/enterprise plans, but development access is free and self-serve.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No independent community MCP servers were found in the bundle; the only MCP listing (github.com/mcp/firecrawl/firecrawl-mcp-server) appears to be the vendor's own registry entry, and github.com/mcp/firecrawl returned 404. Confirm whether any credible third-party MCP servers exist.",
+    "No dedicated API sandbox/test environment was documented in the supplied pages; only a browser Playground and the Interact 'browser sandbox' product appear. Confirm whether a separate test mode/environment exists.",
+    "No API deprecation or sunset policy text was included; confirm the official versioning/deprecation policy beyond the existence of /v1 and /v2 paths.",
+    "Official SDK coverage in the evidence names Python and Node only; confirm whether additional official SDKs (e.g., Go, Java) exist.",
+    "Enterprise custom limits require contacting Firecrawl (help@firecrawl.com); confirm the exact thresholds that trigger enterprise-only access."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "hint": "firecrawl.dev",
+      "description": null,
+      "source_file": "06-data-seo-and-scraping.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 15,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.firecrawl.dev/billing",
+        "title": "Billing",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.firecrawl.dev/rate-limits",
+        "title": "Rate Limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.firecrawl.dev/mcp-server",
+        "title": "Get Started",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2134
+      },
+      {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "title": "Introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.firecrawl.dev/webhooks/events",
+        "title": "Event Types",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+        "title": "Introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3287
+      },
+      {
+        "url": "https://docs.firecrawl.dev/api-reference/introduction",
+        "title": "Introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3883
+      },
+      {
+        "url": "https://docs.firecrawl.dev/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4307
+      },
+      {
+        "url": "https://docs.firecrawl.dev/oauth",
+        "title": "OAuth for apps",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.firecrawl.dev/enterprise",
+        "title": "Enterprise",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3596
+      },
+      {
+        "url": "https://www.firecrawl.dev/",
+        "title": "Firecrawl | Knowledge Infrastructure for AI Agents",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://firecrawl.dev"
+    ],
+    "refinement": {},
+    "research_seconds": 74.56
+  }
+}

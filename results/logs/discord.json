@@ -1,0 +1,426 @@
+{
+  "app": "Discord",
+  "category": "Communications and Messaging",
+  "slug": "discord",
+  "started_at": "2026-11-23T15:44:08.605682+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:48:26.076354+00:00",
+  "duration_s": 257.47,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/discord.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Discord\" MCP server official Model Context Protocol site:discord.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.488,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Discord\" official API documentation developer reference site:discord.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.883,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Discord\" API webhooks events callbacks documentation site:discord.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.836,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Discord\" API rate limits throttling quota documentation site:discord.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.076,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Discord\" pricing plans API access enterprise developer site:discord.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 6.444,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Discord\" API authentication OAuth API key documentation site:discord.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 6.608,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Discord\" official SDK client libraries developer site:discord.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.744,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Discord\" API sandbox test environment staging developer site:discord.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.907,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Discord\" API versioning deprecation sunset policy site:discord.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.566,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Discord"
+      },
+      "ok": true,
+      "duration_s": 0.035,
+      "result_count": 2,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://docs.discord.com/developers/reference",
+          "https://docs.discord.com/developers/intro",
+          "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+          "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service",
+          "https://discord.com/developers/home"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.81,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://docs.discord.com/developers/topics/rate-limits",
+          "https://docs.discord.com/llms.txt",
+          "https://discord.com/servers/model-context-protocol-1312302100125843476",
+          "https://docs.discord.com/developers/events/webhook-events",
+          "https://docs.discord.com/developers/activities/development-guides/local-development"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.111,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Discord MCP"
+      },
+      "ok": true,
+      "duration_s": 1.846,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://discord.com"
+      },
+      "ok": true,
+      "duration_s": 5.473,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 15,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Discord\" official MCP server",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.051,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 16,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "query": "\"Discord\" model context protocol server vendor",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.556,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 17,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "refine",
+      "arguments": {
+        "urls": [
+          "https://reduck.ai/use-cases/best-discord-mcp-servers",
+          "https://www.speakeasy.com/blog/build-a-mcp-server-tutorial"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.152,
+      "result_count": 2,
+      "error": null
+    }
+  ],
+  "tool_call_count": 17,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://discord.com"
+  ],
+  "sources": [
+    {
+      "url": "https://docs.discord.com/developers/reference",
+      "title": "API Reference",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.discord.com/developers/intro",
+      "title": "Discord Developer Platform",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1584
+    },
+    {
+      "url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+      "title": "OAuth2 and Permissions",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2870
+    },
+    {
+      "url": "https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service",
+      "title": "Discord Developer Terms of Service – Developers",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://discord.com/developers/home",
+      "title": "Home | Discord Developer Portal",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 212
+    },
+    {
+      "url": "https://docs.discord.com/developers/topics/rate-limits",
+      "title": "Rate Limits",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.discord.com/llms.txt",
+      "title": "",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://discord.com/servers/model-context-protocol-1312302100125843476",
+      "title": "Model Context Protocol - Discord Server | Programming",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 784
+    },
+    {
+      "url": "https://docs.discord.com/developers/events/webhook-events",
+      "title": "Webhook Events",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://docs.discord.com/developers/activities/development-guides/local-development",
+      "title": "Local Development",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://discord.com",
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 1833
+    },
+    {
+      "url": "https://reduck.ai/use-cases/best-discord-mcp-servers",
+      "title": "Discord MCP servers compared (2026): no official one reads or sends messages",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://www.speakeasy.com/blog/build-a-mcp-server-tutorial",
+      "title": "Building a Model Context Protocol (MCP) server for Discord",
+      "purpose": "refine",
+      "fetched_via": "composio_exa",
+      "official": false,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Discord",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 113.383,
+      "tokens": {
+        "input": 12583,
+        "output": 1700,
+        "reasoning": 10529
+      },
+      "cost_usd": 0.00737988
+    },
+    {
+      "purpose": "research:Discord",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 113.194,
+      "tokens": {
+        "input": 12907,
+        "output": 1955,
+        "reasoning": 8005
+      },
+      "cost_usd": 0.00632964
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 25490,
+      "output": 3655,
+      "reasoning": 18534
+    },
+    "cost_usd": 0.01370952,
+    "llm_calls": 2
+  }
+}

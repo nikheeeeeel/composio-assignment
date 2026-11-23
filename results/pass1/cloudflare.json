@@ -1,0 +1,247 @@
+{
+  "app": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": {
+    "value": "Cloudflare provides a single REST API spanning its entire product set, including DNS, Workers, R2, and Zero Trust.",
+    "source_url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+    "quote": "It provides access to the entire Cloudflare API — over 2,500 endpoints across DNS, Workers, R2, Zero Trust, and every other product — and to the Cloudflare developer documentation.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.cloudflare.com/fundamentals/api/",
+    "quote": "Use the following resources to learn more about Cloudflare's REST API:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.cloudflare.com/fundamentals/api/",
+    "quote": "Use the following resources to learn more about Cloudflare's REST API:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, over 2,500 endpoints covering the entire Cloudflare product surface",
+    "source_url": "https://developers.cloudflare.com/docs-for-agents/",
+    "quote": "Cloudflare API MCP server: A Code Mode server that covers the entire Cloudflare API (over 2,500 endpoints).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.cloudflare.com/api",
+    "source_url": "https://developers.cloudflare.com/api",
+    "quote": "GET/accounts/{account_id}/members/{member_id}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+    "quote": "When you connect, you will be redirected to Cloudflare to authorize via OAuth and select the permissions to grant to your agent. For CI/CD or automation, you can create a Cloudflare API token ↗︎ with the permissions you need and pass it as a bearer token in the `Authorization` header.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.cloudflare.com/fundamentals/oauth/create-an-oauth-client/",
+    "quote": "OAuth scope names correspond to Cloudflare API token permission names. Use the List OAuth scopes endpoint as the source of truth for supported scopes, and use the Cloudflare API documentation to identify the permissions your client needs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "quote": "With this you have successfully created an API token and can start working with the Cloudflare API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API tokens are self-serve from the Cloudflare dashboard with no sales or partner process; however, certain product APIs and features require paid plans or add-ons, such as API Shield requiring the paid add-on on an Enterprise plan.",
+    "source_url": "https://developers.cloudflare.com/api-shield/plans/",
+    "quote": "Unless a feature page states otherwise, API Shield features require the paid API Shield add-on on an Enterprise plan.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.cloudflare.com/mcp",
+    "source_url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+    "quote": "The Cloudflare API MCP server ↗︎ at `https://mcp.cloudflare.com/mcp` is the only MCP server you need to work with Cloudflare.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=cloudflare",
+    "quote": "{\"items\": [{\"slug\": \"cloudflare\", \"name\": \"Cloudflare\", \"app\": \"Cloudflare\", \"tools_count\": 171}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "1,200 requests per 5 minutes per user/account token; 200 requests/second per IP; GraphQL max 320 requests per 5 minutes",
+    "source_url": "https://developers.cloudflare.com/fundamentals/api/reference/limits/",
+    "quote": "| Client API per user/account token | 1200/5 minutes | | Client API per IP | 200/second | | GraphQL | Varies by query cost. Max 320/5 min |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "TypeScript",
+      "Python",
+      "Go"
+    ],
+    "source_url": "https://developers.cloudflare.com/api",
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "API requests use the versioned base path https://api.cloudflare.com/client/v4",
+    "source_url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+    "quote": "https://api.cloudflare.com/client/v4/user/tokens/verify",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Cloudflare documents a public REST API with over 2,500 endpoints, OAuth 2.0 support, and self-serve API token creation from the dashboard. Credentials do not require sales contact or partner approval, and OAuth scopes are documented. Some product APIs, such as API Shield, require paid Enterprise add-ons, but the core API is straightforward to build against.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Webhooks: search results list dedicated webhook resources, but no fetched source text describes webhook support, so this was not verified.",
+    "API deprecation/sunset policy: the deprecations page appeared in search results but was not captured in the evidence bundle; only the /client/v4 base path is confirmed.",
+    "No documented general-purpose API test/sandbox environment was found; the Cloudflare Sandbox and Registrar sandbox results appear to be product features rather than an API test environment.",
+    "Official SDK language list is only partially evidenced: Go is confirmed in fetched text, while TypeScript and Python appear only in search snippets for the API reference page.",
+    "No community MCP servers were found in the evidence bundle; only Cloudflare-operated MCP servers are documented.",
+    "Auth mechanisms were mapped across separate pages (API token/bearer, Global API key, OAuth 2.0); verify the current recommended authentication scheme and whether Global API keys remain supported."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Cloudflare",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "developers.cloudflare.com/api",
+      "description": null,
+      "source_file": "07-developer-infra-and-data-platforms.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.cloudflare.com/workers/platform/pricing/",
+        "title": "Pricing · Cloudflare Workers docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.cloudflare.com/api-shield/plans/",
+        "title": "Plans · Cloudflare API Shield docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1468
+      },
+      {
+        "url": "https://developers.cloudflare.com/fundamentals/api/reference/limits/",
+        "title": "Rate limits · Cloudflare Fundamentals docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1713
+      },
+      {
+        "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+        "title": "Cloudflare's own MCP servers · Cloudflare Agents docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.cloudflare.com/docs-for-agents/",
+        "title": "Docs for agents · Docs for agents docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.cloudflare.com/api",
+        "title": "API Reference | Cloudflare API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.cloudflare.com/fundamentals/api/",
+        "title": "Cloudflare's API · Cloudflare Fundamentals docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 210
+      },
+      {
+        "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+        "title": "Create API token · Cloudflare Fundamentals docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3463
+      },
+      {
+        "url": "https://developers.cloudflare.com/fundamentals/oauth/create-an-oauth-client/",
+        "title": "Create your OAuth client · Cloudflare Fundamentals docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 169.13
+  }
+}

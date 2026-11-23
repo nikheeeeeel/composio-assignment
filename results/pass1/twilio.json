@@ -1,0 +1,270 @@
+{
+  "app": "Twilio",
+  "category": "Communications and Messaging",
+  "one_line_description": {
+    "value": "Twilio is a communications platform for coordinating customer conversations across channels.",
+    "source_url": "https://www.twilio.com/en-us",
+    "quote": "The Twilio platform empowers humans and AI agents to work together, coordinate across channels, and pick up every customer conversation where the last one left off.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://www.twilio.com/docs/usage/api",
+    "quote": "With the Twilio APIs, you can build applications that help your users send messages, make phone calls, look up phone numbers, and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://www.twilio.com/docs/usage/api",
+    "quote": "The Twilio APIs are organized around REST.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad: 1,800+ endpoints across 30+ products.",
+    "source_url": "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills",
+    "quote": "Twilio has over 1,800 API endpoints and more than 30 products.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://www.twilio.com/docs",
+    "source_url": "https://www.twilio.com/docs",
+    "quote": "Build better and engage your customers across all channels with our API reference documentation, quickstarts, SDKs and multi-language code samples.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://www.twilio.com/docs/iam/oauth-apps/overview",
+    "quote": "OAuth 2.0 is an industry-standard authorization protocol that lets applications securely access Twilio APIs on your behalf, without sharing your Account SID and Auth Token or other long-lived API keys.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://www.twilio.com/docs/iam/oauth-apps/overview",
+    "quote": "Scoped access — Each token is restricted to a specific set of APIs, so an app only has access to what it needs.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://www.twilio.com/en-us",
+    "quote": "Free trial No credit card required",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free trial with no credit card required.",
+    "source_url": "https://www.twilio.com/en-us",
+    "quote": "Free trial No credit card required",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.twilio.com/docs",
+    "source_url": "https://www.twilio.com/docs/ai/mcp",
+    "quote": "No installation required: The server is hosted by Twilio at `mcp.twilio.com/docs`—point your IDE at the URL.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=twilio",
+    "quote": "{\"items\": [{\"slug\": \"twilio\", \"name\": \"Twilio\", \"app\": \"Twilio\", \"tools_count\": 452}], \"total_items\": 1}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Concurrency-based REST API throttling; HTTP 429 when exceeded; numeric limits not stated in the supplied error doc.",
+    "source_url": "https://www.twilio.com/docs/api/errors/20429",
+    "quote": "Twilio returns this error when your account exceeds allowed concurrency to Twilio's REST API (HTTP 429 Too Many Requests).",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://www.twilio.com/docs/usage/api",
+    "quote": "Make requests to the Twilio APIs, including authenticating your requests, choosing the right content type, and handling webhooks.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Python",
+      "C#/.NET",
+      "PHP",
+      "Ruby",
+      "Java",
+      "Node.js"
+    ],
+    "source_url": "https://www.twilio.com/en-us",
+    "quote": "Download the helper library from https://www.twilio.com/docs/python/install",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "APIs are versioned (examples include v2010, v1, v2); no deprecation/sunset policy was found in the supplied sources.",
+    "source_url": "https://www.twilio.com/docs/ai/mcp",
+    "quote": "When multiple API versions exist (for example, `v2010`, `v1`, `v2`), search returns the latest version by default.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Twilio documents a public REST API with 1,800+ endpoints across 30+ products, OAuth 2.0 and API-key authentication, and a no-credit-card free trial. The credentials route is self-serve and the API surface is broad enough for an easy build.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Sandbox/test credentials documentation appeared in the search plan but was not included in SOURCES, so sandbox_or_test_env remains not_found.",
+    "Numeric rate/concurrency limits were not present in the supplied error page; only HTTP 429 concurrency behavior is documented.",
+    "Auth evidence is split: OAuth 2.0 is documented in S5 and API keys as preferred in S4; the single auth_methods claim cites S5 and omits explicit basic-auth naming.",
+    "No deprecation/sunset policy page was included in SOURCES; only API version examples were found.",
+    "The official Twilio MCP server is Public Beta and read-only documentation search; authenticated execution tools are planned, not current.",
+    "SDK language list is drawn from official helper-library snippets on the Twilio homepage; no dedicated SDK page was included in SOURCES.",
+    "Community MCP servers were not checked because no GitHub repository or MCP registry results were supplied, so absence is not confirmed."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Twilio",
+      "category": "Communications and Messaging",
+      "hint": "twilio.com",
+      "description": null,
+      "source_file": "03-communications-and-messaging.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://www.twilio.com/docs",
+        "title": "Twilio Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.twilio.com/docs/usage/api",
+        "title": "Twilio API overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1085
+      },
+      {
+        "url": "https://www.twilio.com/docs/iam/api-keys",
+        "title": "API keys overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2572
+      },
+      {
+        "url": "https://www.twilio.com/docs/iam/oauth-apps/overview",
+        "title": "OAuth apps",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2868
+      },
+      {
+        "url": "https://www.twilio.com/en-us/pricing",
+        "title": "Twilio Pricing | Twilio",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4939
+      },
+      {
+        "url": "https://www.twilio.com/en-us/solutions/enterprise",
+        "title": "Enterprise | Twilio",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.twilio.com/docs/api/errors/20429",
+        "title": "20429: Too many requests",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1878
+      },
+      {
+        "url": "https://www.twilio.com/docs/ai/mcp",
+        "title": "Twilio MCP server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.twilio.com/en-us/blog/developers/introducing-twilio-mcp-skills",
+        "title": "Introducing the Twilio MCP Server and Skills | Twilio",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2026-05-07T00:00:00.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://www.twilio.com/docs/usage/webhooks",
+        "title": "Introduction to Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4784
+      },
+      {
+        "url": "https://www.twilio.com/en-us",
+        "title": "Conversational AI and APIs for SMS, Email, Voice | Twilio",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://twilio.com"
+    ],
+    "refinement": {},
+    "research_seconds": 211.98
+  }
+}

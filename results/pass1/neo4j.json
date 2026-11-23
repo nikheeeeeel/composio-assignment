@@ -1,0 +1,257 @@
+{
+  "app": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": {
+    "value": "Neo4j is a graph database platform, including the fully managed AuraDB service and self-managed deployments, for storing connected data and building applications.",
+    "source_url": "https://neo4j.com/product/auradb/",
+    "quote": "Store data and relationships natively with a flexible schema.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://neo4j.com/docs/aura/api/authentication/",
+    "quote": "The Aura API uses OAuth 2.0 for API authentication.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://neo4j.com/docs/aura/api/authentication/",
+    "quote": "You can use the following `/oauth/token` endpoint to obtain a Bearer Token for authenticating API requests.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad: Aura REST API for instance provisioning/management, HTTP Query API for Cypher, and GraphQL; read-write Cypher execution.",
+    "source_url": "https://neo4j.com/docs/mcp/current/",
+    "quote": "execute reads and writes against your database from natural language prompts or programmatic calls.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://neo4j.com/docs/",
+    "source_url": "https://neo4j.com/docs/",
+    "quote": "Discover the client libraries and APIs to develop applications with Neo4j and AuraDB.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token",
+      "basic"
+    ],
+    "source_url": "https://neo4j.com/docs/aura/api/authentication/",
+    "quote": "The Aura API uses OAuth 2.0 for API authentication.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://neo4j.com/docs/aura/api/authentication/",
+    "quote": "All tiers can create Aura API credentials.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free/no-credit-card entry point; all Aura tiers can create API credentials. Paid plans (AuraDB Professional, Business Critical, Virtual Dedicated Cloud) gate production capacity and advanced controls.",
+    "source_url": "https://neo4j.com/pricing/",
+    "quote": "No credit card or other payment method required",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://neo4j.com/docs/mcp/current/",
+    "source_url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+    "quote": "The official MCP Server for Neo4j, is a local MCP server that is downloadable as a binary and works with all types of Neo4j Deployments",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=neo4j",
+    "quote": "{\"slug\": \"neo4j\", \"name\": \"Neo4J\", \"app\": \"Neo4J\", \"tools_count\": 21}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Neo4j Labs NAMS: 30 requests/hour/workspace (ontology preview) and 10/min + 100/hour per user (feedback); no blanket per-request limit. Core Aura API rate limits not documented in evidence.",
+    "source_url": "https://neo4j.com/labs/agent-memory/reference/nams-limits/",
+    "quote": "30 requests / hour / workspace",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+    "quote": "Neo4j Aura, Self Managed, Docker, Neo4j Desktop, and Neo4j Sandbox",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Current + LTS version tracks (e.g., 2026.10 Current, 5.26 LTS, 4.4 for Java Reference; GraphQL Library v7 Current, v5 LTS).",
+    "source_url": "https://neo4j.com/docs/java-reference/current/",
+    "quote": "Product Version Version 2026.10 (Current) Version 5.26 (LTS) Version 4.4",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Public documentation is available at neo4j.com/docs, and the Aura API uses OAuth 2.0 with credentials creatable by all Aura tiers, paired with a no-credit-card entry point. The API surface spans instance management, Cypher query execution, and GraphQL, giving reasonable breadth. No sales contact, partner approval, or app review is required to obtain developer credentials.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Input hint URL https://neo4j.com/docs/api/ returns a 404 'Page not found'; canonical documentation was taken from https://neo4j.com/docs/ instead.",
+    "OAuth scopes/permissions documentation was not found in the evidence; the Aura page states credentials inherit user-account roles and capabilities rather than listing scopes.",
+    "Core Aura/Neo4j API rate limits were not documented in the supplied sources; the only numeric limits found apply to the separate Neo4j Labs NAMS service.",
+    "No evidence of vendor-documented webhooks or event callbacks was present in the supplied sources.",
+    "Official SDK language list was not present in the evidence; sources surfaced only a Java Reference page and a general client-libraries pointer.",
+    "No community/third-party MCP servers were found in the evidence.",
+    "The official Neo4j MCP server is described as a local, downloadable binary rather than a hosted endpoint, so no public hosted MCP URL is documented.",
+    "Multiple API surfaces exist (Aura REST/management API, HTTP Query API, GraphQL API); api_type was classified as REST but the evidence is fragmented across pages.",
+    "GraphQL API documentation separately mentions API key and JWT authentication, which is not reflected in the Aura API auth methods claim."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Neo4j",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "neo4j.com/docs/api",
+      "description": null,
+      "source_file": "07-developer-infra-and-data-platforms.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://neo4j.com/pricing/",
+        "title": "Cloud & self-hosted graph database platform pricing | Neo4j",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://neo4j.com/product/auradb/",
+        "title": "Neo4j AuraDB: Fully managed graph database",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://neo4j.com/labs/agent-memory/reference/nams-limits/",
+        "title": "NAMS limits and behavior",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://neo4j.com/docs/mcp/current/",
+        "title": "Introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2229
+      },
+      {
+        "url": "https://neo4j.com/developer/genai-ecosystem/model-context-protocol-mcp/",
+        "title": "Model Context Protocol (MCP) Integrations for the Neo4j Graph Database",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://neo4j.com/docs/",
+        "title": "Neo4j documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3371
+      },
+      {
+        "url": "https://neo4j.com/docs/java-reference/current/",
+        "title": "The Neo4j Java Reference v2026.10",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1149
+      },
+      {
+        "url": "https://neo4j.com/docs/aura/api/authentication/",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://neo4j.com/docs/graphql/current/aura-graphql/api-usage/",
+        "title": "Using your GraphQL API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1219
+      },
+      {
+        "url": "https://neo4j.com/docs/api/",
+        "title": "Page Not Found - Neo4j Graph Intelligence Platform",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 2842
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://neo4j.com/docs/api"
+    ],
+    "refinement": {},
+    "research_seconds": 122.83
+  }
+}

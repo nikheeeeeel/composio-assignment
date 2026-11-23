@@ -1,0 +1,297 @@
+{
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=GoHighLevel",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"GoHighLevel\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "hard",
+  "verdict_reason": "No usable vendor documentation was captured: the hinted docs host (https://highlevel.stoplight.io) returned only the JS/Stoplight shell text 'Stoplight', and every other fetched source in the bundle is Stoplight's own marketing, blog, and product pages rather than GoHighLevel API reference material. Because has_public_api, auth methods, and access gating could not be verified from the evidence, the app cannot be classified as easy or moderate. The only confirmed data point is that no matching toolkit exists in Composio's catalog.",
+  "main_blocker": "No readable GoHighLevel API documentation in the evidence bundle",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The docs host named in the input hint (https://highlevel.stoplight.io) rendered only a Stoplight JS shell (text: 'Stoplight'); the actual GHL API reference content was never retrieved, so has_public_api and api_type are unverified.",
+    "The search was scoped with site:stoplight.io, which returned Stoplight's own platform/blog pages; GHL-specific developer pages (e.g. marketplace.gohighlevel.com/docs/...) appear only in the search index and their body text was not included in SOURCES, so they cannot be quoted.",
+    "auth_methods (OAuth 2.0 vs. API key/private integration tokens) are unresolved: the only authentication text in the bundle is Stoplight's generic OpenAPI security-scheme blog content and must not be attributed to GoHighLevel.",
+    "access_model is unresolved: whether a free developer/agency account can self-serve API credentials versus requiring a paid plan or marketplace app review is not documented anywhere in the supplied evidence.",
+    "Whether GoHighLevel operates a vendor MCP server is unknown; https://mcp.stoplight.io/ is Stoplight's workspace page and is not evidence of a GHL MCP endpoint.",
+    "Rate limits, webhooks, sandbox environment, official SDKs, and versioning/deprecation policy all lack any GHL-specific evidence in this bundle.",
+    "The 'GHL Beta' Stoplight workspace page (https://ghl-crm-beta.stoplight.io/docs/beta/0443d7d1a4bd0-overview) appeared in search results but its body text was not fetched.",
+    "Pipeline issue: the pricing, rate-limit, webhook, sandbox, SDK, and versioning queries were all constrained to site:stoplight.io, producing Stoplight product pages instead of GoHighLevel sources; these searches should be re-run against gohighlevel.com and marketplace.gohighlevel.com."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "highlevel.stoplight.io",
+      "description": null,
+      "source_file": "04-marketing-ads-email-and-social.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 19,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.stoplight.io/",
+        "title": "developer | Stoplight",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 438
+      },
+      {
+        "url": "https://docs.stoplight.io/docs/api-best-practices/hosted-docs/get-started-with-doc",
+        "title": "API Documentation Overview | API Best Practices",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 145
+      },
+      {
+        "url": "https://blog.stoplight.io/rest-api-security",
+        "title": "REST API Security Design Best Practices | Stoplight",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2019-07-03T05:00:00.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://blog.stoplight.io/api-security-can-be-stronger-with-openapi",
+        "title": "Strengthen API Security with OpenAPI | Stoplight",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2023-09-27T05:00:00.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://stoplight.io/pricing",
+        "title": "API Design Plans and Pricing | Stoplight",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4816
+      },
+      {
+        "url": "https://stoplight.io/enterprise",
+        "title": "Enterprise API Design Management at Scale | Stoplight",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4200
+      },
+      {
+        "url": "https://blog.stoplight.io/best-practices-api-rate-limiting-vs-throttling",
+        "title": "Best Practices: API Rate Limiting vs. Throttling | Stoplight",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2023-04-28T15:29:00.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://mcp.stoplight.io/",
+        "title": "mcp | Stoplight",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 414
+      },
+      {
+        "url": "https://elements-demo.stoplight.io/?spec=https%3A%2F%2Fraw.githubusercontent.com%2Fmodelcontextprotocol%2Fregistry%2Frefs%2Fheads%2Fmain%2Fdocs%2Freference%2Fapi%2Fopenapi.yaml",
+        "title": "Stoplight Elements Demo",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 222
+      },
+      {
+        "url": "https://blog.stoplight.io/difference-between-open-v2-v3-v31",
+        "title": "What's the Difference Between OpenAPI Types 2.0, 3.0, and 3.1? | Stoplight",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2020-09-29T05:00:00.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://highlevel.stoplight.io",
+        "title": "Stoplight",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 9
+      },
+      {
+        "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+        "title": "HighLevel API Documentation : HighLevel Support Portal",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/oauth/AppCreationGuide.md",
+        "title": "App Creation Guide",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": false,
+        "published_date": null,
+        "chars": 757
+      }
+    ],
+    "search_hits_count": 65,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://highlevel.stoplight.io"
+    ],
+    "refinement": {
+      "weak_fields": [
+        "auth_methods",
+        "access_model",
+        "official_mcp_server",
+        "has_public_api"
+      ],
+      "queries": [
+        "\"GoHighLevel\" API authentication OAuth API key documentation",
+        "\"GoHighLevel\" developer authentication guide",
+        "\"GoHighLevel\" API pricing plans access requirements",
+        "\"GoHighLevel\" developer API free tier paid plan"
+      ],
+      "extra_urls": [
+        "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+        "https://marketplace.gohighlevel.com/docs/oauth/AppCreationGuide.md"
+      ],
+      "tool_calls_after": 19
+    },
+    "research_seconds": 119.06
+  }
+}

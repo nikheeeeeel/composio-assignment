@@ -1,0 +1,265 @@
+{
+  "app": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": {
+    "value": "HighLevel is a CRM and marketing automation platform covering contacts, appointments, messaging, deals, invoicing, and social posts.",
+    "source_url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+    "quote": "Connect HighLevel to your AI assistant, then ask it to find a contact, book an appointment, send a message, update a deal, or schedule a social post.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "HighLevel provides APIs that allow developers to build custom integrations, automate processes, and connect external applications with the HighLevel platform.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://marketplace.gohighlevel.com/docs/",
+    "quote": "Complete REST API documentation for the HighLevel CRM platform.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, broad read-write coverage across CRM contacts, conversations, calendars, opportunities, payments, and 50+ webhook events",
+    "source_url": "https://marketplace.gohighlevel.com/docs/",
+    "quote": "Access all HighLevel platform features through our REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://marketplace.gohighlevel.com/docs/",
+    "source_url": "https://marketplace.gohighlevel.com/docs/",
+    "quote": "Complete REST API documentation for the HighLevel CRM platform.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "Private Integration Tokens and OAuth 2.0 are the recommended authentication methods.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/",
+    "quote": "Each endpoint's API reference page lists the scopes it requires.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "API access is available across HighLevel subscription plans. However, certain endpoints and capabilities may require a higher-tier plan.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access comes with paid HighLevel subscription plans (Starter $97/mo, Unlimited $297/mo, Founder $497/mo); some endpoints/capabilities are restricted to higher tiers and documented endorsed endpoints may require higher-tier eligibility. Credentials themselves are self-serve: OAuth 2.0 for public/marketplace apps (public apps must be approved to be listed) or Private Integration Tokens for internal/single-account tools; legacy API keys are being phased out. Sandbox (App Test) accounts exist for testing. Official MCP server endpoints are per-client (e.g., /mcp/anthropic/v2, /mcp/openai/v2/, /mcp/cursor/v2/).",
+    "source_url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+    "quote": "API access is available across HighLevel subscription plans. However, certain endpoints and capabilities may require a higher-tier plan.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://services.leadconnectorhq.com/mcp/anthropic/v2",
+    "source_url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+    "quote": "| Claude.ai, Claude Code, and Claude Cowork | `https://services.leadconnectorhq.com/mcp/anthropic/v2` |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=GoHighLevel",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"GoHighLevel\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://marketplace.gohighlevel.com/docs/",
+    "quote": "Real-time notifications for 50+ events. Stay updated with instant webhook callbacks.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://marketplace.gohighlevel.com/docs/oauth/AppTestingGuide.md",
+    "quote": "This guide walks you through testing a Marketplace App in HighLevel using Sandbox (App Test) accounts.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Node.js",
+      "Python",
+      "PHP"
+    ],
+    "source_url": "https://marketplace.gohighlevel.com/docs/llms/guides/sdk.md",
+    "quote": "HighLevel now ships official SDKs for Node.js, Python, and PHP so you can stop hand-rolling API calls.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "V2 is the current API; V1 is end-of-support (no new V1 keys, no security patches, bug fixes, or features, no technical support).",
+    "source_url": "https://www.gohighlevel.com/post/deprecating-the-highlevel-api-v1-and-migrating-to-v2",
+    "quote": "The option to generate new V1 API keys has been disabled.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "The API is public and well documented: OAuth 2.0 plus Private Integration Tokens, official Node.js/Python/PHP SDKs, webhooks for 50+ events, and a vendor-run MCP server. Credentials are self-serve, but API access is tied to a paid HighLevel subscription starting at $97/month and certain endpoints are restricted to higher tiers. That plan-tier gating makes it moderate rather than easy.",
+  "main_blocker": "Paid subscription plan required (from $97/mo) plus higher-tier endpoint restrictions",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Rate limits are referenced in official docs (and a rate-limits page exists at marketplace.gohighlevel.com/docs/other/rate-limits.md), but that page text was not included in the evidence bundle, so numeric limits are unverified.",
+    "Whether a free Marketplace developer account alone (without a paid HighLevel subscription) can obtain working API credentials for testing; sandbox/App Test prerequisites are not fully evidenced.",
+    "API V3 is mentioned ('API V3 is available for supported endpoints') but its scope and versioning policy relative to V2 are not detailed in the bundle.",
+    "Composio catalog search for 'GoHighLevel' returned zero items; confirm whether a toolkit exists under an alternate name (e.g., 'HighLevel' or 'LeadConnector').",
+    "Input hint highlevel.stoplight.io returned only a JS shell ('Stoplight'); canonical docs were taken from marketplace.gohighlevel.com/docs/. Product is marketed as GoHighLevel / HighLevel / LeadConnector and was treated as one product."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "highlevel.stoplight.io",
+      "description": null,
+      "source_file": "04-marketing-ads-email-and-social.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 17,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+        "title": "mcp | HighLevel API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741-how-to-setup-and-use-the-highlevel-mcp-server",
+        "title": "Guide on How to Setup and Use the HighLevel MCP Server : HighLevel Support Portal",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/oauth/AppTestingGuide.md",
+        "title": "App Testing Guide",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1099
+      },
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/llms/guides/sdk.md",
+        "title": "SDKs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.gohighlevel.com/post/deprecating-the-highlevel-api-v1-and-migrating-to-v2",
+        "title": "Migrating HighLevel API from V1 to V2.",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2026-06-26T00:00:00.000Z",
+        "chars": 3926
+      },
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/",
+        "title": "HighLevel API Documentation - Developer Portal | HighLevel API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1855
+      },
+      {
+        "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+        "title": "HighLevel API Documentation : HighLevel Support Portal",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/",
+        "title": "OAuth 2.0 | HighLevel API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.gohighlevel.com/support/solutions/articles/155000003054-private-integrations-everything-you-need-to-know",
+        "title": "https://marketplace.gohighlevel.com/docs/ : HighLevel Support Portal",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/other/rate-limits.md",
+        "title": "Rate Limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://highlevel.stoplight.io",
+        "title": "Stoplight",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 9
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://highlevel.stoplight.io"
+    ],
+    "refinement": {},
+    "research_seconds": 110.18
+  }
+}

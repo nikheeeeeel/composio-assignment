@@ -1,0 +1,252 @@
+{
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "one_line_description": {
+    "value": "Asana is a work management platform (tasks, projects, portfolios, goals) whose RESTful API provides programmatic access to much of the data in the system.",
+    "source_url": "https://developers.asana.com/docs/api-features",
+    "quote": "The Asana API is a RESTful interface, providing programmatic access to much of the data in the system.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.asana.com/reference/rest-api-reference",
+    "quote": "This is the interface for interacting with the Asana platform.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.asana.com/docs/api-features",
+    "quote": "The Asana API is a RESTful interface",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, comprehensive reference covering objects, schemas, and endpoints; read-write (247 tools exposed in the Composio catalog)",
+    "source_url": "https://developers.asana.com/reference/rest-api-reference",
+    "quote": "This reference is generated from our OpenAPI Specification, and contains a comprehensive reference for objects, schemas, and endpoints available in the API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.asana.com/reference/rest-api-reference",
+    "source_url": "https://developers.asana.com/reference/rest-api-reference",
+    "quote": "This reference is generated from our OpenAPI Specification, and contains a comprehensive reference for objects, schemas, and endpoints available in the API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token",
+      "other"
+    ],
+    "source_url": "https://developers.asana.com/docs/authentication",
+    "quote": "Asana’s API has several options for authenticating.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://developers.asana.com/docs/authentication",
+    "quote": "To learn more about how Service Account scopes and how to configure them for your specific use case – check out our Service Account Scopes documentation",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developers.asana.com/docs/authentication",
+    "quote": "PATs are generated in the developer console.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve for development: a PAT can be generated in the developer console on a free Asana plan, and OAuth apps are created in the developer console. A developer sandbox must be requested via a form and can take up to one week to provision (valid max one year, extensions require Legal review). Service Accounts are Enterprise-only and can only be created by Asana super admins. Script actions require Enterprise/Enterprise+. Workspace admins can block MCP client apps.",
+    "source_url": "https://developers.asana.com/docs/developer-sandbox",
+    "quote": "Please note that at this time, it may take up to one (1) week to process and provision your developer sandbox.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.asana.com/v2/mcp",
+    "source_url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+    "quote": "The Asana MCP V2 server is available at: `https://mcp.asana.com/v2/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=asana",
+    "quote": "{\"slug\": \"asana\", \"name\": \"Asana\", \"app\": \"Asana\", \"tools_count\": 247}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Free domains: 150 requests/min; Paid domains: 1,500 requests/min; Search API: 60 requests/min; duplication/instantiation/export endpoints: 5 concurrent jobs per user; concurrency limiter around 50 GET or 15 write requests in flight.",
+    "source_url": "https://developers.asana.com/docs/rate-limits",
+    "quote": "| Domain type | Maximum requests per minute | | --- | --- | | Free | 150 | | Paid | 1,500 |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.asana.com",
+    "quote": "Automate tedious work in powerful, bespoke ways with our platform features like rule actions, webhooks, and our API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developers.asana.com/docs/developer-sandbox",
+    "quote": "A developer sandbox is a temporary Asana domain with limited users.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Base URL is versioned (/api/1.0). A deprecations guide exists. V1 Beta MCP server (https://mcp.asana.com/sse) is deprecated and scheduled to shut down Wed 5 Aug 2026 (another official page states 05/11/2026).",
+    "source_url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+    "quote": "The V1 Beta MCP server `https://mcp.asana.com/sse` is deprecated and will shut down on Wed 5 Aug 2026.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Asana documents a public REST API with a full OpenAPI-generated reference, and a developer can self-serve credentials by generating a PAT in the developer console, with OAuth available for multi-user apps. Rate limits are explicitly documented (150 req/min free, 1,500 req/min paid) and webhooks, a developer sandbox, and an official hosted MCP server (https://mcp.asana.com/v2/mcp) are all documented. The only friction is that a developer sandbox is requested via a form with up to a week of provisioning time, which does not gate basic API access.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official SDK language list was not captured: docs pages for JavaScript, Python, and client libraries were indexed but their text was not included in the evidence (only 'official client libraries' is mentioned on the rate-limits page).",
+    "Standard OAuth scope/permission list was not captured; only Service Account scopes and the MCP 'default' scope are referenced in the evidence.",
+    "REST API versioning/deprecation policy page (developers.asana.com/docs/deprecations) was indexed but not fetched; only the MCP v1 beta deprecation is evidenced here.",
+    "Official docs give conflicting MCP v1 beta sunset dates (05/11/2026 on the MCP overview page vs Wed 5 Aug 2026 on the integration guide).",
+    "No credible community/third-party MCP servers were evidenced (no GitHub repository or MCP registry results were supplied).",
+    "App Directory listing/publication review requirements for a third-party integration were not captured in the evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Asana",
+      "category": "Productivity and Project Management",
+      "hint": "developers.asana.com",
+      "description": null,
+      "source_file": "08-productivity-and-project-management.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.asana.com/docs/script-actions",
+        "title": "Script Actions",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2249
+      },
+      {
+        "url": "https://developers.asana.com/docs/developer-sandbox",
+        "title": "Developer sandbox",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1223
+      },
+      {
+        "url": "https://developers.asana.com/docs/rate-limits",
+        "title": "Rate limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+        "title": "Using Asana's MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4920
+      },
+      {
+        "url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+        "title": "Integrating with Asana's MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4999
+      },
+      {
+        "url": "https://developers.asana.com",
+        "title": "Asana Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1592
+      },
+      {
+        "url": "https://developers.asana.com/reference/rest-api-reference",
+        "title": "Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1544
+      },
+      {
+        "url": "https://developers.asana.com/docs/api-features",
+        "title": "API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1211
+      },
+      {
+        "url": "https://developers.asana.com/docs/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4607
+      },
+      {
+        "url": "https://developers.asana.com/docs/oauth",
+        "title": "OAuth",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4996
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 93.52
+  }
+}

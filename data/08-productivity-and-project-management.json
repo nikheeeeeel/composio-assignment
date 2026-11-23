@@ -1,0 +1,63 @@
+{
+  "category": "Productivity and Project Management",
+  "categoryNumber": 8,
+  "source": {
+    "spreadsheet": "composio-research",
+    "sheet": "Sheet1",
+    "url": "https://docs.google.com/spreadsheets/d/18E7hsmbnGxNCuJKpwgjCfVAKBECqK4KTh-4gfPsR1A8/edit"
+  },
+  "appCount": 10,
+  "apps": [
+    {
+      "number": 71,
+      "app": "Notion",
+      "hint": "developers.notion.com"
+    },
+    {
+      "number": 72,
+      "app": "Airtable",
+      "hint": "airtable.com/developers"
+    },
+    {
+      "number": 73,
+      "app": "Linear",
+      "hint": "developers.linear.app"
+    },
+    {
+      "number": 74,
+      "app": "Jira",
+      "hint": "developer.atlassian.com"
+    },
+    {
+      "number": 75,
+      "app": "Asana",
+      "hint": "developers.asana.com"
+    },
+    {
+      "number": 76,
+      "app": "Monday.com",
+      "hint": "developer.monday.com"
+    },
+    {
+      "number": 77,
+      "app": "ClickUp",
+      "hint": "clickup.com/api"
+    },
+    {
+      "number": 78,
+      "app": "Coda",
+      "hint": "coda.io/developers"
+    },
+    {
+      "number": 79,
+      "app": "Smartsheet",
+      "hint": "smartsheet.com/developers"
+    },
+    {
+      "number": 80,
+      "app": "Harvest",
+      "hint": "harvestapp.com",
+      "note": "help.getharvest.com/api-v2"
+    }
+  ]
+}

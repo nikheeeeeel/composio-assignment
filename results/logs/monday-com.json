@@ -1,0 +1,328 @@
+{
+  "app": "Monday.com",
+  "category": "Productivity and Project Management",
+  "slug": "monday-com",
+  "started_at": "2026-11-23T16:01:28.184096+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T16:03:11.403076+00:00",
+  "duration_s": 103.22,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/monday-com.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Monday.com\" API authentication OAuth API key documentation site:monday.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 16.535,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Monday.com\" pricing plans API access enterprise developer site:monday.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 16.748,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Monday.com\" MCP server official Model Context Protocol site:monday.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 17.166,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Monday.com\" official API documentation developer reference site:monday.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 17.273,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Monday.com\" API rate limits throttling quota documentation site:monday.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.394,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Monday.com\" official SDK client libraries developer site:monday.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.284,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Monday.com\" API webhooks events callbacks documentation site:monday.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.643,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Monday.com\" API sandbox test environment staging developer site:monday.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.815,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Monday.com\" API versioning deprecation sunset policy site:monday.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 8.114,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Monday.com"
+      },
+      "ok": true,
+      "duration_s": 0.043,
+      "result_count": 2,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Monday.com MCP"
+      },
+      "ok": true,
+      "duration_s": 0.881,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developer.monday.com",
+          "https://developer.monday.com/api-reference/",
+          "https://developer.monday.com/api-reference/reference/docs",
+          "https://developer.monday.com/api-reference/docs/authentication",
+          "https://developer.monday.com/apps/docs/choosing-auth"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 2.618,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developer.monday.com/api-reference/docs/basics",
+          "https://monday.com/pricing",
+          "https://developer.monday.com/api-reference/docs/rate-limits",
+          "https://developer.monday.com/api-reference/docs/mondaycom-mcp",
+          "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 2.959,
+      "result_count": 5,
+      "error": null
+    }
+  ],
+  "tool_call_count": 13,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://developer.monday.com",
+      "title": "monday.com Developer Documentation",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4906
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/",
+      "title": "monday.com Platform API",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3126
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/reference/docs",
+      "title": "Docs — monday.com API reference",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4999
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "title": "Authentication",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3096
+    },
+    {
+      "url": "https://developer.monday.com/apps/docs/choosing-auth",
+      "title": "Choosing an authentication method",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4998
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/basics",
+      "title": "The basics",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2482
+    },
+    {
+      "url": "https://monday.com/pricing",
+      "title": "monday.com pricing and plans",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/rate-limits",
+      "title": "Rate limits",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4998
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/mondaycom-mcp",
+      "title": "Platform MCP overview",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1468
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp",
+      "title": "Integrate with the monday MCP server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4998
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Monday.com",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 70.51,
+      "tokens": {
+        "input": 13945,
+        "output": 2028,
+        "reasoning": 4434
+      },
+      "cost_usd": 0.00477516
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 13945,
+      "output": 2028,
+      "reasoning": 4434
+    },
+    "cost_usd": 0.00477516,
+    "llm_calls": 1
+  }
+}

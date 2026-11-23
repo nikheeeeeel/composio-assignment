@@ -1,0 +1,359 @@
+{
+  "app": "Attio",
+  "category": "CRM and Sales",
+  "one_line_description": {
+    "value": "Attio is a platform that builds pipeline, advances deals, and grows accounts around the clock.",
+    "source_url": "https://attio.com",
+    "quote": "Attio is the platform that builds pipeline, advances deals, and grows accounts around the clock.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.attio.com/rest-api/overview",
+    "quote": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+    "quote": "Attio exposes a public OpenAPI specification for the Attio REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Read-write API; documented whole-API limits of 100 read requests/s and 25 write requests/s",
+    "source_url": "https://docs.attio.com/rest-api/guides/rate-limiting",
+    "quote": "Our rate limit across the whole API is 100 requests per second for read requests, 25 requests per second for write requests.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.attio.com/rest-api/overview",
+    "source_url": "https://docs.attio.com/rest-api/overview",
+    "quote": "Attio provides a public REST API which exchanges JSON over HTTPS.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://docs.attio.com/rest-api/guides/authentication",
+    "quote": "There are two ways to generate an access token:",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://docs.attio.com/rest-api/guides/authentication",
+    "quote": "Both OAuth access tokens and single-workspace access tokens use scopes to control the resources that the token has access to and the actions that can be performed on those resources.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+    "quote": "Apps in Attio's App Store and access to Attio's API are available on all Attio plans.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API access is included on all Attio plans, including the Free plan; no sales contact or paid plan is required to use the API.",
+    "source_url": "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+    "quote": "Apps in Attio's App Store and access to Attio's API are available on all Attio plans.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.attio.com/mcp",
+    "source_url": "https://docs.attio.com/mcp/overview",
+    "quote": "For other MCP clients: Add `https://mcp.attio.com/mcp` as a remote MCP server and complete the OAuth authentication when prompted.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=attio",
+    "quote": "{\"slug\": \"attio\", \"name\": \"Attio\", \"app\": \"Attio\", \"tools_count\": 105}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Whole API: 100 requests per second for read requests, 25 requests per second for write requests",
+    "source_url": "https://docs.attio.com/rest-api/guides/rate-limiting",
+    "quote": "Our rate limit across the whole API is 100 requests per second for read requests, 25 requests per second for write requests.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.attio.com/rest-api/overview",
+    "quote": "Setting up and listening to webhooks",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Attio publishes a public REST API with an OpenAPI specification and documents credential generation via OAuth 2.0 or a workspace API key. Its official plans page states that API access is available on all plans, including Free, so no sales contact or paid plan is required. Rate limits and webhooks are also documented.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The authentication guide's full text was not present in the SOURCES bundle; only its opening line (\"There are two ways to generate an access token:\") and a search excerpt listing the OAuth 2.0 flow and workspace API key options were available, so auth_methods has confidence=medium and the enumerated credential options should be re-verified against the live page.",
+    "No documented sandbox or test environment was found in the provided sources; confirm whether Attio offers one.",
+    "Official SDK languages were not included in the provided SOURCES; verify from docs.attio.com/sdk/overview (the bundled page describes an App SDK, not client libraries).",
+    "API versioning and deprecation/sunset policy were not captured in the provided sources.",
+    "No community MCP servers were surfaced by the provided GitHub or MCP registry checks.",
+    "OAuth app publishing/approval requirements beyond the 25-workspace unpublished install limit are not fully covered in the evidence.",
+    "The exact REST endpoint/resource count was not established because the OpenAPI specification text itself was not included.",
+    "Attio's authentication guide reportedly also mentions HTTP Basic authentication and Bearer header usage; auth_methods was limited to the two credential-generation options visible in the evidence."
+  ],
+  "status": "verified",
+  "audit": {
+    "input": {
+      "name": "Attio",
+      "category": "CRM and Sales",
+      "hint": "attio.com",
+      "description": null,
+      "source_file": "01-crm-and-sales.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 15,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.attio.com/rest-api/overview",
+        "title": "Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 971
+      },
+      {
+        "url": "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+        "title": "OpenAPI",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 444
+      },
+      {
+        "url": "https://docs.attio.com/rest-api/guides/authentication",
+        "title": "Authenticating requests - Attio Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 6420
+      },
+      {
+        "url": "https://docs.attio.com/docs/oauth/token",
+        "title": "Token",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1137
+      },
+      {
+        "url": "https://attio.com/pricing",
+        "title": "Plans & Pricing | Attio",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://attio.com/help/reference/workspace-settings-billing/attio-plans-and-features",
+        "title": "Attio plans and features",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://docs.attio.com/rest-api/guides/rate-limiting",
+        "title": "Handling rate limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3419
+      },
+      {
+        "url": "https://docs.attio.com/mcp/overview",
+        "title": "Attio MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://attio.com/help/reference/how-to-guides/attio-mcp-prompts-and-best-practices",
+        "title": "Attio MCP: prompts and best practices",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://docs.attio.com/rest-api/guides/webhooks",
+        "title": "Configuring webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://docs.attio.com/share/the-publication-lifecycle",
+        "title": "The publication lifecycle",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      },
+      {
+        "url": "https://docs.attio.com/sdk/overview",
+        "title": "App SDK",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2142
+      },
+      {
+        "url": "https://attio.com",
+        "title": "Attio: The CRM for agentic revenue",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 7000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://attio.com"
+    ],
+    "refinement": {},
+    "research_seconds": 152.24,
+    "revision_round": 2,
+    "revision_issues": [
+      {
+        "field": "auth_methods",
+        "problem": "quote not found in source (score 83.1 < 90)",
+        "severity": "critical",
+        "suggested_fix": "Replace the quote with a verbatim snippet from the cited page, or lower confidence."
+      }
+    ],
+    "revision_model": "opencode/deepseek-v4.1-flash",
+    "verification": {
+      "status": "verified",
+      "rounds_used": 3,
+      "final_mechanical_stats": {
+        "claims_total": 17,
+        "claims_with_source": 13,
+        "quote_checked": 12,
+        "quote_passed": 12,
+        "quote_pass_pct": 100.0,
+        "high_medium_checked": 12,
+        "high_medium_passed": 12,
+        "high_medium_quote_pass_pct": 100.0,
+        "pages_fetched": 7,
+        "bad_pages": 0,
+        "third_party_sources": 0,
+        "critical_issues": 0,
+        "warnings": 0
+      },
+      "final_llm_stats": {
+        "verifier_model": "opencode/gemini-3.8-flash",
+        "round": 3,
+        "claims_judged": 17,
+        "supported": 17,
+        "partially": 0,
+        "unsupported": 0,
+        "contradicted": 0,
+        "disagreements": 0,
+        "critical_issues": 0,
+        "warnings": 0,
+        "verifier_searches": [
+          {
+            "field": "community_mcp_servers",
+            "query": "\"Attio\" community mcp servers API documentation",
+            "hits": [
+              "https://github.com/kesslerio/attio-mcp-server",
+              "https://github.com/kesslerio/attio-mcp-server/blob/main/docs/api/api-overview.md"
+            ]
+          },
+          {
+            "field": "sandbox_or_test_env",
+            "query": "\"Attio\" API sandbox test environment documentation",
+            "hits": [
+              "https://docs.ancha.io/tools/attio",
+              "https://docs.attio.com/sdk/server/server-functions"
+            ]
+          },
+          {
+            "field": "sdk_languages",
+            "query": "\"Attio\" official SDK libraries languages",
+            "hits": [
+              "https://attio.com/platform/developers",
+              "https://docs.attio.com/sdk/overview"
+            ]
+          },
+          {
+            "field": "api_versioning_or_deprecation_notes",
+            "query": "\"Attio\" API versioning deprecation policy",
+            "hits": [
+              "https://www.anchorterminal.com/compare/affinity-vs-attio",
+              "https://attio.com/changelog/2026/developer-changelog-is-live"
+            ]
+          }
+        ],
+        "verifier_tool_calls": 8
+      },
+      "open_disagreements": []
+    }
+  }
+}

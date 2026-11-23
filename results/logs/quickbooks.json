@@ -1,0 +1,343 @@
+{
+  "app": "QuickBooks",
+  "category": "Finance and Fintech",
+  "slug": "quickbooks",
+  "started_at": "2026-11-23T16:05:34.268229+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T16:08:50.378340+00:00",
+  "duration_s": 196.11,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/quickbooks.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"QuickBooks\" MCP server official Model Context Protocol site:intuit.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.954,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"QuickBooks\" pricing plans API access enterprise developer site:intuit.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.156,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"QuickBooks\" official API documentation developer reference site:intuit.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.324,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"QuickBooks\" API webhooks events callbacks documentation site:intuit.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.601,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"QuickBooks\" API sandbox test environment staging developer site:intuit.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.622,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"QuickBooks\" API rate limits throttling quota documentation site:intuit.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.37,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"QuickBooks\" API authentication OAuth API key documentation site:intuit.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 6.152,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"QuickBooks\" official SDK client libraries developer site:intuit.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.836,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"QuickBooks\" API versioning deprecation sunset policy site:intuit.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 1.72,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "QuickBooks"
+      },
+      "ok": true,
+      "duration_s": 0.015,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developer.intuit.com/app/developer/qbo/docs/get-started/partner-faq",
+          "https://quickbooks.intuit.com/global/pricing/",
+          "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
+          "https://quickbooks.intuit.com/llms.txt",
+          "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 0.82,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "QuickBooks MCP"
+      },
+      "ok": true,
+      "duration_s": 0.884,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developer.intuit.com",
+          "https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api",
+          "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+          "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+          "https://help.developer.intuit.com/s/article/Why-do-I-need-to-use-OAuth-2"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 2.041,
+      "result_count": 4,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://developer.intuit.com"
+      },
+      "ok": true,
+      "duration_s": 10.747,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 14,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://developer.intuit.com"
+  ],
+  "sources": [
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/partner-faq",
+      "title": "Intuit Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": "2019-09-16T13:01:03.000Z",
+      "chars": 127
+    },
+    {
+      "url": "https://quickbooks.intuit.com/global/pricing/",
+      "title": "QuickBooks Online Pricing | QuickBooks Global",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/article/API-call-limits-and-throttling",
+      "title": "API call limits and throttling",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": "2026-10-28T00:00:00.000Z",
+      "chars": 1225
+    },
+    {
+      "url": "https://quickbooks.intuit.com/llms.txt",
+      "title": "",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://quickbooks.intuit.com/learn-support/en-us/help-article/accounting-bookkeeping/use-quickbooks-connector-claude/L3YBlo6Ht_US_en_US",
+      "title": "Use Claude to enter transactions and get insights in QuickBooks",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/learn/explore-the-quickbooks-online-api",
+      "title": "Intuit Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": "2019-09-16T13:01:03.000Z",
+      "chars": 127
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+      "title": "Intuit Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": "2019-09-16T13:01:03.000Z",
+      "chars": 127
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+      "title": "Intuit Developer",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": "2019-09-16T13:01:03.000Z",
+      "chars": 127
+    },
+    {
+      "url": "https://help.developer.intuit.com/s/article/Why-do-I-need-to-use-OAuth-2",
+      "title": "Why do I need to use OAuth 2?",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": "2019-08-19T00:00:00.000Z",
+      "chars": 1569
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/homepage",
+      "title": "Intuit Developer",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 62
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:QuickBooks",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 175.37,
+      "tokens": {
+        "input": 7811,
+        "output": 1967,
+        "reasoning": 15126
+      },
+      "cost_usd": 0.0091481
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 7811,
+      "output": 1967,
+      "reasoning": 15126
+    },
+    "cost_usd": 0.0091481,
+    "llm_calls": 1
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "app": "Asana",
+  "category": "Productivity and Project Management",
+  "slug": "asana",
+  "started_at": "2026-11-23T16:01:25.601224+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T16:03:00.177823+00:00",
+  "duration_s": 94.58,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/asana.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Asana\" MCP server official Model Context Protocol site:asana.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 8.473,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Asana\" API authentication OAuth API key documentation site:asana.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 8.546,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Asana\" API rate limits throttling quota documentation site:asana.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.057,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Asana\" pricing plans API access enterprise developer site:asana.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 11.356,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Asana\" official API documentation developer reference site:asana.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 11.366,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Asana\" API webhooks events callbacks documentation site:asana.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.205,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Asana\" official SDK client libraries developer site:asana.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 2.642,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Asana\" API versioning deprecation sunset policy site:asana.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.074,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Asana\" API sandbox test environment staging developer site:asana.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.418,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Asana"
+      },
+      "ok": true,
+      "duration_s": 0.035,
+      "result_count": 1,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Asana MCP"
+      },
+      "ok": true,
+      "duration_s": 0.898,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developers.asana.com/docs/script-actions",
+          "https://developers.asana.com/docs/developer-sandbox",
+          "https://developers.asana.com/docs/rate-limits",
+          "https://developers.asana.com/docs/using-asanas-mcp-server",
+          "https://developers.asana.com/docs/integrating-with-asanas-mcp-server"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 4.008,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developers.asana.com",
+          "https://developers.asana.com/reference/rest-api-reference",
+          "https://developers.asana.com/docs/api-features",
+          "https://developers.asana.com/docs/authentication",
+          "https://developers.asana.com/docs/oauth"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 9.929,
+      "result_count": 5,
+      "error": null
+    }
+  ],
+  "tool_call_count": 13,
+  "gaps": [],
+  "sources": [
+    {
+      "url": "https://developers.asana.com/docs/script-actions",
+      "title": "Script Actions",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2249
+    },
+    {
+      "url": "https://developers.asana.com/docs/developer-sandbox",
+      "title": "Developer sandbox",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1223
+    },
+    {
+      "url": "https://developers.asana.com/docs/rate-limits",
+      "title": "Rate limits",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+      "title": "Using Asana's MCP Server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4920
+    },
+    {
+      "url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+      "title": "Integrating with Asana's MCP Server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4999
+    },
+    {
+      "url": "https://developers.asana.com",
+      "title": "Asana Docs",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1592
+    },
+    {
+      "url": "https://developers.asana.com/reference/rest-api-reference",
+      "title": "Overview",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1544
+    },
+    {
+      "url": "https://developers.asana.com/docs/api-features",
+      "title": "API",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1211
+    },
+    {
+      "url": "https://developers.asana.com/docs/authentication",
+      "title": "Authentication",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4607
+    },
+    {
+      "url": "https://developers.asana.com/docs/oauth",
+      "title": "OAuth",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4996
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Asana",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 68.432,
+      "tokens": {
+        "input": 12108,
+        "output": 2116,
+        "reasoning": 5276
+      },
+      "cost_usd": 0.00500112
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 12108,
+      "output": 2116,
+      "reasoning": 5276
+    },
+    "cost_usd": 0.00500112,
+    "llm_calls": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "started_at": "2026-11-23T14:51:16.170673+00:00",
+  "finished_at": "2026-11-23T15:00:58.113181+00:00",
+  "processed": 1,
+  "verified": 0,
+  "needs_human_review": 1,
+  "errors": 0,
+  "skipped": 0,
+  "concurrency": 4,
+  "apps": [
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "slug": "zendesk",
+      "status": "needs_human_review",
+      "skipped": false,
+      "rounds": 3,
+      "duration_s": 581.46,
+      "tool_calls": 22,
+      "cost_usd": 0.15192656,
+      "error": null
+    }
+  ]
+}

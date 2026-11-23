@@ -1,0 +1,232 @@
+{
+  "app": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "one_line_description": {
+    "value": "Freshdesk is a cloud-based customer support platform that lets companies of all sizes talk to their customers and manage support conversations.",
+    "source_url": "https://developers.freshdesk.com/api/",
+    "quote": "Freshdesk is a cloud-based customer support platform that was founded with the mission of enabling companies of all sizes to provide great customer service.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.freshdesk.com/",
+    "quote": "All the endpoints you need to access and manage your data, and bridge your helpdesk with the other tools you use.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.freshdesk.com/api/",
+    "quote": "Freshdesk's APIs belong to the Representational State Transfer (REST) category.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST v2, JSON, read-write; multiple resource categories including tickets, contacts, Business Hours, Products, Email Configs, and SLAs",
+    "source_url": "https://developers.freshdesk.com/api/",
+    "quote": "Four new API categories - Business Hours, Products, Email Configs, and SLAs 4.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.freshdesk.com/api/",
+    "source_url": "https://developers.freshdesk.com/api/",
+    "quote": "Version 2 of the API brings several new features as well as changes to the previous APIs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "source_url": "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+    "quote": "Freshworks MCP for Freshdesk currently supports API key authentication only.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://developers.freshdesk.com/api/",
+    "quote": "For all trial users, there is a default API limit of 50 calls/minute.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "A self-serve Freshdesk account/trial provides API credentials; trial accounts are capped at 50 API calls/minute and production rate limits are plan-tiered. Sandbox is listed only on the Enterprise plan ($89/agent/month) and the MCP integration is restricted to Growth, Pro and Enterprise plans.",
+    "source_url": "https://developers.freshdesk.com/api/",
+    "quote": "For all trial users, there is a default API limit of 50 calls/minute.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+    "source_url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+    "quote": "Ensure to use your Freshdesk base domain in the following format: https://.freshdesk.com/mcp",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=freshdesk",
+    "quote": "{\"slug\": \"freshdesk\", \"name\": \"Freshdesk\", \"app\": \"Freshdesk\", \"tools_count\": 184}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Trial 50 calls/minute; Growth 100/minute, Pro 400/minute, Enterprise 700/minute; per-endpoint sub-limits apply (e.g., Growth: Ticket Create 50, Ticket Update 50, Tickets List 40, Contacts List 40); older plans are hourly (Blossom/Garden 3,000/hr, Estate/Forest 5,000/hr)",
+    "source_url": "https://developers.freshdesk.com/api/",
+    "quote": "| Growth | 100 | Ticket Create - 50 Ticket Update - 50 Tickets List - 40 Contacts List - 40 |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://freshdesk.com/pricing",
+    "quote": "Skill-based routing - Sandbox - Audit logs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned API (v2 is current, surfaced via the X-Freshdesk-Api-Version header, e.g. latest=v2; requested=v2); v2 introduced new deprecation and breaking-change policies, and XML support is deprecated in favor of JSON only.",
+    "source_url": "https://developers.freshdesk.com/api/",
+    "quote": "XML Support has been deprecated, only JSON is supported",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Freshdesk publishes a public REST v2 API reference covering tickets, contacts, Business Hours, Products, Email Configs and SLAs with read/write JSON operations. A self-serve account/trial gets API-key access with a documented 50 calls/minute default limit, and production rate limits are plan-tiered (Growth 100/min, Pro 400/min, Enterprise 700/min). No partner approval, app review or sales contact is required to start building.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Core REST API authentication options beyond the API key (OAuth 2.0, OAuth scopes, basic auth) were not captured in the fetched pages; only MCP API-key authentication was explicitly quoted.",
+    "No webhook/event-callback documentation was present in the evidence bundle (support articles appeared in search results but were not fetched), so webhooks is marked not_found rather than false.",
+    "No official SDK language list was found in the fetched sources; the mobile SDK support article was in search results but not in the bundle.",
+    "A search snippet suggests the API key and API functionality are unavailable on the entry-level Sprout plan, but that support page was not in the bundle and could not be quoted.",
+    "No community/third-party MCP servers were found (GitHub and MCP registry checks returned nothing).",
+    "The official MCP server endpoint is per-tenant (https://<domain>.freshdesk.com/mcp) and custom domains are not supported; MCP is limited to Growth, Pro and Enterprise plans."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "hint": "freshdesk.com",
+      "description": null,
+      "source_file": "02-support-and-helpdesk.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.freshdesk.com/api/",
+        "title": "Freshdesk",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.freshdesk.com/",
+        "title": "Freshdesk Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 534
+      },
+      {
+        "url": "https://support.freshdesk.com/support/solutions/articles/50000014411-freshworks-mcp-security",
+        "title": "Freshworks MCP security : Freshdesk Support",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4847
+      },
+      {
+        "url": "https://support.freshdesk.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk",
+        "title": "Model Context Protocol (MCP) integration in Freshdesk : Freshdesk Support",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+        "title": "MCP Integration: Frequently asked questions (FAQ) : Freshdesk Support",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://freshdesk.com",
+        "title": "From your first AI agent to AI across customer service. We'll get you there.",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://freshdesk.com/pricing",
+        "title": "Plans forFreshdesk",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://freshdesk.com/docs",
+        "title": "From your first AI agent to AI across customer service. We'll get you there.",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 98.69
+  }
+}

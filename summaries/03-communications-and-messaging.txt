@@ -1,0 +1,73 @@
+====================================================================================================
+CATEGORY 03 - Communications and Messaging
+====================================================================================================
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   10 easy, 0 moderate, 0 hard, 0 blocked.
+   Easy: Aircall, Discord, Lark (Larksuite), Pumble, Slack, Telegram, Twilio, Vonage, WhatsApp Business, Zoho Cliq.
+   Gated / blocked: none.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy      10  ####################
+     moderate   0  
+     hard       0  
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         8  ################
+     self_serve_trial        2  ####
+
+   Auth methods (apps can have several): oauth2 7, basic 3, bearer_token 3, api_key 3, other 1, jwt 1
+   Most common auth combination: bearer_token x2, api_key+oauth2 x2, oauth2 x2
+   API shape: REST 10
+
+   Official MCP server: 7/10 (Lark (Larksuite), Pumble, Slack, Twilio, Vonage, WhatsApp Business, Zoho Cliq).
+   Missing official MCP: Aircall, Discord, Telegram.
+   Composio toolkit match: 8/10 (Aircall, Discord, Lark (Larksuite), Pumble, Slack, Telegram, Twilio, Zoho Cliq).
+   Composio gaps: Vonage, WhatsApp Business.
+   Human outreach required: 0/10 (none).
+
+   Evidence: 13.9/17 claims sourced on average (min 12); 10.4 official pages/app (min 6); 6.8 open questions/app (max 9 for WhatsApp Business).
+   Confidence mix: high 105 (62%), medium 33 (19%), low 3 (2%), not_found 29 (17%).
+
+3. ANALYST READ
+   Every communications app is easy, but this is the widest auth surface in the portfolio:
+   OAuth2, API keys, Basic, JWT and "other" all appear. WhatsApp is technically easy because
+   the developer/test path is self-serve, yet production requires Meta App Review and
+   per-message billing; that policy risk should be treated as a product constraint, not an
+   API detail. Telegram and Discord use bot tokens rather than OAuth, so a generic OAuth-only
+   toolkit layer would miss them.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Build Slack, Twilio, Telegram and Discord first; all are self-serve.
+   - WhatsApp needs policy/compliance work (Meta App Review, billing) despite an easy first-pass verdict.
+   - Support bot-token auth as a first-class pattern; do not assume OAuth2 everywhere.
+   - MCP gaps (Aircall, Discord, Telegram) matter less than correct auth adapters.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Aircall                   easy      self_serve_trial      oauth2,basic                   -    Y     -    15/12    
+Discord                   easy      self_serve_free       oauth2,bearer_token,basic,...  -    Y     -    13/11    
+Lark (Larksuite)          easy      self_serve_free       bearer_token                   Y    Y     -    15/11    
+Pumble                    easy      self_serve_free       api_key,oauth2                 Y    Y     -    14/6     
+Slack                     easy      self_serve_free       oauth2                         Y    Y     -    15/10    
+Telegram                  easy      self_serve_free       api_key                        -    Y     -    12/12    
+Twilio                    easy      self_serve_trial      oauth2,api_key                 Y    Y     -    15/11    
+Vonage                    easy      self_serve_free       oauth2,basic,jwt               Y    N     -    13/10    
+WhatsApp Business         easy      self_serve_free       bearer_token                   Y    N     -    14/10    
+Zoho Cliq                 easy      self_serve_free       oauth2                         Y    Y     -    13/11    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- None in this category.
+
+7. WATCHLIST / CAVEATS
+   - No app falls below the low-evidence threshold (10 sourced claims / 3 official pages).
+   - No official MCP found: Aircall, Discord, Telegram. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.

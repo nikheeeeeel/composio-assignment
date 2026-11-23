@@ -1,0 +1,77 @@
+====================================================================================================
+CATEGORY 06 - Data, SEO and Scraping
+====================================================================================================
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   7 easy, 2 moderate, 0 hard, 1 blocked.
+   Easy: Apify, Bright Data, Clay, DataForSEO, Firecrawl, MrScraper, SE Ranking.
+   Gated / blocked: Ahrefs, Sherlock, Waterfall.io.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       7  ##############
+     moderate   2  ####
+     hard       0  
+     blocked    1  ##
+
+   Access model mix:
+     self_serve_free         6  ############
+     paid_plan_required      1  ##
+     self_serve_trial        1  ##
+     no_api                  1  ##
+     admin_approval          1  ##
+
+   Auth methods (apps can have several): api_key 8, oauth2 4, bearer_token 4, basic 2
+   Most common auth combination: api_key+oauth2 x2, api_key x2, api_key+bearer_token+oauth2 x2
+   API shape: REST 9, null 1
+
+   Official MCP server: 8/10 (Ahrefs, Apify, Bright Data, Clay, DataForSEO, Firecrawl, MrScraper, SE Ranking).
+   Missing official MCP: Sherlock, Waterfall.io.
+   Composio toolkit match: 7/10 (Ahrefs, Apify, Bright Data, Clay, DataForSEO, Firecrawl, MrScraper).
+   Composio gaps: SE Ranking, Sherlock, Waterfall.io.
+   Human outreach required: 1/10 (Waterfall.io).
+
+   Evidence: 13.4/17 claims sourced on average (min 8); 9.8 official pages/app (min 4); 5.9 open questions/app (max 8 for Waterfall.io).
+   Confidence mix: high 106 (62%), medium 27 (16%), low 5 (3%), not_found 32 (19%).
+
+3. ANALYST READ
+   Data/SEO is API-key country: eight of ten use API keys, seven are self-serve free, and most
+   vendors are developer-first. The exceptions are commercial or administrative: Ahrefs needs
+   a paid plan, Waterfall.io manually approves API access, and Sherlock is a CLI with no hosted
+   API. Eight have an official MCP server and seven are in Composio. Evidence quality is
+   strong, with 13.4 of 17 claims sourced on average.
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - High-confidence build targets: DataForSEO, Apify, Firecrawl, Bright Data, Clay, MrScraper and SE Ranking.
+   - Ahrefs is paid-plan gated; Waterfall.io needs outreach; Sherlock is not a hosted API.
+   - API-key onboarding is the norm, so a shared key-connection flow pays off across the category.
+   - Close the Composio gaps for Waterfall.io, Sherlock (N/A) and SE Ranking.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Apify                     easy      self_serve_free       api_key,bearer_token           Y    Y     -    13/10    
+Bright Data               easy      self_serve_free       api_key,basic,bearer_token     Y    Y     -    13/11    
+Clay                      easy      self_serve_free       api_key                        Y    Y     -    13/11    
+DataForSEO                easy      self_serve_free       basic                          Y    Y     -    16/10    
+Firecrawl                 easy      self_serve_free       oauth2,api_key,bearer_token    Y    Y     -    15/11    
+MrScraper                 easy      self_serve_free       api_key,bearer_token,oauth2    Y    Y     -    16/10    
+SE Ranking                easy      self_serve_trial      api_key,oauth2                 Y    N     -    13/10    
+Ahrefs                    moderate  paid_plan_required    api_key,oauth2                 Y    Y     -    14/10    
+Waterfall.io              moderate  admin_approval        api_key                        -    N     Y    13/11    
+Sherlock                  blocked   no_api                -                              -    N     -    8/4      
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Ahrefs [moderate, access=paid_plan_required, outreach=no]: Paid Ahrefs plan required (API access from Lite, $129/mo); multi-user OAuth needs Ahrefs Connect approval
+- Waterfall.io [moderate, access=admin_approval, outreach=yes]: Manual API access approval; no self-serve signup or free tier documented
+- Sherlock [blocked, access=no_api, outreach=no]: No public API; CLI/Python package only
+
+7. WATCHLIST / CAVEATS
+   - Sherlock: low evidence (8/17 claims sourced, 4 official pages). Re-check before trusting the verdict.
+   - No official MCP found: Sherlock, Waterfall.io. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.

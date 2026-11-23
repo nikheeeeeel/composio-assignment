@@ -1,0 +1,254 @@
+{
+  "app": "Notion",
+  "category": "Productivity and Project Management",
+  "one_line_description": {
+    "value": "Notion's API is a REST API for building integrations, automations, and tools that read and write Notion workspace content such as pages, databases, comments, and files.",
+    "source_url": "https://developers.notion.com/skill.md",
+    "quote": "Notion API is a REST API for building integrations, automations, and tools that read and write Notion workspace content.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.notion.com/reference/intro",
+    "quote": "Send requests over HTTPS to `https://api.notion.com`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.notion.com/skill.md",
+    "quote": "Key endpoints live at `https://api.notion.com/v1/`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, read-write across pages, databases/data sources, comments, files, users, and webhooks; official docs do not state a total endpoint count",
+    "source_url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+    "quote": "Read, create, update, and search content; read and create comments; and read supported user information through Notion's REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.notion.com/reference/intro",
+    "source_url": "https://developers.notion.com/reference/intro",
+    "quote": "Find the base URL, headers, and data formats for Notion API requests.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://developers.notion.com/guides/authorization/overview",
+    "quote": "Internal connections use a static credential called an internal connection API token, personal access tokens use a user-scoped static token, and OAuth integrations and public integrations use the OAuth 2.0 protocol.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+    "quote": "Workspace owners can always create PATs with Notion API access.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Development credentials are self-serve: a user can create a personal access token (or internal connection) in the Developer portal with no paid plan required. On Free plans PAT creation is limited to workspace owners and is not configurable; on Business/Enterprise plans PAT creation is restricted by default and admins can choose workspace owners only or all members. Multi-user products should use an OAuth public integration so each user authorizes access.",
+    "source_url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+    "quote": "| Free | Workspace owners only. | Not configurable. | | Plus | All workspace members. | Not configurable. | | Business | Workspace owners only. | Admins can choose Workspace owners only or All workspace members. |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.notion.com/mcp",
+    "source_url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+    "quote": "The remote server URL is `https://mcp.notion.com/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=notion",
+    "quote": "{\"items\": [{\"slug\": \"notion\", \"name\": \"Notion\", \"app\": \"Notion\", \"tools_count\": 59}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per-connection: 600 requests per 60s window on Business/Enterprise (avg 10/s), 180 requests per 60s on all other plans (avg 3/s); data source queries ~3 requests/s per connection; plus a separate shared per-workspace limit; 429 responses include Retry-After",
+    "source_url": "https://developers.notion.com/reference/request-limits",
+    "quote": "| Business and Enterprise | 600 requests per minute (an average of 10 per second) | | All other plans | 180 requests per minute (an average of 3 per second) |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.notion.com/skill.md",
+    "quote": "Setting up webhooks to react to Notion changes (page updates, comments, database schema changes)",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "JavaScript"
+    ],
+    "source_url": "https://developers.notion.com/skill.md",
+    "quote": "The JavaScript SDK (`@notionhq/client`) wraps the REST API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned API: requests must send a Notion-Version header, current version 2026-03-11. A formal deprecation/sunset policy was not captured in the evidence.",
+    "source_url": "https://developers.notion.com/skill.md",
+    "quote": "The API is versioned (current: `2026-03-11`) and requires authentication via personal access tokens, internal connections, or OAuth.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Notion documents a public REST API with read-write coverage of pages, databases/data sources, comments, files, users, and webhooks, plus a JavaScript SDK and a vendor-hosted MCP server at https://mcp.notion.com/mcp. Credentials are self-serve: any workspace owner can create a personal access token in the Developer portal without a paid plan, and OAuth 2.0 is documented for multi-user integrations. The only friction is administrative (Free-plan PATs limited to workspace owners; Business/Enterprise PAT creation restricted by default and admin-configurable), which does not require sales contact or app review to start building.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "OAuth scopes/capability list is not captured verbatim in the evidence; confirm whether Notion publishes a documented scope/permission list for OAuth integrations.",
+    "No documented sandbox or test environment was found in the evidence; confirm whether Notion offers one or whether developers are expected to test against a real workspace.",
+    "Deprecation/sunset policy (beyond the Notion-Version header) is not captured; the versioning reference page was not included in the bundle.",
+    "No community/third-party MCP servers were found in the evidence (GitHub and MCP registry checks returned nothing); confirm whether any credible ones exist.",
+    "Total endpoint/resource count is not stated in the captured docs, so api_breadth is scope-based rather than count-based.",
+    "Whether publishing a public OAuth integration requires vendor app review was not established from the evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Notion",
+      "category": "Productivity and Project Management",
+      "hint": "developers.notion.com",
+      "description": null,
+      "source_file": "08-productivity-and-project-management.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.notion.com",
+        "title": "Quickstart",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4996
+      },
+      {
+        "url": "https://developers.notion.com/reference/intro",
+        "title": "Introduction",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1544
+      },
+      {
+        "url": "https://developers.notion.com/guides/notion-api/quick-start",
+        "title": "Quickstart",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4996
+      },
+      {
+        "url": "https://developers.notion.com/reference/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1313
+      },
+      {
+        "url": "https://developers.notion.com/guides/authorization/overview",
+        "title": "Authorization",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.notion.com/guides/connections-and-tokens/personal-access-tokens",
+        "title": "Personal access tokens",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.notion.com/skill.md",
+        "title": "Notion API Skill",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.notion.com/reference/request-limits",
+        "title": "Request limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.notion.com/guides/mcp/get-started-with-mcp",
+        "title": "Connect to Notion MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.notion.com/guides/mcp/build-mcp-client",
+        "title": "Build an MCP client for Notion",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 72.06
+  }
+}

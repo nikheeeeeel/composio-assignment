@@ -1,0 +1,252 @@
+{
+  "app": "ClickUp",
+  "category": "Productivity and Project Management",
+  "one_line_description": {
+    "value": "ClickUp is a Workspace and project-management product where users manage tasks, lists, folders, and docs.",
+    "source_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "quote": "external AI agents interact with ClickUp Workspace data—like tasks, lists, folders, and docs",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.clickup.com/docs/apis-available-by-plan",
+    "quote": "Our Public API is available on all ClickUp Plans . Some endpoints and parameters are limited by plan.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Broad; many API capabilities are exposed across task workflows, time tracking, docs, comments, and search; exact endpoint count not stated.",
+    "source_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "quote": "The ClickUp MCP exposes many of the capabilities available in our API.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.clickup.com/",
+    "source_url": "https://developer.clickup.com/",
+    "quote": "Browse our Public API specification.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key"
+    ],
+    "source_url": "https://developer.clickup.com/docs/authentication",
+    "quote": "Authenticate to the ClickUp API using a personal token or OAuth.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developer.clickup.com/docs/apis-available-by-plan",
+    "quote": "Our Public API is available on all ClickUp Plans . Some endpoints and parameters are limited by plan.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Public API is available on all ClickUp plans; some endpoints and parameters are limited by plan, including Enterprise-only endpoints.",
+    "source_url": "https://developer.clickup.com/docs/apis-available-by-plan",
+    "quote": "Our Public API is available on all ClickUp Plans . Some endpoints and parameters are limited by plan.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.clickup.com/mcp",
+    "source_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "quote": "Our MCP server URL is `https://mcp.clickup.com/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=clickup",
+    "quote": "\"slug\": \"clickup\", \"name\": \"ClickUp\", \"app\": \"ClickUp\", \"tools_count\": 163",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per token: 100 requests/min on Free Forever, Unlimited, and Business; 1,000/min on Business Plus; 10,000/min on Enterprise/Enterprise Plus.",
+    "source_url": "https://developer.clickup.com/docs/rate-limits",
+    "quote": "| FreeForever | 100 | | Unlimited | 100 | | Business | 100 | | Business Plus | 1,000 | | Enterprise / Enterprise Plus | 10,000 |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.clickup.com/docs/webhooks",
+    "quote": "Webhooks allow you to subscribe to events in your Workspace.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "API v2 is the main version, with a few individual endpoints defined as API v3; ClickUp states it is working on updating the rest of the API to v3.",
+    "source_url": "https://developer.clickup.com/docs/Getting%20Started",
+    "quote": "In the API reference section you will find a few individual endpoints that are defined as API v3. We're working on updating the rest of the API to v3 and provide a dedicated guide for API v3.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "ClickUp documents a public API available on all plans, including self-serve personal API tokens and OAuth 2.0. The API is broad enough to support task workflows, time tracking, docs, comments, search, and webhooks, with documented per-plan rate limits. ClickUp also provides an official MCP server, and no sales or partner gate is documented for developer credentials.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official sources in the bundle did not explicitly state the API protocol (e.g., REST); api_type was left not_found.",
+    "No OAuth scopes/permissions documentation was present in the evidence.",
+    "No official vendor-maintained SDK languages were documented in the evidence.",
+    "No documented sandbox/test environment was found; the sandbox search only surfaced a feedback page.",
+    "No API deprecation/sunset policy was found in the evidence.",
+    "No community MCP server URLs were returned by the GitHub/MCP registry checks.",
+    "The exact number of API endpoints/resources is not stated in the evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "ClickUp",
+      "category": "Productivity and Project Management",
+      "hint": "clickup.com/api",
+      "description": null,
+      "source_file": "08-productivity-and-project-management.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.clickup.com/docs/apis-available-by-plan",
+        "title": "API availability by Plan",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1276
+      },
+      {
+        "url": "https://developer.clickup.com/docs/rate-limits",
+        "title": "Rate Limits",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 934
+      },
+      {
+        "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+        "title": "ClickUp's MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4033
+      },
+      {
+        "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server-1",
+        "title": "MCP Server Setup Instructions",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4998
+      },
+      {
+        "url": "https://developer.clickup.com/docs/webhooks",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4998
+      },
+      {
+        "url": "https://clickup.com/api",
+        "title": "ClickUp",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1638
+      },
+      {
+        "url": "https://developer.clickup.com/",
+        "title": "ClickUp",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1638
+      },
+      {
+        "url": "https://developer.clickup.com/docs/Getting%20Started",
+        "title": "Get Started with the ClickUp API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1638
+      },
+      {
+        "url": "https://developer.clickup.com/docs/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3258
+      },
+      {
+        "url": "https://developer.clickup.com/reference/getaccesstoken",
+        "title": "Get Access Token",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 909
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 190.36
+  }
+}

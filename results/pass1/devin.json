@@ -1,0 +1,272 @@
+{
+  "app": "Devin",
+  "category": "AI, Research and Media-native",
+  "one_line_description": {
+    "value": "Devin is an autonomous AI software engineer that can write, run and test code.",
+    "source_url": "https://docs.devin.ai",
+    "quote": "Devin is an autonomous AI software engineer that can write, run and test code.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.devin.ai/api-reference/overview?_rsc=onxgsUYOTHUPLgG1",
+    "quote": "The Devin API enables you to integrate Devin into your applications, automate workflows, and build powerful tools.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.devin.ai/api-reference/overview?_rsc=onxgsUYOTHUPLgG1",
+    "quote": "Learn how to programmatically interact with Devin using our REST APIs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST v3 API with organization and enterprise scopes covering sessions, knowledge, playbooks, secrets, automations, analytics, audit logs, billing, users and infrastructure; read-write with RBAC permissions.",
+    "source_url": "https://docs.devin.ai/api-reference/overview?_rsc=onxgsUYOTHUPLgG1",
+    "quote": "For managing resources within a single organization — sessions, knowledge, playbooks, secrets, and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.devin.ai/api-reference/overview",
+    "source_url": "https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart",
+    "quote": "Fetch the complete documentation index at: https://docs.devin.ai/llms.txt",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart",
+    "quote": "-H \"Authorization: Bearer $DEVIN_API_KEY\"",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://docs.devin.ai/api-reference/v3/overview",
+    "quote": "Every API endpoint except `GET /v3/self` is gated by a specific permission.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "paid_plan_required",
+    "source_url": "https://docs.devin.ai",
+    "quote": "To access Devin, sign up at app.devin.ai. Individual and Teams plans are available.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Requires an existing paid Devin plan (Individual, Teams, or Enterprise); no free API tier is documented in the fetched sources. API credentials are service user API keys (`cog_`) or Personal Access Tokens created under Settings > Devin API; in enterprises PAT creation defaults to Disabled, with Approval required or Self serve set by an admin.",
+    "source_url": "https://docs.devin.ai/api-reference/personal-access-tokens",
+    "quote": "Disabled (default) | Members cannot create or use PATs",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.devin.ai/mcp",
+    "source_url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "quote": "\"serverUrl\": \"https://mcp.devin.ai/mcp\"",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=devin_mcp",
+    "quote": "{\"slug\": \"devin_mcp\", \"name\": \"Devin MCP\", \"app\": \"Devin\", \"tools_count\": 23}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Endpoint-specific only: the Devin Desktop analytics output endpoint is limited to 10 requests per hour per team; API-wide rate limits are not documented in the fetched sources.",
+    "source_url": "https://docs.devin.ai/desktop/accounts/api-reference/get-output",
+    "quote": "This endpoint is rate-limited to 10 requests per hour per team.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.devin.ai/api-reference/v3/automations/post-organizations-automations",
+    "quote": "An automation with a `webhook:incoming` trigger (at most one) is assigned an inbox URL and secret at create time.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Current API is v3 (Devin API v3, version 3.0.0); v1 and v2 remain functional during a deprecation period but receive no new features, and a migration guide is provided.",
+    "source_url": "https://docs.devin.ai/api-reference/overview?_rsc=onxgsUYOTHUPLgG1",
+    "quote": "The v1 and v2 APIs continue to work during the deprecation period but do not receive new features.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Devin exposes a documented REST API (v3 organization and enterprise scopes) with clearly published API-key/bearer authentication and a vendor-operated MCP server at https://mcp.devin.ai/mcp. However, credentials are provisioned inside an existing Devin account/plan, and the fetched sources do not document any free API tier or self-serve trial, so access is gated behind a paid plan. Enterprise PAT creation also defaults to disabled by admin policy.",
+  "main_blocker": "Paid Devin plan/seat required before API credentials; no free API tier documented",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Is any free or developer tier of the Devin API available? The devin.ai/pricing and docs.devin.ai/admin/billing/self-serve pages appear only as search snippets (and the pricing snippet seems to mix Windsurf editor plans), so plan gating could not be cited from fetched source text.",
+    "docs.devin.ai/sdk was indexed but never fetched; official vendor-maintained SDK languages remain unverified.",
+    "API-wide rate limits are not documented; only the Desktop analytics output endpoint states 10 requests per hour per team.",
+    "No documented sandbox/test environment for the Devin API was found in the fetched sources.",
+    "OAuth scopes are not documented; auth is API key/Bearer token with RBAC permission gating, so oauth_scopes_documented was set false at medium confidence.",
+    "It is unclear whether a self-serve Teams signup immediately allows creating service users/API keys or requires org admin action."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Devin",
+      "category": "AI, Research and Media-native",
+      "hint": "docs.devin.ai",
+      "description": "MCP",
+      "source_file": "10-ai-research-and-media-native.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 16,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.devin.ai/api-reference/getting-started/enterprise-quickstart",
+        "title": "Quick start: Enterprise",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.devin.ai/desktop/accounts/api-reference/get-output",
+        "title": "Get Agent Output (Lines of Code)",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+        "title": "Devin MCP",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.devin.ai/work-with-devin/mcp",
+        "title": "Devin MCP servers and marketplace",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.devin.ai/api-reference/v3/automations/post-organizations-automations",
+        "title": "Create automation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.devin.ai",
+        "title": "Introducing Devin",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.devin.ai/api-reference/overview?_rsc=onxgsUYOTHUPLgG1",
+        "title": "API Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3970
+      },
+      {
+        "url": "https://docs.devin.ai/api-reference/v3/overview",
+        "title": "Permissions & RBAC",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.devin.ai/api-reference/personal-access-tokens",
+        "title": "Personal Access Tokens",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.devin.ai/api-reference/common-flows",
+        "title": "Common Flows",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://devin.ai/pricing",
+        "title": "Devin Plans and Pricing",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4140
+      }
+    ],
+    "search_hits_count": 55,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "access_model"
+      ],
+      "queries": [
+        "\"Devin\" API pricing plans access requirements",
+        "\"Devin\" developer API free tier paid plan"
+      ],
+      "extra_urls": [
+        "https://devin.ai/pricing"
+      ],
+      "tool_calls_after": 16
+    },
+    "research_seconds": 202.07
+  }
+}

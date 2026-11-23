@@ -1,0 +1,81 @@
+====================================================================================================
+CATEGORY 09 - Finance and Fintech
+====================================================================================================
+Apps: 10 | Stage: first-pass draft (unverified) | Source: results/pass1/*.json
+Generated: 2026-11-23
+
+1. HEADLINE
+   6 easy, 3 moderate, 1 hard, 0 blocked.
+   Easy: Binance, Plaid, QuickBooks, Stripe, Xero, iPayX.
+   Gated / blocked: Brex, Paygent Connect, PitchBook, Ramp.
+
+2. PATTERNS IN THE DATA
+   Verdict mix:
+     easy       6  ############
+     moderate   3  ######
+     hard       1  ##
+     blocked    0  
+
+   Access model mix:
+     self_serve_free         6  ############
+     paid_plan_required      1  ##
+     null                    1  ##
+     contact_sales           1  ##
+     admin_approval          1  ##
+
+   Auth methods (apps can have several): api_key 5, oauth2 5, bearer_token 5, other 2, basic 2, jwt 1
+   Most common auth combination: bearer_token x2, api_key+other x1, api_key+bearer_token+oauth2 x1
+   API shape: REST 9, null 1
+
+   Official MCP server: 9/10 (Binance, Brex, PitchBook, Plaid, QuickBooks, Ramp, Stripe, Xero, iPayX).
+   Missing official MCP: Paygent Connect.
+   Composio toolkit match: 7/10 (Brex, PitchBook, Plaid, QuickBooks, Ramp, Stripe, Xero).
+   Composio gaps: Binance, Paygent Connect, iPayX.
+   Human outreach required: 2/10 (PitchBook, Ramp).
+
+   Evidence: 13.6/17 claims sourced on average (min 9); 8.4 official pages/app (min 1); 6.4 open questions/app (max 10 for Binance).
+   Confidence mix: high 93 (55%), medium 39 (23%), low 7 (4%), not_found 31 (18%).
+
+3. ANALYST READ
+   Finance is bifurcated. Developer-first payments and accounting (Stripe, Plaid, QuickBooks,
+   Xero, Binance, iPayX) are easy. Brex and Ramp are moderate because credentials require an
+   existing customer/admin or sandbox approval. PitchBook is hard and sales-led. Paygent
+   Connect is the weakest evidence in the entire portfolio: one official source page and only
+   nine of seventeen claims sourced, with the access model unresolved. Rate-limit evidence is
+   thin here (seven of ten sourced), and versioning evidence is the weakest of any category
+   (five of ten).
+
+4. IMPLICATIONS FOR TOOLKIT BUILD
+   - Build Stripe, Plaid, QuickBooks and Xero first; all are self-serve and well documented.
+   - Brex and Ramp require customer/partner context; do not promise self-serve onboarding.
+   - Paygent Connect needs human research; its moderate verdict is not reliable yet.
+   - PitchBook is a sales-led data contract, not a toolkit candidate in the near term.
+
+5. APP-LEVEL TABLE
+APP                       VERDICT   ACCESS                AUTH                           MCP  COMP  OUT  EVIDENCE 
+------------------------------------------------------------------------------------------------------------------
+Binance                   easy      self_serve_free       api_key,other                  Y    N     -    17/9     
+iPayX                     easy      self_serve_free       bearer_token                   Y    N     -    15/8     
+Plaid                     easy      self_serve_free       api_key,oauth2                 Y    Y     -    14/9     
+QuickBooks                easy      self_serve_free       oauth2                         Y    Y     -    12/10    
+Stripe                    easy      self_serve_free       api_key,basic,bearer_token     Y    Y     -    15/10    
+Xero                      easy      self_serve_free       oauth2,other                   Y    Y     -    15/9     
+Brex                      moderate  paid_plan_required    oauth2,api_key,bearer_token    Y    Y     -    15/9     
+Paygent Connect           moderate  null                  bearer_token                   -    N     -    9/1      
+Ramp                      moderate  admin_approval        oauth2,basic,bearer_token,jwt  Y    Y     Y    13/9     
+PitchBook                 hard      contact_sales         api_key                        Y    Y     Y    11/10    
+
+Legend: MCP = vendor official MCP server; COMP = matching Composio toolkit;
+OUT = human outreach required; EVIDENCE = sourced claims / official pages fetched.
+
+6. GATED / BLOCKED DETAIL
+- Brex [moderate, access=paid_plan_required, outreach=no]: Requires an existing Brex customer account with account/card-admin role; production-only, no sandbox
+- Paygent Connect [moderate, access=null, outreach=no]: Access model and credentialing route unverified; no official docs or pricing page found
+- Ramp [moderate, access=admin_approval, outreach=yes]: Credentials require an existing Ramp account or an approved sandbox request
+- PitchBook [hard, access=contact_sales, outreach=yes]: Standalone contract and sales engagement with PitchBook's Direct Data team required
+
+7. WATCHLIST / CAVEATS
+   - Paygent Connect: low evidence (9/17 claims sourced, 1 official page). Re-check before trusting the verdict.
+   - Unresolved access model: Paygent Connect.
+   - No official MCP found: Paygent Connect. This is a coverage opening, not automatically a build blocker.
+   - First-pass only: quotes, gating and verdicts have not yet been mechanically/LLM verified.

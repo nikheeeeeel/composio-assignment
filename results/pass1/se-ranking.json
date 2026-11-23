@@ -1,0 +1,255 @@
+{
+  "app": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": {
+    "value": "One API for keywords, backlinks, domains, audits, AI search, and more.",
+    "source_url": "https://seranking.com/api-pricing.html",
+    "quote": "One API for keywords, backlinks, domains, audits, AI search, and more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://seranking.com/api/how-to-get-api/",
+    "quote": "SE Ranking offers two powerful APIs to integrate our data and platform management capabilities into your workflows and applications:",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://seranking.com/api/data/getting-started/",
+    "quote": "GET requests can include parameters in the URL’s query string. - POST requests must include the `Content-Type: application/json` header and send data in a JSON body.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Two APIs (Data API + Project API) covering six product areas — backlinks, domain research, keyword research, website audit, AI search, and project management; read-write.",
+    "source_url": "https://seranking.com/api-pricing.html",
+    "quote": "- Backlinks API - Domain Research API - Keyword Research API - Website Audit API - AI Search API - Project Management API",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://seranking.com/api/data/reference/",
+    "source_url": "https://seranking.com/api/data/reference/",
+    "quote": "SE Ranking API Reference - SE Ranking API Documentation",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key",
+      "oauth2"
+    ],
+    "source_url": "https://seranking.com/api/integrations/mcp/",
+    "quote": "Option B: API key — skip the OAuth flow and pass your key as headers.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_trial",
+    "source_url": "https://seranking.com/api-pricing.html",
+    "quote": "The 14-day free trial gives you 100K API credits across all six API endpoints, as well as MCP server access.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve 14-day free trial with 100K API credits; after the trial, API access requires a paid subscription plan (Essential, Pro, Business, Core, Growth, Enterprise each include a monthly credit allowance) or the standalone API plan / one-time pay-as-you-go credit packs. Higher/custom rate limits require contacting the vendor (api@seranking.com).",
+    "source_url": "https://seranking.com/api-pricing.html",
+    "quote": "The 14-day free trial gives you 100K API credits across all six API endpoints, as well as MCP server access.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://api.seranking.com/mcp",
+    "source_url": "https://seranking.com/api/integrations/mcp/",
+    "quote": "claude mcp add --transport http se-ranking https://api.seranking.com/mcp",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=SE+Ranking",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"SE Ranking\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Data API: 10 requests per second per API key; Project API: 5 requests per second per API key; Data API limited to 1 RPS during the trial; custom limits available on request.",
+    "source_url": "https://seranking.com/api/rate-limits/",
+    "quote": "| Data API | Retrieving raw data (e.g., keywords, backlinks, domain analysis, website audit, AI Search). | 10 requests per second (RPS) |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": false,
+    "source_url": "https://seranking.com/api/rate-limits/",
+    "quote": "For asynchronous endpoints within the Data API (such as `/backlinks/export`), both the initial request to create the task and any subsequent requests to poll the status endpoint (e.g., `/export/status`) count against the 10 RPS limit.",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Endpoints are namespaced under /v1 (e.g., https://api.seranking.com/v1/account/subscription); no deprecation or sunset policy is documented on the fetched pages.",
+    "source_url": "https://seranking.com/api/data/getting-started/",
+    "quote": "curl -X GET 'https://api.seranking.com/v1/account/subscription'",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "SE Ranking documents two public REST APIs (Data and Project) with an official reference, API-key auth (plus OAuth 2.1 for its hosted MCP server), and 180+ MCP-exposed tools across SEO data domains. A self-serve 14-day trial provides 100K API credits with no sales contact required, and documented rate limits are generous (10 RPS Data API, 5 RPS Project API). Paid plans are needed after the trial, but that is a production cost gate rather than a credential gate.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Input hint https://seranking.com/api returns a 404 page; the real docs live under https://seranking.com/api/data/ and https://seranking.com/api/project/.",
+    "No official vendor-maintained SDKs were found; only a Postman collection is documented — confirm whether client libraries exist.",
+    "No documented sandbox/test environment beyond the 14-day trial credits; confirm whether a non-production environment exists.",
+    "OAuth scopes/permissions for the MCP server's OAuth 2.1 flow are not documented on the fetched pages.",
+    "No webhook/event-callback documentation was found; asynchronous Data API exports appear to use polling (confidence low).",
+    "No API deprecation/sunset policy was found; only /v1 path versioning is visible in examples.",
+    "Community/third-party MCP servers: none found in the supplied MCP registry or GitHub checks.",
+    "Whether the 14-day trial requires a credit card or other billing details is not stated in the evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "hint": "seranking.com/api",
+      "description": null,
+      "source_file": "06-data-seo-and-scraping.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://seranking.com/api-pricing.html",
+        "title": "API Pricing: Credits, Wallet & Annual Plans | SE Ranking",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://seranking.com/api/rate-limits/",
+        "title": "API rate limits - SE Ranking API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3563
+      },
+      {
+        "url": "https://seranking.com/api/integrations/mcp/",
+        "title": "SE Ranking MCP: Setup & Configuration",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://seranking.com/mcp.html",
+        "title": "SEO MCP Server: Live SE Ranking Data in Any AI Assistant",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://seranking.com/blog/dataforseo-alternatives/",
+        "title": "6 Best DataForSEO Alternatives for SEO Data & APIs (2026)",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2026-04-29T13:04:48.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://seranking.com/api/data/reference/",
+        "title": "SE Ranking API Reference - SE Ranking API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://seranking.com/api.html",
+        "title": "SEO API by SE Ranking: SEO & AEO Data at Scale",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://seranking.com/api/data/getting-started/",
+        "title": "Getting started - SE Ranking Data API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://seranking.com/api/how-to-get-api/",
+        "title": "Getting API access - SE Ranking API Documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://seranking.com/api",
+        "title": "Page not found - SE Ranking",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 181
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://seranking.com/api"
+    ],
+    "refinement": {},
+    "research_seconds": 112.05
+  }
+}

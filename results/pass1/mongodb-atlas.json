@@ -1,0 +1,255 @@
+{
+  "app": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": {
+    "value": "MongoDB Atlas is a fully managed cloud database deployment option built to scale from early prototype to mission-critical production.",
+    "source_url": "https://www.mongodb.com/pricing",
+    "quote": "Fully managed cloud deployment option built to scale from early prototype to mission-critical production.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "quote": "The Atlas Administration API follows the principles of the REST architectural style to expose a number of internal resources that enable programmatic access to administrative features in Atlas.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+    "quote": "The Atlas Administration API follows the principles of the REST (Representational State Transfer) architectural style to expose a number of internal resources which enable programmatic access to administrative features in Atlas.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, read-write administrative resources including projects, users, and clusters.",
+    "source_url": "https://mongodb.com/docs/atlas/api",
+    "quote": "Atlas Administration API resources add, edit, or delete administrative objects within Atlas, including projects, users, and clusters.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://www.mongodb.com/docs/atlas/api/",
+    "source_url": "https://mongodb.com/docs/atlas/api",
+    "quote": "You can interact with Atlas programmatically to perform administrative tasks or manage your deployments using the following resources.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "other"
+    ],
+    "source_url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2",
+    "quote": "The Atlas Administration API supports OAuth2 Service Accounts and HTTP Digest-based API keys.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://www.mongodb.com/pricing",
+    "quote": "| M0 | 512 MB | Shared | Shared | Free forever |",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Creating service accounts or API keys for an organization requires Organization Owner access.",
+    "source_url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+    "quote": "To create a service account or API (Application Programming Interface) keys for an organization, you must have `Organization Owner` access to that organization.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://www.mongodb.com/docs/mcp-server/overview",
+    "source_url": "https://www.mongodb.com/docs/mcp-server/overview",
+    "quote": "MongoDB offers two MCP Server deployment types: Local MCP for MongoDB MCP Server, which you run and manage yourself, and MongoDB Atlas Managed MCP Server, which MongoDB hosts and manages for you in Atlas.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=MongoDB+Atlas",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"MongoDB Atlas\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Go"
+    ],
+    "source_url": "https://mongodb.com/docs/atlas/api",
+    "quote": "The Atlas Go SDK provides platform-specific and Go language-specific tools, libraries, and documentation to help you build applications that interact with Atlas quickly and easily using the Atlas Administration API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned Atlas Administration API with versioning at the individual resource level; docs include an API versioning overview, migration guide, and API changelog.",
+    "source_url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+    "quote": "Atlas provides a versioned Atlas Administration API, which includes versioning at the individual Atlas Administration API resource-level.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "The Atlas Administration API is a public, documented REST API authenticated with OAuth2 service accounts or legacy API keys. Atlas offers a free-forever M0 tier, and the docs describe using service accounts or API keys for development and test environments without app review or sales contact. The API covers read-write administration of Atlas resources such as projects, users, and clusters.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The exact Atlas Managed MCP Server endpoint URL is not published in the supplied sources; the official vendor documentation URL is used for official_mcp_server.",
+    "Numeric rate limits for the Atlas Administration API were not found in the supplied sources; rate-limiting CLI endpoints appeared only in search snippets and no numbers were fetched.",
+    "Webhooks/event callbacks for the Atlas Administration API were not confirmed in the supplied sources; App Services webhook operations appeared only in search snippets, and S3 describes Activity Feed event export rather than HTTP webhooks.",
+    "OAuth scopes/permissions documentation was not found in the supplied sources.",
+    "No documented dedicated sandbox/test environment was found; S10 only notes that service accounts or API keys can be used for development and test environments.",
+    "Official SDK coverage beyond the Atlas Go SDK was not confirmed; the Atlas SDK docs page appeared in search results but was not fetched.",
+    "Confirm IP/CIDR API access list requirements for hosted automation environments, since new organizations enforce them by default according to S9."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "MongoDB Atlas",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "mongodb.com/docs/atlas/api",
+      "description": null,
+      "source_file": "07-developer-infra-and-data-platforms.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://www.mongodb.com/pricing",
+        "title": "Pricing | MongoDB",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.mongodb.com/docs/atlas/support/",
+        "title": "Get Help and Support with Atlas",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.mongodb.com/docs/atlas/release-notes/changelog",
+        "title": "Atlas Changelog",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.mongodb.com/docs/mcp-server/overview",
+        "title": "MongoDB MCP Server Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.mongodb.com/products/tools/mcp-server",
+        "title": "MongoDB MCP Server: Connect AI Agents to Your Data | MongoDB",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://mongodb.com/docs/atlas/api",
+        "title": "Atlas Programmatic Access - Atlas - MongoDB Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+        "title": "Atlas Administration API Reference - Atlas - MongoDB Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2",
+        "title": "Atlas Admin API v2 documentation",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2058
+      },
+      {
+        "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+        "title": "Get Started with the Atlas Administration API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.mongodb.com/docs/atlas/architecture/current/auth/authentication/",
+        "title": "Guidance for Atlas Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 122.66
+  }
+}

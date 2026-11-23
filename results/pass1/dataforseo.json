@@ -1,0 +1,252 @@
+{
+  "app": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": {
+    "value": "DataForSEO provides APIs that deliver SEO data to applications, data pipelines and no-code automations.",
+    "source_url": "https://dataforseo.com/model-context-protocol",
+    "quote": "Connect your AI application with the most capable source of SEO data",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.dataforseo.com",
+    "quote": "DataForSEO API v3 Documentation: SEO Data API Reference",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.dataforseo.com/v3/",
+    "quote": "DataForSEO API is using the REST technology for interchanging data between your application and our service.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, broad multi-product suite (SERP, AI Optimization, Labs, Keywords, On-Page, Merchant, App, Business, Domain Analytics, Reviews); task-based read-write (POST task, GET results)",
+    "source_url": "https://dataforseo.com/pricing",
+    "quote": "Transparent pay-as-you-go pricing for DataForSEO APIs. Find the API you need, understand how it is billed, and view the detailed pricing page for exact rates and parameters.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.dataforseo.com/v3/",
+    "source_url": "https://docs.dataforseo.com",
+    "quote": "This is the starting point on your journey towards building powerful SEO software, data analysis pipelines, and robust no-code automations.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "basic"
+    ],
+    "source_url": "https://docs.dataforseo.com/v3/auth/",
+    "quote": "DataForSEO is using the Basic Authentication, which makes it possible to call our APIs with almost any programming language, Postman app, REST API platforms, and all major frameworks.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://docs.dataforseo.com/v3/auth/",
+    "quote": "Basic authentication is the only way to access DataForSEO API; credentials should always be passed in the header of the request.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://dataforseo.com/pricing",
+    "quote": "You can sign up for free and use your $1 trial credit available to new accounts for trying our APIs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Free self-serve account signup; new accounts get a $1 trial credit, and the Sandbox is free for any registered user but returns sample/dummy data. Real production API calls are pay-as-you-go from a prepaid balance (no subscriptions or sales contact required).",
+    "source_url": "https://dataforseo.com/pricing",
+    "quote": "You can sign up for free and use your $1 trial credit available to new accounts for trying our APIs",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.dataforseo.com/v3/mcp",
+    "source_url": "https://dataforseo.com/help-center/how-to-connect-and-use-the-dataforseo-mcp-server-with-chatgpt-work-and-codex-cli",
+    "quote": "For Streamable HTTP connection, set a Name for the MCP server, specify the following DataForSEO MCP server URL: https://mcp.dataforseo.com/v3/mcp.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=dataforseo",
+    "quote": "{\"slug\": \"dataforseo\", \"name\": \"DataForSEO\", \"app\": \"DataForSEO\", \"tools_count\": 354}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "Per-endpoint limits exposed via X-RateLimit-Limit / X-RateLimit-Remaining headers; sandbox/standard limit is 10,000 API calls per minute with max 100 tasks per POST",
+    "source_url": "https://docs.dataforseo.com/v3/appendix-sandbox/",
+    "quote": "Sandbox has the same rate limits as the production environment and allows sending 10000 API calls per minute with each POST call containing no more than 100 tasks.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://docs.dataforseo.com/v3/",
+    "quote": "Set multiple tasks in one request • Webhooks & callbacks",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://docs.dataforseo.com/v3/appendix-sandbox/",
+    "quote": "Sandbox is completely free for any registered user at DataForSEO.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "PHP",
+      "Python",
+      "C#"
+    ],
+    "source_url": "https://docs.dataforseo.com/v3/",
+    "quote": "PHP, Python, C# and Postman examples",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "URL-path versioning; current documented API version is v3 (endpoints live under /v3/).",
+    "source_url": "https://docs.dataforseo.com/v3/appendix-sandbox/",
+    "quote": "POST https://sandbox.dataforseo.com/v3/$path",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "The official v3 REST documentation is public and covers a broad multi-product SEO data suite, so integration surface is not a constraint. Credentials are self-serve: a free account provides API login/password plus a $1 trial credit, and the Sandbox is free for registered users. Authentication is Basic only, keeping setup simple, and production usage is pay-as-you-go with no sales contact, review, or partner approval required.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "No formal API versioning/deprecation/sunset policy text was present in the fetched sources; the v2 sunset notice and v3 migration guide appeared in search results but were not in the evidence bundle.",
+    "Community/third-party MCP servers were not verified: no GitHub repository or MCP registry evidence was supplied.",
+    "The remote MCP server supports OAuth-based client authorization, but whether that OAuth layer exposes scoped permissions beyond the Basic auth API credentials is unclear.",
+    "The exact per-endpoint rate limit values are only exposed via response headers, not enumerated in the fetched documentation."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "hint": "docs.dataforseo.com",
+      "description": null,
+      "source_file": "06-data-seo-and-scraping.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://dataforseo.com/pricing",
+        "title": "DataForSEO API v3 Pricing – Transparent Pay-As-You-Go Pricing Model",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://dataforseo.com/update/pricing-update-in-dataforseo-apis",
+        "title": "Pricing Update in DataForSEO APIs – DataForSEO",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2587
+      },
+      {
+        "url": "https://dataforseo.com/model-context-protocol",
+        "title": "DataForSEO Model Context Protocol – DataForSEO",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://dataforseo.com/help-center/setting-up-the-official-dataforseo-mcp-server-simple-guide",
+        "title": "Setting Up the Official DataForSEO MCP Server: Simple Guide – DataForSEO",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4853
+      },
+      {
+        "url": "https://docs.dataforseo.com/v3/appendix-sandbox/",
+        "title": "appendix/sandbox | DataForSEO API v3",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.dataforseo.com",
+        "title": "DataForSEO API v3 Documentation: SEO Data API Reference",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3771
+      },
+      {
+        "url": "https://docs.dataforseo.com/v3/",
+        "title": "Introduction | DataForSEO API v3",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3602
+      },
+      {
+        "url": "https://docs.dataforseo.com/v3/llms.txt/",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.dataforseo.com/v3/auth/",
+        "title": "Authentication | DataForSEO API v3",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4895
+      },
+      {
+        "url": "https://dataforseo.com/help-center/how-to-connect-and-use-the-dataforseo-mcp-server-with-chatgpt-work-and-codex-cli",
+        "title": "How to connect and use the DataForSEO MCP server with ChatGPT Work and Codex CLI – DataForSEO",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 99.83
+  }
+}

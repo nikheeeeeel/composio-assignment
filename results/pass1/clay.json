@@ -1,0 +1,261 @@
+{
+  "app": "Clay",
+  "category": "Data, SEO and Scraping",
+  "one_line_description": {
+    "value": "Clay is a go-to-market data platform that lets teams find companies and people, run enrichment and agentic workflows, and launch outbound plays.",
+    "source_url": "https://www.clay.com/",
+    "quote": "Infrastructure to get any data, run agentic workflows, and launch GTM plays.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developers.clay.com/quickstart",
+    "quote": "Use the Public API to call Clay from your own applications and services",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developers.clay.com/public-api/authentication",
+    "quote": "curl https://api.clay.com/public/v0/me",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST with five core primitives — Searches, Routines, Tables (Enterprise-only), Audiences, Signals — read-write plus webhooks",
+    "source_url": "https://developers.clay.com/",
+    "quote": "Use the developer platform to search Clay's GTM data, run reusable Clay logic, read table data, and work with Audiences programmatically.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developers.clay.com/",
+    "source_url": "https://developers.clay.com/",
+    "quote": "Fetch the complete documentation index at: https://developers.clay.com/llms.txt",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "source_url": "https://developers.clay.com/public-api/authentication",
+    "quote": "Every request to the Clay Public API must include a Clay API key in the `clay-api-key` header.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": true,
+    "source_url": "https://university.clay.com/docs/connect-to-clay-mcp",
+    "quote": "scope: Space-separated scopes. `mcp` is the only scope available to publicly registered clients.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://developers.clay.com/quickstart",
+    "quote": "Create one yourself in Clay under API and CLI → API keys.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "API credentials are self-serve: keys are tied to a Clay user and workspace and created under API and CLI → API keys (UI, CLI, or agent plugin), with no approval or partner gate documented. Structured Tables queries are Enterprise-only.",
+    "source_url": "https://developers.clay.com/public-api/authentication",
+    "quote": "API keys are tied to a Clay user and workspace access. Create one under API and CLI → API keys",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://api.clay.com/v3/mcp",
+    "source_url": "https://university.clay.com/docs/connect-to-clay-mcp",
+    "quote": "Make an unauthenticated `POST` to `https://api.clay.com/v3/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=clay",
+    "quote": "{\"items\": [{\"slug\": \"clay\", \"name\": \"Clay\", \"app\": \"Clay\", \"tools_count\": 15}, {\"slug\": \"clay_mcp\", \"name\": \"Clay MCP\", \"app\": \"Clay\", \"tools_count\": 17}], \"total_items\": 2}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developers.clay.com/public-api/webhooks",
+    "quote": "Webhooks let Clay notify your service when a routine run finishes, so you can react without polling.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "URL path versioning (/public/v0); no deprecation or sunset policy found in the retrieved documentation.",
+    "source_url": "https://developers.clay.com/public-api/webhooks",
+    "quote": "https://api.clay.com/public/v0/routines/run/${routineRunId}/results",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Clay publishes official developer docs and users create their own API keys in the Clay UI/CLI, with the Public API exposed as REST under /public/v0. The documented surface covers searches, routines, audiences/signals, webhooks, and Enterprise-only table queries, and Clay also operates a documented MCP server at https://api.clay.com/v3/mcp. No sales contact, partner approval, or app review is documented for obtaining Public API credentials; the main limitation is that structured table queries require an Enterprise plan.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "The fetched pricing page text in the bundle did not include plan details, so it could not be verified from official quotable text whether API access is included on a Free plan or only via trial/paid tiers; search snippets suggested API/CLI on all plans but snippets are not citable.",
+    "Rate limits and quotas were not found in the retrieved developer docs; confirm limits before building.",
+    "No official vendor SDKs were listed in the docs index; only the Clay CLI and agent plugin are documented, so SDK availability is unconfirmed.",
+    "Sandbox mode docs appeared in search results but the page text was not included in the evidence bundle, so sandbox/test-environment availability is unconfirmed.",
+    "Tables are Enterprise-only and there is no list-tables endpoint, so integrations must supply known table IDs.",
+    "The app name 'Clay' is ambiguous; it was disambiguated to the clay.com GTM data platform per the input hint, not other products named Clay."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Clay",
+      "category": "Data, SEO and Scraping",
+      "hint": "clay.com",
+      "description": null,
+      "source_file": "06-data-seo-and-scraping.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 14,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developers.clay.com/",
+        "title": "Overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2300
+      },
+      {
+        "url": "https://developers.clay.com/quickstart",
+        "title": "Quickstart",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2157
+      },
+      {
+        "url": "https://developers.clay.com/public-api/authentication",
+        "title": "Authentication",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1278
+      },
+      {
+        "url": "https://developers.clay.com/tables",
+        "title": "Tables (Enterprise)",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3315
+      },
+      {
+        "url": "https://www.clay.com/pricing",
+        "title": "Flexible pricing that fits you",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.clay.com/llms.txt",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+        "title": "Connect your platform to Clay MCP - Clay Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://www.clay.com/mcp",
+        "title": "Give reps the best prospecting data in their AI tools",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4481
+      },
+      {
+        "url": "https://developers.clay.com/public-api/webhooks",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3342
+      },
+      {
+        "url": "https://developers.clay.com/concepts/execution-model",
+        "title": "Execution model",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1593
+      },
+      {
+        "url": "https://www.clay.com/",
+        "title": "Clay | Build systems to grow revenue",
+        "purpose": "docs",
+        "fetched_via": "httpx_fallback",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [
+      "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://clay.com"
+    ],
+    "refinement": {},
+    "research_seconds": 149.42
+  }
+}

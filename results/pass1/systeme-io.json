@@ -1,0 +1,253 @@
+{
+  "app": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "one_line_description": {
+    "value": "systeme.io is an all-in-one online business platform for sales funnels, email marketing, and course creation.",
+    "source_url": "https://systeme.io",
+    "quote": "I love how systeme.io combines email marketing, sales funnels, and course creation all in one platform.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "Our API exposes a carefully selected set of features, enabling developers to interact with our platform transparently and efficiently.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://systeme.io/dashboard/profile/public-api-settings",
+    "quote": "Make API Requests: Use these keys to authenticate your requests. You can include them in the request header or as a query string parameter in your API calls",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, documented resources include contacts, tags, custom fields, newsletters, campaigns, email statistics, price plans, and coupons; read-write; webhooks supported",
+    "source_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "Contacts: Create new contacts, update existing ones, list your audience with advanced filters, or delete contacts. - Tags: Create, assign, list, and remove tags from contacts.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.systeme.io/",
+    "source_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "If you'd like to know more about how it works, you can read our official API documentation.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "api_key"
+    ],
+    "source_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "API keys are unique identifiers that authenticate requests to our public API.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://help-pt.systeme.io/article/10200-como-usar-o-mcp-model-context-protocol-na-systeme-io",
+    "quote": "Esta é uma implementação inicial e ainda não suporta o método de autenticação recomendado (OAuth).",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://systeme.io/pricing",
+    "quote": "The free plan never expires and does not require a credit card.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Access is gated only by having a systeme.io account; API keys are self-generated in Settings > MCP & API keys. No paid-plan or review gate for API keys was found in the evidence.",
+    "source_url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+    "quote": "To connect an external integration, you first need to generate a secure API key.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.systeme.io/mcp",
+    "source_url": "https://help.systeme.io/article/11229-how-to-connect-your-systemeio-account-with-chatgpt-using-mcp-keys",
+    "quote": "Server URL (7): https://mcp.systeme.io/mcp?mcpKey=YOUR_KEY",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=systeme.io",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"systeme.io\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.systeme.io/docs/webhooks",
+    "quote": "Systeme.io webhooks allow your applications to receive real-time events from your systeme.io account.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Webhook payloads carry an X-Webhook-Schema-Version header, and multiple versions of the same events are supported for backward compatibility; no general public API versioning or deprecation/sunset policy was found.",
+    "source_url": "https://developer.systeme.io/docs/webhooks-events",
+    "quote": "Also, to maintain backward compatibility, we will support the different versions of the same events.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "systeme.io documents a public API with self-serve API keys generated in account settings, and its free plan requires no credit card. Documented scope covers contacts, tags, custom fields, newsletters, campaigns, email statistics, price plans, coupons, and webhooks. No sales contact, partner approval, or app review gate was found.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Is the public API available on the free plan, or is it restricted to paid plans? No explicit plan-level API gating statement was found.",
+    "Rate limits are not documented in the fetched pages; a reference snippet mentions HTTP 429 but no numeric limits were captured.",
+    "No official SDKs were found in the evidence.",
+    "No documented sandbox or test environment was found.",
+    "The docs root https://developer.systeme.io/ is inferred from official developer.systeme.io pages; the canonical API reference index was not fetched.",
+    "API type is inferred as REST from HTTP/JSON resource endpoints and header/query API-key authentication; no page explicitly states 'REST'.",
+    "OAuth support is not available for MCP keys; the MCP documentation says OAuth compatibility is planned, so OAuth scopes are not documented.",
+    "No community or third-party MCP servers appeared in the evidence; only the vendor's built-in MCP server was found.",
+    "The full endpoint/resource count for the public API was not established."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "hint": "systeme.io",
+      "description": "funnel builder",
+      "source_file": "04-marketing-ads-email-and-social.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://help-pt.systeme.io/article/10200-como-usar-o-mcp-model-context-protocol-na-systeme-io",
+        "title": "Como usar o MCP (Model Context Protocol) na systeme.io | Central de ajuda da systeme.io",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 4762
+      },
+      {
+        "url": "https://systeme.io/mcp",
+        "title": "Build and manage your business with AI | systeme.io MCP Server",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.systeme.io/article/11229-how-to-connect-your-systemeio-account-with-chatgpt-using-mcp-keys",
+        "title": "How to connect your systeme.io account to ChatGPT using MCP keys | systeme.io Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2284
+      },
+      {
+        "url": "https://developer.systeme.io/docs/webhooks-events",
+        "title": "Events",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 818
+      },
+      {
+        "url": "https://systeme.io",
+        "title": "Systeme.io - The only tool you need to launch your online business",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 861
+      },
+      {
+        "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+        "title": "How to use the systeme.io public API (Application Programming Interface) | systeme.io Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+        "title": "How to use the systeme.io MCP server (Model Context Protocol) | systeme.io Help Center",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.systeme.io/docs/webhooks",
+        "title": "Webhooks",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://systeme.io/dashboard/profile/public-api-settings",
+        "title": "Settings",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 750
+      },
+      {
+        "url": "https://systeme.io/pricing",
+        "title": "Systeme.io Pricing — Free, Startup, Webinar, Unlimited Plans",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 106.64
+  }
+}

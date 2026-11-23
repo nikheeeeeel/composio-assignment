@@ -1,0 +1,258 @@
+{
+  "app": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "one_line_description": {
+    "value": "Mermaid CLI (mmdc) is an open-source command-line tool that takes a Mermaid diagram definition file as input and generates an SVG, PNG, or PDF file as output.",
+    "source_url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "This is a command-line interface (CLI) for mermaid. It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": false,
+    "source_url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "This is a command-line interface (CLI) for mermaid.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "Local CLI; renders Mermaid diagram definitions to SVG/PNG/PDF; not a resource-based web API.",
+    "source_url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "It takes a mermaid definition file as input and generates an SVG/PNG/PDF file as output.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://github.com/mermaid-js/mermaid-cli",
+    "source_url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "Command line tool for the Mermaid library",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "no_api",
+    "source_url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "This is a command-line interface (CLI) for mermaid.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "No API access to gate — it is an open-source npm package run locally; no credentials, plans, app review, or registration are required. Integration would require invoking the local mmdc binary or Node.js module directly.",
+    "source_url": "https://github.com/mermaid-js/mermaid-cli",
+    "quote": "npm install -g @mermaid-js/mermaid-cli",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": [
+      "https://github.com/locupleto/mcp-mermaid-diagram"
+    ],
+    "source_url": "https://github.com/locupleto/mcp-mermaid-diagram",
+    "quote": "A Model Context Protocol (MCP) server that generates visual diagrams from Mermaid code using the Mermaid CLI tool.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Mermaid+CLI",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Mermaid CLI\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Distributed via npm with version-tag releases (e.g., 11.15.0); no separate API versioning or deprecation/sunset policy documented.",
+    "source_url": "https://github.com/mermaid-js/mermaid-cli/releases/tag/11.15.0",
+    "quote": "Tag: 11.15.0",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "blocked",
+  "verdict_reason": "Mermaid CLI is an open-source local command-line tool (npm package) that renders Mermaid definitions to SVG/PNG/PDF; the official README describes no hosted or network API and no authentication. There is no public service endpoint to call, so a hosted/API integration cannot be built without wrapping the local binary or Node.js module. Composio's catalog also has no matching toolkit.",
+  "main_blocker": "No hosted/public API — local CLI tool only.",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Name ambiguity: several search results (e.g., github.com/noahsabaj/mermaid-cli) are an unrelated AI coding-assistant CLI that shares the 'Mermaid' name; only github.com/mermaid-js/mermaid-cli was treated as the target.",
+    "No authentication mechanism exists for Mermaid CLI itself; auth-themed search hits referenced a different product requiring provider API keys (ANTHROPIC_API_KEY, OPENAI_API_KEY, etc.), not the mermaid-js CLI.",
+    "Release notes mention a Node.js `run()` API, but it is a local library interface, not a hosted API, and no API reference page was captured in SOURCES.",
+    "No vendor-operated MCP server was found for mermaid-js/mermaid-cli; only a community MCP wrapper (locupleto/mcp-mermaid-diagram). Mermaid Chart (separate SaaS, same origin team) reportedly hosts an MCP at mcp.mermaid.ai but this was not verifiable in the supplied sources.",
+    "Rate limits, webhooks, OAuth scopes, sandbox environment, and official SDKs are not documented; they are likely not applicable to a local CLI, but no explicit evidence was found."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "hint": "github.com/mermaid-js/mermaid-cli",
+      "description": null,
+      "source_file": "10-ai-research-and-media-native.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 21,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://raw.githubusercontent.com/noahsabaj/mermaid-cli/main/docs/tools.md",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/mermaid-js/mermaid-cli",
+        "title": "mermaid-js/mermaid-cli",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/mermaid-js/mermaid-cli/releases/tag/11.15.0",
+        "title": "11.15.0",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1855
+      },
+      {
+        "url": "https://github.com/noahsabaj/mermaid-cli",
+        "title": "noahsabaj/mermaid-cli",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/nathan-hayashi/mermaid-hybrid-stack-guide",
+        "title": "nathan-hayashi/mermaid-hybrid-stack-guide",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/noahsabaj/mermaid-cli/releases",
+        "title": "Releases · noahsabaj/mermaid-cli · GitHub",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://raw.githubusercontent.com/noahsabaj/mermaid-cli/main/docs/cli-reference.md",
+        "title": "",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://github.com/mermaid-js/mermaid-cli/blob/6e593e3b81aacaf7984151b96d7644daa58daa41/building.md",
+        "title": "building.md",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 811
+      },
+      {
+        "url": "https://github.com/locupleto/mcp-mermaid-diagram",
+        "title": "locupleto/mcp-mermaid-diagram",
+        "purpose": "refine",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 65,
+    "gaps": [],
+    "refinement": {
+      "weak_fields": [
+        "auth_methods",
+        "official_mcp_server"
+      ],
+      "queries": [
+        "\"Mermaid CLI\" API authentication OAuth API key documentation",
+        "\"Mermaid CLI\" developer authentication guide",
+        "\"Mermaid CLI\" official MCP server",
+        "\"Mermaid CLI\" model context protocol server vendor"
+      ],
+      "extra_urls": [
+        "https://raw.githubusercontent.com/noahsabaj/mermaid-cli/main/docs/cli-reference.md",
+        "https://github.com/mermaid-js/mermaid-cli/blob/6e593e3b81aacaf7984151b96d7644daa58daa41/building.md",
+        "https://github.com/noahsabaj/mermaid-cli",
+        "https://github.com/locupleto/mcp-mermaid-diagram"
+      ],
+      "tool_calls_after": 21
+    },
+    "research_seconds": 368.06
+  }
+}

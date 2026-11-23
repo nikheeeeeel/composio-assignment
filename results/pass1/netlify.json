@@ -1,0 +1,243 @@
+{
+  "app": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "one_line_description": {
+    "value": "Netlify is a web hosting and deployment platform for sites and apps, with APIs for deploys, form submissions, JavaScript snippet injection, and DNS management.",
+    "source_url": "https://docs.netlify.com/api",
+    "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS, and so much more.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://docs.netlify.com/api",
+    "quote": "You can browse the OpenAPI reference for the Netlify API to explore available endpoints.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+    "quote": "Use the Netlify REST API to manage atomic deploys of your sites and apps, manage form submissions, inject JavaScript snippets, manage DNS, and so much more.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, broad read-write surface spanning sites/projects, deploys, form submissions, DNS, snippet injection and more; no endpoint count appears in the fetched pages",
+    "source_url": "https://docs.netlify.com/api-and-cli-guides/overview/",
+    "quote": "Learn how to integrate with Netlify's REST API to programmatically manage your projects, deploys, and more.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://docs.netlify.com/api",
+    "source_url": "https://docs.netlify.com/api",
+    "quote": "This document covers the basics for interacting with the Netlify API, plus instructions for deploying sites and notes on some commonly used endpoints.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "bearer_token"
+    ],
+    "source_url": "https://docs.netlify.com/api",
+    "quote": "-H \"Authorization: Bearer YOUR_OAUTH2_ACCESS_TOKEN\"",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://docs.netlify.com/api",
+    "quote": "You'll need an application client key and a client secret to integrate with the Netlify API.",
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://docs.netlify.com/api",
+    "quote": "You can register a new application in your Netlify user settings for OAuth applications.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "No sales contact or app review gates the core REST API: a free plan exists (300 credits/month) and developers self-generate personal access tokens or register OAuth apps in user settings. Enterprise-only features (e.g., organization webhooks per search snippets) require an Enterprise plan.",
+    "source_url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/",
+    "quote": "Netlify's Credit-based plans currently include the Free plan, Personal plan, and Pro plan.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://mcp.netlify.com/mcp",
+    "source_url": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/",
+    "quote": "Use `https://mcp.netlify.com/mcp` for new connections.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=netlify_mcp",
+    "quote": "\"slug\": \"netlify_mcp\", \"name\": \"Netlify MCP\", \"app\": \"Netlify\", \"tools_count\": 9",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": "https://docs.netlify.com/api",
+    "quote": "To protect Netlify from getting flooded by automated deploys or misbehaving applications, the Netlify API is rate limited.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Versioned base path https://api.netlify.com/api/v1/; backward-incompatible changes bump the version marker while old URLs remain supported; the REST API follows semantic versioning per the release-phases documentation.",
+    "source_url": "https://docs.netlify.com/api",
+    "quote": "If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "Netlify publishes a broad REST API (v1 base URL with an OpenAPI reference) covering sites, deploys, forms, DNS and more. Credentials are fully self-serve: a free plan exists and developers can generate personal access tokens or register OAuth2 applications from user settings, with no sales contact or app review required. Only certain add-on features (e.g., organization webhooks) are Enterprise-gated.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Official rate-limit numbers are not in the fetched pages; a forum snippet mentions 500 requests/minute for paid accounts but was not part of the evidence bundle.",
+    "OAuth scopes/permissions are not described in the fetched pages; the implicit-grant example uses client_id, response_type, redirect_uri and state only.",
+    "Webhooks: search snippets referenced organization webhooks and deploy notifications, but those pages were not fetched into SOURCES, so webhook support is unconfirmed from the evidence (organization webhooks appear to be Enterprise-only).",
+    "No documented dedicated API sandbox/test environment was found in the fetched pages; deploy previews/branch deploys were mentioned only in snippets (pricing page, blog), which were not fetched.",
+    "SDK languages: the docs mention 'two API clients for your convenience' but the text is truncated and no language names appear in the evidence; the developers.netlify.com/sdk page describes an extension SDK, not API client libraries.",
+    "Endpoint/resource count for the REST API is not stated in the fetched pages (only that an OpenAPI reference exists).",
+    "No community/third-party MCP server URLs appeared in the evidence."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "hint": "docs.netlify.com/api",
+      "description": null,
+      "source_file": "07-developer-infra-and-data-platforms.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/",
+        "title": "Credit-based pricing plans | Netlify Docs",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/",
+        "title": "Agent setup overview",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developers.netlify.com/videos/netlify-office-hours-netlify-mcp-server/",
+        "title": "Netlify Office Hours: Netlify MCP Server | Netlify Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 332
+      },
+      {
+        "url": "https://developers.netlify.com/sdk/",
+        "title": "SDK | Netlify Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1025
+      },
+      {
+        "url": "https://docs.netlify.com/release-phases",
+        "title": "Release Phases",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 3065
+      },
+      {
+        "url": "https://docs.netlify.com/api",
+        "title": "Get started with the Netlify API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api",
+        "title": "Get started with the Netlify API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://docs.netlify.com/api-and-cli-guides/overview/",
+        "title": "API & CLI Guides",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 714
+      },
+      {
+        "url": "https://developers.netlify.com/guides/generating-personal-access-tokens-with-netlify-oauth/",
+        "title": "Generate personal access tokens with Netlify OAuth | Netlify Developers",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 83.77
+  }
+}

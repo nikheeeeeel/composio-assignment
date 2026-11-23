@@ -1,0 +1,24 @@
+{
+  "started_at": "2026-11-23T14:41:38.528713+00:00",
+  "finished_at": "2026-11-23T14:51:00.237500+00:00",
+  "processed": 1,
+  "verified": 1,
+  "needs_human_review": 0,
+  "errors": 0,
+  "skipped": 0,
+  "concurrency": 4,
+  "apps": [
+    {
+      "app": "Attio",
+      "category": "CRM and Sales",
+      "slug": "attio",
+      "status": "verified",
+      "skipped": false,
+      "rounds": 3,
+      "duration_s": 561.27,
+      "tool_calls": 21,
+      "cost_usd": 0.12856596,
+      "error": null
+    }
+  ]
+}

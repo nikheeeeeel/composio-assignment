@@ -1,0 +1,237 @@
+{
+  "app": "Gladly",
+  "category": "Support and Helpdesk",
+  "one_line_description": {
+    "value": "Gladly provides a single AI across the entire customer relationship, so shoppers stay with one assistant rather than different bots.",
+    "source_url": "https://gladly.com",
+    "quote": "Gladly is a single AI across the entire relationship, so a shopper is never dumped onto a different bot, a different tone, or a dead end.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://developer.gladly.com/rest/",
+    "quote": "You can integrate easily with Gladly by calling Gladly's REST API and implementing the Lookup API to provide data from your own services.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://developer.gladly.com/rest/",
+    "quote": "Clients can access the REST API via HTTPS at your organization's Gladly domain (e.g. `https://{organization}.gladly.com`).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST API covering customer profiles, timelines, orders, and more; read-write.",
+    "source_url": "https://developer.gladly.com/rest/",
+    "quote": "Some examples of what you do through Gladly APIs include managing customer profile data, interacting with a customer's timeline, providing the latest information about a customer's orders, and more.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://developer.gladly.com/rest/",
+    "source_url": "https://developer.gladly.com/rest/",
+    "quote": "For specific API endpoints, see documentation below.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "basic"
+    ],
+    "source_url": "https://developer.gladly.com/rest/",
+    "quote": "Gladly API uses token-based Basic Authentication.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": false,
+    "source_url": "https://developer.gladly.com/rest/",
+    "quote": "Gladly API uses token-based Basic Authentication.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "admin_approval",
+    "source_url": "https://developer.gladly.com/rest/",
+    "quote": "Gladly Administrators can set API permissions on an agent-by-agent basis.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Gladly Administrator-granted API permissions are required; API tokens are then created for a dedicated API user.",
+    "source_url": "https://developer.gladly.com/rest/",
+    "quote": "Gladly Administrators can set API permissions on an agent-by-agent basis.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+    "source_url": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+    "quote": "Connect Claude to your Gladly organization so you can investigate sessions, improve Guides and Workflows, and test changes in plain English.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": false,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=Gladly",
+    "quote": "{\"items\": [], \"total_items\": 0, \"query\": \"Gladly\"}",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": true,
+    "source_url": "https://developer.gladly.com/",
+    "quote": "Looking to extend Gladly, use Gladly’s REST APIs, receive notifications with webhooks, build an App Platform integration, or export data?",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": true,
+    "source_url": "https://developer.gladly.com/rest/",
+    "quote": "We'll enable the Gladly API in a separate sandbox environment, so you can experiment freely without impacting your production environment (or vice versa).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": [
+      "Web",
+      "iOS",
+      "Android"
+    ],
+    "source_url": "https://developer.gladly.com/",
+    "quote": "Embed Chat SDK in your website or app to let customers search for answers or contact your customer service team. - Web - iOS - Android",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "moderate",
+  "verdict_reason": "Gladly documents a REST API with webhooks, a sandbox, and multiple customer-data resources, but credentials are not self-serve. A Gladly Administrator must grant API User permissions and create the API user/token within an existing Gladly organization.",
+  "main_blocker": "Requires an existing Gladly org and Administrator-granted API User role.",
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "Rate limits: the search index found a Gladly rate-limit page, but its body was not included in SOURCES, so documented limits remain unverified.",
+    "API versioning and deprecation/sunset policy were not found in the supplied sources.",
+    "No self-serve signup or trial evidence was found; confirm whether a Gladly account/sandbox can be obtained without an existing customer relationship or sales contact.",
+    "SDK evidence covers the Chat SDK for Web, iOS, and Android; no official server-side REST API SDK languages were found.",
+    "Gladly MCP for Claude is enabled per organization, and the connector address is per-org (for example, https://mcp.us-1.gladly.com/acme/mcp); the official docs URL is used here as the MCP reference.",
+    "Confirm how the API token is transmitted in token-based Basic Authentication, such as username/password versus a bearer-style header.",
+    "Confirm whether any OAuth flow exists for the Gladly REST API; supplied auth evidence only names token-based Basic Authentication."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "Gladly",
+      "category": "Support and Helpdesk",
+      "hint": "gladly.com",
+      "description": null,
+      "source_file": "02-support-and-helpdesk.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://developer.gladly.com/rest/",
+        "title": "Gladly API",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.gladly.com/",
+        "title": "Main Home - Gladly Developer",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 1171
+      },
+      {
+        "url": "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://developer.gladly.com/llms-full.txt",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.gladly.com/docs/what-are-mcp-connections",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude",
+        "title": "",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://gladly.com",
+        "title": "Agentic commerce platform built for top brands | Gladly",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://gladly.com/pricing",
+        "title": "Agentic commerce platform built for top brands | Gladly",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 210.59
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "app": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "one_line_description": {
+    "value": "A hosted API service that extracts transcripts from YouTube videos programmatically and also offers YouTube search, channel, and playlist data.",
+    "source_url": "https://transcriptapi.com/docs/api/",
+    "quote": "The YouTube Transcript API provides a simple and reliable way to extract transcripts from YouTube videos programmatically.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "has_public_api": {
+    "value": true,
+    "source_url": "https://transcriptapi.com/docs",
+    "quote": "Extract YouTube video transcripts with a simple API call or through Model Context Protocol",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_type": {
+    "value": "REST",
+    "source_url": "https://transcriptapi.com/docs/getting-started/",
+    "quote": "Get YouTube video transcripts through our REST API or seamlessly integrate with AI assistants using Model Context Protocol (MCP).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_breadth": {
+    "value": "REST, 13 documented GET endpoints covering transcripts, video metadata, search, channels and playlists (read-only)",
+    "source_url": "https://transcriptapi.com/docs/api/",
+    "quote": "| Endpoint | Description | Credits | | --- | --- | --- | | `GET /youtube/transcript` | Extract video transcript (supports a `language` priority list) | 1 | | `GET /youtube/info` | Video metadata + available transcript languages | Free |",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "docs_url": {
+    "value": "https://transcriptapi.com/docs/api/",
+    "source_url": "https://transcriptapi.com/docs/api/",
+    "quote": "This complete reference covers authentication, request parameters, response formats, and practical examples.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "auth_methods": {
+    "value": [
+      "oauth2",
+      "api_key",
+      "bearer_token"
+    ],
+    "source_url": "https://transcriptapi.com/docs/mcp/",
+    "quote": "Authentication: OAuth 2.1 (Claude, ChatGPT) or an API key sent as a Bearer token (OpenAI Agent Builder and other clients).",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "oauth_scopes_documented": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_model": {
+    "value": "self_serve_free",
+    "source_url": "https://transcriptapi.com/docs/mcp/",
+    "quote": "A TranscriptAPI account (sign up free)",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "access_notes": {
+    "value": "Self-serve TranscriptAPI account and dashboard API key; no sales contact, plan tier, or app review is mentioned as a gate in the fetched docs. Usage is credit-metered per endpoint (1 credit for most calls; some endpoints are free), and credits are shared with the MCP server.",
+    "source_url": "https://transcriptapi.com/docs/mcp/",
+    "quote": "The server uses the same account, API keys, and credits as the REST API.",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "official_mcp_server": {
+    "value": "https://transcriptapi.com/mcp",
+    "source_url": "https://transcriptapi.com/docs/mcp/",
+    "quote": "TranscriptAPI runs a hosted (remote) MCP server at `https://transcriptapi.com/mcp`.",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "community_mcp_servers": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "composio_toolkit_exists": {
+    "value": true,
+    "source_url": "https://backend.composio.dev/api/v3.1/toolkits?search=youtube_transcript",
+    "quote": "\"slug\": \"youtube_transcript\", \"name\": \"YouTube Transcript\", \"app\": \"YouTube Transcript\", \"tools_count\": 9",
+    "confidence": "high",
+    "retrieved_at": "2026-11-23"
+  },
+  "rate_limits": {
+    "value": "not documented",
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "webhooks": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sandbox_or_test_env": {
+    "value": false,
+    "source_url": null,
+    "quote": null,
+    "confidence": "low",
+    "retrieved_at": "2026-11-23"
+  },
+  "sdk_languages": {
+    "value": null,
+    "source_url": null,
+    "quote": null,
+    "confidence": "not_found",
+    "retrieved_at": "2026-11-23"
+  },
+  "api_versioning_or_deprecation_notes": {
+    "value": "Version is carried in the URL path (/api/v2). No deprecation or sunset policy was found in the fetched pages.",
+    "source_url": "https://transcriptapi.com/docs/api/",
+    "quote": "https://transcriptapi.com/api/v2/youtube/transcript?video_url=dQw4w9WgXcQ",
+    "confidence": "medium",
+    "retrieved_at": "2026-11-23"
+  },
+  "buildability_verdict": "easy",
+  "verdict_reason": "TranscriptAPI documents a public REST API at https://transcriptapi.com/api/v2 with 13 GET endpoints spanning transcripts, video metadata, search, channels, and playlists, plus a hosted MCP server at https://transcriptapi.com/mcp. The docs show a free self-serve signup and a dashboard API key used as a Bearer token, with a one-request cURL/Python quick start and no sales contact or app review described. The absence of official SDKs, a sandbox, and documented rate-limit numbers does not block raw REST integration.",
+  "main_blocker": null,
+  "needs_outreach": false,
+  "outreach_reason": null,
+  "open_questions": [
+    "App-name ambiguity: the input app is 'YouTube Transcript' but the researched product is TranscriptAPI (transcriptapi.com). Disambiguated via the Composio catalog slug youtube_transcript and the vendor's own page titles; confirm this is not meant to be the open-source 'youtube-transcript-api' library.",
+    "The pricing page (https://transcriptapi.com/pricing) returned only image markup in the fetched text, so the exact free-tier credit allotment and paid plan prices could not be verified from page text.",
+    "No OAuth scope/permission definitions were found; OAuth 2.1 appears documented only for the hosted MCP server via dynamic or static client registration.",
+    "Rate-limit numbers and per-plan quotas were not present in the fetched sources; a JavaScript getting-started page (not included in this bundle) reportedly mentions HTTP 429 and a Retry-After header.",
+    "No webhook/event callback documentation was found; the vendor's channel-monitoring guide appears to check for new uploads on a schedule (polling) rather than via events.",
+    "No sandbox or test environment is documented beyond an interactive Swagger UI for live requests.",
+    "No official vendor-maintained SDKs were found; the vendor comparison article implies only Supadata publishes Python/JS SDKs.",
+    "No community MCP servers were identified (GitHub and MCP registry checks returned no results in this bundle)."
+  ],
+  "status": "drafted",
+  "audit": {
+    "input": {
+      "name": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "hint": "transcriptapi.com",
+      "description": null,
+      "source_file": "10-ai-research-and-media-native.json"
+    },
+    "retrieved_at": "2026-11-23",
+    "researcher_model": "opencode/deepseek-v4.1-flash",
+    "mcp_used": true,
+    "mcp_error": null,
+    "tool_call_count": 13,
+    "tool_call_cap": 25,
+    "sources": [
+      {
+        "url": "https://transcriptapi.com/docs/api/",
+        "title": "YouTube Transcript API Reference | TranscriptAPI.com",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://transcriptapi.com/docs/getting-started/",
+        "title": "Getting Started | TranscriptAPI.com",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 2319
+      },
+      {
+        "url": "https://transcriptapi.com/docs/mcp/",
+        "title": "MCP (Model Context Protocol) | TranscriptAPI.com",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://transcriptapi.com/",
+        "title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://transcriptapi.com/blog/transcriptapi-vs-supadata",
+        "title": "TranscriptAPI vs Supadata: API, Pricing, Alternative | TranscriptAPI",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": "2026-03-28T07:24:50.000Z",
+        "chars": 5000
+      },
+      {
+        "url": "https://transcriptapi.com/docs/mcp/chatgpt/",
+        "title": "How to Connect YouTube to ChatGPT (Transcripts and Search) | TranscriptAPI.com",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://transcriptapi.com",
+        "title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://transcriptapi.com/pricing",
+        "title": "YouTube Transcript API with Search, Channels & Playlists | TranscriptAPI",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 5000
+      },
+      {
+        "url": "https://transcriptapi.com/docs",
+        "title": "TranscriptAPI Documentation | TranscriptAPI.com",
+        "purpose": "batch_docs",
+        "fetched_via": "composio_exa",
+        "official": true,
+        "published_date": null,
+        "chars": 819
+      }
+    ],
+    "search_hits_count": 45,
+    "gaps": [],
+    "refinement": {},
+    "research_seconds": 110.01
+  }
+}

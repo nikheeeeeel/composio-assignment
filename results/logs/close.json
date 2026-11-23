@@ -1,0 +1,352 @@
+{
+  "app": "Close",
+  "category": "CRM and Sales",
+  "slug": "close",
+  "started_at": "2026-11-23T15:38:59.407937+00:00",
+  "researcher_model": "opencode/deepseek-v4.1-flash",
+  "verifier_model": "opencode/gemini-3.8-flash",
+  "rounds": [],
+  "mcp_used": true,
+  "mcp_error": null,
+  "pass1_written": true,
+  "finished_at": "2026-11-23T15:40:30.187936+00:00",
+  "duration_s": 90.78,
+  "final_status": "drafted",
+  "pass1_only": true,
+  "rounds_used": 0,
+  "pass1_path": "results/pass1/close.json",
+  "tool_calls": [
+    {
+      "seq": 1,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "pricing",
+      "arguments": {
+        "query": "\"Close\" pricing plans API access enterprise developer site:close.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 5.751,
+      "result_count": 2,
+      "error": null
+    },
+    {
+      "seq": 2,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "docs",
+      "arguments": {
+        "query": "\"Close\" official API documentation developer reference site:close.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 6.489,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 3,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "auth",
+      "arguments": {
+        "query": "\"Close\" API authentication OAuth API key documentation site:close.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 7.238,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 4,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "mcp",
+      "arguments": {
+        "query": "\"Close\" MCP server official Model Context Protocol site:close.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 8.128,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 5,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "rate_limits",
+      "arguments": {
+        "query": "\"Close\" API rate limits throttling quota documentation site:close.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.601,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 6,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "webhooks",
+      "arguments": {
+        "query": "\"Close\" API webhooks events callbacks documentation site:close.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 4.849,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 7,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "versioning",
+      "arguments": {
+        "query": "\"Close\" API versioning deprecation sunset policy site:close.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 3.637,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 8,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sdk",
+      "arguments": {
+        "query": "\"Close\" official SDK client libraries developer site:close.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 9.012,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 9,
+      "tool": "EXA_SEARCH",
+      "source": "mcp",
+      "purpose": "sandbox",
+      "arguments": {
+        "query": "\"Close\" API sandbox test environment staging developer site:close.com",
+        "numResults": 5
+      },
+      "ok": true,
+      "duration_s": 11.167,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 10,
+      "tool": "COMPOSIO_CATALOG",
+      "source": "sdk_api",
+      "purpose": "composio_toolkit",
+      "arguments": {
+        "app": "Close"
+      },
+      "ok": true,
+      "duration_s": 0.013,
+      "result_count": 2,
+      "error": null
+    },
+    {
+      "seq": 11,
+      "tool": "MCP_REGISTRY",
+      "source": "public_api",
+      "purpose": "mcp_registry",
+      "arguments": {
+        "query": "Close MCP"
+      },
+      "ok": true,
+      "duration_s": 0.834,
+      "result_count": 0,
+      "error": null
+    },
+    {
+      "seq": 12,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://developer.close.com/",
+          "https://developer.close.com/api/overview",
+          "https://developer.close.com/api/overview/oauth-authentication",
+          "https://developer.close.com/api/overview/api-key-authentication/",
+          "https://partners.close.com/"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 1.217,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 13,
+      "tool": "EXA_GET_CONTENTS_ACTION",
+      "source": "mcp",
+      "purpose": "batch_docs",
+      "arguments": {
+        "urls": [
+          "https://www.close.com/de/sales/glossary/big-ticket-items",
+          "https://developer.close.com/api/overview/rate-limits",
+          "https://developer.close.com/mcp/",
+          "https://developer.close.com/mcp/tools",
+          "https://developer.close.com/api/resources/webhooks"
+        ],
+        "max_chars": 5000
+      },
+      "ok": true,
+      "duration_s": 2.494,
+      "result_count": 5,
+      "error": null
+    },
+    {
+      "seq": 14,
+      "tool": "HTTPX_FETCH",
+      "source": "httpx",
+      "purpose": "docs",
+      "arguments": {
+        "url": "https://close.com"
+      },
+      "ok": true,
+      "duration_s": 0.552,
+      "result_count": 1,
+      "error": null
+    }
+  ],
+  "tool_call_count": 14,
+  "gaps": [
+    "Composio page fetch returned no text for the input hint; used direct HTML fetch: https://close.com"
+  ],
+  "sources": [
+    {
+      "url": "https://developer.close.com/",
+      "title": "Close Developer Platform",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1865
+    },
+    {
+      "url": "https://developer.close.com/api/overview",
+      "title": "API Overview",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 2194
+    },
+    {
+      "url": "https://developer.close.com/api/overview/oauth-authentication",
+      "title": "Authentication with OAuth",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3943
+    },
+    {
+      "url": "https://developer.close.com/api/overview/api-key-authentication/",
+      "title": "Authentication with API keys",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 1501
+    },
+    {
+      "url": "https://partners.close.com/",
+      "title": "Close Partner Directory",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 4998
+    },
+    {
+      "url": "https://www.close.com/de/sales/glossary/big-ticket-items",
+      "title": "Big Ticket Items",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.close.com/api/overview/rate-limits",
+      "title": "Rate Limits",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 3213
+    },
+    {
+      "url": "https://developer.close.com/mcp/",
+      "title": "Close MCP Server",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.close.com/mcp/tools",
+      "title": "Close MCP Tools",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://developer.close.com/api/resources/webhooks",
+      "title": "Webhooks",
+      "purpose": "batch_docs",
+      "fetched_via": "composio_exa",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    },
+    {
+      "url": "https://close.com",
+      "title": "Close CRM | The CRM That Does the Work",
+      "purpose": "docs",
+      "fetched_via": "httpx_fallback",
+      "official": true,
+      "published_date": null,
+      "chars": 5000
+    }
+  ],
+  "llm_calls": [
+    {
+      "purpose": "research:Close",
+      "model": "opencode/deepseek-v4.1-flash",
+      "duration_s": 65.236,
+      "tokens": {
+        "input": 13423,
+        "output": 2135,
+        "reasoning": 4808
+      },
+      "cost_usd": 0.0049434
+    }
+  ],
+  "usage": {
+    "tokens": {
+      "input": 13423,
+      "output": 2135,
+      "reasoning": 4808
+    },
+    "cost_usd": 0.0049434,
+    "llm_calls": 1
+  }
+}
